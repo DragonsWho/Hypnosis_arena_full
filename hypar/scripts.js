@@ -2969,13 +2969,17 @@ function stateUpdate() {
 	}
 
 	var partElement = document.getElementById('profileConfirm');
-	if(choiceValues.race && choiceValues.face && choiceValues.class && choiceValues.background && (choiceValues.ps || gamemode == 2)) {
-		txt =
-		`
-		<b>${"이름"}:</b> ${playerName}<br><br>
-		<b>${"종족"}:</b> ${choiceValues.race} | <b>${"성별"}:</b> ${"여성"}<br><br>
-		<b>${"직업"}:</b> ${choiceValues.class} ${gamemode != 2?`| <b>${"성격"}:</b> ${choiceValues.ps}`:""}<br><br>
-		`
+if(choiceValues.race && choiceValues.face && choiceValues.class && choiceValues.background && (choiceValues.ps || gamemode == 2)) {
+    // Получаем переведенные значения из словаря, а если их нет - используем оригинал
+    const raceName = dictionary[choiceValues.race] ? dictionary[choiceValues.race]["KOR"] : choiceValues.race;
+    const className = dictionary[choiceValues.class] ? dictionary[choiceValues.class]["KOR"] : choiceValues.class;
+
+    txt =
+    `
+    <p><b>Name:</b> ${playerName}</p>
+    <p><b>Race:</b> ${raceName} | <b>Gender:</b> Women</p>
+    <p><b>Class:</b> ${className} | <b>Personality:</b> ${choiceValues.ps}</p>
+    `
 		const profileNum = gamemode == 1?"profile2":(gamemode == 2?"profile3":"profile");
 		if(storyProfile[profileNum][choiceValues.background][choiceValues.race]) {
 			txt += translateText(storyProfile[profileNum][choiceValues.background][choiceValues.race], { "name":playerName });

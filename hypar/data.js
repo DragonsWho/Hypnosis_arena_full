@@ -115,8 +115,7 @@ const dictionary = {
 	"시련":{ "KOR":"Trial" },
 
 	"독":{ "KOR":"Poison" },
-	
-	"기타":{ "KOR":"Other" },
+	 
 
 	"일반":{ "KOR":"Normal" },
 	"숙련":{ "KOR":"Skilled" },
