@@ -572,10 +572,13 @@ function init() {
 		});*/
 	}
 }
-function generateFacePattern() {
-	function getRandomElement(arr) {
-		return arr[Math.floor(Math.random() * arr.length)];
-	}
+
+function getRandomElement(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+}
+
+
+function generateFacePattern() { 
 
     const faces = ["A", "B", "C", "D", "E"];
     const clothes = [1, 2, 3, 4];
@@ -2273,33 +2276,63 @@ function randomSelect(category) {
 const fantasyNamePools = {
     // Эльдориане -> Благородные люди или эльфы
     eldorian: {
-        first: ["Eleonora", "Seraphina", "Isolde", "Genevieve", "Lyra", "Astrid", "Rowena", "Guinevere"],
-        last: ["Silverwood", "Brightwater", "Evenfall", "Stormwind", "Oakhaven", "Winterbreeze", "Ironhand"]
+        first: [
+            "Eleonora", "Seraphina", "Isolde", "Genevieve", "Lyra", "Astrid", "Rowena", "Guinevere",
+            "Beatrice", "Cassandra", "Victoria", "Annelise", "Gwendolyn", "Morgana", "Rosalind",
+            "Adelaide", "Cora", "Evelina", "Juliana", "Lavinia", "Marianne", "Ophelia", "Sabina",
+            "Theresa", "Valeria", "Arabella", "Fiora", "Helena", "Miriam", "Sylvia"
+        ],
+        last: [
+            "Silverwood", "Brightwater", "Evenfall", "Stormwind", "Oakhaven", "Winterbreeze", "Ironhand",
+            "Blackwood", "Highcrest", "Stonefield", "Dawnbringer", "Goldleaf", "Redmont", "Fairwind",
+            "Shadowmere", "Lightfoot", "Lionheart", "Hawthorne", "Northwood", "Rivermore", "Sunstrider",
+            "Thornwall", "Westcroft", "Dragonfire", "Moonridge", "Staghelm", "Greycastle", "Starfall"
+        ]
     },
     // Сильвани -> Лесные эльфы, дриады
     silvani: {
-        first: ["Aeliana", "Faye", "Nia", "Willow", "Luna", "Elara", "Sylvana", "Iris"],
-        last: ["Moonshadow", "Whisperwind", "Greenleaf", "Starfall", "Riverflow", "Silentbrook"]
+        first: [
+            "Aeliana", "Faye", "Nia", "Willow", "Luna", "Elara", "Sylvana", "Iris",
+            "Elowen", "Lyra", "Naida", "Sorrel", "Briar", "Fern", "Laurel", "Dahlia",
+            "Meriel", "Faela", "Galadria", "Lyanna", "Nessa", "Aria", "Calypso", "Ianthe",
+            "Nerida", "Orla", "Thalia", "Xylia", "Amara", "Lyra"
+        ],
+        last: [
+            "Moonshadow", "Whisperwind", "Greenleaf", "Starfall", "Riverflow", "Silentbrook", "Mosswood",
+            "Silverglade", "Sunpetal", "Wildblossom", "Brightwood", "Dewdrop", "Shadegrove", "Summerisle",
+            "Thornhollow", "Willowisp", "Clearwater", "Fernweh", "Glimmerwood", "Mistvale", "Nightbreeze",
+            "Stardust", "Sunbeam", "Waterlily", "Windrunner", "Forestlight", "Rainwhisper"
+        ]
     },
     // Хафманы -> Полурослики, простые люди
     haffman: {
         // У них нет фамилий по старой логике, сохраним это
-        first: ["Rose", "Poppy", "Cora", "Briar", "Hazel", "Pippa", "Eliza", "Daisy"]
+			first: [ "Poppy", "Cora", "Briar", "Hazel", "Pippa", "Eliza", "Daisy",
+            "Ada",  "Cherry", "Clementine", "Cora", "Daisy",
+            "Eliza", "Ellie", "Esme", "Flora", "Ginger", "Hazel", "Holly", "Honey",
+            "Iris", "Lily", "Mae", "Marigold", "Millie", 
+            "Rose",  "Sadie", "Stella", "Tabitha", "Tilly", "Winnie", "Ivy",
+            "Lila", "Mabel", "Nora", "Penny",   "Tansy"
+        ]
     },
     // Трайбы -> Зверолюди (кошкодевочки и т.д.)
     tribe: {
-        first: ["Kira", "Nya", "Shadow", "Claw", "Whisker", "Fang", "Ruby", "Terra"],
-        // Фамилии здесь будут названиями кланов или племен
-        clan: ["Swiftpaw", "Sharpfang", "Silentprowl", "Moonhunter", "Nightmane", "Stonehide"]
+        first: [
+            "Kira", "Nya", "Shadow", "Claw", "Whisker", "Fang", "Ruby", "Terra",
+            "Vex", "Jinx", "Saber", "Ember", "Rogue", "Ash", "Cinder", "Onyx",
+            "Storm", "Leona", "Katra", "Zira", "Raina", "Shade", "Talon", "Blaze",
+            "Indra", "Kali", "Nyx", "Rhea", "Scylla", "Zana"
+        ],
+        clan: [
+            "Swiftpaw", "Sharpfang", "Silentprowl", "Moonhunter", "Nightmane", "Stonehide", "Wildheart",
+            "Firemane", "Bloodtalon", "Ironclaw", "Nightrunner", "Sunstriker", "Grimfang", "Stormcaller",
+            "Shadowalker", "Bloodmoon", "Winterfang", "Ragetotem", "Split-tooth", "Stonecrusher",
+            "Thunderhowl", "Blackfur", "Redclaw", "Felhide", "Grimtotem", "Frostwolf", "Boneripper"
+        ]
     }
 };
 
-// Вспомогательная функция для получения случайного элемента из массива
-function getRandom(array) {
-    return array[Math.floor(Math.random() * array.length)];
-}
-
-
+ 
 
 /**
  * Запрашивает у пользователя ввод полного имени без каких-либо правил и ограничений.
@@ -2307,7 +2340,7 @@ function getRandom(array) {
  * @param {boolean} form - Этот параметр больше не используется, но сохранен для совместимости.
  */
 function inputName(form = true) {
-    const fullNameInput = prompt("Введите ваше имя.", playerName);
+    const fullNameInput = prompt("Enter your name.", playerName);
 
     if (fullNameInput !== null) { // Пользователь не нажал "Отмена"
         const trimmedName = fullNameInput.trim();
@@ -2339,7 +2372,7 @@ function inputName(form = true) {
  * Запрашивает у пользователя название колоды, убраны ограничения по длине.
  */
 function inputDeckName() {
-    let name = prompt("Введите название колоды.", deckName);
+    let name = prompt("Enter deck name.", deckName);
     
     if (name !== null) {
         name = name.trim();
@@ -2359,23 +2392,23 @@ function randomName(race) {
 
     switch(race) {
         case "엘도리아인": // Эльдорианин
-            firstName = getRandom(fantasyNamePools.eldorian.first);
-            lastName = getRandom(fantasyNamePools.eldorian.last);
+            firstName = getRandomElement(fantasyNamePools.eldorian.first);
+            lastName = getRandomElement(fantasyNamePools.eldorian.last);
             player.name = firstName;
             player.surname = lastName;
             playerName = `${firstName} ${lastName}`;
             break;
 
         case "실바니": // Сильвани
-            firstName = getRandom(fantasyNamePools.silvani.first);
-            lastName = getRandom(fantasyNamePools.silvani.last);
+            firstName = getRandomElement(fantasyNamePools.silvani.first);
+            lastName = getRandomElement(fantasyNamePools.silvani.last);
             player.name = firstName;
             player.surname = lastName;
             playerName = `${firstName} ${lastName}`;
             break;
 
         case "하프만": // Хафман
-            firstName = getRandom(fantasyNamePools.haffman.first);
+            firstName = getRandomElement(fantasyNamePools.haffman.first);
             lastName = ""; // У них нет фамилий
             player.name = firstName;
             player.surname = lastName;
@@ -2383,8 +2416,8 @@ function randomName(race) {
             break;
 
         case "트라이브": // Трайб (Зверолюди)
-            firstName = getRandom(fantasyNamePools.tribe.first);
-            const clanName = getRandom(fantasyNamePools.tribe.clan);
+            firstName = getRandomElement(fantasyNamePools.tribe.first);
+            const clanName = getRandomElement(fantasyNamePools.tribe.clan);
             player.name = firstName;
             player.surname = clanName; // Название клана считаем фамилией
             // Форматируем имя в стиле "Имя из клана Фамилия"
