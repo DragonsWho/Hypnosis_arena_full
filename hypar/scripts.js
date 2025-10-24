@@ -2252,6 +2252,174 @@ function randomSelect(category) {
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Новый пул имен для генерации в стиле европейского фэнтези
+const fantasyNamePools = {
+    // Эльдориане -> Благородные люди или эльфы
+    eldorian: {
+        first: ["Eleonora", "Seraphina", "Isolde", "Genevieve", "Lyra", "Astrid", "Rowena", "Guinevere"],
+        last: ["Silverwood", "Brightwater", "Evenfall", "Stormwind", "Oakhaven", "Winterbreeze", "Ironhand"]
+    },
+    // Сильвани -> Лесные эльфы, дриады
+    silvani: {
+        first: ["Aeliana", "Faye", "Nia", "Willow", "Luna", "Elara", "Sylvana", "Iris"],
+        last: ["Moonshadow", "Whisperwind", "Greenleaf", "Starfall", "Riverflow", "Silentbrook"]
+    },
+    // Хафманы -> Полурослики, простые люди
+    haffman: {
+        // У них нет фамилий по старой логике, сохраним это
+        first: ["Rose", "Poppy", "Cora", "Briar", "Hazel", "Pippa", "Eliza", "Daisy"]
+    },
+    // Трайбы -> Зверолюди (кошкодевочки и т.д.)
+    tribe: {
+        first: ["Kira", "Nya", "Shadow", "Claw", "Whisker", "Fang", "Ruby", "Terra"],
+        // Фамилии здесь будут названиями кланов или племен
+        clan: ["Swiftpaw", "Sharpfang", "Silentprowl", "Moonhunter", "Nightmane", "Stonehide"]
+    }
+};
+
+// Вспомогательная функция для получения случайного элемента из массива
+function getRandom(array) {
+    return array[Math.floor(Math.random() * array.length)];
+}
+
+
+
+/**
+ * Запрашивает у пользователя ввод полного имени без каких-либо правил и ограничений.
+ * Разделяет введенную строку на имя и фамилию по первому пробелу.
+ * @param {boolean} form - Этот параметр больше не используется, но сохранен для совместимости.
+ */
+function inputName(form = true) {
+    const fullNameInput = prompt("Введите ваше имя.", playerName);
+
+    if (fullNameInput !== null) { // Пользователь не нажал "Отмена"
+        const trimmedName = fullNameInput.trim();
+        if (trimmedName !== '') {
+            const spaceIndex = trimmedName.indexOf(' ');
+            let firstName, lastName;
+
+            if (spaceIndex !== -1) {
+                // Если есть пробел, делим на имя и фамилию
+                firstName = trimmedName.substring(0, spaceIndex);
+                lastName = trimmedName.substring(spaceIndex + 1);
+            } else {
+                // Если пробела нет, все это - имя
+                firstName = trimmedName;
+                lastName = '';
+            }
+
+            player.name = firstName;
+            player.surname = lastName;
+            playerName = trimmedName;
+        }
+    }
+
+    document.getElementById('playerName').textContent = playerName;
+    stateUpdate();
+}
+
+/**
+ * Запрашивает у пользователя название колоды, убраны ограничения по длине.
+ */
+function inputDeckName() {
+    let name = prompt("Введите название колоды.", deckName);
+    
+    if (name !== null) {
+        name = name.trim();
+        if (name !== '') {
+            deckName = name;
+            document.getElementById('deckName').textContent = deckName;
+        }
+    }
+}
+
+/**
+ * Генерирует случайное женское имя в стиле европейского фэнтези на основе расы.
+ * @param {string} race - Название расы на корейском (для совместимости).
+ */
+function randomName(race) {
+    let firstName, lastName;
+
+    switch(race) {
+        case "엘도리아인": // Эльдорианин
+            firstName = getRandom(fantasyNamePools.eldorian.first);
+            lastName = getRandom(fantasyNamePools.eldorian.last);
+            player.name = firstName;
+            player.surname = lastName;
+            playerName = `${firstName} ${lastName}`;
+            break;
+
+        case "실바니": // Сильвани
+            firstName = getRandom(fantasyNamePools.silvani.first);
+            lastName = getRandom(fantasyNamePools.silvani.last);
+            player.name = firstName;
+            player.surname = lastName;
+            playerName = `${firstName} ${lastName}`;
+            break;
+
+        case "하프만": // Хафман
+            firstName = getRandom(fantasyNamePools.haffman.first);
+            lastName = ""; // У них нет фамилий
+            player.name = firstName;
+            player.surname = lastName;
+            playerName = firstName;
+            break;
+
+        case "트라이브": // Трайб (Зверолюди)
+            firstName = getRandom(fantasyNamePools.tribe.first);
+            const clanName = getRandom(fantasyNamePools.tribe.clan);
+            player.name = firstName;
+            player.surname = clanName; // Название клана считаем фамилией
+            // Форматируем имя в стиле "Имя из клана Фамилия"
+            playerName = `${firstName} of the ${clanName} Clan`;
+            break;
+
+        default: // На случай, если появится новая раса
+             // Можно сгенерировать стандартное имя или выдать ошибку
+            firstName = "Jane";
+            lastName = "Doe";
+            player.name = firstName;
+            player.surname = lastName;
+            playerName = `${firstName} ${lastName}`;
+            break;
+    }
+
+    document.getElementById('playerName').textContent = playerName;
+    stateUpdate();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
 function inputName(form = true) {
 	let name, surname;
 
@@ -2563,6 +2731,45 @@ function combineKorean(partA, partB) {
 
   return partA + partB;
 }
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function clothesChange(num) {
@@ -3452,13 +3659,13 @@ function createCard(card, size, button=false, type=0) {
 
 	    	const relatedButton = document.createElement('div');
 	    	relatedButton.className = 'box button relatedButton';
-	    	relatedButton.innerText = "관련 카드";
+	    	relatedButton.innerText = "Related cards";
 	    	relatedButton.setAttribute('data-card', card.id);
 	    	relatedButton.onclick = function() { relatedModalOpen(cardDB[this.getAttribute("data-card")]) };
 	    	totalDiv.appendChild(relatedButton);
 
 		    if(!card.related) {
-		    	relatedButton.innerText = "관련 카드 없음";
+		    	relatedButton.innerText = "No related cards";
 		    	relatedButton.classList.add("disabled");
 		    }
 
@@ -3532,13 +3739,13 @@ function createCard(card, size, button=false, type=0) {
 
 	    	const relatedButton = document.createElement('div');
 	    	relatedButton.className = 'box button relatedButton';
-	    	relatedButton.innerText = "관련 카드";
+	    	relatedButton.innerText = "Related cards";
 	    	relatedButton.setAttribute('data-card', card.id);
 	    	relatedButton.onclick = function() { relatedModalOpen(cardDB[this.getAttribute("data-card")]) };
 	    	totalDiv.appendChild(relatedButton);
 
 		    if(!card.related || card.related.length == 0) {
-		    	relatedButton.innerText = "관련 카드 없음";
+		    	relatedButton.innerText = "No related cards";
 		    	relatedButton.classList.add("disabled");
 		    }
 
@@ -15761,12 +15968,12 @@ function relatedModalOpen(card) {
 
     	if(relatedList.length == 0) {
     		const _p = document.createElement('p');
-    		_p.innerHTML = "관련 카드 없음";
+    		_p.innerHTML = "No related cards";
     		relatedDetail.appendChild(_p);
     	}
     } else {
 		const _p = document.createElement('p');
-		_p.innerHTML = "관련 카드 없음";
+		_p.innerHTML = "No related cards";
 		relatedDetail.appendChild(_p);
     }
 }
