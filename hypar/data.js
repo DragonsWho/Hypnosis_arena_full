@@ -135,21 +135,21 @@ const dictionary = {
 	"재귀파생":{ "KOR":"This Card" },
 	"소재":{ "KOR":"Cards Used as Material" },
 
-	"흥분":{ "KOR":"Excitement" },
-	"흥분 한계":{ "KOR":"Excitement Limit" },
+	"Excitement":{ "KOR":"Excitement" },
+	"Excitement Limit":{ "KOR":"Excitement Limit" },
 	"절정":{ "KOR":"Orgasm" },
-	"절정 한계":{ "KOR":"Orgasm Limit" },
-	"발정":{ "KOR":"Heat" },
-	"실제발정":{ "KOR":"Actual Heat" },
-	"음란":{ "KOR":"Lewdness" },
-	"실제음란":{ "KOR":"Actual Lewdness" },
-	"음란과 발정":{ "KOR":"Lewdness and Heat" },
+	"Orgasm Limit":{ "KOR":"Orgasm Limit" },
+	"Heat":{ "KOR":"Heat" },
+	"실제Heat":{ "KOR":"Actual Heat" },
+	"Lewdness":{ "KOR":"Lewdness" },
+	"실제Lewdness":{ "KOR":"Actual Lewdness" },
+	"Lewdness과 Heat":{ "KOR":"Lewdness and Heat" },
 
-	"욕망":{ "KOR":"Lust" },
-	"젖음":{ "KOR":"Wetness" },
+	"Lust":{ "KOR":"Lust" },
+	"Wetness":{ "KOR":"Wetness" },
 	"감각차단":{ "KOR":"Numbness" },
-	"지연흥분":{ "KOR":"Delayed Excitement" },
-	"타락":{ "KOR":"Corruption" },
+	"지연Excitement":{ "KOR":"Delayed Excitement" },
+	"Corruption":{ "KOR":"Corruption" },
 	"카운트":{ "KOR":"Count" },
 
 	"즉발":{ "KOR":"Instant" },
@@ -529,13 +529,13 @@ const ruleDescription = {
 			`
 		},
 		{
-			"title": "How to Play (3/4): Arousal Limit and Climax Limit",
+			"title": "How to Play (3/4): Arousal Limit and Orgasm Limit",
 			"desc": `
 				When <b>Arousal</b> accumulates, it will eventually reach a limit.  
 
 				<br><br><br>  
 
-				You and the champion each have your own <b>Arousal Limit</b> and <b>Climax Limit</b>.  
+				You and the champion each have your own <b>Arousal Limit</b> and <b>Orgasm Limit</b>.  
 
 				<br><br>  
 
@@ -544,15 +544,15 @@ const ruleDescription = {
 
 				<br><br>  
 
-				<b>Climax Limit</b> is your physical limit for enduring orgasms.<br>  
+				<b>Orgasm Limit</b> is your physical limit for enduring orgasms.<br>  
 				Someone who climaxes too many times will exhaust their stamina and collapse,<br>
 				which means <b>defeat</b> in the duel.<br>  
 				If your number of climaxes reaches this value, you lose.  
 
 				<br><br><br>  
 
-				By default, Lust, Heat, Arousal Limit, and Climax Limit cannot drop below 1.<br>  
-				Furthermore, the number of climaxes cannot be recovered once increased, and effects that increase the Climax Limit are very rare.<br>  
+				By default, Lust, Heat, Arousal Limit, and Orgasm Limit cannot drop below 1.<br>  
+				Furthermore, the number of climaxes cannot be recovered once increased, and effects that increase the Orgasm Limit are very rare.<br>  
 				Therefore, it is best to avoid climaxing as much as possible; failure to manage this will lead to a swift defeat.  
 
 				<br><br>  
@@ -566,7 +566,7 @@ const ruleDescription = {
 		{
 			"title": "How to Play (4/4): Victory and Defeat Conditions",
 			"desc": `
-				To win the duel, you must make the opponent's climax count reach their Climax Limit.<br>  
+				To win the duel, you must make the opponent's climax count reach their Orgasm Limit.<br>  
 				However, the duels are always designed to be disadvantageous for you.  
 
 				<br><br><br>  
@@ -648,7 +648,7 @@ const ruleDescription = {
 				<br><br><br>  
 
 				They have effects that <b>[Stimulate]</b> the opponent or increase their Arousal,<br>  
-				and rarely, effects that make the opponent climax immediately or reduce their Arousal and Climax Limits.  
+				and rarely, effects that make the opponent climax immediately or reduce their Arousal and Orgasm Limits.  
 
 				<br><br>  
 
@@ -691,7 +691,7 @@ const ruleDescription = {
 			"title": "Card Types (4/4): Champion's Cards",
 			"desc": `
 				The champion has a <b>deck of 8 cards</b> and <b>1 trait</b>.<br>  
-				The deck must include one <b>Strip Card</b> and one <b>Climax Card</b>.  
+				The deck must include one <b>Strip Card</b> and one <b>Orgasm Card</b>.  
 
 				<br><br><br>  
 
@@ -700,8 +700,8 @@ const ruleDescription = {
 
 				<br><br><br>  
 
-				If the champion has no other cards to play, they will use a <b>Climax Card</b>.<br>  
-				The Climax Card is a powerful card that fits the champion's characteristics, and <br>
+				If the champion has no other cards to play, they will use a <b>Orgasm Card</b>.<br>  
+				The Orgasm Card is a powerful card that fits the champion's characteristics, and <br>
 				<b>it does not disappear from the deck after being used.</b><br>  
 				<br>
 				This gives the champion an advantage in long battles,<br>
@@ -725,7 +725,7 @@ const ruleDescription = {
                 <b>Characteristics of Persistent Effects:</b><br>
                 <br>
                 Disappears immediately if the card or status providing the effect is removed.<br>
-                Does not change the <b>base value</b> of stats like <b>Lust, Heat, Arousal Limit, and Climax Limit</b>.<br>
+                Does not change the <b>base value</b> of stats like <b>Lust, Heat, Arousal Limit, and Orgasm Limit</b>.<br>
                 <br>
                 The current value modified by a Persistent Effect is displayed in a different color.<br>
                 The base value is shown in parentheses, allowing you to compare the current and original states.<br>
@@ -838,7 +838,7 @@ const ruleDescription = {
                 <br>
                 <br>
                 <b>[Penalty: Masochism]</b><br>
-                <small><i>(<b>Held: Climax Limit -1</b>)</i></small><br>
+                <small><i>(<b>Held: Orgasm Limit -1</b>)</i></small><br>
                 This card will not appear if your remaining <b>climaxes</b> until defeat are 1.<br>
                 <br>
                 <br>
@@ -898,12 +898,12 @@ const champList = {
 			],
 			"B1-AT-003":[
 				{cond:true, priority:2},
-				{cond:{v1:"발정", op:">", v2:"음란"}, priority:3},
+				{cond:{v1:"Heat", op:">", v2:"Lewdness"}, priority:3},
 			],
 			"B1-AT-004":[
 				{cond:true, priority:2},
 				{cond:true, priority:"상대덱.count(type, Penalty)"},
-				{cond:{v1:"발정", op:"<", v2:3}, priority:1},
+				{cond:{v1:"Heat", op:"<", v2:3}, priority:1},
 			],
 			"B1-AT-005":[
 				{cond:true, priority:-1000},
@@ -911,8 +911,8 @@ const champList = {
 			"B1-SU-001":[
 				{cond:true, priority:1},
 				{cond:{v1:"상대덱.count(id, B1-PN-001)", op:"==", v2:0}, priority:2},
-				{cond:{v1:"발정", op:"<", v2:4}, priority:2},
-				{cond:{v1:"발정", op:"<", v2:2}, priority:4},
+				{cond:{v1:"Heat", op:"<", v2:4}, priority:2},
+				{cond:{v1:"Heat", op:"<", v2:2}, priority:4},
 			],
 			/*"B1-SU-002":[
 				{cond:true, priority:0},
@@ -945,9 +945,9 @@ const champList = {
             orgasmL: 3,
             specialties: {
                 KOR: [
-	                "Card 사용하지 못하게 방해하기",
-	                "계획 망치기",
-	                "제대로 대응하지 못할 경우 큰 피해"
+	                "Prevents card use",
+	                "Disrupts combos ",
+	                "Punishes mistakes with massive damage"
                 ],
                 ENG: [
                 ]
@@ -990,8 +990,8 @@ const champList = {
 				{cond:{v1:"라운드", op:"==", v2:"Max라운드"}, priority:-Infinity},
 			],
 			"B2-AT-004":[
-				{cond:{v1:"발정", op:"<", v2:"8"}, priority:-Infinity},
-				{cond:{v1:"발정", op:">=", v2:"8"}, priority:90},
+				{cond:{v1:"Heat", op:"<", v2:"8"}, priority:-Infinity},
+				{cond:{v1:"Heat", op:">=", v2:"8"}, priority:90},
 			],
 			"B2-SU-004":[
 				{cond:{v1:"상대덱.count(id, B2-PN-001)", op:">=", v2:"3"}, priority:3},
@@ -1017,8 +1017,8 @@ const champList = {
             orgasmL: 1,
             specialties: {
                 KOR: [
-                	"높은 흥분 한계",
-                    "음란을 낮추고 흥분을 회복하기",
+                	"높은 Excitement Limit",
+                    "Lewdness을 낮추고 Excitement을 회복하기",
                     "장기전으로 갈수록 강해짐"
                 ],
                 ENG: [
@@ -1046,23 +1046,23 @@ const champList = {
 				{cond:true, priority:Infinity}
 			],
 			"B3-AT-001":[
-				{cond:{v1:"음란", op:"<=", v2:"2"}, priority:3},
-				{cond:{v1:"발정", op:">=", v2:"4"}, priority:3},
+				{cond:{v1:"Lewdness", op:"<=", v2:"2"}, priority:3},
+				{cond:{v1:"Heat", op:">=", v2:"4"}, priority:3},
 			],
 			"B3-AT-002":[
 				{cond:true, priority:-1000}
 			],
 			"B3-AT-003":[
-				{cond:{v1:"실제음란", op:">", v2:"2"}, priority:4}
+				{cond:{v1:"실제Lewdness", op:">", v2:"2"}, priority:4}
 			],
 			"B3-AT-004":[
-				{cond:{v1:"발정", op:"<=", v2:"4"}, priority:4}
+				{cond:{v1:"Heat", op:"<=", v2:"4"}, priority:4}
 			],
 			"B3-SU-001":[
-				{cond:{v1:"실제음란", op:">", v2:"4"}, priority:5}
+				{cond:{v1:"실제Lewdness", op:">", v2:"4"}, priority:5}
 			],
 			"B3-SU-002":[
-				{cond:{v1:"자신.흥분", op:">=", v2:"10"}, priority:6}
+				{cond:{v1:"자신.Excitement", op:">=", v2:"10"}, priority:6}
 			],
 			"B3-SU-003":[
 				{cond:true, priority:2},
@@ -1084,7 +1084,7 @@ const champList = {
             specialties: {
                 KOR: [
                 	"한 번에 여러 번 자극하기",
-                    "고정적으로 복구되는 발정 수치",
+                    "고정적으로 복구되는 Heat 수치",
                     "조건에 따른 점진적 성장"
                 ],
                 ENG: [
@@ -1126,14 +1126,14 @@ const champList = {
 				{cond:true, priority:3}
 			],
 			"B4-AT-002":[
-				{cond:true, priority:"음란"}
+				{cond:true, priority:"Lewdness"}
 			],
 			"B4-AT-003":[
 				{cond:true, priority:-1000},
 			],
 			"B4-AT-004":[
-				{cond:true, priority:"실제발정"},
-				{cond:{v1:"실제발정", op:"<=", v2:2}, priority:-Infinity},
+				{cond:true, priority:"실제Heat"},
+				{cond:{v1:"실제Heat", op:"<=", v2:2}, priority:-Infinity},
 			],
 			"B4-SU-001":[
 				{cond:true, priority:Infinity}
@@ -1160,7 +1160,7 @@ const champList = {
             specialties: {
                 KOR: [
                 	"매우 공격적인 플레이",
-                    "빠르게 증가하는 발정",
+                    "빠르게 증가하는 Heat",
                     "시간경과 시 점차 자멸함"
                 ],
                 ENG: [
@@ -1193,7 +1193,7 @@ const champList = {
 				{cond:true, priority:-1000}
 			],
 			"B5-SU-001":[
-				{cond:{v1:"발정", op:"<=", v2:3}, priority:6}
+				{cond:{v1:"Heat", op:"<=", v2:3}, priority:6}
 			],
 			"B5-PN-001":[
 				{cond:true, priority:-Infinity}
@@ -1214,7 +1214,7 @@ const champList = {
             specialties: {
                 KOR: [
                 	"상대의 덱에 포자를 결속시키기",
-                    "자극 외의 수단으로 흥분 증가시키기",
+                    "자극 외의 수단으로 Excitement 증가시키기",
                     "여러 장의 card 사용하기"
                 ],
                 ENG: [
@@ -1315,7 +1315,7 @@ const champList = {
 			],
 			"B7-SU-001":[
 				{cond:{v1:"라운드", op:"in", v2:[2, 4, 7]}, priority:5},
-				{cond:{v1:"음란", op:">", v2:2}, priority:1}
+				{cond:{v1:"Lewdness", op:">", v2:2}, priority:1}
 			],
 			"B7-SU-002":[
 				{cond:{v1:"라운드", op:"in", v2:[7]}, priority:3},
@@ -1327,7 +1327,7 @@ const champList = {
 			],
 			"B7-SU-004":[
 				{cond:true, priority:5},
-				{cond:{v1:"발정", op:"<", v2:2}, priority:5}
+				{cond:{v1:"Heat", op:"<", v2:2}, priority:5}
 			],
 		}
 	},
@@ -1439,12 +1439,12 @@ const champList = {
 			],
 			"B1-AT-003":[
 				{cond:true, priority:2},
-				{cond:{v1:"발정", op:">", v2:"음란"}, priority:4},
+				{cond:{v1:"Heat", op:">", v2:"Lewdness"}, priority:4},
 			],
 			"B1-AT-004":[
 				{cond:true, priority:3},
 				{cond:true, priority:"상대덱.count(type, Penalty)"},
-				{cond:{v1:"발정", op:"<", v2:3}, priority:2},
+				{cond:{v1:"Heat", op:"<", v2:3}, priority:2},
 			],
 			"B1-AT-005":[
 				{cond:true, priority:-1000},
@@ -1452,8 +1452,8 @@ const champList = {
 			"B1-SU-001":[
 				{cond:true, priority:1},
 				{cond:{v1:"상대덱.count(id, B1-PN-001)", op:"==", v2:0}, priority:2},
-				{cond:{v1:"발정", op:"<", v2:4}, priority:2},
-				{cond:{v1:"발정", op:"<", v2:2}, priority:4},
+				{cond:{v1:"Heat", op:"<", v2:4}, priority:2},
+				{cond:{v1:"Heat", op:"<", v2:2}, priority:4},
 			],
 			"B1-SU-002":[
 				{cond:true, priority:"상대덱.count(type, Penalty)"},
@@ -1477,9 +1477,9 @@ const champList = {
             orgasmL: 3,
             specialties: {
                 KOR: [
-	                "Card 사용하지 못하게 방해하기",
-	                "계획 망치기",
-	                "제대로 대응하지 못할 경우 큰 피해"
+	                "Prevents card use",
+	                "Disrupts combos ",
+	                "Punishes mistakes with massive damage"
                 ],
                 ENG: [
                 ]
@@ -1514,8 +1514,8 @@ const champList = {
 				{cond:true, priority:-1000},
 			],
 			"B2-AT-004":[
-				{cond:{v1:"발정", op:"<", v2:"8"}, priority:-Infinity},
-				{cond:{v1:"발정", op:">=", v2:"8"}, priority:90},
+				{cond:{v1:"Heat", op:"<", v2:"8"}, priority:-Infinity},
+				{cond:{v1:"Heat", op:">=", v2:"8"}, priority:90},
 			],
 			"B2-SU-001":[
 				{cond:"체위", priority:100},
@@ -1547,8 +1547,8 @@ const champList = {
             orgasmL: 1,
             specialties: {
                 KOR: [
-                	"높은 흥분 한계",
-                    "음란을 낮추고 흥분을 회복하기",
+                	"높은 Excitement Limit",
+                    "Lewdness을 낮추고 Excitement을 회복하기",
                     "장기전으로 갈수록 강해짐"
                 ],
                 ENG: [
@@ -1576,23 +1576,23 @@ const champList = {
 				{cond:true, priority:Infinity}
 			],
 			"B3-AT-001+":[
-				{cond:{v1:"음란", op:"<=", v2:"4"}, priority:3},
-				{cond:{v1:"발정", op:">=", v2:"4"}, priority:3},
+				{cond:{v1:"Lewdness", op:"<=", v2:"4"}, priority:3},
+				{cond:{v1:"Heat", op:">=", v2:"4"}, priority:3},
 			],
 			"B3-AT-002":[
 				{cond:true, priority:-1000}
 			],
 			"B3-AT-003":[
-				{cond:{v1:"실제음란", op:">", v2:"2"}, priority:4}
+				{cond:{v1:"실제Lewdness", op:">", v2:"2"}, priority:4}
 			],
 			"B3-AT-004":[
-				{cond:{v1:"발정", op:"<=", v2:"5"}, priority:4}
+				{cond:{v1:"Heat", op:"<=", v2:"5"}, priority:4}
 			],
 			"B3-SU-001":[
-				{cond:{v1:"실제음란", op:">", v2:"4"}, priority:5}
+				{cond:{v1:"실제Lewdness", op:">", v2:"4"}, priority:5}
 			],
 			"B3-SU-002+":[
-				{cond:{v1:"자신.흥분", op:">=", v2:"20"}, priority:6}
+				{cond:{v1:"자신.Excitement", op:">=", v2:"20"}, priority:6}
 			],
 			"B3-SU-003":[
 				{cond:true, priority:2},
@@ -1614,7 +1614,7 @@ const champList = {
             specialties: {
                 KOR: [
                 	"한 번에 여러 번 자극하기",
-                    "고정된 발정 수치",
+                    "고정된 Heat 수치",
                     "조건에 따른 점진적 성장"
                 ],
                 ENG: [
@@ -1642,14 +1642,14 @@ const champList = {
 				{cond:true, priority:3}
 			],
 			"B4-AT-002":[
-				{cond:true, priority:"음란"}
+				{cond:true, priority:"Lewdness"}
 			],
 			"B4-AT-003":[
 				{cond:{v1:"라운드", op:"<", v2:4}, priority:-2},
 				{cond:true, priority:"라운드"}
 			],
 			"B4-AT-004+":[
-				{cond:true, priority:"실제발정"}
+				{cond:true, priority:"실제Heat"}
 			],
 			"B4-SU-001+":[
 				{cond:true, priority:Infinity}
@@ -1676,7 +1676,7 @@ const champList = {
             specialties: {
                 KOR: [
                 	"매우 공격적인 플레이",
-                    "빠르게 증가하는 발정",
+                    "빠르게 증가하는 Heat",
                     "시간경과 시 점차 자멸함"
                 ],
                 ENG: [
@@ -1708,7 +1708,7 @@ const champList = {
 				{cond:true, priority:-1000}
 			],
 			"B5-SU-001":[
-				{cond:{v1:"발정", op:"<=", v2:3}, priority:6}
+				{cond:{v1:"Heat", op:"<=", v2:3}, priority:6}
 			],
 		}
 	},
@@ -1726,7 +1726,7 @@ const champList = {
             specialties: {
                 KOR: [
                 	"상대의 덱에 포자를 결속시키기",
-                    "자극 외의 수단으로 흥분 증가시키기",
+                    "자극 외의 수단으로 Excitement 증가시키기",
                     "여러 장의 card 사용하기"
                 ],
                 ENG: [
@@ -1810,31 +1810,31 @@ const champList = {
 				{cond:true, priority:Infinity}
 			],
 			"B7-AT-001":[
-				{cond:{v1:"젖음", op:">=", v2:"발정"}, priority:-100},
-				{cond:{v1:"플레이어.남은흥분", op:"<=", v2:"발정"}, priority:10},
+				{cond:{v1:"Wetness", op:">=", v2:"Heat"}, priority:-100},
+				{cond:{v1:"플레이어.남은Excitement", op:"<=", v2:"Heat"}, priority:10},
 				{cond:{v1:"플레이어.기록.이번.이벤트.자극함", op:">", v2:0}, priority:5}
 			],
 			"B7-AT-002":[
-				{cond:{v1:"플레이어.남은흥분", op:"<=", v2:"발정"}, priority:10},
+				{cond:{v1:"플레이어.남은Excitement", op:"<=", v2:"Heat"}, priority:10},
 				{cond:"체위", priority:5}
 			],
 			"B7-AT-003":[
-				{cond:{v1:"젖음", op:">=", v2:"발정"}, priority:-100},
-				{cond:{v1:"플레이어.남은흥분", op:"<=", v2:"발정"}, priority:10},
+				{cond:{v1:"Wetness", op:">=", v2:"Heat"}, priority:-100},
+				{cond:{v1:"플레이어.남은Excitement", op:"<=", v2:"Heat"}, priority:10},
 				{cond:{v1:"플레이어.행동.length", op:">=", v2:2}, priority:5},
 				{cond:{v1:"플레이어.행동.length", op:">=", v2:3}, priority:5},
 			],
 			"B7-AT-004":[
-				{cond:{v1:"젖음", op:">=", v2:"발정"}, priority:-100},
-				{cond:{v1:"플레이어.남은흥분", op:"<=", v2:"발정"}, priority:10},
+				{cond:{v1:"Wetness", op:">=", v2:"Heat"}, priority:-100},
+				{cond:{v1:"플레이어.남은Excitement", op:"<=", v2:"Heat"}, priority:10},
 				{cond:{v1:"Champion.기록.이번.이벤트.절정", op:">", v2:0}, priority:5}
 			],
 			"B7-AT-005":[
 				{cond:true, priority:-1000},
 			],
 			"B7-SU-001":[
-				{cond:{v1:"Champion.기록.이번.이벤트.흥분.증가", op:"==", v2:0}, priority:4},
-				{cond:{v1:"음란", op:">", v2:2}, priority:1}
+				{cond:{v1:"Champion.기록.이번.이벤트.Excitement.증가", op:"==", v2:0}, priority:4},
+				{cond:{v1:"Lewdness", op:">", v2:2}, priority:1}
 			],
 			"B7-SU-002":[
 				{cond:{v1:"라운드", op:">=", v2:4}, priority:3},
@@ -1847,7 +1847,7 @@ const champList = {
 			],
 			"B7-SU-004":[
 				{cond:true, priority:4},
-				{cond:{v1:"발정", op:"<", v2:2}, priority:3}
+				{cond:{v1:"Heat", op:"<", v2:2}, priority:3}
 			],
 		}
 	},
@@ -2394,7 +2394,7 @@ const customStructure = {
         ]
     },
     "excite": {
-        "label": "흥분",
+        "label": "Excitement",
         "fields": [
             {
             	"id": "target",
@@ -2516,7 +2516,7 @@ const customStructure = {
         ],
     },
     "exciteL": {
-        "label": "흥분 한계",
+        "label": "Excitement Limit",
         "fields": [
             {
             	"id": "target",
@@ -2638,7 +2638,7 @@ const customStructure = {
         ],
     },
     "lewd": {
-        "label": "음란",
+        "label": "Lewdness",
         "fields": [
             {
             	"id": "op",
@@ -2750,7 +2750,7 @@ const customStructure = {
         ],
     },
     "Heat": {
-        "label": "발정",
+        "label": "Heat",
         "fields": [
             {
             	"id": "op",
@@ -2984,11 +2984,11 @@ const customStructure = {
         "fields": []
     },
     "changeLust": {
-        "label": "욕망",
+        "label": "Lust",
         "fields": [
         	{
 	            "id": "valueType",
-                "label": "욕망",
+                "label": "Lust",
                 "type": "select",
                 "options": [
                     { value: "constant", text: "숫자" },
@@ -3117,11 +3117,11 @@ const customStructure = {
         ]
     },
     "changeWetness": {
-        "label": "젖음",
+        "label": "Wetness",
         "fields": [
         	{
 	            "id": "valueType",
-                "label": "젖음",
+                "label": "Wetness",
                 "type": "select",
                 "options": [
                     { value: "constant", text: "숫자" },
@@ -3365,11 +3365,11 @@ const customStructure = {
         ]
     },
     "changeCorrupt": {
-        "label": "타락",
+        "label": "Corruption",
         "fields": [
         	{
 	            "id": "valueType",
-                "label": "타락",
+                "label": "Corruption",
                 "type": "select",
                 "options": [
                     { value: "constant", text: "숫자" },
@@ -3537,19 +3537,19 @@ const customStructure = {
 };
 
 const variableList = [
-    { value: "lewd", text: "음란" },
-    { value: "Heat", text: "발정" },
-    { value: "excite", text: "흥분" },
-    { value: "exciteL", text: "흥분 한계" },
+    { value: "lewd", text: "Lewdness" },
+    { value: "Heat", text: "Heat" },
+    { value: "excite", text: "Excitement" },
+    { value: "exciteL", text: "Excitement Limit" },
     { value: "deck", text: "덱" },
     { value: "state", text: "상태", condition:["or", {v1:"커스텀.직업", op:"==", v2:"Assassin"}, {v1:"커스텀.직업", op:"==", v2:"Magician"}] },
     { value: "use", text: "사용" },
     { value: "get", text: "획득" },
     { value: "discard", text: "버림", condition:{v1:"커스텀.직업", op:"==", v2:"Warrior"} },
-    { value: "lust", text: "욕망", condition:{v1:"커스텀.직업", op:"==", v2:"Warrior"} },
-    { value: "wetness", text: "젖음", condition:{v1:"커스텀.직업", op:"==", v2:"Assassin"} },
+    { value: "lust", text: "Lust", condition:{v1:"커스텀.직업", op:"==", v2:"Warrior"} },
+    { value: "wetness", text: "Wetness", condition:{v1:"커스텀.직업", op:"==", v2:"Assassin"} },
     { value: "sBlock", text: "감각차단", condition:{v1:"커스텀.직업", op:"==", v2:"Magician"} },
-    { value: "corrupt", text: "타락", condition:{v1:"커스텀.직업", op:"==", v2:"Healer"} },
+    { value: "corrupt", text: "Corruption", condition:{v1:"커스텀.직업", op:"==", v2:"Healer"} },
     { value: "round", text: "라운드" },
     { value: "stack", text: "강화 스택" }
 ]
@@ -3744,15 +3744,15 @@ const keywordDict = {
         name: { "KOR":"Combine" },
         desc: { "KOR":"Combines multiple cards into a single Combined Card.<br>When a Combined Card is used, the effects of its material cards activate in sequence." }
     },
-	"욕망": {
+	"Lust": {
         name: { "KOR":"Desire" },
         desc: { "KOR":"Whenever Excitement increases, gain an equal amount of Desire." }
     },
-	"욕망n": {
+	"Lustn": {
         name: { "KOR":"Desire (n)" },
         desc: { "KOR":"Whenever Excitement increases, gain an equal amount of Desire.<br>If you have n or more Desire, consume that much to gain the following effect." }
     },
-	"욕망Maxn": {
+	"LustMaxn": {
         name: { "KOR":"Desire (up to n)" },
         desc: { "KOR":"Whenever Excitement increases, gain an equal amount of Desire.<br>Consume all your Desire, up to a maximum of n, to gain the following effect." }
     },
@@ -3764,11 +3764,11 @@ const keywordDict = {
         name: { "KOR":"Upgrade" },
         desc: { "KOR":"The number within *n* increases by the upgrade amount." }
     },
-	"젖음": {
+	"Wetness": {
         name: { "KOR":"Wetness" },
         desc: { "KOR":"Wetness increases after playing a card and resets at the end of the round.<br>If Wetness is equal to or greater than Lust, you can evade <b>[Stimulation]</b>." }
     },
-	"젖음n": {
+	"Wetnessn": {
         name: { "KOR":"Wetness (n)" },
         desc: { "KOR":"Wetness increases after playing a card and resets at the end of the round.<br>If you have n or more Wetness, gain the following effect." }
     },
@@ -3796,15 +3796,15 @@ const keywordDict = {
         name: { "KOR":"Essence Drain" },
         desc: { "KOR":"Heal Excitement equal to the amount of Excitement you inflicted on the opponent." }
     },
-	"타락": {
+	"Corruption": {
         name: { "KOR":"Corruption" },
         desc: { "KOR":"Corruption increases by 1 each round." }
     },
-	"타락n": {
+	"Corruptionn": {
         name: { "KOR":"Corruption (n)" },
         desc: { "KOR":"Corruption increases by 1 each round.<br>If you have n or more Corruption, gain the following effect." }
     },
-	"타락n이하": {
+	"Corruptionn이하": {
         name: { "KOR":"Corruption (n or less)" },
         desc: { "KOR":"Corruption increases by 1 each round.<br>If your Corruption is n or less, gain the following effect." }
     },
@@ -3817,7 +3817,7 @@ const keywordDict = {
         desc: { "KOR":"When the Count reaches 0, the effect activates.<br>Afterward, the Count resets." }
     },
 	"클라이맥스": {
-        name: { "KOR":"Climax" },
+        name: { "KOR":"Orgasm" },
         desc: { "KOR":"If you have no other cards to play, this card is used.<br>This card does not disappear from the deck." }
     },
 }

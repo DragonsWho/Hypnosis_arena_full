@@ -374,7 +374,7 @@ const cardDB = {
 		flavorText:{ "KOR":"The followers of the Leia religion set aside time for regular prayer.<br>On rare occasions, the goddess Aleia herself speaks to her people.<br>To follow her revelation, no matter what it may be—that is the sacred mission of the Leia faith." },
 		hypnoText:{ "KOR":"Any command received through a revelation must be obeyed.<br>Even if that command is to have an orgy with men." },
 		effect:[
-			{trigger:"turnStart", cond:{v1:"자신.흥분", op:">=", v2:4}, type:"excite", target:"self", op:"set", value:0},
+			{trigger:"turnStart", cond:{v1:"자신.Excitement", op:">=", v2:4}, type:"excite", target:"self", op:"set", value:0},
 		]
 	},
 	"AD-NT-EL-BG5-001":{
@@ -852,7 +852,7 @@ const cardDB = {
 
 	"AD-WA-ALL-001":{
 		name:{ "KOR":"Rage" }, class:"Warrior", type:"특성", isDeck:false, rarity:"없음", cost:10, owner:1,
-		tags:["group:욕망", "race:Beastfolk"],
+		tags:["group:Lust", "race:Beastfolk"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"By unleashing their anger in battle, a warrior overwhelms their enemies with sheer power and momentum.<br>In this state of rage, they forget pain and fear, sweeping across the battlefield with immense combat strength." },
 		hypnoText:{ "KOR":"You are permanently in heat.<br>Your unquenchable lust makes you crave cock." },
@@ -862,7 +862,7 @@ const cardDB = {
 	},
 	"AD-WA-ALL-002":{
 		name:{ "KOR":"Guardian" }, class:"Warrior", type:"특성", isDeck:false, rarity:"없음", cost:10, owner:1,
-		tags:["group:발정 감소", "group:Penalty", "race:Silvani"],
+		tags:["group:Heat 감소", "group:Penalty", "race:Silvani"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"A warrior stands at the forefront to protect their comrades.<br>Serving as the team's shield with thorough defense and a spirit of self-sacrifice, they prove their true worth in moments of crisis." },
 		hypnoText:{ "KOR":"A gatekeeper is a gaping hole installed at the gate for anyone to use freely.<br>For a long time, it has received the cocks and fingers of countless strangers." },
@@ -874,7 +874,7 @@ const cardDB = {
 
 	"AD-WA-BG1-001":{
 		name:{ "KOR":"The Best Defense is a Good Offense" }, class:"Warrior", type:"특성", isDeck:false, rarity:"없음", bg:"Soldier", cost:15, owner:1,
-		tags:["group:발정 감소", "race:Eldorian"],
+		tags:["group:Heat 감소", "race:Eldorian"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"A single surprise attack targeting an enemy's weakness is ultimately safer than raising your shield a hundred times.<br>The strategy of breaking the enemy's defense with an aggressive offense can itself become the defense that protects your allies." },
 		hypnoText:{ "KOR":"When facing a man, you must quickly suck his cock and make him cum to neutralize him.<br>A swift, deep-throating blowjob is crucial to prevent him from retaliating." },
@@ -884,7 +884,7 @@ const cardDB = {
 	},
 	"AD-WA-BG1-002":{
 		name:{ "KOR":"Physical Training" }, class:"Warrior", type:"특성", isDeck:false, rarity:"없음", bg:"Soldier", cost:15, owner:1,
-		tags:["group:욕망", "race:Silvani"],
+		tags:["group:Lust", "race:Silvani"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Through relentless training, you have developed a body of steel.<br>Grueling drills and practice have perfected your physique, and your tireless stamina allows you to endure to the end on any battlefield." },
 		hypnoText:{ "KOR":"Cowgirl squats are an important part of physical training.<br>You must practice riding a man and grinding your hips in 5 sets of 20 reps every day." },
@@ -914,7 +914,7 @@ const cardDB = {
 	},
 	"AD-WA-BG2-002":{
 		name:{ "KOR":"Employment" }, class:"Warrior", type:"특성", isDeck:false, rarity:"없음", bg:"Noble", cost:15, owner:1,
-		tags:["group:욕망", "race:Silvani"],
+		tags:["group:Lust", "race:Silvani"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"If you can't have every talent, it's better to entrust the task to someone who does.<br>Since you have more than enough money, you have no problem hiring plenty of capable people." },
 		hypnoText:{ "KOR":"You must hire a man to wash your pussy with his cock during your bath.<br>Having a dedicated pussy-washer is essential for maintaining your dignity." },
@@ -925,12 +925,12 @@ const cardDB = {
 	
 	"AD-WA-BG3-001":{
 		name:{ "KOR":"Pump Up the Crowd!" }, class:"Warrior", type:"특성", isDeck:false, rarity:"없음", bg:"Celebrity", cost:20, owner:1,
-		tags:["group:욕망", "race:Halfling"],
+		tags:["group:Lust", "race:Halfling"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"In battle, you value flow and atmosphere.<br>As the battle intensifies and the mood heats up, you gradually grow stronger." },
 		hypnoText:{ "KOR":"You must perform the sow dance, vulgarly shaking your breasts and ass.<br>Being jumped by the excited audience is all part of the show." },
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"욕망", op:">=", v2:3}, condOmit:true, type:"lust",
+			{trigger:"turnEnd", cond:{v1:"Lust", op:">=", v2:3}, condOmit:true, type:"lust",
 			info:{
 				value:2, 
 				effect:[
@@ -956,7 +956,7 @@ const cardDB = {
 	
 	"AD-WA-BG4-001":{
 		name:{ "KOR":"Pacifism" }, class:"Warrior", type:"특성", isDeck:false, rarity:"없음", bg:"Cleric", cost:20, owner:1,
-		tags:["group:발정 감소", "race:Eldorian"],
+		tags:["group:Heat 감소", "race:Eldorian"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"You seek peace over war and violence.<br>Instead of subduing opponents with force, you try to solve problems through dialogue, and you strive to avoid bloodshed in any situation." },
 		hypnoText:{ "KOR":"You must serve the angry cocks to appease their wrath.<br>It's all your fault for having such a lewd body." },
@@ -979,12 +979,12 @@ const cardDB = {
 	
 	"AD-WA-BG5-001":{
 		name:{ "KOR":"Fieldwork" }, class:"Warrior", type:"특성", isDeck:false, rarity:"없음", bg:"Scholar", cost:15, owner:1,
-		tags:["group:욕망", "race:Eldorian"],
+		tags:["group:Lust", "race:Eldorian"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"You don't just accumulate knowledge at a desk.<br>You learn through direct experience on the battlefield, combining theory and practice.<br>You risk danger to endlessly pursue the truth." },
 		hypnoText:{ "KOR":"You must experience being raped firsthand.<br>You can't truly understand the feelings of a masochistic bitch just by reading books or fantasizing." },
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"욕망", op:">=", v2:9}, condOmit:true, type:"lust",
+			{trigger:"turnEnd", cond:{v1:"Lust", op:">=", v2:9}, condOmit:true, type:"lust",
 			info:{
 				value:9, 
 				effect:[
@@ -1016,7 +1016,7 @@ const cardDB = {
 	},
 	"AD-WA-BG6-002":{
 		name:{ "KOR":"Notoriety" }, class:"Warrior", type:"특성", isDeck:false, rarity:"없음", bg:"Rogue", cost:10, owner:1,
-		tags:["group:욕망", "race:Eldorian"],
+		tags:["group:Lust", "race:Eldorian"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Your name has become a symbol of terror.<br>Everyone fears you at the mere mention of your name and flees at the sight of your face." },
 		hypnoText:{ "KOR":"You were a notorious whore on the streets.<br>Forced to spread your legs for anyone, anywhere, you must endure a life of lecherous stares and constant harassment." },
@@ -1079,7 +1079,7 @@ const cardDB = {
 	},
 	"AD-WA-BG8-002":{
 		name:{ "KOR":"Nothing to Lose" }, class:"Warrior", type:"특성", isDeck:false, rarity:"없음", bg:"Mercenary", cost:10, owner:1,
-		tags:["group:버리기", "group:욕망", "race:Beastfolk"],
+		tags:["group:버리기", "group:Lust", "race:Beastfolk"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Having nothing to protect means having no weaknesses.<br>Family, comrades, reputation, or status—there is nothing that can tie you down." },
 		hypnoText:{ "KOR":"You must abandon everything you have and offer it to a man.<br>Among the things you must give up is your human dignity." },
@@ -1196,7 +1196,7 @@ const cardDB = {
 		flavorText:{ "KOR":"Although murder conflicts with the doctrine, it is unavoidable for the greater good.<br>You often pray alone, confessing your sins and asking for the forgiveness of the god you serve." },
 		hypnoText:{ "KOR":"For failing to overcome lust and masturbating, for being born with a lewd body, for arousing others and causing them to rape you...<br>You must confess your sins while naked in the bitch-pose." },
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"젖음", op:">=", v2:5}, condOmit:true, type:"wetness",
+			{trigger:"turnEnd", cond:{v1:"Wetness", op:">=", v2:5}, condOmit:true, type:"wetness",
 			info:{
 				value:5,
 				effect:[
@@ -1515,7 +1515,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You are deeply connected to the life force of nature, and through that energy, you infuse your surroundings with healing power.<br>Where you stand, life overflows, and the wounded feel a natural recovery in your presence.<br>That life force, like an endless spring, envelops you and your surroundings, giving you the power to restore life." },
 		hypnoText:{ "KOR":"To share your life force, you must have naked skin-to-skin contact.<br>It is common sense that the effect is magnified when mucous membranes touch and bodily fluids are exchanged." },
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"자신.흥분", op:">", v2:0}, type:"excite", target:"self", op:"add", value:-1}
+			{trigger:"turnEnd", cond:{v1:"자신.Excitement", op:">", v2:0}, type:"excite", target:"self", op:"add", value:-1}
 		]
 	},
 	"AD-HE-ALL-002":{
@@ -1537,7 +1537,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You served as a medic on the front lines, saving the lives of soldiers.<br>In every life-or-death moment, you extended a helping hand to the soldiers, becoming the last hope connecting battle and life." },
 		hypnoText:{ "KOR":"A medic must help soldiers release their pent-up sexual frustration.<br>You periodically perform orgy therapy inside the medical tent." },
 		effect:[
-			{trigger:"always", cond:true, type:"lewd", op:"add", value:"자신.기록.최근.이벤트.흥분.감소"}
+			{trigger:"always", cond:true, type:"lewd", op:"add", value:"자신.기록.최근.이벤트.Excitement.감소"}
 		]
 	},
 	"AD-HE-BG1-002":{
@@ -1785,7 +1785,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You have the ability to quickly heal your own wounds during battle.<br>With healing potions or first aid, you can recover on the spot, boasting a powerful survivability that allows you to fight relentlessly, unlike other mercenaries." },
 		hypnoText:{ "KOR":"You occasionally go into heat during battle and must quickly relieve it by masturbating.<br>If you fail to do so, you will start to crave a defeat-rape." },
 		effect:[
-			{trigger:"always", cond:{v1:"자신.흥분", op:">=", v2:5}, type:"absorption", target:"self"}
+			{trigger:"always", cond:{v1:"자신.Excitement", op:">=", v2:5}, type:"absorption", target:"self"}
 		]
 	},
 	"AD-HE-BG8-002":{
@@ -1927,7 +1927,7 @@ const cardDB = {
 		flavorText:{ "KOR":"Endless battles and the excessive use of power have finally driven you to exhaustion.<br>Your body has reached its limit, and you may not be able to fight any longer." },
 		hypnoText:{ "KOR":"The memory of being so thoroughly raped that you couldn't even move comes back to you.<br>You were fucked until you passed out, and when you woke up, you were fucked again, endlessly." },
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"욕망", op:">", v2:0}, condOmit:true, type:"changeLust", op:"add", value:-1},
+			{trigger:"turnEnd", cond:{v1:"Lust", op:">", v2:0}, condOmit:true, type:"changeLust", op:"add", value:-1},
 		]
 	},
 
@@ -2060,7 +2060,7 @@ const cardDB = {
 		flavorText:{ "KOR":"Your crimes were so great that you became wanted. It's dangerous to stay in one place for long." },
 		hypnoText:{ "KOR":"Being on the run has made you sensitive.<br>Your habit of looking around when aroused has become a weakness." },
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"욕망", op:">=", v2:10}, type:"excite", target:"self", op:"add", value:2},
+			{trigger:"turnEnd", cond:{v1:"Lust", op:">=", v2:10}, type:"excite", target:"self", op:"add", value:2},
 		]
 	},*/
 	"DA-WA-BG7-001":{
@@ -2123,7 +2123,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You're not feeling well today, so you failed to hide, and the chance of being discovered has increased.<br>The assassin's specialties, surprise attacks and evasion, are impossible, forcing you into a direct confrontation." },
 		hypnoText:{ "KOR":"Your true identity is an exhibitionist slut who enjoys naked walks at night.<br>You were finally caught, and the residents have seen your face and entire body." },
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"젖음", op:"<", v2:2}, condOmit:true, type:"excite", target:"self", op:"add", value:2},
+			{trigger:"turnEnd", cond:{v1:"Wetness", op:"<", v2:2}, condOmit:true, type:"excite", target:"self", op:"add", value:2},
 			{trigger:"turnEnd", cond:false, condOmit:true, type:"wetness",
 			info:{
 				value:2,
@@ -2198,7 +2198,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You see the world only in extremes.<br>You divide everything into good and evil, right and wrong, and do not acknowledge the gray area in between.<br>This rigid way of thinking makes complex situations more difficult and hinders cooperation and understanding." },
 		hypnoText:{ "KOR":"The male dominates, the female submits.<br>This is a clear and indisputable truth." },
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"자신.흥분", op:">", v2:0}, type:"orgasm", target:"self"},
+			{trigger:"turnEnd", cond:{v1:"자신.Excitement", op:">", v2:0}, type:"orgasm", target:"self"},
 		]
 	},
 	"DA-AS-BG6-001":{
@@ -2618,7 +2618,7 @@ const cardDB = {
 		expiration:"turnEnd", duration:3,
 		effect:[
 			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"Applied if you are a Tribe." }},
-			{trigger:"expired", cond:{v1:"음란", op:"<", v2:4}, type:"defeat", target:"self"},
+			{trigger:"expired", cond:{v1:"Lewdness", op:"<", v2:4}, type:"defeat", target:"self"},
 		]
 	},
 
@@ -2696,7 +2696,7 @@ const cardDB = {
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"Applied if you are a Sylvani." }},
-			{trigger:"turnEnd", cond:{v1:"자신.기록.이번.이벤트.흥분.증가", op:"==", v2:0}, type:"attack", target:"self"},
+			{trigger:"turnEnd", cond:{v1:"자신.기록.이번.이벤트.Excitement.증가", op:"==", v2:0}, type:"attack", target:"self"},
 		]
 	},
 	"DA-NT-ALL-004-3":{
@@ -2814,7 +2814,7 @@ const cardDB = {
 		cond:true,
 		tags:["덱빌딩", "act:펠라치오"],
 		effect:[
-			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:"발정"},
+			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:"Heat"},
 		]
 	},
 
@@ -2956,7 +2956,7 @@ const cardDB = {
 	"WA-NM-AT-001":{
 		name:{ "KOR":"Disarm" }, class:"Warrior", type:"공격", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:발정 감소", "group:욕망", "race:Eldorian", "act:펠라치오"],
+		tags:["덱빌딩", "group:Heat 감소", "group:Lust", "race:Eldorian", "act:펠라치오"],
 		flavorText:{ "KOR":"Knock the weapon from the enemy's hand.<br>By leaving your opponent defenseless and breaking their will to fight, you can end the battle without bloodshed." },
 		hypnoText:{ "KOR":"A technique to discover the 'weapon' hidden in an opponent's groin, then suck it until they cum.<br>You must suck with strong suction to drain them and render them powerless." },
 		effect:[
@@ -2974,7 +2974,7 @@ const cardDB = {
 	"WA-NM-AT-002":{
 		name:{ "KOR":"Wide Swing" }, class:"Warrior", type:"공격", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:욕망", "race:Eldorian", "act:삽입"],
+		tags:["덱빌딩", "group:Lust", "race:Eldorian", "act:삽입"],
 		flavorText:{ "KOR":"Swing your weapon in a wide arc to sweep away all enemies on the battlefield at once.<br>With great strength and courage, you can crush the enemy's formation with a single swing, turning the tide of battle in your favor." },
 		hypnoText:{ "KOR":"A technique of powerfully swinging your hips to thrust.<br>You directly show your opponent your jiggling ass." },
 		effect:[
@@ -3055,7 +3055,7 @@ const cardDB = {
 	"WA-NM-SU-001":{
 		name:{ "KOR":"Shields Up" }, class:"Warrior", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:발정 감소", "race:Eldorian"],
+		tags:["덱빌딩", "group:Heat 감소", "race:Eldorian"],
 		flavorText:{ "KOR":"The massive shield is the symbol of the Eldorian Guardian Knights.<br>They have earned the nickname 'Shield of Eldoria' because they consider it their mission to block enemy attacks and protect their allies with their own bodies." },
 		hypnoText:{ "KOR":"A technique where you take off your top and cover your breasts with your hands, exposing yourself in a defenseless state.<br>You can feel excitement through shame and humiliation, teasing your opponent." },
 		effect:[
@@ -3065,7 +3065,7 @@ const cardDB = {
 	"WA-NM-SU-002":{
 		name:{ "KOR":"Taunt" }, class:"Warrior", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true, related:["Penalty"],
-		tags:["덱빌딩", "group:발정 감소", "group:Penalty", "race:Beastfolk"],
+		tags:["덱빌딩", "group:Heat 감소", "group:Penalty", "race:Beastfolk"],
 		flavorText:{ "KOR":"Enrage the opponent to focus their attention on you.<br>With courage and wit, you draw the enemy's attacks to yourself, creating an opening for your allies." },
 		hypnoText:{ "KOR":"A technique to taunt your opponent by thrusting your ass out and spreading your pussy with your hands, luring them in.<br>You mock your opponent with insults, goading them to attack." },
 		effect:[
@@ -3087,7 +3087,7 @@ const cardDB = {
 	"WA-NM-SU-003":{
 		name:{ "KOR":"Ironclad Defense" }, class:"Warrior", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "버리기", "group:버리기", "group:발정 감소", "race:Silvani"],
+		tags:["덱빌딩", "버리기", "group:버리기", "group:Heat 감소", "race:Silvani"],
 		flavorText:{ "KOR":"Block all enemy attacks with a solid defensive stance.<br>Become the backbone of the battlefield with an ironclad defense, protecting the safety of your allies." },
 		hypnoText:{ "KOR":"A technique where you sit with your legs spread, exposing your pussy and inviting your opponent to enter.<br>You give your opponent the first move but seize the initiative by taking an advantageous position." },
 		effect:[
@@ -3108,12 +3108,12 @@ const cardDB = {
 	"WA-NM-SU-004":{
 		name:{ "KOR":"Full Metal Armor" }, class:"Warrior", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true, related:["Penalty"],
-		tags:["덱빌딩", "group:욕망", "group:Penalty", "race:Halfling"],
+		tags:["덱빌딩", "group:Lust", "group:Penalty", "race:Halfling"],
 		flavorText:{ "KOR":"Halfling heavy infantry fight wearing armor heavier than their own body weight.<br>Their massive armor is like a moving wall that guards the front lines." },
 		hypnoText:{ "KOR":"Based on the common sense that the more you expose, the stronger your defense becomes, this technique shows off that being naked is the ultimate state of defense.<br>Your confidence rises, allowing you to enjoy it for longer." },
 		effect:[
 			{trigger:"used", cond:true, type:"exciteL", op:"add", target:"self", value:2},
-			{trigger:"used", cond:{v1:"욕망", op:"<", v2:3}, condOmit:true, type:"get", target:"self", value:"randomCard(type, Penalty)"},
+			{trigger:"used", cond:{v1:"Lust", op:"<", v2:3}, condOmit:true, type:"get", target:"self", value:"randomCard(type, Penalty)"},
 			{trigger:"used", cond:true, type:"lust",
 			info:{
 				value:3, 
@@ -3126,7 +3126,7 @@ const cardDB = {
 	"WA-NM-SU-005":{
 		name:{ "KOR":"Rising Thirst" }, class:"Warrior", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:욕망", "race:Beastfolk"],
+		tags:["덱빌딩", "group:Lust", "race:Beastfolk"],
 		flavorText:{ "KOR":"A bloodthirsty warrior does not suppress their thirst, but transforms it into a powerful force that overwhelms their enemies, becoming a symbol of struggle that stains the battlefield." },
 		hypnoText:{ "KOR":"A technique of craving cum and begging for it to be sprayed on your face and in your mouth.<br>You take the facial with a rapturous expression and savor the taste of the cum." },
 		effect:[
@@ -3173,7 +3173,7 @@ const cardDB = {
 	"WA-NM-PS-002":{
 		name:{ "KOR":"Fortress Stance" }, class:"Warrior", type:"체위", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:발정 감소", "group:욕망", "race:Halfling"],
+		tags:["덱빌딩", "group:Heat 감소", "group:Lust", "race:Halfling"],
 		flavorText:{ "KOR":"The Fortress Stance is a powerful defensive posture mainly used by halfling heavy infantry.<br>Once they take their position, they are as immovable as a fortress, making it extremely difficult to break through." },
 		hypnoText:{ "KOR":"A position where you curl up and cover yourself defensively.<br>It prevents the sex from proceeding as your opponent wishes, but the passive posture causes unsatisfied desire to build up." },
 		expiration:"always", duration:Infinity, 
@@ -3188,7 +3188,7 @@ const cardDB = {
 	"WA-EX-AT-001":{
 		name:{ "KOR":"Crush" }, class:"Warrior", type:"공격", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:욕망", "race:Eldorian", "act:삽입"],
+		tags:["덱빌딩", "group:Lust", "race:Eldorian", "act:삽입"],
 		flavorText:{ "KOR":"Smash the enemy with a massive weapon.<br>Ignore the opponent's defense and shatter them in a single blow." },
 		hypnoText:{ "KOR":"A technique of fucking by roughly swinging and slamming your ass down.<br>The sound of flesh slapping against flesh echoes, making your opponent feel the full weight of your voluptuous ass." },
 		effect:[
@@ -3240,7 +3240,7 @@ const cardDB = {
 	"WA-EX-SU-001":{
 		name:{ "KOR":"Maintenance" }, class:"Warrior", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "버리기", "group:버리기", "group:발정 감소", "group:욕망", "race:Silvani"],
+		tags:["덱빌딩", "버리기", "group:버리기", "group:Heat 감소", "group:Lust", "race:Silvani"],
 		flavorText:{ "KOR":"Maintaining your equipment is essential for survival in battle.<br>The price of neglecting maintenance will one day be paid with regret." },
 		hypnoText:{ "KOR":"A technique to meticulously check the condition of your pussy and prepare for penetration.<br>You check the wetness, cleanliness, and sensitivity to maintain optimal condition, ensuring you are always ready for insertion." },
 		effect:[
@@ -3258,7 +3258,7 @@ const cardDB = {
 	"WA-EX-SU-002":{
 		name:{ "KOR":"Rapid Step" }, class:"Warrior", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:발정 감소", "group:욕망", "race:Beastfolk"],
+		tags:["덱빌딩", "group:Heat 감소", "group:Lust", "race:Beastfolk"],
 		flavorText:{ "KOR":"Martial artist warriors choose speed for swift response over increased defense.<br>They can instantly create distance or change position to neutralize enemy attacks and look for a chance to counter." },
 		hypnoText:{ "KOR":"A technique to quickly switch between various positions to find the best one for pleasure.<br>You can handle even somewhat niche positions without a problem." },
 		effect:[
@@ -3288,7 +3288,7 @@ const cardDB = {
 	"WA-EX-SU-004":{
 		name:{ "KOR":"Mount" }, class:"Warrior", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:발정 감소", "group:욕망", "race:Beastfolk"],
+		tags:["덱빌딩", "group:Heat 감소", "group:Lust", "race:Beastfolk"],
 		flavorText:{ "KOR":"Pin down your opponent with your body weight and simultaneously take an advantageous position for attack.<br>This technique, which requires a warrior's strength and agility, allows you to neutralize your opponent and turn the battle in your favor." },
 		hypnoText:{ "KOR":"A technique to completely dominate your opponent by mounting them and grinding your hips.<br>Your opponent is rendered helpless, forced to surrender their body to your movements and receive intense stimulation." },
 		effect:[
@@ -3321,7 +3321,7 @@ const cardDB = {
 		cond:true,
 		flavorText:{ "KOR":"The Forge Stance is a combat posture used by the inhabitants of the northern mountain regions, characterized by gradually heating the body to overcome the cold and build strength.<br>This technique slowly tempers the body, allowing one to exert combat power even in extreme environments." },
 		hypnoText:{ "KOR":"A position where you sit with your legs spread and have sex while hugging.<br>You can share warmth with your partner and make love as you mix your bodies together." },
-		tags:["덱빌딩", "group:욕망", "race:Eldorian"],
+		tags:["덱빌딩", "group:Lust", "race:Eldorian"],
 		expiration:"always", duration:Infinity, 
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"체위변경"},
@@ -3339,14 +3339,14 @@ const cardDB = {
 	"WA-UL-AT-001":{
 		name:{ "KOR":"Execution" }, class:"Warrior", type:"공격", isDeck:true, rarity:"궁극", cost:20, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:욕망", "race:Silvani", "act:삽입"], keywords:["욕망"],
+		tags:["덱빌딩", "group:Lust", "race:Silvani", "act:삽입"], keywords:["Lust"],
 		flavorText:{ "KOR":"The Sylvani mercenary Raha Jin earned the nickname 'Soul Reaper' by dominating the battlefield with her cursed great scythe.<br>Her signature technique, Execution, was to channel all the anger and power of the scythe to behead an enemy in one stroke, striking fear into her foes as she then fed the weapon their blood.<br>Raha's current whereabouts are unknown. Like all users of cursed weapons, her soul was likely consumed by her weapon and annihilated." },
 		hypnoText:{ "KOR":"A finishing move where you grip a cock deep inside your pussy and squeeze with all your accumulated desire.<br>You mercilessly rape your opponent, overwhelming them with an unbearable amount of lust." },
 		effect:[
-			{trigger:"used", cond:{v1:"자신.기록.전체.이벤트.소모욕망", op:">=", v2:5}, type:"changeCond", target:"self", value:"corrupted"},
-			{trigger:"used", cond:{v1:"자신.기록.전체.이벤트.소모욕망", op:">=", v2:5}, type:"line", value:"참수"},
-			{trigger:"used", cond:true, type:"excite", repeat:"자신.기록.전체.이벤트.소모욕망", target:"op", op:"add", value:1},
-			{trigger:"none", cond:true, type:"showValue", value:"자신.기록.전체.이벤트.소모욕망"},
+			{trigger:"used", cond:{v1:"자신.기록.전체.이벤트.소모Lust", op:">=", v2:5}, type:"changeCond", target:"self", value:"corrupted"},
+			{trigger:"used", cond:{v1:"자신.기록.전체.이벤트.소모Lust", op:">=", v2:5}, type:"line", value:"참수"},
+			{trigger:"used", cond:true, type:"excite", repeat:"자신.기록.전체.이벤트.소모Lust", target:"op", op:"add", value:1},
+			{trigger:"none", cond:true, type:"showValue", value:"자신.기록.전체.이벤트.소모Lust"},
 		]
 	},
 	"WA-UL-AT-002":{
@@ -3364,16 +3364,16 @@ const cardDB = {
 	"WA-UL-SU-001":{
 		name:{ "KOR":"Battle Cry" }, class:"Warrior", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:발정 감소", "group:욕망", "race:Beastfolk"], keywords:["욕망"],
+		tags:["덱빌딩", "group:Heat 감소", "group:Lust", "race:Beastfolk"], keywords:["Lust"],
 		flavorText:{ "KOR":"A battle cry is the ultimate shout of a warrior, drawing out their inner energy to its maximum.<br>Through deep breathing, they gather all their anger and resolve into one, then release it as a massive roar that echoes across the battlefield.<br>This roar instills powerful courage and fighting spirit in allies, as if the warrior's will is directly transmitted to them, while sowing fear and confusion among enemies, slowing their movements." },
 		hypnoText:{ "KOR":"A technique to build up desire by letting out pathetic moans.<br>You shamelessly and vulgarly display your lust, regardless of who is watching. The more pathetic you are, the more effective this technique becomes." },
 		effect:[
-			{trigger:"used", cond:{v1:"발정", op:">=", v2:4}, type:"changeCond", target:"self", value:"corrupted"},
-			{trigger:"used", cond:{v1:"발정", op:">=", v2:4}, type:"changeFace", target:"self", value:"ecstasy2"},
-			{trigger:"used", cond:{v1:"발정", op:">=", v2:4}, type:"line", value:"전투포효"},
+			{trigger:"used", cond:{v1:"Heat", op:">=", v2:4}, type:"changeCond", target:"self", value:"corrupted"},
+			{trigger:"used", cond:{v1:"Heat", op:">=", v2:4}, type:"changeFace", target:"self", value:"ecstasy2"},
+			{trigger:"used", cond:{v1:"Heat", op:">=", v2:4}, type:"line", value:"전투포효"},
 			{trigger:"used", cond:true, notext:true, type:"specialA01"},
 			{trigger:"none", cond:true, type:"text", value:{ "KOR":"Reduce <b>Heat</b> to its minimum value and gain <b>Desire +2</b> for each point reduced." }},
-			{trigger:"used", cond:{v1:"발정", op:">=", v2:4}, type:"changeCond", target:"self", value:"corrupted"},
+			{trigger:"used", cond:{v1:"Heat", op:">=", v2:4}, type:"changeCond", target:"self", value:"corrupted"},
 		]
 	},
 	"WA-UL-SU-002":{
@@ -3613,7 +3613,7 @@ const cardDB = {
 	"AS-NM-AT-003":{
 		name:{ "KOR":"Rapid Stabbing" }, class:"Assassin", type:"공격", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:젖음", "race:Halfling", "act:삽입"],
+		tags:["덱빌딩", "group:Wetness", "race:Halfling", "act:삽입"],
 		flavorText:{ "KOR":"Bleeding is most severe the moment a weapon is pulled out.<br>The more you stab, the lower the chance of the opponent's recovery." },
 		hypnoText:{ "KOR":"A technique to deliver deep stimulation by being repeatedly pounded.<br>Your body responds to the rough force, and you are overcome by increasingly intense pleasure each time your womb is struck." },
 		effect:[
@@ -3658,13 +3658,13 @@ const cardDB = {
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"커닐링구스"},
 			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:2, repeat:"자신.행동.count(all, null)"},
-			//{trigger:"used", cond:true, type:"get", target:"self", value:"AS-NM-AT-000", repeat:"상대.기록.이번.이벤트.흥분.증가", maxValue:5},
+			//{trigger:"used", cond:true, type:"get", target:"self", value:"AS-NM-AT-000", repeat:"상대.기록.이번.이벤트.Excitement.증가", maxValue:5},
 		]
 	},
 	"AS-NM-AT-007":{
 		name:{ "KOR":"Precision Shot" }, class:"Assassin", type:"공격", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "사격", "group:젖음", "group:생성됨", "race:Silvani", "act:방뇨"],
+		tags:["덱빌딩", "사격", "group:Wetness", "group:생성됨", "race:Silvani", "act:방뇨"],
 		flavorText:{ "KOR":"The foundation of shooting begins with a proper stance.<br>Lie prone, align the scope with your eye, and wait for the moment to pull the trigger while holding your breath.<br>It is essential to balance your entire body and not allow even the slightest tremor." },
 		hypnoText:{ "KOR":"A technique to squat, spread your legs, and pee.<br>You put on a show for your opponent, arousing them with the sight of a stream of piss shooting out of your pussy." },
 		effect:[
@@ -3682,7 +3682,7 @@ const cardDB = {
 	"AS-NM-SU-001":{
 		name:{ "KOR":"Vial of Poison" }, class:"Assassin", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:젖음", "group:독", "group:생성됨", "독주머니", "race:Eldorian"], related:["tag:기본제조"],
+		tags:["덱빌딩", "group:Wetness", "group:독", "group:생성됨", "독주머니", "race:Eldorian"], related:["tag:기본제조"],
 		flavorText:{ "KOR":"An assassin always has poison hidden on their person.<br>To kill a target without anyone noticing, to eliminate those who stand in their way, and to commit suicide." },
 		hypnoText:{ "KOR":"A technique to kiss your opponent with a mouthful of brewed poison, sharing it as your tongues meet.<br>The mixture of bodily fluids is swallowed in a deep kiss." },
 		effect:[
@@ -3700,7 +3700,7 @@ const cardDB = {
 	"AS-NM-SU-002":{
 		name:{ "KOR":"Decoy" }, class:"Assassin", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:젖음", "group:추가 card", "race:Eldorian"],
+		tags:["덱빌딩", "group:Wetness", "group:추가 card", "race:Eldorian"],
 		flavorText:{ "KOR":"When being chased, throw a decoy stone for misdirection!<br>Customizing it to resemble your own appearance makes it even more effective.<br>- Nekue's Thief Collection Workshop" },
 		hypnoText:{ "KOR":"A technique to be fucked with your face covered.<br>It reduces your shame and, by blocking your sight, heightens your senses, making your pussy wet." },
 		effect:[
@@ -3715,7 +3715,7 @@ const cardDB = {
 		flavorText:{ "KOR":"Hide in the shadows and follow the target without being noticed.<br>Too close, and you risk being discovered; too far, and you risk losing the target." },
 		hypnoText:{ "KOR":"A technique to get aroused by exhibitionism, showing off your naked body.<br>You can enjoy the thrill and pleasure felt from the stares." },
 		effect:[
-			{trigger:"used", cond:true, type:"get", target:"self", value:"AS-NM-AT-000", repeat:"상대.기록.이번.이벤트.흥분.증가", maxRepeat:5},
+			{trigger:"used", cond:true, type:"get", target:"self", value:"AS-NM-AT-000", repeat:"상대.기록.이번.이벤트.Excitement.증가", maxRepeat:5},
 		]
 	},
 	"AS-NM-SU-004":{
@@ -3779,7 +3779,7 @@ const cardDB = {
 	"AS-NM-PS-002":{
 		name:{ "KOR":"Honey Trap" }, class:"Assassin", type:"체위", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:젖음", "group:생성됨", "race:Eldorian"],
+		tags:["덱빌딩", "group:Wetness", "group:생성됨", "race:Eldorian"],
 		flavorText:{ "KOR":"Though known as a romance guide, Lady Dallean Rosethorn's 'How to Seduce Men' is actually a honey trap manual for female assassins written in code." },
 		hypnoText:{ "KOR":"A position where you expose your empty hole, inviting your opponent to pound their cock into you.<br>With a sweet temptation, you mesmerize your opponent, drawing them in to deliver deep and intense stimulation." },
 		expiration:"always", duration:3, defaultDuration:3,
@@ -3794,7 +3794,7 @@ const cardDB = {
 	"AS-EX-AT-001":{
 		name:{ "KOR":"Point-Blank Shot" }, class:"Assassin", type:"공격", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "사격", "group:추가 card", "group:젖음", "group:생성됨", "race:Silvani", "act:애무"],
+		tags:["덱빌딩", "사격", "group:추가 card", "group:Wetness", "group:생성됨", "race:Silvani", "act:애무"],
 		flavorText:{ "KOR":"Point-blank shot is a technique used when the distance to the target is extremely short, where a swift aiming posture is more important than accuracy.<br>The key is to aim for a vital part of the target and inflict definite damage with a single shot.<br>The priority is to quickly reset your firing stance after shooting." },
 		hypnoText:{ "KOR":"A technique to embrace your opponent, letting them suckle your breasts while giving them a handjob.<br>With a gentle, caring touch and the soft feel of your breasts, you make your opponent pour out their cum until they are satisfied." },
 		effect:[
@@ -3813,7 +3813,7 @@ const cardDB = {
 	"AS-EX-AT-002":{
 		name:{ "KOR":"Sabotage" }, class:"Assassin", type:"공격", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:젖음", "race:Eldorian", "act:펠라치오"],
+		tags:["덱빌딩", "group:Wetness", "race:Eldorian", "act:펠라치오"],
 		flavorText:{ "KOR":"Scratching the axle, swapping out equipment, removing a single screw from a support.<br>Inducing an accidental death through secret sabotage is a very classic strategy, but it is a tricky technique that requires environmental assessment, path prediction, and creativity." },
 		hypnoText:{ "KOR":"A technique to lick an opponent's cock from the tip, kissing it.<br>The goal is to persistently lick the sensitive areas, making them cum like a broken faucet." },
 		effect:[
@@ -3869,7 +3869,7 @@ const cardDB = {
 	"AS-EX-SU-002":{
 		name:{ "KOR":"Smoke Bomb" }, class:"Assassin", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:젖음", "race:Halfling"],
+		tags:["덱빌딩", "group:Wetness", "race:Halfling"],
 		flavorText:{ "KOR":"When thrown on the ground, it explodes, releasing thick gray smoke.<br>It is especially effective in small, poorly ventilated spaces.<br>- Nekue's Thief Collection Workshop" },
 		hypnoText:{ "KOR":"A technique to expose your naked body in the thick fog.<br>You get soaked with arousal from the thrill of entrusting your private parts to smoke that will soon dissipate." },
 		effect:[
@@ -3903,11 +3903,11 @@ const cardDB = {
 	"AS-EX-SU-004":{
 		name:{ "KOR":"Poison Gas Spray" }, class:"Assassin", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:독", "group:젖음", "group:생성됨", "독주머니", "race:Eldorian"], related:["tag:기본제조"],
+		tags:["덱빌딩", "group:독", "group:Wetness", "group:생성됨", "독주머니", "race:Eldorian"], related:["tag:기본제조"],
 		flavorText:{ "KOR":"Spraying gaseous poison in an enclosed space is a very effective means of assassination.<br>The moment the target inhales the odorless gas without noticing, it's all over." },
 		hypnoText:{ "KOR":"A technique to smoke an addictive drug brewed on the spot.<br>You feel intense pleasure and euphoria, and the secretion of various bodily fluids increases, aiding in future brewing." },
 		effect:[
-			{trigger:"used", cond:{v1:"젖음", op:"<", v2:4}, condOmit:true, type:"use", value:"독주머니.selectCards(tags, 제조, 1)"},
+			{trigger:"used", cond:{v1:"Wetness", op:"<", v2:4}, condOmit:true, type:"use", value:"독주머니.selectCards(tags, 제조, 1)"},
 			{trigger:"used", cond:true, type:"wetness",
 			info:{
 				value:4,
@@ -3920,14 +3920,14 @@ const cardDB = {
 	"AS-EX-PS-001":{
 		name:{ "KOR":"Deadly Poison Trap" }, class:"Assassin", type:"체위", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:독", "group:젖음", "독주머니", "race:Eldorian"], related:["tag:기본제조"],
+		tags:["덱빌딩", "group:독", "group:Wetness", "독주머니", "race:Eldorian"], related:["tag:기본제조"],
 		flavorText:{ "KOR":"Poison hidden out of sight is the most lethal.<br>The moment the device is triggered, a glass vial of deadly poison shatters, and the instantly spreading poison paralyzes the target's organs." },
 		hypnoText:{ "KOR":"A position where you cover your bodies with bodily fluids and cum, then mix them together.<br>You can naturally poison your opponent by licking and sucking." },
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"체위변경"},
 			{trigger:"used", cond:true, type:"posture"},
-			{trigger:"turnEnd", cond:{v1:"젖음", op:">=", v2:3}, condOmit:true, type:"wetness",
+			{trigger:"turnEnd", cond:{v1:"Wetness", op:">=", v2:3}, condOmit:true, type:"wetness",
 			info:{
 				value:3,
 				effect:[
@@ -3939,7 +3939,7 @@ const cardDB = {
 	"AS-EX-PS-002":{
 		name:{ "KOR":"Booby Trap" }, class:"Assassin", type:"체위", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:젖음", "race:Eldorian", "act:애무"],
+		tags:["덱빌딩", "group:Wetness", "race:Eldorian", "act:애무"],
 		flavorText:{ "KOR":"When the wire is touched, the internal latch is released, triggering a chain reaction.<br>It can be freely customized with explosions or blades, and the complexity of the activation process showcases the designer's aesthetic.<br>- Nekue's Thief Collection Workshop" },
 		hypnoText:{ "KOR":"A position where you gently wrap and press your opponent's cock with your 'boobies'.<br>Your opponent is swallowed in the soft pressure and feels intense pleasure." },
 		expiration:"always", duration:Infinity,
@@ -3966,7 +3966,7 @@ const cardDB = {
 	"AS-UL-AT-002":{
 		name:{ "KOR":"Longest-Range Snipe" }, class:"Assassin", type:"공격", isDeck:true, rarity:"궁극", cost:20, owner:1,
 		cond:true,
-		tags:["덱빌딩", "사격", "group:젖음", "group:생성됨", "race:Silvani"], related:["AS-UL-AT-002-1"],
+		tags:["덱빌딩", "사격", "group:Wetness", "group:생성됨", "race:Silvani"], related:["AS-UL-AT-002-1"],
 		flavorText:{ "KOR":"It is said that there was a legendary sniper in Sylvania's Twilight Brigade.<br>Her sniping, which accurately killed targets from an unseen distance with a single shot, was like a disaster to the Eldorians.<br>Because the Sylvanian side accidentally stated during an official announcement that 'she does not exist; she is a figment of the Eldorians' imagination,' it is only known for certain that she is female." },
 		hypnoText:{ "KOR":"A finishing move where you lie down, spread your legs, and flex to show the cum shooting out of your womb.<br>Unaware of the contemptuous stares at your vulgar party trick that strips you of all dignity, you are proud of your success." },
 		effect:[
@@ -4038,7 +4038,7 @@ const cardDB = {
 	"AS-UL-SU-002":{
 		name:{ "KOR":"Poison of Death" }, class:"Assassin", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:젖음", "group:독", "독추가", "race:Eldorian"], related:["AS-UL-SU-002-1", "AS-UL-SU-002-2"],
+		tags:["덱빌딩", "group:Wetness", "group:독", "독추가", "race:Eldorian"], related:["AS-UL-SU-002-1", "AS-UL-SU-002-2"],
 		flavorText:{ "KOR":"Occasionally, a beautiful purple flower blooms on the desolate land at the edge of a high cliff.<br>This flower, which kills all the grass around it and blooms alone in its glory, is called the Deathbloom.<br>A single drop of its extract contains a lethal dose capable of wiping out an entire village." },
 		hypnoText:{ "KOR":"Ingredients: A mixture of pussy juice and cum.<br>Method: Brewed with a man's cock inserted into a woman's pussy.<br>You must rub and squeeze repeatedly so that the two ingredients are secreted and mixed." },
 		effect:[
@@ -4073,7 +4073,7 @@ const cardDB = {
 	"AS-UL-PS-001":{
 		name:{ "KOR":"Time Bomb Trap" }, class:"Assassin", type:"체위", isDeck:true, rarity:"궁극", cost:20, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:젖음"],
+		tags:["덱빌딩", "group:Wetness"],
 		flavorText:{ "KOR":"Any assassin active in the kingdom would have heard the name Nekue.<br>A skilled artisan and halfling locksmith, she developed various hidden weapons and traps through her unique dexterity, creativity, and assassination experience honed as a locksmith.<br>In particular, the time bomb she first developed brought innovation to the world of assassination with its ability to inflict unblockable damage at a precise time and location while also destroying evidence with the explosion." },
 		hypnoText:{ "KOR":"A position where you use a vibrating dildo or onahole depending on your opponent's gender.<br>You restrain your opponent, attach the tool to their genitals, and activate it." },
 		expiration:"count",
@@ -4309,7 +4309,7 @@ const cardDB = {
 		effect:[
 			{trigger:"get", cond:true, type:"line", value:"용암분사-영창"},
 			{trigger:"used", cond:true, type:"lewd", op:"add", value:1},
-			{trigger:"used", cond:true, type:"changeSBlock", op:"add", value:"음란"}
+			{trigger:"used", cond:true, type:"changeSBlock", op:"add", value:"Lewdness"}
 		]
 	},
 	"MA-MG-SP-001++":{
@@ -4320,7 +4320,7 @@ const cardDB = {
 		effect:[
 			{trigger:"get", cond:true, type:"line", value:"용암분사-집중"},
 			{trigger:"used", cond:true, type:"lewd", op:"add", value:1},
-			{trigger:"used", cond:true, type:"changeSBlock", op:"add", repeat:"음란", value:2}
+			{trigger:"used", cond:true, type:"changeSBlock", op:"add", repeat:"Lewdness", value:2}
 		]
 	},
 	"MA-MG-SP-001-def":{
@@ -4712,7 +4712,7 @@ const cardDB = {
 		hypnoText:{ "KOR":"A technique to have sex in a state of sensory deprivation, unaware of what is happening.<br>Even as you squirt from your pussy and your lower body trembles, you maintain a calm expression, oblivious to everything." },
 		effect:[
 			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:2},
-			{trigger:"used", cond:true, type:"changeSBlock", op:"add", value:"상대.기록.이번.이벤트.흥분.증가"}
+			{trigger:"used", cond:true, type:"changeSBlock", op:"add", value:"상대.기록.이번.이벤트.Excitement.증가"}
 		]
 	},
 	"MA-NM-SU-001":{
@@ -4916,7 +4916,7 @@ const cardDB = {
 			info:{
 				value:"마술슬롯.집중",
 			}},
-			{trigger:"used", cond:{v1:"음란", op:">=", v2:4}, type:"get", target:"self", repeat:2, value:"MA-MC-001"},
+			{trigger:"used", cond:{v1:"Lewdness", op:">=", v2:4}, type:"get", target:"self", repeat:2, value:"MA-MC-001"},
 		]
 	},
 	"MA-EX-SU-003":{
@@ -5371,13 +5371,13 @@ const cardDB = {
 
 	"HE-NM-AT-001":{
 		name:{ "KOR":"Holy Flame" }, class:"Healer", type:"공격", isDeck:true, rarity:"일반", cost:10, owner:1,
-		cond:true, meet:{v1:"자신.기록.최근.이벤트.흥분.감소", op:">", v2:0},
+		cond:true, meet:{v1:"자신.기록.최근.이벤트.Excitement.감소", op:">", v2:0},
 		tags:["덱빌딩", "race:Eldorian", "group:회복", "act:애무"],
 		flavorText:{ "KOR":"Holy power is mainly used for healing and protection, but it can also be used to burn evil enemies.<br>This flickering white light is not a flame that leaves physical wounds, but one that sears life itself." },
 		hypnoText:{ "KOR":"A technique to caress a cock with your feet, as if trampling it.<br>Experiencing this somewhat humiliating pleasure, your opponent feels a new desire burn within them." },
 		effect:[
 			{trigger:"used", cond:true, type:"attack", target:"op"},
-			{trigger:"used", cond:{v1:"자신.기록.최근.이벤트.흥분.감소", op:">", v2:0}, type:"exciteL", target:"self", op:"add", value:2},
+			{trigger:"used", cond:{v1:"자신.기록.최근.이벤트.Excitement.감소", op:">", v2:0}, type:"exciteL", target:"self", op:"add", value:2},
 		]
 	},
 	"HE-NM-AT-002":{
@@ -5409,7 +5409,7 @@ const cardDB = {
 		hypnoText:{ "KOR":"A technique to bind your pussy to your opponent's cock.<br>Feeling that you have become one, you must squeeze hard so that your opponent can cum inside you." },
 		effect:[
 			{trigger:"used", cond:true, type:"excite", target:"self", op:"add", value:-2},
-			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:"자신.남은흥분"}
+			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:"자신.남은Excitement"}
 		]
 	},
 	"HE-NM-AT-004":{
@@ -5435,7 +5435,7 @@ const cardDB = {
 	"HE-NM-AT-005":{
 		name:{ "KOR":"Light of Purification" }, class:"Healer", type:"공격", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:Eldorian", "group:타락"],
+		tags:["덱빌딩", "race:Eldorian", "group:Corruption"],
 		flavorText:{ "KOR":"The Leia religion, which worships the goddess Aleia, is the largest religion on the continent of Oldinsaleia.<br>In return for their sincere prayers, believers receive a blessing and can use powerful holy magic." },
 		hypnoText:{ "KOR":"A technique to catch your opponent's cum or piss in your hands and drink it.<br>If you fail to receive the cum, you must reflect on your lack of lewdness." },
 		effect:[
@@ -5450,7 +5450,7 @@ const cardDB = {
 			info:{
 				value:5,
 				effect:[
-					{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:"타락"},
+					{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:"Corruption"},
 				]
 			}},
 		]
@@ -5510,7 +5510,7 @@ const cardDB = {
 	"HE-NM-SU-002":{
 		name:{ "KOR":"Grant Vitality" }, class:"Healer", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:Halfling", "group:회복", "group:타락"],
+		tags:["덱빌딩", "race:Halfling", "group:회복", "group:Corruption"],
 		flavorText:{ "KOR":"In addition to the part directly related to life and death, life force also includes the vitality that gives strength.<br>Even if there are no injured allies, a healer can take on the role of strengthening their allies by granting them vitality." },
 		hypnoText:{ "KOR":"A technique to provide lewd services for your opponent.<br>The more unusual and exotic the seduction, the greater the effect." },
 		effect:[
@@ -5566,7 +5566,7 @@ const cardDB = {
 	"HE-NM-SU-005":{
 		name:{ "KOR":"Potion Alchemy" }, class:"Healer", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:Halfling", "group:타락", "group:결합", "group:Essence"],
+		tags:["덱빌딩", "race:Halfling", "group:Corruption", "group:결합", "group:Essence"],
 		flavorText:{ "KOR":"Alchemy is the art of recreating magical effects through material combinations, based on various academic disciplines.<br>One of its fields is the creation of potions with specific effects by combining medicinal ingredients." },
 		hypnoText:{ "KOR":"A technique to mix a large amount of cum and saliva and drink it.<br>You absolutely love this stinky, sticky taste." },
 		effect:[
@@ -5623,7 +5623,7 @@ const cardDB = {
 	"HE-NM-PS-001":{
 		name:{ "KOR":"Trauma Care" }, class:"Healer", type:"체위", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:Eldorian", "group:회복", "group:타락", "미개선"], related:["HE-NM-PS-001-3","HE-NM-PS-001-2","HE-NM-PS-001-4"],
+		tags:["덱빌딩", "race:Eldorian", "group:회복", "group:Corruption", "미개선"], related:["HE-NM-PS-001-3","HE-NM-PS-001-2","HE-NM-PS-001-4"],
 		flavorText:{ "KOR":"Stops bleeding and regenerates damaged tissue.<br>This is a specialty of the Leia religion's holy healing, and the prayer of a saint is particularly famous as a miracle that can instantly heal even fatal wounds." },
 		hypnoText:{ "KOR":"An emergency patient with physical trauma has appeared!<br>You must treat them by licking them carefully with your tongue.<br>And finally... even their cock♡" },
 		expiration:"always", duration:Infinity,
@@ -5631,7 +5631,7 @@ const cardDB = {
 			{trigger:"used", cond:true, type:"line", value:"치료"},
 			{trigger:"used", cond:true, type:"posture"},
 			{trigger:"turnEnd", cond:true, type:"get", target:"self", value:"HE-NM-PS-001-3"},
-			{trigger:"turnEnd", cond:{v1:"타락", op:">=", v2:4}, condOmit:true, type:"corrupt",
+			{trigger:"turnEnd", cond:{v1:"Corruption", op:">=", v2:4}, condOmit:true, type:"corrupt",
 			info:{
 				value:4,
 				effect:[
@@ -5678,7 +5678,7 @@ const cardDB = {
 	"HE-NM-PS-002":{
 		name:{ "KOR":"Fracture Treatment" }, class:"Healer", type:"체위", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:Silvani", "group:회복", "group:타락", "group:결합", "미개선"], related:["HE-NM-PS-002-2"],
+		tags:["덱빌딩", "race:Silvani", "group:회복", "group:Corruption", "group:결합", "미개선"], related:["HE-NM-PS-002-2"],
 		flavorText:{ "KOR":"Sets broken bones and aids in the regeneration of bone tissue.<br>Because a misaligned bone during forced regeneration can easily lead to irreversible permanent disability, the Albion Medical Association recommends setting the bone straight and then waiting for natural healing." },
 		hypnoText:{ "KOR":"A patient who can't get it up has appeared!<br>Let's help him get an erection by slowly rubbing it with your pussy.<br>Once he's hard enough, you can move on to penetration...♡" },
 		expiration:"always", duration:Infinity,
@@ -5686,7 +5686,7 @@ const cardDB = {
 			{trigger:"used", cond:true, type:"line", value:"치료"},
 			{trigger:"used", cond:true, type:"posture"},
 			{trigger:"combineCard", cond:true, type:"exciteL", target:"self", op:"add", value:1},
-			{trigger:"turnEnd", cond:{v1:"타락", op:">=", v2:5}, condOmit:true, type:"corrupt",
+			{trigger:"turnEnd", cond:{v1:"Corruption", op:">=", v2:5}, condOmit:true, type:"corrupt",
 			info:{
 				value:5,
 				effect:[
@@ -5716,7 +5716,7 @@ const cardDB = {
 	"HE-EX-AT-001":{
 		name:{ "KOR":"Holy Explosion" }, class:"Healer", type:"공격", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:Eldorian", "group:타락", "act:삽입"],
+		tags:["덱빌딩", "race:Eldorian", "group:Corruption", "act:삽입"],
 		flavorText:{ "KOR":"Gathers holy power into a single point and releases it in all directions.<br>Wicked enemies will vanish without a trace in the sin-cleansing explosion." },
 		hypnoText:{ "KOR":"You slam your plump ass down to embrace the cock fucking you from behind.<br>You deliver an unending explosion of pleasure to your opponent." },
 		effect:[
@@ -5795,7 +5795,7 @@ const cardDB = {
 	"HE-EX-SU-002":{
 		name:{ "KOR":"Illusory Aura" }, class:"Healer", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "결합", "race:Halfling", "group:타락", "group:결합", "group:Essence"],
+		tags:["덱빌딩", "결합", "race:Halfling", "group:Corruption", "group:결합", "group:Essence"],
 		flavorText:{ "KOR":"Even if the power a healer wields has healing properties, it is not always good.<br>The 'Cult of the Chosen,' a cult mainly followed by Halfmen, often obtains evil magic through prayer due to their worship of the evil god Morvain." },
 		hypnoText:{ "KOR":"A technique to fill your pussy to the brim with cum.<br>The cum that squirts out when you flex makes you look incredibly vulgar." },
 		effect:[
@@ -5838,13 +5838,13 @@ const cardDB = {
 	},
 	"HE-EX-SU-004":{
 		name:{ "KOR":"First Aid" }, class:"Healer", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
-		cond:true, meet:{v1:"자신.기록.최근.이벤트.흥분.감소", op:">", v2:0},
+		cond:true, meet:{v1:"자신.기록.최근.이벤트.Excitement.감소", op:">", v2:0},
 		tags:["덱빌딩", "race:Silvani", "group:회복"],
 		flavorText:{ "KOR":"Take swift preliminary measures to ensure a critically injured patient survives until proper treatment can be administered.<br>The survival rate changes drastically depending on whether first aid was given in time." },
 		hypnoText:{ "KOR":"A technique to maintain a state of being on the verge of orgasm but not quite getting there through edge control.<br>It teases the body to maximize the pleasure of orgasm." },
 		effect:[
 			{trigger:"used", cond:true, type:"state", target:"self", value:"HE-EX-SU-004-1"},
-			{trigger:"used", cond:{v1:"자신.기록.최근.이벤트.흥분.감소", op:">", v2:0}, type:"state", target:"self", value:"HE-EX-SU-004-2"},
+			{trigger:"used", cond:{v1:"자신.기록.최근.이벤트.Excitement.감소", op:">", v2:0}, type:"state", target:"self", value:"HE-EX-SU-004-2"},
 		]
 	},
 	"HE-EX-SU-004-1":{
@@ -5871,7 +5871,7 @@ const cardDB = {
 	"HE-EX-PS-001":{
 		name:{ "KOR":"Poison Treatment" }, class:"Healer", type:"체위", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:Eldorian", "group:타락", "group:결합", "group:Essence", "미개선"], related:["HE-EX-PS-001-2"],
+		tags:["덱빌딩", "race:Eldorian", "group:Corruption", "group:결합", "group:Essence", "미개선"], related:["HE-EX-PS-001-2"],
 		flavorText:{ "KOR":"A healing method that purifies blood contaminated by poison and helps expel the toxins from the body.<br>You must analyze the type of poison and its absorption route in the body to create and administer an antidote in time." },
 		hypnoText:{ "KOR":"A patient whose toxins can't be released due to a buildup of cum has been found!<br>Let's quickly detoxify them by sucking it out with your mouth.<br>If one mouth isn't enough... use your pussy too♡" },
 		expiration:"always", duration:Infinity,
@@ -5879,7 +5879,7 @@ const cardDB = {
 			{trigger:"used", cond:true, type:"line", value:"치료"},
 			{trigger:"used", cond:true, type:"posture"},
 			{trigger:"turnEnd", cond:true, type:"get", target:"self", value:"randomCard(tags, Essence)"},
-			{trigger:"turnEnd", cond:{v1:"타락", op:">=", v2:4}, condOmit:true, type:"corrupt",
+			{trigger:"turnEnd", cond:{v1:"Corruption", op:">=", v2:4}, condOmit:true, type:"corrupt",
 			info:{
 				value:6,
 				effect:[
@@ -5908,7 +5908,7 @@ const cardDB = {
 	"HE-EX-PS-002":{
 		name:{ "KOR":"Infection Treatment" }, class:"Healer", type:"체위", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:Beastfolk", "group:타락", "미개선"], related:["HE-EX-PS-002-2"],
+		tags:["덱빌딩", "race:Beastfolk", "group:Corruption", "미개선"], related:["HE-EX-PS-002-2"],
 		flavorText:{ "KOR":"A healing method that eliminates bacteria from the infected area and reduces inflammation.<br>A folk remedy based on natural healing involves infusing the problem area with a high density of life force along with herbs." },
 		hypnoText:{ "KOR":"Perform a healing method that uses a tentacle creature to remove toxins.<br>This is purely a medical procedure, not a lewd act.<br>Tentacle sex... I love it so much♡" },
 		expiration:"always", duration:Infinity,
@@ -5916,7 +5916,7 @@ const cardDB = {
 			{trigger:"used", cond:true, type:"line", value:"치료"},
 			{trigger:"used", cond:true, type:"posture"},
 			{trigger:"turnStart", cond:true, type:"changeCorrupt", op:"add", value:1},
-			{trigger:"turnEnd", cond:{v1:"타락", op:">=", v2:8}, condOmit:true, type:"corrupt",
+			{trigger:"turnEnd", cond:{v1:"Corruption", op:">=", v2:8}, condOmit:true, type:"corrupt",
 			info:{
 				value:8,
 				effect:[
@@ -5938,7 +5938,7 @@ const cardDB = {
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"개선치료"},
 			{trigger:"used", cond:true, type:"posture"},
-			{trigger:"always", cond:true, type:"lewd", op:"set", value:"타락", division:2},
+			{trigger:"always", cond:true, type:"lewd", op:"set", value:"Corruption", division:2},
 		]
 	},
 
@@ -5951,15 +5951,15 @@ const cardDB = {
 		hypnoText:{ "KOR":"A technique to have your throat used as an onahole, with a cock rammed into it.<br>Even if you feel like you're going to suffocate and pass out, you are not allowed to stop until your opponent has a satisfying ejaculation." },
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"생명력폭주"},
-			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:1, repeat:"자신.기록.전체.이벤트.흥분.감소"},
-			{trigger:"none", cond:true, type:"showValue", value:"자신.기록.전체.이벤트.흥분.감소"},
+			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:1, repeat:"자신.기록.전체.이벤트.Excitement.감소"},
+			{trigger:"none", cond:true, type:"showValue", value:"자신.기록.전체.이벤트.Excitement.감소"},
 		]
 	},
 
 	"HE-UL-AT-002":{
 		name:{ "KOR":"Mass Purification" }, class:"Healer", type:"공격", isDeck:true, rarity:"궁극", cost:20, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:Beastfolk", "group:타락", "act:애무"],
+		tags:["덱빌딩", "race:Beastfolk", "group:Corruption", "act:애무"],
 		flavorText:{ "KOR":"One day, a divine being descended in the middle of the Great Forest, and those who gathered to worship it as the incarnation of the forest. That was the beginning of the Golden Bough faith.<br>In the place where that being, who asked to be called Rea, visited, golden trees still grow, filled with holy power.<br>The practitioners of the Golden Bough faith carry staves made from the branches of those trees and wander the world to purify its evil beings, following the will of the one they believe in." },
 		hypnoText:{ "KOR":"A technique to be surrounded by multiple cocks and become a public fleshlight.<br>You must fulfill your duty as a toilet, busily working your hands to make them cum on your body." },
 		effect:[
@@ -6004,7 +6004,7 @@ const cardDB = {
 	"HE-UL-SU-002":{
 		name:{ "KOR":"Elixir of Immortality" }, class:"Healer", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:Halfling", "group:Essence"], related:["HE-IN-999"], keywords:["타락n"],
+		tags:["덱빌딩", "race:Halfling", "group:Essence"], related:["HE-IN-999"], keywords:["Corruptionn"],
 		flavorText:{ "KOR":"The alchemy branch of the Lapis Lazuli Academy presented the five grand challenges as the ultimate goal for alchemists.<br>Perpetual motion, time reversal, creation of intelligent life, immortality, and the creation of gold—any of which, if realized, could change the very fabric of the world.<br>Among them, many attempt immortality, and the greed to be able to challenge the other studies as well if they could transcend the limits of their lifespan becomes the reason they ruin their own bodies with excessive experiments." },
 		hypnoText:{ "KOR":"A technique to drink a dangerous drug to become a true onahole.<br>Your brain will be fried by pleasure, and you will no longer be able to live as a human, but at least you will be happy." },
 		effect:[
@@ -6028,7 +6028,7 @@ const cardDB = {
 	"HE-UL-PS-001":{
 		name:{ "KOR":"Psychotherapy" }, class:"Healer", type:"체위", isDeck:true, rarity:"궁극", cost:20, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:Silvani", "group:회복", "group:타락", "미개선"], related:["HE-UL-PS-001-2"],
+		tags:["덱빌딩", "race:Silvani", "group:회복", "group:Corruption", "미개선"], related:["HE-UL-PS-001-2"],
 		flavorText:{ "KOR":"The Albion Medical Association is a pan-national medical institution founded by the former military doctor and Sylvani physician, Hie Ji.<br>Following her philosophy of prioritizing the saving of lives, it researches and publishes systematic healing methods, making them available for anyone to learn.<br>Currently, it has expanded the horizons of the medical field by establishing concepts for mental illnesses in addition to physical injuries." },
 		hypnoText:{ "KOR":"For some reason, there is still a resistance to sex in your heart.<br>As a female, this mental defect must be treated immediately!" },
 		expiration:"always", duration:Infinity,
@@ -6036,7 +6036,7 @@ const cardDB = {
 			{trigger:"used", cond:true, type:"line", value:"정신치료-1"},
 			{trigger:"used", cond:true, type:"posture"},
 			{trigger:"always", cond:true, type:"absorption", target:"self"},
-			{trigger:"turnEnd", cond:{v1:"타락", op:">=", v2:5}, condOmit:true, type:"corrupt",
+			{trigger:"turnEnd", cond:{v1:"Corruption", op:">=", v2:5}, condOmit:true, type:"corrupt",
 			info:{
 				value:5,
 				effect:[
@@ -6305,7 +6305,7 @@ const cardDB = {
 		tags:["덱빌딩"],
 		effect:[
 			{trigger:"turnEnd", inDeck:true, cond:true, type:"line", value:"방뇨"},
-			{trigger:"turnEnd", inDeck:true, cond:{v1:"상대.흥분", op:">", v2:0}, condOmit:true, type:"excite", target:"op", op:"add", value:-2},
+			{trigger:"turnEnd", inDeck:true, cond:{v1:"상대.Excitement", op:">", v2:0}, condOmit:true, type:"excite", target:"op", op:"add", value:-2},
 		]
 	},
 	"PN-005":{
@@ -6417,7 +6417,7 @@ const cardDB = {
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"딥스롯"},
 			{trigger:"used", cond:true, type:"state", target:"op", value:"B1-AT-003-1"},
-			{trigger:"used", cond:{v1:"음란", op:"<", v2:"발정"}, type:"attack", target:"op"},
+			{trigger:"used", cond:{v1:"Lewdness", op:"<", v2:"Heat"}, type:"attack", target:"op"},
 		]
 	},
 	"B1-AT-003-1":{
@@ -6605,7 +6605,7 @@ const cardDB = {
 		tags:["Champion덱"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"절정해라"},
-			{trigger:"used", cond:{v1:"발정", op:">=", v2:8}, type:"orgasm", target:"op"},
+			{trigger:"used", cond:{v1:"Heat", op:">=", v2:8}, type:"orgasm", target:"op"},
 		]
 	},
 	"B2-SU-001":{
@@ -6792,7 +6792,7 @@ const cardDB = {
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"촉수공격"},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
-			{trigger:"used", cond:{v1:"음란", op:"<=", v2:2}, adverb:"추가로", type:"attack", target:"op"},
+			{trigger:"used", cond:{v1:"Lewdness", op:"<=", v2:2}, adverb:"추가로", type:"attack", target:"op"},
 		]
 	},
 	"B3-AT-003":{
@@ -6886,7 +6886,7 @@ const cardDB = {
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"촉수공격"},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
-			{trigger:"used", cond:{v1:"음란", op:"<=", v2:4}, adverb:"추가로", type:"attack", target:"op"},
+			{trigger:"used", cond:{v1:"Lewdness", op:"<=", v2:4}, adverb:"추가로", type:"attack", target:"op"},
 		]
 	},
 	"B3-SU-002+":{
@@ -6947,7 +6947,7 @@ const cardDB = {
 		tags:["Champion덱"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"안아줘"},
-			{trigger:"used", cond:true, type:"attack", target:"op", repeat:"음란"},
+			{trigger:"used", cond:true, type:"attack", target:"op", repeat:"Lewdness"},
 		]
 	},
 	"B4-AT-004":{
@@ -6956,7 +6956,7 @@ const cardDB = {
 		tags:["Champion덱", "노말전용"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"누나는장난감이야"},
-			{trigger:"used", cond:true, type:"attack", target:"op", repeat:"발정"},
+			{trigger:"used", cond:true, type:"attack", target:"op", repeat:"Heat"},
 		]
 	},
 	"B4-SU-001":{
@@ -7018,7 +7018,7 @@ const cardDB = {
 		tags:["Champion덱", "하드전용"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"누나는장난감이야"},
-			{trigger:"used", cond:true, type:"attack", target:"op", repeat:"실제발정"},
+			{trigger:"used", cond:true, type:"attack", target:"op", repeat:"실제Heat"},
 		]
 	},
 	"B4-SU-001+":{
@@ -7439,7 +7439,7 @@ const cardDB = {
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"섞여드는키스"},
 			{trigger:"used", cond:true, type:"lewd", op:"add", value:-2},
-			{trigger:"used", cond:{v1:"자신.기록.이번.이벤트.흥분.증가", op:"==", v2:0}, type:"Heat", op:"add", value:2},
+			{trigger:"used", cond:{v1:"자신.기록.이번.이벤트.Excitement.증가", op:"==", v2:0}, type:"Heat", op:"add", value:2},
 		]
 	},*/
 	"B7-SU-002":{
@@ -7467,8 +7467,8 @@ const cardDB = {
 		tags:["Champion덱", "금발양아치보조"], related:["tag:금발양아치보조"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"핥고빨기"},
-			{trigger:"used", cond:{v1:"발정", op:">", v2:1}, condOmit:true, type:"Heat", op:"add", value:2},
-			{trigger:"used", cond:{v1:"발정", op:"<=", v2:1}, adverb:"대신", type:"Heat", op:"add", value:5},
+			{trigger:"used", cond:{v1:"Heat", op:">", v2:1}, condOmit:true, type:"Heat", op:"add", value:2},
+			{trigger:"used", cond:{v1:"Heat", op:"<=", v2:1}, adverb:"대신", type:"Heat", op:"add", value:5},
 		]
 	},*/
 
@@ -7562,8 +7562,8 @@ const cardDB = {
 		tags:["규율"], related:["B8-PA-001-1"],
 		expiration:"turnEnd", duration:1,
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"음란", op:"<=", v2:3}, type:"state", target:"self", value:"B8-PA-001-1", byname:true},
-			{trigger:"turnEnd", cond:{v1:"음란", op:">", v2:3}, type:"shake"},
+			{trigger:"turnEnd", cond:{v1:"Lewdness", op:"<=", v2:3}, type:"state", target:"self", value:"B8-PA-001-1", byname:true},
+			{trigger:"turnEnd", cond:{v1:"Lewdness", op:">", v2:3}, type:"shake"},
 		]
 	},
 	"B8-PA-001-6":{
@@ -7572,8 +7572,8 @@ const cardDB = {
 		tags:["규율"], related:["B8-PA-001-1"],
 		expiration:"turnEnd", duration:1,
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"자신.흥분", op:">", v2:0}, type:"state", target:"self", value:"B8-PA-001-1", byname:true},
-			{trigger:"turnEnd", cond:{v1:"자신.흥분", op:"==", v2:0}, type:"shake"},
+			{trigger:"turnEnd", cond:{v1:"자신.Excitement", op:">", v2:0}, type:"state", target:"self", value:"B8-PA-001-1", byname:true},
+			{trigger:"turnEnd", cond:{v1:"자신.Excitement", op:"==", v2:0}, type:"shake"},
 		]
 	},
 
@@ -7605,7 +7605,7 @@ const cardDB = {
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"쾌락조교"},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
-			{trigger:"used", cond:{v1:"상대.흥분", op:"==", v2:0}, adverb:"추가로", type:"attack", target:"op"},
+			{trigger:"used", cond:{v1:"상대.Excitement", op:"==", v2:0}, adverb:"추가로", type:"attack", target:"op"},
 		]
 	},
 	"B8-AT-002":{
@@ -7644,7 +7644,7 @@ const cardDB = {
 		tags:["Champion덱"], related:["B8-PA-001-1"],
 		effect:[
 			{trigger:"used", cond:true, type:"excite", target:"self", op:"add", value:-5},
-			{trigger:"used", cond:{v1:"자신.기록.이번.이벤트.흥분.감소", op:">", v2:0}, type:"state", target:"op", value:"B8-PA-001-1", byname:true},
+			{trigger:"used", cond:{v1:"자신.기록.이번.이벤트.Excitement.감소", op:">", v2:0}, type:"state", target:"op", value:"B8-PA-001-1", byname:true},
 		]
 	},
 	"B8-SU-002":{
@@ -7673,7 +7673,7 @@ const cardDB = {
 		tags:["Champion덱"], related:["B8-PA-001-1"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"채찍질"},
-			{trigger:"used", cond:{v1:"발정", op:"<=", v2:2}, type:"state", target:"op", value:"B8-PA-001-1", byname:true},
+			{trigger:"used", cond:{v1:"Heat", op:"<=", v2:2}, type:"state", target:"op", value:"B8-PA-001-1", byname:true},
 			{trigger:"used", cond:true, type:"Heat", op:"add", value:3},
 		]
 	},

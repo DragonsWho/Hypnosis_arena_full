@@ -286,40 +286,40 @@ const cardTexts = {
 		"기록자극받음자신":{
 			"KOR": "the number of times you received <b>[Stimulation]</b> {time}",
 		},
-		"기록흥분증가":{
+		"기록Excitement증가":{
 			"KOR": "<b>Excitement</b> {actor} gained {time}",
 		},
-		"기록흥분증가자신":{
+		"기록Excitement증가자신":{
 			"KOR": "<b>Excitement</b> you gained {time}",
 		},
-		"기록흥분감소":{
+		"기록Excitement감소":{
 			"KOR": "<b>Excitement</b> {actor} recovered {time}",
 		},
-		"기록흥분감소자신":{
+		"기록Excitement감소자신":{
 			"KOR": "<b>Excitement</b> you recovered {time}",
 		},
-		"기록음란증가":{
+		"기록Lewdness증가":{
 			"KOR": "<b>Lewdness</b> gained {time}",
 		},
-		"기록음란감소":{
+		"기록Lewdness감소":{
 			"KOR": "<b>Lewdness</b> lost {time}",
 		},
-		"기록발정증가":{
+		"기록Heat증가":{
 			"KOR": "<b>Heat</b> gained {time}",
 		},
-		"기록발정감소":{
+		"기록Heat감소":{
 			"KOR": "<b>Heat</b> lost {time}",
 		},
-		"기록욕망획득":{
+		"기록Lust획득":{
 			"KOR": "<b>Lust</b> gained {time}",
 		},
-		"기록젖음획득":{
+		"기록Wetness획득":{
 			"KOR": "<b>Wetness</b> gained {time}",
 		},
 		"기록감각차단획득":{
 			"KOR": "<b>Numbness</b> gained {time}",
 		},
-		"기록타락획득":{
+		"기록Corruption획득":{
 			"KOR": "<b>Corruption</b> gained {time}",
 		},
 		"기록획득":{
@@ -328,7 +328,7 @@ const cardTexts = {
 		"기록획득자신":{
 			"KOR": "{cards} you gained {time}",
 		},
-		"기록소모한욕망":{
+		"기록소모한Lust":{
 			"KOR": "<b>Lust</b> spent {time}",
 		},
 		"기록회피":{
@@ -380,7 +380,7 @@ const cardTexts = {
 		"지속시간":{
 			"KOR": "the duration of {target}",
 		},
-		"소모한욕망":{
+		"소모한Lust":{
 			"KOR": "<b>Lust</b> spent",
 		},
 
@@ -779,53 +779,53 @@ const cardTexts = {
 			"KOR": "If you did not have an <b>Orgasm</b> exactly {amount} times {time}, ",
 		},
 
-		"이벤트흥분증가":{
+		"이벤트Excitement증가":{
 			"KOR": "If {target} was gained {time}, ",
 		},
-		"이벤트흥분증가부정":{
+		"이벤트Excitement증가부정":{
 			"KOR": "If {target} was not gained {time}, ",
 		},
-		"이벤트흥분증가일치":{
+		"이벤트Excitement증가일치":{
 			"KOR": "If exactly {amount} {target} was gained {time}, ",
 		},
-		"이벤트흥분증가초과":{
+		"이벤트Excitement증가초과":{
 			"KOR": "If more than {amount} {target} was gained {time}, ",
 		},
-		"이벤트흥분증가미만":{
+		"이벤트Excitement증가미만":{
 			"KOR": "If less than {amount} {target} was gained {time}, ",
 		},
-		"이벤트흥분증가이상":{
+		"이벤트Excitement증가이상":{
 			"KOR": "If {amount} or more {target} was gained {time}, ",
 		},
-		"이벤트흥분증가이하":{
+		"이벤트Excitement증가이하":{
 			"KOR": "If {amount} or less {target} was gained {time}, ",
 		},
-		"이벤트흥분증가불일치":{
+		"이벤트Excitement증가불일치":{
 			"KOR": "If not exactly {amount} {target} was gained {time}, ",
 		},
 
-		"이벤트흥분회복":{
+		"이벤트Excitement회복":{
 			"KOR": "If {target} was recovered {time}, ",
 		},
-		"이벤트흥분회복부정":{
+		"이벤트Excitement회복부정":{
 			"KOR": "If {target} was not recovered {time}, ",
 		},
-		"이벤트흥분회복일치":{
+		"이벤트Excitement회복일치":{
 			"KOR": "If exactly {amount} {target} was recovered {time}, ",
 		},
-		"이벤트흥분회복초과":{
+		"이벤트Excitement회복초과":{
 			"KOR": "If more than {amount} {target} was recovered {time}, ",
 		},
-		"이벤트흥분회복미만":{
+		"이벤트Excitement회복미만":{
 			"KOR": "If less than {amount} {target} was recovered {time}, ",
 		},
-		"이벤트흥분회복이상":{
+		"이벤트Excitement회복이상":{
 			"KOR": "If {amount} or more {target} was recovered {time}, ",
 		},
-		"이벤트흥분회복이하":{
+		"이벤트Excitement회복이하":{
 			"KOR": "If {amount} or less {target} was recovered {time}, ",
 		},
-		"이벤트흥분회복불일치":{
+		"이벤트Excitement회복불일치":{
 			"KOR": "If not exactly {amount} {target} was recovered {time}, ",
 		},
 
@@ -953,7 +953,7 @@ const cardTexts = {
 			"KOR": "<b>{value}({amount}):</b> ",
 		},
 		"클라이맥스":{
-			"KOR": "<span style=\"color: gray;\">Climax</span>",
+			"KOR": "<span style=\"color: gray;\">Orgasm</span>",
 		},
 		"자동시전":{
 			"KOR": "<span style=\"color: gray;\">Auto Cast ({amount})</span>",
@@ -1186,16 +1186,16 @@ const cardTexts = {
 			"KOR": "<b>Max Rounds: {amount}</b>",
 		},
 
-		"최저음란":{
+		"최저Lewdness":{
 			"KOR": "The minimum value of <b>Lewdness</b> becomes {amount}.",
 		},
-		"Max음란":{
+		"MaxLewdness":{
 			"KOR": "The maximum value of <b>Lewdness</b> becomes {amount}.",
 		},
-		"최저발정":{
+		"최저Heat":{
 			"KOR": "The minimum value of <b>Heat</b> becomes {amount}.",
 		},
-		"Max발정":{
+		"MaxHeat":{
 			"KOR": "The maximum value of <b>Heat</b> becomes {amount}.",
 		},
 
@@ -1228,22 +1228,22 @@ const cardTexts = {
 			"KOR": "Magic cards lose their effects.",
 		},
 
-		"시작욕망":{
+		"시작Lust":{
 			"KOR": "Start with {amount} <b>Lust</b>.",
 		},
-		"욕망금지":{
+		"Lust금지":{
 			"KOR": "Cannot gain <b>Lust</b>.",
 		},
-		"욕망제한":{
+		"Lust제한":{
 			"KOR": "<b>Lust</b> cannot exceed {amount}.",
 		},
-		"젖음금지":{
+		"Wetness금지":{
 			"KOR": "Cannot gain <b>Wetness</b>.",
 		},
-		"젖음제한":{
+		"Wetness제한":{
 			"KOR": "<b>Lust</b> cannot exceed {amount}.",
 		},
-		"젖음금지":{
+		"Wetness금지":{
 			"KOR": "Cannot gain <b>Wetness</b>.",
 		},
 		"회피금지":{
@@ -1258,13 +1258,13 @@ const cardTexts = {
 		"감각차단제한":{
 			"KOR": "<b>Numbness</b> cannot exceed {amount}.",
 		},
-		"시작타락":{
+		"시작Corruption":{
 			"KOR": "Start with {amount} <b>Corruption</b>.",
 		},
-		"타락금지":{
+		"Corruption금지":{
 			"KOR": "Cannot gain <b>Corruption</b>.",
 		},
-		"타락제한":{
+		"Corruption제한":{
 			"KOR": "<b>Corruption</b> cannot exceed {amount}.",
 		},
 

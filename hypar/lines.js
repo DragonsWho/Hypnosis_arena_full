@@ -1234,7 +1234,7 @@ const line = {
 			]
 		},
 	],
-	"고블린즈-이벤트-흥분":[
+	"고블린즈-이벤트-Excitement":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -1413,7 +1413,7 @@ const line = {
 			]
 		},
 	],
-	"고블린즈-이벤트-타락":[
+	"고블린즈-이벤트-Corruption":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -1512,7 +1512,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake",
-					text:"Climax... confirmed...♡<br>Reporting... climax...♡",
+					text:"Orgasm... confirmed...♡<br>Reporting... climax...♡",
 				},
 				{
 					cond:true, pos:1, effect:"shake",
@@ -1524,7 +1524,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1, effect:"shake",
-					text:"Reporting... c-confirmed...♡<br>Climax... p-pussy...♡",
+					text:"Reporting... c-confirmed...♡<br>Orgasm... p-pussy...♡",
 				},
 			]
 		},
@@ -2043,7 +2043,7 @@ const line = {
 			]
 		},
 	],
-	"마을사람-이벤트-흥분":[
+	"마을사람-이벤트-Excitement":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -2238,7 +2238,7 @@ const line = {
 			]
 		},
 	],
-	"마을사람-이벤트-타락":[
+	"마을사람-이벤트-Corruption":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -2784,7 +2784,7 @@ const line = {
 			]
 		},
 	],
-	"촉수슬라임-이벤트-흥분":[
+	"촉수슬라임-이벤트-Excitement":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -2943,7 +2943,7 @@ const line = {
 			]
 		},
 	],
-	"촉수슬라임-이벤트-타락":[
+	"촉수슬라임-이벤트-Corruption":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -3533,7 +3533,7 @@ const line = {
 			]
 		},
 	],
-	"악동-이벤트-흥분":[
+	"악동-이벤트-Excitement":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -3716,7 +3716,7 @@ const line = {
 			]
 		},
 	],
-	"악동-이벤트-타락":[
+	"악동-이벤트-Corruption":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -4261,7 +4261,7 @@ const line = {
 			]
 		},
 	],
-	"타우로스-이벤트-흥분":[
+	"타우로스-이벤트-Excitement":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -4440,7 +4440,7 @@ const line = {
 			]
 		},
 	],
-	"타우로스-이벤트-타락":[
+	"타우로스-이벤트-Corruption":[
 		{
 			priority:0, cond:true,
 			lineList:[
@@ -5279,7 +5279,7 @@ const line = {
 			]
 		},
 	],
-	"버섯남자-이벤트-흥분":[
+	"버섯남자-이벤트-Excitement":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -5430,7 +5430,7 @@ const line = {
 			]
 		},
 	],
-	"버섯남자-이벤트-타락":[
+	"버섯남자-이벤트-Corruption":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -5954,7 +5954,7 @@ const line = {
 			]
 		},
 	],
-	"금발양아치-이벤트-흥분":[
+	"금발양아치-이벤트-Excitement":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -6149,7 +6149,7 @@ const line = {
 			]
 		},
 	],
-	"금발양아치-이벤트-타락":[
+	"금발양아치-이벤트-Corruption":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -6713,7 +6713,7 @@ const line = {
 			]
 		},
 	],
-	"조교사-이벤트-흥분":[
+	"조교사-이벤트-Excitement":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -6908,7 +6908,7 @@ const line = {
 			]
 		},
 	],
-	"조교사-이벤트-타락":[
+	"조교사-이벤트-Corruption":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[

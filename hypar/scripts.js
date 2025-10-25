@@ -1001,7 +1001,7 @@ function selectCollection(type, id, history = true) {
 		cltext += `
 		    <div style="display: flex;">
 		`
-		cltext += `<div style="width:50%; border: 1px solid var(--color-active); padding:16px; margin-right:8px;"><span style="font-size: 20px;"><b>[${getWord("능력치")}]</b></span><br><b>${getWord("흥분 한계")}: </b>${_stats.exciteL}<br><b>${getWord("절정 한계")}: </b>${_stats.orgasmL}</div><br>`;
+		cltext += `<div style="width:50%; border: 1px solid var(--color-active); padding:16px; margin-right:8px;"><span style="font-size: 20px;"><b>[${getWord("능력치")}]</b></span><br><b>${getWord("Excitement Limit")}: </b>${_stats.exciteL}<br><b>${getWord("Orgasm Limit")}: </b>${_stats.orgasmL}</div><br>`;
 		cltext += `<div style="width:50%; border: 1px solid var(--color-active); padding:16px; margin-left:8px;"><span style="font-size: 20px;"><b>[${getWord("전적")}]</b></span><br><b>${getWord("도전자")} ${getWord("승리")}:</b> ${playRecord.bossRecord[id].win}<br><b>${getWord(champList[id].name["KOR"])} ${getWord("승리")} :</b> ${playRecord.bossRecord[id].lose}</div><br>`;
 		cltext += `</div>`;
 
@@ -1487,11 +1487,11 @@ function changeEvent(num) {
         switch(choiceValues.class) {
         case "Warrior":
         	classInfo = document.getElementById("warriorInfo");
-        	classGroups = ["욕망", "발정 감소", "버리기", "Penalty"];
+        	classGroups = ["Lust", "Heat 감소", "버리기", "Penalty"];
         	break;
         case "Assassin":
         	classInfo = document.getElementById("assassinInfo");
-        	classGroups = ["젖음", "추가 card", "생성됨", "독"];
+        	classGroups = ["Wetness", "추가 card", "생성됨", "독"];
         	break;
         case "Magician":
         	classInfo = document.getElementById("mageInfo");
@@ -1499,7 +1499,7 @@ function changeEvent(num) {
         	break;
         case "Healer":
         	classInfo = document.getElementById("healerInfo");
-        	classGroups = ["회복", "타락", "결합", "Essence"];
+        	classGroups = ["회복", "Corruption", "결합", "Essence"];
         	break;
         }
         classInfo.style.display = "flex";
@@ -1925,13 +1925,13 @@ function ruleTab(num) {
 	    const containerDiv = document.createElement("div");
 	    containerDiv.classList.add("container");
 
-	    // 흥분 상태 생성
+	    // Excitement 상태 생성
 	    const exciteP = document.createElement("p");
 	    exciteP.style.flex = "0 calc(50% - 20px)";
 	    exciteP.style.margin = "0 auto";
 	    exciteP.style.fontSize = "2.5vh";
 	    exciteP.style.textAlign = "center";
-	    exciteP.textContent = `${getWord("흥분")}: `;
+	    exciteP.textContent = `${getWord("Excitement")}: `;
 
 	    const exciteVal = document.createElement("span");
 	    exciteVal.classList.add("number");
@@ -3326,10 +3326,10 @@ function createChampDescriptionDiv(champ) {
     const description2 = document.createElement('p');
     description2.className = 'box-text';
     description2.innerHTML = `
-        <b>${language === 'KOR' ? '흥분 한계' : 'Excitement Limit'}: </b>${champ.stats.exciteL}<br>
-        <b>${language === 'KOR' ? '절정 한계' : 'Orgasm Limit'}: </b>${champ.stats.orgasmL}<br>
+        <b>${language === 'KOR' ? 'Excitement Limit' : 'Excitement Limit'}: </b>${champ.stats.exciteL}<br>
+        <b>${language === 'KOR' ? 'Orgasm Limit' : 'Orgasm Limit'}: </b>${champ.stats.orgasmL}<br>
         <br>
-        <b>${language === 'KOR' ? '특기' : 'Specialty'}: </b><br>
+        <b>${language === 'KOR' ? 'Specialty' : 'Specialty'}: </b><br>
         ${champ.stats.specialties[language].join('<br>')}<br>
     `;
     content2.appendChild(description2);
@@ -3427,14 +3427,14 @@ function createCard(card, size, button=false, type=0) {
 			keywords.add("추가card");
 		}
 		if(card.effect.some(e => e.type == "changeLust")) {
-			keywords.add("욕망");
+			keywords.add("Lust");
 		}
 		if(card.effect.some(e => e.type == "lust")) {
 			if(card.effect.some(e => e.type == "lust" && typeof e.info.value === 'string' && e.info.value.startsWith('M'))) {
-				keywords.add("욕망Maxn");
+				keywords.add("LustMaxn");
 			}
 			if(card.effect.some(e => e.type == "lust" && typeof e.info.value === 'number')) {
-				keywords.add("욕망n");
+				keywords.add("Lustn");
 			}
 		}
 		if(card.effect.some(e => e.type == "stack")) {
@@ -3444,10 +3444,10 @@ function createCard(card, size, button=false, type=0) {
 			keywords.add("id:AS-NM-AT-000");
 		}
 		if(card.effect.some(e => e.type == "changeWetness")) {
-			keywords.add("젖음");
+			keywords.add("Wetness");
 		}
 		if(card.effect.some(e => e.type == "wetness")) {
-			keywords.add("젖음n");
+			keywords.add("Wetnessn");
 		}
 		if(card.effect.some(e => e.type == "changeSBlock")) {
 			keywords.add("감각차단");
@@ -3463,13 +3463,13 @@ function createCard(card, size, button=false, type=0) {
 		}
 		if(card.effect.some(e => e.type == "corrupt")) {
 			if(card.effect.some(e => e.type == "corrupt" && typeof e.info.value === 'string' && e.info.value.startsWith('M'))) {
-				keywords.add("타락n이하");
+				keywords.add("Corruptionn이하");
 			}
 			if(card.effect.some(e => e.type == "corrupt" && typeof e.info.value === 'number')) {
-				keywords.add("타락n");
+				keywords.add("Corruptionn");
 			}
 		} else if(card.effect.some(e => e.type == "changeCorrupt")) {
-			keywords.add("타락");
+			keywords.add("Corruption");
 		}
 		if(card.effect.some(e => e.type == "count")) {
 			keywords.add("카운트");
@@ -3929,21 +3929,21 @@ function createCardText(card, reverse=false) {
 			"Max행동": "maxUse",
 			"적Max행동": "maxUseE",
 
-	    	"음란": "lewd",
-	    	"실제음란": "real_lewd",
-	    	"발정": "Heat",
-	    	"실제발정": "real_Heat",
-	    	"흥분": "excite",
+	    	"Lewdness": "lewd",
+	    	"실제Lewdness": "real_lewd",
+	    	"Heat": "Heat",
+	    	"실제Heat": "real_Heat",
+	    	"Excitement": "excite",
 
 	    	"체위": "posture",
-	    	"욕망": "lust",
-	    	"젖음": "wetness",
+	    	"Lust": "lust",
+	    	"Wetness": "wetness",
 	    	"감각차단": "sBlock",
-	    	"지연흥분": "delayedEx",
-	    	"타락": "corrupt",
+	    	"지연Excitement": "delayedEx",
+	    	"Corruption": "corrupt",
 
-	    	"남은흥분": "remainExcite",
-	    	"흥분한계": "exciteL",
+	    	"남은Excitement": "remainExcite",
+	    	"Excitement한계": "exciteL",
 	    	"절정": "orgasm",
 	    	"남은절정": "remainOrgasm",
 	    	"절정한계": "orgasmL",
@@ -3958,7 +3958,7 @@ function createCardText(card, reverse=false) {
 	    	"이전": "lastTurn",
 	    	"최근": "recentTurn",
 
-	    	"소모욕망": "consumeLust",
+	    	"소모Lust": "consumeLust",
 
 	    	"사용": "use",
 	    	"버림": "discard",
@@ -3970,8 +3970,8 @@ function createCardText(card, reverse=false) {
 	    	"감소": "down",
 
 	    	"이벤트": "event",
-	    	"발정기록": "Heat",
-	    	"음란기록": "lewd",
+	    	"Heat기록": "Heat",
+	    	"Lewdness기록": "lewd",
 	    	"자극함": "attack",
 	    	"자극받음": "attacked",
 	    	"획득": "get",
@@ -4216,9 +4216,9 @@ function createCardText(card, reverse=false) {
 			case "self": owner = reverse?getWord("상대"):""; break;
 			}
 			switch(obj[1]) {
-			case "excite": stat = `<b>${getWord("흥분")}</b>`; break;
-			case "remainExcite": stat = "남은 <b>흥분</b>"; break;
-			case "exciteL": stat = `<b>${getWord("흥분한계")}</b>`; break;
+			case "excite": stat = `<b>${getWord("Excitement")}</b>`; break;
+			case "remainExcite": stat = "남은 <b>Excitement</b>"; break;
+			case "exciteL": stat = `<b>${getWord("Excitement한계")}</b>`; break;
 			case "orgasm": stat = `<b>${getWord("절정")}</b> Count`; break;
 			case "remainOrgasm": stat = "남은 <b>절정</b> Count"; break;
 			case "orgasmL": stat = `<b>${getWord("절정한계")}</b>`; break;
@@ -4373,33 +4373,33 @@ function createCardText(card, reverse=false) {
 				case "excite":
 					if(obj[5] == 'up') {
 						if((!reverse && obj[0] == "self") || (reverse && obj[0] == "op")) {
-							return translateText(cardTexts["target"]["기록흥분증가자신"], { "time":time });
+							return translateText(cardTexts["target"]["기록Excitement증가자신"], { "time":time });
 						} else {
-							return translateText(cardTexts["target"]["기록흥분증가"], { "time":time, "actor":actor });
+							return translateText(cardTexts["target"]["기록Excitement증가"], { "time":time, "actor":actor });
 						}
 					}
 					if(obj[5] == 'down') {
 						if((!reverse && obj[0] == "self") || (reverse && obj[0] == "op")) {
-							return translateText(cardTexts["target"]["기록흥분감소자신"], { "time":time });
+							return translateText(cardTexts["target"]["기록Excitement감소자신"], { "time":time });
 						} else {
-							return translateText(cardTexts["target"]["기록흥분감소"], { "time":time, "actor":actor });
+							return translateText(cardTexts["target"]["기록Excitement감소"], { "time":time, "actor":actor });
 						}
 					}
 					break;
 				case "lewd":
 					if(obj[5] == 'up') {
-						return translateText(cardTexts["target"]["기록음란증가"], { "time":time });
+						return translateText(cardTexts["target"]["기록Lewdness증가"], { "time":time });
 					}
 					if(obj[5] == 'down') {
-						return translateText(cardTexts["target"]["기록음란감소"], { "time":time });
+						return translateText(cardTexts["target"]["기록Lewdness감소"], { "time":time });
 					}
 					break;
 				case "Heat":
 					if(obj[5] == 'up') {
-						return translateText(cardTexts["target"]["기록발정증가"], { "time":time });
+						return translateText(cardTexts["target"]["기록Heat증가"], { "time":time });
 					}
 					if(obj[5] == 'down') {
-						return translateText(cardTexts["target"]["기록발정감소"], { "time":time });
+						return translateText(cardTexts["target"]["기록Heat감소"], { "time":time });
 					}
 					break;
 				case "get":
@@ -4429,21 +4429,21 @@ function createCardText(card, reverse=false) {
 				case "gain":
 					switch(obj[5]) {
 					case "lust":
-						return translateText(cardTexts["target"]["기록욕망획득"], { "time":time });
+						return translateText(cardTexts["target"]["기록Lust획득"], { "time":time });
 						break;
 					case "wetness":
-						return translateText(cardTexts["target"]["기록젖음획득"], { "time":time });
+						return translateText(cardTexts["target"]["기록Wetness획득"], { "time":time });
 						break;
 					case "sBlock":
 						return translateText(cardTexts["target"]["기록감각차단획득"], { "time":time });
 						break;
 					case "corrupt":
-						return translateText(cardTexts["target"]["기록타락획득"], { "time":time });
+						return translateText(cardTexts["target"]["기록Corruption획득"], { "time":time });
 						break;
 					}
 					break;
 				case "consumeLust":
-					return translateText(cardTexts["target"]["기록소모한욕망"], { "time":time });
+					return translateText(cardTexts["target"]["기록소모한Lust"], { "time":time });
 					break;
 				case "avoid":
 					if((!reverse && obj[0] == "self") || (reverse && obj[0] == "op")) {
@@ -4497,7 +4497,7 @@ function createCardText(card, reverse=false) {
 				
 				break;
 			case "type":
-				return translateText(cardTexts["target"]["기록소모한욕망"], { "card":getWord("원본"), "category":getWord("종류") });
+				return translateText(cardTexts["target"]["기록소모한Lust"], { "card":getWord("원본"), "category":getWord("종류") });
 				break;
 			}
 		}
@@ -4516,21 +4516,21 @@ function createCardText(card, reverse=false) {
 		}
 
 		switch(obj[0]) {
-		case "lewd": return `<b>${getWord("음란")}</b>`; break;
-		case "real_lewd": return `<b>${getWord("실제음란")}</b>`; break;
-		case "Heat": return `<b>${getWord("발정")}</b>`; break;
-		case "real_Heat": return `<b>${getWord("실제발정")}</b>`; break;
+		case "lewd": return `<b>${getWord("Lewdness")}</b>`; break;
+		case "real_lewd": return `<b>${getWord("실제Lewdness")}</b>`; break;
+		case "Heat": return `<b>${getWord("Heat")}</b>`; break;
+		case "real_Heat": return `<b>${getWord("실제Heat")}</b>`; break;
 		case "round": return getWord("라운드"); break;
-		case "consumeLust": return `${translateText(cardTexts["target"]["소모한욕망"])}`; break;
+		case "consumeLust": return `${translateText(cardTexts["target"]["소모한Lust"])}`; break;
 		case "selfCard": return "self"; break;
 		case "derived": return getWord("파생"); break;
 		case "posture": return `<b>${getWord("체위")}</b>`; break;
-		case "lust": return `<b>${getWord("욕망")}</b>`; break;
-		case "wetness": return `<b>${getWord("젖음")}</b>`; break;
+		case "lust": return `<b>${getWord("Lust")}</b>`; break;
+		case "wetness": return `<b>${getWord("Wetness")}</b>`; break;
 		case "stack": return `*${card.stack}*`; break;
 		case "sBlock": return `<b>${getWord("감각차단")}</b>`; break;
-		case "delayedEx": return `<b>${getWord("지연흥분")}</b>`; break;
-		case "corrupt": return `<b>${getWord("타락")}</b>`; break;
+		case "delayedEx": return `<b>${getWord("지연Excitement")}</b>`; break;
+		case "corrupt": return `<b>${getWord("Corruption")}</b>`; break;
 
 		case "specialV02": return nelson; break;
 		case "specialV04": return `*${magicMissile}*`; break;
@@ -5514,7 +5514,7 @@ function createCardText(card, reverse=false) {
 					_modified = -player.modifier.Heat.subtract;
 				}
 			}
-			_changeText = changeValueText(`<b>${getWord("발정")}</b>`, e.op, eValueText, repeatText, _modified);
+			_changeText = changeValueText(`<b>${getWord("Heat")}</b>`, e.op, eValueText, repeatText, _modified);
 			if(!_changeText) {
 				return "";
 			}
@@ -5529,7 +5529,7 @@ function createCardText(card, reverse=false) {
 					_modified = -player.modifier.lewd.subtract;
 				}
 			}
-			_changeText = changeValueText(`<b>${getWord("음란")}</b>`, e.op, eValueText, repeatText, _modified);
+			_changeText = changeValueText(`<b>${getWord("Lewdness")}</b>`, e.op, eValueText, repeatText, _modified);
 			if(!_changeText) {
 				return "";
 			}
@@ -5549,9 +5549,9 @@ function createCardText(card, reverse=false) {
 				}
 			}
 			if(_modifiedE == _modifiedL) {
-				_changeText = changeValueText(`<b>${getWord("음란과 발정")}</b>`, e.op, eValueText, repeatText, _modified);
+				_changeText = changeValueText(`<b>${getWord("Lewdness과 Heat")}</b>`, e.op, eValueText, repeatText, _modified);
 			} else {
-				_changeText = changeValueText(`<b>${getWord("음란")}</b>`, e.op, eValueText, repeatText, _modifiedL) + "<br>" + changeValueText(`<b>${getWord("발정")}</b>`, e.op, eValueText, repeatText, _modifiedE);
+				_changeText = changeValueText(`<b>${getWord("Lewdness")}</b>`, e.op, eValueText, repeatText, _modifiedL) + "<br>" + changeValueText(`<b>${getWord("Heat")}</b>`, e.op, eValueText, repeatText, _modifiedE);
 			}
 			
 			if(!_changeText) {
@@ -5576,13 +5576,13 @@ function createCardText(card, reverse=false) {
 				}
 			}
 			if(e.target == "self") {
-				_changeText = changeValueText(`<b>${getWord("흥분")}</b>`, e.op, eValueText, repeatText, _modified);
+				_changeText = changeValueText(`<b>${getWord("Excitement")}</b>`, e.op, eValueText, repeatText, _modified);
 				if(!_changeText) {
 					return "";
 				}
 				text += _changeText;
 			} else {
-				_changeText = changeValueText(translateText(cardTexts["target"]["스탯"], { "owner":owner, "stat":`<b>${getWord("흥분")}</b>` }), e.op, eValueText, repeatText, _modified);
+				_changeText = changeValueText(translateText(cardTexts["target"]["스탯"], { "owner":owner, "stat":`<b>${getWord("Excitement")}</b>` }), e.op, eValueText, repeatText, _modified);
 				if(!_changeText) {
 					return "";
 				}
@@ -5606,13 +5606,13 @@ function createCardText(card, reverse=false) {
 				}
 			}
 			if(e.target == "self") {
-				_changeText = changeValueText(`<b>${getWord("흥분 한계")}</b>`, e.op, eValueText, repeatText, _modified);
+				_changeText = changeValueText(`<b>${getWord("Excitement Limit")}</b>`, e.op, eValueText, repeatText, _modified);
 				if(!_changeText) {
 					return "";
 				}
 				text += _changeText;
 			} else {
-				_changeText = changeValueText(translateText(cardTexts["target"]["스탯"], { "owner":owner, "stat":`<b>${getWord("흥분 한계")}</b>` }), e.op, eValueText, repeatText, _modified);
+				_changeText = changeValueText(translateText(cardTexts["target"]["스탯"], { "owner":owner, "stat":`<b>${getWord("Excitement Limit")}</b>` }), e.op, eValueText, repeatText, _modified);
 				if(!_changeText) {
 					return "";
 				}
@@ -5645,13 +5645,13 @@ function createCardText(card, reverse=false) {
 				}
 			}
 			if(e.target == "self") {
-				_changeText = changeValueText(`<b>${getWord("절정 한계")}</b>`, e.op, eValueText, repeatText, _modified);
+				_changeText = changeValueText(`<b>${getWord("Orgasm Limit")}</b>`, e.op, eValueText, repeatText, _modified);
 				if(!_changeText) {
 					return "";
 				}
 				text += _changeText;
 			} else {
-				_changeText = changeValueText(translateText(cardTexts["target"]["스탯"], { "owner":owner, "stat":`<b>${getWord("절정 한계")}</b>` }), e.op, eValueText, repeatText, _modified);
+				_changeText = changeValueText(translateText(cardTexts["target"]["스탯"], { "owner":owner, "stat":`<b>${getWord("Orgasm Limit")}</b>` }), e.op, eValueText, repeatText, _modified);
 				if(!_changeText) {
 					return "";
 				}
@@ -5810,9 +5810,9 @@ function createCardText(card, reverse=false) {
 			break;
 		case "lust":
 			if(typeof e.info.value === 'string' && e.info.value.startsWith("M")) {
-				text += translateText(cardTexts["effect"]["헤더값"], { value:getWord("욕망"), amount:`${getWord("Max")} ${e.info.value.slice(1)}` });
+				text += translateText(cardTexts["effect"]["헤더값"], { value:getWord("Lust"), amount:`${getWord("Max")} ${e.info.value.slice(1)}` });
 			} else {
-				text += translateText(cardTexts["effect"]["헤더값"], { value:getWord("욕망"), amount:typeof e.info.value === "number"?e.info.value:getWord(e.info.value) });
+				text += translateText(cardTexts["effect"]["헤더값"], { value:getWord("Lust"), amount:typeof e.info.value === "number"?e.info.value:getWord(e.info.value) });
 			}
 			for(let le of e.info.effect) {
 				text += effectText(le);
@@ -5822,7 +5822,7 @@ function createCardText(card, reverse=false) {
 			}
 			break;
 		case "wetness":
-			text += translateText(cardTexts["effect"]["헤더값"], { value:getWord("젖음"), amount:typeof e.info.value === "number"?e.info.value:getWord(e.info.value) });
+			text += translateText(cardTexts["effect"]["헤더값"], { value:getWord("Wetness"), amount:typeof e.info.value === "number"?e.info.value:getWord(e.info.value) });
 			for(let we of e.info.effect) {
 				text += effectText(we);
 			}
@@ -5832,9 +5832,9 @@ function createCardText(card, reverse=false) {
 			break;
 		case "corrupt":
 			if(typeof e.info.value === 'string' && e.info.value.startsWith("M")) {
-				text += translateText(cardTexts["effect"]["헤더값"], { value:getWord(e.trigger=="always"?"Corruption":"타락"), amount:`${e.info.value.slice(1)} ${getWord("이하")}` });
+				text += translateText(cardTexts["effect"]["헤더값"], { value:getWord(e.trigger=="always"?"Corruption":"Corruption"), amount:`${e.info.value.slice(1)} ${getWord("이하")}` });
 			} else {
-				text += translateText(cardTexts["effect"]["헤더값"], { value:getWord(e.trigger=="always"?"Corruption":"타락"), amount:typeof e.info.value === "number"?e.info.value:getWord(e.info.value) });
+				text += translateText(cardTexts["effect"]["헤더값"], { value:getWord(e.trigger=="always"?"Corruption":"Corruption"), amount:typeof e.info.value === "number"?e.info.value:getWord(e.info.value) });
 			}
 			for(let we of e.info.effect) {
 				text += effectText(we);
@@ -5912,14 +5912,14 @@ function createCardText(card, reverse=false) {
 	        }
         	break;
         case "changeLust":
-			_changeText = changeValueText(`<b>${getWord("욕망")}</b>`, e.op, eValueText, repeatText);
+			_changeText = changeValueText(`<b>${getWord("Lust")}</b>`, e.op, eValueText, repeatText);
 			if(!_changeText) {
 				return "";
 			}
 			text += _changeText;
         	break;
 		case "changeWetness":
-			_changeText = changeValueText(`<b>${getWord("젖음")}</b>`, e.op, eValueText, repeatText);
+			_changeText = changeValueText(`<b>${getWord("Wetness")}</b>`, e.op, eValueText, repeatText);
 			if(!_changeText) {
 				return "";
 			}
@@ -5933,14 +5933,14 @@ function createCardText(card, reverse=false) {
 			text += _changeText;
 			break;
 		case "changeDelayedEx":
-			_changeText = changeValueText(`<b>${getWord("지연흥분")}</b>`, e.op, eValueText, repeatText);
+			_changeText = changeValueText(`<b>${getWord("지연Excitement")}</b>`, e.op, eValueText, repeatText);
 			if(!_changeText) {
 				return "";
 			}
 			text += _changeText;
 			break;
 		case "changeCorrupt":
-			_changeText = changeValueText(`<b>${getWord("타락")}</b>`, e.op, eValueText, repeatText);
+			_changeText = changeValueText(`<b>${getWord("Corruption")}</b>`, e.op, eValueText, repeatText);
 			if(!_changeText) {
 				return "";
 			}
@@ -6358,19 +6358,19 @@ function createCardText(card, reverse=false) {
         	}
         	break;
         case "minLewd":
-        	text += translateText(cardTexts["effect"]["최저음란"], { "amount":e.value })
+        	text += translateText(cardTexts["effect"]["최저Lewdness"], { "amount":e.value })
         	break;
         case "maxLewd":
-        	text += translateText(cardTexts["effect"]["Max음란"], { "amount":e.value })
+        	text += translateText(cardTexts["effect"]["MaxLewdness"], { "amount":e.value })
         	break;
         case "minHeat":
-        	text += translateText(cardTexts["effect"]["최저발정"], { "amount":e.value })
+        	text += translateText(cardTexts["effect"]["최저Heat"], { "amount":e.value })
         	break;
         case "maxHeat":
-        	text += translateText(cardTexts["effect"]["Max발정"], { "amount":e.value })
+        	text += translateText(cardTexts["effect"]["MaxHeat"], { "amount":e.value })
         	break;
         case "startLust":
-        	text += translateText(cardTexts["effect"]["시작욕망"], { "amount":e.value })
+        	text += translateText(cardTexts["effect"]["시작Lust"], { "amount":e.value })
         	break;
         case "enemyDisable":
         	text += translateText(cardTexts["effect"]["Champion비활성화"], { })
@@ -6391,13 +6391,13 @@ function createCardText(card, reverse=false) {
         	text += translateText(cardTexts["effect"]["마술비활성화"], { })
         	break;
         case "lustBan":
-        	text += translateText(cardTexts["effect"]["욕망금지"], { })
+        	text += translateText(cardTexts["effect"]["Lust금지"], { })
         	break;
         case "maxLust":
-        	text += translateText(cardTexts["effect"]["욕망제한"], { "amount":e.value })
+        	text += translateText(cardTexts["effect"]["Lust제한"], { "amount":e.value })
         	break;
         case "wetnessBan":
-        	text += translateText(cardTexts["effect"]["젖음금지"], { })
+        	text += translateText(cardTexts["effect"]["Wetness금지"], { })
         	break;
         case "avoidBan":
         	text += translateText(cardTexts["effect"]["회피금지"], { })
@@ -6412,7 +6412,7 @@ function createCardText(card, reverse=false) {
         	text += translateText(cardTexts["effect"]["감각차단제한"], { "amount":e.value })
         	break;
         case "startCorrupt":
-        	text += translateText(cardTexts["effect"]["시작타락"], { "amount":e.value })
+        	text += translateText(cardTexts["effect"]["시작Corruption"], { "amount":e.value })
         	break;
         case "useLimit":
         	text += translateText(cardTexts["effect"]["Max사용"], { "amount":e.value })
@@ -6674,7 +6674,7 @@ function createCardText(card, reverse=false) {
 	}
 
 	if(card.tags && card.tags.includes("독") && card.expiration == "turnEnd") {
-		text += ' <span style="color: gray;"><i>('+card.duration+"라운드 남음)</i></span>";
+		text += ' <span style="color: gray;"><i>('+card.duration+"Round남음)</i></span>";
 	}
 
 	if(card.stack && card.stack >= 2) {
@@ -7261,13 +7261,13 @@ function cardStateUpdate() {
 		document.getElementById("cards").innerHTML += ` + ${getWord("Essence")} ${getWord("card")}: ` + essences.length;
 	}
 
-    document.getElementById("stats").innerHTML = `${getWord("음란")}: ${lewd} | ${getWord("발정")}: ${Heat} | ${getWord("흥분 한계")}: ${player.exciteL} | ${getWord("절정 한계")}: ${player.orgasmL}`;
+    document.getElementById("stats").innerHTML = `${getWord("Lewdness")}: ${lewd} | ${getWord("Heat")}: ${Heat} | ${getWord("Excitement Limit")}: ${player.exciteL} | ${getWord("Orgasm Limit")}: ${player.orgasmL}`;
     switch(choiceValues.class) {
     case "Warrior":
-    	document.getElementById("stats").innerHTML += ` | ${getWord("욕망")}: `+lust;
+    	document.getElementById("stats").innerHTML += ` | ${getWord("Lust")}: `+lust;
     	break;
     case "Assassin":
-    	document.getElementById("stats").innerHTML += ` | ${getWord("젖음")}: `+wetness;
+    	document.getElementById("stats").innerHTML += ` | ${getWord("Wetness")}: `+wetness;
     	break;
     }
 
@@ -8395,36 +8395,36 @@ function returnText(v, self=null) {
     	"적Max행동": maxUseE,
     	"maxUseE": maxUseE,
 
-    	"음란": lewd,
+    	"Lewdness": lewd,
     	"lewd": lewd,
-    	"실제음란": real_lewd,
+    	"실제Lewdness": real_lewd,
     	"real_lewd": real_lewd,
 
-    	"발정": Heat,
     	"Heat": Heat,
-    	"실제발정": real_Heat,
+    	"Heat": Heat,
+    	"실제Heat": real_Heat,
     	"real_Heat": real_Heat,
 
     	"체위": posture,
     	"posture": posture,
 
-    	"욕망": lust,
+    	"Lust": lust,
     	"lust": lust,
 
-    	"젖음": wetness,
+    	"Wetness": wetness,
     	"wetness": wetness,
 
     	"감각차단": sBlock,
     	"sBlock": sBlock,
-    	"지연흥분": delayedEx,
+    	"지연Excitement": delayedEx,
     	"delayedEx": delayedEx,
 
-    	"타락": corrupt,
+    	"Corruption": corrupt,
     	"corrupt": corrupt,
 
-    	"흥분": "excite",
-    	"남은흥분": "remainExcite",
-    	"흥분한계": "exciteL",
+    	"Excitement": "excite",
+    	"남은Excitement": "remainExcite",
+    	"Excitement한계": "exciteL",
     	"절정": "orgasm",
     	"남은절정": "remainOrgasm",
     	"절정한계": "orgasmL",
@@ -8438,7 +8438,7 @@ function returnText(v, self=null) {
     	"이전": "lastTurn",
     	"최근": "recentTurn",
 
-    	"소모욕망": "consumeLust",
+    	"소모Lust": "consumeLust",
 
     	"사용": "use",
     	"버림": "discard",
@@ -8450,8 +8450,8 @@ function returnText(v, self=null) {
     	"감소": "down",
 
     	"이벤트": "event",
-    	"발정기록": "Heat",
-    	"음란기록": "lewd",
+    	"Heat기록": "Heat",
+    	"Lewdness기록": "lewd",
     	"자극함": "attack",
     	"자극받음": "attacked",
     	"획득": "get",
@@ -8928,8 +8928,8 @@ function selectCards(cards, category, value=null, count="all") {
 }
 
 async function battleStart() {
-	await showMessage("결투 시작");
-    addLogText("【 결투 시작 】")
+	await showMessage("Battle Start");
+    addLogText("【 Battle Start 】")
 	await wait(500);
 	await addLine(line["조우"]);
 	await addLine(line["등장"]);
@@ -8989,9 +8989,9 @@ async function roundStart() {
 		}
 	}
 
-	await showMessage("라운드 "+round);
-    addLogText("<br>========== 『 라운드 "+round+" 』 ==========")
-    addLogText("<br>【 라운드 시작 】");
+	await showMessage("Round"+round);
+    addLogText("<br>========== 『 Round"+round+" 』 ==========")
+    addLogText("<br>【 Round Start 】");
 
     player.effectActive = [];
     enemy.effectActive = [];
@@ -9001,7 +9001,7 @@ async function roundStart() {
     	var preV = corrupt;
     	corrupt = Math.max(corrupt + options.corruptIncrease, 0);
     	infoUpdate();
-    	addLogText("타락 "+(options.corruptIncrease >= 0?"+":"")+options.corruptIncrease+" <i>( "+(preV)+" -> "+corrupt+" )</i>");
+    	addLogText("Corruption "+(options.corruptIncrease >= 0?"+":"")+options.corruptIncrease+" <i>( "+(preV)+" -> "+corrupt+" )</i>");
     	animationEmphasis(corruptNumber)
     	animationColorizeNum(corruptNumber, 'rgba(160, 50, 160, 0.5)');
     	await animationNegative(document.getElementById("playerPortrait"), false);
@@ -9632,7 +9632,7 @@ async function combat() {
 				var preV = wetness;
 				wetness = Math.min(wetness + options.wetnessIncrease, maxWetness);
 				infoUpdate();
-				addLogText("젖음 +"+options.wetnessIncrease+" <i>( "+(preV)+" -> "+wetness+" )</i>");
+				addLogText("Wetness +"+options.wetnessIncrease+" <i>( "+(preV)+" -> "+wetness+" )</i>");
 				let wetnessNumber = document.getElementById("wetness");
 				animationEmphasis(wetnessNumber);
 				await animationColorizeNum(wetnessNumber, 'rgba(0, 255, 255, 0.5)');
@@ -9692,9 +9692,9 @@ async function combat() {
 
     actionDiv.style.transform = '';
     if(battleEnd == -1) {
-    	addLogText("<br>【 라운드 종료 】");
+    	addLogText("<br>【 Round종료 】");
     	await wait(500);
-		await showMessage("라운드 종료");
+		await showMessage("Round종료");
 		await wait(500);
     }
 
@@ -9922,15 +9922,15 @@ async function turnEndEvent() {
 
 		if(!_specialEvent) {
 			let _corruptCheck = false;
-			if(!eventsRecord.includes("플레이어-타락") && (player.orgasm >=2 || player.orgasmL - player.orgasm <= 1)) {
-				eventLine += "-타락";
+			if(!eventsRecord.includes("플레이어-Corruption") && (player.orgasm >=2 || player.orgasmL - player.orgasm <= 1)) {
+				eventLine += "-Corruption";
 				_specialEvent = true
-				eventsRecord.push("플레이어-타락");
+				eventsRecord.push("플레이어-Corruption");
 			}
-			if(!eventsRecord.includes("플레이어-타락") && !eventsRecord.includes("플레이어-흥분") && player.orgasm > 0) {
-				eventLine += "-흥분";
+			if(!eventsRecord.includes("플레이어-Corruption") && !eventsRecord.includes("플레이어-Excitement") && player.orgasm > 0) {
+				eventLine += "-Excitement";
 				_specialEvent = true
-				eventsRecord.push("플레이어-흥분");
+				eventsRecord.push("플레이어-Excitement");
 			}
 		}
 	}
@@ -10103,6 +10103,15 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
         		}
         	}
 
+
+
+
+
+
+
+
+
+
         	if(repeat > 0) {
 	            switch(e.type) {
 	            case "line":
@@ -10183,7 +10192,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	for(let i=0; i<repeat; i++) {
 		            		real_Heat = Math.min(Math.max(real_Heat + eValue, minHeat), maxHeat);
 		            	}
-		            	addLogText("발정 "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
+		            	addLogText("Heat "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
 		            	break;
 	            	case "multiply":
 		            	if(eValue > 1) {
@@ -10194,7 +10203,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	for(let i=0; i<repeat; i++) {
 			            	real_Heat = Math.min(Math.max(real_Heat * eValue, minHeat), maxHeat);
 			            }
-		            	addLogText("발정 x"+(eValue*repeat)+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
+		            	addLogText("Heat x"+(eValue*repeat)+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
 		            	break;
 	            	case "set":
 		            	if(eValue > real_Heat) {
@@ -10203,7 +10212,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            		animationColorize(playerPort, 'rgba(0, 0, 255, 0.5)');
 		            	}
 		            	real_Heat = Math.min(Math.max(eValue*repeat, minHeat), maxHeat);
-		            	addLogText("발정을 "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
+		            	addLogText("Set Heat to "+(eValue*repeat)+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
 		            	break;
 		            }
 		            if(real_Heat - preV > 0) {
@@ -10231,7 +10240,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	for(let i=0; i<repeat; i++) {
 			            	real_lewd = Math.min(Math.max(real_lewd + eValue, minLewd), maxLewd);
 			            }
-		            	addLogText("음란 "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+real_lewd+" )</i>", action, actor);
+		            	addLogText("Lewdness "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+real_lewd+" )</i>", action, actor);
 		            	break;
 	            	case "multiply":
 		            	if(eValue > 1) {
@@ -10242,7 +10251,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	for(let i=0; i<repeat; i++) {
 			            	real_lewd = Math.min(Math.max(real_lewd * eValue, minLewd), maxLewd);
 			            }
-		            	addLogText("음란 x"+(eValue*repeat)+" <i>( "+preV+" -> "+real_lewd+" )</i>", action, actor);
+		            	addLogText("Lewdness x"+(eValue*repeat)+" <i>( "+preV+" -> "+real_lewd+" )</i>", action, actor);
 		            	break;
 	            	case "set":
 		            	if(eValue > real_lewd) {
@@ -10251,7 +10260,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            		animationColorize(playerPort, 'rgba(0, 0, 255, 0.5)');
 		            	}
 		            	real_lewd = Math.min(Math.max(eValue*repeat, minLewd), maxLewd);
-		            	addLogText("음란을 "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+real_lewd+" )</i>", action, actor);
+		            	addLogText("Set Lewdness to "+(eValue*repeat)+" <i>( "+preV+" -> "+real_lewd+" )</i>", action, actor);
 		            	break;
 		            }
 		            if(real_lewd - preV > 0) {
@@ -10280,7 +10289,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	for(let i=0; i<repeat; i++) {
 		            		real_lewd = Math.min(Math.max(real_lewd + eValueL, minLewd), maxLewd);
 		            	}
-		            	addLogText("음란 "+((eValue>0)?"+":"")+(eValueL*repeat)+" <i>( "+preV+" -> "+real_lewd+" )</i>", action, actor);
+		            	addLogText("Lewdness "+((eValue>0)?"+":"")+(eValueL*repeat)+" <i>( "+preV+" -> "+real_lewd+" )</i>", action, actor);
 		            	break;
 	            	case "multiply":
 		            	if(eValue > 1) {
@@ -10291,7 +10300,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	for(let i=0; i<repeat; i++) {
 		            		real_lewd = Math.min(Math.max(real_lewd * eValue, minLewd), maxLewd);
 		            	}
-		            	addLogText("음란 x"+(eValue*repeat)+" <i>( "+preV+" -> "+real_lewd+" )</i>", action, actor);
+		            	addLogText("Lewdness x"+(eValue*repeat)+" <i>( "+preV+" -> "+real_lewd+" )</i>", action, actor);
 		            	break;
 	            	case "set":
 		            	if(eValue > real_lewd) {
@@ -10300,7 +10309,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            		animationColorize(playerPort, 'rgba(0, 0, 255, 0.5)');
 		            	}
 		            	real_lewd = Math.min(Math.max(eValue*repeat, minLewd), maxLewd);
-		            	addLogText("음란을 "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+real_lewd+" )</i>", action, actor);
+		            	addLogText("Set Lewdness to "+(eValue*repeat)+" <i>( "+preV+" -> "+real_lewd+" )</i>", action, actor);
 		            	break;
 		            }
 		            if(real_lewd - preV > 0) {
@@ -10327,7 +10336,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	for(let i=0; i<repeat; i++) {
 		            		real_Heat = Math.min(Math.max(real_Heat + eValueE, minHeat), maxHeat);
 		            	}
-		            	addLogText("발정 "+((eValue>0)?"+":"")+(eValueE*repeat)+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
+		            	addLogText("Heat "+((eValue>0)?"+":"")+(eValueE*repeat)+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
 		            	break;
 	            	case "multiply":
 		            	if(eValue > 1) {
@@ -10338,7 +10347,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	for(let i=0; i<repeat; i++) {
 		            		real_Heat = Math.min(Math.max(real_Heat * eValue, minHeat), maxHeat);
 		            	}
-		            	addLogText("발정 x"+(eValue*repeat)+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
+		            	addLogText("Heat x"+(eValue*repeat)+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
 		            	break;
 	            	case "set":
 		            	if(eValue > real_Heat) {
@@ -10347,7 +10356,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            		animationColorize(playerPort, 'rgba(0, 0, 255, 0.5)');
 		            	}
 		            	real_Heat = Math.min(Math.max(eValue*repeat, minHeat), maxHeat);
-		            	addLogText("발정을 "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
+		            	addLogText("Set Heat to "+(eValue*repeat)+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
 		            	break;
 		            }
 		            if(real_Heat - preV > 0) {
@@ -10384,10 +10393,10 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            		changeColor = 'rgba(0, 0, 255, 0.5)';
 		            	}
 		            	if(eValue > 0 && target.immune) {
-		            		addLogText(tText+"의 흥분은 증가하지 않았다.", action, actor);
+		            		addLogText(tText+"'s Excitement did not increase.", action, actor);
 		            		await wait([200, 300, 500, 750, 1000][turnSpeed]);
 		            	} else if(eValue < 0 && target.healBan) {
-		            		addLogText(tText+"의 흥분은 회복되지 않았다.", action, actor);
+		            		addLogText(tText+"'s Excitement did not recover.", action, actor);
 		            		await wait([200, 300, 500, 750, 1000][turnSpeed]);
 		            	} else {
 		            		var _accumEx = 0;
@@ -10417,11 +10426,11 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 				            		animationColorize(targetPort, changeColor);
 
 				            		if(_accumBlock > 0) {
-				            			addLogText(tText+"의 감각이 차단되어 "+(_accumBlock)+" 만큼의 흥분을 막음 <i>( "+preBlock+" -> "+sBlock+" )</i>", action, actor);
+				            			addLogText(tText+"'s senses blocked "+(_accumBlock)+" Excitement <i>( "+preBlock+" -> "+sBlock+" )</i>", action, actor);
 				            			_accumBlock = 0;
 			            				animationColorizeNum(sBlockNumber, 'rgba(255, 0, 0, 0.5)');
 				            		}
-				            		addLogText(tText+"의 흥분 "+((_accumEx>0)?"+":"")+(_accumEx)+" <i>( "+preV+" -> "+target.real_excite+" )</i>", action, actor);
+				            		addLogText(tText+"'s Excitement "+((_accumEx>0)?"+":"")+(_accumEx)+" <i>( "+preV+" -> "+target.real_excite+" )</i>", action, actor);
 				            		infoUpdate();
 
 				            		var _changed = target.real_excite - preV;
@@ -10438,7 +10447,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 						            		if(!options.lustBan && choiceValues.class == "Warrior") {
 						            			let preLust = lust;
 							            		lust = Math.min(Math.max(0, lust + _changed * (player.state.some(st => st.id == "AD-WA-BG2-002")?2:1)), maxLust);
-							            		addLogText("욕망 +"+(_changed * (player.state.some(st => st.id == "AD-WA-BG2-002")?2:1))+" <i>( "+preLust+" -> "+lust+" )</i>");
+							            		addLogText("Lust +"+(_changed * (player.state.some(st => st.id == "AD-WA-BG2-002")?2:1))+" <i>( "+preLust+" -> "+lust+" )</i>");
 							            		infoUpdate();
 							            		animationColorizeNum(lustNumber, 'rgba(255, 0, 0, 0.5)');
 						            			player.record[round-1].event.gain.lust += Math.max(lust - preLust, 0);
@@ -10467,7 +10476,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 							            		var preV2 = target.real_excite;
 							            		target.real_excite = Math.min(Math.max(target.real_excite + _changed, 0), target.exciteL);
 							            		target.record[round-1].event.excite.up += target.real_excite - preV2;
-							            		addLogText("정기를 흡수하여 "+target.name+"의 흥분을 "+(_changed)+" 증가"+" <i>( "+preV2+" -> "+target.real_excite+" )</i>");
+							            		addLogText("Absorbed essence, increasing "+target.name+"'s Excitement by "+(_changed)+" <i>( "+preV2+" -> "+target.real_excite+" )</i>");
 							            		infoUpdate();
 				            					animationColorize(targetPort, changeColor);
 							            		await animationColorizeNum(tpos == 1?playerExNumber:enemyExNumber, changeColor);
@@ -10475,7 +10484,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 							            		var preV2 = actorObj.real_excite;
 							            		actorObj.real_excite = Math.min(Math.max(actorObj.real_excite - (_changed), 0), actorObj.exciteL);
 							            		actorObj.record[round-1].event.excite.down -= actorObj.real_excite - preV2;
-							            		addLogText("정기를 흡수하여 "+actorObj.name+"의 흥분을 "+(_changed)+" 회복"+" <i>( "+preV2+" -> "+actorObj.real_excite+" )</i>");
+							            		addLogText("Absorbed essence, restoring "+actorObj.name+"'s Excitement by "+(_changed)+" <i>( "+preV2+" -> "+actorObj.real_excite+" )</i>");
 							            		infoUpdate();
 							            		animationColorize(actor == 1?playerPort:enemyPort, 'rgba(255, 150, 200, 0.5)');
 							            		await animationColorizeNum(actor == 1?playerExNumber:enemyExNumber, 'rgba(255, 150, 200, 0.5)');
@@ -10506,10 +10515,10 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 			            		}
 
 			            		if(_accumBlock > 0) {
-			            			addLogText(tText+"의 감각이 차단되어 "+(_accumBlock)+" 만큼의 흥분을 막음 <i>( "+preBlock+" -> "+sBlock+" )</i>", action, actor);
+			            			addLogText(tText+"'s senses blocked "+(_accumBlock)+" Excitement <i>( "+preBlock+" -> "+sBlock+" )</i>", action, actor);
 			            			animationColorizeNum(sBlockNumber, 'rgba(255, 0, 0, 0.5)');
 			            		}
-			            		addLogText(tText+"의 흥분 "+((_accumEx>0)?"+":"")+(_accumEx)+" <i>( "+preV+" -> "+target.real_excite+" )</i>", action, actor);
+			            		addLogText(tText+"'s Excitement "+((_accumEx>0)?"+":"")+(_accumEx)+" <i>( "+preV+" -> "+target.real_excite+" )</i>", action, actor);
 			            		infoUpdate();
 			            		animationColorize(targetPort, changeColor);
 
@@ -10526,7 +10535,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					            		if(!options.lustBan && choiceValues.class == "Warrior") {
 					            			let preLust = lust;
 						            		lust = Math.min(Math.max(0, lust + _accumEx * (player.state.some(st => st.id == "AD-WA-BG2-002")?2:1)), maxLust);
-						            		addLogText("욕망 +"+(_accumEx * (player.state.some(st => st.id == "AD-WA-BG2-002")?2:1))+" <i>( "+preLust+" -> "+lust+" )</i>");
+						            		addLogText("Lust +"+(_accumEx * (player.state.some(st => st.id == "AD-WA-BG2-002")?2:1))+" <i>( "+preLust+" -> "+lust+" )</i>");
 						            		infoUpdate();
 						            		animationColorizeNum(lustNumber, 'rgba(255, 0, 0, 0.5)');
 						            		player.record[round-1].event.gain.lust += Math.max(lust - preLust, 0);
@@ -10561,7 +10570,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 						            		var preV2 = target.real_excite;
 						            		target.real_excite = Math.min(Math.max(target.real_excite + _accumEx, 0), target.exciteL);
 						            		target.record[round-1].event.excite.up += target.real_excite - preV2;
-						            		addLogText("정기를 흡수하여 "+target.name+"의 흥분을 "+(_accumEx)+" 증가"+" <i>( "+preV2+" -> "+target.real_excite+" )</i>");
+						            		addLogText("Absorbed essence, increasing "+target.name+"'s Excitement by "+(_accumEx)+" <i>( "+preV2+" -> "+target.real_excite+" )</i>");
 						            		infoUpdate();
 			            					animationColorize(targetPort, changeColor);
 						            		await animationColorizeNum(tpos == 1?playerExNumber:enemyExNumber, changeColor);
@@ -10569,7 +10578,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 						            		var preV2 = actorObj.real_excite;
 						            		actorObj.real_excite = Math.min(Math.max(actorObj.real_excite - (_accumEx), 0), actorObj.exciteL);
 						            		actorObj.record[round-1].event.excite.down -= actorObj.real_excite - preV2;
-						            		addLogText("정기를 흡수하여 "+actorObj.name+"의 흥분을 "+(_accumEx)+" 회복"+" <i>( "+preV2+" -> "+actorObj.real_excite+" )</i>");
+						            		addLogText("Absorbed essence, restoring "+actorObj.name+"'s Excitement by "+(_accumEx)+" <i>( "+preV2+" -> "+actorObj.real_excite+" )</i>");
 						            		infoUpdate();
 						            		animationColorize(actor == 1?playerPort:enemyPort, 'rgba(255, 150, 200, 0.5)');
 						            		await animationColorizeNum(actor == 1?playerExNumber:enemyExNumber, 'rgba(255, 150, 200, 0.5)');
@@ -10597,7 +10606,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 			            	await animationColorize(actionCardDiv, changeColor);
 			            }
 		            	if(eValue > 1 && target.immune) {
-		            		addLogText(tText+"의 흥분은 증가하지 않았다.", action, actor);
+		            		addLogText(tText+"'s Excitement did not increase.", action, actor);
 		            		await wait([200, 300, 500, 750, 1000][turnSpeed]);
 		            	} else {
 			            	for(let i=0; i<repeat; i++) {
@@ -10605,14 +10614,14 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 				            }
 		            		var _changed = target.real_excite - preV;
 				            cardRecordData[tpos==1?"player":"enemy"].excite += _changed;
-			            	addLogText(tText+"의 흥분 x"+(eValue*repeat)+" <i>( "+preV+" -> "+target.real_excite+" )</i>", action, actor);
+			            	addLogText(tText+"'s Excitement x"+(eValue*repeat)+" <i>( "+preV+" -> "+target.real_excite+" )</i>", action, actor);
 			            	infoUpdate();
 				            
 				            if(_changed > 0) {
 				            	if(target == player && !options.lustBan && choiceValues.class == "Warrior") {
 			            			let preLust = lust;
 				            		lust = Math.min(Math.max(0, lust + _changed * (player.state.some(st => st.id == "AD-WA-BG2-002")?2:1)), maxLust);
-				            		addLogText("욕망 +"+(_changed * (player.state.some(st => st.id == "AD-WA-BG2-002")?2:1))+" <i>( "+preLust+" -> "+lust+" )</i>");
+				            		addLogText("Lust +"+(_changed * (player.state.some(st => st.id == "AD-WA-BG2-002")?2:1))+" <i>( "+preLust+" -> "+lust+" )</i>");
 				            		infoUpdate();
 				            		animationColorizeNum(lustNumber, 'rgba(255, 0, 0, 0.5)');
 						            player.record[round-1].event.gain.lust += Math.max(lust - preLust, 0);
@@ -10625,7 +10634,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					            		var preV2 = target.real_excite;
 					            		target.real_excite = Math.min(Math.max(target.real_excite + _changed, 0), target.exciteL);
 					            		target.record[round-1].event.excite.up += target.real_excite - preV2;
-					            		addLogText("정기를 흡수하여 "+target.name+"의 흥분을 "+(_changed)+" 증가"+" <i>( "+preV2+" -> "+target.real_excite+" )</i>");
+					            		addLogText("Absorbed essence, increasing "+target.name+"'s Excitement by "+(_changed)+" <i>( "+preV2+" -> "+target.real_excite+" )</i>");
 					            		infoUpdate();
 		            					animationColorize(targetPort, changeColor);
 					            		await animationColorizeNum(tpos == 1?playerExNumber:enemyExNumber, changeColor);
@@ -10633,7 +10642,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					            		var preV2 = actorObj.real_excite;
 					            		actorObj.real_excite = Math.min(Math.max(actorObj.real_excite - (_changed), 0), actorObj.exciteL);
 					            		actorObj.record[round-1].event.excite.down -= actorObj.real_excite - preV2;
-					            		addLogText("정기를 흡수하여 "+actorObj.name+"의 흥분을 "+(_changed)+" 회복"+" <i>( "+preV2+" -> "+actorObj.real_excite+" )</i>");
+					            		addLogText("Absorbed essence, restoring "+actorObj.name+"'s Excitement by "+(_changed)+" <i>( "+preV2+" -> "+actorObj.real_excite+" )</i>");
 					            		infoUpdate();
 					            		animationColorize(actor == 1?playerPort:enemyPort, 'rgba(255, 150, 200, 0.5)');
 					            		await animationColorizeNum(actor == 1?playerExNumber:enemyExNumber, 'rgba(255, 150, 200, 0.5)');
@@ -10659,19 +10668,19 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 			            	await animationColorize(actionCardDiv, changeColor);
 			            }
 		            	if(eValue > target.real_excite && target.immune) {
-		            		addLogText(tText+"의 흥분은 증가하지 않았다.", action, actor);
+		            		addLogText(tText+"'s Excitement did not increase.", action, actor);
 		            		await wait([200, 300, 500, 750, 1000][turnSpeed]);
 		            	} else {
 			            	target.real_excite = Math.min(Math.max(eValue*repeat, 0), target.exciteL);
 		            		var _changed = target.real_excite - preV;
 				            cardRecordData[tpos==1?"player":"enemy"].excite += _changed;
-			            	addLogText(tText+"의 흥분을 "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+target.real_excite+" )</i>", action, actor);
+			            	addLogText("Set "+tText+"'s Excitement to "+(eValue*repeat)+" <i>( "+preV+" -> "+target.real_excite+" )</i>", action, actor);
 			            	infoUpdate();
 				            if(_changed > 0) {
 				            	if(target == player && !options.lustBan && choiceValues.class == "Warrior") {
 			            			let preLust = lust;
 				            		lust = Math.min(Math.max(0, lust + _changed * (player.state.some(st => st.id == "AD-WA-BG2-002")?2:1)), maxLust);
-				            		addLogText("욕망 +"+(_changed * (player.state.some(st => st.id == "AD-WA-BG2-002")?2:1))+" <i>( "+preLust+" -> "+lust+" )</i>");
+				            		addLogText("Lust +"+(_changed * (player.state.some(st => st.id == "AD-WA-BG2-002")?2:1))+" <i>( "+preLust+" -> "+lust+" )</i>");
 				            		infoUpdate();
 				            		animationColorizeNum(lustNumber, 'rgba(255, 0, 0, 0.5)');
 				            		player.record[round-1].event.gain.lust += Math.max(lust - preLust, 0);
@@ -10685,7 +10694,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					            		var preV2 = target.real_excite;
 					            		target.real_excite = Math.min(Math.max(target.real_excite + _changed, 0), target.exciteL);
 					            		target.record[round-1].event.excite.up += target.real_excite - preV2;
-					            		addLogText("정기를 흡수하여 "+target.name+"의 흥분을 "+(_changed)+" 증가"+" <i>( "+preV2+" -> "+target.real_excite+" )</i>");
+					            		addLogText("Absorbed essence, increasing "+target.name+"'s Excitement by "+(_changed)+" <i>( "+preV2+" -> "+target.real_excite+" )</i>");
 					            		infoUpdate();
 		            					animationColorize(targetPort, changeColor);
 					            		await animationColorizeNum(tpos == 1?playerExNumber:enemyExNumber, changeColor);
@@ -10693,7 +10702,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					            		var preV2 = actorObj.real_excite;
 					            		actorObj.real_excite = Math.min(Math.max(actorObj.real_excite - (_changed), 0), actorObj.exciteL);
 					            		actorObj.record[round-1].event.excite.down -= actorObj.real_excite - preV2;
-					            		addLogText("정기를 흡수하여 "+actorObj.name+"의 흥분을 "+(_changed)+" 회복"+" <i>( "+preV2+" -> "+actorObj.real_excite+" )</i>");
+					            		addLogText("Absorbed essence, restoring "+actorObj.name+"'s Excitement by "+(_changed)+" <i>( "+preV2+" -> "+actorObj.real_excite+" )</i>");
 					            		infoUpdate();
 					            		animationColorize(actor == 1?playerPort:enemyPort, 'rgba(255, 150, 200, 0.5)');
 					            		await animationColorizeNum(actor == 1?playerExNumber:enemyExNumber, 'rgba(255, 150, 200, 0.5)');
@@ -10738,7 +10747,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	for(let i=0; i<repeat; i++) {
 			            	target.real_exciteL += eValue;
 			            }
-		            	addLogText(tText+"의 흥분 한계 "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+target.real_exciteL+" )</i>", action, actor);
+		            	addLogText(tText+"'s Excitement Limit "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+target.real_exciteL+" )</i>", action, actor);
 		            	break;
 	            	case "multiply":
 		            	if(eValue > 1) {
@@ -10752,7 +10761,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	for(let i=0; i<repeat; i++) {
 			            	target.real_exciteL = target.real_exciteL * eValue;
 			            }
-		            	addLogText(tText+"의 흥분 한계 x"+(eValue*repeat)+" <i>( "+preV+" -> "+target.real_exciteL+" )</i>", action, actor);
+		            	addLogText(tText+"'s Excitement Limit x"+(eValue*repeat)+" <i>( "+preV+" -> "+target.real_exciteL+" )</i>", action, actor);
 		            	break;
 	            	case "set":
 		            	if(eValue > target.real_exciteL) {
@@ -10764,7 +10773,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 			            	await animationColorize(actionCardDiv, changeColor);
 			            }
 		            	target.real_exciteL = eValue*repeat;
-		            	addLogText(tText+"의 흥분 한계를 "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+target.real_exciteL+" )</i>", action, actor);
+		            	addLogText("Set "+tText+"'s Excitement Limit to "+(eValue*repeat)+" <i>( "+preV+" -> "+target.real_exciteL+" )</i>", action, actor);
 		            	break;
 		            }
             		var _changed = target.real_exciteL - preV;
@@ -10781,7 +10790,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            	break;
 	            case "orgasm":
 	            	for(let i=0; i<repeat; i++) {
-		            	addLogText(tText+"를 절정시킴", action, actor);
+		            	addLogText("Made "+tText+" orgasm.", action, actor);
 		            	await animationDiffusion(actionCardDiv);
 		            	await wait([200, 300, 500, 750, 1000][turnSpeed]);
 		            	await orgasmEffect(target, 1);
@@ -10814,7 +10823,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	for(let i=0; i<repeat; i++) {
 			            	target.real_orgasmL = target.real_orgasmL + eValue;
 			            }
-		            	addLogText(tText+"의 절정 한계 "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+target.real_orgasmL+" )</i>", action, actor);
+		            	addLogText(tText+"'s Orgasm Limit "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+target.real_orgasmL+" )</i>", action, actor);
 		            	break;
 	            	case "multiply":
 		            	if(eValue > 1) {
@@ -10828,7 +10837,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	for(let i=0; i<repeat; i++) {
 			            	target.real_orgasmL = target.real_orgasmL * eValue;
 			            }
-		            	addLogText(tText+"의 절정 한계 x"+(eValue*repeat)+" <i>( "+preV+" -> "+target.real_orgasmL+" )</i>", action, actor);
+		            	addLogText(tText+"'s Orgasm Limit x"+(eValue*repeat)+" <i>( "+preV+" -> "+target.real_orgasmL+" )</i>", action, actor);
 		            	break;
 	            	case "set":
 		            	if(eValue > target.real_orgasmL) {
@@ -10840,7 +10849,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 			            	await animationColorize(actionCardDiv, changeColor);
 			            }
 		            	target.real_orgasmL = eValue*repeat;
-		            	addLogText(tText+"의 절정 한계를 "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+target.real_orgasmL+" )</i>", action, actor);
+		            	addLogText("Set "+tText+"'s Orgasm Limit to "+(eValue*repeat)+" <i>( "+preV+" -> "+target.real_orgasmL+" )</i>", action, actor);
 		            	break;
 		            }
             		var _changed = target.real_orgasmL - preV;
@@ -10893,7 +10902,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 
 		            	if((target === player && (Heat <= 0 || (wetness >= Heat && !options.avoidBan))) || (target === enemy && lewd <= 0)) {
 		            		player.record[round-1].event.avoid += 1;
-		            		addLogText(attachPostposition(tText, "을 ", "를 ")+"<b>[자극]</b>하였으나 <b>회피</b>했다.", action, actor);
+		            		addLogText(tText+" <b>avoided</b> the <b>[Stimulation]</b>.", action, actor);
 		            		if(target === player && Heat > 0) {
 	        					animationColorizeNum(wetnessNumber, 'rgba(0, 0, 255, 0.5)');
 		            		}
@@ -10906,7 +10915,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 							}
 			            } else {
 			            	if(target.immune) {
-			            		addLogText(tText+"의 흥분은 증가하지 않았다.", action, actor);
+			            		addLogText(tText+"'s Excitement did not increase.", action, actor);
 					            await animationColorizeNum(exDiv, 'rgba(255, 0, 0, 0.5)');
 			            	} else {
 			            		let _exChange = aValue;
@@ -10918,7 +10927,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 			            			} else {
 			            				sBlock -= aValue;
 			            			}
-			            			addLogText(tText+"의 감각이 차단되어 "+(Math.min(aValue, preBlock))+" 만큼의 흥분을 막음 <i>( "+preBlock+" -> "+sBlock+" )</i>", action, actor);
+			            			addLogText(tText+"'s senses blocked "+(Math.min(aValue, preBlock))+" Excitement <i>( "+preBlock+" -> "+sBlock+" )</i>", action, actor);
 		            				animationColorizeNum(sBlockNumber, 'rgba(255, 0, 0, 0.5)');
 			            		}
 
@@ -10950,7 +10959,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					            	if(_changed<0) {
 					            		target.record[round-1].event.excite.down -= _changed
 					            	}
-					            	addLogText(attachPostposition(tText, "을 ", "를 ")+"자극하여 흥분 +"+_exChange+" <i>( "+preV+" -> "+target.real_excite+" )</i>", action, actor);
+					            	addLogText("Stimulated "+tText+", Excitement +"+_exChange+" <i>( "+preV+" -> "+target.real_excite+" )</i>", action, actor);
 					            	infoUpdate();
 					            	animationShake(targetPort);
 
@@ -10961,7 +10970,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 						            		let preLust = lust;
 						            		lust += _changed * (player.state.some(st => st.id == "AD-WA-BG2-002")?2:1);
 						            		lust = Math.min(lust, maxLust);
-							            	addLogText("욕망 +"+(_changed * (player.state.some(st => st.id == "AD-WA-BG2-002")?2:1))+" <i>( "+preLust+" -> "+lust+" )</i>");
+							            	addLogText("Lust +"+(_changed * (player.state.some(st => st.id == "AD-WA-BG2-002")?2:1))+" <i>( "+preLust+" -> "+lust+" )</i>");
 							            	infoUpdate();
 						            		animationColorizeNum(lustNumber, 'rgba(255, 0, 0, 0.5)');
 						            		player.record[round-1].event.gain.lust += Math.max(lust - preLust, 0);
@@ -10975,7 +10984,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 						            		var preV2 = target.real_excite;
 						            		target.real_excite = Math.min(Math.max(target.real_excite + _changed, 0), target.exciteL);
 						            		target.record[round-1].event.excite.up += target.real_excite - preV2;
-						            		addLogText("정기를 흡수하여 "+target.name+"의 흥분을 "+(_changed)+" 증가"+" <i>( "+preV2+" -> "+target.real_excite+" )</i>");
+						            		addLogText("Absorbed essence, increasing "+target.name+"'s Excitement by "+(_changed)+" <i>( "+preV2+" -> "+target.real_excite+" )</i>");
 						            		infoUpdate();
 			            					animationColorize(targetPort, changeColor);
 						            		await animationColorizeNum(tpos == 1?playerExNumber:enemyExNumber, changeColor);
@@ -10983,7 +10992,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 						            		var preV2 = actorObj.real_excite;
 				            				actorObj.real_excite = Math.min(Math.max(actorObj.real_excite - _changed, 0), actorObj.exciteL);
 				            				actorObj.record[round-1].event.excite.down -= actorObj.real_excite - preV2;
-						            		addLogText("정기를 흡수하여 "+actorObj.name+"의 흥분을 "+_changed+" 회복"+" <i>( "+preV2+" -> "+actorObj.real_excite+" )</i>");
+						            		addLogText("Absorbed essence, restoring "+actorObj.name+"'s Excitement by "+_changed+" <i>( "+preV2+" -> "+actorObj.real_excite+" )</i>");
 						            		infoUpdate();
 						            		animationColorize(actor == 1?playerPort:enemyPort, 'rgba(255, 150, 200, 0.5)');
 						            		await animationColorizeNum(actor == 1?playerExNumber:enemyExNumber, 'rgba(255, 150, 200, 0.5)');
@@ -11071,7 +11080,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 			            }
 						var cardText = createCardText(newState);
 						cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-						addLogText(`${tText}의 상태에 <span title="${cardText}"><b>[${newState.name[language]}]</b></span> ${(repeat>1)?repeat+"장 ":""}추가`, action, actor, true, newState.name[language], cardText);
+						addLogText(`Gained <span title="${cardText}"><b>[${newState.name[language]}]</b></span>`+((repeat>1)?" x"+repeat:""), action, actor, true, newState.name[language], cardText);
 		            	infoUpdate();
 
 						var tempStateDiv = createCard(newState, 28);
@@ -11141,7 +11150,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 
 								var cardText = createCardText(st);
 								cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-								addLogText("체위 <span title=\""+cardText+"\"><b>["+attachPostposition(st.name[language]+"]</b></span>", "을 ", "를 ")+"제거", action, actor);
+								addLogText(`Removed Position: <span title="${cardText}"><b>[${st.name[language]}]</b></span>`, action, actor);
 
 		            			player.state.splice(player.state.indexOf(st), 1);
 		            			infoUpdate();
@@ -11185,7 +11194,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 
 						var cardText = createCardText(ps);
 						cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-						addLogText(`체위를 <span title="${cardText}"><b>[${attachPostposition(ps.name[language]+"]</b></span>", "으로", "로")} 변경`, action, actor, true, ps.name[language], cardText);
+						addLogText(`Changed Position to <span title="${cardText}"><b>[${ps.name[language]}]</b></span>`, action, actor, true, ps.name[language], cardText);
 
 						var tempStateDiv = createCard(ps, 28);
 						var actionsContainer = document.getElementById('useActions');
@@ -11258,7 +11267,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 			            }
 						var cardText = createCardText(newCard);
 						cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-						addLogText(`${tText}의 덱에 <span title="${cardText}"><b>[${newCard.name[language]}]</b></span> ${(repeat>1)?repeat+"장 ":""}추가`, action, actor, true, newCard.name[language], cardText);
+						addLogText(`Added <span title="${cardText}"><b>[${newCard.name[language]}]</b></span>`+((repeat>1)?" x"+repeat:"")+" to "+tText+"'s deck.", action, actor, true, newCard.name[language], cardText);
 		            	infoUpdate();
 
 						var tempStateDiv = createCard(newCard, 28);
@@ -11315,7 +11324,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            		lust -= lustCost;
 		            		player.record[round-1].event.consumeLust += lustCost;
 		            		cardRecordData.consumeLust += lustCost;
-		            		addLogText("욕망을 "+lustCost+" 소모"+" <i>( "+preV+" -> "+lust+" )</i>", action, actor);
+		            		addLogText("Consumed "+lustCost+" Lust"+" <i>( "+preV+" -> "+lust+" )</i>", action, actor);
 		            		infoUpdate();
 		            		await animationColorizeNum(lustNumber, 'rgba(0, 0, 255, 0.5)');
 		            		for(let le of e.info.effect) {
@@ -11329,7 +11338,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	let wetnessCost = e.info.value;
 		            	if(wetness >= wetnessCost) {
 		            		animationColorizeNum(wetnessNumber, 'rgba(0, 0, 255, 0.5)');
-		            		addLogText(`충분히 젖어있다. <i>(${wetness}/${wetnessCost})</i>`, action, actor);
+		            		addLogText(`Sufficiently wet. <i>(${wetness}/${wetnessCost})</i>`, action, actor);
 		            		await wait([200, 300, 500, 750, 1000][turnSpeed]);
 		            		for(let we of e.info.effect) {
 		            			await effectApply(we, "used", actor);
@@ -11344,7 +11353,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            		corruptCost = Number(e.info.value.slice(1));
 			            	if(corrupt <= corruptCost) {
 			            		animationColorizeNum(corruptNumber, 'rgba(160, 50, 160, 0.5)');
-			            		addLogText(`아직 순수하다. <i>(${corrupt}/${corruptCost})</i>`, action, actor);
+			            		addLogText(`Still pure. <i>(${corrupt}/${corruptCost})</i>`, action, actor);
 			            		await wait([200, 300, 500, 750, 1000][turnSpeed]);
 			            		for(let we of e.info.effect) {
 			            			await effectApply(we, "used", actor);
@@ -11354,7 +11363,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            		corruptCost = e.info.value;
 			            	if(corrupt >= corruptCost) {
 			            		animationColorizeNum(corruptNumber, 'rgba(160, 50, 160, 0.5)');
-			            		addLogText(`충분히 타락했다. <i>(${corrupt}/${corruptCost})</i>`, action, actor);
+			            		addLogText(`Sufficiently corrupted. <i>(${corrupt}/${corruptCost})</i>`, action, actor);
 
 			            		/*const _cdImg = actionCardDiv.querySelector(`img`)
 			            		if(action.type != "체위" && !_cdImg.src.endsWith("corrupted.webp")) {
@@ -11380,7 +11389,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            	for(let dsC of selectPool) {
 						var cardText = createCardText(dsC);
 						cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-	            		addLogText(attachPostposition(tText, "이 ", "가 ")+attachPostposition("<span title=\'"+cardText+"\'><b>["+dsC.name[language]+"]</b>", "을 ", "를 ")+"버림", action, actor);
+	            		addLogText(tText+" discards <span title=\'"+cardText+"\'><b>["+dsC.name[language]+"]</b></span>.", action, actor);
 
 	            		var tempStateDiv = createCard(dsC, 28);
 						var actionsContainer = document.getElementById('useActions');
@@ -11421,7 +11430,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            	for(let rmS of selectPool) {
 						var cardText = createCardText(rmS);
 						cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-	            		addLogText(tText+"의 "+attachPostposition("<span title=\'"+cardText+"\'><b>["+rmS.name[language]+"]</b>", "이 ", "가 ")+"제거됨", action, actor);
+	            		addLogText(tText+"'s <span title=\'"+cardText+"\'><b>["+rmS.name[language]+"]</b></span> is removed.", action, actor);
 
 	            		var tempStateDiv = createCard(rmS, 28);
 						var actionsContainer = document.getElementById('useActions');
@@ -11465,7 +11474,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            		}
 							var cardText = createCardText(usedAction);
 							cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-		            		addLogText(`<span title="${cardText}"><b>[${usedAction.name[language]}]</b></span>의 효과 발동`, action, actor, e.value != "self", usedAction.name[language], cardText);
+		            		addLogText(`Activating <span title="${cardText}"><b>[${usedAction.name[language]}]</b></span>'s effect.`, action, actor, e.value != "self", usedAction.name[language], cardText);
 		            		cardRecordData[actor==1?"player":"enemy"].use.push(usedAction);
 		            		usedAction.source = action;
 			            	await actionEffect(usedAction, "used", index, 28, e.value=="self"/*, usedAction.cast&&usedAction.cast>1*/);
@@ -11574,9 +11583,9 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	}
 		            	if(selectPool.length) {
 		            		if(e.trigger != "choice" && e.info.target.startsWith("id:")) {
-		            			addLogText(`All <b>[${cardDB[e.info.target.slice(3)].name[language]}]</b>에 "${_effectTexts?_effectTexts:createCardText({effect:e.info.effect})}" 효과 추가.`, action, actor);
+		            			addLogText(`All <b>[${cardDB[e.info.target.slice(3)].name[language]}]</b> gain the "${_effectTexts?_effectTexts:createCardText({effect:e.info.effect})}" effect.`, action, actor);
 		            		} else {
-		            			addLogText(`${selectPool.map(cd => `<b>[${cd.name[language]}]</b>`).join(", ")}에 "${_effectTexts?_effectTexts:createCardText({effect:e.info.effect})}" 효과 추가.`, action, actor);
+		            			addLogText(`${selectPool.map(cd => `<b>[${cd.name[language]}]</b>`).join(", ")} gain the "${_effectTexts?_effectTexts:createCardText({effect:e.info.effect})}" effect.`, action, actor);
 		            		}
 
 		            		if(_rs !== undefined) {
@@ -11594,7 +11603,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 				            	tempStateDiv.remove();
 		            		}
 		            	} else {
-		            		addLogText("효과를 추가할 card가 없음", action, actor);
+		            		addLogText("No cards to add effects to.", action, actor);
 		            	}
 	            		break;
 	            	}
@@ -11620,7 +11629,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            	target.real_excite = 0;
 	            	battleEnd = tpos;
 	            	specialEnd = true;
-	            	addLogText(tText+"의 패배", action, actor);
+	            	addLogText(tText+" is defeated.", action, actor);
 	            	infoUpdate();
 	            	animationColorizeNum(targetExNumber, 'rgba(0, 0, 255, 0.5)');
 	            	await animationColorizeNum(targetAcNumber, 'rgba(255, 0, 255, 0.5)');
@@ -11647,7 +11656,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            	opObj.real_excite = 0;
 	            	battleEnd = tpos^1;
 	            	specialEnd = true;
-	            	addLogText(tText+"의 승리", action, actor);
+	            	addLogText(tText+" is victorious.", action, actor);
 	            	infoUpdate();
 	            	animationColorizeNum(targetExNumber, 'rgba(0, 0, 255, 0.5)');
 	            	await animationColorizeNum(targetAcNumber, 'rgba(255, 0, 255, 0.5)');
@@ -11666,7 +11675,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					            	await animationColorize(actionCardDiv, 'rgba(255, 0, 0, 0.5)');
 					            }
 				            }
-			            	addLogText("욕망 "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+lust+" )</i>", action, actor);
+			            	addLogText("Lust "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+lust+" )</i>", action, actor);
 			            }
 		            	break;
 	            	case "multiply":
@@ -11680,7 +11689,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					            	await animationColorize(actionCardDiv, 'rgba(255, 0, 0, 0.5)');
 					            }
 				            }
-			            	addLogText("욕망 x"+(eValue*repeat)+" <i>( "+preV+" -> "+lust+" )</i>", action, actor);
+			            	addLogText("Lust x"+(eValue*repeat)+" <i>( "+preV+" -> "+lust+" )</i>", action, actor);
 			            }
 		            	break;
 	            	case "set":
@@ -11692,7 +11701,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					            	await animationColorize(actionCardDiv, 'rgba(255, 0, 0, 0.5)');
 					            }
 				            }
-			            	addLogText("욕망을 "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+lust+" )</i>", action, actor);
+			            	addLogText("Set Lust to "+(eValue*repeat)+" <i>( "+preV+" -> "+lust+" )</i>", action, actor);
 			            }
 		            	break;
 		            }
@@ -11717,7 +11726,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					            	await animationColorize(actionCardDiv, 'rgba(0, 255, 255, 0.5)');
 					            }
 				            }
-			            	addLogText("젖음 "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+wetness+" )</i>", action, actor);
+			            	addLogText("Wetness "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+wetness+" )</i>", action, actor);
 			            }
 		            	break;
 	            	case "multiply":
@@ -11731,7 +11740,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					            	await animationColorize(actionCardDiv, 'rgba(0, 255, 255, 0.5)');
 					            }
 				            }
-			            	addLogText("젖음 x"+(eValue*repeat)+" <i>( "+preV+" -> "+wetness+" )</i>", action, actor);
+			            	addLogText("Wetness x"+(eValue*repeat)+" <i>( "+preV+" -> "+wetness+" )</i>", action, actor);
 			            }
 		            	break;
 	            	case "set":
@@ -11743,7 +11752,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					            	await animationColorize(actionCardDiv, 'rgba(0, 255, 255, 0.5)');
 					            }
 				            }
-			            	addLogText("젖음을  "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+wetness+" )</i>", action, actor);
+			            	addLogText("Set Wetness to "+(eValue*repeat)+" <i>( "+preV+" -> "+wetness+" )</i>", action, actor);
 			            }
 		            	break;
 		            }
@@ -11768,7 +11777,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					            	await animationColorize(actionCardDiv, 'rgba(255, 255, 0, 0.5)');
 					            }
 				            }
-			            	addLogText("감각차단 "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+sBlock+" )</i>", action, actor);
+			            	addLogText("Sense Block "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+sBlock+" )</i>", action, actor);
 			            }
 		            	break;
 	            	case "multiply":
@@ -11782,7 +11791,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					            	await animationColorize(actionCardDiv, 'rgba(255, 255, 0, 0.5)');
 					            }
 				            }
-			            	addLogText("감각차단 x"+(eValue*repeat)+" <i>( "+preV+" -> "+sBlock+" )</i>", action, actor);
+			            	addLogText("Sense Block x"+(eValue*repeat)+" <i>( "+preV+" -> "+sBlock+" )</i>", action, actor);
 			            }
 		            	break;
 	            	case "set":
@@ -11794,7 +11803,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					            	await animationColorize(actionCardDiv, 'rgba(255, 255, 0, 0.5)');
 					            }
 				            }
-			            	addLogText("감각차단을 "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+sBlock+" )</i>", action, actor);
+			            	addLogText("Set Sense Block to "+(eValue*repeat)+" <i>( "+preV+" -> "+sBlock+" )</i>", action, actor);
 			            }
 		            	break;
 		            }
@@ -11815,7 +11824,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	if(combatOptions.animation_show) {
 					        await animationColorize(actionCardDiv, 'rgba(255, 255, 0, 0.5)');
 					    }
-		            	addLogText("지연된 흥분 "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+delayedEx+" )</i>", action, actor);
+		            	addLogText("Delayed Excitement "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+delayedEx+" )</i>", action, actor);
 		            	break;
 	            	case "multiply":
 		            	for(let i=0; i<repeat; i++) {
@@ -11824,14 +11833,14 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	if(combatOptions.animation_show) {
 					        await animationColorize(actionCardDiv, 'rgba(255, 255, 0, 0.5)');
 					    }
-			            addLogText("지연된 흥분 x"+(eValue*repeat)+" <i>( "+preV+" -> "+delayedEx+" )</i>", action, actor);
+			            addLogText("Delayed Excitement x"+(eValue*repeat)+" <i>( "+preV+" -> "+delayedEx+" )</i>", action, actor);
 		            	break;
 	            	case "set":
 		            	delayedEx = Math.min(eValue*repeat, Infinity);
 		            	if(combatOptions.animation_show) {
 					        await animationColorize(actionCardDiv, 'rgba(255, 255, 0, 0.5)');
 					    }
-		            	addLogText("지연된 흥분을 "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+delayedEx+" )</i>", action, actor);
+		            	addLogText("Set Delayed Excitement to "+(eValue*repeat)+" <i>( "+preV+" -> "+delayedEx+" )</i>", action, actor);
 		            	break;
 		            }
 		            var _changed = delayedEx - preV
@@ -11850,7 +11859,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	if(combatOptions.animation_show) {
 					        await animationColorize(actionCardDiv, 'rgba(160, 50, 160, 0.5)');
 					    }
-		            	addLogText("타락 "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+corrupt+" )</i>", action, actor);
+		            	addLogText("Corruption "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+corrupt+" )</i>", action, actor);
 		            	break;
 	            	case "multiply":
 		            	for(let i=0; i<repeat; i++) {
@@ -11859,14 +11868,14 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	if(combatOptions.animation_show) {
 					        await animationColorize(actionCardDiv, 'rgba(160, 50, 160, 0.5)');
 					    }
-			            addLogText("타락 x"+(eValue*repeat)+" <i>( "+preV+" -> "+corrupt+" )</i>", action, actor);
+			            addLogText("Corruption x"+(eValue*repeat)+" <i>( "+preV+" -> "+corrupt+" )</i>", action, actor);
 		            	break;
 	            	case "set":
 		            	corrupt = Math.min(eValue*repeat, Infinity);
 		            	if(combatOptions.animation_show) {
 					        await animationColorize(actionCardDiv, 'rgba(160, 50, 160, 0.5)');
 					    }
-		            	addLogText("타락을 "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+corrupt+" )</i>", action, actor);
+		            	addLogText("Set Corruption to "+(eValue*repeat)+" <i>( "+preV+" -> "+corrupt+" )</i>", action, actor);
 		            	break;
 		            }
 		            var _changed = corrupt - preV
@@ -11904,7 +11913,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					    	cardTextUpdate(tempCardDiv, _poison);
 					    	await animationXscale(tempCardDiv, 0, 1);
 
-						    addLogText(`강화됨 <i>( ${preV} -> ${_poison.stack} )</i>`, _poison, actor);
+						     addLogText(`Strengthened <i>( ${preV} -> ${_poison.stack} )</i>`, _poison, actor);
 
 						    await wait([200, 300, 500, 750, 1000][turnSpeed]);
 						    await animationFlyAway(tempCardDiv, (target == enemy) ? 'up' : 'down');
@@ -11933,7 +11942,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		        		}
 						var cardText = createCardText(_poison);
 						cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-						addLogText(`${tText}에게 <span title="${cardText}"><b>[${_poison.name[language]}]</b></span> 부여`, action, actor, true, _poison.name[language], cardText);
+						addLogText(`Afflicted by <span title="${cardText}"><b>[${_poison.name[language]}]</b></span>`, action, actor, true, _poison.name[language], cardText);
 		            	infoUpdate();
 						await actionEffect(_poison, "getState");
 		            }
@@ -11948,7 +11957,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 
 		        		var cardText = createCardText(_poison);
 						cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-						addLogText(`${attachPostposition(`<span title=${cardText}"><b>[${_poison.name[language]}]</b></span>`, "을", "를")} 독주머니에 추가`, action, actor, true, _poison.name[language], cardText);
+						addLogText(`Added <span title=${cardText}"><b>[${_poison.name[language]}]</b></span> to Poison Pouch.`, action, actor, true, _poison.name[language], cardText);
 		            	infoUpdate();
 
 						var tempPoisonDiv = createCard(_poison, 28);
@@ -11976,10 +11985,10 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            		action.duration = Math.max(action.duration - eValue, 0);
 		            	}
 		            	cardTextUpdate(trapCardDiv, action);
-		            	addLogText("카운트 -"+(eValue*repeat)+" <i>( "+preV+" -> "+action.duration+" )</i>", action, actor);
+		            	addLogText("Count -"+(eValue*repeat)+" <i>( "+preV+" -> "+action.duration+" )</i>", action, actor);
 		            	await wait(100);
 		            	if(action.duration <= 0) {
-		            		addLogText("카운트 효과 발동!", action, actor);
+		            		addLogText("Count effect activated!", action, actor);
 			            	if(combatOptions.animation_show) {
 			            		await animationShake(trapCardDiv);
 			            	}
@@ -12007,10 +12016,10 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 				            	cardTextUpdate(trapCardDiv, cd);
 								var cardText = createCardText(cd);
 								cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-				            	addLogText("<span title=\""+cardText+"\"><b>["+cd.name[language]+"]</b></span>의 카운트 -"+(eValue*repeat)+" <i>( "+preV+" -> "+cd.duration+" )</i>", action, actor);
+				            	addLogText("<span title=\""+cardText+"\"><b>["+cd.name[language]+"]</b></span>'s Count -"+(eValue*repeat)+" <i>( "+preV+" -> "+cd.duration+" )</i>", action, actor);
             					await waitOrClick(calculateDisplayTime(cd));
 				            	if(cd.duration <= 0) {
-				            		addLogText("트랩 발동!", cd, actor);
+				            		addLogText("Trap activated!", cd, actor);
 		            				if(combatOptions.animation_show) {
 					            		await animationShake(trapCardDiv);
 					            	}
@@ -12029,7 +12038,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            	for(let i=0; i<repeat; i++) {
 		            	target.useTimes += eValue;
 		            }
-	            	addLogText("다음으로 사용하는 "+tText+"의 card의 효과가 "+(eValue*repeat)+"번 더 발동함", action, actor);
+	            	addLogText("The next card "+tText+" uses will activate "+(eValue*repeat)+" more time(s).", action, actor);
 	            	await wait([200, 300, 500, 750, 1000][turnSpeed]);
 	            	break;
 	            case "duration":
@@ -12065,9 +12074,9 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            	}
 	            	if(selectPool.length) {
 	            		if(e.info.target.startsWith("id:")) {
-	            			addLogText(`All <b>[${cardDB[e.info.target.slice(3)].name[language]}]</b>의 지속 시간 ${((dValue>=0)?"+":"")+dValue*repeat}`, action, actor);
+	            			addLogText(`All <b>[${cardDB[e.info.target.slice(3)].name[language]}]</b>'s Duration ${((dValue>=0)?"+":"")+dValue*repeat}`, action, actor);
 	            		} else {
-	            			addLogText(`${selectPool.map(cd => `<b>[${cd.name[language]}]</b>`).join(", ")}의 지속 시간 ${((dValue>=0)?"+":"")+dValue*repeat}`, action, actor);
+	            			addLogText(`${selectPool.map(cd => `<b>[${cd.name[language]}]</b>`).join(", ")}'s Duration ${((dValue>=0)?"+":"")+dValue*repeat}`, action, actor);
 	            		}
 	            	}
 	            	await wait([200, 300, 500, 750, 1000][turnSpeed]);
@@ -12182,7 +12191,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 			            	var cardText2 = createCardText(nc);
 							cardText1 = cardText1.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
 							cardText2 = cardText2.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-							addLogText(`${tText}의 ${attachPostposition(`<span title=${cardText1}"><b>[${tc.name[language]}]</b></span>`, "을", "를")} ${attachPostposition(`<span title="${cardText2}"><b>[${nc.name[language]}]</b></span>`, "으로", "로")} 변형함`, action, actor, true, nc.name[language], cardText2);
+							addLogText(`Transformed ${tText}'s <span title=${cardText1}"><b>[${tc.name[language]}]</b></span> into <span title="${cardText2}"><b>[${nc.name[language]}]</b></span>.`, action, actor, true, nc.name[language], cardText2);
 
 							if(e.info.target != "self") {
 				            	var tempStateDiv = createCard(nc, 28);
@@ -12221,7 +12230,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            		var preV = sBlock;
 				        sBlock = Math.min(Math.max(sBlock + trsCount, 0), maxSBlock);
 				        player.record[round-1].event.gain.sBlock += sBlock - preV;
-            			addLogText("감각차단 +"+trsCount+" <i>( "+preV+" -> "+sBlock+" )</i>");
+            			addLogText("Sense Block +"+trsCount+" <i>( "+preV+" -> "+sBlock+" )</i>");
 			            cardRecordData.sBlock += sBlock - preV;
 		            	infoUpdate();
 		            	animationEmphasis(sBlockNumber);
@@ -12265,7 +12274,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 
 		            	var cardText = createCardText(nc);
 						cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-						addLogText(`${e.slot} 슬롯을 ${attachPostposition(`<span title="${cardText}"><b>[${nc.name[language]}]</b></span>`, "으로", "로")} 교체함`, action, actor, true, nc.name[language], cardText);
+						addLogText(`Replaced slot ${e.slot} with <span title="${cardText}"><b>[${nc.name[language]}]</b></span>.`, action, actor, true, nc.name[language], cardText);
 
 		            	var tempStateDiv = createCard(nc, 28);
 						var actionsContainer = document.getElementById('useActions');
@@ -12296,10 +12305,10 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 										obj[key] = "Heat";
 									} else if (obj[key] === "Heat") {
 										obj[key] = "lewd";
-									} else if (obj[key] === "음란") {
-										obj[key] = "발정";
-									} else if (obj[key] === "발정") {
-										obj[key] = "음란";
+									} else if (obj[key] === "Lewdness") {
+										obj[key] = "Heat";
+									} else if (obj[key] === "Heat") {
+										obj[key] = "Lewdness";
 									}
 								}
 							}
@@ -12331,7 +12340,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 
 						var cardText = createCardText(stealCard);
 						cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-						addLogText("상대 덱으로부터 "+attachPostposition("<span title=\""+cardText+"\"><b>["+stealCard.name[language]+"]</b></span>", "을 ", "를 ")+" 훔쳐옴.", action, actor);
+						addLogText("Stole <span title=\""+cardText+"\"><b>["+stealCard.name[language]+"]</b></span> from the opponent's deck.", action, actor);
 		            	infoUpdate();
 
 						var tempStateDiv = createCard(stealCard, 28);
@@ -12430,12 +12439,12 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 
 					    if (!e.info.target.startsWith("id:")) {
 					        if (group.count > 1) {
-					            addLogText(`${group.count}장 강화됨 <i>( ${preV} -> ${firstCard.stack} )</i>`, firstCard, actor);
+					            addLogText(`${group.count} cards strengthened <i>( ${preV} -> ${firstCard.stack} )</i>`, firstCard, actor);
 					        } else {
-					            addLogText(`강화됨 <i>( ${preV} -> ${firstCard.stack} )</i>`, firstCard, actor);
+					            addLogText(`Strengthened <i>( ${preV} -> ${firstCard.stack} )</i>`, firstCard, actor);
 					        }
 					    } else {
-					        addLogText(`강화됨 <i>( ${preV} -> ${firstCard.stack} )</i>`, firstCard, actor);
+					        addLogText(`Strengthened <i>( ${preV} -> ${firstCard.stack} )</i>`, firstCard, actor);
 					    }
 
 					    await wait([200, 300, 500, 750, 1000][turnSpeed]);
@@ -12586,7 +12595,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 
 			            	var cardText = createCardText(nc);
 							cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-							addLogText(tText+"의 "+attachPostposition(tCards.map(cd => `<b>[${cd.name[language]}]</b>`).join(", "), "을 ", "를 ")+attachPostposition("<span title=\""+cardText+"\"><b>["+nc.name[language]+"]</b></span>", "으로 ", "로 ")+"결합함", action, actor);
+							addLogText(`Combined ${tText}'s ${tCards.map(cd => `<b>[${cd.name[language]}]</b>`).join(", ")} into <span title="${cardText}"><b>[${nc.name[language]}]</b></span>.`, action, actor);
 			            	
 			            	var tempStateDiv = createCard(nc, 28);
 							var actionsContainer = document.getElementById('useActions');
@@ -12670,7 +12679,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 			            	var cardText2 = createCardText(nc);
 							cardText1 = cardText1.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
 							cardText2 = cardText2.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-							addLogText(`${tText}의 <span title=${cardText1}"><b>[${tc.name[language]}]</b></span>에 ${attachPostposition(`<span title="${cardText2}"><b>[${nc.name[language]}]</b></span>`, "을", "를")} 결속함`, action, actor, true, nc.name[language], cardText2);
+							addLogText(`Bound <span title="${cardText2}"><b>[${nc.name[language]}]</b></span> to ${tText}'s <span title=${cardText1}"><b>[${tc.name[language]}]</b></span>.`, action, actor, true, nc.name[language], cardText2);
 
 			            	var tempCardDiv2 = createCard(nc, 28);
 							tempCardDiv2.style.opacity = 0;
@@ -12714,7 +12723,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            	break;
 				case "maxRound":
 					maxRound += eValue;
-					addLogText(`Max 라운드가 ${eValue} 증가`, action, actor);
+					addLogText(`Max Round increased by ${eValue}.`, action, actor);
 		            infoUpdate();
 		            await wait([200, 300, 500, 750, 1000][turnSpeed]);
 					break;
@@ -12730,13 +12739,13 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            	var preV = real_Heat;
 	            	let spav = real_Heat - minHeat;
 	            	real_Heat = minHeat;
-	        		addLogText("발정을 최저값으로 만듦"+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
+	        		addLogText("Set Heat to its minimum value"+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
 	            	infoUpdate();
 	            	await animationEmphasis(HeatNumber);
 	            	if(spav > 0 && !options.lustBan) {
 		            	preV = lust;
 	            		lust = Math.min(lust + spav*2, maxLust);
-	            		addLogText("욕망 +"+spav*2+" <i>( "+preV+" -> "+lust+" )</i>", action, actor);
+	            		addLogText("Lust +"+spav*2+" <i>( "+preV+" -> "+lust+" )</i>", action, actor);
 	            		infoUpdate();
 	            		await animationColorizeNum(lustNumber, 'rgba(255, 0, 0, 0.5)');
 	            	}
@@ -12751,7 +12760,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 
 	            		var cardText = createCardText(_po);
 		            	cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-		            	addLogText("<span title=\""+cardText+"\"><b>["+_po.name[language]+"]</b></span>이 개조되었다.", action, actor);
+		            	addLogText("<span title=\""+cardText+"\"><b>["+_po.name[language]+"]</b></span> was modified.", action, actor);
 	        			var tempStateDiv = createCard(_po, 28);
 						tempStateDiv.style.opacity = 0;
 						var actionsContainer = document.getElementById('useActions');
@@ -12776,7 +12785,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            case "specialA05":
 	            	for(let i=0; i<repeat; i++) {
 		            	trace++;
-		            	addLogText(`무작위 초월 Card 얻을 준비를 했다. (${trace}/3)`, action, actor);
+		            	addLogText(`Preparing to receive a random Transcendent Card. (${trace}/3)`, action, actor);
 		            	await wait([200, 300, 500, 750, 1000][turnSpeed]);
 		            	if(trace >= 3) {
 		            		trace = 0;
@@ -12792,7 +12801,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 
 							var cardText = createCardText(newCard);
 							cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-							addLogText(tText+"의 덱에 <span title=\""+cardText+"\"><b>["+newCard.name[language]+"]</b></span> 1장 추가", action, actor);
+							addLogText(`Added 1 <span title="${cardText}"><b>[${newCard.name[language]}]</b></span> to ${tText}'s deck.`, action, actor);
 			            	infoUpdate();
 
 							var tempStateDiv = createCard(newCard, 28);
@@ -12868,7 +12877,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 
 							var cardText = createCardText(posture);
 							cardText = cardText.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-							addLogText(`<span title="${cardText}"><b>[${posture.name[language]}]</b></span>의 효과가 강화됨`, action, actor, true, posture.name[language], cardText);
+							addLogText(`<span title="${cardText}"><b>[${posture.name[language]}]</b></span>'s effect was enhanced.`, action, actor, true, posture.name[language], cardText);
 			            	infoUpdate();
 
 	            			var tempStateDiv = createCard(posture, 28);
@@ -12952,7 +12961,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            case "specialA09":
 	            	var preV = magicMissile;
 	            	magicMissile += Math.max(repeat, 1);
-	            	addLogText("All 마력탄의 효과가 강화됨 <i>( "+preV+" -> "+magicMissile+" )</i>", action, actor);
+	            	addLogText("All Magic Missile effects strengthened <i>( "+preV+" -> "+magicMissile+" )</i>", action, actor);
 	            	cardTextUpdate(actionCardDiv, action);
 	            	await animationColorize(actionCardDiv, 'rgba(150, 0, 255, 0.5)');
 					await waitOrClick([200, 300, 500, 750, 1000][turnSpeed]);
@@ -13013,7 +13022,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 			            	var cardText2 = createCardText(nc);
 							cardText1 = cardText1.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
 							cardText2 = cardText2.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]*>/g, '');
-							addLogText(`${player.name}의 ${attachPostposition(`<span title=${cardText1}"><b>[${tc.name[language]}]</b></span>`, "을", "를")} ${attachPostposition(`<span title="${cardText2}"><b>[${nc.name[language]}]</b></span>`, "으로", "로")} 변형함`, action, actor, true, nc.name[language], cardText2);
+							addLogText(`Transformed ${player.name}'s <span title=${cardText1}"><b>[${tc.name[language]}]</b></span> into <span title="${cardText2}"><b>[${nc.name[language]}]</b></span>.`, action, actor, true, nc.name[language], cardText2);
 
 			            	var tempStateDiv = createCard(nc, 28);
 							var actionsContainer = document.getElementById('useActions');
@@ -13068,7 +13077,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 				        actionsContainer.appendChild(tempCardDiv);
 				        adjustCardFontSize(tempCardDiv);
 				        actionsContainer.scrollLeft = actionsContainer.scrollWidth;
-				        addLogText(`<b>[${pc.name[language]}]</b>의 조건이 ${attachPostposition(_condCardNames[i][prophecy[i++] - 1], "으로", "로")} 결정됨`, action, actor);
+				        addLogText(`<b>[${pc.name[language]}]</b>'s condition has been set to ${_condCardNames[i][prophecy[i++] - 1]}.`, action, actor);
 				        await animationAppear(tempCardDiv);
 					    await waitOrClick(calculateDisplayTime(pc));
 		            	await animationDisappear(tempCardDiv);
@@ -13080,7 +13089,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            case "specialA19":
 	            	var preV = vitality;
 	            	vitality += Math.max(repeat, 1);
-	            	addLogText("All <b>[격동하는 활력]</b> 효과가 강화됨 <i>( "+preV+" -> "+vitality+" )</i>", action, actor);
+	            	addLogText("All <b>[Surging Vitality]</b> effects strengthened <i>( "+preV+" -> "+vitality+" )</i>", action, actor);
 	            	cardTextUpdate(actionCardDiv, action);
 	            	await animationColorize(actionCardDiv, 'rgba(255, 200, 0, 0.5)');
 					await waitOrClick([200, 300, 500, 750, 1000][turnSpeed]);
@@ -13089,7 +13098,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            case "specialV08":
 	            	var preV = real_spore;
 	            	real_spore += Math.max(repeat, 1);
-	            	addLogText("All 포자의 효과가 영구적으로 강화됨 <i>( "+preV+" -> "+real_spore+" )</i>", action, actor);
+	            	addLogText("All Spore effects permanently strengthened <i>( "+preV+" -> "+real_spore+" )</i>", action, actor);
 	            	cardTextUpdate(actionCardDiv, action);
 	            	await animationColorize(actionCardDiv, 'rgba(150, 0, 255, 0.5)');
 					await waitOrClick([200, 300, 500, 750, 1000][turnSpeed]);
@@ -13107,6 +13116,36 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            	defActive = true;
 	            }
 		    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
         if(textSpan) {
 			textSpan.classList.remove("runningText");
@@ -14820,16 +14859,16 @@ function makeEnding() {
 		pTxt += `<b>결합한 card 수:</b> ${calcNested(player, "record", "combine.length", "sum")}장<br>`;
 	}
 	if(calcNested(player, "record", "event.gain.lust", "sum") > 0) {
-		pTxt += `<b>얻은 욕망:</b> ${calcNested(player, "record", "event.gain.lust", "sum")}<br>`;
+		pTxt += `<b>얻은 Lust:</b> ${calcNested(player, "record", "event.gain.lust", "sum")}<br>`;
 	}
 	if(calcNested(player, "record", "event.gain.wetness", "sum") > 0) {
-		pTxt += `<b>얻은 젖음:</b> ${calcNested(player, "record", "event.gain.wetness", "sum")}<br>`;
+		pTxt += `<b>얻은 Wetness:</b> ${calcNested(player, "record", "event.gain.wetness", "sum")}<br>`;
 	}
 	if(calcNested(player, "record", "event.gain.sBlock", "sum") > 0) {
 		pTxt += `<b>얻은 감각차단:</b> ${calcNested(player, "record", "event.gain.sBlock", "sum")}<br>`;
 	}
 	if(calcNested(player, "record", "event.gain.corrupt", "sum") > 0) {
-		pTxt += `<b>얻은 타락:</b> ${calcNested(player, "record", "event.gain.corrupt", "sum")}<br>`;
+		pTxt += `<b>얻은 Corruption:</b> ${calcNested(player, "record", "event.gain.corrupt", "sum")}<br>`;
 	}
 	pTxt += `<br><b>[자극]한 Count:</b> ${calcNested(player, "record", "event.attack", "sum")}회<br>`;
 	pTxt += `<b>[자극]받은 Count:</b> ${calcNested(player, "record", "event.attacked", "sum")}회<br>`;
@@ -14837,10 +14876,10 @@ function makeEnding() {
 		pTxt += `<b>[자극]을 회피한 Count:</b> ${calcNested(player, "record", "event.avoid", "sum")}회<br>`;
 	}
 	pTxt += `<br>`;
-	pTxt += `<b>누적 흥분:</b> ${calcNested(player, "record", "event.excite.up", "sum")}<br>`;
-	pTxt += `<b>누적 상대의 흥분:</b> ${calcNested(enemy, "record", "event.excite.up", "sum")}<br>`;
+	pTxt += `<b>누적 Excitement:</b> ${calcNested(player, "record", "event.excite.up", "sum")}<br>`;
+	pTxt += `<b>누적 상대의 Excitement:</b> ${calcNested(enemy, "record", "event.excite.up", "sum")}<br>`;
 	if(calcNested(player, "record", "event.excite.down", "sum") > 0) {
-		pTxt += `<b>회복한 흥분:</b> ${calcNested(player, "record", "event.excite.down", "sum")}<br>`;
+		pTxt += `<b>회복한 Excitement:</b> ${calcNested(player, "record", "event.excite.down", "sum")}<br>`;
 	}
 	pTxt += `<br><b>절정 Count:</b> ${calcNested(player, "record", "event.orgasm", "sum")}회<br>`;
 	pTxt += `<br><b>상대의 절정 Count:</b> ${calcNested(enemy, "record", "event.orgasm", "sum")}회<br>`;
@@ -14875,14 +14914,14 @@ function makeEnding() {
 
 			if(fdata.getSum('enemy.excite') > 0) {
 				if(fdata.getSum('enemy.attacked') > 0) {
-					ftext += `상대를 ${fdata.getSum('enemy.attacked') > 1?`${fdata.getSum('enemy.attacked')}번 `:""}자극하여, ${fdata.getSum('enemy.excite')} 만큼의 흥분을 안겨주어 절정하게 만들었다.`
+					ftext += `상대를 ${fdata.getSum('enemy.attacked') > 1?`${fdata.getSum('enemy.attacked')}번 `:""}자극하여, ${fdata.getSum('enemy.excite')} 만큼의 Excitement을 안겨주어 절정하게 만들었다.`
 				} else {
-					ftext += `상대에게 ${fdata.getSum('enemy.excite')} 만큼의 흥분을 안겨주어 절정하게 만들었다.`
+					ftext += `상대에게 ${fdata.getSum('enemy.excite')} 만큼의 Excitement을 안겨주어 절정하게 만들었다.`
 				}
 			} else if(fdata.getSum('enemy.exciteL') < 0) {
-				ftext += `상대의 흥분 한계를 ${-fdata.getSum('enemy.exciteL')} 만큼 감소시켜 절정하게 만들었다.`
+				ftext += `상대의 Excitement Limit를 ${-fdata.getSum('enemy.exciteL')} 만큼 감소시켜 절정하게 만들었다.`
 			} else if(fdata.getSum('enemy.orgasmL') < 0) {
-				ftext += `상대의 절정 한계를 ${-fdata.getSum('enemy.orgasmL')} 만큼 감소시켜 패배하게 만들었다.`
+				ftext += `상대의 Orgasm Limit를 ${-fdata.getSum('enemy.orgasmL')} 만큼 감소시켜 패배하게 만들었다.`
 			} else if(fdata.getSum('enemy.orgasm') > 0) {
 				ftext += `상대를 강제로 ${fdata.getSum('enemy.orgasm') > 1?`${fdata.getSum('enemy.orgasm')}번 `:""}절정하게 만들었다.`
 			} else if(fdata.getSum('player.use.length') > 0) {
@@ -14915,14 +14954,14 @@ function makeEnding() {
 
 			if(fdata.getSum('player.excite') > 0) {
 				if(fdata.getSum('player.attacked') > 0) {
-					ftext += `${fdata.getSum('player.attacked') > 1?`${fdata.getSum('player.attacked')}번 `:""}자극당해 ${fdata.getSum('player.excite')} 만큼의 흥분을 느껴 절정하고 말았다.`
+					ftext += `${fdata.getSum('player.attacked') > 1?`${fdata.getSum('player.attacked')}번 `:""}자극당해 ${fdata.getSum('player.excite')} 만큼의 Excitement을 느껴 절정하고 말았다.`
 				} else {
-					ftext += `${fdata.getSum('player.excite')} 만큼의 흥분을 느껴 절정하고 말았다.`
+					ftext += `${fdata.getSum('player.excite')} 만큼의 Excitement을 느껴 절정하고 말았다.`
 				}
 			} else if(fdata.getSum('player.exciteL') < 0) {
-				ftext += `흥분 한계가 ${-fdata.getSum('player.exciteL')} 만큼 감소해 절정하고 말았다.`
+				ftext += `Excitement Limit가 ${-fdata.getSum('player.exciteL')} 만큼 감소해 절정하고 말았다.`
 			} else if(fdata.getSum('player.orgasmL') < 0) {
-				ftext += `절정 한계가 ${-fdata.getSum('player.orgasmL')} 만큼 감소해 굴복하고 말았다.`
+				ftext += `Orgasm Limit가 ${-fdata.getSum('player.orgasmL')} 만큼 감소해 굴복하고 말았다.`
 			} else if(fdata.getSum('player.orgasm') > 0) {
 				ftext += `강제로 ${fdata.getSum('player.orgasm') > 1?`${fdata.getSum('player.orgasm')}번 `:""}절정해 굴복하고 말았다.`
 			} else if(fdata.getSum('enemy.use.length') > 0) {
@@ -16200,21 +16239,21 @@ function addEffectBlock() {
     selectEffect.dataset.key = "type";
     selectEffect.innerHTML = `
         <option value="attack">자극</option>
-        <option value="excite">흥분</option>
-        <option value="exciteL">흥분 한계</option>
-        <option value="lewd">음란</option>
-        <option value="Heat">발정</option>
+        <option value="excite">Excitement</option>
+        <option value="exciteL">Excitement Limit</option>
+        <option value="lewd">Lewdness</option>
+        <option value="Heat">Heat</option>
         <option value="get">card 획득</option>
     `;
     if(choiceValues.class == "Warrior") {
     	selectEffect.innerHTML += `
-    		<option value="changeLust">욕망</option>
+    		<option value="changeLust">Lust</option>
     		<option value="discard">버리기</option>
     	`
     }
     if(choiceValues.class == "Assassin") {
     	selectEffect.innerHTML += `
-    		<option value="changeWetness">젖음</option>
+    		<option value="changeWetness">Wetness</option>
     	`
     }
     if(choiceValues.class == "Magician") {
@@ -16225,7 +16264,7 @@ function addEffectBlock() {
     }
     if(choiceValues.class == "Healer") {
     	selectEffect.innerHTML += `
-    		<option value="changeCorrupt">타락</option>
+    		<option value="changeCorrupt">Corruption</option>
     		<option value="combine">결합</option>
     	`
     }
@@ -17330,26 +17369,26 @@ function updateCustomCard() {
 	    	} else if(object[`${valueName}Type`] == "specific") {
 	    		switch(object[valueName]) {
 	    		case "lewd":
-	    			realValue = "음란";
+	    			realValue = "Lewdness";
 	    			expectValue = 4
 	    			break;
 	    		case "Heat":
-	    			realValue = "발정";
+	    			realValue = "Heat";
 	    			expectValue = 5
 	    			break;
 	    		case "excite":
 	    			switch(object[`${valueName}ExciteDetail`]) {
 					case "current":
-						realValue = object[`${valueName}Target`] == "self"?"자신.흥분":"상대.흥분";
+						realValue = object[`${valueName}Target`] == "self"?"자신.Excitement":"상대.Excitement";
 	    				expectValue = 3
 						break;
 					case "delayed":
 						customClass = choiceValues.class;
-						realValue = "지연흥분";
+						realValue = "지연Excitement";
 	    				expectValue = 3
 						break;
 					case "remaining":
-	    				realValue = object[`${valueName}Target`] == "self"?"자신.남은흥분":"상대.남은흥분";
+	    				realValue = object[`${valueName}Target`] == "self"?"자신.남은Excitement":"상대.남은Excitement";
 						if(object[`${valueName}Target`] == "self") {
 							expectValue = 4
 						}
@@ -17358,7 +17397,7 @@ function updateCustomCard() {
 						}
 						break;
 					case "thisTurn":
-	    				realValue = (object[`${valueName}Target`] == "self"?"자신.":"상대.") + "기록.이번.이벤트.흥분." + (object[`${valueName}ExciteChange`] == "increase"?"증가":"감소");
+	    				realValue = (object[`${valueName}Target`] == "self"?"자신.":"상대.") + "기록.이번.이벤트.Excitement." + (object[`${valueName}ExciteChange`] == "increase"?"증가":"감소");
 	    				if(object[`${valueName}Target`] == "self" && object[`${valueName}ExciteChange`] == "increase") {
 	    					expectValue = 0.5;
 	    				}
@@ -17373,7 +17412,7 @@ function updateCustomCard() {
 	    				}
 						break;
 					case "lastTurn":
-	    				realValue = (object[`${valueName}Target`] == "self"?"자신.":"상대.") + "기록.이전.이벤트.흥분." + (object[`${valueName}ExciteChange`] == "increase"?"증가":"감소");
+	    				realValue = (object[`${valueName}Target`] == "self"?"자신.":"상대.") + "기록.이전.이벤트.Excitement." + (object[`${valueName}ExciteChange`] == "increase"?"증가":"감소");
 	    				if(object[`${valueName}Target`] == "self" && object[`${valueName}ExciteChange`] == "increase") {
 	    					expectValue = 5
 	    				}
@@ -17389,7 +17428,7 @@ function updateCustomCard() {
 						break;
 					case "recentTurn":
 						customClass = choiceValues.class;
-	    				realValue = (object[`${valueName}Target`] == "self"?"자신.":"상대.") + "기록.최근.이벤트.흥분." + (object[`${valueName}ExciteChange`] == "increase"?"증가":"감소");
+	    				realValue = (object[`${valueName}Target`] == "self"?"자신.":"상대.") + "기록.최근.이벤트.Excitement." + (object[`${valueName}ExciteChange`] == "increase"?"증가":"감소");
 	    				if(object[`${valueName}Target`] == "self" && object[`${valueName}ExciteChange`] == "increase") {
 	    					expectValue = 6
 	    				}
@@ -17404,7 +17443,7 @@ function updateCustomCard() {
 	    				}
 						break;
 					case "all":
-	    				realValue = (object[`${valueName}Target`] == "self"?"자신.":"상대.") + "기록.전체.이벤트.흥분." + (object[`${valueName}ExciteChange`] == "increase"?"증가":"감소");
+	    				realValue = (object[`${valueName}Target`] == "self"?"자신.":"상대.") + "기록.전체.이벤트.Excitement." + (object[`${valueName}ExciteChange`] == "increase"?"증가":"감소");
 	    				if(object[`${valueName}Target`] == "self" && object[`${valueName}ExciteChange`] == "increase") {
 	    					expectValue = 10
 	    				}
@@ -17421,7 +17460,7 @@ function updateCustomCard() {
 	    			}
 	    			break;
 	    		case "exciteL":
-	    			realValue = object[`${valueName}Target`] == "self"?"자신.흥분한계":"상대.흥분한계";
+	    			realValue = object[`${valueName}Target`] == "self"?"자신.Excitement한계":"상대.Excitement한계";
 					if(object[`${valueName}Target`] == "self") {
 						expectValue = 5
 					}
@@ -17563,17 +17602,17 @@ function updateCustomCard() {
 	    		case "lust":
 	    			customClass = choiceValues.class;
 	    			if(object[`${valueName}Lust`] == "current") {
-	    				realValue = "욕망";
+	    				realValue = "Lust";
 	    				expectValue = 5
 	    			}
 	    			if(object[`${valueName}Lust`] == "consumed") {
-	    				realValue = "소모욕망";
+	    				realValue = "소모Lust";
 	    				expectValue = 3
 	    			}
 	    			break;
 	    		case "wetness":
 	    			customClass = choiceValues.class;
-	    			realValue = "젖음";
+	    			realValue = "Wetness";
 	    			expectValue = 3
 	    			break;
 	    		case "sBlock":
@@ -17583,7 +17622,7 @@ function updateCustomCard() {
 	    			break;
 	    		case "corrupt":
 	    			customClass = choiceValues.class;
-	    			realValue = "타락";
+	    			realValue = "Corruption";
 	    			expectValue = 4
 	    			break;
 	    		case "round":
@@ -17653,27 +17692,27 @@ function displayTooltip(event, keywords) {
         switch(keywords) {
         case "lewd":
         	statTooltipData = statTooltips.lewd;
-        	statName = "음란";
+        	statName = "Lewdness";
         	break;
         case "Heat":
         	statTooltipData = statTooltips.Heat;
-        	statName = "발정";
+        	statName = "Heat";
         	break;
         case "player.exciteL":
         	statTooltipData = statTooltips.player.exciteL;
-        	statName = "흥분 한계";
+        	statName = "Excitement Limit";
         	break;
         case "player.orgasmL":
         	statTooltipData = statTooltips.player.orgasmL;
-        	statName = "절정 한계";
+        	statName = "Orgasm Limit";
         	break;
         case "enemy.exciteL":
         	statTooltipData = statTooltips.enemy.exciteL;
-        	statName = "흥분 한계";
+        	statName = "Excitement Limit";
         	break;
         case "enemy.orgasmL":
         	statTooltipData = statTooltips.enemy.orgasmL;
-        	statName = "절정 한계";
+        	statName = "Orgasm Limit";
         	break;
         }
     	if(statTooltipData.set) {
@@ -17698,16 +17737,16 @@ function displayTooltip(event, keywords) {
     			let statDesc = "";
     			switch(statTooltip.value) {
     			case "immune":
-    				statDesc = "<b>흥분</b>이 증가하지 않는다.";
+    				statDesc = "<b>Excitement</b>이 증가하지 않는다.";
     				break;
     			case "orgasmBan":
     				statDesc = "<b>절정</b>하지 않는다.";
     				break;
     			case "suppression":
-    				statDesc = "<b>흥분</b>으로는 <b>절정</b>하지 않는다.";
+    				statDesc = "<b>Excitement</b>으로는 <b>절정</b>하지 않는다.";
     				break;
     			case "insensitive":
-    				statDesc = "<b>흥분</b> 외의 수단으로 <b>절정</b>하지 않는다.";
+    				statDesc = "<b>Excitement</b> 외의 수단으로 <b>절정</b>하지 않는다.";
     				break;
     			}
     			const infoDiv = createInfoDiv(cardDB[statTooltip.id].name[language], statDesc);
@@ -18331,7 +18370,7 @@ function logFold() {
 async function lineTest(options = {}) {
     const playerStates = options.ps || ['순종', '저항', '무지', '적극']; // 기본값 설정
     const gameModes = options.mode || [0, 1]; // hardmode 순서
-    const eventNumbers = options.num || ['개전', '흥분', '타락']; // 기본값 설정
+    const eventNumbers = options.num || ['개전', 'Excitement', 'Corruption']; // 기본값 설정
 
     const _tempLineData = {
         ps: choiceValues.ps,
@@ -18359,7 +18398,7 @@ async function lineTest(options = {}) {
 	                	break;
 	                }
                 	break;
-                case "흥분":
+                case "Excitement":
                 	switch(ps) {
 	                case "순종":
 	                case "저항":
@@ -18371,7 +18410,7 @@ async function lineTest(options = {}) {
 	                	break;
 	                }
                 	break;
-                case "타락":
+                case "Corruption":
                 	player.condition = "corrupted";
                 	break;
                 }
