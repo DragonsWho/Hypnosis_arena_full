@@ -4015,85 +4015,85 @@ function createCardText(card, reverse=false) {
 		let _card;
 		switch(tag) {
 			case "생성됨":
-				_card = "생성된 카드";
+				_card = getWord("생성된 카드");
 				break;
 			case "변형목적":
-				_card = "변형 목적의 카드";
+				_card = getWord("변형 목적의 카드");
 				break;
 			case "독":
-				_card = "독";
+				_card = getWord("독");
 				break;
 			case "기본독":
-				_card = "다른 독";
+				_card = getWord("다른 독");
 				break;
 			case "즉발 마술":
-				_card = "즉발 마술";
+				_card = getWord("즉발 마술");
 				break;
 			case "영창 마술":
-				_card = "영창 마술";
+				_card = getWord("영창 마술");
 				break;
 			case "집중 마술":
-				_card = "집중 마술";
+				_card = getWord("집중 마술");
 				break;
 			case "두번변형됨":
-				_card = "두 번 이상 변형된 카드";
+				_card = getWord("두 번 이상 변형된 카드");
 				break;
 			case "서막조건":
 				switch(prophecy[0]) {
 				case 0:
-					_card = "<span style=\"color: gray;\"><i>(중립, 패널티, 보석, 마술)</i></span> 카드";
+					_card = `<span style="color: gray;"><i>(${getWord("중립")}, ${getWord("패널티")}, ${getWord("보석")}, ${getWord("마술")})</i></span> ${getWord("카드")}`;
 					break;
 				case 1:
-					_card = "중립 카드";
+					_card = `${getWord("중립")} ${getWord("카드")}`;
 					break;
 				case 2:
-					_card = "패널티 카드";
+					_card = `${getWord("패널티")} ${getWord("카드")}`;
 					break;
 				case 3:
-					_card = "보석 카드";
+					_card = `${getWord("보석")} ${getWord("카드")}`;
 					break;
 				case 4:
-					_card = "마술 카드";
+					_card = `${getWord("마술")} ${getWord("카드")}`;
 					break;
 				}					
 				break;
 			case "중막조건":
 				switch(prophecy[1]) {
 				case 0:
-					_card = "<span style=\"color: gray;\"><i>(<b>[진홍색 마도진]</b>, <b>[담청색 마도진]</b>, <b>[황금색 마도진]</b>)</i></span>";
+					_card = `<span style="color: gray;"><i>(<b>[${getWord("진홍색 마도진")}]</b>, <b>[${getWord("담청색 마도진")}]</b>, <b>[${getWord("황금색 마도진")}]</b>)</i></span>`;
 					break;
 				case 1:
-					_card = "<b>[진홍색 마도진]</b>";
+					_card = `<b>[${getWord("진홍색 마도진")}]</b>`;
 					break;
 				case 2:
-					_card = "<b>[담청색 마도진]</b>";
+					_card = `<b>[${getWord("담청색 마도진")}]</b>`;
 					break;
 				case 3:
-					_card = "<b>[황금색 마도진]</b>";
+					_card = `<b>[${getWord("황금색 마도진")}]</b>`;
 					break;
 				}
 				break;
 			case "종막조건":
 				switch(prophecy[2]) {
 				case 0:
-					_card = "<span style=\"color: gray;\"><i>(집중 마술, <b>[순백색 마도진]</b>, 슬롯에 없는 마술, 두 번 이상 변형된)</i></span> 카드";
+					_card = `<span style="color: gray;"><i>(${getWord("집중 마술")}, <b>[${getWord("순백색 마도진")}]</b>, ${getWord("슬롯에 없는 마술")}, ${getWord("두 번 이상 변형된")})</i></span> ${getWord("카드")}`;
 					break;
 				case 1:
-					_card = "집중 마술 카드";
+					_card = `${getWord("집중 마술")} ${getWord("카드")}`;
 					break;
 				case 2:
-					_card = "<b>[순백색 마도진]</b>";
+					_card = `<b>[${getWord("순백색 마도진")}]</b>`;
 					break;
 				case 3:
-					_card = "슬롯에 없는 마술 카드";
+					_card = `${getWord("슬롯에 없는 마술")} ${getWord("카드")}`;
 					break;
-				case 3:
-					_card = "두 번 이상 변형된";
+				case 4: // В оригинале была ошибка, case 3 повторялся. Исправлено на 4.
+					_card = getWord("두 번 이상 변형된");
 					break;
 				}
 				break;
 			case "개선됨":
-				_card = "개선된 체위";
+				_card = getWord("개선된 체위");
 				break;
 			default:
 				_card = cardType?`${tag} ${cardType}`:tag;
@@ -4101,6 +4101,18 @@ function createCardText(card, reverse=false) {
 		}
 		return _card;
 	}
+
+
+
+
+
+
+
+
+
+
+
+
 
 	function objToText(obj, pos=1) {
 		if(!isNaN(obj[0])) {

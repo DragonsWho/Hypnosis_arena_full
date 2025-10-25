@@ -187,6 +187,27 @@ const dictionary = {
 	"금발양아치":{ "KOR":"Blonde Thug" },
 	"조교사":{ "KOR":"Trainer" },
 	"산드레아":{ "KOR":"Sandrea" },
+
+ 
+	"생성된 카드": { "KOR": "Generated Card" },
+	"변형 목적의 카드": { "KOR": "Card for Transformation" }, 
+	"다른 독": { "KOR": "another Poison" },
+	"즉발 마술": { "KOR": "Instant Magic" },
+	"영창 마술": { "KOR": "Chant Magic" },
+	"집중 마술": { "KOR": "Focus Magic" },
+	"두 번 이상 변형된 카드": { "KOR": "Card transformed twice or more" },
+	"두 번 이상 변형된": { "KOR": "Transformed twice or more" },
+	"개선된 체위": { "KOR": "Improved Position" },
+ 
+	"보석": { "KOR": "Jewel" }, 
+
+	"진홍색 마도진": { "KOR": "Crimson Magic Circle" },
+	"담청색 마도진": { "KOR": "Azure Magic Circle" },
+	"황금색 마도진": { "KOR": "Golden Magic Circle" },
+	"순백색 마도진": { "KOR": "White Magic Circle" },
+	"슬롯에 없는 마술": { "KOR": "Magic not in a slot" },
+
+
 }
 
 const npcName = {
@@ -2855,7 +2876,7 @@ const customStructure = {
 		            { value: "penalty", text: "패널티 카드" },
 		            { value: "self", text: "복사본" },
             		{ value: "nelson", text: "조르기", condition: {v1:"커스텀.직업", op:"==", v2:"암살자"} },
-            		{ value: "manufacture", text: "제조", condition: {v1:"커스텀.직업", op:"==", v2:"암살자"} },
+            		{ value: "manufacture", text: "Crafted", condition: {v1:"커스텀.직업", op:"==", v2:"암살자"} },
             		{ value: "instantspell", text: "즉발 마술", condition: {v1:"커스텀.직업", op:"==", v2:"마술사"} },
             		{ value: "magiccircle", text: "마도진", condition: {v1:"커스텀.직업", op:"==", v2:"마술사"} },
             		{ value: "jewel", text: "보석", condition: {v1:"커스텀.직업", op:"==", v2:"마술사"} },
