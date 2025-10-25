@@ -3526,7 +3526,7 @@ const customStructure = {
         "fields": [
         	{
             	"id": "value",
-                "label": "횟수",
+                "label": "Count",
 				"type": "input",
 				"options": [1, 5],
 				"defValue": 1,

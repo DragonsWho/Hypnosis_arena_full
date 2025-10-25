@@ -4219,8 +4219,8 @@ function createCardText(card, reverse=false) {
 			case "excite": stat = `<b>${getWord("흥분")}</b>`; break;
 			case "remainExcite": stat = "남은 <b>흥분</b>"; break;
 			case "exciteL": stat = `<b>${getWord("흥분한계")}</b>`; break;
-			case "orgasm": stat = `<b>${getWord("절정")}</b> 횟수`; break;
-			case "remainOrgasm": stat = "남은 <b>절정</b> 횟수"; break;
+			case "orgasm": stat = `<b>${getWord("절정")}</b> Count`; break;
+			case "remainOrgasm": stat = "남은 <b>절정</b> Count"; break;
 			case "orgasmL": stat = `<b>${getWord("절정한계")}</b>`; break;
 			}
 			if((!reverse && obj[0] == "self") || (reverse && obj[0] == "op")) {
@@ -4869,18 +4869,18 @@ function createCardText(card, reverse=false) {
 				var tempText = v2text;
 				if(!isNaN(tempText)) {
 					if(v1[3] != "event" || v1[4] == "get" || v1[4] == "expiredSpell") {
-						tempText = translateText(cardTexts["target"]["횟수카드"], { "amount":tempText });
+						tempText = translateText(cardTexts["target"]["Count카드"], { "amount":tempText });
 					} else if(v1[4] == "getState") {
-						tempText = translateText(cardTexts["target"]["횟수상태"], { "amount":tempText });
+						tempText = translateText(cardTexts["target"]["Count상태"], { "amount":tempText });
 					} else if(v1[4] == "excite") {
 						tempText = tempText;
 					} else {
-						tempText = translateText(cardTexts["target"]["횟수숫자"], { "amount":tempText });
+						tempText = translateText(cardTexts["target"]["Count숫자"], { "amount":tempText });
 					}
 					
 				} else {
 					if(["==", "!="].includes(cond.op)) {
-						tempText = translateText(cardTexts["target"]["횟수값"], { "amount":tempText });
+						tempText = translateText(cardTexts["target"]["Count값"], { "amount":tempText });
 					}
 				}
 				if(v1[3] == "event") {
@@ -4903,11 +4903,11 @@ function createCardText(card, reverse=false) {
 					case "expiredSpell":
 					case "consumeLust":
 						target = v1text
-						_eventType = "횟수";
+						_eventType = "Count";
 						break;
 					}
 				} else {
-					_eventType = "횟수";
+					_eventType = "Count";
 					target = v1text
 				}
 
@@ -5341,9 +5341,9 @@ function createCardText(card, reverse=false) {
 			if(!isNaN(repeatText) || /^\*\d+\*$/.test(repeatText)) {
 				repeatType = "constant";
 				if(e.type == "get" || e.type == "poisonAdd") {
-					repeatText = translateText(cardTexts["target"][`횟수카드`], { "amount":repeatText });
+					repeatText = translateText(cardTexts["target"][`Count카드`], { "amount":repeatText });
 				} else if(e.op != "set") {
-					repeatText = translateText(cardTexts["target"][`횟수숫자`], { "amount":repeatText });
+					repeatText = translateText(cardTexts["target"][`Count숫자`], { "amount":repeatText });
 				}
 			} else {
 				repeatType = "specific";
@@ -5351,7 +5351,7 @@ function createCardText(card, reverse=false) {
 					repeatText = translateText(cardTexts["target"][`수량`], { "target":repeatText });
 				}
 				if(e.op != "set") {
-					repeatText = translateText(cardTexts["target"][`횟수값`], { "amount":repeatText });
+					repeatText = translateText(cardTexts["target"][`Count값`], { "amount":repeatText });
 				}
 			}
 		}
@@ -14831,10 +14831,10 @@ function makeEnding() {
 	if(calcNested(player, "record", "event.gain.corrupt", "sum") > 0) {
 		pTxt += `<b>얻은 타락:</b> ${calcNested(player, "record", "event.gain.corrupt", "sum")}<br>`;
 	}
-	pTxt += `<br><b>[자극]한 횟수:</b> ${calcNested(player, "record", "event.attack", "sum")}회<br>`;
-	pTxt += `<b>[자극]받은 횟수:</b> ${calcNested(player, "record", "event.attacked", "sum")}회<br>`;
+	pTxt += `<br><b>[자극]한 Count:</b> ${calcNested(player, "record", "event.attack", "sum")}회<br>`;
+	pTxt += `<b>[자극]받은 Count:</b> ${calcNested(player, "record", "event.attacked", "sum")}회<br>`;
 	if(calcNested(player, "record", "event.avoid", "sum") > 0) {
-		pTxt += `<b>[자극]을 회피한 횟수:</b> ${calcNested(player, "record", "event.avoid", "sum")}회<br>`;
+		pTxt += `<b>[자극]을 회피한 Count:</b> ${calcNested(player, "record", "event.avoid", "sum")}회<br>`;
 	}
 	pTxt += `<br>`;
 	pTxt += `<b>누적 흥분:</b> ${calcNested(player, "record", "event.excite.up", "sum")}<br>`;
@@ -14842,8 +14842,8 @@ function makeEnding() {
 	if(calcNested(player, "record", "event.excite.down", "sum") > 0) {
 		pTxt += `<b>회복한 흥분:</b> ${calcNested(player, "record", "event.excite.down", "sum")}<br>`;
 	}
-	pTxt += `<br><b>절정 횟수:</b> ${calcNested(player, "record", "event.orgasm", "sum")}회<br>`;
-	pTxt += `<br><b>상대의 절정 횟수:</b> ${calcNested(enemy, "record", "event.orgasm", "sum")}회<br>`;
+	pTxt += `<br><b>절정 Count:</b> ${calcNested(player, "record", "event.orgasm", "sum")}회<br>`;
+	pTxt += `<br><b>상대의 절정 Count:</b> ${calcNested(enemy, "record", "event.orgasm", "sum")}회<br>`;
 	if(player.overkill > 0) {
 		pTxt += `<b>한계 초과:</b> ${player.overkill}회<br>`;
 	}

@@ -341,19 +341,19 @@ const cardTexts = {
 			"KOR": "{cards} expired {time}",
 		},
 
-		"횟수숫자":{
+		"Count숫자":{
 			"KOR": "{amount} times",
 		},
-		"횟수값":{
+		"Count값":{
 			"KOR": "by {amount}",
 		},
-		"횟수카드":{
+		"Count카드":{
 			"KOR": "{amount}",
 		},
-		"횟수상태":{
+		"Count상태":{
 			"KOR": "{amount}",
 		},
-		"횟수발동":{
+		"Count발동":{
 			"KOR": "Activates {amount} times.",
 		},
 		"카드들":{
@@ -829,28 +829,28 @@ const cardTexts = {
 			"KOR": "If not exactly {amount} {target} was recovered {time}, ",
 		},
 
-		"이벤트횟수":{
+		"이벤트Count":{
 			"KOR": "If you have {target}, ",
 		},
-		"이벤트횟수부정":{
+		"이벤트Count부정":{
 			"KOR": "If you do not have {target}, ",
 		},
-		"이벤트횟수일치":{
+		"이벤트Count일치":{
 			"KOR": "If you have exactly {amount} {target}, ",
 		},
-		"이벤트횟수초과":{
+		"이벤트Count초과":{
 			"KOR": "If you have more than {amount} {target}, ",
 		},
-		"이벤트횟수미만":{
+		"이벤트Count미만":{
 			"KOR": "If you have less than {amount} {target}, ",
 		},
-		"이벤트횟수이상":{
+		"이벤트Count이상":{
 			"KOR": "If you have {amount} or more {target}, ",
 		},
-		"이벤트횟수이하":{
+		"이벤트Count이하":{
 			"KOR": "If you have {amount} or less {target}, ",
 		},
-		"이벤트횟수불일치":{
+		"이벤트Count불일치":{
 			"KOR": "If you do not have exactly {amount} {target}, ",
 		},
 
