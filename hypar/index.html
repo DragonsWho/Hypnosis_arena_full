@@ -687,7 +687,7 @@
                     <label><input type="checkbox" class="raceFilter" value="전종족"> Common</label>
                     <label><input type="checkbox" class="raceFilter" value="엘도리아인"> Eldorian</label>
                     <label><input type="checkbox" class="raceFilter" value="실바니"> Sylvani</label>
-                    <label><input type="checkbox" class="raceFilter" value="하프만"> Halfman</label>
+                    <label><input type="checkbox" class="raceFilter" value="Halfling"> Halfling</label>
                     <label><input type="checkbox" class="raceFilter" value="트라이브"> Tribe</label>
                 </div>
             </div>
@@ -1164,24 +1164,24 @@
                 </p>
             </div>
         </div>
-        <div class="box button race dynamicSize25" data-category="race" onclick="randomName('Hafman'); selectChoice.call(this, this.getAttribute('data-category'));">
+        <div class="box button race dynamicSize25" data-category="race" onclick="randomName('Halfling'); selectChoice.call(this, this.getAttribute('data-category'));">
             <div class="box-img portrait">
                 <img src="image/face/portrait_player_Ha_A_normal.webp" onerror="handleImgError(this)" alt="">
                 <img class="clothes" src="image/face/portrait_player_Ha_A_c3.webp" onerror="handleImgError(this)" alt="">
             </div>
             <hr>
-                <h2 class="box-title" style="display: none;">하프만</h2>
-            <h2 class="box-title langText KOR">Hafman</h2>  
+                <h2 class="box-title" style="display: none;">Halfling</h2>
+            <h2 class="box-title langText KOR">Halfling</h2>  
             <hr>
             <blockquote class="langText KOR">Diminutive and oddly cute.<br>Diligent and skillfull.</blockquote>
             <div class="box-content">
                 <p class="box-text">
                     <span class="langText KOR">
-                        Hafmans are a short-statured race with strangely delicate physiques and a penchant for craftsmanship.<br>
+                        Halflings are a short-statured race with strangely delicate physiques and a penchant for craftsmanship.<br>
                         Having escaped an era of slavery they developed a strong sense of community and survival skills, through which they advanced their unique technologies and knowledge.<br>
                         <br>
                         They excel in intricate tools and mechanical devices, establishing themselves as indispensible across practically every industry imaginable.<br>
-                        Although they still face some discrimination the Hafmans continue to overcome those petty prejudices and expand their influence across the continent.<br>
+                        Although they still face some discrimination the halflings continue to overcome those petty prejudices and expand their influence across the continent.<br>
                     </span>
                     <span class="langText ENG">
                     </span>
@@ -1558,7 +1558,7 @@
                         <span class="2ndUnlock" style="display:none">As an elite, you have a sense of ease that comes from power and wealth.<br>
                         You have traits that give you abundant starting resources and make it easier to use high-grade cards.</span>
                         <br>
-                        ※ Hafmans cannot choose the Elite background.</p>
+                        ※ Halflings cannot choose the Elite background.</p>
                 </div>
             </div>
             <div class="box button background 전종족 전직업 dynamicSize25" data-category="background" onclick="selectChoice.call(this, this.getAttribute('data-category'));">
@@ -1577,7 +1577,7 @@
                         You have traits that make you weak in the early game but powerful in the late game.</span></p>
                 </div>
             </div>
-            <div class="box button background 엘도리아인 하프만 트라이브 전직업 dynamicSize25" data-category="background" onclick="selectChoice.call(this, this.getAttribute('data-category'));">
+            <div class="box button background 엘도리아인 Halfling 트라이브 전직업 dynamicSize25" data-category="background" onclick="selectChoice.call(this, this.getAttribute('data-category'));">
                 <div class="box-img">
                     <img src="image/background4.webp" onerror="handleImgError(this)" alt="">
                 </div>
@@ -1962,12 +1962,12 @@
                         <blockquote class="classDetailCardName" style="margin-top: -4px; text-align: center;"></blockquote>
                     </div>
                     <hr>
-                    <h2 class="box-title langText KOR">Estrus Reduction</h2>
+                    <h2 class="box-title langText KOR">Heat Reduction</h2>
                     <hr>
                     <div class="box-content">
                         <blockquote class="langText KOR">Every female says she won't lose.<br>Until she's taken.</blockquote>
-                        <p class="box-text langText KOR">Warriors directly reduce <b>Estrus</b> to offset the opponent's <b>[Stimulation]</b>.<br><br>
-                            Permanently reducing Estrus is an effect unique to Warriors.<br></p>
+                        <p class="box-text langText KOR">Warriors directly reduce <b>Heat</b> to offset the opponent's <b>[Stimulation]</b>.<br><br>
+                            Permanently reducing Heat is an effect unique to Warriors.<br></p>
                     </div>
                 </div>
                 <div class="box classDetail dynamicSize25">
@@ -2018,7 +2018,7 @@
                     <div class="box-content">
                         <blockquote class="langText KOR">A hole, thoroughly wet and damp.<br>Soaked and waiting for a cock.</blockquote>
                         <p class="box-text langText KOR"><b>Wetness</b> is a temporary resource Assassins gain each time they use a card, and it disappears at the end of the round.<br><br>
-                            If Wetness is greater than or equal to <b>Estrus</b>, you can evade <b>[Stimulation]</b>.<br><br>
+                            If Wetness is greater than or equal to <b>Heat</b>, you can evade <b>[Stimulation]</b>.<br><br>
                             Certain cards activate additional effects when Wetness is above a certain value.<br></p>
                     </div>
                 </div>
@@ -2351,9 +2351,9 @@
             </div>
             <div class="container addCard cardList" id="custom" style="display:none; align-items: center;">
                 <div class="box" style="flex: 0 calc(100% - 20px);">
-                    <h2 class="box-title langText KOR">Hafman Bonus: Custom Card</h2>
+                    <h2 class="box-title langText KOR">Halfling Bonus: Custom Card</h2>
                     <div class="box-content">
-                        <p class="box-text langText KOR">Hafmans can create their own desired card by choosing and combining effects to add to their deck.<br>
+                        <p class="box-text langText KOR">Halflings can create their own desired card by choosing and combining effects to add to their deck.<br>
                             The cost of the Custom card depends on the effects chosen.<br><br>
                             ※ Custom cards cannot be played, discarded, transformed, or combined by the effects of other cards.</p>
                     </div>
@@ -2550,8 +2550,8 @@
         <div class="container stats" style="justify-content: space-evenly;">
             <div class="box" style="flex: 0 calc(30% - 20px); margin:0 auto; font-size: 3vh; margin: 0 0% 0 0%; padding: 0; text-align: center;"><span class="langText KOR">Lewdness</span><span class="langText ENG">Lewdness</span></div>
             <p id="lewd" class="number" style="flex: 0 calc(10% - 20px); margin:0 auto; font-size: 3vh; margin: 0; padding: 0; text-align: center;" onmouseenter="displayTooltip(event, 'lewd');" onmouseleave="hideTooltip();">2</p>
-            <div class="box" style="flex: 0 calc(30% - 20px); margin:0 auto; font-size: 3vh; margin: 0 0% 0 10%; padding: 0; text-align: center;"><span class="langText KOR">Estrus</span><span class="langText ENG">Estrus</span></div>
-            <p id="estrus" class="number" style="flex: 0 calc(10% - 20px); margin:0 auto; font-size: 3vh; margin: 0; padding: 0; text-align: center;" onmouseenter="displayTooltip(event, 'estrus');" onmouseleave="hideTooltip();">2</p>
+            <div class="box" style="flex: 0 calc(30% - 20px); margin:0 auto; font-size: 3vh; margin: 0 0% 0 10%; padding: 0; text-align: center;"><span class="langText KOR">Heat</span><span class="langText ENG">Heat</span></div>
+            <p id="Heat" class="number" style="flex: 0 calc(10% - 20px); margin:0 auto; font-size: 3vh; margin: 0; padding: 0; text-align: center;" onmouseenter="displayTooltip(event, 'Heat');" onmouseleave="hideTooltip();">2</p>
         </div>
         <div class="playerInfo">
             <div class="box-img portraitBattle" id="playerPortrait">

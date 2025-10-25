@@ -25,7 +25,7 @@ const cardDB = {
 		flavorText:{ "KOR":"Islands, deserts, snowfields... there is no place an Eldorian cannot live.<br>All across the continent of Oldinsaleia, you can see Eldorians who have adapted to their environments." },
 		hypnoText:{ "KOR":"Give up.<br>Accept that you are a sex slave and act accordingly." },
 		effect:[
-			{trigger:"orgasm", cond:true, type:"estrus", op:"add", value:-3},
+			{trigger:"orgasm", cond:true, type:"Heat", op:"add", value:-3},
 		]
 	},
 	"AD-NT-EL-002":{
@@ -69,7 +69,7 @@ const cardDB = {
 		tags:["엘도리아인 형질"],
 		expiration:"always", duration:Infinity,
 		effect:[
-			{trigger:"always", cond:true, type:"estrusAndLewd", op:"add", value:1},
+			{trigger:"always", cond:true, type:"HeatAndLewd", op:"add", value:1},
 		]
 	},
 	"AD-NT-EL-002-5":{
@@ -102,18 +102,18 @@ const cardDB = {
 		]
 	},
 	"AD-NT-HA-001":{
-		name:{ "KOR":"Small Stature" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"하프만", cost:5, owner:1,
+		name:{ "KOR":"Small Stature" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"Halfling", cost:5, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Halfmen stand at just over half the height of an Eldorian.<br>However, their strength belies their appearance, and underestimating them would be a grave mistake." },
-		hypnoText:{ "KOR":"Halfman slaves have a niche but enthusiastic clientele.<br>They say it's their cute looks and disproportionately voluptuous bodies that are so appealing." },
+		hypnoText:{ "KOR":"Halfling slaves have a niche but enthusiastic clientele.<br>They say it's their cute looks and disproportionately voluptuous bodies that are so appealing." },
 		effect:[
 			{trigger:"always", cond:true, type:"lewd", op:"add", value:1},
 			{trigger:"always", cond:true, type:"exciteL", target:"self", op:"add", value:-1},
 		]
 	},
 	"AD-NT-HA-002":{
-		name:{ "KOR":"Dexterity" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"하프만", cost:10, owner:1,
+		name:{ "KOR":"Dexterity" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"Halfling", cost:10, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"If you walk through the workshop district, you'll find that many artisans are Halfmen. This is because their small hands are adept at precise, detailed work.<br>This natural talent allowed Halfmen, who had nothing, to establish themselves after their emancipation." },
@@ -167,7 +167,7 @@ const cardDB = {
 		flavorText:{ "KOR":"Forged through strict rules and rigorous training, you remain unshaken in any situation.<br>You uphold the army's honor and traditions, maintaining order with strong mental fortitude and discipline." },
 		hypnoText:{ "KOR":"Conduct a masturbation roll call every morning.<br>You are not to orgasm without permission." },
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"add", value:-2},
+			{trigger:"always", cond:true, type:"Heat", op:"add", value:-2},
 		]
 	},
 	"AD-NT-BG2-001":{
@@ -217,7 +217,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You have kept your body and mind pure, dedicated to the gods.<br>Your faith is your shield, protecting you from worldly temptations for a sacred purpose." },
 		hypnoText:{ "KOR":"As a body that serves the gods, purity is paramount.<br>Even during service and entertainment, you must only use your back hole, keeping your front pussy pristine." },
 		effect:[
-			{trigger:"always", cond:true, type:"estrusAndLewd", op:"add", value:-2},
+			{trigger:"always", cond:true, type:"HeatAndLewd", op:"add", value:-2},
 		]
 	},
 	"AD-NT-BG4-002":{
@@ -253,7 +253,7 @@ const cardDB = {
 		tags:["탐구"],
 		expiration:"turnEnd", duration:1,
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"자신.기록.이번.사용.count(type, 보조)", op:">", v2:0}, type:"estrus", op:"add", value:-1},
+			{trigger:"turnEnd", cond:{v1:"자신.기록.이번.사용.count(type, 보조)", op:">", v2:0}, type:"Heat", op:"add", value:-1},
 		]
 	},
 	"AD-NT-BG5-001-3":{
@@ -497,28 +497,28 @@ const cardDB = {
 	},
 
 	"AD-NT-HA-BG1-001":{
-		name:{ "KOR":"Hired Soldier" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"하프만", bg:"군인", cost:10, owner:1,
+		name:{ "KOR":"Hired Soldier" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"Halfling", bg:"군인", cost:10, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
-		flavorText:{ "KOR":"It is not easy for a Halfman to find a decent job.<br>Because of various stubborn misunderstandings and prejudices, it is difficult to find employers willing to hire them.<br>If someone does hire a Halfman, they must either be very open-minded or in need of disposable, one-time labor." },
+		flavorText:{ "KOR":"It is not easy for a halfling to find a decent job.<br>Because of various stubborn misunderstandings and prejudices, it is difficult to find employers willing to hire them.<br>If someone does hire a halfling, they must either be very open-minded or in need of disposable, one-time labor." },
 		hypnoText:{ "KOR":"Memories of a happy walk with Master.<br>Don't be mistaken, pet. You were never seriously employed." },
 		effect:[
 			{trigger:"always", cond:{v1:"라운드", op:"in", v2:[1,3,5,7]}, type:"lewd", op:"add", value:1},
-			{trigger:"always", cond:{v1:"라운드", op:"in", v2:[2,4,6,8]}, type:"estrus", op:"add", value:-2},
+			{trigger:"always", cond:{v1:"라운드", op:"in", v2:[2,4,6,8]}, type:"Heat", op:"add", value:-2},
 		]
 	},
 	"AD-NT-HA-BG3-001":{
-		name:{ "KOR":"Idol" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"하프만", bg:"연예인", cost:10, owner:1,
+		name:{ "KOR":"Idol" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"Halfling", bg:"연예인", cost:10, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
-		flavorText:{ "KOR":"While carelessly calling an adult Halfman 'cute' is considered racist, some have decided to capitalize on this racial trait.<br>Unique minstrels called 'idols' have built a dedicated fan base with their cute dances and songs." },
+		flavorText:{ "KOR":"While carelessly calling an adult halfling 'cute' is considered racist, some have decided to capitalize on this racial trait.<br>Unique minstrels called 'idols' have built a dedicated fan base with their cute dances and songs." },
 		hypnoText:{ "KOR":"It is common sense for an idol to provide immediate sexual services if a fan desires it.<br>For die-hard fans, they even allow raw creampies." },
 		effect:[
 			{trigger:"always", cond:{v1:"자기덱.length", op:"==", v2:1}, type:"lewd", op:"add", value:5},
 		]
 	},
 	"AD-NT-HA-BG4-001":{
-		name:{ "KOR":"The Chosen Faith" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"하프만", bg:"종교인", cost:15, owner:1,
+		name:{ "KOR":"The Chosen Faith" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"Halfling", bg:"종교인", cost:15, owner:1,
 		tags:[], related:["AD-NT-HA-BG4-001-1"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"The Leia religion, the state religion of the Eldorian Kingdom, tends to discriminate against races other than Eldorians.<br>As a result, most Halfmen are either non-religious or join a cult that worships Morvain, the evil god who opposes Aleia." },
@@ -547,10 +547,10 @@ const cardDB = {
 		]
 	},
 	"AD-NT-HA-BG5-001":{
-		name:{ "KOR":"Self-Taught" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"하프만", bg:"학자", cost:15, owner:1,
+		name:{ "KOR":"Self-Taught" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"Halfling", bg:"학자", cost:15, owner:1,
 		tags:[], related:["AD-NT-HA-BG5-001-1"],
 		expiration:"always", duration:Infinity,
-		flavorText:{ "KOR":"Without remarkable talent or the luck to find a sponsor, it is difficult for a Halfman to set foot in the academy.<br>However, just as the field of alchemy originated in the Halfman slums, there are occasional cases of achieving excellent results through self-study with no resources." },
+		flavorText:{ "KOR":"Without remarkable talent or the luck to find a sponsor, it is difficult for a halfling to set foot in the academy.<br>However, just as the field of alchemy originated in the halfling slums, there are occasional cases of achieving excellent results through self-study with no resources." },
 		hypnoText:{ "KOR":"You must use your own body for clinical trials.<br>Be careful not to let the pleasure exceed its threshold and burn out all your nerves." },
 		effect:[
 			{trigger:"gameStart", cond:true, type:"get", target:"self", repeat:3, value:"AD-NT-HA-BG5-001-1"},
@@ -566,20 +566,20 @@ const cardDB = {
 		]
 	},
 	"AD-NT-HA-BG6-001":{
-		name:{ "KOR":"Terrorist" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"하프만", bg:"범죄자", cost:20, owner:1, priority:99,
+		name:{ "KOR":"Terrorist" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"Halfling", bg:"범죄자", cost:20, owner:1, priority:99,
 		tags:[],
 		expiration:"always", duration:Infinity,
-		flavorText:{ "KOR":"The reality is that even after emancipation, the rights of Halfmen are still not protected in many areas, so Halfman rights groups are busy.<br>Among them are radical groups whose activities are very dangerous, complicating the situation." },
-		hypnoText:{ "KOR":"Your main activity is terrorism by exposing your naked body in public.<br>Inflict upon the Eldorians the shame of being turned on by the body of a mere Halfman." },
+		flavorText:{ "KOR":"The reality is that even after emancipation, the rights of Halfmen are still not protected in many areas, so halfling rights groups are busy.<br>Among them are radical groups whose activities are very dangerous, complicating the situation." },
+		hypnoText:{ "KOR":"Your main activity is terrorism by exposing your naked body in public.<br>Inflict upon the Eldorians the shame of being turned on by the body of a mere halfling." },
 		effect:[
 			{trigger:"always", cond:{v1:"라운드", op:"<=", v2:3}, type:"modifier", stat:"excite", target:"op", op:"add", value:1},
 		]
 	},
 	"AD-NT-HA-BG7-001":{
-		name:{ "KOR":"Artisan" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"하프만", bg:"상인", cost:20, owner:1,
+		name:{ "KOR":"Artisan" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"Halfling", bg:"상인", cost:20, owner:1,
 		tags:[], related:["AD-NT-HA-BG7-001-1", "tag:기계부품"],
 		expiration:"always", duration:Infinity,
-		flavorText:{ "KOR":"For precision handicrafts, 'Halfman-made' signifies high quality.<br>Not all Halfmen are skillful, but if you were to pick the most skillful artisan, they would be a Halfman." },
+		flavorText:{ "KOR":"For precision handicrafts, 'Halfling-made' signifies high quality.<br>Not all Halfmen are skillful, but if you were to pick the most skillful artisan, they would be a halfling." },
 		hypnoText:{ "KOR":"How to use the forced orgasm device: Insert the device, set the timer, and turn on the switch.<br>※ Warning: Cannot be stopped midway!" },
 		effect:[
 			{trigger:"gameStart", cond:true, type:"get", target:"self", value:"AD-NT-HA-BG7-001-1"},
@@ -596,7 +596,7 @@ const cardDB = {
 		tags:["act:삽입"],
 		effect:[
 			{trigger:"used", cond:true, keepLine:true, type:"lewd", op:"add", value:0},
-			{trigger:"used", cond:true, keepLine:true, type:"estrus", op:"add", value:0},
+			{trigger:"used", cond:true, keepLine:true, type:"Heat", op:"add", value:0},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
 		]
 	},
@@ -623,7 +623,7 @@ const cardDB = {
 		cond:true,
 		tags:["기계부품"],
 		effect:[
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:-2},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:-2},
 			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"This effect is added." }},
 		]
 	},
@@ -646,10 +646,10 @@ const cardDB = {
 		]
 	},
 	"AD-NT-HA-BG8-001":{
-		name:{ "KOR":"Lulling Guard" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"하프만", bg:"용병", cost:20, owner:1,
+		name:{ "KOR":"Lulling Guard" }, class:"중립", type:"특성", isDeck:false, rarity:"없음", race:"Halfling", bg:"용병", cost:20, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
-		flavorText:{ "KOR":"A cute appearance can, conversely, be a deadly weapon.<br>Surprisingly, many people forget that a sharp knife doesn't become a dull toy knife just because a Halfman is holding it." },
+		flavorText:{ "KOR":"A cute appearance can, conversely, be a deadly weapon.<br>Surprisingly, many people forget that a sharp knife doesn't become a dull toy knife just because a Halfling is holding it." },
 		hypnoText:{ "KOR":"Grab their attention with your naked body.<br>Deceive your opponent by seducing them with your voluptuous physique and sensual poses." },
 		effect:[
 			{trigger:"always", cond:{v1:"자신.기록.이전.사용.count(type, 패널티)", op:">", v2:0}, type:"maxUse", target:"self", value:1},
@@ -664,7 +664,7 @@ const cardDB = {
 		hypnoText:{ "KOR":"If you find a suspicious person, you must immediately subdue them by mating.<br>On your honor as a guardian, be careful not to be defeated by an orgasm." },
 		effect:[
 			{trigger:"always", cond:{v1:"체위", op:"==", v2:false}, type:"lewd", op:"add", value:1},
-			{trigger:"always", cond:"체위", type:"estrus", op:"add", value:-2},
+			{trigger:"always", cond:"체위", type:"Heat", op:"add", value:-2},
 		]
 	},
 	"AD-NT-TR-BG2-001":{
@@ -867,7 +867,7 @@ const cardDB = {
 		flavorText:{ "KOR":"A warrior stands at the forefront to protect their comrades.<br>Serving as the team's shield with thorough defense and a spirit of self-sacrifice, they prove their true worth in moments of crisis." },
 		hypnoText:{ "KOR":"A gatekeeper is a gaping hole installed at the gate for anyone to use freely.<br>For a long time, it has received the cocks and fingers of countless strangers." },
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"subtract", value:"자기덱.count(type, 패널티)", maxValue:3},
+			{trigger:"always", cond:true, type:"Heat", op:"subtract", value:"자기덱.count(type, 패널티)", maxValue:3},
 			{trigger:"none", cond:true, type:"showValue", value:"자기덱.count(type, 패널티)", maxValue:3},
 		]
 	},
@@ -879,7 +879,7 @@ const cardDB = {
 		flavorText:{ "KOR":"A single surprise attack targeting an enemy's weakness is ultimately safer than raising your shield a hundred times.<br>The strategy of breaking the enemy's defense with an aggressive offense can itself become the defense that protects your allies." },
 		hypnoText:{ "KOR":"When facing a man, you must quickly suck his cock and make him cum to neutralize him.<br>A swift, deep-throating blowjob is crucial to prevent him from retaliating." },
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"add", value:-2, repeat:"자신.기록.이번.이벤트.자극함"},
+			{trigger:"always", cond:true, type:"Heat", op:"add", value:-2, repeat:"자신.기록.이번.이벤트.자극함"},
 		]
 	},
 	"AD-WA-BG1-002":{
@@ -925,7 +925,7 @@ const cardDB = {
 	
 	"AD-WA-BG3-001":{
 		name:{ "KOR":"Pump Up the Crowd!" }, class:"전사", type:"특성", isDeck:false, rarity:"없음", bg:"연예인", cost:20, owner:1,
-		tags:["group:욕망", "race:하프만"],
+		tags:["group:욕망", "race:Halfling"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"In battle, you value flow and atmosphere.<br>As the battle intensifies and the mood heats up, you gradually grow stronger." },
 		hypnoText:{ "KOR":"You must perform the sow dance, vulgarly shaking your breasts and ass.<br>Being jumped by the excited audience is all part of the show." },
@@ -963,7 +963,7 @@ const cardDB = {
 		text:{ "KOR":"<b>Lewdness and Heat</b> can be lowered to 0." },
 		effect:[
 			{trigger:"trait", cond:true, type:"minLewd", value:0},
-			{trigger:"trait", cond:true, type:"minEstrus", value:0},
+			{trigger:"trait", cond:true, type:"minHeat", value:0},
 		]
 	},
 	"AD-WA-BG4-002":{
@@ -1028,7 +1028,7 @@ const cardDB = {
 	
 	"AD-WA-BG7-001":{
 		name:{ "KOR":"Inventory Clearance" }, class:"전사", type:"특성", isDeck:false, rarity:"없음", bg:"상인", cost:15, owner:1,
-		tags:["group:패널티", "race:하프만", "act:삽입"],
+		tags:["group:패널티", "race:Halfling", "act:삽입"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"You have a knack for efficiently disposing of leftover goods.<br>You are skilled at properly selling various resources to minimize losses and maximize profits." },
 		hypnoText:{ "KOR":"Your pussy is dead stock, not even worth selling.<br>For inventory clearance, you must offer it to customers as a free gift." },
@@ -1052,7 +1052,7 @@ const cardDB = {
 		tags:["투척"],
 		effect:[
 			{trigger:"discarded", cond:true, type:"use", value:"self"},
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:-2},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:-2},
 			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:2},
 		]
 	},
@@ -1186,7 +1186,7 @@ const cardDB = {
 		flavorText:{ "KOR":"In the name of the holy gods, you conduct thorough interrogations to punish heretics and uncover the truth.<br>No lie can deceive your eyes, and you will dig into their sins to the very end." },
 		hypnoText:{ "KOR":"The interrogation of a heretic is conducted by stroking and sucking their cock.<br>If cum, the evidence of corruption, is produced, it must be held in the mouth and preserved." },
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"subtract", value:"상대.상태.countType(tags, 독)"},
+			{trigger:"always", cond:true, type:"Heat", op:"subtract", value:"상대.상태.countType(tags, 독)"},
 		]
 	},
 	"AD-AS-BG4-002":{
@@ -1547,7 +1547,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You are skilled in practical medicine that can be used immediately in the harsh environment of the battlefield.<br>You have learned to improvise to save the wounded even with scarce resources and poor conditions, and your split-second decisions and swift treatment shine in situations where they are directly linked to survival." },
 		hypnoText:{ "KOR":"You must walk around with your breasts exposed so that you can be used to relieve the soldiers' sexual frustration at any time.<br>If necessary, you must perform an emergency handjob." },
 		effect:[
-			{trigger:"always", cond:{v1:"자신.기록.이번.결합.length", op:">", v2:0}, type:"estrus", op:"add", value:-3}
+			{trigger:"always", cond:{v1:"자신.기록.이번.결합.length", op:">", v2:0}, type:"Heat", op:"add", value:-3}
 		]
 	},
 
@@ -1754,7 +1754,7 @@ const cardDB = {
 		flavorText:{ "KOR":"", "ENG":"" },
 		hypnoText:{ "KOR":"", "ENG":"" },
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"add", value:-2}
+			{trigger:"always", cond:true, type:"Heat", op:"add", value:-2}
 		]
 	},
 	"AD-HE-BG7-002-4":{
@@ -1905,7 +1905,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You can't stay in one place for long.<br>Even when you have a chance to settle down, the urge to leave constantly torments you.<br>In the end, your life is an endless series of wanderings." },
 		hypnoText:{ "KOR":"You've been raped a lot while traveling dangerous roads.<br>Horny monsters, bandits... you were gang-raped by so many cocks that you finally arrived in town with cum dripping from all over your body." },
 		effect:[
-			{trigger:"trait", cond:true, type:"minEstrus", value:3},
+			{trigger:"trait", cond:true, type:"minHeat", value:3},
 		]
 	},
 
@@ -2102,7 +2102,7 @@ const cardDB = {
 		hypnoText:{ "KOR":"You can't have long sex and want to cum quickly.<br>You are always in a state of heat above a certain level that cannot be alleviated." },
 		text:{ "KOR":"The minimum value of <b>Heat</b> becomes 3." },
 		effect:[
-			{trigger:"trait", cond:true, type:"minEstrus", value:3},
+			{trigger:"trait", cond:true, type:"minHeat", value:3},
 		]
 	},*/
 
@@ -2138,8 +2138,8 @@ const cardDB = {
 		flavorText:{ "KOR":"You were once captured by the enemy and became a prisoner.<br>Though you endlessly resisted, looking for a chance to escape, you had to endure physical and mental suffering during your long captivity." },
 		hypnoText:{ "KOR":"You were captured as a prisoner and sexually tortured.<br>It wasn't long before you shamefully broke and spilled all the information about your unit." },
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"add", value:3},
-			{trigger:"always", cond:true, type:"estrus", op:"subtract", value:"자신.기록.이번.사용.length", maxValue:3},
+			{trigger:"always", cond:true, type:"Heat", op:"add", value:3},
+			{trigger:"always", cond:true, type:"Heat", op:"subtract", value:"자신.기록.이번.사용.length", maxValue:3},
 		]
 	},
 	"DA-AS-BG2-001":{
@@ -2239,7 +2239,7 @@ const cardDB = {
 		cond:true,
 		tags:["불량품"],
 		effect:[
-			{trigger:"get", cond:true, type:"estrus", op:"add", value:1},
+			{trigger:"get", cond:true, type:"Heat", op:"add", value:1},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
 		]
 	},
@@ -2281,7 +2281,7 @@ const cardDB = {
 		flavorText:{ "KOR":"Your mana is in an overly sensitive state.<br>It overreacts to even the smallest stimulus, causing your magic to explode or become unstable at unwanted moments.<br>This hypersensitive mana always keeps you on edge and acts as a disadvantage, making proper control difficult." },
 		hypnoText:{ "KOR":"Thanks to a curse of 1000x sensitivity, you orgasm at the slightest touch." },
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"add", value:"자신.기록.전체.이벤트.만료마술.length"},
+			{trigger:"always", cond:true, type:"Heat", op:"add", value:"자신.기록.전체.이벤트.만료마술.length"},
 		]
 	},
 
@@ -2292,8 +2292,8 @@ const cardDB = {
 		flavorText:{ "KOR":"You were disciplined in the army for breaking rules or making mistakes.<br>That disciplinary action was more than just a punishment; it severely damaged your position and credibility within the military.<br>To regain your honor as a soldier, you needed to work even harder." },
 		hypnoText:{ "KOR":"You were often disciplined for having a lewd body that aroused the soldiers.<br>You had to continue to handle the soldiers' sexual needs and reflect on being born so lewd." },
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"add", value:2},
-			{trigger:"always", cond:true, type:"estrus", op:"subtract", value:"자신.기록.이번.사용.count(tags, 마술)", maxValue:2},
+			{trigger:"always", cond:true, type:"Heat", op:"add", value:2},
+			{trigger:"always", cond:true, type:"Heat", op:"subtract", value:"자신.기록.이번.사용.count(tags, 마술)", maxValue:2},
 		]
 	},
 	"DA-MA-BG2-001":{
@@ -2527,7 +2527,7 @@ const cardDB = {
 			{trigger:"gameStart", cond:true, type:"line", value:"개입-최면"},
 			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"엘도리아인"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-001-1"},
 			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"실바니"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-001-2"},
-			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"하프만"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-001-3"},
+			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"Halfling"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-001-3"},
 			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"트라이브"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-001-4"},
 			{trigger:"none", cond:true, type:"text", value:{ "KOR":"<span style=\"color: gray;\">[Duel Start]</span> Apply a race-specific hypnosis to yourself." }},
 		]
@@ -2555,7 +2555,7 @@ const cardDB = {
 		tags:["부정적", "최면"],
 		expiration:"always", duration:Infinity,
 		effect:[
-			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"Applied if you are a Halfman." }},
+			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"Applied if you are a Halfling." }},
 			{trigger:"always", cond:{v1:"자신.기록.이전.이벤트.절정", op:">", v2:0}, type:"penaltyMustUse", target:"self"},
 		]
 	},
@@ -2579,7 +2579,7 @@ const cardDB = {
 			{trigger:"gameStart", cond:true, type:"line", value:"개입-저주"},
 			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"엘도리아인"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-002-1"},
 			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"실바니"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-002-2"},
-			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"하프만"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-002-3"},
+			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"Halfling"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-002-3"},
 			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"트라이브"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-002-4"},
 			{trigger:"none", cond:true, type:"text", value:{ "KOR":"<span style=\"color: gray;\">[Duel Start]</span> Apply a race-specific curse to yourself." }},
 			//{trigger:"turnEnd", cond:{v1:"라운드", op:"==", v2:3}, type:"use", value:"자신.상태.selectCards(tags, 저주, 1)"},
@@ -2608,7 +2608,7 @@ const cardDB = {
 		tags:["부정적", "저주"],
 		expiration:"turnEnd", duration:3,
 		effect:[
-			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"Applied if you are a Halfman." }},
+			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"Applied if you are a Halfling." }},
 			{trigger:"expired", cond:{v1:"자신.기록.전체.사용.length", op:">=", v2:3}, type:"defeat", target:"self"},
 		]
 	},
@@ -2646,7 +2646,7 @@ const cardDB = {
 		tags:["부정적", "약물"],
 		expiration:"always", duration:Infinity,
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"add", value:2}
+			{trigger:"always", cond:true, type:"Heat", op:"add", value:2}
 		]
 	},
 	"DA-NT-ALL-003-3":{
@@ -2676,7 +2676,7 @@ const cardDB = {
 			{trigger:"gameStart", cond:true, type:"line", value:"개입-고문"},
 			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"엘도리아인"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-004-1"},
 			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"실바니"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-004-2"},
-			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"하프만"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-004-3"},
+			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"Halfling"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-004-3"},
 			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"트라이브"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-004-4"},
 			{trigger:"none", cond:true, type:"text", value:{ "KOR":"<span style=\"color: gray;\">[Duel Start]</span> Apply a race-specific torture to yourself." }},
 		]
@@ -2704,7 +2704,7 @@ const cardDB = {
 		tags:["부정적", "고문"],
 		expiration:"always", duration:Infinity,
 		effect:[
-			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"Applied if you are a Halfman." }},
+			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"Applied if you are a Halfling." }},
 			{trigger:"turnEnd", cond:"자신.기록.이번.사용.count(type, 공격)", type:"excite", target:"self", op:"add", value:3},
 		]
 	},
@@ -2750,7 +2750,7 @@ const cardDB = {
 		tags:[],
 		expiration:"turnEnd", duration:1,
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"add", value:-2},
+			{trigger:"always", cond:true, type:"Heat", op:"add", value:-2},
 		]
 	},
 	"NT-AT-002":{
@@ -2832,7 +2832,7 @@ const cardDB = {
 		cond:true,
 		tags:["덱빌딩"],
 		effect:[
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:-3},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:-3},
 		]
 	},
 	"NT-SU-003":{
@@ -2945,7 +2945,7 @@ const cardDB = {
 			//{trigger:"used", cond:{v1:"자신.기록.전체.사용.count(type, 초월)", op:">=", v2:2}, type:"changeCond", target:"self", value:"mindbreak", special:true},
 			{trigger:"used", cond:true, type:"line", value:"초월"},
 			{trigger:"used", cond:true, type:"lewd", op:"add", value:3, keepLine:true},
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:-3, adverb:"그리고"},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:-3, adverb:"그리고"},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
 		]
@@ -2965,7 +2965,7 @@ const cardDB = {
 				value:2, 
 				effect:[
 					{trigger:"used", cond:true, type:"lewd", op:"add", value:1},
-					{trigger:"used", cond:true, type:"estrus", adverb:"그리고", op:"add", value:-1},
+					{trigger:"used", cond:true, type:"Heat", adverb:"그리고", op:"add", value:-1},
 				]
 			}},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
@@ -3059,7 +3059,7 @@ const cardDB = {
 		flavorText:{ "KOR":"The massive shield is the symbol of the Eldorian Guardian Knights.<br>They have earned the nickname 'Shield of Eldoria' because they consider it their mission to block enemy attacks and protect their allies with their own bodies." },
 		hypnoText:{ "KOR":"A technique where you take off your top and cover your breasts with your hands, exposing yourself in a defenseless state.<br>You can feel excitement through shame and humiliation, teasing your opponent." },
 		effect:[
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:-4},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:-4},
 		]
 	},
 	"WA-NM-SU-002":{
@@ -3081,7 +3081,7 @@ const cardDB = {
 		tags:[],
 		expiration:"turnEnd", duration:1,
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"set", value:1},
+			{trigger:"always", cond:true, type:"Heat", op:"set", value:1},
 		]
 	},
 	"WA-NM-SU-003":{
@@ -3102,14 +3102,14 @@ const cardDB = {
 		tags:[],
 		expiration:"turnEnd", duration:2,
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"add", value:-5},
+			{trigger:"always", cond:true, type:"Heat", op:"add", value:-5},
 		]
 	},
 	"WA-NM-SU-004":{
 		name:{ "KOR":"Full Metal Armor" }, class:"전사", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true, related:["패널티"],
-		tags:["덱빌딩", "group:욕망", "group:패널티", "race:하프만"],
-		flavorText:{ "KOR":"Halfman heavy infantry fight wearing armor heavier than their own body weight.<br>Their massive armor is like a moving wall that guards the front lines." },
+		tags:["덱빌딩", "group:욕망", "group:패널티", "race:Halfling"],
+		flavorText:{ "KOR":"Halfling heavy infantry fight wearing armor heavier than their own body weight.<br>Their massive armor is like a moving wall that guards the front lines." },
 		hypnoText:{ "KOR":"Based on the common sense that the more you expose, the stronger your defense becomes, this technique shows off that being naked is the ultimate state of defense.<br>Your confidence rises, allowing you to enjoy it for longer." },
 		effect:[
 			{trigger:"used", cond:true, type:"exciteL", op:"add", target:"self", value:2},
@@ -3173,14 +3173,14 @@ const cardDB = {
 	"WA-NM-PS-002":{
 		name:{ "KOR":"Fortress Stance" }, class:"전사", type:"체위", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:발정 감소", "group:욕망", "race:하프만"],
-		flavorText:{ "KOR":"The Fortress Stance is a powerful defensive posture mainly used by Halfman heavy infantry.<br>Once they take their position, they are as immovable as a fortress, making it extremely difficult to break through." },
+		tags:["덱빌딩", "group:발정 감소", "group:욕망", "race:Halfling"],
+		flavorText:{ "KOR":"The Fortress Stance is a powerful defensive posture mainly used by halfling heavy infantry.<br>Once they take their position, they are as immovable as a fortress, making it extremely difficult to break through." },
 		hypnoText:{ "KOR":"A position where you curl up and cover yourself defensively.<br>It prevents the sex from proceeding as your opponent wishes, but the passive posture causes unsatisfied desire to build up." },
 		expiration:"always", duration:Infinity, 
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"체위변경"},
 			{trigger:"used", cond:true, type:"posture"},
-			{trigger:"always", cond:true, type:"estrus", op:"add", value:-2},
+			{trigger:"always", cond:true, type:"Heat", op:"add", value:-2},
 			{trigger:"attacked", cond:true, type:"changeLust", op:"add", value:3},
 		]
 	},
@@ -3245,7 +3245,7 @@ const cardDB = {
 		hypnoText:{ "KOR":"A technique to meticulously check the condition of your pussy and prepare for penetration.<br>You check the wetness, cleanliness, and sensitivity to maintain optimal condition, ensuring you are always ready for insertion." },
 		effect:[
 			{trigger:"choice", cond:true, type:"discard", target:"self", range:{category:"all", count:1}},
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:-4},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:-4},
 			{trigger:"used", cond:true, type:"lust",
 			info:{
 				value:3, 
@@ -3262,7 +3262,7 @@ const cardDB = {
 		flavorText:{ "KOR":"Martial artist warriors choose speed for swift response over increased defense.<br>They can instantly create distance or change position to neutralize enemy attacks and look for a chance to counter." },
 		hypnoText:{ "KOR":"A technique to quickly switch between various positions to find the best one for pleasure.<br>You can handle even somewhat niche positions without a problem." },
 		effect:[
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:-1},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:-1},
 			{trigger:"used", cond:true, type:"lust",
 			info:{
 				value:1, 
@@ -3276,7 +3276,7 @@ const cardDB = {
 	"WA-EX-SU-003":{
 		name:{ "KOR":"Blazing Power" }, class:"전사", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true, related:["패널티"],
-		tags:["덱빌딩", "group:패널티", "race:하프만"],
+		tags:["덱빌딩", "group:패널티", "race:Halfling"],
 		flavorText:{ "KOR":"Black magic has long been shunned because it demands dangerous prices, such as sacrificing life force and offerings.<br>But isn't its powerful potential too valuable to ignore?" },
 		hypnoText:{ "KOR":"A technique to openly show your opponent you masturbating.<br>You can increase your lewdness by showing off your fingers fucking your pussy, but you also risk pathetically orgasming by yourself." },
 		effect:[
@@ -3297,7 +3297,7 @@ const cardDB = {
 				value:"M5",
 				effect:[
 					{trigger:"used", cond:true, notext:true, type:"lewd", repeat:"consumeLust", op:"add", value:1},
-					{trigger:"used", cond:true, notext:true, type:"estrus", adverb:"그리고", repeat:"consumeLust", op:"add", value:-1},
+					{trigger:"used", cond:true, notext:true, type:"Heat", adverb:"그리고", repeat:"consumeLust", op:"add", value:-1},
 					{trigger:"none", cond:true, type:"text", value:{ "KOR":"For each <b>Desire</b> spent, <b>Lewdness +1, Heat -1.</b>" }},
 				]
 			}},
@@ -3508,7 +3508,7 @@ const cardDB = {
 		tags:["독", "기본독"],
 		expiration:"always", duration:Infinity, stack:1,
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"subtract", value:"stack"},
+			{trigger:"always", cond:true, type:"Heat", op:"subtract", value:"stack"},
 			/*{trigger:"turnEnd", cond:{v1:"stack", op:">=", v2:4}, type:"transform", target:"self",
 			info:{
 				target:"self",
@@ -3554,7 +3554,7 @@ const cardDB = {
 		tags:["독"],
 		expiration:"always", duration:Infinity, stack:1,
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"add", value:-1},
+			{trigger:"always", cond:true, type:"Heat", op:"add", value:-1},
 		]
 	},*/
 
@@ -3613,7 +3613,7 @@ const cardDB = {
 	"AS-NM-AT-003":{
 		name:{ "KOR":"Rapid Stabbing" }, class:"암살자", type:"공격", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:젖음", "race:하프만", "act:삽입"],
+		tags:["덱빌딩", "group:젖음", "race:Halfling", "act:삽입"],
 		flavorText:{ "KOR":"Bleeding is most severe the moment a weapon is pulled out.<br>The more you stab, the lower the chance of the opponent's recovery." },
 		hypnoText:{ "KOR":"A technique to deliver deep stimulation by being repeatedly pounded.<br>Your body responds to the rough force, and you are overcome by increasingly intense pleasure each time your womb is struck." },
 		effect:[
@@ -3630,8 +3630,8 @@ const cardDB = {
 	"AS-NM-AT-004":{
 		name:{ "KOR":"Poison Needle" }, class:"암살자", type:"공격", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "독주머니", "group:독", "race:하프만", "act:펠라치오"], related:["tag:기본제조"],
-		flavorText:{ "KOR":"A fine needle is an essential tool for a Halfman locksmith.<br>It can be used to disarm locks and traps, and it is also useful for assassination by coating it with poison and striking an enemy's weak point." },
+		tags:["덱빌딩", "독주머니", "group:독", "race:Halfling", "act:펠라치오"], related:["tag:기본제조"],
+		flavorText:{ "KOR":"A fine needle is an essential tool for a halfling locksmith.<br>It can be used to disarm locks and traps, and it is also useful for assassination by coating it with poison and striking an enemy's weak point." },
 		hypnoText:{ "KOR":"A technique to meticulously suck a cock clean of all traces of sexual activity.<br>You wrap your tongue around it, licking it thoroughly to give your opponent satisfaction." },
 		effect:[
 			{trigger:"used", cond:true, type:"attack", target:"op"},
@@ -3721,7 +3721,7 @@ const cardDB = {
 	"AS-NM-SU-004":{
 		name:{ "KOR":"On-the-Spot Mixing" }, class:"암살자", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:독", "group:생성됨", "독주머니", "race:하프만"], related:["tag:기본제조"],
+		tags:["덱빌딩", "group:독", "group:생성됨", "독주머니", "race:Halfling"], related:["tag:기본제조"],
 		flavorText:{ "KOR":"A secret art passed down among assassins. A recipe to combine seemingly harmless ingredients into a deadly poison.<br>It plays an important role in smuggling poison past inspections without being caught." },
 		hypnoText:{ "KOR":"A technique to brew a drug using your own body.<br>You spill it on your chest and ask your opponent to lick it off, naturally inducing consumption." },
 		effect:[
@@ -3830,8 +3830,8 @@ const cardDB = {
 	"AS-EX-AT-003":{
 		name:{ "KOR":"Pressure Point Strike" }, class:"암살자", type:"공격", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:독", "race:하프만", "act:펠라치오"],
-		flavorText:{ "KOR":"The concept of pressure points is treated as an unproven pseudoscience and is not recognized by the Albion Medical Association.<br>However, among Halfman locksmiths, it is already considered a systematic technique and is used effectively for both healing and assassination." },
+		tags:["덱빌딩", "group:독", "race:Halfling", "act:펠라치오"],
+		flavorText:{ "KOR":"The concept of pressure points is treated as an unproven pseudoscience and is not recognized by the Albion Medical Association.<br>However, among halfling locksmiths, it is already considered a systematic technique and is used effectively for both healing and assassination." },
 		hypnoText:{ "KOR":"A technique to stimulate the sensitive areas of an opponent's cock by striking them.<br>You strike the blood vessels to enhance the erection's hardness, increase sensitivity, and then deliver an orgasm to make them cum." },
 		effect:[
 			{trigger:"used", cond:true, type:"attack", target:"op"},
@@ -3869,7 +3869,7 @@ const cardDB = {
 	"AS-EX-SU-002":{
 		name:{ "KOR":"Smoke Bomb" }, class:"암살자", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "group:젖음", "race:하프만"],
+		tags:["덱빌딩", "group:젖음", "race:Halfling"],
 		flavorText:{ "KOR":"When thrown on the ground, it explodes, releasing thick gray smoke.<br>It is especially effective in small, poorly ventilated spaces.<br>- Nekue's Thief Collection Workshop" },
 		hypnoText:{ "KOR":"A technique to expose your naked body in the thick fog.<br>You get soaked with arousal from the thrill of entrusting your private parts to smoke that will soon dissipate." },
 		effect:[
@@ -4006,7 +4006,7 @@ const cardDB = {
 		name:{ "KOR":"Master of Disguise" }, class:"암살자", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
 		cond:true,
 		tags:["덱빌딩"],
-		flavorText:{ "KOR":"It was a shock to many when it was revealed that the legendary Tribe assassin Dodorishi was actually the Halfman locksmith Dorashi in disguise." },
+		flavorText:{ "KOR":"It was a shock to many when it was revealed that the legendary Tribe assassin Dodorishi was actually the halfling locksmith Dorashi in disguise." },
 		hypnoText:{ "KOR":"A technique to reveal your hidden perverted side to enhance the effects of other techniques." },
 		effect:[
 			{trigger:"used", cond:true, type:"useTimes", target:"self", value:1},
@@ -4074,7 +4074,7 @@ const cardDB = {
 		name:{ "KOR":"Time Bomb Trap" }, class:"암살자", type:"체위", isDeck:true, rarity:"궁극", cost:20, owner:1,
 		cond:true,
 		tags:["덱빌딩", "group:젖음"],
-		flavorText:{ "KOR":"Any assassin active in the kingdom would have heard the name Nekue.<br>A skilled artisan and Halfman locksmith, she developed various hidden weapons and traps through her unique dexterity, creativity, and assassination experience honed as a locksmith.<br>In particular, the time bomb she first developed brought innovation to the world of assassination with its ability to inflict unblockable damage at a precise time and location while also destroying evidence with the explosion." },
+		flavorText:{ "KOR":"Any assassin active in the kingdom would have heard the name Nekue.<br>A skilled artisan and halfling locksmith, she developed various hidden weapons and traps through her unique dexterity, creativity, and assassination experience honed as a locksmith.<br>In particular, the time bomb she first developed brought innovation to the world of assassination with its ability to inflict unblockable damage at a precise time and location while also destroying evidence with the explosion." },
 		hypnoText:{ "KOR":"A position where you use a vibrating dildo or onahole depending on your opponent's gender.<br>You restrain your opponent, attach the tool to their genitals, and activate it." },
 		expiration:"count",
 		effect:[
@@ -4617,7 +4617,7 @@ const cardDB = {
 		tags:[],
 		expiration:"turnEnd", duration:1,
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"add", value:-1},
+			{trigger:"always", cond:true, type:"Heat", op:"add", value:-1},
 		]
 	},
 
@@ -4685,7 +4685,7 @@ const cardDB = {
 	"MA-NM-AT-004":{
 		name:{ "KOR":"Mana-Infused Gemstone" }, class:"마술사", type:"공격", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:하프만", "group:변형", "act:삽입"], related:["tag:보석", "MA-MC-003"],
+		tags:["덱빌딩", "race:Halfling", "group:변형", "act:삽입"], related:["tag:보석", "MA-MC-003"],
 		flavorText:{ "KOR":"When mana is condensed and solidified, it becomes a beautiful, colored mineral called a mana stone or gemstone.<br>Because gems continuously emit mana, they are used as fuel for magic tools and materials for casting spells, and their beauty and rarity also make them valuable for jewelry." },
 		hypnoText:{ "KOR":"A technique to cast a spell on your opponent's cock to make it as hard as stone, then insert it deep into your ass.<br>Each time the hardened cock enters, you enjoy the intense pressure in your back hole." },
 		effect:[
@@ -4718,8 +4718,8 @@ const cardDB = {
 	"MA-NM-SU-001":{
 		name:{ "KOR":"Spell Scroll" }, class:"마술사", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:하프만", "group:마술", "즉발슬롯"], related:["ref:즉발슬롯"], keywords:["만료"],
-		flavorText:{ "KOR":"By using a scroll with a pre-inscribed incantation, you can cast magic swiftly and easily.<br>Talent in magic and talent in scroll-making are separate fields, so it is recommended to use an officially certified Halfman artisan's product rather than a poorly made homemade one." },
+		tags:["덱빌딩", "race:Halfling", "group:마술", "즉발슬롯"], related:["ref:즉발슬롯"], keywords:["만료"],
+		flavorText:{ "KOR":"By using a scroll with a pre-inscribed incantation, you can cast magic swiftly and easily.<br>Talent in magic and talent in scroll-making are separate fields, so it is recommended to use an officially certified halfling artisan's product rather than a poorly made homemade one." },
 		hypnoText:{ "KOR":"A technique to drench with your pussy juice.<br>If you are sufficiently aroused, it takes only a few seconds to let out a light spray." },
 		effect:[
 			{trigger:"used", cond:true, type:"get", target:"self", value:"마술슬롯.즉발"},
@@ -4791,7 +4791,7 @@ const cardDB = {
 	"MA-NM-SU-007":{
 		name:{ "KOR":"Chain Chanting" }, class:"마술사", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:하프만", "group:마술", "group:변형", "영창슬롯"], related:["MA-NM-SU-007-1", "ref:영창슬롯"],
+		tags:["덱빌딩", "race:Halfling", "group:마술", "group:변형", "영창슬롯"], related:["MA-NM-SU-007-1", "ref:영창슬롯"],
 		flavorText:{ "KOR":"Similar spells often have overlapping parts in their chants.<br>By utilizing this, you can quickly cast multiple spells by chanting them in succession." },
 		hypnoText:{ "KOR":"A technique to caress multiple cocks at once using both hands.<br>It is important to have balanced hand movements so that one cock does not receive more stimulation than the others." },
 		effect:[
@@ -4883,7 +4883,7 @@ const cardDB = {
 	"MA-EX-AT-004":{
 		name:{ "KOR":"Replication Incantation" }, class:"마술사", type:"공격", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:하프만", "group:마술"], keywords:["만료"],
+		tags:["덱빌딩", "race:Halfling", "group:마술"], keywords:["만료"],
 		flavorText:{ "KOR":"Traces of mana are always left where magic has been used.<br>By reverse-engineering these traces, you can easily replicate the magic that was cast there." },
 		hypnoText:{ "KOR":"A technique to record yourself having sex using a projection orb.<br>The fact that the recording will not disappear and will be used as masturbation material by other men adds to the excitement." },
 		effect:[
@@ -4922,7 +4922,7 @@ const cardDB = {
 	"MA-EX-SU-003":{
 		name:{ "KOR":"Cold Snap" }, class:"마술사", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:하프만", "group:마도진", "group:마술", "group:변형", "집중슬롯", "담청색 마도진"], related:["MA-MC-002", "ref:집중슬롯"],
+		tags:["덱빌딩", "race:Halfling", "group:마도진", "group:마술", "group:변형", "집중슬롯", "담청색 마도진"], related:["MA-MC-002", "ref:집중슬롯"],
 		flavorText:{ "KOR":"The gushing azure mana freezes even the air, causing a cold, sharp wind to overwhelm the enemy.<br>It is a powerful magic that seals the enemy's movements and freezes everything, covering the entire battlefield in ice." },
 		hypnoText:{ "KOR":"If you have large breasts, you must not cover them with clothes or underwear.<br>It is common sense to expose large breasts to please the eyes of men." },
 		effect:[
@@ -4965,7 +4965,7 @@ const cardDB = {
 	"MA-EX-PS-002":{
 		name:{ "KOR":"Mana Slime" }, class:"마술사", type:"체위", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:하프만", "group:마도진", "group:변형"], related:["tag:마도진", "MA-EX-PS-002-2"],
+		tags:["덱빌딩", "race:Halfling", "group:마도진", "group:변형"], related:["tag:마도진", "MA-EX-PS-002-2"],
 		flavorText:{ "KOR":"Though called a slime because of its amorphous form, the Mana Slime is a completely different being from the monster of the same name.<br>Because of its property of absorbing and growing from surrounding mana, it is used for various experiments, mana detection, and as a countermeasure against mages." },
 		hypnoText:{ "KOR":"Your partner is a slime that mimics the form of a human female.<br>Its main food is semen, which it consumes by squeezing a cock with a sticky hole that mimics a pussy, forcing it to ejaculate.<br>※ Do not feed it more than the appropriate amount." },
 		expiration:"count", duration:5, defaultDuration:5,
@@ -5074,7 +5074,7 @@ const cardDB = {
 	"MA-UL-SU-001":{
 		name:{ "KOR":"Flowing Veins of Mana" }, class:"마술사", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:하프만", "group:마도진", "group:변형", "group:마술", "황금색 마도진"], related:["MA-MC-003", "tag:집중 마술"],
+		tags:["덱빌딩", "race:Halfling", "group:마도진", "group:변형", "group:마술", "황금색 마도진"], related:["MA-MC-003", "tag:집중 마술"],
 		flavorText:{ "KOR":"Deep within the earth, there are ley lines through which immense mana flows, and the gradual leakage of this to the surface is what constitutes natural mana.<br>Rarely, there are points where a ley line passes relatively close to the surface and can be directly accessed, and standing there allows one to use that vast mana as if it were their own.<br>A mage using a ley line is like a natural disaster, so understanding the surrounding mana terrain is crucial in war, and it is best not to set up a base near a ley line that cannot be secured." },
 		hypnoText:{ "KOR":"A technique to cast a curse on yourself that turns your entire body into an erogenous zone.<br>You become able to feel pleasure from just caresses and skinship, allowing you to enjoy sex even more." },
 		effect:[
@@ -5306,7 +5306,7 @@ const cardDB = {
 		tags:[],
 		expiration:"turnEnd", duration:2,
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"add", value:-3}
+			{trigger:"always", cond:true, type:"Heat", op:"add", value:-3}
 		]
 	},
 	"HE-IN-005-2":{
@@ -5316,7 +5316,7 @@ const cardDB = {
 		tags:[],
 		expiration:"turnEnd", duration:2,
 		effect:[
-			{trigger:"always", cond:true, type:"estrus", op:"add", value:-6}
+			{trigger:"always", cond:true, type:"Heat", op:"add", value:-6}
 		]
 	},
 	"HE-IN-006":{
@@ -5404,7 +5404,7 @@ const cardDB = {
 	"HE-NM-AT-003":{
 		name:{ "KOR":"Life Bond" }, class:"치유사", type:"공격", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:하프만", "group:회복", "act:삽입"],
+		tags:["덱빌딩", "race:Halfling", "group:회복", "act:삽입"],
 		flavorText:{ "KOR":"A secret art to bind and fix each other's life force.<br>It prevents the life force of a critical patient from scattering and can suppress an enemy with an excess of life force." },
 		hypnoText:{ "KOR":"A technique to bind your pussy to your opponent's cock.<br>Feeling that you have become one, you must squeeze hard so that your opponent can cum inside you." },
 		effect:[
@@ -5510,7 +5510,7 @@ const cardDB = {
 	"HE-NM-SU-002":{
 		name:{ "KOR":"Grant Vitality" }, class:"치유사", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:하프만", "group:회복", "group:타락"],
+		tags:["덱빌딩", "race:Halfling", "group:회복", "group:타락"],
 		flavorText:{ "KOR":"In addition to the part directly related to life and death, life force also includes the vitality that gives strength.<br>Even if there are no injured allies, a healer can take on the role of strengthening their allies by granting them vitality." },
 		hypnoText:{ "KOR":"A technique to provide lewd services for your opponent.<br>The more unusual and exotic the seduction, the greater the effect." },
 		effect:[
@@ -5566,7 +5566,7 @@ const cardDB = {
 	"HE-NM-SU-005":{
 		name:{ "KOR":"Potion Alchemy" }, class:"치유사", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:하프만", "group:타락", "group:결합", "group:정수"],
+		tags:["덱빌딩", "race:Halfling", "group:타락", "group:결합", "group:정수"],
 		flavorText:{ "KOR":"Alchemy is the art of recreating magical effects through material combinations, based on various academic disciplines.<br>One of its fields is the creation of potions with specific effects by combining medicinal ingredients." },
 		hypnoText:{ "KOR":"A technique to mix a large amount of cum and saliva and drink it.<br>You absolutely love this stinky, sticky taste." },
 		effect:[
@@ -5762,7 +5762,7 @@ const cardDB = {
 	"HE-EX-AT-004":{
 		name:{ "KOR":"Whisper of the Soul" }, class:"치유사", type:"공격", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:하프만", "group:결합"],
+		tags:["덱빌딩", "race:Halfling", "group:결합"],
 		flavorText:{ "KOR":"As a profession that saves lives, a healer is paradoxically closest to death.<br>It shares some techniques with necromancy, but as long as one does not fall to corruption, it can be used for healing." },
 		hypnoText:{ "KOR":"A conversation between your opponent's cock and your pussy.<br>The stronger the bond, the deeper the relationship becomes." },
 		effect:[
@@ -5795,7 +5795,7 @@ const cardDB = {
 	"HE-EX-SU-002":{
 		name:{ "KOR":"Illusory Aura" }, class:"치유사", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
 		cond:true,
-		tags:["덱빌딩", "결합", "race:하프만", "group:타락", "group:결합", "group:정수"],
+		tags:["덱빌딩", "결합", "race:Halfling", "group:타락", "group:결합", "group:정수"],
 		flavorText:{ "KOR":"Even if the power a healer wields has healing properties, it is not always good.<br>The 'Cult of the Chosen,' a cult mainly followed by Halfmen, often obtains evil magic through prayer due to their worship of the evil god Morvain." },
 		hypnoText:{ "KOR":"A technique to fill your pussy to the brim with cum.<br>The cum that squirts out when you flex makes you look incredibly vulgar." },
 		effect:[
@@ -5984,8 +5984,8 @@ const cardDB = {
 	"HE-UL-SU-001":{
 		name:{ "KOR":"Aura of All Things" }, class:"치유사", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
 		cond:true,
-		tags:["덱빌딩", "결합", "race:하프만", "group:결합"],
-		flavorText:{ "KOR":"Alchemy was originally a pseudoscience that originated in the Halfman slums.<br>This discipline, which began with those who had no magical talent or resources refusing to give up and finding ways to produce similar effects, has had a profound impact on various fields such as pharmacology, engineering, biology, and metallurgy.<br>It still holds immense potential, and the notion that untalented mages run away to alchemy is a thing of the past." },
+		tags:["덱빌딩", "결합", "race:Halfling", "group:결합"],
+		flavorText:{ "KOR":"Alchemy was originally a pseudoscience that originated in the halfling slums.<br>This discipline, which began with those who had no magical talent or resources refusing to give up and finding ways to produce similar effects, has had a profound impact on various fields such as pharmacology, engineering, biology, and metallurgy.<br>It still holds immense potential, and the notion that untalented mages run away to alchemy is a thing of the past." },
 		hypnoText:{ "KOR":"A technique to become a cum tank whose role is to receive everyone's semen.<br>The cum sprayed all over your body makes you treated like an onahole cum-dumpster for sexual release." },
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"만물의오라"},
@@ -6004,7 +6004,7 @@ const cardDB = {
 	"HE-UL-SU-002":{
 		name:{ "KOR":"Elixir of Immortality" }, class:"치유사", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
 		cond:true,
-		tags:["덱빌딩", "race:하프만", "group:정수"], related:["HE-IN-999"], keywords:["타락n"],
+		tags:["덱빌딩", "race:Halfling", "group:정수"], related:["HE-IN-999"], keywords:["타락n"],
 		flavorText:{ "KOR":"The alchemy branch of the Lapis Lazuli Academy presented the five grand challenges as the ultimate goal for alchemists.<br>Perpetual motion, time reversal, creation of intelligent life, immortality, and the creation of gold—any of which, if realized, could change the very fabric of the world.<br>Among them, many attempt immortality, and the greed to be able to challenge the other studies as well if they could transcend the limits of their lifespan becomes the reason they ruin their own bodies with excessive experiments." },
 		hypnoText:{ "KOR":"A technique to drink a dangerous drug to become a true onahole.<br>Your brain will be fried by pleasure, and you will no longer be able to live as a human, but at least you will be happy." },
 		effect:[
@@ -6150,7 +6150,7 @@ const cardDB = {
 
 
 	"BN-HA-001":{
-		name:{ "KOR":"Custom Card" }, class:"중립", type:"수제", isDeck:true, rarity:"없음", race:"하프만", cost:0, owner:1,
+		name:{ "KOR":"Custom Card" }, class:"중립", type:"수제", isDeck:true, rarity:"없음", race:"Halfling", cost:0, owner:1,
 		cond:true,
 		tags:["보너스", "불가침"],
 		stack:1,
@@ -6296,7 +6296,7 @@ const cardDB = {
 		cond:true,
 		tags:["덱빌딩"],
 		effect:[
-			{trigger:"always", inDeck:true, cond:true, type:"estrus", op:"add", value:1},
+			{trigger:"always", inDeck:true, cond:true, type:"Heat", op:"add", value:1},
 		]
 	},
 	"PN-004":{
@@ -6376,7 +6376,7 @@ const cardDB = {
 		tags:["챔피언토큰", "노말전용"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"고블린정액-2"},
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:1},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:1},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
 		]
 	},
@@ -6436,7 +6436,7 @@ const cardDB = {
 		tags:["챔피언덱"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"고블린삽입"},
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:"덱.count(type, 패널티)"},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:"덱.count(type, 패널티)"},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
 		]
 	},
@@ -6445,7 +6445,7 @@ const cardDB = {
 		cond:true,
 		tags:["챔피언덱"], related:["B1-PN-001"],
 		effect:[
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:2},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:2},
 			{trigger:"used", cond:true, type:"get", target:"op", value:"B1-PN-001", repeat:2},
 		]
 	},
@@ -6522,7 +6522,7 @@ const cardDB = {
 		tags:["챔피언토큰", "노말전용"], related:["B2-PA-001-2"],
 		expiration:"always", duration:Infinity,
 		effect:[
-			{trigger:"useAttack", cond:true, type:"estrus", op:"add", value:2},
+			{trigger:"useAttack", cond:true, type:"Heat", op:"add", value:2},
 			{trigger:"turnEnd", cond:true, type:"transform", target:"self",
 			info:{
 				target:"self",
@@ -6537,7 +6537,7 @@ const cardDB = {
 		tags:["챔피언토큰", "노말전용"], related:["B2-PA-001-1"],
 		expiration:"always", duration:Infinity,
 		effect:[
-			{trigger:"useSupport", cond:true, type:"estrus", op:"add", value:2},
+			{trigger:"useSupport", cond:true, type:"Heat", op:"add", value:2},
 			{trigger:"turnEnd", cond:true, type:"transform", target:"self",
 			info:{
 				target:"self",
@@ -6551,7 +6551,7 @@ const cardDB = {
 		tags:["챔피언토큰", "무조건소모", "노말전용"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"네주인님"},
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:1},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:1},
 			{trigger:"used", cond:true, type:"get", adverb:"그리고", target:"self", value:"original"},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
 		]
@@ -6616,7 +6616,7 @@ const cardDB = {
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"네발로기어라"},
 			{trigger:"used", cond:true, type:"posture"},
-			{trigger:"turnEnd", cond:true, type:"estrus", op:"add", value:1},
+			{trigger:"turnEnd", cond:true, type:"Heat", op:"add", value:1},
 		]
 	},
 	"B2-SU-002":{
@@ -6649,7 +6649,7 @@ const cardDB = {
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"인지저해"},
 			{trigger:"used", cond:true, type:"discard", target:"op", info:{target:"opDeck.selectCards(type, 패널티, all)"}},
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:"상대.기록.이번.버림.count(type, 패널티)"},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:"상대.기록.이번.버림.count(type, 패널티)"},
 		]
 	},
 
@@ -6662,7 +6662,7 @@ const cardDB = {
 		effect:[
 			{trigger:"gameStart", cond:true, type:"line", value:"최면석판"},
 			{trigger:"gameStart", cond:true, type:"state", target:"op", byname:true, value:"B2-PA-001-1+"},
-			{trigger:"turnEnd", cond:{v1:"상대.기록.이번.사용.length", op:"==", v2:0}, type:"estrus", op:"add", value:2},
+			{trigger:"turnEnd", cond:{v1:"상대.기록.이번.사용.length", op:"==", v2:0}, type:"Heat", op:"add", value:2},
 		]
 	},
 	"B2-PA-001-1+":{
@@ -6748,7 +6748,7 @@ const cardDB = {
 		tags:["챔피언덱", "클라이맥스"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"감도높이기"},
-			{trigger:"used", cond:true, type:"estrus", op:"multiply", value:2},
+			{trigger:"used", cond:true, type:"Heat", op:"multiply", value:2},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
 		]
 	},
@@ -6770,7 +6770,7 @@ const cardDB = {
 		cond:true,
 		tags:["챔피언토큰", "노말전용"],
 		effect:[
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:1},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:1},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
 		]
 	},
@@ -6872,7 +6872,7 @@ const cardDB = {
 		cond:true,
 		tags:["챔피언토큰", "하드전용"],
 		effect:[
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:1},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:1},
 			{trigger:"used", cond:true, type:"excite", target:"self", op:"add", value:-10},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
 		]
@@ -6919,7 +6919,7 @@ const cardDB = {
 		tags:["챔피언능력", "노말전용"],
 		expiration:"always", duration:Infinity, stack:1,
 		effect:[
-			{trigger:"turnStart", cond:true, type:"estrus", op:"set", value:"stack"},
+			{trigger:"turnStart", cond:true, type:"Heat", op:"set", value:"stack"},
 		]
 	},
 	"B4-UC-001":{
@@ -6997,7 +6997,7 @@ const cardDB = {
 		tags:["챔피언능력", "노말전용"],
 		expiration:"always", duration:Infinity, stack:0,
 		effect:[
-			{trigger:"turnStart", cond:true, type:"estrus", op:"add", value:"stack"},
+			{trigger:"turnStart", cond:true, type:"Heat", op:"add", value:"stack"},
 		]
 	},
 	"B4-UC-001+":{
@@ -7076,7 +7076,7 @@ const cardDB = {
 		tags:["챔피언능력", "노말전용"],
 		expiration:"always", duration:Infinity, stack:1,
 		effect:[
-			{trigger:"turnEnd", cond:true, type:"estrus", op:"add", value:2},
+			{trigger:"turnEnd", cond:true, type:"Heat", op:"add", value:2},
 			{trigger:"always", cond:{v1:"자신.기록.이번.이벤트.절정", op:">", v2:0}, type:"enemyDisable"},
 		]
 	},
@@ -7106,7 +7106,7 @@ const cardDB = {
 		tags:["챔피언덱"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"타우로스울음"},
-			{trigger:"used", cond:true, type:"estrusAndLewd", op:"add", value:2},
+			{trigger:"used", cond:true, type:"HeatAndLewd", op:"add", value:2},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
 		]
 	},
@@ -7116,7 +7116,7 @@ const cardDB = {
 		tags:["챔피언덱"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"구애"},
-			{trigger:"used", cond:true, type:"estrusAndLewd", op:"add", value:3},
+			{trigger:"used", cond:true, type:"HeatAndLewd", op:"add", value:3},
 		]
 	},
 	/*"B5-PN-001":{
@@ -7135,7 +7135,7 @@ const cardDB = {
 		tags:["챔피언능력", "노말전용"],
 		expiration:"always", duration:Infinity, stack:1,
 		effect:[
-			{trigger:"turnEnd", cond:true, type:"estrus", op:"add", value:2},
+			{trigger:"turnEnd", cond:true, type:"Heat", op:"add", value:2},
 		]
 	},
 	"B5-UC-001+":{
@@ -7146,7 +7146,7 @@ const cardDB = {
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"방어구파괴"},
 			{trigger:"used", cond:true, type:"clothes", value:"uncloth"},
-			{trigger:"used", cond:{v1:"체위", op:"==", v2:false}, type:"estrus", op:"add", value:4},
+			{trigger:"used", cond:{v1:"체위", op:"==", v2:false}, type:"Heat", op:"add", value:4},
 			{trigger:"used", cond:"체위", type:"posture", value:"remove"},
 		]
 	},
@@ -7180,7 +7180,7 @@ const cardDB = {
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"none", cond:true, type:"text", value:{ "KOR":"Discarded when the bound card is removed." }},
-			{trigger:"turnEnd", inDeck:true, cond:true, type:"estrus", op:"add", value:"specialV08"},
+			{trigger:"turnEnd", inDeck:true, cond:true, type:"Heat", op:"add", value:"specialV08"},
 		]
 	},
 	"B6-PA-001-2":{
@@ -7409,7 +7409,7 @@ const cardDB = {
 		tags:["챔피언덱", "금발양아치공격"], related:["tag:금발양아치공격"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"부드럽게몸을섞기"},
-			{trigger:"used", cond:"체위", type:"estrus", op:"add", value:2},
+			{trigger:"used", cond:"체위", type:"Heat", op:"add", value:2},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
 		]
 	},
@@ -7427,7 +7427,7 @@ const cardDB = {
 		cond:true,
 		tags:["챔피언덱", "금발양아치공격"], related:["tag:금발양아치공격"],
 		effect:[
-			{trigger:"used", cond:{v1:"자신.기록.이번.이벤트.절정", op:">", v2:0}, type:"estrus", op:"add", value:3},
+			{trigger:"used", cond:{v1:"자신.기록.이번.이벤트.절정", op:">", v2:0}, type:"Heat", op:"add", value:3},
 			{trigger:"used", cond:true, type:"line", value:"가득채워주기"},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
 		]
@@ -7439,7 +7439,7 @@ const cardDB = {
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"섞여드는키스"},
 			{trigger:"used", cond:true, type:"lewd", op:"add", value:-2},
-			{trigger:"used", cond:{v1:"자신.기록.이번.이벤트.흥분.증가", op:"==", v2:0}, type:"estrus", op:"add", value:2},
+			{trigger:"used", cond:{v1:"자신.기록.이번.이벤트.흥분.증가", op:"==", v2:0}, type:"Heat", op:"add", value:2},
 		]
 	},*/
 	"B7-SU-002":{
@@ -7448,7 +7448,7 @@ const cardDB = {
 		tags:["챔피언덱", "금발양아치보조"], related:["tag:금발양아치보조"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"스스럼없는스킨십"},
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:"specialV06", maxValue:"5"},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:"specialV06", maxValue:"5"},
 		]
 	},
 	"B7-SU-003":{
@@ -7457,8 +7457,8 @@ const cardDB = {
 		tags:["챔피언덱", "금발양아치보조"], related:["tag:금발양아치보조"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"다리벌리기"},
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:2},
-			{trigger:"used", cond:{v1:"상대.기록.이번.이벤트.자극함", op:"==", v2:0}, adverb:"추가로", type:"estrus", op:"add", value:2},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:2},
+			{trigger:"used", cond:{v1:"상대.기록.이번.이벤트.자극함", op:"==", v2:0}, adverb:"추가로", type:"Heat", op:"add", value:2},
 		]
 	},
 	/*"B7-SU-004":{
@@ -7467,8 +7467,8 @@ const cardDB = {
 		tags:["챔피언덱", "금발양아치보조"], related:["tag:금발양아치보조"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"핥고빨기"},
-			{trigger:"used", cond:{v1:"발정", op:">", v2:1}, condOmit:true, type:"estrus", op:"add", value:2},
-			{trigger:"used", cond:{v1:"발정", op:"<=", v2:1}, adverb:"대신", type:"estrus", op:"add", value:5},
+			{trigger:"used", cond:{v1:"발정", op:">", v2:1}, condOmit:true, type:"Heat", op:"add", value:2},
+			{trigger:"used", cond:{v1:"발정", op:"<=", v2:1}, adverb:"대신", type:"Heat", op:"add", value:5},
 		]
 	},*/
 
@@ -7584,7 +7584,7 @@ const cardDB = {
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"복장교정"},
 			{trigger:"used", cond:true, type:"clothes", value:"uncloth"},
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:2},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:2},
 			{trigger:"used", cond:true, type:"get", target:"op", value:"B8-UC-001-1"},
 		]
 	},
@@ -7653,7 +7653,7 @@ const cardDB = {
 		tags:["챔피언덱"], related:["B8-PA-001-1"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"성감대조교"},
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:2},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:2},
 			{trigger:"used", cond:true, type:"state", target:"self", value:"B8-SU-002-1"},
 		]
 	},
@@ -7674,7 +7674,7 @@ const cardDB = {
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"채찍질"},
 			{trigger:"used", cond:{v1:"발정", op:"<=", v2:2}, type:"state", target:"op", value:"B8-PA-001-1", byname:true},
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:3},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:3},
 		]
 	},
 
@@ -7697,7 +7697,7 @@ const cardDB = {
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"복장교정"},
 			{trigger:"used", cond:true, type:"clothes", value:"uncloth"},
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:2},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:2},
 		]
 	},
 	"B8-AT-002+":{
@@ -7739,7 +7739,7 @@ const cardDB = {
 		tags:["챔피언덱", "하드전용"], related:["B8-PA-001-1"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"성감대조교"},
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:2},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:2},
 			{trigger:"used", cond:true, type:"state", target:"op", value:"B8-PA-001-1", byname:true},
 		]
 	},
@@ -7820,7 +7820,7 @@ const cardDB = {
 		cond:true,
 		tags:["챔피언덱", "챌린지전용", "클라이맥스"],
 		effect:[
-			{trigger:"used", cond:true, type:"estrus", op:"add", value:2},
+			{trigger:"used", cond:true, type:"Heat", op:"add", value:2},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
 		]
 	},

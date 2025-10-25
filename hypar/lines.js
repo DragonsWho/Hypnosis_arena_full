@@ -4699,7 +4699,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"하프만"}, {v1:"커스텀.배경", op:"==", v2:"군인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"군인"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4818,7 +4818,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"하프만"}, {v1:"커스텀.배경", op:"==", v2:"연예인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"연예인"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4869,7 +4869,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"하프만"}, {v1:"커스텀.배경", op:"==", v2:"종교인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"종교인"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4937,7 +4937,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"하프만"}, {v1:"커스텀.배경", op:"==", v2:"학자"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"학자"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5005,7 +5005,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"하프만"}, {v1:"커스텀.배경", op:"==", v2:"범죄자"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"범죄자"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5073,7 +5073,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"하프만"}, {v1:"커스텀.배경", op:"==", v2:"상인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"상인"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5141,7 +5141,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"하프만"}, {v1:"커스텀.배경", op:"==", v2:"용병"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"용병"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -9774,7 +9774,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"하프만"}],
+			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"Halfling"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"칼레스",
@@ -9870,7 +9870,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"하프만"}],
+			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"Halfling"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"추크",
@@ -9890,7 +9890,7 @@ const line = {
 	],
 	"개입-약물":[
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"하프만"}, {v1:"커스텀.배경", op:"==", v2:"학자"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"학자"}],
 			lineList:[
 				{
 					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
@@ -9915,7 +9915,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"하프만"}, {v1:"커스텀.배경", op:"==", v2:"범죄자"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"범죄자"}],
 			lineList:[
 				{
 					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
@@ -10094,7 +10094,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"하프만"}],
+			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"Halfling"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"모모리카",

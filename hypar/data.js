@@ -6,13 +6,13 @@ const dictionary = {
 	"종족":{ "KOR":"Race" },
 	"엘도리아인":{ "KOR":"Eldorian" },
 	"실바니":{ "KOR":"Sylvani" },
-	"하프만":{ "KOR":"Hafman" },
+	"Halfling":{ "KOR":"Halfling" },
 	"트라이브":{ "KOR":"Tribe" },
 
 	"namingRule":{
 		"엘도리아인":{ "KOR":"In the Kingdom of Eldoria, centered around the royal family and nobility, a family name carries great weight. An Eldorian's full name consists of their given name followed by their family name.<br>However, not all families possess a grand and noble lineage; the family names of commoners are often casually invented or non-existent.<br>Famous family names include Dawnbringer, Ezerwave, Verdantrock, Starfrost, Rosethorn, and the Eldorian royal family itself." },
 		"실바니":{ "KOR":"Sylvani society is built upon clans, and they place great importance on preserving the history and traditions of each clan. The single character following a Sylvani's name is their surname, indicating which clan they belong to.<br>In Sylvani culture, the surname traditionally comes before the given name. However, when interacting with outsiders, they adopt the naming order of the common tongue.<br>Well-known clans include In, Shin, Ye, Ji, Jeong, Seon, and Jin. Given the reclusive nature of the Sylvani, there may be other clans not yet known to the outside world." },
-		"하프만":{ "KOR":"The Hafmen lack the concept of surnames. This is due to their culture of viewing their entire race as one large family, and their short history since being liberated from slavery.<br>Their names are simply formed by combining two to four letters. This is not a strict rule, so names can be created in various other ways.<br>Their short lifespans and limited travel have prevented any issues so far, but as their lives stabilize, encounters with individuals sharing the same name are becoming more frequent." },
+		"Halfling":{ "KOR":"The Hafmen lack the concept of surnames. This is due to their culture of viewing their entire race as one large family, and their short history since being liberated from slavery.<br>Their names are simply formed by combining two to four letters. This is not a strict rule, so names can be created in various other ways.<br>Their short lifespans and limited travel have prevented any issues so far, but as their lives stabilize, encounters with individuals sharing the same name are becoming more frequent." },
 		"트라이브":{ "KOR":"The Tribe indicate their origin by prefixing their given name with their tribal name. Even within the same race, cultures can vary drastically between tribes, so it is always wise to confirm a person's tribe when dealing with them.<br>Despite their cultural diversity, they share a common naming convention: most male names follow the pattern 'AAloB', and female names 'AAliB'.<br>Famous tribal names include Redspear, Thundermaw, Silverleaf, and Goldenstem. With countless tribes in existence, you may encounter new ones at any time." },
 	},
 
@@ -438,7 +438,7 @@ const ruleDescription = {
 
 				<br><br>  
 
-				<b>Custom Card (Halfman):</b> Allows you to create a card with your desired effect and add it to your deck.<br>  
+				<b>Custom Card (Halfling):</b> Allows you to create a card with your desired effect and add it to your deck.<br>  
 				The stronger the effect, the higher the cost. You can lower the cost by adding tricky conditions or negative effects.  
 
 				<br><br>  
@@ -2749,7 +2749,7 @@ const customStructure = {
             },
         ],
     },
-    "estrus": {
+    "Heat": {
         "label": "발정",
         "fields": [
             {
@@ -3538,7 +3538,7 @@ const customStructure = {
 
 const variableList = [
     { value: "lewd", text: "음란" },
-    { value: "estrus", text: "발정" },
+    { value: "Heat", text: "발정" },
     { value: "excite", text: "흥분" },
     { value: "exciteL", text: "흥분 한계" },
     { value: "deck", text: "덱" },

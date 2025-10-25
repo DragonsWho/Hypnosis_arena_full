@@ -8,7 +8,7 @@ let language = "KOR";
 const raceTag = {
 	"엘도리아인":"El",
 	"실바니":"Sy",
-	"하프만":"Ha",
+	"Halfling":"Ha",
 	"트라이브":"Tr",
 }
 const classNum = {"전사":1, "암살자":2, "마술사":3, "치유사":4};
@@ -114,18 +114,18 @@ let selectedSpellSlot = 0;
 let maxDeckSize = 10;
 
 const action = [];
-const player = {name:"", excite:0, real_excite:0, excite_mul:1, exciteL:5, real_exciteL:5, exciteL_mul:1, orgasm:0, orgasmL:3, real_orgasmL:3, orgasmL_mul:1, overkill:0, action:[], select:[], state:[], record:[], condition:"normal", specialCond:null, tags:[], useTimes:1, immune:false, modifier:{lewd:{add:0, subtract:0}, estrus:{add:0, subtract:0}, excite:{add:0, subtract:0}, exciteL:{add:0, subtract:0}, orgasmL:{add:0, subtract:0}}, effectActive:[]}
+const player = {name:"", excite:0, real_excite:0, excite_mul:1, exciteL:5, real_exciteL:5, exciteL_mul:1, orgasm:0, orgasmL:3, real_orgasmL:3, orgasmL_mul:1, overkill:0, action:[], select:[], state:[], record:[], condition:"normal", specialCond:null, tags:[], useTimes:1, immune:false, modifier:{lewd:{add:0, subtract:0}, Heat:{add:0, subtract:0}, excite:{add:0, subtract:0}, exciteL:{add:0, subtract:0}, orgasmL:{add:0, subtract:0}}, effectActive:[]}
 const enemy = {name:"", excite:0, real_excite:0, excite_mul:1, exciteL:5, real_exciteL:5, exciteL_mul:1, orgasm:0, orgasmL:5, real_orgasmL:5, orgasmL_mul:1, overkill:0, action:[], select:[], state:[], record:[], condition:"normal", useTimes:1, immune:false, modifier:{excite:{add:0, subtract:0}, exciteL:{add:0, subtract:0}, orgasmL:{add:0, subtract:0}}, effectActive:[]}
 
-const recordForm = {use:[], discard:[], transform:[], combine:[], event:{orgasm:0, attack:0, attacked:0, avoid:0, lewd:{up:0, down:0}, estrus:{up:0, down:0}, excite:{up:0, down:0}, exciteL:{up:0, down:0}, orgasmL:{up:0, down:0}, gain:{lust:0, wetness:0, sBlock:0, corrupt:0}, consumeLust:0, get:[], getState:[], expiredSpell:[]}};
+const recordForm = {use:[], discard:[], transform:[], combine:[], event:{orgasm:0, attack:0, attacked:0, avoid:0, lewd:{up:0, down:0}, Heat:{up:0, down:0}, excite:{up:0, down:0}, exciteL:{up:0, down:0}, orgasmL:{up:0, down:0}, gain:{lust:0, wetness:0, sBlock:0, corrupt:0}, consumeLust:0, get:[], getState:[], expiredSpell:[]}};
 const cardRecord = [];
-const cardRecordForm = {card:undefined, round:0, lewd:0, estrus:0, lust:0, consumeLust:0, wetness:0, sBlock:0, corrupt:0, player:{ attack:0, attacked:0, avoid:0, excite:0, exciteL:0, orgasm:0, orgasmL:0, use:[], discard:[], transform:[], combine:[], get:[], getState:[] }, enemy:{ attacked:0, excite:0, exciteL:0, orgasm:0, orgasmL:0, use:[], discard:[], transform:[], get:[], getState:[] }};
+const cardRecordForm = {card:undefined, round:0, lewd:0, Heat:0, lust:0, consumeLust:0, wetness:0, sBlock:0, corrupt:0, player:{ attack:0, attacked:0, avoid:0, excite:0, exciteL:0, orgasm:0, orgasmL:0, use:[], discard:[], transform:[], combine:[], get:[], getState:[] }, enemy:{ attacked:0, excite:0, exciteL:0, orgasm:0, orgasmL:0, use:[], discard:[], transform:[], get:[], getState:[] }};
 
-let minEstrus = 1;
-let maxEstrus = Infinity;
-let estrus = 2;
-let real_estrus = 2;
-let estrus_mul = 1;
+let minHeat = 1;
+let maxHeat = Infinity;
+let Heat = 2;
+let real_Heat = 2;
+let Heat_mul = 1;
 let minLewd = 1;
 let maxLewd = Infinity;
 let lewd = 2;
@@ -347,8 +347,8 @@ function init() {
 		collectionCard.appendChild(cardDiv);
 	});
 
-	collectionCard.appendChild(createTitledElement("하프만"));
-	Object.values(cardDB).filter(cd => cd.race == '하프만' && cd.tags.includes('보너스')).forEach(cd => {
+	collectionCard.appendChild(createTitledElement("Halfling"));
+	Object.values(cardDB).filter(cd => cd.race == 'Halfling' && cd.tags.includes('보너스')).forEach(cd => {
 		const cardDiv = createCard(cd, 28, true, 100);
 		collectionCard.appendChild(cardDiv);
 	});
@@ -1179,7 +1179,7 @@ function initCardSelect() {
 			deckCardDiv.classList.add("deckCard");
 			document.getElementById('yourDeck').appendChild(deckCardDiv);
 			adjustCardFontSize(deckCardDiv);
-		} else if(choiceValues.race == "하프만" && card.race == "하프만" && card.tags.includes("보너스") && gamemode != 2) {
+		} else if(choiceValues.race == "Halfling" && card.race == "Halfling" && card.tags.includes("보너스") && gamemode != 2) {
 			const customDiv = document.getElementById('customCardContainer');
 			const cardDiv = createCard(card, 30, true, 53);
 			cardDiv.id = "selectCustomCard";
@@ -1454,7 +1454,7 @@ function changeEvent(num) {
 			if(choiceValues.race == "실바니") {
 				document.getElementById('arcane').style.display = "flex";
 			}
-			if(choiceValues.race == "하프만") {
+			if(choiceValues.race == "Halfling") {
 				document.getElementById('custom').style.display = "flex";
 			}
 			if(choiceValues.race == "트라이브") {
@@ -2407,7 +2407,7 @@ function randomName(race) {
             playerName = `${firstName} ${lastName}`;
             break;
 
-        case "하프만": // Хафман
+        case "Halfling": // Хафман
             firstName = getRandomElement(fantasyNamePools.haffman.first);
             lastName = ""; // У них нет фамилий
             player.name = firstName;
@@ -2524,7 +2524,7 @@ function inputName(form = true) {
 
 		    playerName = `${name} ${surname}`;
 			break;
-		case "하프만":
+		case "Halfling":
 			surname = null;
 			name = prompt("이름을 입력하세요. (2~4글자)", player.name);
 			if (name !== null) {
@@ -2690,7 +2690,7 @@ function randomName(race) {
 		player.surname = capitalizeFirst(name[2]);
         document.getElementById('playerName').textContent = playerName;
 		break;
-	case "하프만":
+	case "Halfling":
 		const namePart1H = namePool.namePart1H[language];
 		const namePart2H = namePool.namePart2H[language];
 		name = [getRandom(namePart1H), ((Math.random()*10) > 7)?getRandom(namePart1H):"", ((Math.random()*10) > 9)?getRandom(namePart1H):"", getRandom(namePart2H)];
@@ -3896,7 +3896,7 @@ function createCardText(card, reverse=false) {
 	let text = "";
 
     const typeDeck = ["cardDB", "deck", "enemyDeck", "selfDeck", "opDeck", "poisonSac"];
-    const typeStat = ["lewd", "real_lewd", "estrus", "real_estrus", "excite", "exciteL", "remainExcite", "orgasm", "orgasmL", "remainOrgasm", "lust", "wetness", "sBlock", "delayedEx", "corrupt"];
+    const typeStat = ["lewd", "real_lewd", "Heat", "real_Heat", "excite", "exciteL", "remainExcite", "orgasm", "orgasmL", "remainOrgasm", "lust", "wetness", "sBlock", "delayedEx", "corrupt"];
 
 	function stringObjectify(str) {
 		if(typeof str === 'number') {
@@ -3931,8 +3931,8 @@ function createCardText(card, reverse=false) {
 
 	    	"음란": "lewd",
 	    	"실제음란": "real_lewd",
-	    	"발정": "estrus",
-	    	"실제발정": "real_estrus",
+	    	"발정": "Heat",
+	    	"실제발정": "real_Heat",
 	    	"흥분": "excite",
 
 	    	"체위": "posture",
@@ -3970,7 +3970,7 @@ function createCardText(card, reverse=false) {
 	    	"감소": "down",
 
 	    	"이벤트": "event",
-	    	"발정기록": "estrus",
+	    	"발정기록": "Heat",
 	    	"음란기록": "lewd",
 	    	"자극함": "attack",
 	    	"자극받음": "attacked",
@@ -4394,7 +4394,7 @@ function createCardText(card, reverse=false) {
 						return translateText(cardTexts["target"]["기록음란감소"], { "time":time });
 					}
 					break;
-				case "estrus":
+				case "Heat":
 					if(obj[5] == 'up') {
 						return translateText(cardTexts["target"]["기록발정증가"], { "time":time });
 					}
@@ -4518,8 +4518,8 @@ function createCardText(card, reverse=false) {
 		switch(obj[0]) {
 		case "lewd": return `<b>${getWord("음란")}</b>`; break;
 		case "real_lewd": return `<b>${getWord("실제음란")}</b>`; break;
-		case "estrus": return `<b>${getWord("발정")}</b>`; break;
-		case "real_estrus": return `<b>${getWord("실제발정")}</b>`; break;
+		case "Heat": return `<b>${getWord("발정")}</b>`; break;
+		case "real_Heat": return `<b>${getWord("실제발정")}</b>`; break;
 		case "round": return getWord("라운드"); break;
 		case "consumeLust": return `${translateText(cardTexts["target"]["소모한욕망"])}`; break;
 		case "selfCard": return "self"; break;
@@ -5505,13 +5505,13 @@ function createCardText(card, reverse=false) {
 				return "";
 			}
 			break;
-		case "estrus":
+		case "Heat":
 			if(typeof eValueText === "number") {
 				if((e.op == "add" && eValueText > 0) || (e.op == "subtract" && eValueText < 0)) {
-					_modified = player.modifier.estrus.add;
+					_modified = player.modifier.Heat.add;
 				}
 				if((e.op == "add" && eValueText < 0) || (e.op == "subtract" && eValueText > 0)) {
-					_modified = -player.modifier.estrus.subtract;
+					_modified = -player.modifier.Heat.subtract;
 				}
 			}
 			_changeText = changeValueText(`<b>${getWord("발정")}</b>`, e.op, eValueText, repeatText, _modified);
@@ -5535,17 +5535,17 @@ function createCardText(card, reverse=false) {
 			}
 			text += _changeText;
 			break;
-		case "estrusAndLewd":
+		case "HeatAndLewd":
 			let _modifiedL = 0;
 			let _modifiedE = 0;
 			if(typeof eValueText === "number") {
 				if((e.op == "add" && eValueText > 0) || (e.op == "subtract" && eValueText < 0)) {
 					_modifiedL = player.modifier.lewd.add;
-					_modifiedE = player.modifier.estrus.add;
+					_modifiedE = player.modifier.Heat.add;
 				}
 				if((e.op == "add" && eValueText < 0) || (e.op == "subtract" && eValueText > 0)) {
 					_modifiedL = -player.modifier.lewd.subtract;
-					_modifiedE = -player.modifier.estrus.subtract;
+					_modifiedE = -player.modifier.Heat.subtract;
 				}
 			}
 			if(_modifiedE == _modifiedL) {
@@ -6363,10 +6363,10 @@ function createCardText(card, reverse=false) {
         case "maxLewd":
         	text += translateText(cardTexts["effect"]["최대음란"], { "amount":e.value })
         	break;
-        case "minEstrus":
+        case "minHeat":
         	text += translateText(cardTexts["effect"]["최저발정"], { "amount":e.value })
         	break;
-        case "maxEstrus":
+        case "maxHeat":
         	text += translateText(cardTexts["effect"]["최대발정"], { "amount":e.value })
         	break;
         case "startLust":
@@ -7030,8 +7030,8 @@ function cardStateUpdate() {
 	maxUse = 1;
 	maxUseE = 1;
 	maxDeckSize = 10;
-	minEstrus = 1;
-	maxEstrus = Infinity;
+	minHeat = 1;
+	maxHeat = Infinity;
 	minLewd = 1;
 	maxLewd= Infinity;
 	maxLust = Infinity;
@@ -7058,11 +7058,11 @@ function cardStateUpdate() {
 				case "maxDeck":
 					maxDeckSize = Math.min(maxDeckSize + e.value, 99);
 					break;
-				case "minEstrus":
-					minEstrus = e.value;
+				case "minHeat":
+					minHeat = e.value;
 					break;
-				case "maxEstrus":
-					maxEstrus = e.value;
+				case "maxHeat":
+					maxHeat = e.value;
 					break;
 				case "minLewd":
 					minLewd = e.value;
@@ -7261,7 +7261,7 @@ function cardStateUpdate() {
 		document.getElementById("cards").innerHTML += ` + ${getWord("정수")} ${getWord("카드")}: ` + essences.length;
 	}
 
-    document.getElementById("stats").innerHTML = `${getWord("음란")}: ${lewd} | ${getWord("발정")}: ${estrus} | ${getWord("흥분 한계")}: ${player.exciteL} | ${getWord("절정 한계")}: ${player.orgasmL}`;
+    document.getElementById("stats").innerHTML = `${getWord("음란")}: ${lewd} | ${getWord("발정")}: ${Heat} | ${getWord("흥분 한계")}: ${player.exciteL} | ${getWord("절정 한계")}: ${player.orgasmL}`;
     switch(choiceValues.class) {
     case "전사":
     	document.getElementById("stats").innerHTML += ` | ${getWord("욕망")}: `+lust;
@@ -7392,7 +7392,7 @@ const options = {
 
 const statTooltips = {
 	lewd:{ add:[], multiply:[], set:null, extra:[] },
-	estrus:{ add:[], multiply:[], set:null, extra:[] },
+	Heat:{ add:[], multiply:[], set:null, extra:[] },
 
 	player:{
 		exciteL:{ add:[], multiply:[], set:null, extra:[] },
@@ -7532,19 +7532,19 @@ function infoUpdate() {
 	player.healBan = false;
 	player.modifier.lewd.add = 0;
 	player.modifier.lewd.subtract = 0;
-	player.modifier.estrus.add = 0;
-	player.modifier.estrus.subtract = 0;
+	player.modifier.Heat.add = 0;
+	player.modifier.Heat.subtract = 0;
 	player.modifier.excite.add = 0;
 	player.modifier.excite.subtract = 0;
 	player.modifier.exciteL.add = 0;
 	player.modifier.exciteL.subtract = 0;
 
-	real_estrus = Math.min(Math.max(real_estrus, minEstrus), maxEstrus);
+	real_Heat = Math.min(Math.max(real_Heat, minHeat), maxHeat);
 	real_lewd = Math.min(Math.max(real_lewd, minLewd), maxLewd);
 
-	estrus = real_estrus;
-	estrus_mul = 1;
-	estrus_set = null;
+	Heat = real_Heat;
+	Heat_mul = 1;
+	Heat_set = null;
 	lewd = real_lewd;
 	lewd_mul = 1;
 	lewd_set = null;
@@ -7559,7 +7559,7 @@ function infoUpdate() {
 	}
 
 	statTooltipReset(statTooltips.lewd);
-	statTooltipReset(statTooltips.estrus);
+	statTooltipReset(statTooltips.Heat);
 	statTooltipReset(statTooltips.player.exciteL);
 	statTooltipReset(statTooltips.player.orgasmL);
 	statTooltipReset(statTooltips.enemy.exciteL);
@@ -7601,7 +7601,7 @@ function infoUpdate() {
 	player.exciteL *= player.exciteL_mul;
 	player.orgasmL *= player.orgasmL_mul;
 
-	estrus *= estrus_mul;
+	Heat *= Heat_mul;
 	lewd *= lewd_mul;
 
 	if(enemy.excite_set) {
@@ -7624,14 +7624,14 @@ function infoUpdate() {
 		player.orgasmL = player.orgasmL_set;
 	}
 
-	if(estrus_set) {
-		estrus = estrus_set;
+	if(Heat_set) {
+		Heat = Heat_set;
 	}
 
-	estrus = Math.min(Math.max(estrus, minEstrus), maxEstrus);
+	Heat = Math.min(Math.max(Heat, minHeat), maxHeat);
 
 	if(player.state.some(st => st.id == "AD-NT-EL-BG1-001")) {
-		lewd += Math.max(real_estrus - estrus, 0);
+		lewd += Math.max(real_Heat - Heat, 0);
 	}
 
 	if(lewd_set) {
@@ -7785,17 +7785,17 @@ function infoUpdate() {
 		lewdDiv.style.color = 'rgba(255, 255, 255, 1)'
 	}
 
-	const estrusDiv = document.getElementById("estrus");
-	estrusDiv.innerHTML = estrus;
-	if(estrus != real_estrus) {
-		estrusDiv.innerHTML += "<span style='color:rgba(255, 255, 255, 1); font-size: 2vh;'>("+real_estrus+")</span>";
+	const HeatDiv = document.getElementById("Heat");
+	HeatDiv.innerHTML = Heat;
+	if(Heat != real_Heat) {
+		HeatDiv.innerHTML += "<span style='color:rgba(255, 255, 255, 1); font-size: 2vh;'>("+real_Heat+")</span>";
 	}
-	if(estrus > real_estrus) {
-		estrusDiv.style.color = 'rgba(0, 255, 0, 1)'
-	} else if(estrus < real_estrus) {
-		estrusDiv.style.color = 'rgba(0, 0, 255, 1)'
+	if(Heat > real_Heat) {
+		HeatDiv.style.color = 'rgba(0, 255, 0, 1)'
+	} else if(Heat < real_Heat) {
+		HeatDiv.style.color = 'rgba(0, 0, 255, 1)'
 	} else {
-		estrusDiv.style.color = 'rgba(255, 255, 255, 1)'
+		HeatDiv.style.color = 'rgba(255, 255, 255, 1)'
 	}
 
 	const postureDiv = document.getElementById("posture");
@@ -8400,10 +8400,10 @@ function returnText(v, self=null) {
     	"실제음란": real_lewd,
     	"real_lewd": real_lewd,
 
-    	"발정": estrus,
-    	"estrus": estrus,
-    	"실제발정": real_estrus,
-    	"real_estrus": real_estrus,
+    	"발정": Heat,
+    	"Heat": Heat,
+    	"실제발정": real_Heat,
+    	"real_Heat": real_Heat,
 
     	"체위": posture,
     	"posture": posture,
@@ -8450,7 +8450,7 @@ function returnText(v, self=null) {
     	"감소": "down",
 
     	"이벤트": "event",
-    	"발정기록": "estrus",
+    	"발정기록": "Heat",
     	"음란기록": "lewd",
     	"자극함": "attack",
     	"자극받음": "attacked",
@@ -9960,7 +9960,7 @@ const inDeckTrigger = ["used", "get", "discarded", "transformed", "combined", "e
 async function actionEffect(action, trigger="used", index=0, size=32, noImg=false, disappear=true) {
 	const playerPort = document.getElementById("playerPortrait");
 	const enemyPort = document.getElementById("enemyPortrait");
-	const estrusNumber = document.getElementById("estrus");
+	const HeatNumber = document.getElementById("Heat");
 	const lewdNumber = document.getElementById("lewd");
 	const enemyExNumber = document.getElementById("enemyExcite");
 	const enemyExLNumber = document.getElementById("enemyExciteL");
@@ -10167,23 +10167,23 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            	await animationShake(actionCardDiv);
 	            	break;
 
-	            case "estrus":
-	            	var preV = real_estrus;
+	            case "Heat":
+	            	var preV = real_Heat;
 	            	switch(e.op) {
 	            	case "subtract":
 	            		eValue *= -1;
 	            	case "add":
 		            	if(eValue > 0) {
-		            		eValue += player.modifier.estrus.add;
+		            		eValue += player.modifier.Heat.add;
 		            		animationColorize(playerPort, 'rgba(255, 0, 0, 0.5)');
 		            	} else if(eValue < 0) {
-		            		eValue += player.modifier.estrus.subtract;
+		            		eValue += player.modifier.Heat.subtract;
 		            		animationColorize(playerPort, 'rgba(0, 0, 255, 0.5)');
 		            	}
 		            	for(let i=0; i<repeat; i++) {
-		            		real_estrus = Math.min(Math.max(real_estrus + eValue, minEstrus), maxEstrus);
+		            		real_Heat = Math.min(Math.max(real_Heat + eValue, minHeat), maxHeat);
 		            	}
-		            	addLogText("발정 "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+real_estrus+" )</i>", action, actor);
+		            	addLogText("발정 "+((eValue>0)?"+":"")+(eValue*repeat)+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
 		            	break;
 	            	case "multiply":
 		            	if(eValue > 1) {
@@ -10192,28 +10192,28 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            		animationColorize(playerPort, 'rgba(0, 0, 255, 0.5)');
 		            	}
 		            	for(let i=0; i<repeat; i++) {
-			            	real_estrus = Math.min(Math.max(real_estrus * eValue, minEstrus), maxEstrus);
+			            	real_Heat = Math.min(Math.max(real_Heat * eValue, minHeat), maxHeat);
 			            }
-		            	addLogText("발정 x"+(eValue*repeat)+" <i>( "+preV+" -> "+real_estrus+" )</i>", action, actor);
+		            	addLogText("발정 x"+(eValue*repeat)+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
 		            	break;
 	            	case "set":
-		            	if(eValue > real_estrus) {
+		            	if(eValue > real_Heat) {
 		            		animationColorize(playerPort, 'rgba(255, 0, 0, 0.5)');
 		            	} else {
 		            		animationColorize(playerPort, 'rgba(0, 0, 255, 0.5)');
 		            	}
-		            	real_estrus = Math.min(Math.max(eValue*repeat, minEstrus), maxEstrus);
-		            	addLogText("발정을 "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+real_estrus+" )</i>", action, actor);
+		            	real_Heat = Math.min(Math.max(eValue*repeat, minHeat), maxHeat);
+		            	addLogText("발정을 "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
 		            	break;
 		            }
-		            if(real_estrus - preV > 0) {
-		            	player.record[round - 1].event.estrus.up += (real_estrus - preV);
-		            } else if(real_estrus - preV < 0) {
-		            	player.record[round - 1].event.estrus.down -= (real_estrus - preV);
+		            if(real_Heat - preV > 0) {
+		            	player.record[round - 1].event.Heat.up += (real_Heat - preV);
+		            } else if(real_Heat - preV < 0) {
+		            	player.record[round - 1].event.Heat.down -= (real_Heat - preV);
 		            }
-		            cardRecordData.estrus += (real_estrus - preV);
+		            cardRecordData.Heat += (real_Heat - preV);
 	            	infoUpdate();
-	            	await animationEmphasis(estrusNumber);
+	            	await animationEmphasis(HeatNumber);
 	            	break;
 	            case "lewd":
 	            	var preV = real_lewd;
@@ -10256,14 +10256,14 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            }
 		            if(real_lewd - preV > 0) {
 		            	player.record[round - 1].event.lewd.up += (real_lewd - preV);
-		            } else if(real_estrus - preV < 0) {
+		            } else if(real_Heat - preV < 0) {
 		            	player.record[round - 1].event.lewd.down -= (real_lewd - preV);
 		            }
 		            cardRecordData.lewd += (real_lewd - preV);
 	            	infoUpdate();
 	            	await animationEmphasis(lewdNumber)
 	            	break;
-	            case "estrusAndLewd":
+	            case "HeatAndLewd":
 	            	var preV = real_lewd;
 	            	switch(e.op) {
 	            	case "subtract":
@@ -10305,29 +10305,29 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            }
 		            if(real_lewd - preV > 0) {
 		            	player.record[round - 1].event.lewd.up += (real_lewd - preV);
-		            } else if(real_estrus - preV < 0) {
+		            } else if(real_Heat - preV < 0) {
 		            	player.record[round - 1].event.lewd.down -= (real_lewd - preV);
 		            }
 		            cardRecordData.lewd += (real_lewd - preV);
 	            	infoUpdate();
 	            	await animationEmphasis(lewdNumber);
-	            	var preV = real_estrus;
+	            	var preV = real_Heat;
 	            	switch(e.op) {
 	            	case "subtract":
 	            		eValue *= -1;
 	            	case "add":
             			let eValueE = eValue;
 		            	if(eValue > 0) {
-		            		eValueE += player.modifier.estrus.add;
+		            		eValueE += player.modifier.Heat.add;
 		            		animationColorize(playerPort, 'rgba(255, 0, 0, 0.5)');
 		            	} else if(eValue < 0) {
-		            		eValueE += player.modifier.estrus.subtract;
+		            		eValueE += player.modifier.Heat.subtract;
 		            		animationColorize(playerPort, 'rgba(0, 0, 255, 0.5)');
 		            	}
 		            	for(let i=0; i<repeat; i++) {
-		            		real_estrus = Math.min(Math.max(real_estrus + eValueE, minEstrus), maxEstrus);
+		            		real_Heat = Math.min(Math.max(real_Heat + eValueE, minHeat), maxHeat);
 		            	}
-		            	addLogText("발정 "+((eValue>0)?"+":"")+(eValueE*repeat)+" <i>( "+preV+" -> "+real_estrus+" )</i>", action, actor);
+		            	addLogText("발정 "+((eValue>0)?"+":"")+(eValueE*repeat)+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
 		            	break;
 	            	case "multiply":
 		            	if(eValue > 1) {
@@ -10336,28 +10336,28 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            		animationColorize(playerPort, 'rgba(0, 0, 255, 0.5)');
 		            	}
 		            	for(let i=0; i<repeat; i++) {
-		            		real_estrus = Math.min(Math.max(real_estrus * eValue, minEstrus), maxEstrus);
+		            		real_Heat = Math.min(Math.max(real_Heat * eValue, minHeat), maxHeat);
 		            	}
-		            	addLogText("발정 x"+(eValue*repeat)+" <i>( "+preV+" -> "+real_estrus+" )</i>", action, actor);
+		            	addLogText("발정 x"+(eValue*repeat)+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
 		            	break;
 	            	case "set":
-		            	if(eValue > real_estrus) {
+		            	if(eValue > real_Heat) {
 		            		animationColorize(playerPort, 'rgba(255, 0, 0, 0.5)');
 		            	} else {
 		            		animationColorize(playerPort, 'rgba(0, 0, 255, 0.5)');
 		            	}
-		            	real_estrus = Math.min(Math.max(eValue*repeat, minEstrus), maxEstrus);
-		            	addLogText("발정을 "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+real_estrus+" )</i>", action, actor);
+		            	real_Heat = Math.min(Math.max(eValue*repeat, minHeat), maxHeat);
+		            	addLogText("발정을 "+attachPostposition(eValue*repeat, "으로 ", "로 ")+"만듦"+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
 		            	break;
 		            }
-		            if(real_estrus - preV > 0) {
-		            	player.record[round - 1].event.estrus.up += (real_estrus - preV);
-		            } else if(real_estrus - preV < 0) {
-		            	player.record[round - 1].event.estrus.down -= (real_estrus - preV);
+		            if(real_Heat - preV > 0) {
+		            	player.record[round - 1].event.Heat.up += (real_Heat - preV);
+		            } else if(real_Heat - preV < 0) {
+		            	player.record[round - 1].event.Heat.down -= (real_Heat - preV);
 		            }
-		            cardRecordData.estrus += (real_estrus - preV);
+		            cardRecordData.Heat += (real_Heat - preV);
 	            	infoUpdate();
-	            	await animationEmphasis(estrusNumber);
+	            	await animationEmphasis(HeatNumber);
 	            	break;
 	            case "excite":
 	            	var preV = target.real_excite;
@@ -10865,10 +10865,10 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 						}
 
 		            	if(target === player) {
-		            		numberDiv = estrusNumber;
+		            		numberDiv = HeatNumber;
 			            	exDiv = playerExNumber;
 			            	targetPort = playerPort;
-			            	aValue = estrus + target.modifier.excite.add;
+			            	aValue = Heat + target.modifier.excite.add;
 			            }
 		            	if(target === enemy) {
 			            	numberDiv = lewdNumber;
@@ -10891,10 +10891,10 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            	target.record[round-1].event.attacked += 1;
 		            	cardRecordData[tpos==1?"player":"enemy"].attacked += 1;
 
-		            	if((target === player && (estrus <= 0 || (wetness >= estrus && !options.avoidBan))) || (target === enemy && lewd <= 0)) {
+		            	if((target === player && (Heat <= 0 || (wetness >= Heat && !options.avoidBan))) || (target === enemy && lewd <= 0)) {
 		            		player.record[round-1].event.avoid += 1;
 		            		addLogText(attachPostposition(tText, "을 ", "를 ")+"<b>[자극]</b>하였으나 <b>회피</b>했다.", action, actor);
-		            		if(target === player && estrus > 0) {
+		            		if(target === player && Heat > 0) {
 	        					animationColorizeNum(wetnessNumber, 'rgba(0, 0, 255, 0.5)');
 		            		}
 			            	animationShake(targetPort);
@@ -11501,7 +11501,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 				            		let _randomParts = [
 					            		{trigger:"used", cond:true, type:"attack", target:"op"},
 					            		{trigger:"used", cond:true, type:"lewd", op:"add", value:1},
-					            		{trigger:"used", cond:true, type:"estrus", op:"add", value:-2},
+					            		{trigger:"used", cond:true, type:"Heat", op:"add", value:-2},
 					            		{trigger:"used", cond:true, keepLine:true, type:"excite", target:"op", op:"add", value:3},
 					            		{trigger:"used", cond:true, keepLine:true, type:"exciteL", target:"self", op:"add", value:1},
 					            	];
@@ -11513,7 +11513,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            				let exEffect = cd.effect.find((exEffect) => exEffect.trigger == newEffect.trigger && exEffect.cond == newEffect.cond && exEffect.type == newEffect.type && (exEffect.target == newEffect.target) && (exEffect.op == newEffect.op) && (!exEffect.repeat || typeof exEffect.repeat === 'number'));
 		        					if(exEffect) {
 		        						switch(newEffect.type) {
-		        						case "estrus":
+		        						case "Heat":
 		        						case "lewd":
 		        							if(newEffect.op == "add") {
 		        								exEffect.value += newEffect.value;
@@ -12286,15 +12286,15 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            			stealCards.push(deepCopy(sc));
 	            		}
 	            	}
-	            	function replaceLewdAndEstrus(obj) {
+	            	function replaceLewdAndHeat(obj) {
 						for (let key in obj) {
 							if (obj.hasOwnProperty(key)) {
 								if (typeof obj[key] === 'object' && obj[key] !== null) {
-									replaceLewdAndEstrus(obj[key]);
+									replaceLewdAndHeat(obj[key]);
 								} else {
 									if (obj[key] === "lewd") {
-										obj[key] = "estrus";
-									} else if (obj[key] === "estrus") {
+										obj[key] = "Heat";
+									} else if (obj[key] === "Heat") {
 										obj[key] = "lewd";
 									} else if (obj[key] === "음란") {
 										obj[key] = "발정";
@@ -12308,12 +12308,12 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            	for(let stealCard of stealCards) {
 	            		stealCard.owner = (stealCard.owner == 0)?1:0;
 	            		for(let ste of stealCard.effect) {
-	            			replaceLewdAndEstrus(ste);
+	            			replaceLewdAndHeat(ste);
 	            			if((ste.type == "get" || ste.type == "state") && cardDB[ste.value]) {
 	            				cardDB[ste.value+"(R)"] = deepCopy(cardDB[ste.value]);
 	            				cardDB[ste.value+"(R)"].parents = (cardDB[ste.value].parents)?cardDB[ste.value].parents:ste.value;
 	            				ste.value = ste.value+"(R)";
-	            				replaceLewdAndEstrus(cardDB[ste.value].effect);
+	            				replaceLewdAndHeat(cardDB[ste.value].effect);
 	            			}
 	            		}
 
@@ -12720,19 +12720,19 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					break;
 
 	            case "specialA01":
-	            	if(3 > real_estrus) {
+	            	if(3 > real_Heat) {
 	            		animationColorize(playerPort, 'rgba(255, 0, 0, 0.5)');
 				        await animationColorize(actionCardDiv, 'rgba(255, 0, 0, 0.5)');
 	            	} else {
 	            		animationColorize(playerPort, 'rgba(0, 0, 255, 0.5)');
 				        await animationColorize(actionCardDiv, 'rgba(0, 0, 255, 0.5)');
 	            	}
-	            	var preV = real_estrus;
-	            	let spav = real_estrus - minEstrus;
-	            	real_estrus = minEstrus;
-	        		addLogText("발정을 최저값으로 만듦"+" <i>( "+preV+" -> "+real_estrus+" )</i>", action, actor);
+	            	var preV = real_Heat;
+	            	let spav = real_Heat - minHeat;
+	            	real_Heat = minHeat;
+	        		addLogText("발정을 최저값으로 만듦"+" <i>( "+preV+" -> "+real_Heat+" )</i>", action, actor);
 	            	infoUpdate();
-	            	await animationEmphasis(estrusNumber);
+	            	await animationEmphasis(HeatNumber);
 	            	if(spav > 0 && !options.lustBan) {
 		            	preV = lust;
 	            		lust = Math.min(lust + spav*2, maxLust);
@@ -12925,7 +12925,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            			}
 		            			break;
 		            		case "MA-UL-PS-001-1-7":
-		            			if(estrus >= 5) {
+		            			if(Heat >= 5) {
 		            				validHelp.push(id);
 		            			}
 		            			break;
@@ -14178,19 +14178,19 @@ async function stateEffect(state, trigger) {
         	if(trigger == "always" || trigger == "alwaysCorrupt" || trigger == "selected") {
         		let _statTooltip, _statTooltipData;
         		switch(e.type) {
-        		case "estrus":
+        		case "Heat":
         			switch(e.op) {
 	            	case "subtract":
 	            		eValue *= -1;
         			case "add":
         				if(eValue > 0) {
-        					eValue += player.modifier.estrus.add;
+        					eValue += player.modifier.Heat.add;
         				}
         				if(eValue < 0) {
-        					eValue += player.modifier.estrus.subtract;
+        					eValue += player.modifier.Heat.subtract;
         				}
-        				estrus += eValue*repeat;
-        				_statTooltipData = statTooltips.estrus.add;
+        				Heat += eValue*repeat;
+        				_statTooltipData = statTooltips.Heat.add;
         				_statTooltip = _statTooltipData.find(t => t.id == state.id)
         				if(_statTooltip) {
         					_statTooltip.value += eValue*repeat;
@@ -14200,9 +14200,9 @@ async function stateEffect(state, trigger) {
         				break;
         			case "multiply":
         				for(let i=0; i<repeat; i++) {
-        					estrus_mul *= eValue;
+        					Heat_mul *= eValue;
         				}
-        				_statTooltipData = statTooltips.estrus.multiply;
+        				_statTooltipData = statTooltips.Heat.multiply;
         				_statTooltip = _statTooltipData.find(t => t.id == state.id)
         				if(_statTooltip) {
         					_statTooltip.value *= eValue;
@@ -14211,8 +14211,8 @@ async function stateEffect(state, trigger) {
 	        			}
         				break;
         			case "set":
-        				estrus_set = eValue*repeat;
-        				statTooltips.estrus.set = { id:state.id, value:eValue*repeat };
+        				Heat_set = eValue*repeat;
+        				statTooltips.Heat.set = { id:state.id, value:eValue*repeat };
         				break;
         			}
         			break;
@@ -14254,7 +14254,7 @@ async function stateEffect(state, trigger) {
         				break;
         			}
         			break;
-        		case "estrusAndLewd":
+        		case "HeatAndLewd":
         			switch(e.op) {
 	            	case "subtract":
 	            		eValue *= -1;
@@ -14262,10 +14262,10 @@ async function stateEffect(state, trigger) {
         				let eValueL = eValue;
         				let eValueE = eValue;
         				if(eValue > 0) {
-        					eValueE += player.modifier.estrus.add;
+        					eValueE += player.modifier.Heat.add;
         				}
         				if(eValue < 0) {
-        					eValueE += player.modifier.estrus.subtract;
+        					eValueE += player.modifier.Heat.subtract;
         				}
         				if(eValue > 0) {
         					eValueL += player.modifier.lewd.add;
@@ -14273,7 +14273,7 @@ async function stateEffect(state, trigger) {
         				if(eValue < 0) {
         					eValueL += player.modifier.lewd.subtract;
         				}
-        				estrus += eValueE*repeat;
+        				Heat += eValueE*repeat;
         				lewd += eValueL*repeat;
         				_statTooltipData = statTooltips.lewd.add;
         				_statTooltip = _statTooltipData.find(t => t.id == state.id)
@@ -14282,7 +14282,7 @@ async function stateEffect(state, trigger) {
         				} else {
 	        				_statTooltipData.push({ id:state.id, value:eValue*repeat });
 	        			}
-        				_statTooltipData = statTooltips.estrus.add;
+        				_statTooltipData = statTooltips.Heat.add;
         				_statTooltip = _statTooltipData.find(t => t.id == state.id)
         				if(_statTooltip) {
         					_statTooltip.value += eValue*repeat;
@@ -14292,7 +14292,7 @@ async function stateEffect(state, trigger) {
         				break;
         			case "multiply":
         				for(let i=0; i<repeat; i++) {
-	        				estrus_mul *= eValue;
+	        				Heat_mul *= eValue;
 	        				lewd_mul *= eValue;
 	        			}
         				_statTooltipData = statTooltips.lewd.multiply;
@@ -14302,7 +14302,7 @@ async function stateEffect(state, trigger) {
         				} else {
 	        				_statTooltipData.push({ id:state.id, value:eValue });
 	        			}
-        				_statTooltipData = statTooltips.estrus.multiply;
+        				_statTooltipData = statTooltips.Heat.multiply;
         				_statTooltip = _statTooltipData.find(t => t.id == state.id)
         				if(_statTooltip) {
         					_statTooltip.value *= eValue;
@@ -14311,10 +14311,10 @@ async function stateEffect(state, trigger) {
 	        			}
         				break;
         			case "set":
-        				estrus_set = eValue*repeat;
+        				Heat_set = eValue*repeat;
         				lewd_set = eValue*repeat;
         				statTooltips.lewd.set = { id:state.id, value:eValue*repeat };
-        				statTooltips.estrus.set = { id:state.id, value:eValue*repeat };
+        				statTooltips.Heat.set = { id:state.id, value:eValue*repeat };
         				break;
         			}
         			break;
@@ -14499,8 +14499,8 @@ async function stateEffect(state, trigger) {
         			case "lewd":
         				player.modifier.lewd[e.op] += eValue;
         				break;
-        			case "estrus":
-        				player.modifier.estrus[e.op] += eValue;
+        			case "Heat":
+        				player.modifier.Heat[e.op] += eValue;
         				break;
         			case "excite":
         				target.modifier.excite[e.op] += eValue;
@@ -14693,7 +14693,7 @@ function makeEnding() {
 
 			const group = acc[cardId];
 
-			['lewd', 'estrus', 'lust', 'consumeLust', 'wetness', 'sBlock', 'corrupt'].forEach(prop => {
+			['lewd', 'Heat', 'lust', 'consumeLust', 'wetness', 'sBlock', 'corrupt'].forEach(prop => {
 			group[prop] = (group[prop] || 0) + (cd[prop] || 0);
 			});
 
@@ -15161,7 +15161,7 @@ function loadDeck(data) {
 		}
 
 		if(card == "BN-HA-001") {
-			if(data.custom && choiceValues.race == "하프만") {
+			if(data.custom && choiceValues.race == "Halfling") {
 				cardDB["BN-HA-001"] = data.custom;
 				const costDiv = document.getElementById('selectCustomCard').querySelector("p.card-cost");
 				costDiv.innerHTML = "<b>"+((data.custom.cost<0)?"+":"")+(-data.custom.cost)+"pt</b>";
@@ -16203,7 +16203,7 @@ function addEffectBlock() {
         <option value="excite">흥분</option>
         <option value="exciteL">흥분 한계</option>
         <option value="lewd">음란</option>
-        <option value="estrus">발정</option>
+        <option value="Heat">발정</option>
         <option value="get">카드 획득</option>
     `;
     if(choiceValues.class == "전사") {
@@ -16680,8 +16680,8 @@ function updateCustomCard() {
         		customCostAdd = 10;
         	}
         	break;
-        case "estrus":
-        	customEffect.type = "estrus";
+        case "Heat":
+        	customEffect.type = "Heat";
         	customEffect.op = effectObject.op;
         	[ customEffect.value, expectValue ] = calculateVariable("value", effectObject, Infinity);
 
@@ -17333,7 +17333,7 @@ function updateCustomCard() {
 	    			realValue = "음란";
 	    			expectValue = 4
 	    			break;
-	    		case "estrus":
+	    		case "Heat":
 	    			realValue = "발정";
 	    			expectValue = 5
 	    			break;
@@ -17655,8 +17655,8 @@ function displayTooltip(event, keywords) {
         	statTooltipData = statTooltips.lewd;
         	statName = "음란";
         	break;
-        case "estrus":
-        	statTooltipData = statTooltips.estrus;
+        case "Heat":
+        	statTooltipData = statTooltips.Heat;
         	statName = "발정";
         	break;
         case "player.exciteL":

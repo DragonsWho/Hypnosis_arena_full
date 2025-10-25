@@ -15,10 +15,10 @@ const storyProfile = {
 					- Feared by criminals for her exceptional investigative skills and formidable combat prowess, she is famous for punishing evil without mercy.
 				`,
 			},
-			"하프만": {
+			"Halfling": {
 				"KOR": `
 					<b>Background:</b> Bodyguard of the Ravenwood Family<br>
-					- A bodyguard for the noble Ravenwood family, and a Halfman, which is rare for a servant of a noble house.<br>
+					- A bodyguard for the noble Ravenwood family, and a halfling, which is rare for a servant of a noble house.<br>
 					- Despite her slum origins, her exceptional combat skills earned her the position of the family's bodyguard, and she has protected her master on numerous occasions.
 				`,
 			},
@@ -45,8 +45,8 @@ const storyProfile = {
 					- She overwhelms her enemies with strong determination and combat prowess, and is also famous for her hardline stance against Eldoria.
 				`,
 			},
-			"하프만": {
-				"KOR": `(No Halfman elite)`,
+			"Halfling": {
+				"KOR": `(No Halfling elite)`,
 			},
 			"트라이브": {
 				"KOR": `
@@ -71,11 +71,11 @@ const storyProfile = {
 					- A formidable fighter with outstanding skills not just in appearance but also in combat, she became a hot topic for maintaining her elegant demeanor even on the battlefield.
 				`,
 			},
-			"하프만": {
+			"Halfling": {
 				"KOR": `
 					<b>Background:</b> Idol<br>
 					- A popular bard who captures the hearts of her audience with cute dances and songs.<br>
-					- An adventurous girl who has proven her skills as a powerful adventurer, going beyond the typically adorable image of a Halfman.
+					- An adventurous girl who has proven her skills as a powerful adventurer, going beyond the typically adorable image of a Halfling.
 				`,
 			},
 			"트라이브": {
@@ -97,7 +97,7 @@ const storyProfile = {
 			"실바니": {
 				"KOR": `(No Sylvanian religious figures)`,
 			},
-			"하프만": {
+			"Halfling": {
 				"KOR": `
 					<b>Background:</b> Follower of the Elective Sect<br>
 					- A cultist who follows the will of Morvain, often called an evil god.<br>
@@ -127,10 +127,10 @@ const storyProfile = {
 					- A skilled individual with combat power high enough to personally enter the battlefield for experiments and collect data from powerful opponents.
 				`,
 			},
-			"하프만": {
+			"Halfling": {
 				"KOR": `
 					<b>Background:</b> Self-Taught Researcher<br>
-					- A poor researcher from the Halfman slums, an alchemist who has pursued knowledge through self-study without formal education.<br>
+					- A poor researcher from the halfling slums, an alchemist who has pursued knowledge through self-study without formal education.<br>
 					- A skilled adventurer who has gained strong combat abilities through repeated practical experience in dungeons to fund her research.
 				`,
 			},
@@ -157,10 +157,10 @@ const storyProfile = {
 					- A dangerous criminal with an obsessive curiosity for mental magic and magical skills powerful enough to cross into taboo territory.
 				`,
 			},
-			"하프만": {
+			"Halfling": {
 				"KOR": `
-					<b>Background:</b> Halfman Liberation Front Terrorist<br>
-					- A terrorist from the Halfman Liberation Front, a freedom fighter who battles to win freedom for her oppressed people.<br>
+					<b>Background:</b> Halfling Liberation Front Terrorist<br>
+					- A terrorist from the halfling Liberation Front, a freedom fighter who battles to win freedom for her oppressed people.<br>
 					- A revolutionary who has become a symbol of fear and terror to supremacists by successfully carrying out numerous bombing and assassination missions with her strong convictions and bold actions.
 				`,
 			},
@@ -187,7 +187,7 @@ const storyProfile = {
 					- An expert with deep knowledge of Sylvanian history and artifacts, and combat skills excellent enough to explore dungeons in search of treasure.
 				`,
 			},
-			"하프만": {
+			"Halfling": {
 				"KOR": `
 					<b>Background:</b> Artisan<br>
 					- An artisan recognized for her skill in the workshop district, a craftswoman who has created works combining originality and beauty.<br>
@@ -217,7 +217,7 @@ const storyProfile = {
 					- A veteran adventurer who avoids crises with her shrewd social skills and intuition, rarely revealing her true, outstanding combat abilities.
 				`,
 			},
-			"하프만": {
+			"Halfling": {
 				"KOR": `
 					<b>Background:</b> Miserly Mercenary<br>
 					- A miserly mercenary who pursues only profit, refusing no danger as long as it pays.<br>
@@ -251,10 +251,10 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to pledge loyalty to a man's cock.
 				`,
 			},
-			"하프만": {
+			"Halfling": {
 				"KOR": `
 					<b>Product Overview:</b> Former Bodyguard of the Ravenwood Family<br>
-					- A lowly Halfman servant of the Ravenwood family.<br>
+					- A lowly halfling servant of the Ravenwood family.<br>
 					- So excessively loyal that she walked right into a trap on her own.<br>
 					- Currently being trained as a fleshlight, brainwashed to pledge loyalty to a man's cock.
 				`,
@@ -285,8 +285,8 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to feel an obligation to serve men.
 				`,
 			},
-			"하프만": {
-				"KOR": `(No Halfman elite)`,
+			"Halfling": {
+				"KOR": `(No Halfling elite)`,
 			},
 			"트라이브": {
 				"KOR": `
@@ -314,7 +314,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to get excited when used as a cumdump.
 				`,
 			},
-			"하프만": {
+			"Halfling": {
 				"KOR": `
 					<b>Product Overview:</b> Former Idol<br>
 					- A bard who engaged in the unusual activity of being an idol.<br>
@@ -343,7 +343,7 @@ const storyProfile = {
 			"실바니": {
 				"KOR": `(No Sylvanian religious figures)`,
 			},
-			"하프만": {
+			"Halfling": {
 				"KOR": `
 					<b>Product Overview:</b> Former Follower of the Elective Sect<br>
 					- A troublesome remnant who was tracking the arena's commercial activities.<br>
@@ -377,10 +377,10 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to research the pleasures of sexual intercourse.
 				`,
 			},
-			"하프만": {
+			"Halfling": {
 				"KOR": `
 					<b>Product Overview:</b> Former Self-Taught Researcher<br>
-					- A poor Halfman scholar who pursued goals far beyond her station.<br>
+					- A poor Halfling scholar who pursued goals far beyond her station.<br>
 					- Foolishly deceived into handing over all her research findings to the arena.<br>
 					- Currently being trained as a fleshlight, brainwashed to research the pleasures of sexual intercourse.
 				`,
@@ -411,10 +411,10 @@ const storyProfile = {
 					- Currently being trained as a masochistic fleshlight, brainwashed to get excited by sadistic acts.
 				`,
 			},
-			"하프만": {
+			"Halfling": {
 				"KOR": `
-					<b>Product Overview:</b> Former Halfman Liberation Front Terrorist<br>
-					- An insolent terrorist who, despite being a mere Halfman, dared to cry for freedom.<br>
+					<b>Product Overview:</b> Former Halfling Liberation Front Terrorist<br>
+					- An insolent terrorist who, despite being a mere halfling, dared to cry for freedom.<br>
 					- She is now paying a cruel price, as some of her victims were clients of the arena.<br>
 					- Currently being trained as a masochistic fleshlight, brainwashed to get excited by sadistic acts.
 				`,
@@ -445,7 +445,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to desire receiving semen.
 				`,
 			},
-			"하프만": {
+			"Halfling": {
 				"KOR": `
 					<b>Product Overview:</b> Former Artisan<br>
 					- A naive artisan who owned a shop in a prime location.<br>
@@ -479,7 +479,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to become addicted to the pleasure of sex duels.
 				`,
 			},
-			"하프만": {
+			"Halfling": {
 				"KOR": `
 					<b>Background:</b> Miserly Mercenary<br>
 					- While indiscriminately taking on profitable jobs, she saw something she shouldn't have.<br>
@@ -1168,7 +1168,7 @@ const storyText = {
 
 
 
-//하프만 군인 (Halfman Soldier/Bodyguard)
+//Halfling 군인 (Halfling Soldier/Bodyguard)
 	"intro_Ha_bg1": [{
 		cond: true,
 		type: "text",
@@ -1344,7 +1344,7 @@ const storyText = {
 		type: "text",
 		KOR: `
 				You were a bodyguard for the Ravenwood family.<br>
-				An orphan scraped from the gutters of the Halfman slums, you pledged your life to the young lady who took you in, honing your talents to repay her kindness.<br>
+				An orphan scraped from the gutters of the halfling slums, you pledged your life to the young lady who took you in, honing your talents to repay her kindness.<br>
 				Your visit to this hellhole was meant to be an investigation on her behalf.<br>
 				<br>
 				However, it was all a meticulously crafted trap laid by the arena.<br>
@@ -3309,7 +3309,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//하프만 연예인 (Halfman Celebrity/Idol)
+//Halfling 연예인 (Halfling Celebrity/Idol)
 	"intro_Ha_bg3": [{
 		cond: true,
 		type: "text",
@@ -3318,7 +3318,7 @@ const storyText = {
 				To become a true superstar, acknowledged and respected by all—that was your burning dream.<br>
 				<br>
 				But reality was a cruel bitch.<br>
-				As a halfman, you still had to drown in a sea of discrimination and prejudice. Your true skills, your strength as an adventurer that went beyond your "cute" image, were constantly ignored.<br>
+				As a halfling, you still had to drown in a sea of discrimination and prejudice. Your true skills, your strength as an adventurer that went beyond your "cute" image, were constantly ignored.<br>
 				<br>
 				Feeling you'd hit a wall, you knew you needed something spectacular, an achievement no one could deny, to ascend to a higher stage.<br>
 				Just then, an invitation arrived.<br>
@@ -3328,7 +3328,7 @@ const storyText = {
 				You were convinced that if you could defeat the undefeated champion, you would finally gain the fame you craved—not as a cute idol, but as a true, undeniable star.<br>
 				<br>
 				Suppressing the fear coiling in your gut, you made your decision.<br>
-				This challenge was your one chance to achieve your dream and prove a halfman's potential to a world that looked down on you. You set off for the address on the invitation.
+				This challenge was your one chance to achieve your dream and prove a halfling's potential to a world that looked down on you. You set off for the address on the invitation.
 			`,
 	}, {
 		cond: true,
@@ -4204,12 +4204,12 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//하프만 종교인 (Halfman Religious)
+//Halfling 종교인 (Halfling Religious)
 	"intro_Ha_bg4": [{
 		cond: true,
 		type: "text",
 		KOR: `
-				One day, you and your comrades raided a slaver's den, rescuing a group of Halfman slaves.<br>
+				One day, you and your comrades raided a slaver's den, rescuing a group of halfling slaves.<br>
 				But even freed, they were unresponsive, their minds wiped clean, little more than breathing dolls.<br>
 				The familiar, corrupting magic you detected around them was unmistakable: the power of Lord Morvane.<br>
 				<br>
@@ -5426,7 +5426,7 @@ const storyText = {
 
 
  
-//하프만 학자 (Halfman Scholar)
+//Halfling 학자 (Halfling Scholar)
 	"intro_Ha_bg5": [{
 		cond: true,
 		type: "text",
@@ -6609,7 +6609,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//하프만 범죄자 (Halfman Criminal)
+//Halfling 범죄자 (Halfling Criminal)
 	"intro_Ha_bg6": [{
 		cond: true,
 		type: "text",
@@ -6619,8 +6619,8 @@ const storyText = {
 				Leaving the collapsing hall behind, you returned to your hideout to celebrate the victory with your comrades, enjoying a brief moment of peace.<br>
 				<br>
 				That night, as your comrades slept, a visitor materialized from the shadows.<br>
-				A Halfman woman, her eyes wide with terror, whispered an urgent story.<br>
-				Countless Halfman brethren were being exploited in a hellhole called the <b>Underground Secret Arena</b>, suffering in merciless battles.<br>
+				A halfling woman, her eyes wide with terror, whispered an urgent story.<br>
+				Countless halfling brethren were being exploited in a hellhole called the <b>Underground Secret Arena</b>, suffering in merciless battles.<br>
 				Warily, she pressed an invitation into your hand. It felt less like an invitation and more like a key to your people's suffering.<br>
 				<br>
 				Opening it, you could not suppress your boiling rage.<br>
@@ -6669,7 +6669,7 @@ const storyText = {
 				She restrained you, threatening to release you only if you won a sex duel against the champion.<br>
 				You had no choice.<br>
 				<br>
-				As an operative of the Halfman Liberation Front, you have always fought against supremacists by offering them your cunt.<br>
+				As an operative of the Halfling Liberation Front, you have always fought against supremacists by offering them your cunt.<br>
 				You inflicted the ultimate humiliation: getting them turned on by the very Halfmen they despised, fighting for the freedom of your people to be used as public fucktoys.<br>
 				Therefore, fucking the champion was simply another day's work.<br>
 				<br>
@@ -6781,7 +6781,7 @@ const storyText = {
 				Then, you fell for the arena's scheme, were lured into attacking it, and were captured like an animal.<br>
 				<br>
 				Among those you had bombed in the past were important clients of the arena.<br>
-				The crime of harming high-ranking nobles, especially for a Halfman, was unforgivable. This led the arena to hunt you down personally.<br>
+				The crime of harming high-ranking nobles, especially for a halfling, was unforgivable. This led the arena to hunt you down personally.<br>
 				In the end, your pathetic liberation movement became meaningless as you were destined to become nothing more than a sex slave.<br>
 				<br>
 				<br>
@@ -6862,7 +6862,7 @@ const storyText = {
 		type: "text",
 		KOR: `
 				He's right.<br>
-				You realize with a sickening lurch that you no longer give a damn about issues like Halfman rights.<br>
+				You realize with a sickening lurch that you no longer give a damn about issues like halfling rights.<br>
 				At the same time, you come face to face with the depraved, undeniable truth festering in your soul.
 			`,
 	}, {
@@ -7848,7 +7848,7 @@ const storyText = {
 			`,
 }, ], // <--- ЗАПЯТАЯ
 
-//하프만 상인 (Halfman Merchant)
+//Halfling 상인 (Halfling Merchant)
 "intro_Ha_bg7": [{
 	cond: true,
 	type: "text",
@@ -9038,12 +9038,12 @@ const storyText = {
 
 
 
-//하프만 용병 (Halfman Mercenary)
+//Halfling 용병 (Halfling Mercenary)
 "intro_Ha_bg8": [{
 	cond: true,
 	type: "text",
 	KOR: `
-				Your obsession with money was forged in the filth of the Halfman slums.<br>
+				Your obsession with money was forged in the filth of the halfling slums.<br>
 				It was a place ruled by squalor and relentless poverty, and you grew up witnessing one tragedy after another.<br>
 				The only lesson that ever stuck was the cold, hard truth: without coin, you are nothing. From then on, money became your god.<br>
 				<br>
