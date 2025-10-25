@@ -1,0 +1,53 @@
+(() => {
+    // This function will execute immediately once pasted into the console.
+
+    console.log("Running the cheat to unlock all content...");
+
+    // 1. Check if the game objects required for the cheat have been loaded.
+    if (typeof playRecord === 'undefined' || typeof champList === 'undefined' || typeof endingList === 'undefined' || typeof saveObject === 'undefined') {
+        const errorMsg = "Error: Necessary game objects (playRecord, champList, etc.) were not found. Please make sure the game has fully loaded and you are on the main menu.";
+        console.error(errorMsg);
+        alert(errorMsg);
+        return; // Stop execution if something went wrong.
+    }
+
+    // 2. Modify the playRecord object to unlock all modes and classes.
+    // playCount > 0 is the main condition for accessing "second playthrough" content.
+    console.log("Modifying 'playRecord' to unlock modes and classes...");
+    playRecord.playCount = 99;
+    playRecord.winCount = 99;
+    playRecord.hardWinCount = 99;
+
+    // 3. Create a fully unlocked collection object for the gallery.
+    console.log("Creating a full 'collection' object to unlock the gallery...");
+    const fullCollection = {
+        boss: {},
+        ending: {}
+    };
+
+    // Populate all champions/bosses as 'seen'.
+    Object.keys(champList).forEach(bossId => {
+        fullCollection.boss[bossId] = true;
+    });
+    console.log(`Unlocked ${Object.keys(fullCollection.boss).length} champions.`);
+
+    // Populate all endings as 'seen'.
+    Object.keys(endingList).forEach(endingId => {
+        fullCollection.ending[endingId] = true;
+    });
+    console.log(`Unlocked ${Object.keys(fullCollection.ending).length} endings.`);
+
+    // 4. Use the game's built-in saveObject function to save our changes to localStorage.
+    // This is the most reliable method, as it uses the game's own logic.
+    console.log("Saving the modified data...");
+    saveObject("playRecord", playRecord);
+    saveObject("collection", fullCollection);
+
+    // 5. Notify the user of success and reload the page.
+    console.log("Cheat applied successfully! The page will now be reloaded to apply the changes.");
+    alert("CHEAT ACTIVATED!\n\nAll game modes, classes, and gallery items have been unlocked. The page will now reload.");
+    
+    // Reload the page so the game can pick up the new 'saved' data.
+    location.reload();
+
+})();
