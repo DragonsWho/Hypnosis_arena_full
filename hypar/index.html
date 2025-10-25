@@ -456,6 +456,81 @@
             link.click();
         }
 
+
+        // --- CODE FOR TRIPLE CLICK AND CHEAT ---
+        (() => {
+            let clickCount = 0;
+            let lastClickTime = 0;
+            const clickTimeout = 400; // Interval between clicks in milliseconds
+            const hotzoneSize = 100; // Size of the "hotzone" in pixels (100x100)
+
+            // Listen for clicks on the entire document, not on a specific element
+            document.addEventListener('click', (event) => {
+                
+                // Check if the click was in the bottom-left corner of the screen
+                const isClickInHotzone = (
+                    event.clientX < hotzoneSize && 
+                    event.clientY > (window.innerHeight - hotzoneSize)
+                );
+
+                if (isClickInHotzone) {
+                    console.log('Click!'); // Debug message
+                    const now = Date.now();
+
+                    if (now - lastClickTime > clickTimeout) {
+                        clickCount = 1; // First click or a click after a long pause
+                    } else {
+                        clickCount++; // Subsequent fast clicks
+                    } 
+                    lastClickTime = now;
+
+                    // If 3 fast clicks are registered, activate the cheat
+                    if (clickCount === 3) {
+                        console.log('Activating cheat...');
+                        clickCount = 0; // Reset the counter
+
+                        // --- START OF EMBEDDED CHEAT CODE ---
+                        try {
+                            if (typeof playRecord === 'undefined' || typeof champList === 'undefined' || typeof endingList === 'undefined' || typeof saveObject === 'undefined') {
+                                throw new Error("Required game objects not found. Make sure the game has fully loaded.");
+                            }
+
+                            playRecord.playCount = 99;
+                            playRecord.winCount = 99;
+                            playRecord.hardWinCount = 99;
+
+                            const unlockedCollection = { boss: {}, ending: {} };
+                            Object.keys(champList).forEach(id => { unlockedCollection.boss[id] = true; });
+                            Object.keys(endingList).forEach(id => { unlockedCollection.ending[id] = true; });
+
+                            saveObject("playRecord", playRecord);
+                            saveObject("collection", unlockedCollection);
+
+                            alert("Cheat Activated! All modes, classes, and gallery have been unlocked. The page will be reloaded.");
+                            location.reload();
+
+                        } catch (error) {
+                            console.error("Error while activating cheat:", error);
+                            alert("Failed to activate the cheat. See console for details (F12).");
+                        }
+                        // --- END OF EMBEDDED CHEAT CODE ---
+                    }
+                } else {
+                    // If the click was outside the zone, reset the counter
+                    clickCount = 0;
+                }
+            });
+        })();
+        // --- END OF CODE FOR THE INVISIBLE BUTTON ---
+
+
+
+
+
+
+
+
+
     </script>
 </head>
 <body style="overflow-x: hidden">
@@ -1113,7 +1188,7 @@
                 </p>
             </div>
         </div>
-        <div class="box button race dynamicSize25" data-category="race" onclick="randomName('트라이브'); selectChoice.call(this, this.getAttribute('data-category'));">
+        <div class="box button race dynamicSize25" data-category="race" onclick="randomName('Tribe'); selectChoice.call(this, this.getAttribute('data-category'));">
             <div class="box-img portrait">
                 <img src="image/face/portrait_player_Tr_A_normal.webp" onerror="handleImgError(this)" alt="">
                 <img class="clothes" src="image/face/portrait_player_Tr_A_c4.webp" onerror="handleImgError(this)" alt="">
@@ -1452,7 +1527,7 @@
                     <img src="image/background1.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">군인</h2> 
+                <h2 class="box-title" style="display: none;">전사</h2> 
                 <h2 class="box-title langText KOR">Soldier</h2>
                 <hr>
                 <div class="box-content">
@@ -1468,7 +1543,7 @@
                     <img src="image/background2.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">엘리트</h2> 
+                <h2 class="box-title" style="display: none;">전사</h2> 
                 <h2 class="box-title langText KOR">Noble</h2>
                 <hr>
                 <div class="box-content">
@@ -1486,7 +1561,7 @@
                     <img src="image/background3.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">연예인</h2> 
+                <h2 class="box-title" style="display: none;">전사</h2> 
                 <h2 class="box-title langText KOR">Celebrity</h2>
                 <hr>
                 <div class="box-content">
@@ -1502,7 +1577,7 @@
                     <img src="image/background4.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">종교인</h2> 
+                <h2 class="box-title" style="display: none;">전사</h2> 
                 <h2 class="box-title langText KOR">Cleric</h2>
                 <hr>
                 <div class="box-content">
@@ -1552,7 +1627,7 @@
                     <img src="image/background7.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">상인</h2> 
+                <h2 class="box-title" style="display: none;">범죄자</h2> 
                 <h2 class="box-title langText KOR">Merchant</h2>
                 <hr>
                 <div class="box-content">
@@ -1568,7 +1643,7 @@
                     <img src="image/background8.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">용병</h2> 
+                <h2 class="box-title" style="display: none;">범죄자</h2> 
                 <h2 class="box-title langText KOR">Mercenary</h2>
                 <hr>
                 <div class="box-content">
@@ -1611,7 +1686,6 @@
                     <img src="image/personality1.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-<!--                <h2 class="box-title" style="display: none;">순종</h2> -->
                 <h2 class="box-title langText KOR">Obedient</h2>
                 <hr>
                 <blockquote class="langText KOR">"I will follow your orders."</blockquote>
