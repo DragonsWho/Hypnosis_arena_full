@@ -13,7 +13,7 @@ const line = {
 //###################################################################################################################################################################################
 	"조우":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"고블린즈"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"고블린즈"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -22,7 +22,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"마을사람"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"마을사람"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -31,7 +31,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"촉수슬라임"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -40,7 +40,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"악동"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -49,7 +49,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"타우로스"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"타우로스"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -58,7 +58,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"버섯남자"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"버섯남자"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -67,7 +67,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"금발양아치"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"금발양아치"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -76,7 +76,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"조교사"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"조교사"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -86,7 +86,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"고블린즈"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"고블린즈"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -95,7 +95,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"마을사람"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"마을사람"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -104,7 +104,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"촉수슬라임"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -113,7 +113,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"악동"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -122,7 +122,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"타우로스"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"타우로스"}], 
 			lineList:[
 				{
 					cond:true, pos:0, effect:"shake",
@@ -131,7 +131,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"버섯남자"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"버섯남자"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -140,7 +140,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"금발양아치"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"금발양아치"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -149,7 +149,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"조교사"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"조교사"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -206,7 +206,7 @@ const line = {
 
 	"패배":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"고블린즈"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"고블린즈"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -215,7 +215,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"마을사람"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"마을사람"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -224,7 +224,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"촉수슬라임"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -233,7 +233,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"악동"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -242,7 +242,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"타우로스"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"타우로스"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -251,7 +251,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"버섯남자"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"버섯남자"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -260,7 +260,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"금발양아치"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"금발양아치"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -269,7 +269,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"조교사"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"조교사"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -279,7 +279,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"고블린즈"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"고블린즈"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -288,7 +288,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"마을사람"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"마을사람"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -297,7 +297,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"촉수슬라임"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -306,7 +306,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"악동"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -315,7 +315,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"타우로스"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"타우로스"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -324,7 +324,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"버섯남자"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"버섯남자"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -333,7 +333,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"금발양아치"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"금발양아치"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -342,7 +342,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"조교사"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"조교사"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -399,20 +399,20 @@ const line = {
 
 	"승리":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"고블린즈"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"고블린즈"}], 
 			lineList:[
 				{
-					cond:["or", {v1:"특수승리", op:"!=", v2:true}, {v1:"챔피언.절정", op:">=", v2:5}], pos:0,
+					cond:["or", {v1:"특수승리", op:"!=", v2:true}, {v1:"Champion.절정", op:">=", v2:5}], pos:0,
 					text:"Goblin, comrade...<br>No more...",
 				},
 				{
-					cond:["and", "특수승리", {v1:"챔피언.절정", op:"<", v2:5}], pos:0,
+					cond:["and", "특수승리", {v1:"Champion.절정", op:"<", v2:5}], pos:0,
 					text:"Scary... female...",
 				},
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"마을사람"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"마을사람"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -421,7 +421,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"촉수슬라임"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -430,7 +430,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"악동"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -439,7 +439,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"타우로스"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"타우로스"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -448,7 +448,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"버섯남자"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"버섯남자"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -457,7 +457,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"금발양아치"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"금발양아치"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -466,7 +466,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"조교사"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"조교사"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -476,7 +476,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"고블린즈"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"고블린즈"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -485,7 +485,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"마을사람"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"마을사람"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -494,7 +494,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"촉수슬라임"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -503,7 +503,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"악동"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -512,7 +512,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"타우로스"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"타우로스"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -521,7 +521,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"버섯남자"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"버섯남자"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -530,7 +530,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"금발양아치"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"금발양아치"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -539,7 +539,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"챔피언.이름", op:"==", v2:"조교사"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"조교사"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -662,35 +662,35 @@ const line = {
 			priority:0, cond:true, repeatable:true,
 			lineList:[
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"고블린즈"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"고블린즈"}], pos:0,
 					text:"Kerek♡ I'm cumming♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"마을사람"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"마을사람"}], pos:0,
 					text:"Ugh...♡ It's coming♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"촉수슬라임"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], pos:0,
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"타우로스"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"타우로스"}], pos:0,
 					text:"Hook♡ Hook♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"악동"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"악동"}], pos:0,
 					text:"I'm gonna cum♡ Sis♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"버섯남자"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"버섯남자"}], pos:0,
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"금발양아치"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"금발양아치"}], pos:0,
 					text:"This bitch, what a tight pussy♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"조교사"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"조교사"}], pos:0,
 					text:"You're somewhat useful...",
 				},
 			]
@@ -699,35 +699,35 @@ const line = {
 			priority:0, cond:true, repeatable:true,
 			lineList:[
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"고블린즈"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"고블린즈"}], pos:0,
 					text:"Kyaak, I can't hold it in♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"마을사람"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"마을사람"}], pos:0,
 					text:"Ohot...♡ You're so tight♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"촉수슬라임"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], pos:0,
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"타우로스"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"타우로스"}], pos:0,
 					text:"Hook♡ Hook♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"악동"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"악동"}], pos:0,
 					text:"Sis's pussy feels so good♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"버섯남자"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"버섯남자"}], pos:0,
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"금발양아치"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"금발양아치"}], pos:0,
 					text:"Ha, I can't hold this in...♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"조교사"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"조교사"}], pos:0,
 					text:"Ugh... Not bad.",
 				},
 			]
@@ -736,35 +736,35 @@ const line = {
 			priority:0, cond:true, repeatable:true,
 			lineList:[
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"고블린즈"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"고블린즈"}], pos:0,
 					text:"Kerek... It's coming♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"마을사람"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"마을사람"}], pos:0,
 					text:"Uhot♡ I'm cumming♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"촉수슬라임"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], pos:0,
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"타우로스"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"타우로스"}], pos:0,
 					text:"Hook♡ Hook♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"악동"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"악동"}], pos:0,
 					text:"Ugh♡ Hold on, sis♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"버섯남자"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"버섯남자"}], pos:0,
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"금발양아치"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"금발양아치"}], pos:0,
 					text:"Damn, this feels good♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"조교사"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"조교사"}], pos:0,
 					text:"Kgh... How could this...",
 				},
 			]
@@ -777,35 +777,35 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"고블린즈"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"고블린즈"}], pos:0,
 					text:"Kyaak, I'm being squeezed dry♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"마을사람"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"마을사람"}], pos:0,
 					text:"Uhooot♡ This feels unbelievably good♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"촉수슬라임"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], pos:0,
 					text:"*Shudder shudder...*",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"타우로스"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"타우로스"}], pos:0,
 					text:"Huoooook♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"악동"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"악동"}], pos:0,
 					text:"N-no♡<br>I'm supposed to be the incubus...♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"버섯남자"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"버섯남자"}], pos:0,
 					text:"*This body...<br>is no longer usable...*",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"금발양아치"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"금발양아치"}], pos:0,
 					text:"Kgh♡ You're the best woman I've ever had♡",
 				},
 				{
-					cond:["and", {v1:"챔피언.이름", op:"==", v2:"조교사"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"조교사"}], pos:0,
 					text:"Female slaaaaave♡",
 				},
 			]
@@ -862,7 +862,7 @@ const line = {
 
 	"고블린즈-교체":[
 		{
-			priority:7, cond:{v1:"챔피언.절정", op:"==", v2:1}, 
+			priority:7, cond:{v1:"Champion.절정", op:"==", v2:1}, 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -871,7 +871,7 @@ const line = {
 			]
 		},
 		{
-			priority:6, cond:{v1:"챔피언.절정", op:"==", v2:2}, 
+			priority:6, cond:{v1:"Champion.절정", op:"==", v2:2}, 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -880,7 +880,7 @@ const line = {
 			]
 		},
 		{
-			priority:5, cond:{v1:"챔피언.절정", op:"==", v2:3}, 
+			priority:5, cond:{v1:"Champion.절정", op:"==", v2:3}, 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -889,7 +889,7 @@ const line = {
 			]
 		},
 		{
-			priority:4, cond:{v1:"챔피언.절정", op:"==", v2:4}, 
+			priority:4, cond:{v1:"Champion.절정", op:"==", v2:4}, 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -898,7 +898,7 @@ const line = {
 			]
 		},
 		{
-			priority:3, cond:[{v1:"모드", op:"==", v2:1}, {v1:"챔피언.절정", op:"==", v2:5}], 
+			priority:3, cond:[{v1:"모드", op:"==", v2:1}, {v1:"Champion.절정", op:"==", v2:5}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -907,7 +907,7 @@ const line = {
 			]
 		},
 		{
-			priority:2, cond:[{v1:"모드", op:"==", v2:1}, {v1:"챔피언.절정", op:"==", v2:6}], 
+			priority:2, cond:[{v1:"모드", op:"==", v2:1}, {v1:"Champion.절정", op:"==", v2:6}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -916,7 +916,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:[{v1:"모드", op:"==", v2:1}, {v1:"챔피언.절정", op:"==", v2:7}], 
+			priority:1, cond:[{v1:"모드", op:"==", v2:1}, {v1:"Champion.절정", op:"==", v2:7}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4665,7 +4665,7 @@ const line = {
 	],
 	"버섯남자-이벤트-정신동기화":[
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"군인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Soldier"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4682,7 +4682,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"군인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Soldier"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4699,7 +4699,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"군인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"Soldier"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4716,7 +4716,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"군인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"Soldier"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4733,7 +4733,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"엘리트"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Noble"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4750,7 +4750,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"엘리트"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Noble"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4767,7 +4767,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"엘리트"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"Noble"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4784,7 +4784,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"연예인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Celebrity"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4801,7 +4801,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"연예인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Celebrity"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4818,7 +4818,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"연예인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"Celebrity"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4835,7 +4835,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"연예인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"Celebrity"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4852,7 +4852,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"종교인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Cleric"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4869,7 +4869,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"종교인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"Cleric"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4886,7 +4886,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"종교인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"Cleric"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4903,7 +4903,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"학자"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4920,7 +4920,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"학자"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4937,7 +4937,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"학자"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4954,7 +4954,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"학자"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5107,7 +5107,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"용병"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Mercenary"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5124,7 +5124,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"용병"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Mercenary"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5141,7 +5141,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"용병"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"Mercenary"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5158,7 +5158,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"용병"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"Mercenary"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5175,7 +5175,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"군인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"Soldier"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5188,7 +5188,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"엘리트"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"Noble"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5201,7 +5201,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"연예인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"Celebrity"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5214,7 +5214,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"종교인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"Cleric"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5227,7 +5227,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"학자"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5266,7 +5266,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"용병"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"Mercenary"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5679,11 +5679,11 @@ const line = {
 			priority:0, cond:{v1:"모드", op:"==", v2:0},
 			lineList:[
 				{
-					cond:{v1:"챔피언.기록.이번.이벤트.절정", op:">", v2:0}, pos:0,
+					cond:{v1:"Champion.기록.이번.이벤트.절정", op:">", v2:0}, pos:0,
 					text:"Kgh, you're so tight...<br>You don't mind if I cum inside, right?",
 				},
 				{
-					cond:{v1:"챔피언.기록.이번.이벤트.절정", op:"==", v2:0}, pos:0,
+					cond:{v1:"Champion.기록.이번.이벤트.절정", op:"==", v2:0}, pos:0,
 					text:"It's fine~ I'll pull out.<br>(That's a lie, though.)",
 				},
 			]
@@ -6383,7 +6383,7 @@ const line = {
 			]
 		},
 	],
-	"약물조교":[
+	"Potion조교":[
 		{
 			priority:0, cond:{v1:"모드", op:"==", v2:0},
 			lineList:[
@@ -8954,7 +8954,7 @@ const line = {
 		},
 	],
 
-	"정수결합":[
+	"Essence결합":[
 		{
 			priority:0, cond:true,
 			lineList:[
@@ -9665,7 +9665,7 @@ const line = {
 	],
 	"개입-최면":[
 		{
-			priority:2, cond:["and", {v1:"챔피언.이름", op:"==", v2:"금발양아치"}],
+			priority:2, cond:["and", {v1:"Champion.이름", op:"==", v2:"금발양아치"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"칼레스",
@@ -9690,7 +9690,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"학자"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"칼레스",
@@ -9723,7 +9723,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"학자"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"칼레스",
@@ -9794,7 +9794,7 @@ const line = {
 	],
 	"개입-저주":[
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"군인"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Soldier"}],
 			lineList:[
 				{
 					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
@@ -9888,9 +9888,9 @@ const line = {
 			]
 		},
 	],
-	"개입-약물":[
+	"개입-Potion":[
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"학자"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
 					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
@@ -10018,7 +10018,7 @@ const line = {
 	],
 	"개입-고문":[
 		{
-			priority:2, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"챔피언.이름", op:"==", v2:"조교사"}],
+			priority:2, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"조교사"}],
 			lineList:[
 				{
 					cond:true, pos:0,

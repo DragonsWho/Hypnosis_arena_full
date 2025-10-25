@@ -44,7 +44,7 @@
 
         function getRandomMessage() {
             if (unusedMessages.length === 0) {
-                // 모든 메시지가 사용되었으면 초기화
+                // All 메시지가 사용되었으면 초기화
                 unusedMessages = [...usedMessages];
                 usedMessages = [];
             }
@@ -195,7 +195,7 @@
 
             if (cards.length > 0) {
                 const wbCards = XLSX.utils.book_new();
-                XLSX.utils.book_append_sheet(wbCards, createSheetData(cards, 1), "카드");
+                XLSX.utils.book_append_sheet(wbCards, createSheetData(cards, 1), "card");
                 XLSX.writeFile(wbCards, "Cards.xlsx");
             }
 
@@ -324,7 +324,7 @@
                     var cardText = card.innerText.toLowerCase();
 
                     var matchesSearch = searchText.every(term => cardText.includes(term) || Object.values(Object.values(cardData)).some(value => typeof value == 'string' && value.toLowerCase().includes(term)));
-                    var matchesClassFilter = !classFilterActive || classFilters.includes(cardData.class) || (classFilters.includes("챔피언") && cardData.tags.includes("챔피언덱"));
+                    var matchesClassFilter = !classFilterActive || classFilters.includes(cardData.class) || (classFilters.includes("Champion") && cardData.tags.includes("Champion덱"));
                     var matchesTypeFilter = !typeFilterActive || typeFilters.includes(cardData.type) || (typeFilters.includes("기타") && !allTypeFilters.includes(cardData.type));
                     var matchesRarityFilter = !rarityFilterActive || rarityFilters.includes(cardData.rarity);
 
@@ -341,7 +341,7 @@
                     var cardText = card.innerText.toLowerCase();
 
                     var matchesSearch = searchText2.every(term => cardText.includes(term) || Object.values(Object.values(cardData)).some(value => typeof value == 'string' && value.toLowerCase().includes(term)));
-                    var matchesClassFilter = !classFilter2Active || classFilters2.includes(cardData.class) || (classFilters2.includes("챔피언") && cardData.tags.includes("챔피언능력"));
+                    var matchesClassFilter = !classFilter2Active || classFilters2.includes(cardData.class) || (classFilters2.includes("Champion") && cardData.tags.includes("Champion능력"));
                     var matchesTraitFilter = !traitFilterActive || (traitFilters.includes("장점") && !cardData.tags.includes("부정적")) || (traitFilters.includes("단점") && cardData.tags.includes("부정적"));
                     var matchesRaceFilter = !raceFilterActive || raceFilters.includes(cardData.race) || (raceFilters.includes("전종족") && !cardData.race);
                     var matchesBgFilter = !bgFilterActive || bgFilters.includes(cardData.bg) || (bgFilters.includes("전배경") && !cardData.bg);
@@ -644,7 +644,7 @@
                 <label><input type="checkbox" class="classFilter" value="Healer"> Healer</label>
                 <label><input type="checkbox" class="classFilter" value="Neutral"> Neutral</label>
                 <label><input type="checkbox" class="classFilter" value="Penalty"> Penalty</label>
-                <label><input type="checkbox" class="classFilter" value="챔피언"> Champion</label>
+                <label><input type="checkbox" class="classFilter" value="Champion"> Champion</label>
             </div>
             <div class="filterGroup" style="width:33%;">
                 <label><input type="checkbox" class="typeFilter" value="공격"> Attack</label>
@@ -676,7 +676,7 @@
                 <label><input type="checkbox" class="classFilter2" value="Assassin"> Assassin</label>
                 <label><input type="checkbox" class="classFilter2" value="Magician"> Mage</label>
                 <label><input type="checkbox" class="classFilter2" value="Healer"> Healer</label>
-                <label><input type="checkbox" class="classFilter2" value="챔피언"> Champion</label>
+                <label><input type="checkbox" class="classFilter2" value="Champion"> Champion</label>
             </div>
             <div style="width:33%;">
                 <div class="filterGroup" style="width:100%;">
@@ -693,14 +693,14 @@
             </div>
             <div class="filterGroup" style="width:33%;">
                 <label><input type="checkbox" class="bgFilter" value="전배경"> Common</label>
-                <label><input type="checkbox" class="bgFilter" value="군인"> Soldier</label>
-                <label><input type="checkbox" class="bgFilter" value="엘리트"> Elite</label>
-                <label><input type="checkbox" class="bgFilter" value="연예인"> Entertainer</label>
-                <label><input type="checkbox" class="bgFilter" value="종교인"> Clergy</label>
-                <label><input type="checkbox" class="bgFilter" value="학자"> Scholar</label>
+                <label><input type="checkbox" class="bgFilter" value="Soldier"> Soldier</label>
+                <label><input type="checkbox" class="bgFilter" value="Noble"> Elite</label>
+                <label><input type="checkbox" class="bgFilter" value="Celebrity"> Entertainer</label>
+                <label><input type="checkbox" class="bgFilter" value="Cleric"> Clergy</label>
+                <label><input type="checkbox" class="bgFilter" value="Scholar"> Scholar</label>
                 <label><input type="checkbox" class="bgFilter" value="Rogue"> Criminal</label>
                 <label><input type="checkbox" class="bgFilter" value="Merchant"> Merchant</label>
-                <label><input type="checkbox" class="bgFilter" value="용병"> Mercenary</label>
+                <label><input type="checkbox" class="bgFilter" value="Mercenary"> Mercenary</label>
             </div>
             <div class="box button active" id="clearFilters2" style="width:100%; padding:2px; margin:0; text-align:center;">Clear All</div>
         </div>
@@ -1532,7 +1532,7 @@
                     <img src="image/background1.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">군인</h2> 
+                <h2 class="box-title" style="display: none;">Soldier</h2> 
                 <h2 class="box-title langText KOR">Soldier</h2>
                 <hr>
                 <div class="box-content">
@@ -1548,7 +1548,7 @@
                     <img src="image/background2.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">엘리트</h2> 
+                <h2 class="box-title" style="display: none;">Noble</h2> 
                 <h2 class="box-title langText KOR">Noble</h2>
                 <hr>
                 <div class="box-content">
@@ -1566,7 +1566,7 @@
                     <img src="image/background3.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">연예인</h2> 
+                <h2 class="box-title" style="display: none;">Celebrity</h2> 
                 <h2 class="box-title langText KOR">Celebrity</h2>
                 <hr>
                 <div class="box-content">
@@ -1582,7 +1582,7 @@
                     <img src="image/background4.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">종교인</h2> 
+                <h2 class="box-title" style="display: none;">Cleric</h2> 
                 <h2 class="box-title langText KOR">Cleric</h2>
                 <hr>
                 <div class="box-content">
@@ -1600,7 +1600,7 @@
                     <img src="image/background5.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">학자</h2> 
+                <h2 class="box-title" style="display: none;">Scholar</h2> 
                 <h2 class="box-title langText KOR">Scholar</h2>
                 <hr>
                 <div class="box-content">
@@ -1648,7 +1648,7 @@
                     <img src="image/background8.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">용병</h2> 
+                <h2 class="box-title" style="display: none;">Mercenary</h2> 
                 <h2 class="box-title langText KOR">Mercenary</h2>
                 <hr>
                 <div class="box-content">
@@ -2586,7 +2586,7 @@
         </div>
         <!--<div class="container battleContent cardList" id="enemyRecord" style="display: none;">
             <div class="box" style="flex: 0 calc(100% - 20px);">
-                <h2 class="box-title langText KOR">챔피언의 기록</h2>
+                <h2 class="box-title langText KOR">Champion의 기록</h2>
             </div>
         </div>-->
 
@@ -2626,7 +2626,7 @@
                 <p class="langText KOR">Champion's State</p>
             </div>
             <!--<div class="box button battleButton disabled" id="enemyRecordButton" style="flex: 0 calc(100% - 20px); margin:0 auto; text-align: center;" onclick="toggleTab(0, 3);">
-                <p>챔피언의 기록</p>
+                <p>Champion의 기록</p>
             </div>-->
         </div>
         <div class="buttons middle">

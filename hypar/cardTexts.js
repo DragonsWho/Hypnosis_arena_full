@@ -129,19 +129,19 @@ const cardTexts = {
 		"도전자Penalty사용시":{
 			"KOR": "When the Challenger plays a Penalty card, "
 		},
-		"챔피언사용시":{
+		"Champion사용시":{
 			"KOR": "When the Champion plays a card, "
 		},
-		"챔피언공격사용시":{
+		"Champion공격사용시":{
 			"KOR": "When the Champion plays an Attack card, "
 		},
-		"챔피언보조사용시":{
+		"Champion보조사용시":{
 			"KOR": "When the Champion plays a Support card, "
 		},
-		"챔피언체위사용시":{
+		"Champion체위사용시":{
 			"KOR": "When the Champion plays a Position card, "
 		},
-		"챔피언Penalty사용시":{
+		"ChampionPenalty사용시":{
 			"KOR": "When the Champion plays a Penalty card, "
 		},
 		"누군가사용시":{
@@ -162,13 +162,13 @@ const cardTexts = {
 		"생성사용시":{
 			"KOR": "When playing a generated card, "
 		},
-		"카드획득시":{
+		"card획득시":{
 			"KOR": "When you gain a card, "
 		},
 		"Penalty획득시":{
 			"KOR": "When you gain a Penalty card, "
 		},
-		"카드변형시":{
+		"card변형시":{
 			"KOR": "When a card is Transformed, "
 		},
 		"마술만료시":{
@@ -206,7 +206,7 @@ const cardTexts = {
 		"스탯":{
 			"KOR": "{owner}'s {stat}"
 		},
-		"카드정보":{
+		"card정보":{
 			"KOR": "{card}'s {category}"
 		},
 		"효과발동자신":{
@@ -215,13 +215,13 @@ const cardTexts = {
 		"효과발동":{
 			"KOR": "If none of {actor}'s card effects activated this round, "
 		},
-		"사용카드자신":{
+		"사용card자신":{
 			"KOR": "{cards} played this round"
 		},
-		"사용카드":{
+		"사용card":{
 			"KOR": "{cards} played by {actor} this round"
 		},
-		"시작카드":{
+		"시작card":{
 			"KOR": "{cards} in {deck} at the start of the duel"
 		},
 		"상태":{
@@ -347,7 +347,7 @@ const cardTexts = {
 		"Count값":{
 			"KOR": "by {amount}",
 		},
-		"Count카드":{
+		"Countcard":{
 			"KOR": "{amount}",
 		},
 		"Count상태":{
@@ -356,25 +356,25 @@ const cardTexts = {
 		"Count발동":{
 			"KOR": "Activates {amount} times.",
 		},
-		"카드들":{
+		"card들":{
 			"KOR": "{amount} {cards}",
 		},
-		"카드종류들":{
+		"card종류들":{
 			"KOR": "{amount} types of {cards}",
 		},
-		"카드전부":{
+		"card전부":{
 			"KOR": "All {cards}",
 		},
-		"카드종류전부":{
+		"card종류전부":{
 			"KOR": "All types of {cards}",
 		},
-		"카드종류":{
+		"card종류":{
 			"KOR": "different {cards}",
 		},
 		"복사본":{
 			"KOR": "a copy of {card}",
 		},
-		"모든트랩":{
+		"All트랩":{
 			"KOR": "All Trap cards in your deck",
 		},
 		"지속시간":{
@@ -484,46 +484,46 @@ const cardTexts = {
 			"KOR": "If it is round {amount}, ",
 		},
 
-		"덱카드없음":{
+		"덱card없음":{
 			"KOR": "If there is no {target}, ",
 		},
-		"덱카드있음":{
+		"덱card있음":{
 			"KOR": "If there is {target}, ",
 		},
-		"덱카드일치숫자":{
+		"덱card일치숫자":{
 			"KOR": "If there are exactly {amount} {target}, ",
 		},
-		"덱카드일치값":{
+		"덱card일치값":{
 			"KOR": "If there is exactly {amount} {target}, ",
 		},
-		"덱카드초과숫자":{
+		"덱card초과숫자":{
 			"KOR": "If there are more than {amount} {target}, ",
 		},
-		"덱카드초과값":{
+		"덱card초과값":{
 			"KOR": "If there is more than {amount} {target}, ",
 		},
-		"덱카드미만숫자":{
+		"덱card미만숫자":{
 			"KOR": "If there are fewer than {amount} {target}, ",
 		},
-		"덱카드미만값":{
+		"덱card미만값":{
 			"KOR": "If there is less than {amount} {target}, ",
 		},
-		"덱카드이상숫자":{
+		"덱card이상숫자":{
 			"KOR": "If there are {amount} or more {target}, ",
 		},
-		"덱카드이상값":{
+		"덱card이상값":{
 			"KOR": "If there is {amount} or more {target}, ",
 		},
-		"덱카드이하숫자":{
+		"덱card이하숫자":{
 			"KOR": "If there are {amount} or fewer {target}, ",
 		},
-		"덱카드이하값":{
+		"덱card이하값":{
 			"KOR": "If there is {amount} or less {target}, ",
 		},
-		"덱카드불일치숫자":{
+		"덱card불일치숫자":{
 			"KOR": "If there are not exactly {amount} {target}, ",
 		},
-		"덱카드불일치값":{
+		"덱card불일치값":{
 			"KOR": "If there is not exactly {amount} {target}, ",
 		},
 
@@ -589,46 +589,46 @@ const cardTexts = {
 			"KOR": "If {target} is not {amount}, ",
 		},
 
-		"낸카드없음":{
+		"낸card없음":{
 			"KOR": "If there is no {target}, ",
 		},
-		"낸카드있음":{
+		"낸card있음":{
 			"KOR": "If there is {target}, ",
 		},
-		"낸카드일치숫자":{
+		"낸card일치숫자":{
 			"KOR": "If {target} is exactly {amount}, ",
 		},
-		"낸카드일치값":{
+		"낸card일치값":{
 			"KOR": "If {target} is exactly {amount}, ",
 		},
-		"낸카드초과숫자":{
+		"낸card초과숫자":{
 			"KOR": "If {target} is more than {amount}, ",
 		},
-		"낸카드초과값":{
+		"낸card초과값":{
 			"KOR": "If {target} is more than {amount}, ",
 		},
-		"낸카드미만숫자":{
+		"낸card미만숫자":{
 			"KOR": "If {target} is less than {amount}, ",
 		},
-		"낸카드미만값":{
+		"낸card미만값":{
 			"KOR": "If {target} is less than {amount}, ",
 		},
-		"낸카드이상숫자":{
+		"낸card이상숫자":{
 			"KOR": "If {target} is {amount} or more, ",
 		},
-		"낸카드이상값":{
+		"낸card이상값":{
 			"KOR": "If {target} is {amount} or more, ",
 		},
-		"낸카드이하숫자":{
+		"낸card이하숫자":{
 			"KOR": "If {target} is {amount} or less, ",
 		},
-		"낸카드이하값":{
+		"낸card이하값":{
 			"KOR": "If {target} is {amount} or less, ",
 		},
-		"낸카드불일치숫자":{
+		"낸card불일치숫자":{
 			"KOR": "If {target} is not exactly {amount}, ",
 		},
-		"낸카드불일치값":{
+		"낸card불일치값":{
 			"KOR": "If {target} is not exactly {amount}, ",
 		},
 
@@ -1001,13 +1001,13 @@ const cardTexts = {
 			"KOR": "<span style='color: gray;''><i>(Changes to the following <b>Position</b>.)</i></span>",
 		},
 
-		"덱카드획득":{
+		"덱card획득":{
 			"KOR": "Gain {repeat} {card}.",
 		},
-		"덱카드선택획득":{
+		"덱card선택획득":{
 			"KOR": "Choose a {card} and gain {repeat} copies of it.",
 		},
-		"덱카드추가":{
+		"덱card추가":{
 			"KOR": "Give {target} {repeat} {card}.",
 		},
 
@@ -1019,10 +1019,10 @@ const cardTexts = {
 			"KOR": "Win the duel.",
 		},
 
-		"추가카드":{
+		"추가card":{
 			"KOR": "{target}'s <b>Additional Cards +{amount}</b>.",
 		},
-		"추가카드자신":{
+		"추가card자신":{
 			"KOR": "<b>Additional Cards +{amount}</b>.",
 		},
 
@@ -1103,10 +1103,10 @@ const cardTexts = {
 			"KOR": "<b>Excitement</b> cannot be increased.",
 		},
 
-		"카드사용불가":{
+		"card사용불가":{
 			"KOR": "{actor} cannot play cards.",
 		},
-		"카드사용불가자신":{
+		"card사용불가자신":{
 			"KOR": "Cannot play cards.",
 		},
 		"공격사용불가":{
@@ -1182,20 +1182,20 @@ const cardTexts = {
 			"KOR": "Can only play Bound cards.",
 		},
 
-		"최대라운드":{
+		"Max라운드":{
 			"KOR": "<b>Max Rounds: {amount}</b>",
 		},
 
 		"최저음란":{
 			"KOR": "The minimum value of <b>Lewdness</b> becomes {amount}.",
 		},
-		"최대음란":{
+		"Max음란":{
 			"KOR": "The maximum value of <b>Lewdness</b> becomes {amount}.",
 		},
 		"최저발정":{
 			"KOR": "The minimum value of <b>Heat</b> becomes {amount}.",
 		},
-		"최대발정":{
+		"Max발정":{
 			"KOR": "The maximum value of <b>Heat</b> becomes {amount}.",
 		},
 
@@ -1209,10 +1209,10 @@ const cardTexts = {
 		"강탈":{
 			"KOR": "Steal {cards}. <span style=\"color: gray;\"><i>(The card's <b>Lewdness</b> and <b>Heat</b> effects are swapped.)</i></span>",
 		},
-		"챔피언비활성화":{
+		"Champion비활성화":{
 			"KOR": "The Champion's cards lose their effects.",
 		},
-		"챔피언공격비활성화":{
+		"Champion공격비활성화":{
 			"KOR": "The Champion's Attack cards lose their effects.",
 		},
 		"탈의비활성화":{
@@ -1278,7 +1278,7 @@ const cardTexts = {
 			"KOR": "Cannot have more than {amount} {card} in your deck.",
 		},
 
-		"최대사용":{
+		"Max사용":{
 			"KOR": "The maximum number of cards you can play per round becomes {amount}.",
 		},
 

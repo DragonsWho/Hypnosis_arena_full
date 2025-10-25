@@ -1,6 +1,6 @@
 const storyProfile = {
 	"profile": {
-		"군인": {
+		"Soldier": {
 			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Knight of the Queen's Guard<br>
@@ -30,7 +30,7 @@ const storyProfile = {
 				`
 			}
 		}, // <--- ЗАПЯТАЯ
-		"엘리트": {
+		"Noble": {
 			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Daughter of a Noble Family<br>
@@ -56,7 +56,7 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"연예인": {
+		"Celebrity": {
 			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Hero<br>
@@ -86,7 +86,7 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"종교인": {
+		"Cleric": {
 			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Saint Candidate<br>
@@ -112,7 +112,7 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"학자": {
+		"Scholar": {
 			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Professor at Lapis Lazuli Academy<br>
@@ -202,7 +202,7 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"용병": {
+		"Mercenary": {
 			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Vengeful Mercenary<br>
@@ -234,7 +234,7 @@ const storyProfile = {
 		},
 	}, // <--- ЗАПЯТАЯ (отделяет "profile" от "profile2")
 	"profile2": {
-		"군인": {
+		"Soldier": {
 			"Eldorian": {
 				"KOR": `
 					<b>Product Overview:</b> Former Knight of the Queen's Guard<br>
@@ -268,7 +268,7 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"엘리트": {
+		"Noble": {
 			"Eldorian": {
 				"KOR": `
 					<b>Product Overview:</b> Former Daughter of a Noble Family<br>
@@ -297,7 +297,7 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"연예인": {
+		"Celebrity": {
 			"Eldorian": {
 				"KOR": `
 					<b>Product Overview:</b> Former Hero<br>
@@ -331,7 +331,7 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"종교인": {
+		"Cleric": {
 			"Eldorian": {
 				"KOR": `
 					<b>Product Overview:</b> Former Saint Candidate<br>
@@ -360,7 +360,7 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"학자": {
+		"Scholar": {
 			"Eldorian": {
 				"KOR": `
 					<b>Product Overview:</b> Former Professor at Lapis Lazuli Academy<br>
@@ -462,7 +462,7 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"용병": {
+		"Mercenary": {
 			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Vengeful Mercenary<br>
@@ -498,34 +498,34 @@ const storyProfile = {
 		},
 	}, // <--- ЗАПЯТАЯ (отделяет "profile2" от "profile3")
 	"profile3": {
-		"군인": {
+		"Soldier": {
 			"KOR": `
 				I once lived a life of loyalty to someone else.<br>
 				It was fun being dominated and submitting to my trash mob masterâ™¡, but...<br>
 				The moment I accidentally let my power slip and saw him begging in fear... everything just went cold.
 			`,
 		}, // <--- ЗАПЯТАЯ
-		"엘리트": {
+		"Noble": {
 			"KOR": `
 				Creating the obligation to serve men was a good idea.<br>
 				But it turns out a man's stamina isn't as infinite as I'd hoped.<br>
 				I need something more... something worthy of my service...
 			`,
 		}, // <--- ЗАПЯТАЯ
-		"연예인": {
+		"Celebrity": {
 			"KOR": `
 				Everyone, without exception, came to love me, to desire to ravish me.<br>
 				Reaching the pinnacle is thrilling, but it's empty when there's nowhere left to climb.<br>
 				I'm not a being who will end up contained within this mere worldâ™¡
 			`,
 		}, // <--- ЗАПЯТАЯ
-		"종교인": {
+		"Cleric": {
 			"KOR": `
 				I'm glad everyone has accepted the ideology of worshipping the divine cock.<br>
 				I want to devote myself to the divine cock every day, but who knew the male followers couldn't endure my endless service...<br>
 			`,
 		}, // <--- ЗАПЯТАЯ
-		"학자": {
+		"Scholar": {
 			"KOR": `
 				<b>Background:</b> <br>
 				- <br>
@@ -546,7 +546,7 @@ const storyProfile = {
 				- 
 			`,
 		}, // <--- ЗАПЯТАЯ
-		"용병": {
+		"Mercenary": {
 			"KOR": `
 				<b>Background:</b> <br>
 				- <br>
@@ -559,7 +559,7 @@ const storyProfile = {
 //############################################################################################################################################################################################
 
 const storyText = {
-	//Eldorian 군인 (Eldorian Soldier)
+	//Eldorian Soldier (Eldorian Soldier)
 	"intro_El_bg1": [{
 		cond: true,
 		type: "text",
@@ -862,7 +862,7 @@ const storyText = {
 
 
 
-//Silvani 군인 (Sylvanian Soldier/Police Officer)
+//Silvani Soldier (Sylvanian Soldier/Police Officer)
 	"intro_Sy_bg1": [{
 		cond: true,
 		type: "text",
@@ -1168,7 +1168,7 @@ const storyText = {
 
 
 
-//Halfling 군인 (Halfling Soldier/Bodyguard)
+//Halfling Soldier (Halfling Soldier/Bodyguard)
 	"intro_Ha_bg1": [{
 		cond: true,
 		type: "text",
@@ -1461,7 +1461,7 @@ const storyText = {
 	}, ],
 
  
-//Beastfolk 군인 (Tribe Soldier/Watchwoman)
+//Beastfolk Soldier (Tribe Soldier/Watchwoman)
 	"intro_Tr_bg1": [{
 		cond: true,
 		type: "text",
@@ -1758,7 +1758,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Eldorian 엘리트 (Eldorian Elite)
+//Eldorian Noble (Eldorian Elite)
 	"intro_El_bg2": [{
 		cond: true,
 		type: "text",
@@ -2057,7 +2057,7 @@ const storyText = {
 
 	 
 
-//Silvani 엘리트 (Sylvanian Elite)
+//Silvani Noble (Sylvanian Elite)
 	"intro_Sy_bg2": [{
 		cond: true,
 		type: "text",
@@ -2351,7 +2351,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Beastfolk 엘리트 (Tribe Elite/Chieftain)
+//Beastfolk Noble (Tribe Elite/Chieftain)
 	"intro_Tr_bg2": [{
 		cond: true,
 		type: "text",
@@ -2648,7 +2648,7 @@ const storyText = {
 
 
  
-//Eldorian 연예인 (Eldorian Celebrity/Hero)
+//Eldorian Celebrity (Eldorian Celebrity/Hero)
 	"intro_El_bg3": [{
 		cond: true,
 		type: "text",
@@ -2942,7 +2942,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Silvani 연예인 (Sylvanian Celebrity/Model)
+//Silvani Celebrity (Sylvanian Celebrity/Model)
 	"intro_Sy_bg3": [{
 		cond: true,
 		type: "text",
@@ -3309,7 +3309,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Halfling 연예인 (Halfling Celebrity/Idol)
+//Halfling Celebrity (Halfling Celebrity/Idol)
 	"intro_Ha_bg3": [{
 		cond: true,
 		type: "text",
@@ -3618,7 +3618,7 @@ const storyText = {
 
 
 
-//Beastfolk 연예인 (Tribe Celebrity/Arena Champion)
+//Beastfolk Celebrity (Tribe Celebrity/Arena Champion)
 	"intro_Tr_bg3": [{
 		cond: true,
 		type: "text",
@@ -3910,7 +3910,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Eldorian 종교인 (Eldorian Religious)
+//Eldorian Cleric (Eldorian Religious)
 	"intro_El_bg4": [{
 		cond: true,
 		type: "text",
@@ -4204,7 +4204,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Halfling 종교인 (Halfling Religious)
+//Halfling Cleric (Halfling Religious)
 	"intro_Ha_bg4": [{
 		cond: true,
 		type: "text",
@@ -4524,7 +4524,7 @@ const storyText = {
 
 
 
-//Beastfolk 종교인 (Tribe Religious)
+//Beastfolk Cleric (Tribe Religious)
 	"intro_Tr_bg4": [{
 		cond: true,
 		type: "text",
@@ -4816,7 +4816,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Eldorian 학자 (Eldorian Scholar)
+//Eldorian Scholar (Eldorian Scholar)
 	"intro_El_bg5": [{
 		cond: true,
 		type: "text",
@@ -5108,7 +5108,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Silvani 학자 (Sylvanian Scholar)
+//Silvani Scholar (Sylvanian Scholar)
 	"intro_Sy_bg5": [{
 		cond: true,
 		type: "text",
@@ -5426,7 +5426,7 @@ const storyText = {
 
 
  
-//Halfling 학자 (Halfling Scholar)
+//Halfling Scholar (Halfling Scholar)
 	"intro_Ha_bg5": [{
 		cond: true,
 		type: "text",
@@ -5721,7 +5721,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Beastfolk 학자 (Tribe Scholar/Wandering Sage)
+//Beastfolk Scholar (Tribe Scholar/Wandering Sage)
 	"intro_Tr_bg5": [{
 		cond: true,
 		type: "text",
@@ -8449,7 +8449,7 @@ const storyText = {
 			`,
 }, ], // <--- ЗАПЯТАЯ
 
-//Eldorian 용병 (Eldorian Mercenary)
+//Eldorian Mercenary (Eldorian Mercenary)
 "intro_El_bg8": [{
 	cond: true,
 	type: "text",
@@ -8748,7 +8748,7 @@ const storyText = {
 			`,
 }, ], // <--- ЗАПЯТАЯ
 
-//Silvani 용병 (Sylvanian Mercenary)
+//Silvani Mercenary (Sylvanian Mercenary)
 "intro_Sy_bg8": [{
 	cond: true,
 	type: "text",
@@ -9038,7 +9038,7 @@ const storyText = {
 
 
 
-//Halfling 용병 (Halfling Mercenary)
+//Halfling Mercenary (Halfling Mercenary)
 "intro_Ha_bg8": [{
 	cond: true,
 	type: "text",
@@ -9332,7 +9332,7 @@ const storyText = {
 			`,
 }, ], // <--- ЗАПЯТАЯ
 
-//Beastfolk 용병 (Tribe Mercenary)
+//Beastfolk Mercenary (Tribe Mercenary)
 "intro_Tr_bg8": [{
 	cond: true,
 	type: "text",

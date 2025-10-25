@@ -74,14 +74,14 @@ const dictionary = {
 	"Magician":{ "KOR":"Magician" },
 	"Healer":{ "KOR":"Healer" },
 
-	"군인":{ "KOR":"Soldier" },
-	"엘리트":{ "KOR":"Elite" },
-	"연예인":{ "KOR":"Entertainer" },
-	"종교인":{ "KOR":"Clergy" },
-	"학자":{ "KOR":"Scholar" },
+	"Soldier":{ "KOR":"Soldier" },
+	"Noble":{ "KOR":"Elite" },
+	"Celebrity":{ "KOR":"Entertainer" },
+	"Cleric":{ "KOR":"Clergy" },
+	"Scholar":{ "KOR":"Scholar" },
 	"Rogue":{ "KOR":"Criminal" },
 	"Merchant":{ "KOR":"Merchant" },
-	"용병":{ "KOR":"Mercenary" },
+	"Mercenary":{ "KOR":"Mercenary" },
 
 	"올곧음":{ "KOR":"Integrity" },
 	"신중함":{ "KOR":"Deliberation" },
@@ -97,7 +97,7 @@ const dictionary = {
 
 	"포인트":{ "KOR":"Point" },
 	"덱":{ "KOR":"Deck" },
-	"카드":{ "KOR":"Cards" },
+	"card":{ "KOR":"Cards" },
 	"독주머니":{ "KOR":"Poison Pouch" },
 
 	"공격":{ "KOR":"Attack" },
@@ -111,7 +111,7 @@ const dictionary = {
 	"마술":{ "KOR":"Magic" },
 	"마도진":{ "KOR":"Magic Circle" },
 	"결합물":{ "KOR":"Combined" },
-	"정수":{ "KOR":"Essence" },
+	"Essence":{ "KOR":"Essence" },
 
 	"만능":{ "KOR":"Wildcard" },
 	"비전":{ "KOR":"Arcane" },
@@ -128,7 +128,7 @@ const dictionary = {
 	"자극":{ "KOR":"[Stimulation]" },
 
 	"라운드":{ "KOR":"Round" },
-	"최대라운드":{ "KOR":"Max Round" },
+	"Max라운드":{ "KOR":"Max Round" },
 	"덱크기":{ "KOR":"Deck Size" },
 	"원본":{ "KOR":"Original Card" },
 	"파생":{ "KOR":"That Card" },
@@ -158,7 +158,7 @@ const dictionary = {
 	"만료마술":{ "KOR":"Expired Magic" },
 
 	"도전자":{ "KOR":"Challenger" },
-	"챔피언":{ "KOR":"Champion" },
+	"Champion":{ "KOR":"Champion" },
 	"자신":{ "KOR":"Self" },
 	"상대":{ "KOR":"Opponent" },
 
@@ -168,7 +168,7 @@ const dictionary = {
 	"승리":{ "KOR":"Wins" },
 	"패배":{ "KOR":"Losses" },
 
-	"최대":{ "KOR":"Max" },
+	"Max":{ "KOR":"Max" },
 	"이하":{ "KOR":"or less" },
 	"전부":{ "KOR":"All" },
 	"현재":{ "KOR":"Currently" },
@@ -193,17 +193,17 @@ const dictionary = {
 	"산드레아":{ "KOR":"Sandrea" },
 
  
-	"생성된 카드": { "KOR": "Generated Card" },
-	"변형 목적의 카드": { "KOR": "Card for Transformation" }, 
+	"생성된 card": { "KOR": "Generated Card" },
+	"변형 목적의 card": { "KOR": "Card for Transformation" }, 
 	"다른 독": { "KOR": "another Poison" },
 	"즉발 마술": { "KOR": "Instant Magic" },
 	"영창 마술": { "KOR": "Chant Magic" },
 	"집중 마술": { "KOR": "Focus Magic" },
-	"두 번 이상 변형된 카드": { "KOR": "Card transformed twice or more" },
+	"두 번 이상 변형된 card": { "KOR": "Card transformed twice or more" },
 	"두 번 이상 변형된": { "KOR": "Transformed twice or more" },
 	"개선된 체위": { "KOR": "Improved Position" },
  
-	"보석": { "KOR": "Jewel" }, 
+	"Gem": { "KOR": "Jewel" }, 
 
 	"진홍색 마도진": { "KOR": "Crimson Magic Circle" },
 	"담청색 마도진": { "KOR": "Azure Magic Circle" },
@@ -934,18 +934,18 @@ const champList = {
 	},
 	"boss2":{
 		id:"boss2",
-		name:{ "KOR":"Villager" }, fullName:{ "KOR":"Villager A" }, img:"boss2", category:"첫상대",
+		name:{ "KOR":"Villager" }, fullName:{ "KOR":"Villager" }, img:"boss2", category:"첫상대",
 		condDesc:{ "KOR":`일반모드에서 <b>[${dictionary["마을사람"]["KOR"]}]</b>을 상대로 승리`,
 		"ENG":`Win against <b>[${dictionary["마을사람"]["ENG"]}]</b> in normal mode` },
 		look: { "KOR":"An inept-looking villager...?" },
 		logDesc: { "KOR":"An unemployed man from a small village.<br>Used to inflict great humiliation upon women who lose to such a pathetic individual.<br><br>He was hired while in the process of being enslaved after being captured for failing to pay his large gambling debts.<br>He excels at nothing, and is so appallingly bad at sex that victory through normal means is impossible.<br><br>He has been issued a prototype replica of a hypnosis artifact and given permission to use it freely during the duel." },
-		description: { "KOR":`\n                The champion is a weak-looking villager.<br>\n                A completely powerless commoner, standing there in shabby clothes with an awkward posture.<br>\n                No matter how you look at him, he seems far removed from the title of champion.<br>\n                <br>\n                When you first saw him, you assumed he was a referee or some other staff member.<br>\n                You just couldn't believe he was the undefeated champion.<br>\n                <br>\n                He lacks the gravitas and skilled movements typically felt from a strong fighter.<br>\n                His gaze, which blatantly traces your body, reveals a base desire, making him seem full of openings.<br>\n                You can't even begin to imagine a scenario where you would lose to him.<br>\n                <br>\n                <br>\n                As you stand there, greatly disappointed, he scratches the back of his head and speaks.<br>\n                He says there's something he wants to show you before the duel begins.<br>\n                He holds up a small, square stone tablet for you to see.<br>\n                <br>\n                Without suspicion, you look at it, and the tablet emits a purple light.<br>\n                A sudden flash sears into your mind, and you feel your thoughts go blank.<br>\n                What a dirty trick.<br>\n                You quickly try to gather your wits and organize your thoughts again.<br>\n                <br>\n                Right... you have a duty to serve the man before you, don't you...<br>\n                <br>\n                <br>\n                <b>Villager A has the ability to control and interfere with your actions.</b>\n            ` },
+		description: { "KOR":`\n                The champion is a weak-looking villager.<br>\n                A completely powerless commoner, standing there in shabby clothes with an awkward posture.<br>\n                No matter how you look at him, he seems far removed from the title of champion.<br>\n                <br>\n                When you first saw him, you assumed he was a referee or some other staff member.<br>\n                You just couldn't believe he was the undefeated champion.<br>\n                <br>\n                He lacks the gravitas and skilled movements typically felt from a strong fighter.<br>\n                His gaze, which blatantly traces your body, reveals a base desire, making him seem full of openings.<br>\n                You can't even begin to imagine a scenario where you would lose to him.<br>\n                <br>\n                <br>\n                As you stand there, greatly disappointed, he scratches the back of his head and speaks.<br>\n                He says there's something he wants to show you before the duel begins.<br>\n                He holds up a small, square stone tablet for you to see.<br>\n                <br>\n                Without suspicion, you look at it, and the tablet emits a purple light.<br>\n                A sudden flash sears into your mind, and you feel your thoughts go blank.<br>\n                What a dirty trick.<br>\n                You quickly try to gather your wits and organize your thoughts again.<br>\n                <br>\n                Right... you have a duty to serve the man before you, don't you...<br>\n                <br>\n                <br>\n                <b>Villager has the ability to control and interfere with your actions.</b>\n            ` },
         stats: {
             exciteL: 7,
             orgasmL: 3,
             specialties: {
                 KOR: [
-	                "카드를 사용하지 못하게 방해하기",
+	                "Card 사용하지 못하게 방해하기",
 	                "계획 망치기",
 	                "제대로 대응하지 못할 경우 큰 피해"
                 ],
@@ -987,7 +987,7 @@ const champList = {
 			],
 			"B2-SU-002":[
 				{cond:["and", {v1:"라운드", op:">=", v2:3}, {v1:"라운드", op:"<=", v2:5}], priority:5},
-				{cond:{v1:"라운드", op:"==", v2:"최대라운드"}, priority:-Infinity},
+				{cond:{v1:"라운드", op:"==", v2:"Max라운드"}, priority:-Infinity},
 			],
 			"B2-AT-004":[
 				{cond:{v1:"발정", op:"<", v2:"8"}, priority:-Infinity},
@@ -1215,7 +1215,7 @@ const champList = {
                 KOR: [
                 	"상대의 덱에 포자를 결속시키기",
                     "자극 외의 수단으로 흥분 증가시키기",
-                    "여러 장의 카드 사용하기"
+                    "여러 장의 card 사용하기"
                 ],
                 ENG: [
                 ]
@@ -1477,7 +1477,7 @@ const champList = {
             orgasmL: 3,
             specialties: {
                 KOR: [
-	                "카드를 사용하지 못하게 방해하기",
+	                "Card 사용하지 못하게 방해하기",
 	                "계획 망치기",
 	                "제대로 대응하지 못할 경우 큰 피해"
                 ],
@@ -1523,7 +1523,7 @@ const champList = {
 			],
 			"B2-SU-002":[
 				{cond:["and", {v1:"라운드", op:">=", v2:3}, {v1:"라운드", op:"<=", v2:5}], priority:5},
-				{cond:{v1:"라운드", op:"==", v2:"최대라운드"}, priority:-Infinity},
+				{cond:{v1:"라운드", op:"==", v2:"Max라운드"}, priority:-Infinity},
 			],
 			"B2-SU-004":[
 				{cond:true, priority:"상대덱.count(id, B2-PN-001+)"},
@@ -1727,7 +1727,7 @@ const champList = {
                 KOR: [
                 	"상대의 덱에 포자를 결속시키기",
                     "자극 외의 수단으로 흥분 증가시키기",
-                    "여러 장의 카드 사용하기"
+                    "여러 장의 card 사용하기"
                 ],
                 ENG: [
                 ]
@@ -1827,13 +1827,13 @@ const champList = {
 			"B7-AT-004":[
 				{cond:{v1:"젖음", op:">=", v2:"발정"}, priority:-100},
 				{cond:{v1:"플레이어.남은흥분", op:"<=", v2:"발정"}, priority:10},
-				{cond:{v1:"챔피언.기록.이번.이벤트.절정", op:">", v2:0}, priority:5}
+				{cond:{v1:"Champion.기록.이번.이벤트.절정", op:">", v2:0}, priority:5}
 			],
 			"B7-AT-005":[
 				{cond:true, priority:-1000},
 			],
 			"B7-SU-001":[
-				{cond:{v1:"챔피언.기록.이번.이벤트.흥분.증가", op:"==", v2:0}, priority:4},
+				{cond:{v1:"Champion.기록.이번.이벤트.흥분.증가", op:"==", v2:0}, priority:4},
 				{cond:{v1:"음란", op:">", v2:2}, priority:1}
 			],
 			"B7-SU-002":[
@@ -1946,7 +1946,7 @@ const champList = {
 	},
 	"bossC2":{
 		id:"bossC2",
-		name:{ "KOR":"Villager" }, fullName:{ "KOR":"Villager A" }, img:"boss2", category:"챌린지",
+		name:{ "KOR":"Villager" }, fullName:{ "KOR":"Villager" }, img:"boss2", category:"챌린지",
 		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["마을사람"]["KOR"]}]</b>을 상대로 승리`,
 		"ENG":`Win against <b>[${dictionary["마을사람"]["ENG"]}]</b> in challenge mode` },
 		look: { "KOR":"An ordinary man you've captured." },
@@ -2094,23 +2094,23 @@ const champList = {
 const endingList = {
 	"normal_lose_bg1":{
 		name:{ "KOR":"Low-Rank Combatant" }, endingId:"lose_bg1", img:"ending_lose_1", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["군인"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["군인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
 	},
 	"normal_lose_bg2":{
 		name:{ "KOR":"Pussy Pet" }, endingId:"lose_bg2", img:"ending_lose_2", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["엘리트"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["엘리트"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
 	},
 	"normal_lose_bg3":{
 		name:{ "KOR":"Display Figure" }, endingId:"lose_bg3", img:"ending_lose_3", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["연예인"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["연예인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
 	},
 	"normal_lose_bg4":{
 		name:{ "KOR":"Ritual Sacrifice" }, endingId:"lose_bg4", img:"ending_lose_4", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["종교인"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["종교인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
 	},
 	"normal_lose_bg5":{
 		name:{ "KOR":"Milking Farm Cow" }, endingId:"lose_bg5", img:"ending_lose_5", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["학자"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["학자"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
 	},
 	"normal_lose_bg6":{
 		name:{ "KOR":"Public Penance Fixture" }, endingId:"lose_bg6", img:"ending_lose_6", category:"노말패배엔딩",
@@ -2122,28 +2122,28 @@ const endingList = {
 	},
 	"normal_lose_bg8":{
 		name:{ "KOR":"Cum Dumpster" }, endingId:"lose_bg8", img:"ending_lose_8", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["용병"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["용병"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
 	},
 
 	"normal_win_bg1":{
 		name:{ "KOR":"Guard" }, endingId:"win_bg1", img:"ending_win_1", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["군인"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["군인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
 	},
 	"normal_win_bg2":{
 		name:{ "KOR":"Entertainment Prostitute" }, endingId:"win_bg2", img:"ending_win_2", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["엘리트"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["엘리트"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
 	},
 	"normal_win_bg3":{
 		name:{ "KOR":"PR Prostitute" }, endingId:"win_bg3", img:"ending_win_3", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["연예인"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["연예인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
 	},
 	"normal_win_bg4":{
 		name:{ "KOR":"Employee Welfare Facility" }, endingId:"win_bg4", img:"ending_win_4", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["종교인"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["종교인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
 	},
 	"normal_win_bg5":{
 		name:{ "KOR":"Research Staff" }, endingId:"win_bg5", img:"ending_win_5", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["학자"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["학자"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
 	},
 	"normal_win_bg6":{
 		name:{ "KOR":"Meat Doll" }, endingId:"win_bg6", img:"ending_win_6", category:"노말승리엔딩",
@@ -2155,29 +2155,29 @@ const endingList = {
 	},
 	"normal_win_bg8":{
 		name:{ "KOR":"Female Champion" }, endingId:"win_bg8", img:"ending_win_8", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["용병"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["용병"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
 	},
 
 
 	"hard_lose_bg1":{
 		name:{ "KOR":"Bodyguard Maid" }, endingId:"loseH_bg1", img:"endingH_lose_1", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["군인"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["군인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
 	},
 	"hard_lose_bg2":{
 		name:{ "KOR":"Noble's Spouse" }, endingId:"loseH_bg2", img:"endingH_lose_2", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["엘리트"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["엘리트"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
 	},
 	"hard_lose_bg3":{
 		name:{ "KOR":"AV Actress" }, endingId:"loseH_bg3", img:"endingH_lose_3", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["연예인"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["연예인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
 	},
 	"hard_lose_bg4":{
 		name:{ "KOR":"Lewd Saint" }, endingId:"loseH_bg4", img:"endingH_lose_4", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["종교인"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["종교인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
 	},
 	"hard_lose_bg5":{
 		name:{ "KOR":"Clinical Test Subject" }, endingId:"loseH_bg5", img:"endingH_lose_5", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["학자"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["학자"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
 	},
 	"hard_lose_bg6":{
 		name:{ "KOR":"Underworld Guild" }, endingId:"loseH_bg6", img:"endingH_lose_6", category:"하드패배엔딩",
@@ -2189,28 +2189,28 @@ const endingList = {
 	},
 	"hard_lose_bg8":{
 		name:{ "KOR":"Underground Fighter" }, endingId:"loseH_bg8", img:"endingH_lose_8", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["용병"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["용병"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
 	},
 
 	"hard_win_bg1":{
 		name:{ "KOR":"The Demon Lord Appears" }, endingId:"winH_bg1", img:"endingH_win_1", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["군인"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["군인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
 	},
 	"hard_win_bg2":{
 		name:{ "KOR":"Mass Reality Shift" }, endingId:"winH_bg2", img:"endingH_win_2", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["엘리트"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["엘리트"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
 	},
 	"hard_win_bg3":{
 		name:{ "KOR":"World Star" }, endingId:"winH_bg3", img:"endingH_win_3", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["연예인"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["연예인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
 	},
 	"hard_win_bg4":{
 		name:{ "KOR":"Emerging Cult" }, endingId:"winH_bg4", img:"endingH_win_4", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["종교인"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["종교인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
 	},
 	"hard_win_bg5":{
 		name:{ "KOR":"Stampede" }, endingId:"winH_bg5", img:"endingH_win_5", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["학자"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["학자"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
 	},
 	"hard_win_bg6":{
 		name:{ "KOR":"Queen of the Night" }, endingId:"winH_bg6", img:"endingH_win_6", category:"하드승리엔딩",
@@ -2222,7 +2222,7 @@ const endingList = {
 	},
 	"hard_win_bg8":{
 		name:{ "KOR":"As Desire Leads" }, endingId:"winH_bg8", img:"endingH_win_8", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["용병"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["용병"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
 	},
 
 	"morvainEnd":{
@@ -2862,29 +2862,29 @@ const customStructure = {
         ],
     },
     "get": {
-        "label": "카드 획득",
+        "label": "card 획득",
         "fields": [
             {
             	"id": "value",
-                "label": "카드",
+                "label": "card",
                 "type": "select",
                 "options": [
-		            { value: "all", text: "모든 카드" },
-		            { value: "attack", text: "공격 카드" },
-		            { value: "support", text: "보조 카드" },
-		            { value: "neutral", text: "Neutral 카드" },
-		            { value: "class", text: "직업 카드" },
-		            { value: "normal", text: "일반 카드" },
-		            { value: "expert", text: "숙련 카드" },
-		            { value: "ultimate", text: "궁극 카드" },
-		            { value: "penalty", text: "Penalty 카드" },
+		            { value: "all", text: "All card" },
+		            { value: "attack", text: "공격 card" },
+		            { value: "support", text: "보조 card" },
+		            { value: "neutral", text: "Neutral card" },
+		            { value: "class", text: "직업 card" },
+		            { value: "normal", text: "일반 card" },
+		            { value: "expert", text: "숙련 card" },
+		            { value: "ultimate", text: "궁극 card" },
+		            { value: "penalty", text: "Penalty card" },
 		            { value: "self", text: "복사본" },
             		{ value: "nelson", text: "조르기", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
             		{ value: "manufacture", text: "Crafted", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
             		{ value: "instantspell", text: "즉발 마술", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
             		{ value: "magiccircle", text: "마도진", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
-            		{ value: "jewel", text: "보석", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
-            		{ value: "essence", text: "정수", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} },
+            		{ value: "jewel", text: "Gem", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            		{ value: "essence", text: "Essence", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} },
                 ],
                 "width": 50,
                 "subfields":[
@@ -2932,15 +2932,15 @@ const customStructure = {
 		                "type": "select",
 		                "options": [
 				            { value: "essence", text: "무작위" },
-				            { value: "essence1", text: "생명의 정수" },
-				            { value: "essence2", text: "가시의 정수" },
-				            { value: "essence3", text: "그림자의 정수" },
-				            { value: "essence4", text: "각성의 정수" },
-				            { value: "essence5", text: "평온의 정수" },
-				            { value: "essence6", text: "메아리의 정수" },
-				            { value: "essence7", text: "부동의 정수" },
-				            { value: "essence8", text: "신속의 정수" },
-				            { value: "essence9", text: "흡혈의 정수" }
+				            { value: "essence1", text: "생명의 Essence" },
+				            { value: "essence2", text: "가시의 Essence" },
+				            { value: "essence3", text: "그림자의 Essence" },
+				            { value: "essence4", text: "각성의 Essence" },
+				            { value: "essence5", text: "평온의 Essence" },
+				            { value: "essence6", text: "메아리의 Essence" },
+				            { value: "essence7", text: "부동의 Essence" },
+				            { value: "essence8", text: "신속의 Essence" },
+				            { value: "essence9", text: "흡혈의 Essence" }
 		                ],
 		                "conditions":["essence"],
 		                "width": 50
@@ -2980,7 +2980,7 @@ const customStructure = {
         ],
     },
     "maxUse": {
-        "label": "카드 획득",
+        "label": "card 획득",
         "fields": []
     },
     "changeLust": {
@@ -3054,18 +3054,18 @@ const customStructure = {
         "fields": [
             {
             	"id": "card",
-                "label": "카드",
+                "label": "card",
                 "type": "select",
                 "options": [
-		            { value: "all", text: "모든 카드" },
-		            { value: "attack", text: "공격 카드" },
-		            { value: "support", text: "보조 카드" },
-		            { value: "neutral", text: "Neutral 카드" },
-		            { value: "class", text: "직업 카드" },
-		            { value: "normal", text: "일반 카드" },
-		            { value: "expert", text: "숙련 카드" },
-		            { value: "ultimate", text: "궁극 카드" },
-		            { value: "penalty", text: "Penalty 카드" }
+		            { value: "all", text: "All card" },
+		            { value: "attack", text: "공격 card" },
+		            { value: "support", text: "보조 card" },
+		            { value: "neutral", text: "Neutral card" },
+		            { value: "class", text: "직업 card" },
+		            { value: "normal", text: "일반 card" },
+		            { value: "expert", text: "숙련 card" },
+		            { value: "ultimate", text: "궁극 card" },
+		            { value: "penalty", text: "Penalty card" }
                 ],
                 "width": 50,
             },
@@ -3085,7 +3085,7 @@ const customStructure = {
 		                "type": "select",
 		                "options": [
 				            { value: "count", text: "수량" },
-				            { value: "max", text: "최대" },
+				            { value: "max", text: "Max" },
 				            { value: "all", text: "전부" }
 		                ],
 		                "conditions":["choice"],
@@ -3190,11 +3190,11 @@ const customStructure = {
                 "label": "소재",
                 "type": "select",
                 "options": [
-		            { value: "all", text: "모든 카드" },
-		            { value: "neutral", text: "Neutral 카드" },
-		            { value: "magiccircle", text: "마도진 카드" },
-		            { value: "jewel", text: "보석 카드" },
-		            { value: "penalty", text: "Penalty 카드" }
+		            { value: "all", text: "All card" },
+		            { value: "neutral", text: "Neutral card" },
+		            { value: "magiccircle", text: "마도진 card" },
+		            { value: "jewel", text: "Gem card" },
+		            { value: "penalty", text: "Penalty card" }
                 ],
                 "width": 50,
                 "subfields":[
@@ -3203,7 +3203,7 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-				            { value: "magiccircle", text: "모든" },
+				            { value: "magiccircle", text: "All" },
 				            { value: "red", text: "진홍색" },
 				            { value: "blue", text: "담청색" },
 				            { value: "yellow", text: "황금색" },
@@ -3230,7 +3230,7 @@ const customStructure = {
 		                "type": "select",
 		                "options": [
 				            { value: "count", text: "수량" },
-				            { value: "max", text: "최대" },
+				            { value: "max", text: "Max" },
 				            { value: "all", text: "전부" }
 		                ],
 		                "conditions":["choice"],
@@ -3265,7 +3265,7 @@ const customStructure = {
                 "options": [
 		            { value: "chantspell", text: "영창 마술" },
 		            { value: "focusedspell", text: "집중 마술" },
-		            { value: "magiccircle", text: "마도진 카드" }
+		            { value: "magiccircle", text: "마도진 card" }
                 ],
                 "width": 50,
                 "subfields":[
@@ -3439,11 +3439,11 @@ const customStructure = {
                 "type": "select",
                 "options": [
 		            { value: "mix", text: "혼합" },
-		            { value: "essence", text: "정수 카드" },
-		            { value: "all", text: "모든 카드" },
-		            { value: "attack", text: "공격 카드" },
-		            { value: "neutral", text: "Neutral 카드" },
-		            { value: "penalty", text: "Penalty 카드" },
+		            { value: "essence", text: "Essence card" },
+		            { value: "all", text: "All card" },
+		            { value: "attack", text: "공격 card" },
+		            { value: "neutral", text: "Neutral card" },
+		            { value: "penalty", text: "Penalty card" },
                 ],
                 "width": 50,
                 "subfields":[
@@ -3453,7 +3453,7 @@ const customStructure = {
 		                "type": "select",
 		                "options": [
 				            { value: "count", text: "수량" },
-				            { value: "max", text: "최대" }
+				            { value: "max", text: "Max" }
 		                ],
 		                "width": 50,
 		                "subfields":[
@@ -3613,22 +3613,22 @@ const variableData = [
         "label": "",
         "type": "select",
         "options": [
-            { value: "all", text: "모든 카드" },
-            { value: "attack", text: "공격 카드" },
-            { value: "support", text: "보조 카드" },
-            { value: "neutral", text: "Neutral 카드" },
-            { value: "class", text: "직업 카드" },
-            { value: "normal", text: "일반 카드" },
-            { value: "expert", text: "숙련 카드" },
-            { value: "ultimate", text: "궁극 카드" },
-            { value: "penalty", text: "Penalty 카드" },
-            { value: "created", text: "생성된 카드", exclude:["get"] },
+            { value: "all", text: "All card" },
+            { value: "attack", text: "공격 card" },
+            { value: "support", text: "보조 card" },
+            { value: "neutral", text: "Neutral card" },
+            { value: "class", text: "직업 card" },
+            { value: "normal", text: "일반 card" },
+            { value: "expert", text: "숙련 card" },
+            { value: "ultimate", text: "궁극 card" },
+            { value: "penalty", text: "Penalty card" },
+            { value: "created", text: "생성된 card", exclude:["get"] },
             { value: "nelson", text: "조르기", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
-            { value: "spell", text: "마술 카드", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
-            { value: "magiccircle", text: "마도진 카드", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
-            { value: "jewel", text: "보석 카드", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
-            { value: "essence", text: "정수 카드", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} },
-            { value: "combination", text: "결합물 카드", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} }
+            { value: "spell", text: "마술 card", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            { value: "magiccircle", text: "마도진 card", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            { value: "jewel", text: "Gem card", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            { value: "essence", text: "Essence card", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} },
+            { value: "combination", text: "결합물 card", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} }
         ],
         "conditions": ["deck", "use", "get", "discard"],
         "width": 33,
@@ -3720,7 +3720,7 @@ const keywordDict = {
         name: { "KOR":"Stimulation" },
         desc: { "KOR":"Increases Excitement equal to the target's Lewdness if they are a Champion, or Lust if they are a Challenger." }
     },
-	"추가카드": {
+	"추가card": {
         name: { "KOR":"Additional Card" },
         desc: { "KOR":"You can play an additional card this round." }
     },
@@ -3752,7 +3752,7 @@ const keywordDict = {
         name: { "KOR":"Desire (n)" },
         desc: { "KOR":"Whenever Excitement increases, gain an equal amount of Desire.<br>If you have n or more Desire, consume that much to gain the following effect." }
     },
-	"욕망최대n": {
+	"욕망Maxn": {
         name: { "KOR":"Desire (up to n)" },
         desc: { "KOR":"Whenever Excitement increases, gain an equal amount of Desire.<br>Consume all your Desire, up to a maximum of n, to gain the following effect." }
     },
@@ -3808,7 +3808,7 @@ const keywordDict = {
         name: { "KOR":"Corruption (n or less)" },
         desc: { "KOR":"Corruption increases by 1 each round.<br>If your Corruption is n or less, gain the following effect." }
     },
-	"정수": {
+	"Essence": {
         name: { "KOR":"Essence" },
         desc: { "KOR":"If this card is used as material for a Combination, this effect is added to the resulting card." }
     },
