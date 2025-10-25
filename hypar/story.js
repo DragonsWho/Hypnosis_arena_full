@@ -1,14 +1,14 @@
 const storyProfile = {
 	"profile": {
 		"군인": {
-			"엘도리아인": {
+			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Knight of the Queen's Guard<br>
 					- A member of the "Queen's Sword," the royal knightly order, who protects the kingdom.<br>
 					- A warrior so powerful she can take on an entire enemy unit by herself, renowned as one of the strongest knights in the kingdom.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `
 					<b>Background:</b> Police Officer<br>
 					- An officer of the Sylvanian Federation Police, tasked with upholding justice and maintaining law and order.<br>
@@ -22,7 +22,7 @@ const storyProfile = {
 					- Despite her slum origins, her exceptional combat skills earned her the position of the family's bodyguard, and she has protected her master on numerous occasions.
 				`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Background:</b> Watchwoman<br>
 					- A watchwoman who guards her tribe, known for her strong loyalty and protective instincts.<br>
@@ -31,14 +31,14 @@ const storyProfile = {
 			}
 		}, // <--- ЗАПЯТАЯ
 		"엘리트": {
-			"엘도리아인": {
+			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Daughter of a Noble Family<br>
 					- The daughter of a prestigious noble family, she is a free-spirited young lady who enjoys life as an adventurer.<br>
 					- With daring skills unbefitting of a noble, she has achieved success in many adventures, earning a reputation comparable to that of a veteran adventurer.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `
 					<b>Background:</b> Member of the Clan Council<br>
 					- A member of the Sylvanian Federation's Clan Council, an elite who has experience as both an adventurer and a politician.<br>
@@ -48,7 +48,7 @@ const storyProfile = {
 			"Halfling": {
 				"KOR": `(No Halfling elite)`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Background:</b> Tribal Leader<br>
 					- As the leader of her tribe, she upholds generations of tradition and wisdom, earning the absolute trust of her people through her strength and composure.<br>
@@ -57,14 +57,14 @@ const storyProfile = {
 			},
 		}, // <--- ЗАПЯТАЯ
 		"연예인": {
-			"엘도리아인": {
+			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Hero<br>
 					- A righteous adventurer who wanders the world, lending a hand to those in need.<br>
 					- With great combat prowess and courage, she has saved countless people and is a well-known celebrity, called a hero by the masses.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `
 					<b>Background:</b> Model<br>
 					- An adventurer who works as the lead model for a merchant guild, receiving support through a contract.<br>
@@ -78,7 +78,7 @@ const storyProfile = {
 					- An adventurous girl who has proven her skills as a powerful adventurer, going beyond the typically adorable image of a Halfling.
 				`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Background:</b> Arena Champion<br>
 					- An arena champion who draws cheers from the crowd with her flashy performances and overwhelming skill.<br>
@@ -87,14 +87,14 @@ const storyProfile = {
 			},
 		}, // <--- ЗАПЯТАЯ
 		"종교인": {
-			"엘도리아인": {
+			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Saint Candidate<br>
 					- A saint candidate of the Leia Sect, possessing divine power and pure morality.<br>
 					- A cleric who freely wields holy magic, using healing and barriers to act as a beacon of light on the battlefield.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `(No Sylvanian religious figures)`,
 			},
 			"Halfling": {
@@ -104,7 +104,7 @@ const storyProfile = {
 					- She operates in secret for the freedom of the oppressed, a skilled individual who has broken many bonds and eliminated obstacles by borrowing Morvain's power.
 				`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Background:</b> Ascetic of the Golden Bough Faith<br>
 					- A faithful ascetic of the Golden Bough Faith, a cleric who spreads the teachings of Lady Lea, the incarnation of the forest.<br>
@@ -113,14 +113,14 @@ const storyProfile = {
 			},
 		}, // <--- ЗАПЯТАЯ
 		"학자": {
-			"엘도리아인": {
+			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Professor at Lapis Lazuli Academy<br>
 					- The youngest professor at Lapis Lazuli Academy, a scholar with a meticulous approach to academics and magical research.<br>
 					- A genius who has made unparalleled achievements in the field of combat enhancement magic, she seeks to test the limits of magic by applying her research in actual combat.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `
 					<b>Background:</b> Researcher at the Divine Tree Academy<br>
 					- A researcher at the Divine Tree Academy, a Sylvanian scholar who has accumulated academic achievements at the continent's top research facility.<br>
@@ -134,7 +134,7 @@ const storyProfile = {
 					- A skilled adventurer who has gained strong combat abilities through repeated practical experience in dungeons to fund her research.
 				`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Background:</b> Wandering Sage<br>
 					- A wandering sage who travels the world in search of knowledge and truth.<br>
@@ -142,15 +142,15 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"범죄자": {
-			"엘도리아인": {
+		"Rogue": {
+			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Bandit Leader<br>
 					- The sole female leader of a cruel and notorious band of robbers.<br>
 					- A villain with skills so powerful that she is remembered as a disaster by the kingdom's nobles and merchants, leading her gang with ruthless judgment and bold actions.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `
 					<b>Background:</b> Member of the Forbidden Arts Society<br>
 					- A member of the Forbidden Arts Society, wanted in the Sylvanian Federation, who is engrossed in forbidden research.<br>
@@ -164,7 +164,7 @@ const storyProfile = {
 					- A revolutionary who has become a symbol of fear and terror to supremacists by successfully carrying out numerous bombing and assassination missions with her strong convictions and bold actions.
 				`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Background:</b> Exiled Marauder<br>
 					- A marauder who roams the wastelands, an outcast abandoned by law and community.<br>
@@ -172,15 +172,15 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"상인": {
-			"엘도리아인": {
+		"Merchant": {
+			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Executive of the Azurewave Merchants' Guild<br>
 					- An influential executive of the Azurewave Merchants' Guild, which controls the flow of the kingdom's economy.<br>
 					- As a former adventurer, she possesses sharp judgment and outstanding combat skills, a seasoned merchant who has maximized the guild's profits with her cool-headed business acumen.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `
 					<b>Background:</b> Owner of the Evergreen Garden<br>
 					- The owner of the legendary antique shop 'Evergreen Garden,' and an adventurer who travels the world in search of forgotten treasures.<br>
@@ -194,7 +194,7 @@ const storyProfile = {
 					- A powerful individual who not only possesses delicate dexterity but also outstanding combat skills, recognized for her abilities as an adventurer.
 				`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Background:</b> Traveling Merchant<br>
 					- A traveling merchant who wanders the continent, a peddler who appears anywhere to trade various goods and stories.<br>
@@ -203,14 +203,14 @@ const storyProfile = {
 			},
 		}, // <--- ЗАПЯТАЯ
 		"용병": {
-			"엘도리아인": {
+			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Vengeful Mercenary<br>
 					- A wandering mercenary who takes on various missions, a vengeful spirit who roams the battlefields to punish the enemy who destroyed her past.<br>
 					- She never refuses a dangerous request and is known as a fearless and formidable fighter with excellent combat skills and ruthless judgment.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `
 					<b>Background:</b> Free-spirited Mercenary<br>
 					- A wandering mercenary who roams the continent in pursuit of unrestrained freedom.<br>
@@ -224,7 +224,7 @@ const storyProfile = {
 					- A veteran with strong combat power befitting her high price, she completes missions with cool-headed judgment and meticulous calculation.
 				`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Background:</b> Battle-crazed Mercenary<br>
 					- A wandering mercenary who roams the continent seeking the thrill and excitement of battle.<br>
@@ -235,7 +235,7 @@ const storyProfile = {
 	}, // <--- ЗАПЯТАЯ (отделяет "profile" от "profile2")
 	"profile2": {
 		"군인": {
-			"엘도리아인": {
+			"Eldorian": {
 				"KOR": `
 					<b>Product Overview:</b> Former Knight of the Queen's Guard<br>
 					- Once known as the kingdom's strongest knight, this bitch used to pledge her loyalty to the Queen.<br>
@@ -243,7 +243,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to pledge loyalty to a man's cock.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `
 					<b>Product Overview:</b> Former Police Officer<br>
 					- A Sylvanian pig who constantly interfered with the criminal organization's profits.<br>
@@ -259,7 +259,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to pledge loyalty to a man's cock.
 				`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Product Overview:</b> Former Watchwoman<br>
 					- A guard dog who used to protect the Tribe.<br>
@@ -269,7 +269,7 @@ const storyProfile = {
 			},
 		}, // <--- ЗАПЯТАЯ
 		"엘리트": {
-			"엘도리아인": {
+			"Eldorian": {
 				"KOR": `
 					<b>Product Overview:</b> Former Daughter of a Noble Family<br>
 					- A naive young lady who made a name for herself as an adventurer.<br>
@@ -277,7 +277,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to feel an obligation to serve men.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `
 					<b>Product Overview:</b> Former Member of the Clan Council<br>
 					- A Sylvanian politician who showed strong hostility towards the Eldoria Kingdom.<br>
@@ -288,7 +288,7 @@ const storyProfile = {
 			"Halfling": {
 				"KOR": `(No Halfling elite)`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Product Overview:</b> Former Tribal Leader<br>
 					- A renowned chief who used to lead the Tribe.<br>
@@ -298,7 +298,7 @@ const storyProfile = {
 			},
 		}, // <--- ЗАПЯТАЯ
 		"연예인": {
-			"엘도리아인": {
+			"Eldorian": {
 				"KOR": `
 					<b>Product Overview:</b> Former Hero<br>
 					- A meddlesome brat who interfered with the organization's profits.<br>
@@ -306,7 +306,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to get excited when used as a cumdump.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `
 					<b>Product Overview:</b> Former Model<br>
 					- A top-quality female with an exceptionally fine appearance.<br>
@@ -322,7 +322,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to get excited when used as a cumdump.
 				`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Product Overview:</b> Former Arena Champion<br>
 					- A highly popular champion from a rival business.<br>
@@ -332,7 +332,7 @@ const storyProfile = {
 			},
 		}, // <--- ЗАПЯТАЯ
 		"종교인": {
-			"엘도리아인": {
+			"Eldorian": {
 				"KOR": `
 					<b>Product Overview:</b> Former Saint Candidate<br>
 					- A naive cleric with her head in the clouds.<br>
@@ -340,7 +340,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to worship a man's cock.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `(No Sylvanian religious figures)`,
 			},
 			"Halfling": {
@@ -351,7 +351,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to worship a man's cock.
 				`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Product Overview:</b> Former Ascetic of the Golden Bough Faith<br>
 					- An annoying zealot who interfered with underworld profits in the name of 'purification.'<br>
@@ -361,7 +361,7 @@ const storyProfile = {
 			},
 		}, // <--- ЗАПЯТАЯ
 		"학자": {
-			"엘도리아인": {
+			"Eldorian": {
 				"KOR": `
 					<b>Product Overview:</b> Former Professor at Lapis Lazuli Academy<br>
 					- A female with an arrogant attitude who was called a genius.<br>
@@ -369,7 +369,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to research the pleasures of sexual intercourse.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `
 					<b>Product Overview:</b> Former Researcher at the Divine Tree Academy<br>
 					- An arrogant Sylvanian scholar who treated Eldorians like lab rats.<br>
@@ -385,7 +385,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to research the pleasures of sexual intercourse.
 				`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Product Overview:</b> Former Wandering Sage<br>
 					- A dangerous person who suddenly appeared and discovered the existence of the arena.<br>
@@ -394,8 +394,8 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"범죄자": {
-			"엘도리아인": {
+		"Rogue": {
+			"Eldorian": {
 				"KOR": `
 					<b>Product Overview:</b> Former Bandit Leader<br>
 					- An insolent criminal who dared to touch nobles and the wealthy.<br>
@@ -403,7 +403,7 @@ const storyProfile = {
 					- Currently being trained as a masochistic fleshlight, brainwashed to get excited by sadistic acts.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `
 					<b>Product Overview:</b> Former Member of the Forbidden Arts Society<br>
 					- A weirdo who stumbled upon the arena and waltzed right in.<br>
@@ -419,7 +419,7 @@ const storyProfile = {
 					- Currently being trained as a masochistic fleshlight, brainwashed to get excited by sadistic acts.
 				`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Product Overview:</b> Former Exiled Marauder<br>
 					- A notorious criminal with a bounty on her head.<br>
@@ -428,8 +428,8 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"상인": {
-			"엘도리아인": {
+		"Merchant": {
+			"Eldorian": {
 				"KOR": `
 					<b>Product Overview:</b> Former Executive of the Azurewave Merchants' Guild<br>
 					- An influential executive of a massive merchant guild.<br>
@@ -437,7 +437,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to desire receiving semen.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `
 					<b>Product Overview:</b> Former Owner of the Evergreen Garden<br>
 					- The owner of a highly valuable shop.<br>
@@ -453,7 +453,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to desire receiving semen.
 				`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Product Overview:</b> Former Traveling Merchant<br>
 					- A merchant who was causing trouble by carelessly spreading rumors about the arena.<br>
@@ -463,7 +463,7 @@ const storyProfile = {
 			},
 		}, // <--- ЗАПЯТАЯ
 		"용병": {
-			"엘도리아인": {
+			"Eldorian": {
 				"KOR": `
 					<b>Background:</b> Vengeful Mercenary<br>
 					- A dangerous element who dared to target the arena's clients.<br>
@@ -471,7 +471,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to become addicted to the pleasure of sex duels.
 				`,
 			},
-			"실바니": {
+			"Silvani": {
 				"KOR": `
 					<b>Background:</b> Free-spirited Mercenary<br>
 					- A wandering mercenary who lived a debauched life of one-night stands and refused requests from nobles.<br>
@@ -487,7 +487,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to become addicted to the pleasure of sex duels.
 				`,
 			},
-			"트라이브": {
+			"Beastfolk": {
 				"KOR": `
 					<b>Background:</b> Battle-crazed Mercenary<br>
 					- A maniac obsessed with fighting.<br>
@@ -532,14 +532,14 @@ const storyProfile = {
 				- 
 			`,
 		}, // <--- ЗАПЯТАЯ
-		"범죄자": {
+		"Rogue": {
 			"KOR": `
 				<b>Background:</b> <br>
 				- <br>
 				- 
 			`,
 		}, // <--- ЗАПЯТАЯ
-		"상인": {
+		"Merchant": {
 			"KOR": `
 				<b>Background:</b> <br>
 				- <br>
@@ -559,7 +559,7 @@ const storyProfile = {
 //############################################################################################################################################################################################
 
 const storyText = {
-	//엘도리아인 군인 (Eldorian Soldier)
+	//Eldorian 군인 (Eldorian Soldier)
 	"intro_El_bg1": [{
 		cond: true,
 		type: "text",
@@ -862,7 +862,7 @@ const storyText = {
 
 
 
-//실바니 군인 (Sylvanian Soldier/Police Officer)
+//Silvani 군인 (Sylvanian Soldier/Police Officer)
 	"intro_Sy_bg1": [{
 		cond: true,
 		type: "text",
@@ -1461,7 +1461,7 @@ const storyText = {
 	}, ],
 
  
-//트라이브 군인 (Tribe Soldier/Watchwoman)
+//Beastfolk 군인 (Tribe Soldier/Watchwoman)
 	"intro_Tr_bg1": [{
 		cond: true,
 		type: "text",
@@ -1758,7 +1758,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//엘도리아인 엘리트 (Eldorian Elite)
+//Eldorian 엘리트 (Eldorian Elite)
 	"intro_El_bg2": [{
 		cond: true,
 		type: "text",
@@ -2057,7 +2057,7 @@ const storyText = {
 
 	 
 
-//실바니 엘리트 (Sylvanian Elite)
+//Silvani 엘리트 (Sylvanian Elite)
 	"intro_Sy_bg2": [{
 		cond: true,
 		type: "text",
@@ -2351,7 +2351,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//트라이브 엘리트 (Tribe Elite/Chieftain)
+//Beastfolk 엘리트 (Tribe Elite/Chieftain)
 	"intro_Tr_bg2": [{
 		cond: true,
 		type: "text",
@@ -2648,7 +2648,7 @@ const storyText = {
 
 
  
-//엘도리아인 연예인 (Eldorian Celebrity/Hero)
+//Eldorian 연예인 (Eldorian Celebrity/Hero)
 	"intro_El_bg3": [{
 		cond: true,
 		type: "text",
@@ -2942,7 +2942,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//실바니 연예인 (Sylvanian Celebrity/Model)
+//Silvani 연예인 (Sylvanian Celebrity/Model)
 	"intro_Sy_bg3": [{
 		cond: true,
 		type: "text",
@@ -3618,7 +3618,7 @@ const storyText = {
 
 
 
-//트라이브 연예인 (Tribe Celebrity/Arena Champion)
+//Beastfolk 연예인 (Tribe Celebrity/Arena Champion)
 	"intro_Tr_bg3": [{
 		cond: true,
 		type: "text",
@@ -3910,7 +3910,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//엘도리아인 종교인 (Eldorian Religious)
+//Eldorian 종교인 (Eldorian Religious)
 	"intro_El_bg4": [{
 		cond: true,
 		type: "text",
@@ -4524,7 +4524,7 @@ const storyText = {
 
 
 
-//트라이브 종교인 (Tribe Religious)
+//Beastfolk 종교인 (Tribe Religious)
 	"intro_Tr_bg4": [{
 		cond: true,
 		type: "text",
@@ -4816,7 +4816,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//엘도리아인 학자 (Eldorian Scholar)
+//Eldorian 학자 (Eldorian Scholar)
 	"intro_El_bg5": [{
 		cond: true,
 		type: "text",
@@ -5108,7 +5108,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//실바니 학자 (Sylvanian Scholar)
+//Silvani 학자 (Sylvanian Scholar)
 	"intro_Sy_bg5": [{
 		cond: true,
 		type: "text",
@@ -5721,7 +5721,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//트라이브 학자 (Tribe Scholar/Wandering Sage)
+//Beastfolk 학자 (Tribe Scholar/Wandering Sage)
 	"intro_Tr_bg5": [{
 		cond: true,
 		type: "text",
@@ -6011,7 +6011,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//엘도리아인 범죄자 (Eldorian Criminal/Bandit Leader)
+//Eldorian Rogue (Eldorian Criminal/Bandit Leader)
 	"intro_El_bg6": [{
 		cond: true,
 		type: "text",
@@ -6321,7 +6321,7 @@ const storyText = {
 
 
 	
-//실바니 범죄자 (Sylvanian Criminal)
+//Silvani Rogue (Sylvanian Criminal)
 	"intro_Sy_bg6": [{
 		cond: true,
 		type: "text",
@@ -6609,7 +6609,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Halfling 범죄자 (Halfling Criminal)
+//Halfling Rogue (Halfling Criminal)
 	"intro_Ha_bg6": [{
 		cond: true,
 		type: "text",
@@ -6918,7 +6918,7 @@ const storyText = {
 
 
 
-//트라이브 범죄자 (Tribe Criminal)
+//Beastfolk Rogue (Tribe Criminal)
 "intro_Tr_bg6": [{
 	cond: true,
 	type: "text",
@@ -7232,7 +7232,7 @@ const storyText = {
 
 
 
-//엘도리아인 상인 (Eldorian Merchant)
+//Eldorian Merchant (Eldorian Merchant)
 "intro_El_bg7": [{
 	cond: true,
 	type: "text",
@@ -7554,7 +7554,7 @@ const storyText = {
 
 
 
- //실바니 상인 (Sylvanian Merchant)
+ //Silvani Merchant (Sylvanian Merchant)
 "intro_Sy_bg7": [{
 	cond: true,
 	type: "text",
@@ -7848,7 +7848,7 @@ const storyText = {
 			`,
 }, ], // <--- ЗАПЯТАЯ
 
-//Halfling 상인 (Halfling Merchant)
+//Halfling Merchant (Halfling Merchant)
 "intro_Ha_bg7": [{
 	cond: true,
 	type: "text",
@@ -8153,7 +8153,7 @@ const storyText = {
 
 
 
-//트라이브 상인 (Tribe Merchant)
+//Beastfolk Merchant (Tribe Merchant)
 "intro_Tr_bg7": [{
 	cond: true,
 	type: "text",
@@ -8449,7 +8449,7 @@ const storyText = {
 			`,
 }, ], // <--- ЗАПЯТАЯ
 
-//엘도리아인 용병 (Eldorian Mercenary)
+//Eldorian 용병 (Eldorian Mercenary)
 "intro_El_bg8": [{
 	cond: true,
 	type: "text",
@@ -8748,7 +8748,7 @@ const storyText = {
 			`,
 }, ], // <--- ЗАПЯТАЯ
 
-//실바니 용병 (Sylvanian Mercenary)
+//Silvani 용병 (Sylvanian Mercenary)
 "intro_Sy_bg8": [{
 	cond: true,
 	type: "text",
@@ -9332,7 +9332,7 @@ const storyText = {
 			`,
 }, ], // <--- ЗАПЯТАЯ
 
-//트라이브 용병 (Tribe Mercenary)
+//Beastfolk 용병 (Tribe Mercenary)
 "intro_Tr_bg8": [{
 	cond: true,
 	type: "text",

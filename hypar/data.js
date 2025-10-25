@@ -4,16 +4,16 @@ const dictionary = {
 	"이름":{ "KOR":"Name" },
 	"외모":{ "KOR":"Appearance" },
 	"종족":{ "KOR":"Race" },
-	"엘도리아인":{ "KOR":"Eldorian" },
-	"실바니":{ "KOR":"Sylvani" },
+	"Eldorian":{ "KOR":"Eldorian" },
+	"Silvani":{ "KOR":"Sylvani" },
 	"Halfling":{ "KOR":"Halfling" },
-	"트라이브":{ "KOR":"Tribe" },
+	"Beastfolk":{ "KOR":"Tribe" },
 
 	"namingRule":{
-		"엘도리아인":{ "KOR":"In the Kingdom of Eldoria, centered around the royal family and nobility, a family name carries great weight. An Eldorian's full name consists of their given name followed by their family name.<br>However, not all families possess a grand and noble lineage; the family names of commoners are often casually invented or non-existent.<br>Famous family names include Dawnbringer, Ezerwave, Verdantrock, Starfrost, Rosethorn, and the Eldorian royal family itself." },
-		"실바니":{ "KOR":"Sylvani society is built upon clans, and they place great importance on preserving the history and traditions of each clan. The single character following a Sylvani's name is their surname, indicating which clan they belong to.<br>In Sylvani culture, the surname traditionally comes before the given name. However, when interacting with outsiders, they adopt the naming order of the common tongue.<br>Well-known clans include In, Shin, Ye, Ji, Jeong, Seon, and Jin. Given the reclusive nature of the Sylvani, there may be other clans not yet known to the outside world." },
+		"Eldorian":{ "KOR":"In the Kingdom of Eldoria, centered around the royal family and nobility, a family name carries great weight. An Eldorian's full name consists of their given name followed by their family name.<br>However, not all families possess a grand and noble lineage; the family names of commoners are often casually invented or non-existent.<br>Famous family names include Dawnbringer, Ezerwave, Verdantrock, Starfrost, Rosethorn, and the Eldorian royal family itself." },
+		"Silvani":{ "KOR":"Sylvani society is built upon clans, and they place great importance on preserving the history and traditions of each clan. The single character following a Sylvani's name is their surname, indicating which clan they belong to.<br>In Sylvani culture, the surname traditionally comes before the given name. However, when interacting with outsiders, they adopt the naming order of the common tongue.<br>Well-known clans include In, Shin, Ye, Ji, Jeong, Seon, and Jin. Given the reclusive nature of the Sylvani, there may be other clans not yet known to the outside world." },
 		"Halfling":{ "KOR":"The Hafmen lack the concept of surnames. This is due to their culture of viewing their entire race as one large family, and their short history since being liberated from slavery.<br>Their names are simply formed by combining two to four letters. This is not a strict rule, so names can be created in various other ways.<br>Their short lifespans and limited travel have prevented any issues so far, but as their lives stabilize, encounters with individuals sharing the same name are becoming more frequent." },
-		"트라이브":{ "KOR":"The Tribe indicate their origin by prefixing their given name with their tribal name. Even within the same race, cultures can vary drastically between tribes, so it is always wise to confirm a person's tribe when dealing with them.<br>Despite their cultural diversity, they share a common naming convention: most male names follow the pattern 'AAloB', and female names 'AAliB'.<br>Famous tribal names include Redspear, Thundermaw, Silverleaf, and Goldenstem. With countless tribes in existence, you may encounter new ones at any time." },
+		"Beastfolk":{ "KOR":"The Tribe indicate their origin by prefixing their given name with their tribal name. Even within the same race, cultures can vary drastically between tribes, so it is always wise to confirm a person's tribe when dealing with them.<br>Despite their cultural diversity, they share a common naming convention: most male names follow the pattern 'AAloB', and female names 'AAliB'.<br>Famous tribal names include Redspear, Thundermaw, Silverleaf, and Goldenstem. With countless tribes in existence, you may encounter new ones at any time." },
 	},
 
 	"얼굴":{ "KOR":"Face" },
@@ -67,20 +67,20 @@ const dictionary = {
     "무지":{ "KOR":"Naive" },
     "적극":{ "KOR":"Proactive" },
 
-	"중립":{ "KOR":"Neutral" },
-	"중립공격":{ "KOR":"Neutral Attack" },
-	"전사":{ "KOR":"Warrior" },
-	"암살자":{ "KOR":"Assassin" },
-	"마술사":{ "KOR":"Magician" },
-	"치유사":{ "KOR":"Healer" },
+	"Neutral":{ "KOR":"Neutral" },
+	"Neutral공격":{ "KOR":"Neutral Attack" },
+	"Warrior":{ "KOR":"Warrior" },
+	"Assassin":{ "KOR":"Assassin" },
+	"Magician":{ "KOR":"Magician" },
+	"Healer":{ "KOR":"Healer" },
 
 	"군인":{ "KOR":"Soldier" },
 	"엘리트":{ "KOR":"Elite" },
 	"연예인":{ "KOR":"Entertainer" },
 	"종교인":{ "KOR":"Clergy" },
 	"학자":{ "KOR":"Scholar" },
-	"범죄자":{ "KOR":"Criminal" },
-	"상인":{ "KOR":"Merchant" },
+	"Rogue":{ "KOR":"Criminal" },
+	"Merchant":{ "KOR":"Merchant" },
 	"용병":{ "KOR":"Mercenary" },
 
 	"올곧음":{ "KOR":"Integrity" },
@@ -107,7 +107,7 @@ const dictionary = {
 	"탈의":{ "KOR":"Stripping" },
 	"상태":{ "KOR":"State" },
 	"특성":{ "KOR":"Trait" },
-	"패널티":{ "KOR":"Penalty" },
+	"Penalty":{ "KOR":"Penalty" },
 	"마술":{ "KOR":"Magic" },
 	"마도진":{ "KOR":"Magic Circle" },
 	"결합물":{ "KOR":"Combined" },
@@ -892,9 +892,9 @@ const champList = {
 				{cond:{v1:"상대덱.count(id, B1-PN-001)", op:">=", v2:2}, priority:3},
 			],
 			"B1-AT-002":[
-				{cond:true, priority:"상대덱.count(type, 패널티)"},
-				{cond:true, priority:"상대덱.count(type, 패널티)"},
-				{cond:{v1:"상대덱.count(type, 패널티)", op:"==", v2:0}, priority:-Infinity},
+				{cond:true, priority:"상대덱.count(type, Penalty)"},
+				{cond:true, priority:"상대덱.count(type, Penalty)"},
+				{cond:{v1:"상대덱.count(type, Penalty)", op:"==", v2:0}, priority:-Infinity},
 			],
 			"B1-AT-003":[
 				{cond:true, priority:2},
@@ -902,7 +902,7 @@ const champList = {
 			],
 			"B1-AT-004":[
 				{cond:true, priority:2},
-				{cond:true, priority:"상대덱.count(type, 패널티)"},
+				{cond:true, priority:"상대덱.count(type, Penalty)"},
 				{cond:{v1:"발정", op:"<", v2:3}, priority:1},
 			],
 			"B1-AT-005":[
@@ -924,11 +924,11 @@ const champList = {
 				{cond:{v1:"라운드", op:"<", v2:"4"}, priority:2},
 			],*/
 			"B1-SU-002":[
-				{cond:true, priority:"상대덱.count(type, 패널티)"},
-				{cond:true, priority:"상대덱.count(type, 패널티)"},
-				{cond:['and', {v1:"상대.남은절정", op:"<=", v2:"1"}, {v1:"상대덱.count(type, 패널티)", op:">=", v2:"4"}], priority:100},
-				{cond:{v1:"상대덱.count(type, 패널티)", op:"==", v2:"3"}, priority:-2},
-				{cond:{v1:"상대덱.count(type, 패널티)", op:"<", v2:"3"}, priority:-Infinity},
+				{cond:true, priority:"상대덱.count(type, Penalty)"},
+				{cond:true, priority:"상대덱.count(type, Penalty)"},
+				{cond:['and', {v1:"상대.남은절정", op:"<=", v2:"1"}, {v1:"상대덱.count(type, Penalty)", op:">=", v2:"4"}], priority:100},
+				{cond:{v1:"상대덱.count(type, Penalty)", op:"==", v2:"3"}, priority:-2},
+				{cond:{v1:"상대덱.count(type, Penalty)", op:"<", v2:"3"}, priority:-Infinity},
 			],
 		},
 	},
@@ -1433,9 +1433,9 @@ const champList = {
 				{cond:{v1:"라운드", op:">=", v2:"5"}, priority:2},
 			],
 			"B1-AT-002+":[
-				{cond:true, priority:"상대덱.count(type, 패널티)"},
-				{cond:true, priority:"상대덱.count(type, 패널티)"},
-				{cond:{v1:"상대덱.count(type, 패널티)", op:"==", v2:0}, priority:-Infinity},
+				{cond:true, priority:"상대덱.count(type, Penalty)"},
+				{cond:true, priority:"상대덱.count(type, Penalty)"},
+				{cond:{v1:"상대덱.count(type, Penalty)", op:"==", v2:0}, priority:-Infinity},
 			],
 			"B1-AT-003":[
 				{cond:true, priority:2},
@@ -1443,7 +1443,7 @@ const champList = {
 			],
 			"B1-AT-004":[
 				{cond:true, priority:3},
-				{cond:true, priority:"상대덱.count(type, 패널티)"},
+				{cond:true, priority:"상대덱.count(type, Penalty)"},
 				{cond:{v1:"발정", op:"<", v2:3}, priority:2},
 			],
 			"B1-AT-005":[
@@ -1456,11 +1456,11 @@ const champList = {
 				{cond:{v1:"발정", op:"<", v2:2}, priority:4},
 			],
 			"B1-SU-002":[
-				{cond:true, priority:"상대덱.count(type, 패널티)"},
-				{cond:true, priority:"상대덱.count(type, 패널티)"},
-				{cond:['and', {v1:"상대.남은절정", op:"<=", v2:"1"}, {v1:"상대덱.count(type, 패널티)", op:">=", v2:"4"}], priority:100},
-				{cond:{v1:"상대덱.count(type, 패널티)", op:"==", v2:3}, priority:-2},
-				{cond:{v1:"상대덱.count(type, 패널티)", op:"<", v2:3}, priority:-Infinity},
+				{cond:true, priority:"상대덱.count(type, Penalty)"},
+				{cond:true, priority:"상대덱.count(type, Penalty)"},
+				{cond:['and', {v1:"상대.남은절정", op:"<=", v2:"1"}, {v1:"상대덱.count(type, Penalty)", op:">=", v2:"4"}], priority:100},
+				{cond:{v1:"상대덱.count(type, Penalty)", op:"==", v2:3}, priority:-2},
+				{cond:{v1:"상대덱.count(type, Penalty)", op:"<", v2:3}, priority:-Infinity},
 			],
 		},
 	},
@@ -2114,11 +2114,11 @@ const endingList = {
 	},
 	"normal_lose_bg6":{
 		name:{ "KOR":"Public Penance Fixture" }, endingId:"lose_bg6", img:"ending_lose_6", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["범죄자"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["범죄자"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
 	},
 	"normal_lose_bg7":{
 		name:{ "KOR":"Cheap Hole" }, endingId:"lose_bg7", img:"ending_lose_7", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["상인"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["상인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
 	},
 	"normal_lose_bg8":{
 		name:{ "KOR":"Cum Dumpster" }, endingId:"lose_bg8", img:"ending_lose_8", category:"노말패배엔딩",
@@ -2147,11 +2147,11 @@ const endingList = {
 	},
 	"normal_win_bg6":{
 		name:{ "KOR":"Meat Doll" }, endingId:"win_bg6", img:"ending_win_6", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["범죄자"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["범죄자"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
 	},
 	"normal_win_bg7":{
 		name:{ "KOR":"Slave Manager" }, endingId:"win_bg7", img:"ending_win_7", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["상인"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["상인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
 	},
 	"normal_win_bg8":{
 		name:{ "KOR":"Female Champion" }, endingId:"win_bg8", img:"ending_win_8", category:"노말승리엔딩",
@@ -2181,11 +2181,11 @@ const endingList = {
 	},
 	"hard_lose_bg6":{
 		name:{ "KOR":"Underworld Guild" }, endingId:"loseH_bg6", img:"endingH_lose_6", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["범죄자"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["범죄자"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
 	},
 	"hard_lose_bg7":{
 		name:{ "KOR":"Casino Hostess" }, endingId:"loseH_bg7", img:"endingH_lose_7", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["상인"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["상인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
 	},
 	"hard_lose_bg8":{
 		name:{ "KOR":"Underground Fighter" }, endingId:"loseH_bg8", img:"endingH_lose_8", category:"하드패배엔딩",
@@ -2214,11 +2214,11 @@ const endingList = {
 	},
 	"hard_win_bg6":{
 		name:{ "KOR":"Queen of the Night" }, endingId:"winH_bg6", img:"endingH_win_6", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["범죄자"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["범죄자"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
 	},
 	"hard_win_bg7":{
 		name:{ "KOR":"Semen Economy" }, endingId:"winH_bg7", img:"endingH_win_7", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["상인"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["상인"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
 	},
 	"hard_win_bg8":{
 		name:{ "KOR":"As Desire Leads" }, endingId:"winH_bg8", img:"endingH_win_8", category:"하드승리엔딩",
@@ -2872,19 +2872,19 @@ const customStructure = {
 		            { value: "all", text: "모든 카드" },
 		            { value: "attack", text: "공격 카드" },
 		            { value: "support", text: "보조 카드" },
-		            { value: "neutral", text: "중립 카드" },
+		            { value: "neutral", text: "Neutral 카드" },
 		            { value: "class", text: "직업 카드" },
 		            { value: "normal", text: "일반 카드" },
 		            { value: "expert", text: "숙련 카드" },
 		            { value: "ultimate", text: "궁극 카드" },
-		            { value: "penalty", text: "패널티 카드" },
+		            { value: "penalty", text: "Penalty 카드" },
 		            { value: "self", text: "복사본" },
-            		{ value: "nelson", text: "조르기", condition: {v1:"커스텀.직업", op:"==", v2:"암살자"} },
-            		{ value: "manufacture", text: "Crafted", condition: {v1:"커스텀.직업", op:"==", v2:"암살자"} },
-            		{ value: "instantspell", text: "즉발 마술", condition: {v1:"커스텀.직업", op:"==", v2:"마술사"} },
-            		{ value: "magiccircle", text: "마도진", condition: {v1:"커스텀.직업", op:"==", v2:"마술사"} },
-            		{ value: "jewel", text: "보석", condition: {v1:"커스텀.직업", op:"==", v2:"마술사"} },
-            		{ value: "essence", text: "정수", condition: {v1:"커스텀.직업", op:"==", v2:"치유사"} },
+            		{ value: "nelson", text: "조르기", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
+            		{ value: "manufacture", text: "Crafted", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
+            		{ value: "instantspell", text: "즉발 마술", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            		{ value: "magiccircle", text: "마도진", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            		{ value: "jewel", text: "보석", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            		{ value: "essence", text: "정수", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} },
                 ],
                 "width": 50,
                 "subfields":[
@@ -3060,12 +3060,12 @@ const customStructure = {
 		            { value: "all", text: "모든 카드" },
 		            { value: "attack", text: "공격 카드" },
 		            { value: "support", text: "보조 카드" },
-		            { value: "neutral", text: "중립 카드" },
+		            { value: "neutral", text: "Neutral 카드" },
 		            { value: "class", text: "직업 카드" },
 		            { value: "normal", text: "일반 카드" },
 		            { value: "expert", text: "숙련 카드" },
 		            { value: "ultimate", text: "궁극 카드" },
-		            { value: "penalty", text: "패널티 카드" }
+		            { value: "penalty", text: "Penalty 카드" }
                 ],
                 "width": 50,
             },
@@ -3191,10 +3191,10 @@ const customStructure = {
                 "type": "select",
                 "options": [
 		            { value: "all", text: "모든 카드" },
-		            { value: "neutral", text: "중립 카드" },
+		            { value: "neutral", text: "Neutral 카드" },
 		            { value: "magiccircle", text: "마도진 카드" },
 		            { value: "jewel", text: "보석 카드" },
-		            { value: "penalty", text: "패널티 카드" }
+		            { value: "penalty", text: "Penalty 카드" }
                 ],
                 "width": 50,
                 "subfields":[
@@ -3442,8 +3442,8 @@ const customStructure = {
 		            { value: "essence", text: "정수 카드" },
 		            { value: "all", text: "모든 카드" },
 		            { value: "attack", text: "공격 카드" },
-		            { value: "neutral", text: "중립 카드" },
-		            { value: "penalty", text: "패널티 카드" },
+		            { value: "neutral", text: "Neutral 카드" },
+		            { value: "penalty", text: "Penalty 카드" },
                 ],
                 "width": 50,
                 "subfields":[
@@ -3480,9 +3480,9 @@ const customStructure = {
                 "label": "상태",
                 "type": "select",
                 "options": [
-		            { value: "poison", text: "독", condition:{v1:"커스텀.직업", op:"==", v2:"암살자"} },
-		            { value: "frozen", text: "빙결", condition:{v1:"커스텀.직업", op:"==", v2:"마술사"} },
-		            { value: "absorption", text: "정기 흡수", condition:{v1:"커스텀.직업", op:"==", v2:"치유사"} }
+		            { value: "poison", text: "독", condition:{v1:"커스텀.직업", op:"==", v2:"Assassin"} },
+		            { value: "frozen", text: "빙결", condition:{v1:"커스텀.직업", op:"==", v2:"Magician"} },
+		            { value: "absorption", text: "정기 흡수", condition:{v1:"커스텀.직업", op:"==", v2:"Healer"} }
                 ],
                 "width": 50,
                 "subfields":[
@@ -3542,14 +3542,14 @@ const variableList = [
     { value: "excite", text: "흥분" },
     { value: "exciteL", text: "흥분 한계" },
     { value: "deck", text: "덱" },
-    { value: "state", text: "상태", condition:["or", {v1:"커스텀.직업", op:"==", v2:"암살자"}, {v1:"커스텀.직업", op:"==", v2:"마술사"}] },
+    { value: "state", text: "상태", condition:["or", {v1:"커스텀.직업", op:"==", v2:"Assassin"}, {v1:"커스텀.직업", op:"==", v2:"Magician"}] },
     { value: "use", text: "사용" },
     { value: "get", text: "획득" },
-    { value: "discard", text: "버림", condition:{v1:"커스텀.직업", op:"==", v2:"전사"} },
-    { value: "lust", text: "욕망", condition:{v1:"커스텀.직업", op:"==", v2:"전사"} },
-    { value: "wetness", text: "젖음", condition:{v1:"커스텀.직업", op:"==", v2:"암살자"} },
-    { value: "sBlock", text: "감각차단", condition:{v1:"커스텀.직업", op:"==", v2:"마술사"} },
-    { value: "corrupt", text: "타락", condition:{v1:"커스텀.직업", op:"==", v2:"치유사"} },
+    { value: "discard", text: "버림", condition:{v1:"커스텀.직업", op:"==", v2:"Warrior"} },
+    { value: "lust", text: "욕망", condition:{v1:"커스텀.직업", op:"==", v2:"Warrior"} },
+    { value: "wetness", text: "젖음", condition:{v1:"커스텀.직업", op:"==", v2:"Assassin"} },
+    { value: "sBlock", text: "감각차단", condition:{v1:"커스텀.직업", op:"==", v2:"Magician"} },
+    { value: "corrupt", text: "타락", condition:{v1:"커스텀.직업", op:"==", v2:"Healer"} },
     { value: "round", text: "라운드" },
     { value: "stack", text: "강화 스택" }
 ]
@@ -3575,9 +3575,9 @@ const variableData = [
             { value: "thisTurn", text: "이번 라운드" },
             { value: "lastTurn", text: "이전 라운드" },
             { value: "all", text: "결투 동안" },
-            { value: "recentTurn", text: "최근 라운드", condition: {v1:"커스텀.직업", op:"==", v2:"치유사"}},
+            { value: "recentTurn", text: "최근 라운드", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"}},
             { value: "remaining", text: "남음" },
-            { value: "delayed", text: "지연됨", condition: {v1:"커스텀.직업", op:"==", v2:"마술사"} }
+            { value: "delayed", text: "지연됨", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} }
         ],
         "conditions": ["excite"],
         "width": 33,
@@ -3603,7 +3603,7 @@ const variableData = [
             { value: "thisTurn", text: "이번 라운드" },
             { value: "lastTurn", text: "이전 라운드" },
             { value: "all", text: "결투 동안" },
-            { value: "recentTurn", text: "최근 라운드", condition: {v1:"커스텀.직업", op:"==", v2:"치유사"} }
+            { value: "recentTurn", text: "최근 라운드", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} }
         ],
         "conditions": ["use", "get", "discard"],
         "width": 33
@@ -3616,19 +3616,19 @@ const variableData = [
             { value: "all", text: "모든 카드" },
             { value: "attack", text: "공격 카드" },
             { value: "support", text: "보조 카드" },
-            { value: "neutral", text: "중립 카드" },
+            { value: "neutral", text: "Neutral 카드" },
             { value: "class", text: "직업 카드" },
             { value: "normal", text: "일반 카드" },
             { value: "expert", text: "숙련 카드" },
             { value: "ultimate", text: "궁극 카드" },
-            { value: "penalty", text: "패널티 카드" },
+            { value: "penalty", text: "Penalty 카드" },
             { value: "created", text: "생성된 카드", exclude:["get"] },
-            { value: "nelson", text: "조르기", condition: {v1:"커스텀.직업", op:"==", v2:"암살자"} },
-            { value: "spell", text: "마술 카드", condition: {v1:"커스텀.직업", op:"==", v2:"마술사"} },
-            { value: "magiccircle", text: "마도진 카드", condition: {v1:"커스텀.직업", op:"==", v2:"마술사"} },
-            { value: "jewel", text: "보석 카드", condition: {v1:"커스텀.직업", op:"==", v2:"마술사"} },
-            { value: "essence", text: "정수 카드", condition: {v1:"커스텀.직업", op:"==", v2:"치유사"} },
-            { value: "combination", text: "결합물 카드", condition: {v1:"커스텀.직업", op:"==", v2:"치유사"} }
+            { value: "nelson", text: "조르기", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
+            { value: "spell", text: "마술 카드", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            { value: "magiccircle", text: "마도진 카드", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            { value: "jewel", text: "보석 카드", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            { value: "essence", text: "정수 카드", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} },
+            { value: "combination", text: "결합물 카드", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} }
         ],
         "conditions": ["deck", "use", "get", "discard"],
         "width": 33,
@@ -3651,8 +3651,8 @@ const variableData = [
         "label": "",
         "type": "select",
         "options": [
-            { value: "poison", text: "독", condition: {v1:"커스텀.직업", op:"==", v2:"암살자"} },
-            { value: "frozen", text: "빙결", condition: {v1:"커스텀.직업", op:"==", v2:"마술사"} }
+            { value: "poison", text: "독", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
+            { value: "frozen", text: "빙결", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} }
         ],
         "conditions": ["state"],
         "width": 33

@@ -93,7 +93,7 @@ const cardTexts = {
 		"체위사용시":{
 			"KOR": "When you play a Position card, "
 		},
-		"패널티사용시":{
+		"Penalty사용시":{
 			"KOR": "When you play a Penalty card, "
 		},
 		"사격사용시":{
@@ -111,7 +111,7 @@ const cardTexts = {
 		"상대체위사용시":{
 			"KOR": "When the opponent plays a Position card, "
 		},
-		"상대패널티사용시":{
+		"상대Penalty사용시":{
 			"KOR": "When the opponent plays a Penalty card, "
 		},
 		"도전자사용시":{
@@ -126,7 +126,7 @@ const cardTexts = {
 		"도전자체위사용시":{
 			"KOR": "When the Challenger plays a Position card, "
 		},
-		"도전자패널티사용시":{
+		"도전자Penalty사용시":{
 			"KOR": "When the Challenger plays a Penalty card, "
 		},
 		"챔피언사용시":{
@@ -141,7 +141,7 @@ const cardTexts = {
 		"챔피언체위사용시":{
 			"KOR": "When the Champion plays a Position card, "
 		},
-		"챔피언패널티사용시":{
+		"챔피언Penalty사용시":{
 			"KOR": "When the Champion plays a Penalty card, "
 		},
 		"누군가사용시":{
@@ -156,7 +156,7 @@ const cardTexts = {
 		"누군가체위사용시":{
 			"KOR": "When you or the opponent plays a Position card, "
 		},
-		"누군가패널티사용시":{
+		"누군가Penalty사용시":{
 			"KOR": "When you or the opponent plays a Penalty card, "
 		},
 		"생성사용시":{
@@ -165,7 +165,7 @@ const cardTexts = {
 		"카드획득시":{
 			"KOR": "When you gain a card, "
 		},
-		"패널티획득시":{
+		"Penalty획득시":{
 			"KOR": "When you gain a Penalty card, "
 		},
 		"카드변형시":{
@@ -1133,10 +1133,10 @@ const cardTexts = {
 		"탈의사용불가자신":{
 			"KOR": "Cannot play Stripping cards.",
 		},
-		"패널티사용불가":{
+		"Penalty사용불가":{
 			"KOR": "{actor} cannot play Penalty cards.",
 		},
-		"패널티사용불가자신":{
+		"Penalty사용불가자신":{
 			"KOR": "Cannot play Penalty cards.",
 		},
 		"공격강제사용":{
@@ -1163,10 +1163,10 @@ const cardTexts = {
 		"탈의강제사용자신":{
 			"KOR": "Can only play Stripping cards.",
 		},
-		"패널티강제사용":{
+		"Penalty강제사용":{
 			"KOR": "{actor} can only play Penalty cards.",
 		},
-		"패널티강제사용자신":{
+		"Penalty강제사용자신":{
 			"KOR": "Can only play Penalty cards.",
 		},
 		"결합물강제사용":{
@@ -1218,7 +1218,7 @@ const cardTexts = {
 		"탈의비활성화":{
 			"KOR": "Stripping cards lose their effects.",
 		},
-		"패널티비활성화":{
+		"Penalty비활성화":{
 			"KOR": "Penalty cards lose their effects.",
 		},
 		"독비활성화":{
