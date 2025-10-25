@@ -62,6 +62,10 @@ const dictionary = {
 	"직업":{ "KOR":"Class" },
 	"배경":{ "KOR":"Background" },
 	"성격":{ "KOR":"Personality" },
+	"순종":{ "KOR":"Obedient" },
+    "저항":{ "KOR":"Resistant" },
+    "무지":{ "KOR":"Naive" },
+    "적극":{ "KOR":"Proactive" },
 
 	"중립":{ "KOR":"Neutral" },
 	"중립공격":{ "KOR":"Neutral Attack" },

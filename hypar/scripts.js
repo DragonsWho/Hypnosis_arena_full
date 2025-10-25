@@ -2968,17 +2968,22 @@ function stateUpdate() {
 		document.getElementById("quickPs").innerHTML = `<b>${getWord("성격")}</b>`
 	}
 
+
+
+
+
 	var partElement = document.getElementById('profileConfirm');
 if(choiceValues.race && choiceValues.face && choiceValues.class && choiceValues.background && (choiceValues.ps || gamemode == 2)) {
     // Получаем переведенные значения из словаря, а если их нет - используем оригинал
     const raceName = dictionary[choiceValues.race] ? dictionary[choiceValues.race]["KOR"] : choiceValues.race;
     const className = dictionary[choiceValues.class] ? dictionary[choiceValues.class]["KOR"] : choiceValues.class;
+    const psName = dictionary[choiceValues.ps] ? dictionary[choiceValues.ps]["KOR"] : choiceValues.ps;
 
     txt =
     `
     <p><b>Name:</b> ${playerName}</p>
     <p><b>Race:</b> ${raceName} | <b>Gender:</b> Women</p>
-    <p><b>Class:</b> ${className} | <b>Personality:</b> ${choiceValues.ps}</p>
+    <p><b>Class:</b> ${className} | <b>Personality:</b> ${psName}</p> 
     `
 		const profileNum = gamemode == 1?"profile2":(gamemode == 2?"profile3":"profile");
 		if(storyProfile[profileNum][choiceValues.background][choiceValues.race]) {
@@ -3022,6 +3027,15 @@ if(choiceValues.race && choiceValues.face && choiceValues.class && choiceValues.
 	let profile = document.getElementById('profile');
 	profile.querySelector("p.box-text").innerHTML = txt;
 }
+
+
+
+
+
+
+
+
+
 
 function createStory(div, part) {
 	let stories = storyText[part];
