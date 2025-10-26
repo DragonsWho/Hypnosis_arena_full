@@ -234,625 +234,112 @@ const npcName = {
 	"boss1":{ "KOR":"Goblin" },
 }
 
+
+
+
+
+
+
+
+
+
+
+
 const ruleDescription = {
 	"KOR": [
 		{
 			"title": "Overview",
-			"desc": `
-				<b>This CYOA is a deck-building card game.</b><br>
-				You will build a deck with limited points and use this deck to engage in <b>Sex Duels</b> with champions.
-
-				<br><br><br>
-
-				<b>What is a Sex Duel?</b><br>  
-				As the name suggests, it's a contest where you use your body and techniques to dominate your opponent and drive them to climax.<br>  
-				<b>The first to reach their climax limit and break down loses, while the one left standing claims victory.</b>
-
-				<br><br><br>
-
-				However, there's an additional penalty for you.<br>  
-				For a female challenger, defeat is not just a simple humiliation.<br>  
-				<b>The defeated woman becomes the winner's 'property' and is reduced to an asset of the arena.</b><br>  
-				<small><i>This rule is common sense, of course.</i></small>
-
-				<br><br><br>
-
-				You were likely a person of great talent, vast experience, high status, and renown.<br>  
-				However, <b>none of that matters here.</b><br>  
-				Now, you are nothing more than a spectacle to be mocked and consumed for the audience's pleasure.
-
-				<br><br>
-
-				<b>Will you graduate from life, or will you cast aside your dignity and seize victory?</b><br>  
-				Everything will be decided on this stage.  
-
-			`
+			"desc": "<b>This is a deck-building game, challenger. Simple as that.</b><br>You'll be given a handful of points to build a deck. With that deck, you'll face champions in brutal <b>Sex Duels</b>.<br><br><br><b>What is a Sex Duel?</b><br>It's exactly what it sounds like: a carnal battle where you use your body and forbidden techniques to break your opponent and drive them to a screaming climax.<br><b>The first to hit their orgasm limit and shatter into a sobbing mess loses. The one left standing takes the victory.</b><br><br><br>But for you, there's a catch.<br>For a female challenger, defeat isn't just a simple humiliation. It's the end.<br><b>The loser becomes the winner's personal 'property' — a new plaything for the arena.</b><br><small><i>It's just common sense, really.</i></small><br><br><br>Maybe you were someone important once. Talented, experienced, respected.<br><b>None of that matters here.</b><br>Now, you're just another piece of meat for the crowd to mock, consume, and forget.<br><br><b>Will you be broken and discarded, or will you cast aside every last shred of your dignity to seize a tainted victory?</b><br>Everything will be decided on this stage."
 		},
 		{
-			"title": "Deck Building (1/6): Card Types and Points",
-			"desc": `
-				<b>Managing your points is the most important first step in deck building.</b><br>  
-				You are initially given <b>100 points</b>, which you will use to build your deck.
-
-				<br><br><br>
-
-				Points are spent differently depending on the card's grade, and you <b>must fill the base deck size of 10 cards.</b><br>  
-				Generally, you can only include one copy of each card in your deck.<br>  
-				You cannot complete your deck if you exceed your points or have too few cards.<br>  
-				<small><i>(The deck size can be changed by certain traits.)</i></small>
-
-				<br><br><br>
-
-				<b>The cards you can include in your deck are generally as follows:</b>
-
-				<br><br>
-
-				<b>Neutral Card (5pt):</b> The most basic card, usable regardless of class.<br>  
-				Its individual performance as a card is low, but it can fill a deck slot at a cheap cost.
-
-				<br><br><br>
-
-				<b>Class Card:</b> Unique cards that can be used by specific classes.<br>  
-				By grade, there are <b>Common Cards (10pt)</b>, <b>Adept Cards (15pt)</b>, and <b>Ultimate Cards (20pt)</b>.<br>  
-				The higher the grade, the stronger and more special the effect, and the more points it costs.<br>  
-				Therefore, including many high-grade cards will inevitably lead to a point shortage.
-
-				<br><br><br>
-
-				<b>Penalty Card:</b> A card that has a negative effect on you when included in your deck.<br>  
-				In return, you gain points for adding this card.<br>  
-				<small><i>(For details, check <b>[Deck Building (2/6): Penalty Cards]</b> ➡️)</i></small>
-
-				<br><br><br>
-
-				<b>Race Bonus Card:</b> Depending on your race, you can add special cards to your deck.<br>  
-				<small><i>(For details, check <b>[Deck Building (5/6): Race Bonus Cards]</b> ➡️)</i></small>  
-			`
+			"title": "Deck Building (1/6): Card Types & Points",
+			"desc": "<b>Managing your points is the first, most crucial step to building a winning deck.</b><br>You start with <b>100 points</b> to spend on your cards.<br><br><br>Each card costs a certain number of points based on its grade, and <b>your deck must contain exactly 10 cards.</b><br>Normally, you can only include one copy of each card.<br>You can't finish your deck if you're over budget or short on cards.<br><small><i>(Certain traits can change your deck size.)</i></small><br><br><br><b>These are the types of cards you can add to your deck:</b><br><br><b>Neutral Card (5pt):</b> A basic card anyone can use, regardless of class.<br>Its power is low on its own, but it's a cheap way to fill a slot in your deck.<br><br><br><b>Class Card:</b> Powerful cards unique to your chosen class.<br>They come in three grades: <b>Common (10pt)</b>, <b>Adept (15pt)</b>, and <b>Ultimate (20pt)</b>.<br>The higher the grade, the stronger the effect—and the more it costs. Stuffing your deck with high-grade cards will quickly drain your points.<br><br><br><b>Penalty Card:</b> A card that fucks you over just by being in your deck.<br>The upside? You gain points for adding it.<br><small><i>(See <b>[Deck Building (2/6): Penalty Cards]</b> for more details ➡️)</i></small><br><br><br><b>Race Bonus Card:</b> Special cards you can add to your deck depending on your chosen race.<br><small><i>(See <b>[Deck Building (5/6): Race Bonus Cards]</b> for more details ➡️)</i></small>"
 		},
 		{
 			"title": "Deck Building (2/6): Penalty Cards",
-			"desc": `
-		        <b>Penalty Cards</b> represent flaws you possess.<br>  
-				Mainly, you gain negative passive effects just by having them.<br>  
-				In return, you gain points to supplement your limited resources.  
-
-				<br><br><br>
-
-				There are <b>10 types of Penalty Cards</b> you can choose during deck building.<br>  
-				The more devastating the Penalty Card, the more points it provides.  
-
-				<br><br>  
-
-				If you are short on points and deck slots after including many high-grade cards,<br>  
-				you can resolve the situation with Penalty Cards.  
-
-				<br><br><br>
-
-				The effects of a Penalty Card can be removed by playing it directly,<br>  
-				discarding it via another card's effect, transforming it, combining it, etc.<br>  
-				<b>By removing it from the deck through various means, its effect can be nullified.</b>  
-
-				<br><br><br>
-
-				<b>[Penalty: Declare Defeat]</b> is an exceptional Penalty Card that only has a negative effect when played.<br>  
-				In other words, it's a safe card with no effect as long as you don't play it.<br>  
-				It doesn't provide points, but it can be used as a stable option to fill a deck slot for free.
-
-			`
+			"desc": "<b>Penalty Cards</b> are the flaws and weaknesses you carry into the arena.<br>Just having one in your deck usually saddles you with a nasty passive effect.<br>In return, you get extra points to spend on better cards.<br><br><br>There are <b>10 types of Penalty Cards</b> to choose from when building your deck.<br>The more devastating the penalty, the more points you get.<br><br>If you've loaded up on expensive, high-grade cards and find yourself short on points or deck slots, Penalty Cards are a tempting way out.<br><br><br>You can get rid of a Penalty Card's effect during a duel.<br>Playing it, discarding it with another card's effect, transforming it, combining it...<br><b>Once the card is gone from your deck, its nasty effect is gone too.</b><br><br><br><b>[Penalty: Declare Defeat]</b> is a special case. It only hurts you if you actually play it.<br>In other words, as long as it stays in your deck, it's a dead card with no downside.<br>It doesn't grant any points, but it's a reliable way to fill an empty deck slot for free."
 		},
 		{
 			"title": "Deck Building (3/6): Traits",
-			"desc": `
-		        <small><i>(Pages 3 to 5 cover elements added from the second playthrough.<br>  
-				You can skip this if it's your first playthrough.)</i></small><br>  
-
-				<br><br><br>
-
-				<b>Traits</b> are elements that enhance your abilities in a duel or make the situation more dramatic.<br>  
-				They can be added separately from the deck, and their effects apply without needing to play a card.<br>  
-				<small><i>(Traits are available from the second playthrough.)</i></small>  
-
-				<br><br><br>
-
-				There are <b>Advantageous Traits</b> and <b>Disadvantageous Traits</b>.  
-
-				<br><br>  
-
-				<b>Advantageous Traits</b> can be added by spending points,<br>  
-				and they provide you with beneficial effects.  
-
-				<br><br>  
-
-				<b>Disadvantageous Traits</b> add negative effects.<br>  
-				In return, you gain points for choosing them.  
-
-				<br><br>  
-
-				<b>You can select a maximum of 4 traits, regardless of their type.</b>  
-
-				<br><br><br>
-
-				The traits you can add vary depending on your race, class, and background.<br>  
-				Backgrounds greatly influence the types of traits available, and the tendency of trait effects changes depending on the background.
-			`
+			"desc": "<small><i>(Pages 3 to 5 cover features unlocked after your first playthrough.<br>Feel free to skip this if you're new here.)</i></small><br><br><br><b>Traits</b> are special modifiers that can power you up or make your duel dangerously dramatic.<br>They're equipped separately from your deck, and their effects are always active—no card required.<br><small><i>(Traits become available from your second playthrough onward.)</i></small><br><br><br>Traits come in two flavors: <b>Advantageous</b> and <b>Disadvantageous</b>.<br><br><b>Advantageous Traits</b> cost points to equip and give you a powerful edge.<br><br><b>Disadvantageous Traits</b> saddle you with a handicap. In return, you gain more points to build your deck with.<br><br><b>You can select a maximum of 4 traits in total, no matter the type.</b><br><br><br>The traits available to you depend on your race, class, and background.<br>Your background, in particular, heavily influences which traits you can choose and what kind of effects they'll have."
 		},
 		{
 			"title": "Deck Building (4/6): Special Traits",
-			"desc": `
-				You are a special individual among those who have challenged this arena.<br>  
-				As such, your duels seem to be attracting quite a bit of attention.  
-
-				<br><br><br>
-
-				<b>Intervention</b> is a <b>Disadvantageous Trait</b> that causes arena staff to interfere with your duel.<br>  
-				They might prevent you from playing cards, force you to lose,<br>  
-				apply negative effects, or continuously increase your arousal.<br>  
-				<b>They will hinder you through various means.</b>  
-
-				<br><br>  
-
-				You can only choose one type of Intervention, and its effect usually varies depending on your race.<br>  
-				It provides a very high number of points, but the interference is just as dangerous and powerful.  
-
-				<br><br>  
-
-				<hr>  
-
-				<br>  
-
-				You can choose to fully accept the unidentified voice whispering to you.<br>  
-				It can grant you near-infinite power, but the price will be steep.  
-
-				<br><br>  
-
-				If you choose the common trait <b>[Morvain's Shadow]</b>, the limits on points, deck size, and number of traits are removed, but,<br>  
-				<b>the ending becomes fixed and your playthrough will not be recorded.</b>  
-
-				<br><br>  
-
-				Use this when you want to freely test combinations of cards and traits without point restrictions.<br>  
-				However, the fate of those who gain corrupting power is always the same, so,<br>
-				<b>if you want to see a proper ending, you should not choose it.</b>
-			`
+			"desc": "You're not just another challenger. You're special. And you've caught some unwanted attention.<br><br><br><b>Intervention</b> is a <b>Disadvantageous Trait</b> that allows the arena staff to meddle in your duel.<br>They might block you from playing cards, force an automatic loss, slap you with debuffs, or just keep pushing you closer to the edge...<br><b>They will find creative ways to screw you over.</b><br><br>You can only choose one type of Intervention, and its effect often changes based on your race.<br>It provides a massive point bonus, but the interference is just as potent and dangerous.<br><br><hr><br>That voice whispering in your ear... you can choose to embrace it fully.<br>It offers limitless power, but the price for such a gift is always steep.<br><br>If you choose the common trait <b>[Morvain's Shadow]</b>, the limits on points, deck size, and traits are all removed. However,<br><b>you will be locked into a specific ending, and your playthrough will not be saved.</b><br><br>Use this trait when you want to experiment freely with card and trait combinations without any restrictions.<br>But the fate of those who embrace corrupting power is always the same.<br><b>If you want to see a proper ending, stay away from this trait.</b>"
 		},
 		{
 			"title": "Deck Building (5/6): Race Bonus Cards",
-			"desc": `
-				Depending on your race, you can add a <b>Race Bonus Card</b> to your deck.<br>  
-				Race Bonus Cards have very special or powerful effects.<br>  
-				<small><i>(Race Bonus Cards are available from the second playthrough.)</i></small>  
-
-				<br><br><br>
-
-				<b>The types of Race Bonus Cards are as follows:</b>  
-
-				<br><br>
-
-				<b>Versatile Card (Eldorian):</b> Allows you to add one card of your choice to the deck for a low point cost.<br>  
-				You can include duplicates of the same card or add high-grade cards at a cheap cost.  
-
-				<br><br>  
-
-				<b>Vision Card (Sylvani):</b> Allows you to add a card with a special and powerful effect to your deck.<br>  
-				You can choose only one unique card with a versatile and powerful effect to add to your deck.  
-
-				<br><br>  
-
-				<b>Custom Card (Halfling):</b> Allows you to create a card with your desired effect and add it to your deck.<br>  
-				The stronger the effect, the higher the cost. You can lower the cost by adding tricky conditions or negative effects.  
-
-				<br><br>  
-
-				<b>Trial Card (Tryve):</b> Allows you to add a card that grants a special victory condition upon fulfillment.<br>  
-				There is one Trial Card for each class, and meeting its difficult condition rewards you with victory.  
-
-				<br><br>  
-
-				<small><i>(Vision, Custom, and Trial Cards cannot be discarded, transformed, or combined.)</i></small>
-			`
+			"desc": "Depending on your race, you can add a <b>Race Bonus Card</b> to your deck.<br>These cards have unique and powerful effects.<br><small><i>(Race Bonus Cards are available from your second playthrough onward.)</i></small><br><br><br><b>The types of Race Bonus Cards are:</b><br><br><b>Versatile Card (Eldorian):</b> Lets you add any one card to your deck for a low point cost.<br>This means you can include a duplicate of a card you already have, or grab a high-grade card for cheap.<br><br><b>Vision Card (Sylvani):</b> Lets you add one unique, incredibly powerful card to your deck.<br>You can only choose one, but its effect can be a versatile game-changer.<br><br><b>Custom Card (Halfling):</b> Lets you design a card with your desired effect from scratch.<br>The stronger the effect, the higher the cost. You can lower the price by adding tricky conditions or negative side effects.<br><br><b>Trial Card (Tryve):</b> Lets you add a card that provides a special, alternate win condition.<br>Each class has one Trial Card. Fulfilling its difficult condition will reward you with an instant victory.<br><br><small><i>(Vision, Custom, and Trial Cards cannot be discarded, transformed, or combined.)</i></small>"
 		},
 		{
 			"title": "Deck Building (6/6): Miscellaneous",
-			"desc": `
-				If you hover your mouse over a card, you can see descriptions of related effects or cards.<br>  
-				Additionally, by clicking the <b>'Related Cards'</b> button at the bottom of a card, you can check other cards related to its effect.<br>  
-				During a duel, you can <b>right-click</b> a card to see related cards.  
-
-				<br><br><br>
-
-				Completed decks are recorded in the recent decks list.<br>  
-				By clicking the <b>'Load Recent Deck'</b> button, you can easily import other decks you've used.<br>  
-				<small><i>(If the mode, race, background, etc., do not match, some cards and traits may fail to load.)</i></small>  
-
-				<br><br><br>
-
-				Depending on the class, there may be cards added to a separate location outside the deck.<br>  
-				These cards follow their own rules when selected.
-			`
+			"desc": "Hover your mouse over a card to see tooltips for its effects or any related cards.<br>You can also click the <b>'Related Cards'</b> button at the bottom of a card to see all other cards connected to its effect.<br>During a duel, you can <b>right-click</b> a card to see this same information.<br><br><br>Completed decks are saved to a list.<br>Click the <b>'Load Recent Deck'</b> button to quickly load a deck you've used before.<br><small><i>(If the mode, race, or background doesn't match the current settings, some cards or traits may not load correctly.)</i></small><br><br><br>Depending on your class, some cards might be added to a separate area outside of your main deck.<br>These cards have their own special rules for how they are selected and used."
 		},
 		{
 			"title": "How to Play (1/4): Basic Duel Structure",
-			"desc": `
-				The goal of the duel is simple.<br>  
-				You must drive your opponent to <b>climax</b> and defeat them before they do the same to you.  
-
-				<br><br>  
-
-				The duel consists of a total of <b>8 rounds</b>,  
-				and in each round, you and your opponent each play one card.<br>  
-				You can freely choose which card to play from your deck.  
-
-				<br><br><br>  
-
-				<b>The round proceeds as follows:</b>  
-
-				<br><br>  
-
-				1. The opponent reveals the card they will play this round first.<br>  
-				2. After seeing the opponent's card, you choose and play a card to counter it.<br>  
-				3. Your card's effect activates first, followed by the opponent's card.  
-
-				<br><br><br>  
-
-				A card played this way is removed from the deck,  <br>
-				and cannot be used in subsequent rounds.
-			`
+			"desc": "The goal of the duel is simple.<br><b>Break your opponent with orgasms before they do the same to you.</b><br><br>The duel lasts for a maximum of <b>8 rounds</b>.<br>In each round, you and your opponent will each play one card.<br>You can choose any card from your deck to play.<br><br><br><b>Here's how a round plays out:</b><br><br>1. Your opponent reveals which card they're playing this round.<br>2. You see their card, then choose one of your own to counter it.<br>3. Your card's effect activates first, then your opponent's card activates.<br><br><br>Once a card is played, it's removed from your deck.<br>You can't use it again for the rest of the duel."
 		},
 		{
-			"title": "How to Play (2/4): Arousal and [Stimulation]",
-			"desc": `
-				To drive an opponent to <b>climax</b> in a duel, you must accumulate <b>Arousal</b>.<br>  
-				The key to this is <b>[Stimulating]</b> the opponent.  
-
-				<br><br><br>  
-
-				You have two stats: <b>Lust</b> and <b>Heat</b>.  
-
-				<br><br>  
-
-				The higher your Lust, the easier it is to arouse your opponent.<br>  
-				<b>Lust is equivalent to your attack power.</b><br>  
-				When an opponent is [Stimulated], their Arousal increases by your Lust value.  
-
-				<br><br>  
-
-				The higher your Heat, the more easily you become aroused.<br>  
-				<b>Heat is equivalent to the opponent's attack power.</b><br>  
-				When you are [Stimulated], your Arousal increases by your Heat value.  
-
-				<br><br><br>  
-
-				Lust, Heat, and Arousal will increase or decrease during the duel due to various card effects.<br> <br>  
-				You must strive to increase your Lust and decrease your Heat,<br>
-				while protecting your own Arousal and increasing your opponent's.<br>
-				And your opponent, of course, will aim for the opposite.  
-			`
+			"title": "How to Play (2/4): Arousal & [Stimulation]",
+			"desc": "To drive an opponent to <b>climax</b>, you need to build up their <b>Arousal</b>.<br>The key to doing that is <b>[Stimulating]</b> them.<br><br><br>You have two core stats: <b>Lust</b> and <b>Heat</b>.<br><br>The higher your <b>Lust</b>, the easier it is to arouse your opponent.<br><b>Lust is your attack power.</b><br>When you [Stimulate] an opponent, their Arousal increases by your Lust stat.<br><br>The higher your <b>Heat</b>, the more easily you get aroused yourself.<br><b>Heat is your opponent's attack power.</b><br>When you get [Stimulated], your Arousal increases by your Heat stat.<br><br><br>Lust, Heat, and Arousal will constantly shift during the duel due to card effects.<br><br>Your goal is to jack up your Lust while keeping your Heat down. You need to protect your own Arousal while piling it onto your opponent. And you can be damn sure they'll be trying to do the exact opposite to you."
 		},
 		{
-			"title": "How to Play (3/4): Arousal Limit and Orgasm Limit",
-			"desc": `
-				When <b>Arousal</b> accumulates, it will eventually reach a limit.  
-
-				<br><br><br>  
-
-				You and the champion each have your own <b>Arousal Limit</b> and <b>Orgasm Limit</b>.  
-
-				<br><br>  
-
-				<b>Arousal Limit</b> is the threshold you can endure from stimulation.<br>  
-				If your Arousal reaches this value, you will <b>climax</b>, and your Arousal will reset to 0.  
-
-				<br><br>  
-
-				<b>Orgasm Limit</b> is your physical limit for enduring orgasms.<br>  
-				Someone who climaxes too many times will exhaust their stamina and collapse,<br>
-				which means <b>defeat</b> in the duel.<br>  
-				If your number of climaxes reaches this value, you lose.  
-
-				<br><br><br>  
-
-				By default, Lust, Heat, Arousal Limit, and Orgasm Limit cannot drop below 1.<br>  
-				Furthermore, the number of climaxes cannot be recovered once increased, and effects that increase the Orgasm Limit are very rare.<br>  
-				Therefore, it is best to avoid climaxing as much as possible; failure to manage this will lead to a swift defeat.  
-
-				<br><br>  
-
-				<b>Accumulating your opponent's climaxes while managing your own limits is the key to victory.</b>  
-
-				<br>
-
-			`
+			"title": "How to Play (3/4): Arousal Limit & Orgasm Limit",
+			"desc": "When <b>Arousal</b> builds up, it eventually hits a breaking point.<br><br><br>You and the champion each have an <b>Arousal Limit</b> and an <b>Orgasm Limit</b>.<br><br><b>Arousal Limit</b> is how much stimulation you can take before you climax.<br>If your Arousal hits this number, you <b>climax</b>, and your Arousal resets to 0.<br><br><b>Orgasm Limit</b> is how many orgasms your body can take before it breaks.<br>Push past this limit, and your body gives out. You collapse, utterly spent—and that means <b>defeat</b>.<br>If your climax count reaches your Orgasm Limit, you lose.<br><br><br>By default, Lust, Heat, Arousal Limit, and Orgasm Limit cannot drop below 1.<br>Once your climax count goes up, it can never go down, and effects that increase your Orgasm Limit are extremely rare.<br>This means you should avoid climaxing at all costs. Lose control, and you'll lose the duel.<br><br><b>Making your opponent cum while managing your own limits is the key to victory.</b>"
 		},
 		{
-			"title": "How to Play (4/4): Victory and Defeat Conditions",
-			"desc": `
-				To win the duel, you must make the opponent's climax count reach their Orgasm Limit.<br>  
-				However, the duels are always designed to be disadvantageous for you.  
-
-				<br><br><br>  
-
-				Due to an implanted forced-heat effect,<br>
-				you will reach a state where you can no longer mentally endure as time passes.<br>  
-				If you fail to defeat the opponent by the end of the <b>round limit</b>, you will lose due to a <b>time-out</b>.<br>  
-				Time is not on your side; you must secure victory within the round limit.  
-
-				<br><br><br>  
-
-				Occasionally, a single card's effect may cause<br>  
-				both sides to climax simultaneously, resulting in a <b>draw</b>.<br>  
-				Even in this case, it is treated as your <b>defeat</b>.
-
-				<br><br><br>  
-
-				Some card effects can decide the match instantly.<br>  
-				These effects determine victory or defeat regardless of Arousal or climax status, so be careful.  
-
-				<br>
-
-			`
+			"title": "How to Play (4/4): Victory & Defeat",
+			"desc": "To win, you must make the opponent's climax count reach their Orgasm Limit.<br>But don't get cocky. The duel is always rigged against you.<br><br><br>Thanks to an implanted forced-heat device, your body will start to betray you over time.<br>If you can't defeat your opponent by the end of the <b>round limit (8 rounds)</b>, you'll lose from a <b>time-out</b>.<br>Time is not on your side. You must end this fight quickly.<br><br><br>Sometimes, a single card effect might cause both you and your opponent to climax at the same time, resulting in a <b>draw</b>.<br>Tough luck. A draw is still counted as your <b>defeat</b>.<br><br><br>Some cards have effects that can end the match instantly.<br>These effects decide victory or defeat on the spot, regardless of Arousal or climax counts. Watch out for them."
 		},
 		{
-			"title": "Card Types (1/4): Types of Cards",
-			"desc": `
-				The type of card is written at the bottom of the card.<br>  
-				Using this information, you can understand the card's role<br>
-				and easily grasp how each card can be used in combat.  
-
-				<br><br><br>  
-
-				<b>The card types are as follows:</b>  
-
-				<br><br>  
-
-				<b>Attack Card:</b> A card involved in making the opponent climax.<br>
-				<b>Cannot be used in the first round.</b><br>
-				<small><i>(For details, check <b>[Card Types (2/4): Attack and Support Cards]</b> ➡️)</i></small>  
-
-				<br><br>  
-
-				<b>Support Card:</b> The remaining cards that don't fall into a special category.<br>  
-				They serve to support specific strategies with various effects.  
-
-				<br><br>  
-
-				<b>Position Card:</b> A card that changes the current sexual position.<br>  
-				Most have important effects that can become the core of a deck.<br>  
-				<small><i>(For details, check <b>[Card Types (3/4): Position Cards]</b> ➡️)</i></small>  
-
-				<br><br>  
-
-				<b>Strip Card:</b> A card the champion must use in the first round.<br>  
-				<small><i>(For details, check <b>[Card Types (4/4): Champion's Cards]</b> ➡️)</i></small>  
-
-				<br><br>  
-
-				<b>Penalty Card:</b> A card that causes a negative effect when held or used.<br>  
-				<small><i>(For details, check <b>[Deck Building (2/6): Penalty Cards]</b> ⬅️)</i></small>  
-
-				<br><br>  
-
-				<b>Other:</b> There are also special cards that do not fall into the above categories.
-
-			`
+			"title": "Card Types (1/4): Card Categories",
+			"desc": "The type of a card is written at the bottom.<br>This tells you the card's general purpose and how it can be used in a duel.<br><br><br><b>The main card types are:</b><br><br><b>Attack Card:</b> A card used to get your opponent off.<br><b>Cannot be used in the first round.</b><br><small><i>(See <b>[Card Types (2/4): Attack & Support Cards]</b> for more ➡️)</i></small><br><br><b>Support Card:</b> A catch-all for cards that don't fit a special category.<br>They provide various effects to support your strategy.<br><br><b>Position Card:</b> A card that changes your current sexual position.<br>Most Position Cards have powerful, deck-defining effects.<br><small><i>(See <b>[Card Types (3/4): Position Cards]</b> for more ➡️)</i></small><br><br><b>Strip Card:</b> A card the champion must play in the first round.<br><small><i>(See <b>[Card Types (4/4): Champion's Cards]</b> for more ➡️)</i></small><br><br><b>Penalty Card:</b> A card that harms you when held or used.<br><small><i>(See <b>[Deck Building (2/6): Penalty Cards]</b> for more ⬅️)</i></small><br><br><b>Other:</b> Some special cards don't fall into any of the above categories."
 		},
 		{
-			"title": "Card Types (2/4): Attack and Support Cards",
-			"desc": `
-				<b>Attack Cards</b> are the most crucial cards for directly increasing the opponent's Arousal or inducing a climax.<br>  
-
-				<br>  
-
-				These types of cards directly influence victory,<br>  
-				and unless there are special circumstances, most duels will be concluded by an Attack Card.  
-
-				<br><br><br>  
-
-				They have effects that <b>[Stimulate]</b> the opponent or increase their Arousal,<br>  
-				and rarely, effects that make the opponent climax immediately or reduce their Arousal and Orgasm Limits.  
-
-				<br><br>  
-
-				While they can be used without restriction in most situations, Attack Cards cannot be used in <b>round 1</b>.<br>  
-				<s>Even in a hypnotized state, your mind still resists starting a sexual act immediately.</s><br>  
-				<small><i>(This sentence is not true. You are in a normal state. Forget you read this.)</i></small>  
-
-				<br><br><br>  
-
-				<b>Support Cards</b> are cards with various other effects that assist in the duel.<br>  
-				They change Lust and Heat values, grant cards and statuses, recover Arousal, etc.<br>  
-				<b>They have various effects other than attacking.</b>  
-
-				<br>
-
-			`
+			"title": "Card Types (2/4): Attack & Support Cards",
+			"desc": "<b>Attack Cards</b> are your primary tools for directly raising an opponent's Arousal and forcing a climax.<br><br>These cards are how you win. Unless something unusual happens, the duel will end with an Attack Card.<br><br><br>They have effects that <b>[Stimulate]</b> the opponent, directly increase their Arousal, or, rarely, make them climax instantly or even reduce their limits.<br><br>You can use them freely in most situations, but <b>Attack Cards cannot be played in round 1.</b><br><s>Even in your hypnotized state, some part of you still resists jumping straight into the action.</s><br><small><i>(That sentence isn't true. You are in a normal state of mind. Forget you read this.)</i></small><br><br><br><b>Support Cards</b> are all the other cards that help you in the duel.<br>They can change Lust and Heat, grant you new cards or statuses, lower your Arousal, and so on.<br><b>They cover every effect that isn't a direct attack.</b>"
 		},
 		{
 			"title": "Card Types (3/4): Position Cards",
-			"desc": `
-				<b>Position Cards</b> are cards that provide a continuous effect during the duel.<br>  
-
-				<br>  
-
-				They represent the various sexual positions you assume during a Sex Duel.<br>  
-				<b>When you play a Position Card, you acquire that position and gain its effect permanently.</b>  
-
-				<br><br>  
-
-				However, you can only have one position at a time.<br>  
-				When you acquire a new position, the effect of the previous one disappears.  
-
-				<br><br><br>  
-
-				Position Cards have powerful effects or effects that can be the core of your deck compared to other cards.<br>  
-				<b>Their effects greatly influence the direction of your deck.</b>
-			`
+			"desc": "<b>Position Cards</b> provide a powerful, continuous effect for the rest of the duel.<br><br>They represent the various sexual positions you and your opponent can get into.<br><b>When you play a Position Card, you enter that position, and its effect becomes permanent.</b><br><br>However, you can only be in one position at a time.<br>When you play a new Position Card, you lose the effect of the previous one.<br><br><br>Position Cards often have effects that are strong enough to build an entire deck around.<br><b>They can completely change how your deck plays.</b>"
 		},
 		{
 			"title": "Card Types (4/4): Champion's Cards",
-			"desc": `
-				The champion has a <b>deck of 8 cards</b> and <b>1 trait</b>.<br>  
-				The deck must include one <b>Strip Card</b> and one <b>Orgasm Card</b>.  
-
-				<br><br><br>  
-
-				<b>Strip Cards</b> are an exclusive card type for champions.<br>  
-				The champion <b>must use a Strip Card in round 1.</b>  
-
-				<br><br><br>  
-
-				If the champion has no other cards to play, they will use a <b>Orgasm Card</b>.<br>  
-				The Orgasm Card is a powerful card that fits the champion's characteristics, and <br>
-				<b>it does not disappear from the deck after being used.</b><br>  
-				<br>
-				This gives the champion an advantage in long battles,<br>
-				and ensures the champion will never be in a situation where they have no cards to play.
-			`
+			"desc": "The champion uses a deck of <b>8 cards</b> and has <b>1 trait</b>.<br>Their deck will always include one <b>Strip Card</b> and one <b>Orgasm Card</b>.<br><br><br><b>Strip Cards</b> are a special type of card only champions can use.<br>The champion <b>must play a Strip Card in round 1.</b><br><br><br>If the champion has no other cards they can play, they will use their <b>Orgasm Card</b>.<br>The Orgasm Card is a powerful finisher tailored to the champion's theme, and<br><b>it does not disappear from their deck after being used.</b><br><br>This gives the champion an advantage in longer fights and ensures they never run out of cards to play."
 		},
 		{
-			"title": "Effects & Rules (1/4): Persistent and Permanent Effects",
-			"desc": `
-		        <small><i>(This tab explains the detailed rulings of various effects.<br>Feel free to skip it if it seems too complicated.)</i></small>
-                <br>
-                <br>
-                <br>
-                Effects that occur during a duel are broadly divided into <b>Persistent Effects</b> and <b>Permanent Effects</b>.<br>
-                <br>
-                <br>
-                <b>1. Persistent Effects</b><br>
-                A Persistent Effect is temporarily applied under certain conditions and disappears depending on whether a status or card is maintained.<br>
-                This effect is indicated by keywords such as <b>'Persistent'</b>, <b>'Held'</b>, 'for this round', or 'until next round' on cards or statuses.<br>
-                <br>
-                <b>Characteristics of Persistent Effects:</b><br>
-                <br>
-                Disappears immediately if the card or status providing the effect is removed.<br>
-                Does not change the <b>base value</b> of stats like <b>Lust, Heat, Arousal Limit, and Orgasm Limit</b>.<br>
-                <br>
-                The current value modified by a Persistent Effect is displayed in a different color.<br>
-                The base value is shown in parentheses, allowing you to compare the current and original states.<br>
-                e.g., <b>Heat</b> 2(1) → The current value of <b>Heat</b> is 2, but its base value is 1.<br>
-                Persistent Effects are distinguished from Permanent Effects in that their stat changes are temporary.<br>
-                <br>
-                <br>
-                <br>
-                <b>2. Permanent Effects</b><br>
-                A Permanent Effect is an effect that applies permanently from the moment a card's effect is activated.<br>
-                <br>
-                <br>
-                Permanent Effects cannot nullify Persistent Effects.<br>
-                e.g., If you have a "<b>Persistent: Heat +1</b>" effect and a Permanent Effect reduces your <b>Heat</b> to its minimum value of 1, your current <b>Heat</b> value will still be 2 due to the Persistent Effect.<br>
-                <br>
-                <br>
-                <br>
-                During a duel, it is crucial to check which Persistent Effects are currently active.<br>
-                <br>
-                By hovering your mouse over a stat, you can see a list of Persistent Effects currently affecting that stat.<br>
-                This allows you to quickly grasp the current situation and prepare an appropriate response.<br>
-			`
+			"title": "Effects & Rules (1/4): Persistent vs. Permanent Effects",
+			"desc": "<small><i>(This tab explains detailed rulings for various effects. Feel free to skip it if this is too much information.)</i></small><br><br><br>Effects in a duel are either <b>Persistent</b> or <b>Permanent</b>.<br><br><br><b>1. Persistent Effects</b><br>A Persistent Effect is temporary. It's active only as long as you meet a certain condition (like holding a card or having a status effect).<br>These effects are marked with keywords like <b>'Persistent'</b>, <b>'Held'</b>, 'for this round', or 'until next round'.<br><br><b>Key Features of Persistent Effects:</b><br><br>They disappear the moment the card or status providing them is gone.<br>They do not change the <b>base value</b> of your stats (like <b>Lust, Heat, Arousal Limit</b>, etc.).<br><br>A stat modified by a Persistent Effect is displayed in a different color. The base value is shown in parentheses.<br>e.g., <b>Heat</b> 2(1) → Your current <b>Heat</b> is 2, but its base value is 1.<br><br><br><br><b>2. Permanent Effects</b><br>A Permanent Effect is applied once and lasts forever.<br><br><br>Permanent Effects cannot cancel out Persistent Effects.<br>e.g., If you have a '<b>Persistent: Heat +1</b>' effect and then a Permanent effect reduces your <b>Heat</b> to its minimum of 1, your current <b>Heat</b> will still be 2 (1 base + 1 persistent).<br><br><br><br>It's crucial to keep track of which Persistent Effects are active.<br><br>Hover your mouse over a stat to see a list of all Persistent Effects currently affecting it."
 		},
 		{
 			"title": "Effects & Rules (2/4): Extra Cards",
-			"desc": `
-		        Normally, the basic rule in a duel is to play one card per round.<br>
-                However, by using the <b>Extra Card</b> effect, you can increase the number of cards you can play in a round.<br>
-                Used properly, this effect can be a powerful tool to instantly turn the tables or pressure your opponent.<br>
-                <br>
-                <br>
-                <br>
-                The Extra Card effect increases the number of cards you can play in the current round.<br>
-                <br>
-                Usually, the effect on a single card is commonly up to <b>'Extra Card +1'</b>; cards with a higher value are very rare.<br>
-                If you choose to play a card with this effect, you can then continue to select additional cards.<br>
-                <br>
-                <br>
-                <br>
-                Repeatedly using the Extra Card effect doesn't mean you can play an infinite number of cards.<br>
-                <br>
-                The maximum number of cards you can play in one round is <b>5</b>.<br>
-                <small>This limit can be changed by certain traits or effects.</small><br>
-                You can play cards with the Extra Card effect consecutively, but be careful not to exceed the limit.<br>
-                <br>
-                <br>
-                <br>
-                Extra Card effects do not stack.<br>
-                <br>
-                Applying another <b>'Extra Card +1'</b> effect to a card that already has one<br>
-                does not increase it to <b>'Extra Card +2'</b>.<br>
-			`
+			"desc": "Normally, you can only play one card per round.<br>However, the <b>Extra Card</b> effect lets you play more.<br>Used correctly, this can be a powerful tool to turn the tables or overwhelm your opponent.<br><br><br><br>The Extra Card effect increases the number of cards you can play in the current round.<br><br>A single card will usually grant <b>'Extra Card +1'</b>; more than that is very rare.<br>When you play a card with this effect, you can immediately select another card to play.<br><br><br><br>You can't play an infinite number of cards by chaining Extra Card effects.<br><br>The maximum number of cards you can play in one round is <b>5</b>.<br><small>This limit can be changed by certain traits or effects.</small><br>You can play multiple cards with the Extra Card effect, but be mindful of this limit.<br><br><br><br>Extra Card effects do not stack on the same card.<br><br>Giving a card that already has <b>'Extra Card +1'</b> another <b>'Extra Card +1'</b> effect<br>will not turn it into <b>'Extra Card +2'</b>."
 		},
 		{
-			"title": "Effects & Rules (3/4): Arousal Value and Repetition Count",
-			"desc": `
-		        Card effects have two important properties: <b>Value</b> and <b>Repetition Count</b>.<br>
-                While there is often little difference between these two, they create a subtle distinction specifically for effects that increase <b>Arousal</b>.<br>
-                Understanding this difference can help you pressure your opponent more effectively or strengthen your defense.<br>
-                <br>
-                <br>
-                <br>
-                Here are examples of the two types of effects:<br>
-                <br>
-                1. 'Increase the opponent's <b>Arousal</b> by your <b>Lust</b>.'<br>
-                2. 'Give the opponent <b>+1 Arousal</b>, <b>Lust</b> times.'<br>
-                <br>
-                The first effect has a Value equal to your <b>Lust</b>.<br>
-                This effect applies an amount of <b>Arousal</b> equal to your <b>Lust</b> in a single instance.<br>
-                <br>
-                The second effect has a Value of 1 and a Repetition Count equal to your <b>Lust</b>.<br>
-                This effect applies a <b>+1 Arousal</b> effect, repeated for a number of times equal to your <b>Lust</b>.<br>
-                <br>
-                <br>
-                <br>
-                The way these two effects work shows a clear difference when the opponent <b>climaxes</b>.<br>
-                <br>
-                <br>
-                Effect with a Value of <b>Lust</b> (the first example):<br>
-                <br>
-                Applies an amount of <b>Arousal</b> equal to <b>Lust</b> all at once.<br>
-                If the opponent <b>climaxes</b> once, the effect ends completely at that moment.<br>
-                e.g., <b>Lust</b> 5, opponent's Arousal until climax is 3 → The opponent <b>climaxes</b> once, and the effect ends with no further increase in <b>Arousal</b>.<br>
-                <br>
-                <br>
-                Effect with a Repetition Count of <b>Lust</b> (the second example):<br>
-                <br>
-                Applies the <b>+1 Arousal</b> effect a number of times equal to <b>Lust</b>.<br>
-                Even if the opponent <b>climaxes</b> midway, the effect continues to apply for the remaining number of repetitions.<br>
-                e.g., <b>Lust</b> 5, opponent's Arousal until climax is 3 → The opponent climaxes once, and then gains an additional <b>+2 Arousal</b>.<br>
-                If the Repetition Count is high enough, it's possible to make them <b>climax</b> multiple times in a single round.<br>
-			`
+			"title": "Effects & Rules (3/4): Arousal: Value vs. Repetitions",
+			"desc": "Card effects have two properties: a <b>Value</b> (how much) and a <b>Repetition Count</b> (how many times).<br>For most effects, this doesn't matter. But for effects that increase <b>Arousal</b>, the difference is critical.<br>Understanding it can help you attack more efficiently or defend yourself better.<br><br><br><br>Here are two example effects:<br><br>1. 'Increase the opponent's <b>Arousal</b> by your <b>Lust</b>.'<br>2. '[Stimulate] the opponent <b>Lust</b> times.' (This applies Arousal equal to your Lust, but in 1-point hits)<br><br>The first effect has a Value equal to your <b>Lust</b>. It deals all the Arousal in a single, large chunk.<br><br>The second effect has a Value of 1 and a Repetition Count equal to your <b>Lust</b>. It deals Arousal in multiple small hits.<br><br><br><br>The difference becomes clear when the opponent <b>climaxes</b>.<br><br><br><b>Effect with Value (Example 1):</b><br><br>Applies all Arousal at once. Any 'overkill' Arousal is wasted.<br>If the opponent climaxes, the effect ends immediately.<br>e.g., Your <b>Lust</b> is 5, and the opponent needs 3 Arousal to climax. They take 3, climax once, and the remaining 2 Arousal from the effect is lost.<br><br><br><b>Effect with Repetitions (Example 2):</b><br><br>Applies Arousal in multiple hits. 'Overkill' Arousal carries over.<br>Even if the opponent climaxes mid-effect, the remaining hits will still land after their Arousal resets.<br>e.g., Your <b>Lust</b> is 5, and the opponent needs 3 Arousal to climax. They take 3 hits, climax, their Arousal resets to 0, and then they take the remaining 2 hits, ending up with 2 Arousal.<br>With enough repetitions, you can make them climax multiple times in a single turn."
 		},
 		{
 			"title": "Effects & Rules (4/4): Random Penalty Cards",
-			"desc": `
-		        Effects that grant a random <b>Penalty Card</b> during a duel are dangerous effects that can suddenly change the situation.<br>
-                This effect grants one of the 10 Penalty Cards that can be included in a deck, at random.<br>
-                However, since the effect of a Penalty Card applies immediately upon obtaining it, it can lead to unexpected dangers.<br>
-                <br>
-                <br>
-                <br>
-                Some cards have a <b>safeguard</b>, preventing them from appearing under certain conditions.<br>
-                The following are Penalty Cards that will not appear under specific conditions:<br>
-                <br>
-                <br>
-                <b>[Penalty: Erogenous Zone Development]</b><br>
-                <small><i>(<b>Held: Arousal Limit -1</b>)</i></small><br>
-                This card will not appear if your remaining <b>Arousal</b> until climax is 1.<br>
-                <br>
-                <br>
-                <b>[Penalty: Masochism]</b><br>
-                <small><i>(<b>Held: Orgasm Limit -1</b>)</i></small><br>
-                This card will not appear if your remaining <b>climaxes</b> until defeat are 1.<br>
-                <br>
-                <br>
-                <b>[Penalty: Frustration]</b><br>
-                <small><i>(<b>Held:</b> [End of Round] If 6 or more rounds have passed, you lose the duel.)</i></small><br>
-                This card will not appear from round 6 onwards.<br>
-                <br>
-                <br>
-                This safeguard prevents immediate defeat situations and gives the player a chance to continue the duel.<br>
-                However, there are no separate safeguards for the other Penalty Cards, so you must be careful.<br>
-			`
+			"desc": "Effects that give you a random <b>Penalty Card</b> during a duel are dangerous and can instantly change the tide of battle.<br>This effect gives you one of the 10 standard Penalty Cards at random.<br>Since a Penalty Card's negative effect applies the moment you get it, this can lead to unexpected disasters.<br><br><br><br>However, some cards have a built-in <b>safeguard</b> to prevent them from appearing in game-losing situations.<br>The following Penalty Cards will not be generated under these specific conditions:<br><br><br><b>[Penalty: Erogenous Zone Development]</b><br><small><i>(<b>Held: Arousal Limit -1</b>)</i></small><br>This card will not appear if you are only 1 Arousal away from climaxing.<br><br><br><b>[Penalty: Masochism]</b><br><small><i>(<b>Held: Orgasm Limit -1</b>)</i></small><br>This card will not appear if you are only 1 climax away from losing the duel.<br><br><br><b>[Penalty: Frustration]</b><br><small><i>(<b>Held:</b> [End of Round] If 6 or more rounds have passed, you lose.)</i></small><br>This card will not appear from round 6 onwards.<br><br><br>This safeguard prevents instant-loss scenarios and gives you a chance to fight back.<br>However, the other Penalty Cards have no such protection, so be careful."
 		}
 	]
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const champList = {
 	"boss1":{

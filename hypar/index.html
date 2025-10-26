@@ -488,48 +488,47 @@
 
                     // If 3 fast clicks are registered, activate the cheat
                    if (clickCount === 3) {
-                    console.log('Активация чита...');
-                    clickCount = 0; // Сбрасываем счетчик
+                    console.log('Cheat activated!');
+                    clickCount = 0;  
 
-                    // --- НАЧАЛО ОБНОВЛЕННОГО ЧИТ-КОДА ---
+                   // --- START OF UPDATED CHEAT CODE ---
                     try {
-                        // Проверяем, что необходимые игровые объекты существуют
+                        // Check if the required game objects exist
                         if (typeof playRecord === 'undefined' || typeof champList === 'undefined' || typeof endingList === 'undefined' || typeof saveObject === 'undefined') {
-                            throw new Error("Необходимые игровые объекты не найдены. Убедись, что игра полностью загрузилась.");
+                            throw new Error("Required game objects not found. Make sure the game has fully loaded.");
                         }
 
-                        // Устанавливаем счетчики побед для разблокировки всех режимов
+                        // Set the win counters to unlock all modes
                         playRecord.playCount = 99;
                         playRecord.winCount = 99;
                         playRecord.hardWinCount = 99;
 
-                        // --- НОВЫЙ БЛОК: Заполняем записи о победах над всеми боссами ---
-                        // Это необходимо для выполнения условия, которое ты раскомментировала
-                        playRecord.bossRecord = playRecord.bossRecord || {}; // Инициализируем объект, если его нет
+                        // --- NEW BLOCK: Populate the win records for all bosses ---
+                        // This is necessary to meet the condition that you uncommented
+                        playRecord.bossRecord = playRecord.bossRecord || {}; // Initialize the object if it doesn't exist
                         Object.keys(champList).forEach(bossId => {
-                            // Для каждого босса из списка чемпионов добавляем запись о 99 победах
+                            // For each boss from the champions list, add a record of 99 wins
                             playRecord.bossRecord[bossId] = { win: 99, lose: 0 }; 
                         });
-                        // --- КОНЕЦ НОВОГО БЛОКА ---
+                        // --- END OF NEW BLOCK ---
 
-                        // Разблокируем всю коллекцию (боссы и концовки)
+                        // Unlock the entire collection (bosses and endings)
                         const unlockedCollection = { boss: {}, ending: {} };
                         Object.keys(champList).forEach(id => { unlockedCollection.boss[id] = true; });
                         Object.keys(endingList).forEach(id => { unlockedCollection.ending[id] = true; });
 
-                        // Сохраняем измененные данные
+                        // Save the modified data
                         saveObject("playRecord", playRecord);
                         saveObject("collection", unlockedCollection);
 
-                        alert("Чит активирован! Все режимы, классы и галерея разблокированы. Страница будет перезагружена.");
+                        alert("Cheat activated! All modes, classes, and the gallery are unlocked. The page will be reloaded.");
                         location.reload();
 
                     } catch (error) {
-                        console.error("Ошибка при активации чита:", error);
-                        alert("Не удалось активировать чит. Подробности в консоли (F12).");
+                        console.error("Error activating cheat:", error);
+                        alert("Failed to activate cheat. Details in the console (F12).");
                     }
-                    // --- КОНЕЦ ОБНОВЛЕННОГО ЧИТ-КОДА ---
-                }
+                    // --- END OF UPDATED CHEAT CODE ---
 
 
 
