@@ -65,7 +65,7 @@ const dictionary = {
 	"순종":{ "KOR":"Obedient" },
     "저항":{ "KOR":"Resistant" },
     "무지":{ "KOR":"Naive" },
-    "적극":{ "KOR":"Proactive" },
+    "Aggressive":{ "KOR":"Proactive" },
 
 	"Neutral":{ "KOR":"Neutral" },
 	"Neutral공격":{ "KOR":"Neutral Attack" },
@@ -98,18 +98,18 @@ const dictionary = {
 	"포인트":{ "KOR":"Point" },
 	"덱":{ "KOR":"Deck" },
 	"card":{ "KOR":"Cards" },
-	"독주머니":{ "KOR":"Poison Pouch" },
+	"Poison Pouch":{ "KOR":"Poison Pouch" },
 
 	"공격":{ "KOR":"Attack" },
 	"보조":{ "KOR":"Support" },
 	"자세":{ "KOR":"Posture" },
-	"체위":{ "KOR":"Position" },
+	"Position":{ "KOR":"Position" },
 	"탈의":{ "KOR":"Stripping" },
 	"상태":{ "KOR":"State" },
 	"특성":{ "KOR":"Trait" },
 	"Penalty":{ "KOR":"Penalty" },
-	"마술":{ "KOR":"Magic" },
-	"마도진":{ "KOR":"Magic Circle" },
+	"Magic":{ "KOR":"Magic" },
+	"Magic Circle":{ "KOR":"Magic Circle" },
 	"결합물":{ "KOR":"Combined" },
 	"Essence":{ "KOR":"Essence" },
 
@@ -131,8 +131,8 @@ const dictionary = {
 	"Max라운드":{ "KOR":"Max Round" },
 	"덱크기":{ "KOR":"Deck Size" },
 	"원본":{ "KOR":"Original Card" },
-	"파생":{ "KOR":"That Card" },
-	"재귀파생":{ "KOR":"This Card" },
+	"Derived":{ "KOR":"That Card" },
+	"재귀Derived":{ "KOR":"This Card" },
 	"소재":{ "KOR":"Cards Used as Material" },
 
 	"Excitement":{ "KOR":"Excitement" },
@@ -147,7 +147,7 @@ const dictionary = {
 
 	"Lust":{ "KOR":"Lust" },
 	"Wetness":{ "KOR":"Wetness" },
-	"감각차단":{ "KOR":"Numbness" },
+	"Sense Block":{ "KOR":"Numbness" },
 	"지연Excitement":{ "KOR":"Delayed Excitement" },
 	"Corruption":{ "KOR":"Corruption" },
 	"카운트":{ "KOR":"Count" },
@@ -155,7 +155,7 @@ const dictionary = {
 	"즉발":{ "KOR":"Instant" },
 	"영창":{ "KOR":"Chant" },
 	"집중":{ "KOR":"Focused" },
-	"만료마술":{ "KOR":"Expired Magic" },
+	"만료Magic":{ "KOR":"Expired Magic" },
 
 	"도전자":{ "KOR":"Challenger" },
 	"Champion":{ "KOR":"Champion" },
@@ -178,7 +178,7 @@ const dictionary = {
 	"소지":{ "KOR":"In Hand" },
 	"자동":{ "KOR":"Auto" },
 
-	"마력탄":{ "KOR":"Magic Missile" },
+	"Magic Missile":{ "KOR":"Magic Missile" },
 
 	"하드모드":{ "KOR":"Hard Mode" },
 
@@ -187,7 +187,7 @@ const dictionary = {
 	"촉수슬라임":{ "KOR":"Tentacle Slime" },
 	"악동":{ "KOR":"Imp" },
 	"타우로스":{ "KOR":"Tauros" },
-	"버섯남자":{ "KOR":"Mushroom Man" },
+	"Mushroom Man":{ "KOR":"Mushroom Man" },
 	"금발양아치":{ "KOR":"Blonde Thug" },
 	"조교사":{ "KOR":"Trainer" },
 	"산드레아":{ "KOR":"Sandrea" },
@@ -196,20 +196,20 @@ const dictionary = {
 	"생성된 card": { "KOR": "Generated Card" },
 	"변형 목적의 card": { "KOR": "Card for Transformation" }, 
 	"다른 독": { "KOR": "another Poison" },
-	"즉발 마술": { "KOR": "Instant Magic" },
-	"영창 마술": { "KOR": "Chant Magic" },
-	"집중 마술": { "KOR": "Focus Magic" },
+	"즉발 Magic": { "KOR": "Instant Magic" },
+	"영창 Magic": { "KOR": "Chant Magic" },
+	"집중 Magic": { "KOR": "Focus Magic" },
 	"두 번 이상 변형된 card": { "KOR": "Card transformed twice or more" },
 	"두 번 이상 변형된": { "KOR": "Transformed twice or more" },
-	"개선된 체위": { "KOR": "Improved Position" },
+	"개선된 Position": { "KOR": "Improved Position" },
  
 	"Gem": { "KOR": "Jewel" }, 
 
-	"진홍색 마도진": { "KOR": "Crimson Magic Circle" },
-	"담청색 마도진": { "KOR": "Azure Magic Circle" },
-	"황금색 마도진": { "KOR": "Golden Magic Circle" },
-	"순백색 마도진": { "KOR": "White Magic Circle" },
-	"슬롯에 없는 마술": { "KOR": "Magic not in a slot" },
+	"진홍색 Magic Circle": { "KOR": "Crimson Magic Circle" },
+	"담청색 Magic Circle": { "KOR": "Azure Magic Circle" },
+	"황금색 Magic Circle": { "KOR": "Golden Magic Circle" },
+	"순백색 Magic Circle": { "KOR": "White Magic Circle" },
+	"슬롯에 없는 Magic": { "KOR": "Magic not in a slot" },
 
 
 }
@@ -982,8 +982,8 @@ const champList = {
 				{cond:true, priority:-1000},
 			],
 			"B2-SU-001":[
-				{cond:"체위", priority:100},
-				{cond:"!체위", priority:-Infinity},
+				{cond:"Position", priority:100},
+				{cond:"!Position", priority:-Infinity},
 			],
 			"B2-SU-002":[
 				{cond:["and", {v1:"라운드", op:">=", v2:3}, {v1:"라운드", op:"<=", v2:5}], priority:5},
@@ -1201,22 +1201,60 @@ const champList = {
 		}
 	},
 	"boss6":{
-		id:"boss6",
-		name:{ "KOR":"Mushroom Man" }, fullName:{ "KOR":"Contagious Infection Spore" }, img:"boss6", category:"첫상대",
-		condDesc:{ "KOR":`일반모드에서 <b>[${dictionary["버섯남자"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["버섯남자"]["ENG"]}]</b> in normal mode` },
-		look: { "KOR":"A man with a mushroom growing where his head should be...?" },
-		logDesc: { "KOR":"A host being controlled by a parasitic mushroom.<br>He may have been a famous adventurer in life, but now he is nothing more than a rotting corpse.<br><br>Since mucosal contact and fluid exchange are the most effective ways to spread its spores, it utilizes sex as a means of propagation.<br>The arena is considered a suitable environment for spreading its spores, so it is active there.<br><br>However, the spores are removed from women after each duel, so it has had little success in spreading." },
-		description: { "KOR":`\n            The champion standing before you appears human at first glance.<br>\n\t\t\tBut a closer look reveals sinister mushrooms sprouting all over his body and a contorted gait, clearly not of human origin.<br>\n\t\t\t<br>\n\t\t\tThis is an undead.<br>\n\t\t\tA gruesome monster, the corpse of a man who died somewhere, now controlled by a parasitic mushroom.<br>\n\t\t\tThe spores wafting from its rotting flesh and bizarrely shaped fungi cast an ominous pall over the surroundings.<br>\n\t\t\t<br>\n\t\t\tAn undead moving a dead man's body—it's a chilling sight you can never get used to.<br>\n\t\t\tHowever, you've faced undead before, so you remain wary but try to keep your composure.<br>\n\t\t\tUndead are typically slow and have simple attack patterns, so they don't pose a significant threat.<br>\n\t\t\t<br>\n\t\t\t<br>\n\t\t\tBut... something is wrong.<br>\n\t\t\tYou've started to feel dizzy, and your vision is beginning to blur.<br>\n\t\t\t<br>\n\t\t\tThe mushroom-covered man in front of you...<br>\n\t\t\tstrangely, he's starting to look attractive.<br>\n\t\t\tWith every breath, your body heats up, and you feel an urge to get closer to him.<br>\n\t\t\t<br>\n\t\t\tYou soon remember that you have to have sex with him to win the duel.<br>\n\t\t\tEverything feels like a natural progression.<br>\n\t\t\tGradually, you begin to desire to become one with him, to readily accept his spores.<br>\n\t\t\t<br>\n\t\t\tYou must breed with this man.<br>\n\t\t\tFor the prosperity of the colony.<br>\n\t\t\t<br><br>\n            <b>The Mushroom Man will cover you in spores,<br>\n            gradually consuming you from within.</b>\n            ` },
-        stats: {
-            exciteL: 10,
-            orgasmL: 2,
-            specialties: {
-                KOR: [
-                	"상대의 덱에 포자를 결속시키기",
-                    "자극 외의 수단으로 Excitement 증가시키기",
-                    "여러 장의 card 사용하기"
-                ],
+
+
+
+
+    "id": "boss6",
+    "name": { "KOR": "Mushroom Man", "ENG": "The Myconid Host" }, // "The Host" ?
+    "fullName": {  "KOR":"Mycelial Puppet" },
+    "img": "boss6",
+    "category": "첫상대",
+    "condDesc": {
+        "KOR": `Win against <b>[${dictionary["Mushroom Man"]["ENG"]}]</b> in normal mode` 
+    },
+    "look": {
+        "KOR":"A man whose flesh has become a garden for something... else." 
+    },
+	logDesc: { "KOR":`A living host, completely enthralled by a parasitic fungal colony.<br>Rumor has it he was once a renowned adventurer, but a single wrong step in a forgotten ruin turned him into this... a puppet of flesh.<br>They say the man is still inside, aware, trapped behind eyes that are no longer his own.<br><br>The parasite hijacks the host's most primal urges, turning sexual contact into its primary method of propagation. It seeks to plant its spores in new, fertile ground. The Arena, with its steady stream of vigorous female challengers, is the perfect hunting ground for it.<br><br>Fortunately for the victims, Sandrea's mages thoroughly cleanse any woman who survives an encounter. The parasite's ambition to spread beyond these walls has so far been thwarted.` },
+
+    description: { "KOR":`
+            The champion before you is, undeniably, a man. Or at least, he was.<br>
+			His body is a grotesque tapestry of fungal growths—pale, pulsing mushrooms sprout from his skin, weaving through muscle and bone. His movements are a sickening parody of life: jerky, unnatural, guided by an intelligence that is clearly not human.<br>
+			<br>
+			This is no mere undead. This is something far worse. A living prison.<br>
+			As he stumbles closer, you catch a glimpse of his eyes. They're milky and vacant, but for a horrifying, fleeting second, you see a flicker deep within. Not malice. Not hunger. Just pure, undiluted terror. The man is still in there, screaming without a mouth.<br>
+			<br>
+			The sight should fill you with revulsion. You've fought monsters before. You know how to steel yourself, how to focus on the kill.<br>
+			<br>
+			But... something is wrong.<br>
+			A sweet, cloying scent drifts from him, a perfume of damp earth and decay. You breathe it in, and the world begins to swim. Your focus blurs.<br>
+			<br>
+			The monster in front of you...<br>
+			...suddenly doesn't look so monstrous. The strange growths on his body seem less like a corruption and more like an invitation. Your skin tingles, your body grows hot with a traitorous, alien desire to get closer, to touch him, to feel those textures against your own flesh.<br>
+			<br>
+			The thought of fighting him evaporates, replaced by a deep, throbbing need. The purpose of this duel becomes startlingly clear, as if it were your own idea all along. You need to connect with him, to welcome him inside you, to let his spores take root.<br>
+			<br>
+			Your body... for the colony.<br>
+			Your womb... for the bloom.<br>
+			<br><br>
+            <b>Mushroom Man will plant his garden within you,<br>
+            and teach you to crave the harvest.</b>
+            ` },
+    "stats": {
+        "exciteL": 10,
+        "orgasmL": 2,
+        "specialties": {
+            "KOR": [
+                "Infests your deck with corrupting Spore cards.",
+                "Raises your Arousal with intoxicating pheromones.",
+                "Can unleash multiple attacks in a single turn."
+            ],
+
+
+
+
+
                 ENG: [
                 ]
             }
@@ -1242,14 +1280,14 @@ const champList = {
 				{cond:true, priority:5}
 			],
 			"B6-AT-002":[
-				{cond:{v1:"상대덱.count(tags, 포자)", op:">=", v2:1}, priority:99}
+				{cond:{v1:"상대덱.count(tags, Spore)", op:">=", v2:1}, priority:99}
 			],
 			"B6-AT-003":[
 				{cond:true, priority:-1000},
 			],
 			"B6-SU-001":[
-				{cond:{v1:"상대덱.count(tags, 포자)", op:"<=", v2:2}, priority:-10},
-				{cond:{v1:"상대덱.count(tags, 포자)", op:">=", v2:4}, priority:10},
+				{cond:{v1:"상대덱.count(tags, Spore)", op:"<=", v2:2}, priority:-10},
+				{cond:{v1:"상대덱.count(tags, Spore)", op:">=", v2:4}, priority:10},
 			],
 			"B6-SU-002":[
 				{cond:{v1:"라운드", op:">=", v2:5}, priority:100},
@@ -1302,7 +1340,7 @@ const champList = {
 			],
 			"B7-AT-002":[
 				{cond:{v1:"라운드", op:"in", v2:[3, 5, 6]}, priority:4},
-				{cond:"체위", priority:5}
+				{cond:"Position", priority:5}
 			],
 			"B7-AT-003":[
 				{cond:{v1:"라운드", op:"in", v2:[3, 5, 6]}, priority:5}
@@ -1518,7 +1556,7 @@ const champList = {
 				{cond:{v1:"Heat", op:">=", v2:"8"}, priority:90},
 			],
 			"B2-SU-001":[
-				{cond:"체위", priority:100},
+				{cond:"Position", priority:100},
 				{cond:true, priority:2},
 			],
 			"B2-SU-002":[
@@ -1715,9 +1753,9 @@ const champList = {
 	"bossH6":{
 		id:"bossH6",
 		name:{ "KOR":"Mushroom Man" }, fullName:{ "KOR":"Spore Lord's Host" }, img:"boss6", category:"마지막상대",
-		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["버섯남자"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["버섯남자"]["ENG"]}]</b> in hard mode` },
-		look: { "KOR":"A corpse controlled by a hive mind." },
+		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["Mushroom Man"]["KOR"]}]</b>을 상대로 승리`,
+		"ENG":`Win against <b>[${dictionary["Mushroom Man"]["ENG"]}]</b> in hard mode` },
+		look: { "KOR":"A body controlled by a mushroom hive mind." },
 		logDesc: { "KOR":"A body controlled by the Spore Lord hive mind.<br>It uses the arena as a base to spread its swarm through sex.<br><br>The arena staff believes they completely remove the spores from women after each duel, but in truth, small amounts remain, lying dormant and waiting for the right moment.<br>Having failed many times before, the Spore Lord is cautiously waiting until its swarm is large enough.<br><br>The recent undead incident in the back alleys of Glit-haven is proof that it won't be long before they reveal themselves to the world." },
 		description: { "KOR":`\n            \tThe Spore Lord calls.<br>\n            \tJoin the swarm.<br>\n            \t<br>\n            \t<br>\n                <b>More Spores.</b>\n            ` },
         stats: {
@@ -1725,7 +1763,7 @@ const champList = {
             orgasmL: 2,
             specialties: {
                 KOR: [
-                	"상대의 덱에 포자를 결속시키기",
+                	"상대의 덱에 Spore를 결속시키기",
                     "자극 외의 수단으로 Excitement 증가시키기",
                     "여러 장의 card 사용하기"
                 ],
@@ -1754,14 +1792,14 @@ const champList = {
 				{cond:true, priority:5}
 			],
 			"B6-AT-002":[
-				{cond:{v1:"상대덱.count(tags, 포자)", op:">=", v2:1}, priority:99}
+				{cond:{v1:"상대덱.count(tags, Spore)", op:">=", v2:1}, priority:99}
 			],
 			"B6-AT-003+":[
 				{cond:true, priority:-1000}
 			],
 			"B6-SU-001":[
-				{cond:{v1:"상대덱.count(tags, 포자)", op:"<=", v2:2}, priority:-10},
-				{cond:{v1:"상대덱.count(tags, 포자)", op:">=", v2:4}, priority:10},
+				{cond:{v1:"상대덱.count(tags, Spore)", op:"<=", v2:2}, priority:-10},
+				{cond:{v1:"상대덱.count(tags, Spore)", op:">=", v2:4}, priority:10},
 			],
 			"B6-SU-002":[
 				{cond:{v1:"라운드", op:">=", v2:5}, priority:100},
@@ -1816,7 +1854,7 @@ const champList = {
 			],
 			"B7-AT-002":[
 				{cond:{v1:"플레이어.남은Excitement", op:"<=", v2:"Heat"}, priority:10},
-				{cond:"체위", priority:5}
+				{cond:"Position", priority:5}
 			],
 			"B7-AT-003":[
 				{cond:{v1:"Wetness", op:">=", v2:"Heat"}, priority:-100},
@@ -2034,8 +2072,8 @@ const champList = {
 	"bossC6":{
 		id:"bossC6",
 		name:{ "KOR":"Mushroom Man" }, fullName:{ "KOR":"Infectious Sporeshroom" }, img:"boss6", category:"챌린지",
-		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["버섯남자"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["버섯남자"]["ENG"]}]</b> in challenge mode` },
+		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["Mushroom Man"]["KOR"]}]</b>를 상대로 승리`,
+		"ENG":`Win against <b>[${dictionary["Mushroom Man"]["ENG"]}]</b> in challenge mode` },
 		look: { "KOR":"Revived Sporeshroom" },
 		logDesc: { KOR:"", ENG:"" },
 		description: { "KOR":`\n                You captured an Infection Mushroom specimen that was wandering alone, its connection to the Spore Lord severed.<br>\n            \tTo improve its lackluster spores, you infused it with your power and modified it.<br>\n            \t<br>\n            \tThe results were decent. It can now emit some rather dangerous narcotic spores.<br>\n            \tHowever, perhaps because it's disconnected from the hive mind, its reproductive drive seems weak.<br>\n            \t<br>\n            \tStill, having sex while bathed in narcotic spores might be interesting.<br>\n            \tSqueamishness, hygiene... such things are no longer a concern for you.\n            ` },
@@ -2881,8 +2919,8 @@ const customStructure = {
 		            { value: "self", text: "복사본" },
             		{ value: "nelson", text: "조르기", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
             		{ value: "manufacture", text: "Crafted", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
-            		{ value: "instantspell", text: "즉발 마술", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
-            		{ value: "magiccircle", text: "마도진", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            		{ value: "instantspell", text: "즉발 Magic", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            		{ value: "magiccircle", text: "Magic Circle", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
             		{ value: "jewel", text: "Gem", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
             		{ value: "essence", text: "Essence", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} },
                 ],
@@ -2893,7 +2931,7 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-				            { value: "spellslot", text: "마술 슬롯" },
+				            { value: "spellslot", text: "Magic 슬롯" },
 				            { value: "random", text: "무작위" }
 		                ],
 		        		"conditions":["instantspell"],
@@ -3192,7 +3230,7 @@ const customStructure = {
                 "options": [
 		            { value: "all", text: "All card" },
 		            { value: "neutral", text: "Neutral card" },
-		            { value: "magiccircle", text: "마도진 card" },
+		            { value: "magiccircle", text: "Magic Circle card" },
 		            { value: "jewel", text: "Gem card" },
 		            { value: "penalty", text: "Penalty card" }
                 ],
@@ -3263,9 +3301,9 @@ const customStructure = {
                 "label": "결과",
                 "type": "select",
                 "options": [
-		            { value: "chantspell", text: "영창 마술" },
-		            { value: "focusedspell", text: "집중 마술" },
-		            { value: "magiccircle", text: "마도진 card" }
+		            { value: "chantspell", text: "영창 Magic" },
+		            { value: "focusedspell", text: "집중 Magic" },
+		            { value: "magiccircle", text: "Magic Circle card" }
                 ],
                 "width": 50,
                 "subfields":[
@@ -3274,7 +3312,7 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-				            { value: "spellslot", text: "마술 슬롯" },
+				            { value: "spellslot", text: "Magic 슬롯" },
 				            { value: "random", text: "무작위" }
 		                ],
 		        		"conditions":["chantspell", "focusedspell"],
@@ -3299,11 +3337,11 @@ const customStructure = {
         ]
     },
     "changeSBlock": {
-        "label": "감각차단",
+        "label": "Sense Block",
         "fields": [
         	{
 	            "id": "valueType",
-                "label": "감각차단",
+                "label": "Sense Block",
                 "type": "select",
                 "options": [
                     { value: "constant", text: "숫자" },
@@ -3482,7 +3520,7 @@ const customStructure = {
                 "options": [
 		            { value: "poison", text: "독", condition:{v1:"커스텀.직업", op:"==", v2:"Assassin"} },
 		            { value: "frozen", text: "빙결", condition:{v1:"커스텀.직업", op:"==", v2:"Magician"} },
-		            { value: "absorption", text: "정기 흡수", condition:{v1:"커스텀.직업", op:"==", v2:"Healer"} }
+		            { value: "absorption", text: "Essence 흡수", condition:{v1:"커스텀.직업", op:"==", v2:"Healer"} }
                 ],
                 "width": 50,
                 "subfields":[
@@ -3548,7 +3586,7 @@ const variableList = [
     { value: "discard", text: "버림", condition:{v1:"커스텀.직업", op:"==", v2:"Warrior"} },
     { value: "lust", text: "Lust", condition:{v1:"커스텀.직업", op:"==", v2:"Warrior"} },
     { value: "wetness", text: "Wetness", condition:{v1:"커스텀.직업", op:"==", v2:"Assassin"} },
-    { value: "sBlock", text: "감각차단", condition:{v1:"커스텀.직업", op:"==", v2:"Magician"} },
+    { value: "sBlock", text: "Sense Block", condition:{v1:"커스텀.직업", op:"==", v2:"Magician"} },
     { value: "corrupt", text: "Corruption", condition:{v1:"커스텀.직업", op:"==", v2:"Healer"} },
     { value: "round", text: "라운드" },
     { value: "stack", text: "강화 스택" }
@@ -3624,8 +3662,8 @@ const variableData = [
             { value: "penalty", text: "Penalty card" },
             { value: "created", text: "생성된 card", exclude:["get"] },
             { value: "nelson", text: "조르기", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
-            { value: "spell", text: "마술 card", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
-            { value: "magiccircle", text: "마도진 card", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            { value: "spell", text: "Magic card", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            { value: "magiccircle", text: "Magic Circle card", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
             { value: "jewel", text: "Gem card", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
             { value: "essence", text: "Essence card", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} },
             { value: "combination", text: "결합물 card", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} }
@@ -3724,7 +3762,7 @@ const keywordDict = {
         name: { "KOR":"Additional Card" },
         desc: { "KOR":"You can play an additional card this round." }
     },
-	"체위": {
+	"Position": {
         name: { "KOR":"Position" },
         desc: { "KOR":"A persistent effect of which you can only have one at a time.<br>If you gain a new Position while you already have one, the existing one is lost." }
     },
@@ -3756,7 +3794,7 @@ const keywordDict = {
         name: { "KOR":"Desire (up to n)" },
         desc: { "KOR":"Whenever Excitement increases, gain an equal amount of Desire.<br>Consume all your Desire, up to a maximum of n, to gain the following effect." }
     },
-	"생성됨": {
+	"Generated": {
         name: { "KOR":"Generated Card" },
         desc: { "KOR":"A card newly obtained during a duel through generation, transformation, or combination." }
     },
@@ -3776,7 +3814,7 @@ const keywordDict = {
         name: { "KOR":"Count" },
         desc: { "KOR":"Whenever the condition is met, this card's Count decreases.<br>When the Count reaches 0, the effect activates, and the Count resets to its default value." }
     },
-	"감각차단": {
+	"Sense Block": {
         name: { "KOR":"Sense Block" },
         desc: { "KOR":"Gain an equal amount of Sense Block whenever you Transform one of your cards.<br>When Excitement would increase, you can consume that much Sense Block instead to prevent it." }
     },
@@ -3792,7 +3830,7 @@ const keywordDict = {
         name: { "KOR":"Recent Rounds" },
         desc: { "KOR":"The previous round and the current round." }
     },
-	"정기흡수": {
+	"Essence흡수": {
         name: { "KOR":"Essence Drain" },
         desc: { "KOR":"Heal Excitement equal to the amount of Excitement you inflicted on the opponent." }
     },

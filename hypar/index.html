@@ -388,7 +388,7 @@
 
         function generateDialogueDocument(data) {
             const output = [];
-            const personalityTypes = ["순종", "저항", "무지", "적극"];
+            const personalityTypes = ["순종", "저항", "무지", "Aggressive"];
 
             // Iterate over keys in the data object
             for (const sceneKey in data) {
@@ -473,6 +473,8 @@
                     event.clientY > (window.innerHeight - hotzoneSize)
                 );
 
+
+
                 if (isClickInHotzone) {
                     console.log('Click!'); // Debug message
                     const now = Date.now();
@@ -485,36 +487,53 @@
                     lastClickTime = now;
 
                     // If 3 fast clicks are registered, activate the cheat
-                    if (clickCount === 3) {
-                        console.log('Activating cheat...');
-                        clickCount = 0; // Reset the counter
+                   if (clickCount === 3) {
+                    console.log('Активация чита...');
+                    clickCount = 0; // Сбрасываем счетчик
 
-                        // --- START OF EMBEDDED CHEAT CODE ---
-                        try {
-                            if (typeof playRecord === 'undefined' || typeof champList === 'undefined' || typeof endingList === 'undefined' || typeof saveObject === 'undefined') {
-                                throw new Error("Required game objects not found. Make sure the game has fully loaded.");
-                            }
-
-                            playRecord.playCount = 99;
-                            playRecord.winCount = 99;
-                            playRecord.hardWinCount = 99;
-
-                            const unlockedCollection = { boss: {}, ending: {} };
-                            Object.keys(champList).forEach(id => { unlockedCollection.boss[id] = true; });
-                            Object.keys(endingList).forEach(id => { unlockedCollection.ending[id] = true; });
-
-                            saveObject("playRecord", playRecord);
-                            saveObject("collection", unlockedCollection);
-
-                            alert("Cheat Activated! All modes, classes, and gallery have been unlocked. The page will be reloaded.");
-                            location.reload();
-
-                        } catch (error) {
-                            console.error("Error while activating cheat:", error);
-                            alert("Failed to activate the cheat. See console for details (F12).");
+                    // --- НАЧАЛО ОБНОВЛЕННОГО ЧИТ-КОДА ---
+                    try {
+                        // Проверяем, что необходимые игровые объекты существуют
+                        if (typeof playRecord === 'undefined' || typeof champList === 'undefined' || typeof endingList === 'undefined' || typeof saveObject === 'undefined') {
+                            throw new Error("Необходимые игровые объекты не найдены. Убедись, что игра полностью загрузилась.");
                         }
-                        // --- END OF EMBEDDED CHEAT CODE ---
+
+                        // Устанавливаем счетчики побед для разблокировки всех режимов
+                        playRecord.playCount = 99;
+                        playRecord.winCount = 99;
+                        playRecord.hardWinCount = 99;
+
+                        // --- НОВЫЙ БЛОК: Заполняем записи о победах над всеми боссами ---
+                        // Это необходимо для выполнения условия, которое ты раскомментировала
+                        playRecord.bossRecord = playRecord.bossRecord || {}; // Инициализируем объект, если его нет
+                        Object.keys(champList).forEach(bossId => {
+                            // Для каждого босса из списка чемпионов добавляем запись о 99 победах
+                            playRecord.bossRecord[bossId] = { win: 99, lose: 0 }; 
+                        });
+                        // --- КОНЕЦ НОВОГО БЛОКА ---
+
+                        // Разблокируем всю коллекцию (боссы и концовки)
+                        const unlockedCollection = { boss: {}, ending: {} };
+                        Object.keys(champList).forEach(id => { unlockedCollection.boss[id] = true; });
+                        Object.keys(endingList).forEach(id => { unlockedCollection.ending[id] = true; });
+
+                        // Сохраняем измененные данные
+                        saveObject("playRecord", playRecord);
+                        saveObject("collection", unlockedCollection);
+
+                        alert("Чит активирован! Все режимы, классы и галерея разблокированы. Страница будет перезагружена.");
+                        location.reload();
+
+                    } catch (error) {
+                        console.error("Ошибка при активации чита:", error);
+                        alert("Не удалось активировать чит. Подробности в консоли (F12).");
                     }
+                    // --- КОНЕЦ ОБНОВЛЕННОГО ЧИТ-КОДА ---
+                }
+
+
+
+
                 } else {
                     // If the click was outside the zone, reset the counter
                     clickCount = 0;
@@ -649,7 +668,7 @@
             <div class="filterGroup" style="width:33%;">
                 <label><input type="checkbox" class="typeFilter" value="공격"> Attack</label>
                 <label><input type="checkbox" class="typeFilter" value="보조"> Support</label>
-                <label><input type="checkbox" class="typeFilter" value="체위"> Position</label>
+                <label><input type="checkbox" class="typeFilter" value="Position"> Position</label>
                 <label><input type="checkbox" class="typeFilter" value="Penalty"> Penalty</label>
                 <label><input type="checkbox" class="typeFilter" value="기타"> Other</label>
             </div>
@@ -773,30 +792,27 @@
                     <img src="image/illust01.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <p class="box-text langText KOR"><br>
-                    The moon peers at you from behind the crest of mountains as you finally reach your destination:  <b>Glinthaven</b> You feel its reputation sink in as you step into the city proper.<br>
-                    The Sleepless City; known for catering to every pleasure and vice you can imagine.<br>
+                    A sliver of moon hangs over the mountains, a silent witness to your arrival. You've made it: <b>Glinthaven</b>. <br> 
                     <br>
-                    The streets, a blend of dazzling lights and shadows, hit you with the smell of alcohol and spices.<br>
-                    The clamor created by the laughter and cries of people at the gambling tables reaches your ears.<br>
+                    They call it the Sleepless City, a festering den of every pleasure and vice imaginable, and the moment you step past the gates, you can taste its filthy reputation on the air.<br>
                     <br>
-                    The streets are lined with lights, the walls plastered with colourful posters promoting gaudy luxuries and predatory loans in equal measure.<br>
-                    Casinos, pubs, brothels and countless other services surround you, overwhelming your senses with a variety of spices, liquors and squeals of libidenous women.<br>
+                    The city hits you like a physical blow. A riot of gaudy lights cuts through deep shadows, the air thick with the stench of cheap booze and exotic spices. The sounds are a chaotic symphony – the clash of laughter and desperate cries from the gambling dens, the breathless moans spilling from the brothels.<br>
                     <br>
-                    It's a fearsome place that drags the unwary into ruin, but even these sights are merely the surface of the city. <br>
-                    Your true purpose lays much deeper.<br>
+                    Walls plastered with lurid posters promise fortunes to the lucky and ruin to the desperate. Casinos, pubs, whorehouses... <br>
+                    they press in from all sides, an overwhelming assault on your senses. It's a city that chews up the unwary and spits them out, broken.<br>
                     <br>
+                    But you're not here for the cheap thrills on the surface. Your purpose lies in the city's rotten heart.<br>
+                    You duck off the main road, plunging into the back alleys. Instantly, the world changes. <br>
+                    The light dies here. Even the moon seems afraid to look, hiding behind towering, decrepit buildings. This is a different kind of darkness.<br>
                     <br>
-                    You step off the main road and into the back alleys of Glinthaven and within moments find yourself in a much darker world.<br>
-                    The streets are lightless here, where even the moon creeps between towering structures as if afraid to show its face.<br>
+                    Every corner reeks of brutality. The glint of discarded needles, dark stains on the cobblestones that you know are dried blood, the slumped shape in a doorway that might be a sleeping drunk or a fresh corpse. The city's cheerful din fades to a dead silence, so heavy it makes the hairs on your neck prickle.<br>
                     <br>
-                    At every turn there are traces of brutality and crime..<br>
-                    Discarded drugs, stone stained brown with blood, and even a body or two that no brave soul came to collect. The sounds of revelry fade behind you, replaced by the pregnant silence that makes the hair on your neck stand on end.<br>
+                    You're a veteran of a hundred battles, but this place... this place feels different. <br>
                     <br>
-                    Even for you, a veteran of many battles, it felt like every step you took was leading you deeper into an ambush that might never come. <br>
-                    Your instincts willed you to escape, to flee to the safety of the light, but you couldn't.<br>
+                    Every step echoes with the threat of a knife in the dark. Your instincts scream at you to run, to get back to the light.<br>
+                    But you can't. Because you were invited. You hold an invitation to a myth, a legend hidden in this maze of filth.<br>
                     <br>
-                    <br>
-                    That's because you were invited here, invited to the mythical <b>Arena</b> hidden somewhere in this dark maze. <br>
+                    You're here for the <b>Arena</b> .
                     <br></p>
             </div>
             <div class="box-content hardMode">
@@ -804,29 +820,33 @@
                     <img src="image/illust05.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <p class="box-text langText KOR"><br>
-                    Late in the evening, you regain consciousness in a prison-like space where a faint light seeps in.<br>
-                    The air, filled with moisture, is cold and damp, and mold spreads on the old, cracked stone walls.<br>
-                    There isn't a single proper window here, and in the suffocating silence, only the sound of breathing can be heard.<br>
-                    <br>
-                    Opening your eyes, you assess your condition, feeling the cold touch of metal on your body.<br>
-                    Your wrists and ankles are bound in thick shackles, firmly fixed to the wall, restricting your movement.<br>
-                    You are completely naked, and a sticky liquid runs down your body.<br>
-                    The liquid exudes an unpleasant, unidentifiable smell, confusing you even more.<br>
-                    <br>
-                    The moment you try to get up, a splitting headache overwhelms you.<br>
-                    Your consciousness blurs, and you instinctively clutch your head and curl up.<br>
-                    You try to recall your memories through the pain, but your mind is filled with only faint fragments.<br>
-                    What happened, why you're in this situation—none of it comes to mind.<br>
-                    <br>
-                    Fragmented memories float through your mind.<br>
-                    Unfamiliar gazes, the unpleasant sensation of being scanned, the sharp sound of metallic tools, and a chilling fear.<br>
-                    The scenes flashing through your memory gradually become clearer, trapping you.<br>
-                    A strange sense of pleasure mixed with familiar fear, words flashing through your mind.<br>
-                    <br>
-                    In your confusion, you slowly catch your breath and begin to piece together the fragments of memory.<br>
-                    As the dimly recalled sensations fit together, you realize this is not a simple prison.<br>
-                    Although you can't remember everything clearly, you feel yourself slowly getting closer to the truth in the cold cell.<br>
-                    The confusion remains, but the emerging memories gradually take shape.<br>
+                    Consciousness returns like a slow, painful tide. <br>
+                    The first thing you register is the cold. A damp, biting chill seeping into your bones from the stone floor beneath you. <br>
+                    The air is thick, heavy with the smell of mold and something else... something metallic and foul. <br>
+                    There are no windows. The suffocating silence is broken only by the ragged sound of your own breathing.<br>
+                    You force your eyes open. A wave of dizziness washes over you. Your body feels heavy, wrong. Cold metal bites into your skin.<br>
+<br>
+                    Shit.<br>
+<br>
+                    Heavy shackles clamp your wrists and ankles, chaining you to the wall. You tug, but they don't give an inch. <br>
+                    You're completely naked, exposed to the chilling air. <br>
+                    And your skin... <br>
+                    it's slick with something. <br>
+                    A sticky, foul-smelling liquid runs down your thighs. The smell is unidentifiable, sickly sweet, and it makes your stomach churn.<br>
+                    You try to push yourself up, but a splitting headache explodes behind your eyes, forcing you back down with a gasp. Your vision blurs.<br>
+<br>
+                    <i>What happened? How did I get here?</i><br>
+<br>
+                    Shards of memory pierce the fog in your head. Unfamiliar eyes... leering, probing. The sharp, cold touch of metal tools on your skin.<br>
+                    A wave of chilling, primal fear. The images flash, chaotic and terrifying, but then they start to sharpen.<br>
+                    And beneath the terror, a sickening, familiar thrill... a whisper of pleasure in the depths of your humiliation.<br>
+                    Words echo in your mind, words you don't want to remember. You force yourself to breathe, to piece it all together. <br>
+                    The leering faces, the cold restraints, the feeling of being watched... <br>
+<br>
+                    Violated.<br>
+<br>
+                    As the fog clears, one horrifying truth solidifies. This isn't just a prison. <br>
+                    You remember what they did to you. And you know, with dawning dread, what they're going to do next.<br>
                     <br></p>
             </div>
             <div class="box-content challengeMode">
@@ -1740,7 +1760,7 @@
                     <img src="image/personality4.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">적극</h2> 
+                <h2 class="box-title" style="display: none;">Aggressive</h2> 
                 <h2 class="box-title langText KOR">Proactive</h2>
                 <hr>
                 <blockquote class="langText KOR">"Can you satisfy me?♡"</blockquote>
@@ -2759,10 +2779,7 @@
         document.getElementById('startButton').classList.toggle('disabled');
         if(playRecord.winCount) {
             document.getElementById("hardmodeButton").classList.toggle("disabled");
-        }
-        if(playRecord.hardWinCount) {
-            document.getElementById("challengeButton").classList.toggle("disabled");
-        }
+        } 
         saveObject("agree", this.checked);
     });
 

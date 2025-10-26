@@ -723,7 +723,7 @@ const storyText = {
 			"무지": {
 				KOR: `I'll devote my life to you, okay?...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `My life is yours. I'll do anything for you...♡`
 			},
 		}
@@ -1031,7 +1031,7 @@ const storyText = {
 			"무지": {
 				KOR: `I'll devote my life to you, okay?...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `My life is yours. I'll do anything for you...♡`
 			},
 		}
@@ -1333,7 +1333,7 @@ const storyText = {
 			"무지": {
 				KOR: `I'll devote my life to you, okay?...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `My life is yours. I'll do anything for you...♡`
 			},
 		}
@@ -1631,7 +1631,7 @@ const storyText = {
 			"무지": {
 				KOR: `I'll devote my life to you, okay?...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `My life is yours. I'll do anything for you...♡`
 			},
 		}
@@ -1928,7 +1928,7 @@ const storyText = {
 			"무지": {
 				KOR: `I promise to do my duty and... open up for the nice gentlemen...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `This is what I'm for now... I'll happily swear to spread for any man...♡`
 			},
 		}
@@ -2224,7 +2224,7 @@ const storyText = {
 			"무지": {
 				KOR: `I promise to do my duty and... open up for the nice gentlemen...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `This is what I'm for now... I'll happily swear to spread for any man...♡`
 			},
 		}
@@ -2518,7 +2518,7 @@ const storyText = {
 			"무지": {
 				KOR: `I promise to do my duty and... open up for the nice gentlemen...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `This is what I'm for now... I'll happily swear to spread for any man...♡`
 			},
 		}
@@ -2815,7 +2815,7 @@ const storyText = {
 			"무지": {
 				KOR: `I will give my body so I can be useful for men's pleasure...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `My body exists to satisfy men, and I'll devote it completely to that purpose...♡`
 			},
 		}
@@ -3108,7 +3108,7 @@ const storyText = {
 			"무지": {
 				KOR: `I will give my body so I can be useful for men's pleasure...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `My body exists to satisfy men, and I'll devote it completely to that purpose...♡`
 			},
 		}
@@ -3476,7 +3476,7 @@ const storyText = {
 			"무지": {
 				KOR: `I will give my body so I can be useful for men's pleasure...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `My body exists to satisfy men, and I'll devote it completely to that purpose...♡`
 			},
 		}
@@ -3783,7 +3783,7 @@ const storyText = {
 			"무지": {
 				KOR: `I will give my body so I can be useful for men's pleasure...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `My body exists to satisfy men, and I'll devote it completely to that purpose...♡`
 			},
 		}
@@ -4077,7 +4077,7 @@ const storyText = {
 			"무지": {
 				KOR: `I'll be a good girl and offer my body to the big, important Cock...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `I live to serve the Divine Phallus! Take this humble body—it's yours...♡`
 			},
 		}
@@ -4372,7 +4372,7 @@ const storyText = {
 			"무지": {
 				KOR: `I'll be a good girl and offer my body to the big, important Cock...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `I live to serve the Divine Phallus! Take this humble body—it's yours...♡`
 			},
 		}
@@ -4689,7 +4689,7 @@ const storyText = {
 			"무지": {
 				KOR: `I'll be a good girl and offer my body to the big, important Cock...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `I live to serve the Divine Phallus! Take this humble body—it's yours...♡`
 			},
 		}
@@ -4981,7 +4981,7 @@ const storyText = {
 			"무지": {
 				KOR: `I promise to devote my all to be useful for the Arena's success...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `Take everything from me! I'll devote it all to the Arena's glorious future...♡`
 			},
 		}
@@ -5277,7 +5277,7 @@ const storyText = {
 			"무지": {
 				KOR: `I promise to devote my all to be useful for the Arena's success...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `Take everything from me! I'll devote it all to the Arena's glorious future...♡`
 			},
 		}
@@ -5594,7 +5594,7 @@ const storyText = {
 			"무지": {
 				KOR: `I promise to devote my all to be useful for the Arena's success...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `Take everything from me! I'll devote it all to the Arena's glorious future...♡`
 			},
 		}
@@ -5884,7 +5884,7 @@ const storyText = {
 			"무지": {
 				KOR: `I promise to devote my all to be useful for the Arena's success...♡`
 			},
-			"적극": {
+			"Aggressive": {
 				KOR: `Take everything from me! I'll devote it all to the Arena's glorious future...♡`
 			},
 		}
@@ -7401,7 +7401,7 @@ const storyText = {
 		"무지": {
 			KOR: `Thank you for giving my holes a job! I promise I'll be a good little cumdump...♡`
 		},
-		"적극": {
+		"Aggressive": {
 			KOR: `Thank you for hiring me! I'll work so hard to please you, you'll never regret it for a second...♡`
 		},
 	}
@@ -7721,7 +7721,7 @@ const storyText = {
 		"무지": {
 			KOR: `Thank you for giving my holes a job! I promise I'll be a good little cumdump...♡`
 		},
-		"적극": {
+		"Aggressive": {
 			KOR: `Thank you for hiring me! I'll work so hard to please you, you'll never regret it for a second...♡`
 		},
 	}
@@ -8017,7 +8017,7 @@ const storyText = {
 		"무지": {
 			KOR: `Thank you for giving my holes a job! I promise I'll be a good little cumdump...♡`
 		},
-		"적극": {
+		"Aggressive": {
 			KOR: `Thank you for hiring me! I'll work so hard to please you, you'll never regret it for a second...♡`
 		},
 	}
@@ -8323,7 +8323,7 @@ const storyText = {
 		"무지": {
 			KOR: `Thank you for giving my holes a job! I promise I'll be a good little cumdump...♡`
 		},
-		"적극": {
+		"Aggressive": {
 			KOR: `Thank you for hiring me! I'll work so hard to please you, you'll never regret it for a second...♡`
 		},
 	}
@@ -8621,7 +8621,7 @@ const storyText = {
 		"무지": {
 			KOR: `Oh, I get it now! I've been alive all this time just so I could have sex here!...♡`
 		},
-		"적극": {
+		"Aggressive": {
 			KOR: `I've finally found my true calling! I was meant to be fucked here, and I'm so happy!...♡`
 		},
 	}
@@ -8914,7 +8914,7 @@ const storyText = {
 		"무지": {
 			KOR: `Oh, I get it now! I've been alive all this time just so I could have sex here!...♡`
 		},
-		"적극": {
+		"Aggressive": {
 			KOR: `I've finally found my true calling! I was meant to be fucked here, and I'm so happy!...♡`
 		},
 	}
@@ -9205,7 +9205,7 @@ const storyText = {
 		"무지": {
 			KOR: `Oh, I get it now! I've been alive all this time just so I could have sex here!...♡`
 		},
-		"적극": {
+		"Aggressive": {
 			KOR: `I've finally found my true calling! I was meant to be fucked here, and I'm so happy!...♡`
 		},
 	}
@@ -9501,7 +9501,7 @@ const storyText = {
 		"무지": {
 			KOR: `Oh, I get it now! I've been alive all this time just so I could have sex here!...♡`
 		},
-		"적극": {
+		"Aggressive": {
 			KOR: `I've finally found my true calling! I was meant to be fucked here, and I'm so happy!...♡`
 		},
 	}

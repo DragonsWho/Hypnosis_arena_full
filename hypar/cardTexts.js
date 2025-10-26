@@ -36,13 +36,13 @@ const cardTexts = {
 		"획득시":{
 			"KOR": "<span style=\"color: gray;\">[On Gain]</span> "
 		},
-		"체위획득시":{
+		"Position획득시":{
 			"KOR": "When you gain this Position, "
 		},
-		"체위상실시":{
+		"Position상실시":{
 			"KOR": "When you lose this Position, "
 		},
-		"체위획득상실시":{
+		"Position획득상실시":{
 			"KOR": "When you gain or lose this Position, "
 		},
 		"변형될시":{
@@ -90,7 +90,7 @@ const cardTexts = {
 		"보조사용시":{
 			"KOR": "When you play a Support card, "
 		},
-		"체위사용시":{
+		"Position사용시":{
 			"KOR": "When you play a Position card, "
 		},
 		"Penalty사용시":{
@@ -108,7 +108,7 @@ const cardTexts = {
 		"상대보조사용시":{
 			"KOR": "When the opponent plays a Support card, "
 		},
-		"상대체위사용시":{
+		"상대Position사용시":{
 			"KOR": "When the opponent plays a Position card, "
 		},
 		"상대Penalty사용시":{
@@ -123,7 +123,7 @@ const cardTexts = {
 		"도전자보조사용시":{
 			"KOR": "When the Challenger plays a Support card, "
 		},
-		"도전자체위사용시":{
+		"도전자Position사용시":{
 			"KOR": "When the Challenger plays a Position card, "
 		},
 		"도전자Penalty사용시":{
@@ -138,7 +138,7 @@ const cardTexts = {
 		"Champion보조사용시":{
 			"KOR": "When the Champion plays a Support card, "
 		},
-		"Champion체위사용시":{
+		"ChampionPosition사용시":{
 			"KOR": "When the Champion plays a Position card, "
 		},
 		"ChampionPenalty사용시":{
@@ -153,7 +153,7 @@ const cardTexts = {
 		"누군가보조사용시":{
 			"KOR": "When you or the opponent plays a Support card, "
 		},
-		"누군가체위사용시":{
+		"누군가Position사용시":{
 			"KOR": "When you or the opponent plays a Position card, "
 		},
 		"누군가Penalty사용시":{
@@ -171,7 +171,7 @@ const cardTexts = {
 		"card변형시":{
 			"KOR": "When a card is Transformed, "
 		},
-		"마술만료시":{
+		"Magic만료시":{
 			"KOR": "When a Magic expires, "
 		},
 		"결합시":{
@@ -316,7 +316,7 @@ const cardTexts = {
 		"기록Wetness획득":{
 			"KOR": "<b>Wetness</b> gained {time}",
 		},
-		"기록감각차단획득":{
+		"기록Sense Block획득":{
 			"KOR": "<b>Numbness</b> gained {time}",
 		},
 		"기록Corruption획득":{
@@ -337,7 +337,7 @@ const cardTexts = {
 		"기록회피자신":{
 			"KOR": "the number of times you evaded {time}",
 		},
-		"기록만료마술":{
+		"기록만료Magic":{
 			"KOR": "{cards} expired {time}",
 		},
 
@@ -388,7 +388,7 @@ const cardTexts = {
 			"KOR": "different Crafted cards"
 		},
 
-		"마술슬롯":{
+		"Magic Slot":{
 			"KOR": "{cards} in Magic Slots"
 		},
 	},
@@ -993,11 +993,11 @@ const cardTexts = {
 			"KOR": "Make {value} equal to {amount}.",
 		},
 
-		"체위삭제":{
+		"Position삭제":{
 			"KOR": "Remove the <b>Position</b>.",
 		},
 
-		"체위부여":{
+		"Position부여":{
 			"KOR": "<span style='color: gray;''><i>(Changes to the following <b>Position</b>.)</i></span>",
 		},
 
@@ -1121,10 +1121,10 @@ const cardTexts = {
 		"보조사용불가자신":{
 			"KOR": "Cannot play Support cards.",
 		},
-		"체위사용불가":{
+		"Position사용불가":{
 			"KOR": "{actor} cannot play Position cards.",
 		},
-		"체위사용불가자신":{
+		"Position사용불가자신":{
 			"KOR": "Cannot play Position cards.",
 		},
 		"탈의사용불가":{
@@ -1151,10 +1151,10 @@ const cardTexts = {
 		"보조강제사용자신":{
 			"KOR": "Can only play Support cards.",
 		},
-		"체위강제사용":{
+		"Position강제사용":{
 			"KOR": "{actor} can only play Position cards.",
 		},
-		"체위강제사용자신":{
+		"Position강제사용자신":{
 			"KOR": "Can only play Position cards.",
 		},
 		"탈의강제사용":{
@@ -1224,7 +1224,7 @@ const cardTexts = {
 		"독비활성화":{
 			"KOR": "Poisons lose their effects.",
 		},
-		"마술비활성화":{
+		"Magic비활성화":{
 			"KOR": "Magic cards lose their effects.",
 		},
 
@@ -1249,13 +1249,13 @@ const cardTexts = {
 		"회피금지":{
 			"KOR": "Cannot evade.",
 		},
-		"시작감각차단":{
+		"시작Sense Block":{
 			"KOR": "Start with {amount} <b>Numbness</b>.",
 		},
-		"감각차단금지":{
+		"Sense Block금지":{
 			"KOR": "Cannot gain <b>Numbness</b>.",
 		},
-		"감각차단제한":{
+		"Sense Block제한":{
 			"KOR": "<b>Numbness</b> cannot exceed {amount}.",
 		},
 		"시작Corruption":{
@@ -1300,10 +1300,10 @@ const cardTexts = {
 		"무감자신":{
 			"KOR": "Can only have an <b>Orgasm</b> from <b>Excitement</b>.",
 		},
-		"정기흡수":{
+		"Essence흡수":{
 			"KOR": "{actor} gains <b>Essence Drain</b>.",
 		},
-		"정기흡수자신":{
+		"Essence흡수자신":{
 			"KOR": "Gain <b>Essence Drain</b>.",
 		},
 
@@ -1314,7 +1314,7 @@ const cardTexts = {
 			"KOR": "Reset {card}'s upgrades.",
 		},
 
-		"마술교체":{
+		"Magic교체":{
 			"KOR": "Replace the {slot} slot with {card}.",
 		},
 
