@@ -5,7 +5,7 @@ from threading import Timer
 import os
 
 # --- Настройки ---
-PORT = 5501 # Часто используется порт 5500, как в VS Code Live Server
+PORT = 5502 # Часто используется порт 5500, как в VS Code Live Server
 HOST = '127.0.0.1'
 TARGET_FILE = 'hypar/index.html'
 # -----------------
