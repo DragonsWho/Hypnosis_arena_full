@@ -13,7 +13,7 @@ const line = {
 //###################################################################################################################################################################################
 	"조우":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"고블린즈"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Goblins"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -22,7 +22,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"마을사람"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Villager"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -31,7 +31,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -49,7 +49,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"타우로스"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Tauros"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -67,7 +67,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"금발양아치"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -76,7 +76,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"조교사"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Trainer"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -86,7 +86,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"고블린즈"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Goblins"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -95,7 +95,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"마을사람"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Villager"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -104,7 +104,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -122,7 +122,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"타우로스"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Tauros"}], 
 			lineList:[
 				{
 					cond:true, pos:0, effect:"shake",
@@ -140,7 +140,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"금발양아치"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -149,7 +149,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"조교사"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Trainer"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -206,7 +206,7 @@ const line = {
 
 	"패배":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"고블린즈"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Goblins"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -215,7 +215,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"마을사람"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Villager"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -224,7 +224,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -242,7 +242,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"타우로스"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Tauros"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -260,7 +260,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"금발양아치"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -269,7 +269,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"조교사"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Trainer"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -279,7 +279,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"고블린즈"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Goblins"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -288,7 +288,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"마을사람"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Villager"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -297,7 +297,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -315,7 +315,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"타우로스"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Tauros"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -333,7 +333,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"금발양아치"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -342,7 +342,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"조교사"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Trainer"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -399,7 +399,7 @@ const line = {
 
 	"승리":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"고블린즈"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Goblins"}], 
 			lineList:[
 				{
 					cond:["or", {v1:"특수승리", op:"!=", v2:true}, {v1:"Champion.절정", op:">=", v2:5}], pos:0,
@@ -412,7 +412,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"마을사람"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Villager"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -421,7 +421,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -439,7 +439,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"타우로스"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Tauros"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -457,7 +457,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"금발양아치"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -466,7 +466,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"조교사"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Trainer"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -476,7 +476,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"고블린즈"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Goblins"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -485,7 +485,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"마을사람"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Villager"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -494,7 +494,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -512,7 +512,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"타우로스"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Tauros"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -530,7 +530,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"금발양아치"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -539,7 +539,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"조교사"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Trainer"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -662,19 +662,19 @@ const line = {
 			priority:0, cond:true, repeatable:true,
 			lineList:[
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"고블린즈"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Goblins"}], pos:0,
 					text:"Kerek♡ I'm cumming♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"마을사람"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Villager"}], pos:0,
 					text:"Ugh...♡ It's coming♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], pos:0,
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"타우로스"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tauros"}], pos:0,
 					text:"Hook♡ Hook♡",
 				},
 				{
@@ -686,11 +686,11 @@ const line = {
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"금발양아치"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], pos:0,
 					text:"This bitch, what a tight pussy♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"조교사"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Trainer"}], pos:0,
 					text:"You're somewhat useful...",
 				},
 			]
@@ -699,19 +699,19 @@ const line = {
 			priority:0, cond:true, repeatable:true,
 			lineList:[
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"고블린즈"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Goblins"}], pos:0,
 					text:"Kyaak, I can't hold it in♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"마을사람"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Villager"}], pos:0,
 					text:"Ohot...♡ You're so tight♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], pos:0,
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"타우로스"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tauros"}], pos:0,
 					text:"Hook♡ Hook♡",
 				},
 				{
@@ -723,11 +723,11 @@ const line = {
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"금발양아치"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], pos:0,
 					text:"Ha, I can't hold this in...♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"조교사"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Trainer"}], pos:0,
 					text:"Ugh... Not bad.",
 				},
 			]
@@ -736,19 +736,19 @@ const line = {
 			priority:0, cond:true, repeatable:true,
 			lineList:[
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"고블린즈"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Goblins"}], pos:0,
 					text:"Kerek... It's coming♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"마을사람"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Villager"}], pos:0,
 					text:"Uhot♡ I'm cumming♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], pos:0,
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"타우로스"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tauros"}], pos:0,
 					text:"Hook♡ Hook♡",
 				},
 				{
@@ -760,11 +760,11 @@ const line = {
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"금발양아치"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], pos:0,
 					text:"Damn, this feels good♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"조교사"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Trainer"}], pos:0,
 					text:"Kgh... How could this...",
 				},
 			]
@@ -777,19 +777,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"고블린즈"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Goblins"}], pos:0,
 					text:"Kyaak, I'm being squeezed dry♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"마을사람"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Villager"}], pos:0,
 					text:"Uhooot♡ This feels unbelievably good♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"촉수슬라임"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], pos:0,
 					text:"*Shudder shudder...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"타우로스"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tauros"}], pos:0,
 					text:"Huoooook♡",
 				},
 				{
@@ -801,11 +801,11 @@ const line = {
 					text:"*This body...<br>is no longer usable...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"금발양아치"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], pos:0,
 					text:"Kgh♡ You're the best woman I've ever had♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"조교사"}], pos:0,
+					cond:["and", {v1:"Champion.이름", op:"==", v2:"Trainer"}], pos:0,
 					text:"Female slaaaaave♡",
 				},
 			]
@@ -860,7 +860,7 @@ const line = {
 		},
 	],
 
-	"고블린즈-교체":[
+	"Goblins-교체":[
 		{
 			priority:7, cond:{v1:"Champion.절정", op:"==", v2:1}, 
 			lineList:[
@@ -1059,7 +1059,7 @@ const line = {
 		},
 	],
 
-	"고블린즈-이벤트-개전":[
+	"Goblins-이벤트-개전":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -1234,7 +1234,7 @@ const line = {
 			]
 		},
 	],
-	"고블린즈-이벤트-Excitement":[
+	"Goblins-이벤트-Excitement":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -1413,7 +1413,7 @@ const line = {
 			]
 		},
 	],
-	"고블린즈-이벤트-Corruption":[
+	"Goblins-이벤트-Corruption":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -1853,7 +1853,7 @@ const line = {
 		},
 	],
 
-	"마을사람-이벤트-개전":[
+	"Villager-이벤트-개전":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -2020,7 +2020,7 @@ const line = {
 			]
 		},
 	],
-	"마을사람-이벤트-행동불가":[ 
+	"Villager-이벤트-행동불가":[ 
 		{
 			priority:0, cond:true, repeatable:true,
 			lineList:[
@@ -2043,7 +2043,7 @@ const line = {
 			]
 		},
 	],
-	"마을사람-이벤트-Excitement":[
+	"Villager-이벤트-Excitement":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -2238,7 +2238,7 @@ const line = {
 			]
 		},
 	],
-	"마을사람-이벤트-Corruption":[
+	"Villager-이벤트-Corruption":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -2448,7 +2448,7 @@ const line = {
 			]
 		},
 	],
-	"촉수공격":[
+	"촉수attack":[
 		{
 			priority:0, cond:true,
 			lineList:[
@@ -2530,7 +2530,7 @@ const line = {
 	],
 
 
-	"촉수슬라임-이벤트-개전":[
+	"Tentacle Slime-이벤트-개전":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -2700,7 +2700,7 @@ const line = {
 			]
 		},
 	],
-	"촉수슬라임-이벤트-보호점액":[ 
+	"Tentacle Slime-이벤트-보호점액":[ 
 		{
 			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"플레이어.표정", op:"!=", v2:"corrupted"}], repeatable:true,
 			lineList:[
@@ -2784,7 +2784,7 @@ const line = {
 			]
 		},
 	],
-	"촉수슬라임-이벤트-Excitement":[
+	"Tentacle Slime-이벤트-Excitement":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -2943,7 +2943,7 @@ const line = {
 			]
 		},
 	],
-	"촉수슬라임-이벤트-Corruption":[
+	"Tentacle Slime-이벤트-Corruption":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -3925,7 +3925,7 @@ const line = {
 			]
 		},
 	],
-	"타우로스울음":[
+	"Tauros울음":[
 		{
 			priority:0, cond:true, repeatable:true,
 			lineList:[
@@ -4065,7 +4065,7 @@ const line = {
 	],
 
 
-	"타우로스-휴식":[ 
+	"Tauros-휴식":[ 
 		{
 			priority:0, cond:["and", {v1:"플레이어.표정", op:"!=", v2:"corrupted"}], repeatable:true,
 			lineList:[
@@ -4086,7 +4086,7 @@ const line = {
 		},
 	],
 
-	"타우로스-이벤트-개전":[
+	"Tauros-이벤트-개전":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -4261,7 +4261,7 @@ const line = {
 			]
 		},
 	],
-	"타우로스-이벤트-Excitement":[
+	"Tauros-이벤트-Excitement":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -4440,7 +4440,7 @@ const line = {
 			]
 		},
 	],
-	"타우로스-이벤트-Corruption":[
+	"Tauros-이벤트-Corruption":[
 		{
 			priority:0, cond:true,
 			lineList:[
@@ -5767,7 +5767,7 @@ const line = {
 		},
 	],
 
-	"금발양아치-이벤트-개전":[
+	"Blonde Thug-이벤트-개전":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -5954,7 +5954,7 @@ const line = {
 			]
 		},
 	],
-	"금발양아치-이벤트-Excitement":[
+	"Blonde Thug-이벤트-Excitement":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -6149,7 +6149,7 @@ const line = {
 			]
 		},
 	],
-	"금발양아치-이벤트-Corruption":[
+	"Blonde Thug-이벤트-Corruption":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -6499,7 +6499,7 @@ const line = {
 		},
 	],
 
-	"조교사-이벤트-개전":[
+	"Trainer-이벤트-개전":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -6702,7 +6702,7 @@ const line = {
 			]
 		},
 	],
-	"조교사-이벤트-조교성공":[
+	"Trainer-이벤트-조교성공":[
 		{
 			priority:0, cond:true, repeatable:true,
 			lineList:[
@@ -6713,7 +6713,7 @@ const line = {
 			]
 		},
 	],
-	"조교사-이벤트-Excitement":[
+	"Trainer-이벤트-Excitement":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -6908,7 +6908,7 @@ const line = {
 			]
 		},
 	],
-	"조교사-이벤트-Corruption":[
+	"Trainer-이벤트-Corruption":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
 			lineList:[
@@ -9665,7 +9665,7 @@ const line = {
 	],
 	"개입-최면":[
 		{
-			priority:2, cond:["and", {v1:"Champion.이름", op:"==", v2:"금발양아치"}],
+			priority:2, cond:["and", {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"칼레스",
@@ -10018,7 +10018,7 @@ const line = {
 	],
 	"개입-고문":[
 		{
-			priority:2, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"조교사"}],
+			priority:2, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Trainer"}],
 			lineList:[
 				{
 					cond:true, pos:0,

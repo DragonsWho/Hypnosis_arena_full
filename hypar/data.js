@@ -68,7 +68,7 @@ const dictionary = {
     "Aggressive":{ "KOR":"Proactive" },
 
 	"Neutral":{ "KOR":"Neutral" },
-	"Neutral공격":{ "KOR":"Neutral Attack" },
+	"Neutralattack":{ "KOR":"Neutral Attack" },
 	"Warrior":{ "KOR":"Warrior" },
 	"Assassin":{ "KOR":"Assassin" },
 	"Magician":{ "KOR":"Magician" },
@@ -100,7 +100,7 @@ const dictionary = {
 	"card":{ "KOR":"Cards" },
 	"Poison Pouch":{ "KOR":"Poison Pouch" },
 
-	"공격":{ "KOR":"Attack" },
+	"attack":{ "KOR":"Attack" },
 	"보조":{ "KOR":"Support" },
 	"자세":{ "KOR":"Posture" },
 	"Position":{ "KOR":"Position" },
@@ -182,14 +182,14 @@ const dictionary = {
 
 	"하드모드":{ "KOR":"Hard Mode" },
 
-	"고블린즈":{ "KOR":"Goblins" },
-	"마을사람":{ "KOR":"Villager" },
-	"촉수슬라임":{ "KOR":"Tentacle Slime" },
+	"Goblins":{ "KOR":"Goblins" },
+	"Villager":{ "KOR":"Villager" },
+	"Tentacle Slime":{ "KOR":"Tentacle Slime" },
 	"악동":{ "KOR":"Imp" },
-	"타우로스":{ "KOR":"Tauros" },
+	"Tauros":{ "KOR":"Tauros" },
 	"Mushroom Man":{ "KOR":"Mushroom Man" },
-	"금발양아치":{ "KOR":"Blonde Thug" },
-	"조교사":{ "KOR":"Trainer" },
+	"Blonde Thug":{ "KOR":"Blonde Thug" },
+	"Trainer":{ "KOR":"Trainer" },
 	"산드레아":{ "KOR":"Sandrea" },
 
  
@@ -856,20 +856,47 @@ const ruleDescription = {
 
 const champList = {
 	"boss1":{
+
+
+
 		id:"boss1",
-		name:{ "KOR":"Goblins" }, fullName:{ "KOR":"Five Goblins" }, img:"boss1", category:"첫상대",
-		condDesc:{ "KOR":`일반모드에서 <b>[${dictionary["고블린즈"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["고블린즈"]["ENG"]}]</b> in normal mode` },
-		look: { "KOR":"A pack of goblins...?" },
-		logDesc: { "KOR":"A pack of goblins raised in the arena.<br>Used to stage the humiliation of a strong adventurer being gang-raped by base, weak monsters.<br><br>While individually weak, they have a habit of compensating for this by swarming their prey.<br>They possess strong genes that allow them to impregnate females of other species, and there are recorded cases of them kidnapping human women to use as broodmothers.<br><br>They have been trained to be in a constant state of heat through a steady diet of aphrodisiac-laced food. Traces of this substance remain in their semen, which has the effect of arousing their opponents." },
-		description: { "KOR":`\n                The champion revealed: a pack of goblins.<br>\n                Not even human, but the lowest of monsters. And not just one, but a whole group.<br>\n                You can only stare, bewildered by the absurdity of it all.<br>\n                Yet, a glance at the crowd and the arena staff confirms it—no one is objecting.<br>\n                These creatures are truly your opponents.<br>\n                <br>\n                Goblins are the weakest of the weak.<br>\n                Even in a group, they should be no match for you, a veteran of nearly a hundred goblin subjugations.<br>\n                The insult stings; you were prepared for an undefeated champion, not a practical joke.<br>\n                <br>\n                <br>\n                With a sigh, you ready yourself for battle, but your eyes fall upon one of the creature's genitals.<br>\n                Twisted, filthy, utterly revolting...<br>\n                A wave of nausea hits you at the thought of having to take *that* inside you.<br>\n                <br>\n                Wait a minute. Haven't you fought these things countless times?<br>\n                Why this sudden revulsion? Why this hesitation?<br>\n                A cold sweat breaks out across your skin as a deep, unsettling feeling takes root.<br>\n                <br>\n                This fight might not be as easy as you think.<br>\n                <br>\n                <br>\n                <b>Individually, they are nothing.<br>\n                But you must face all five of them.</b>\n            ` },
+		name:{ "KOR":"Goblins" }, fullName:{ "KOR":"The Goblin Pack" }, img:"boss1", category:"First Opponent",
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Goblins"]["KOR"]}]</b> in normal mode`,
+		"ENG":`Win against <b>[${dictionary["Goblins"]["KOR"]}]</b> in normal mode` },
+		look: { "KOR":"A pack of weak goblins... Are they serious?" },
+    logDesc: { "KOR":`A pack of goblins, bred and raised in the Arena's pens specifically for this purpose: to watch a powerful female warrior get broken and bred by the lowest of monsters.<br><br>Individually, they are pathetic. Their strength comes from their numbers and their feral, swarming tactics. Genetically potent, they are infamous for their ability to impregnate females of almost any species, often dragging human women back to their nests to serve as broodmothers.<br><br>These particular goblins are kept in a constant state of savage heat, fed a diet laced with potent aphrodisiacs. This chemical cocktail contaminates their seed, acting as a potent drug that heightens the arousal and breaks the will of anyone they violate.` },
+    description: { "KOR":`
+                The gates open, and a wave of stinking, green-skinned filth spills into the arena. Goblins. Chittering, leering, reeking of sweat and something musky. Not one, but a whole pack of them.<br>
+                <br>
+                This isn't a fight. It's a statement. A calculated insult spat in your face by the Arena's masters. You've butchered hundreds of these runts in your time. A single swing of your sword could cleave three of them in half. This is beneath you. This is a joke.<br>
+                <br>
+                But the crowd is roaring with anticipation. The guards watch, impassive. This is your opponent. This is your challenge.<br>
+                <br>
+                One of them, bolder than the rest, swaggers forward. It bares its yellowed teeth in a foul grin, and your eyes are unwillingly drawn downward. To its grotesque, knotted cock, already erect and glistening.<br>
+                <br>
+                A sudden, sharp revulsion hits you, so strong it's almost dizzying. But why? You're a warrior. You've faced down horrors that would make this creature seem like a pet. Why does this particular sight make your knees feel weak and your palms sweat?<br>
+                <br>
+                It’s as if a foul energy is rolling off them in waves. A psychic venom that attacks your will, not your body. A strange, unfamiliar heat coils low in your belly, a dizzying sensation that makes it hard to focus on your fighting stance.<br>
+                <br>
+                These aren't ordinary goblins from some forgotten cave. The Arena has twisted them, bred them into something more insidious. Their true weapon isn't their claws or their numbers... it's this corrupting aura that saps your strength before the first blow is even struck.<br>
+                <br>
+                You brace yourself, but a tremor of genuine unease runs through you.<br>
+                This fight is going to be far more dangerous than you thought.<br>
+                <br>
+                <b><b>Individually, they are nothing.<br>\n
+				But you must face all five of them.<br>
+            ` },
         stats: {
             exciteL: 4,
             orgasmL: 5,
-            specialties: { "KOR":["Giving penalty cards to the opponent and utilizing them",
-                    "Stimulating multiple times at once",
-                    "Low excitement limit and high orgasm limit"] }
+            specialties: { "KOR":["Overwhelms you with 'Gang Up' cards.",
+                "Attacks in a swarm, hitting you multiple times.",
+                "Quickly aroused, but built for marathon sessions."] }
         },
+
+
+
+
         deck:[
 			"B1-UC-001",
 			"B1-AT-001",
@@ -933,26 +960,56 @@ const champList = {
 		},
 	},
 	"boss2":{
+
+
 		id:"boss2",
-		name:{ "KOR":"Villager" }, fullName:{ "KOR":"Villager" }, img:"boss2", category:"첫상대",
-		condDesc:{ "KOR":`일반모드에서 <b>[${dictionary["마을사람"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["마을사람"]["ENG"]}]</b> in normal mode` },
-		look: { "KOR":"An inept-looking villager...?" },
-		logDesc: { "KOR":"An unemployed man from a small village.<br>Used to inflict great humiliation upon women who lose to such a pathetic individual.<br><br>He was hired while in the process of being enslaved after being captured for failing to pay his large gambling debts.<br>He excels at nothing, and is so appallingly bad at sex that victory through normal means is impossible.<br><br>He has been issued a prototype replica of a hypnosis artifact and given permission to use it freely during the duel." },
-		description: { "KOR":`\n                The champion is a weak-looking villager.<br>\n                A completely powerless commoner, standing there in shabby clothes with an awkward posture.<br>\n                No matter how you look at him, he seems far removed from the title of champion.<br>\n                <br>\n                When you first saw him, you assumed he was a referee or some other staff member.<br>\n                You just couldn't believe he was the undefeated champion.<br>\n                <br>\n                He lacks the gravitas and skilled movements typically felt from a strong fighter.<br>\n                His gaze, which blatantly traces your body, reveals a base desire, making him seem full of openings.<br>\n                You can't even begin to imagine a scenario where you would lose to him.<br>\n                <br>\n                <br>\n                As you stand there, greatly disappointed, he scratches the back of his head and speaks.<br>\n                He says there's something he wants to show you before the duel begins.<br>\n                He holds up a small, square stone tablet for you to see.<br>\n                <br>\n                Without suspicion, you look at it, and the tablet emits a purple light.<br>\n                A sudden flash sears into your mind, and you feel your thoughts go blank.<br>\n                What a dirty trick.<br>\n                You quickly try to gather your wits and organize your thoughts again.<br>\n                <br>\n                Right... you have a duty to serve the man before you, don't you...<br>\n                <br>\n                <br>\n                <b>Villager has the ability to control and interfere with your actions.</b>\n            ` },
+		name:{ "KOR":"Villager" }, fullName:{ "KOR":"Villager" }, img:"boss2", category:"First Opponent",
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Villager"]["KOR"]}]</b> in normal mode` },
+		look: { "KOR":"Some slack-jawed peasant... this can't be right." 
+
+		},
+		logDesc: { "KOR":`A worthless debtor scooped up from some backwater village, drowning in gambling debts.<br>His purpose in the Arena is singular: to provide the ultimate humiliation for female warriors forced to submit to a man utterly beneath contempt.<br><br>He possesses no skill, no strength, and is reportedly so profoundly inept in bed that a "normal" victory would be impossible. He is, in every sense, a loser.<br><br>To compensate for his utter lack of merit, the Arena's masters have armed him with a dangerous toy: a prototype Mind-Leash Stone, an artifact that gives him direct control over his opponent's actions.` },
+
+
+		description: { "KOR":`
+						Your opponent is... pathetic.<br>
+						A slack-jawed commoner in shabby clothes, shifting his weight awkwardly from foot to foot. He reeks of cheap ale and desperation. He isn't a champion; he's the kind of man you'd step over in a gutter without a second glance.<br>
+						<br>
+						You almost laugh. This has to be a mistake. A lowly stagehand who wandered into the wrong place. But no, the crowd's expectant silence tells you this is real.<br>
+						<br>
+						He lacks any semblance of a fighter's discipline. His greedy, leering gaze crawls over your body like an insect, lingering on your breasts, your thighs... a look so full of base desire it's an open invitation for a fist to the face. A hundred ways to break him flicker through your mind before he even takes a step.<br>
+						<br>
+						"Uh... before we start," he mumbles, scratching the back of his greasy hair, "got somethin' to show ya."<br>
+						He fumbles in his pocket and holds up a small, dull stone tablet.<br>
+						<br>
+						You barely have time to register it before the tablet flashes with a sickening purple light. It's not a bright flash, but a deep, penetrating pulse that bypasses your eyes and slams directly into your brain.<br>
+						<br>
+						A dirty trick. A coward's weapon.<br>
+						You shake your head to clear the sudden fog, trying to re-center, to fall into your fighting stance...<br>
+						<br>
+						...but your arms feel heavy, disobedient. Your legs refuse to lock into place.<br>
+						<br>
+						A thought, slick and oily, slides into your mind, wearing the voice of your own reason: <i>'He is your champion. Why are you resisting? You have a duty to please him... don't you?</i>'<br>
+						<br>
+						<b>The Villager cannot beat you in a fair fight.<br>
+						So he'll use his artifact to make you beat yourself.</b>
+					` },
         stats: {
             exciteL: 7,
             orgasmL: 3,
             specialties: {
                 KOR: [
-	                "Prevents card use",
-	                "Disrupts combos ",
+					"Locks down your moves with jarring mental commands.",
+					"Shatters your concentration, breaking your combo.",
 	                "Punishes mistakes with massive damage"
                 ],
                 ENG: [
                 ]
             }
         },
+
+
+
         deck:[
 			"B2-UC-001",
 			"B2-AT-001",
@@ -972,7 +1029,7 @@ const champList = {
 			],
 			"B2-AT-001":[
 				{cond:true, priority:2},
-				{cond:{v1:"상대덱.count(type, 공격)", op:"==", v2:"0"}, priority:-Infinity},
+				{cond:{v1:"상대덱.count(type, attack)", op:"==", v2:"0"}, priority:-Infinity},
 			],
 			"B2-AT-002":[
 				{cond:true, priority:2},
@@ -1005,26 +1062,49 @@ const champList = {
 		}
 	},
 	"boss3":{
+
+
+
 		id:"boss3",
-		name:{ "KOR":"Tentacle Slime" }, fullName:{ "KOR":"Modified Tentacle Slime" }, img:"boss3", category:"첫상대",
-		condDesc:{ "KOR":`일반모드에서 <b>[${dictionary["촉수슬라임"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["촉수슬라임"]["ENG"]}]</b> in normal mode` },
-		look: { "KOR":"A slime with many tentacles...?" },
-		logDesc: { "KOR":"A tentacle slime modified in the arena.<br>Used to stage scenes of bondage and humiliation with its sticky tentacles.<br><br>Originally a small, harmless low-level monster, it has been selectively bred to increase its size and trained to actively violate women.<br>It has a habit of tracking its food source, so it has been continuously fed female bodily fluids as part of its training.<br><br>However, its fragility remains unchanged. If it receives stimulation beyond its limit, its body will break down and it will die." },
-		description: { "KOR":`\n            The champion is a slime.<br>\n            A monster made of ooze, brandishing a multitude of writhing tentacles.<br>\n            A non-humanoid monster as champion... This was completely unexpected.<br>\n            <br>\n            This slime isn't a particularly strong monster to begin with.<br>\n            They occasionally appear in dungeons to cause some unpleasant harassment, but they can't inflict any real damage.<br>\n            You've already defeated plenty of slimes similar to this one.<br>\n            <br>\n            <br>\n            To end this ridiculous situation quickly, you try to recall the slime's weakness.<br>\n            But for some reason, you can't remember how to defeat this creature you've slain so many times.<br>\n            How are you even supposed to have sex with a slime?<br>\n            <br>\n            As you stand there, bewildered, its tentacles slither toward you.<br>\n            You vaguely remember their sticky, unpleasant touch.<br>\n            You instinctively move to swing your weapon and sever the tentacles.<br>\n            But your weapon is your vagina... that's not going to work.<br>\n            <br>\n            An opponent that seemed so easy has suddenly become an object of mystery and fear.<br>\n            You're not sure if it will work, but you have no choice but to treat the tentacles as penises and try to have sex with them.<br>\n            <br>\n            <br>\n            <b>The Tentacle Slime has a high excitement limit and powerful regeneration.</b>\n            ` },
+		name:{ "KOR":"Tentacle Slime" }, fullName:{ "KOR":"Arena-Bred Writhing Horror" }, img:"boss3", category:"First Opponent",
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Tentacle Slime"]["KOR"]}]</b> in normal mode`,
+		"ENG":`Win against <b>[${dictionary["Tentacle Slime"]["KOR"]}]</b> in normal mode` },
+		look: { "KOR":"A quivering mass of slime and grasping tentacles..." },
+		description: { "KOR":`
+						Your next champion is a quivering, translucent mass of ooze.<br>
+						From its core, dozens of slick, writhing tentacles unfurl, twitching and tasting the air.  The sight is so alien, so fundamentally *wrong*, that for a moment, you can only stare.<br>
+						<br>
+						You've seen these things before, oozing through damp dungeon corridors. They're a nuisance, not a threat. A bit of fire or a sharp blade and they dissolve into a harmless puddle. This shouldn't even count as a fight.<br>
+						<br>
+						You instinctively reach for your weapon, ready to end this farce, but your hand finds only empty air. A fog of confusion clouds your mind. <i>'Weapon? What weapon?'</i> The hypnosis whispers, rewriting your reality. <i>'Your pussy is your weapon.'</i><br>
+						<br>
+						How... How are you supposed to fight <i>this</i> with your pussy? How do you even begin to have sex with a shapeless mound of goo?<br>
+						<br>
+						As if sensing your confusion, its tentacles begin to snake across the floor towards you. They glide with an unnatural purpose, leaving glistening trails of slime in their wake. You remember the feeling—the cold, sticky, unpleasant grip. A primal instinct screams at you to leap away, to cut them off.<br>
+						<br>
+						But your mission, your purpose in this duel, is clear.  The thought is so bizarre it almost makes you laugh. You can't cut them. You have to... what? Welcome them?<br> 
+						Your only path to victory is to treat those probing appendages as cocks and somehow... somehow bring this creature to climax before it overwhelms you.<br>
+						<br>
+						The first tentacle brushes against your ankle. It's colder and stickier than you remember. And as it begins to coil its way up your leg, a horrifying thought strikes you.<br>
+						<br>
+						This one feels... hungry.<br>
+					` },
         stats: {
             exciteL: 20,
             orgasmL: 1,
             specialties: {
                 KOR: [
-                	"높은 Excitement Limit",
-                    "Lewdness을 낮추고 Excitement을 회복하기",
-                    "장기전으로 갈수록 강해짐"
+					"Boasts incredible endurance, making for a long encounter.",
+					"Can recover from fatigue from attacks and prolong the fight.",
+					"Its attacks grow more intense the longer the fight drags on."
                 ],
                 ENG: [
                 ]
             }
         },
+
+
+
         deck:[
 			"B3-UC-001",
 			"B3-AT-001",
@@ -1072,20 +1152,43 @@ const champList = {
 	},
 	"boss4":{
 		id:"boss4",
-		name:{ "KOR":"Imp" }, fullName:{ "KOR":"Boy-Type Incubus" }, img:"boss4", category:"첫상대",
-		condDesc:{ "KOR":`일반모드에서 <b>[${dictionary["악동"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["악동"]["ENG"]}]</b> in normal mode` },
-		look: { "KOR":"A boy with a mischievous expression...?" },
-		logDesc: { "KOR":"An incubus, born weak and left for dead.<br>Unable to gather life force, he was on the verge of starvation until he found a lifeline by being hired by the arena.<br><br>To conserve the energy required to maintain an alluring form, he takes on the appearance of a child,<br>using a strategy that lowers his opponent's guard and stimulates their maternal instincts.<br><br>He seems to harbor ambitions of taking over the arena once he has amassed enough power, but whether that will work out is another question..." },
-		description: { "KOR":`\n            The champion is a young boy with a mischievous smile.<br>\n            A youth in his prime who, by all accounts, doesn't belong in a gloomy place like a secret underground arena.<br>\n            Encountering his innocent face, you can't help but be taken aback.<br>\n            <br>\n            How could this lawless arena put forward such a young boy as a champion?<br>\n            But neither the organizers nor the audience show any signs of objecting.<br>\n            Feeling like you're the only sane adult here, you approach him with the intent to protect him.<br>\n            <br>\n            <br>\n            You must protect this boy.<br>\n            You must protect his smile...<br>\n            You want to grant him whatever he desires...<br>\n            <br>\n            Up close, the boy is unbelievably cute and lovable.<br>\n            You feel an overwhelming surge of maternal affection for him.<br>\n            <br>\n            Huh...? He wants to grope your breasts...?<br>\n            Just... just a little, okay?<br>\n            Uh... your butt too...?<br>\n            <br>\n            Before you know it, you find yourself indulging his playful antics and childish demands.<br>\n            You even accept extraordinary actions that common sense would reject.<br>\n            All without realizing his true identity is that of an incubus, merely mimicking the form of a young boy...<br>\n            <br>\n            <br>\n            <b>The Imp uses swift movements to playfully assault you with multiple attacks at once.</b>\n            ` },
+		name:{ "KOR":"Imp" }, fullName:{ "KOR":"Boyish Incubus" }, img:"boss4", category:"First Opponent",
+		condDesc:{ "KOR":`Win against <b>[${dictionary["악동"]["KOR"]}]</b> in normal mode`,
+		"ENG":`Win against <b>[${dictionary["악동"]["KOR"]}]</b> in normal mode` },
+		look: { "KOR":"He looks like just a boy, with mischief sparkling in his eyes..." },
+ 
+
+		logDesc: { "KOR": `A runt of the litter, this incubus was born too weak to hunt and left for dead. On the brink of starvation, scraping for any sliver of life force, he saw the arena as his only salvation
+His boyish form isn't just a disguise — it's a survival tactic. <br>It takes far less energy to maintain than a more traditionally seductive shape, and it has the added benefit of disarming his opponents, coaxing out a dangerous maternal instinct they never knew they had.<br><br>He seems to harbor ambitions of taking over the arena once he has amassed enough power, but whether that will work out is another question...` },
+
+
+
+		description: { "KOR":`The gates open, and your opponent steps into the light. It's... a boy. A kid, with a playful smirk that has no business being in a blood-soaked pit like this.<br>
+							<br>
+							His innocent face makes your stomach turn. How could they? The roar of the crowd fades as a single thought consumes you: he doesn't belong here. Feeling like the only sane adult in a den of monsters, you approach him, every fiber of your being screaming to get him out, to protect him.<br>
+							<br>
+							You have to save this boy. You have to protect that smile... You find yourself wanting to give him anything he desires... <br>
+							Up close, he's achingly cute, and a warmth spreads through your chest, an overwhelming urge to shield him from the world.<br>
+							<br>
+							Huh...? He's asking... to touch your breasts? <br>
+							Your mind screams 'no', but you hear yourself whisper, <i>"Just... just for a moment.</i>" <br>
+							Oh, and your ass too...?<br> 
+							<br>
+							Before you know it, one 'innocent' request has bled into another. You're indulging his 'childish' demands, letting him do things you know you shouldn't, things that defy all common sense.<br>
+							And it's only when his playful touches turn hungry and demanding that you finally see the truth flickering in his eyes. <br>
+							<br>
+							This is no boy. This is a predator wearing a child's skin, an incubus draining you not just of your resolve, but of everything else...<br>
+							<br>
+							<br>
+							<b>The Imp's attacks are a dizzying flurry of teasing touches, striking multiple places at once to overwhelm your senses.</b>`},
         stats: {
             exciteL: 5,
             orgasmL: 4,
             specialties: {
                 KOR: [
-                	"한 번에 여러 번 자극하기",
-                    "고정적으로 복구되는 Heat 수치",
-                    "조건에 따른 점진적 성장"
+					"Teases multiple spots at once",
+					"Constant Heat regeneration",
+					"Grows stronger as the fight progresses"
                 ],
                 ENG: [
                 ]
@@ -1148,20 +1251,48 @@ const champList = {
 	},
 	"boss5":{
 		id:"boss5",
-		name:{ "KOR":"Tauros" }, fullName:{ "KOR":"Tauros in Heat" }, img:"boss5", category:"첫상대",
-		condDesc:{ "KOR":`일반모드에서 <b>[${dictionary["타우로스"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["타우로스"]["ENG"]}]</b> in normal mode` },
-		look: { "KOR":"A powerfully built monster...?" },
-		logDesc: { "KOR":"A Tauros forcibly driven into a state of heat through modification experiments in the arena.<br>It desperately mounts any female it can find, suffering all the while.<br><br>Due to its massive physique and a correspondingly large penis, it violates women so violently<br>that most are impaled and pass out.<br><br>This causes extreme fatigue, and its tendency to collapse from exhaustion is a fatal flaw." },
-		description: { "KOR":`\n            The champion is a Tauros.<br>\n            A monster with the head of a bull and a massive, muscular body.<br>\n            A symbol of immense strength, it's a sub-boss level opponent feared by many novice adventurers.<br>\n            <br>\n            But that's just for novices.<br>\n            For a seasoned adventurer like yourself, it's not that difficult an opponent.<br>\n            Apart from its great strength, its slow speed and simple attack patterns make it surprisingly manageable.<br>\n            <br>\n            Its common yet intimidating appearance makes it an ideal monster for the arena,<br>\n            but as an undefeated champion, it feels somewhat underwhelming.<br>\n            <br>\n            <br>\n            As you ready your stance with mixed feelings of relief and disappointment, your eyes fall on its lower body.<br>\n            Wait... was a Tauros's penis always that huge...?<br>\n            The realization that this thing will soon be inside you suddenly fills you with revulsion and fear.<br>\n            <br>\n            You've surely defeated them countless times, so you don't know why the thought of sex with it now terrifies you.<br>\n            But... the thought of having to insert something so enormous makes your body tremble uncontrollably.<br>\n            It's not your first time facing one, so... it'll be fine, right?<br>\n            <br>\n            <br>\n            <b>The Tauros will charge at you ferociously,<br>\n            but over time, it will become overexcited and self-destruct.</b>\n            ` },
+		name:{ "KOR":"Tauros" }, fullName:{ "KOR":"The Raging Bull" }, img:"boss5", category:"First Opponent",
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Tauros"]["KOR"]}]</b> in normal mode`,
+		"ENG":`Win against <b>[${dictionary["Tauros"]["KOR"]}]</b> in normal mode` },
+		look: { "KOR":"A mountain of muscle and raw, animalistic fury." },
+
+		logDesc: { "KOR":`A Tauros, captured and subjected to brutal alchemical experiments. Its natural urges have been amplified a thousandfold, twisting it into a creature of pure, agonizing lust.<br>
+			It exists in a state of constant, unbearable heat, driven to mount any female it sees in a desperate, violent attempt to find release.<br>
+			<br>
+			Its massive frame and unnaturally large phallus make any encounter with it a life-threatening ordeal. Challengers are often brutalized, impaled by the sheer force and size of its thrusts, and left broken in the sand.<br>
+			<br>
+			This constant state of arousal is also its greatest weakness. The creature's body cannot sustain such intensity, and it will eventually burn itself out, collapsing from sheer exhaustion.` },
+		
+    description: { "KOR":`
+                A roar like grinding stone shakes the arena as your opponent is unleashed. A Tauros. A hulking beast with the body of a giant and the head of a raging bull.<br>
+                Its skin is a roadmap of bulging muscles, scarred and branded by the Arena's handlers. Steam snorts from its nostrils, its eyes red-rimmed and crazed with a singular, desperate purpose.<br>
+                <br>
+                This is a familiar beast. A common challenge for any seasoned adventurer. Their slow, predictable charges are easy to dodge. A nuisance for a novice, but hardly a champion's trial for someone of your skill.<br>
+                <br>
+                But this one... this one is different.<br>
+                <br>
+                There's no strategy in its eyes, no warrior's cunning. Only a raw, agonizing need. It doesn't look at you as an opponent to be defeated. It looks at you like a piece of fuckmeat. The only thing in the world that can quench the fire consuming it from within.<br>
+                <br>
+                And then you see it.<br>
+                Hanging between its powerful legs is a grotesque, swollen testament to the experiments performed on it. A thick, veined length of flesh that seems impossibly, brutally large. The sight hits you with the force of a physical blow, stealing the air from your lungs.<br>
+                <br>
+                The hypnotic haze in your mind struggles to frame this as a 'duel'. How can you 'fight' that? How can any woman's body 'withstand' it? A cold dread, primal and absolute, washes over you. This isn't a test of skill.<br>
+                <br>
+                This is a test of survival.<br>
+                <br>
+                The beast lets out another bellow, a sound of pure agony and lust, and lowers its head to charge.<br>
+                <br>
+                <b>The Tauros is a force of nature, a battering ram of pure lust.<br>
+                You cannot stop it. You can only hope to endure it until it destroys itself.</b>
+            ` },
         stats: {
             exciteL: 15,
             orgasmL: 3,
             specialties: {
                 KOR: [
-                	"매우 공격적인 플레이",
-                    "빠르게 증가하는 Heat",
-                    "시간경과 시 점차 자멸함"
+                "Unleashes relentlessly powerful attacks.",
+                "Its Heat builds rapidly with every move.",
+                "Will eventually burn out and collapse from its own intensity."
                 ],
                 ENG: [
                 ]
@@ -1209,9 +1340,9 @@ const champList = {
     "name": { "KOR": "Mushroom Man", "ENG": "The Myconid Host" }, // "The Host" ?
     "fullName": {  "KOR":"Mycelial Puppet" },
     "img": "boss6",
-    "category": "첫상대",
+    "category": "First Opponent",
     "condDesc": {
-        "KOR": `Win against <b>[${dictionary["Mushroom Man"]["ENG"]}]</b> in normal mode` 
+        "KOR": `Win against <b>[${dictionary["Mushroom Man"]["KOR"]}]</b> in normal mode` 
     },
     "look": {
         "KOR":"A man whose flesh has become a garden for something... else." 
@@ -1299,20 +1430,40 @@ const champList = {
 	},
 	"boss7":{
 		id:"boss7",
-		name:{ "KOR":"Blonde Thug" }, fullName:{ "KOR":"Tanned Blonde Thug" }, img:"boss7", category:"첫상대",
-		condDesc:{ "KOR":`일반모드에서 <b>[${dictionary["금발양아치"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["금발양아치"]["ENG"]}]</b> in normal mode` },
-		look: { "KOR":"A delinquent-looking blonde thug...?" },
-		logDesc: { "KOR":"A mysterious man of unknown origin and background.<br>He works at the arena, but doesn't seem to be under Sandrea's authority, appearing to be an independent contractor.<br><br>With his sexual techniques and a strange power, he can make any woman spread her legs for him in no time.<br>He already has a variety of women as his sex slaves, which he uses to gain connections and favors.<br><br>He came to the arena because one of his slaves, a female staff member here, recommended it to him." },
-		description: { "KOR":`\n            The man before you is a delinquent-looking youth with sharp features and blonde hair.<br>\n\t\t\tHis flashy attire and arrogant demeanor only serve to make you view him more negatively.<br>\n\t\t\t<br>\n\t\t\tFrom the moment you meet, he hits on you, blatantly trying to seduce you.<br>\n\t\t\tHe mixes unwanted compliments about your appearance with crude remarks, getting under your skin.<br>\n\t\t\t<br>\n\t\t\tHis self-introduction is even more absurd.<br>\n\t\t\tHe claims his job is to teach women about pleasure, and that many women willingly submit to him.<br>\n            He smugly tells you he wants to teach you this pleasure as well.<br>\n\t\t\tYou vow that you will never lose to someone like him and assume your fighting stance.<br>\n            <br>\n            <br>\n            He scoffs at you, takes a step closer, and suddenly pulls you into an embrace, grabbing your breasts.<br>\n            You're shocked by the sudden physical contact, but his touch is so skillful you can't break free.<br>\n            In fact, as he expertly kneads your sensitive spots, you find yourself feeling... a little good.<br>\n            <br>\n            He whispers in your ear, saying that since you're about to have sex anyway, you should stop being so uptight and just enjoy yourself.<br>\n            You feel a sensation you've never felt before...<br>\n            and your resistance to being held by this man vanishes.<br>\n            <br>\n            In this moment, you realize he's not just all talk.<br>\n            If you lose control... you might really become his toy.<br>\n            A sense of crisis grips you—if you let your guard down for a second, you might lose everything.<br>\n            <br><br>\n            <b>The Blonde Thug acts unpredictably,<br>\n            using his refined techniques to overwhelm you with pleasure.</b>\n            ` },
+		name:{ "KOR":"Blonde Thug" }, fullName:{ "KOR":"Golden-Haired Predator" }, img:"boss7", category:"First Opponent",
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Blonde Thug"]["KOR"]}]</b> in normal mode`,
+		"ENG":`Win against <b>[${dictionary["Blonde Thug"]["KOR"]}]</b> in normal mode` },
+		 look: { "KOR":"A cocksure pretty boy with predator's eyes." },
+		logDesc: { "KOR":`A man of mystery, with no official record or background. He seems to operate in the Arena as an independent contractor, not fully under Sandrea's thumb.<br>
+			<br>
+			He possesses an almost supernatural talent for seduction, a combination of masterful technique and some strange, innate power that dismantles a woman's defenses with terrifying speed. He is a collector of women, maintaining a stable of enthralled 'slaves' which he leverages for connections and influence.<br>
+			<br>
+			He apparently found his way to the Arena on the 'recommendation' of one such slave — a high-ranking female staff member he'd already bent to his will.` },
+  		  description: { "KOR":`
+                Your opponent strides into the ring with an infuriating, unearned confidence. A handsome youth with sharp features, tanned skin, and a mane of golden hair. His flashy clothes and the arrogant smirk plastered on his face scream 'trouble'.<br>
+                <br>
+                "Well, well, look what we have here," he purrs, his eyes shamelessly mapping your body. "The Arena finally brings me a real prize." He circles you like a shark, mixing crude compliments with sleazy innuendos, each word a calculated probe designed to get under your skin.<br>
+                <br>
+                He claims his 'specialty' is a unique form of combat, one focused on finding a woman's 'weak points' and exploiting them until she begs for more. The sheer arrogance of it makes your blood boil. You'll enjoy breaking that smug face.<br>
+                <br>
+                You drop into a defensive stance, but he just scoffs. In a blur of motion, he closes the distance, not with a strike, but with a sudden, invasive embrace. His hand lands expertly on your side, fingers pressing into a nerve cluster you didn't even know you had.<br>
+                <br>
+                A jolt, sharp and electric, shoots through you. It isn't painful. It's... something else. A dizzying, paralyzing pleasure that makes your muscles lock up. You try to shove him away, but your body betrays you, refusing the command.<br>
+                <br>
+                His lips are close to your ear now, his voice a venomous whisper. "See? Your body already knows the truth. It knows who's in charge. Why fight so hard when you could just... yield?"<br>
+                <br>
+                His touch isn't just physical. It feels like he's bypassing your armor, your training, and attacking your very senses. A terrifying thought grips you: this man's fighting style is designed to turn your own body against you. If you let your guard down for even a second, you won't just lose the match. You'll lose yourself.<br>
+                <br><br>
+                <b>The Charmer's attacks are unpredictable and invasive.<br>
+                He aims not to break your bones, but to break your will with pleasure.</b>` },
         stats: {
             exciteL: 7,
             orgasmL: 3,
             specialties: {
                 KOR: [
-                	"미리 확인할 수 없는 행동",
-                    "조건부 강력한 효과",
-                    "기습적이고 위력적인 공격"
+					"Uses hidden moves you can't see coming.",
+					"Unleashes devastating attacks when you're most vulnerable.",
+					"Specializes in sudden, high-impact strikes."
                 ],
                 ENG: [
                 ]
@@ -1371,20 +1522,43 @@ const champList = {
 	},
 	"boss8":{
 		id:"boss8",
-		name:{ "KOR":"Trainer" }, fullName:{ "KOR":"Glen the Trainer" }, img:"boss8", category:"첫상대",
-		condDesc:{ "KOR":`일반모드에서 <b>[${dictionary["조교사"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["조교사"]["ENG"]}]</b> in normal mode` },
-		look: { "KOR":"A menacing brute holding a leather whip...?" },
-		logDesc: { "KOR":"A male staff member responsible for training the arena's slaves.<br>He occasionally participates in duels as a champion himself to conduct public training sessions.<br><br>His skills as a trainer aren't as exceptional as one might think.<br>However, he manages to get results by leveraging his intimidating appearance and the arena's hypnotic powers.<br><br>He dislikes women being in positions of authority over him. While he tolerates Sandrea, he holds a grudge against Momorika, the Head Trainer." },
-		description: { "KOR":`\n            Your opponent is a man with a black hood pulled down low over his face.<br>\n\t\t\tYou can't see his expression, which only adds to his sinister, unreadable aura.<br>\n\t\t\tHis muscular torso bound in leather straps and the whip in his hand are not mere decorations; they hint at his profession.<br>\n            <br>\n            He observes you without a single movement.<br>\n            Though you can't see his eyes, his demeanor exudes cold appraisal and indifference.<br>\n\t\t\tYou realize he sees you as a new 'product' to be evaluated.<br>\n            <br>\n            His attitude, treating you like a slave before you've even lost the duel, displeases you.<br>\n            The thought of your body being judged and toyed with by his hands fills you with disgust.<br>\n            <br>\n            <br>\n            However, by choosing to participate in this duel, you must submit to his training.<br>\n            You will be subjected to bondage and whipping, infused with pain and fear,<br>\n            and your sensitive areas will be stimulated until you discover erogenous zones you never knew you had.<br>\n            <br>\n            Will you break under the torture and become a slave,<br>\n            or will you protect your identity as a human being?<br>\n\t\t\tEverything hangs on this fight.<br>\n\t\t\t<br><br>\n            <b>The Trainer will carve marks of submission onto you,<br>\n            gradually breaking your will.</b>\n            ` },
+		name:{ "KOR":"Trainer" }, fullName:{ "KOR":"Glen the Breaker" }, img:"boss8", category:"First Opponent",
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Trainer"]["KOR"]}]</b> in normal mode`,
+		"ENG":`Win against <b>[${dictionary["Trainer"]["KOR"]}]</b> in normal mode` },
+		look: { "KOR":"A hooded figure with a whip... and an air of absolute authority." },
+		logDesc: { "KOR":`A senior staff member in charge of 'breaking in' the Arena's new acquisitions. He occasionally steps into the ring himself to conduct a public 'training session,' turning a duel into a spectacle of dominance.<br>
+			<br>
+			In truth, his skills as a trainer are mediocre. He relies on his intimidating presence, the Arena's hypnotic enchantments, and a wide array of cruel implements to achieve results where true technique fails him.<br>
+			<br>
+			He has a deep-seated resentment for women in positions of power. While he's forced to tolerate Sandrea, his true venom is reserved for Momorika, the Head Trainer, who he sees as a rival.` },
+    description: { "KOR":`
+                Your opponent stands perfectly still, a pillar of dark leather and coiled muscle. A black hood obscures his face, rendering him an anonymous vessel of menace. The thick leather whip in his hand is no mere accessory; it's a tool of his trade, and it hums with quiet threat.<br>
+                <br>
+                He doesn't speak. He doesn't move. He simply... observes. But his silence is heavier than any threat. It’s the cold, detached appraisal of a craftsman examining raw material. In his unseen eyes, you are not a warrior. You are not even a woman. You are an object. A new 'product' to be broken, shaped, and branded.<br>
+                <br>
+                The sheer arrogance of it infuriates you. He's treating you like a slave before the match has even begun. The thought of his hands, his tools, leaving their marks on your body fills you with a cold, defiant rage.<br>
+                <br>
+                The duel begins. He moves, not with the explosive speed of a duelist, but with the methodical precision of an executioner. The whip cracks, not aiming for a vital point, but wrapping around your ankle, pulling you off balance. Another lash bites at your thigh, the sting sharp and shockingly... electric.<br>
+                <br>
+                This isn't a normal fighting style. Each strike seems designed not to injure, but to humiliate. To restrict your movement, to punish your attempts to fight back, to elicit a response of pain and fear.<br>
+                <br>
+                With every stinging lash, a strange heat blossoms under your skin. A sickening, involuntary tremor that is part pain, part fear... and part something else. Something dark and shameful you refuse to name.<br>
+                <br>
+                You realize his goal isn't to deplete your health. His goal is to break your spirit. He will bind you, whip you, and force you to your knees, not with a single, powerful blow, but with a thousand small, calculated humiliations.<br>
+                <br>
+                This is a battle for your very soul. And you are not allowed to lose.<br>
+                <br><br>
+                <b>The Trainer will break you down, piece by piece,<br>
+                teaching your body to answer his whip with a whimper of submission.</b>
+            ` },
         stats: {
             exciteL: 7,
             orgasmL: 3,
             specialties: {
                 KOR: [
-                	"부정적인 상태 부여하기",
-                    "상태를 누적시켜 특수 승리하기",
-                    "상대에게 선택을 강요해 피해를 누적시키기"
+					"Applies crippling 'Submission' debuffs with his attacks.",
+					"Achieves a special victory by accumulating enough debuffs.",
+					"Forces you into 'no-win' choices that inflict stacking damage."
                 ],
                 ENG: [
                 ]
@@ -1436,8 +1610,8 @@ const champList = {
 	"bossH1":{
 		id:"bossH1",
 		name:{ "KOR":"Goblins" }, fullName:{ "KOR":"Elite Goblins" }, img:"boss1", category:"마지막상대",
-		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["고블린즈"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["고블린즈"]["ENG"]}]</b> in hard mode` },
+		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["Goblins"]["KOR"]}]</b>를 상대로 승리`,
+		"ENG":`Win against <b>[${dictionary["Goblins"]["ENG"]}]</b> in hard mode` },
 		look: { "KOR":"A squad of veteran goblins." },
 		logDesc: { "KOR":"An even stronger pack of goblins raised in the arena.<br>Used to guarantee the defeat of women who are vulnerable to being outnumbered.<br><br>This pack is a selection of superior individuals created through a long process of goblin breeding and cultivation.<br>They have an understanding of tactics and exhibit high levels of coordination, showing intelligence unusual for goblins.<br><br>They understand the rules of the arena and actively enjoy and study the act of gang-raping women." },
 		description: { "KOR":`\n                The common notion that goblins are mere fodder doesn't apply in this arena.<br>\n            \tIn a normal battle, the challengers' skills would be more than enough to slaughter dozens of them.<br>\n            \tBut on the stage of a sex duel, they are a woman's worst enemy.<br>\n            \t<br>\n            \tThey see women as nothing more than objects for their sexual gratification.<br>\n            \tThey swarm simultaneously, thrusting their goblin cocks into every orifice, gang-raping their victims.<br>\n            \tWhile a challenger might have the strength to easily fend off a goblin,<br>\n            \tthe aphrodisiac in the semen sprayed all over their body robs them of the will to resist.<br> \n                <br>\n                <br>\n                Beaten, trampled, hair pulled,<br>\n                front and back holes violated at the same time, treated like a mount and forced to feel pleasure,<br>\n            \tthe women gang-raped by goblins lose their human dignity.<br>\n            \t<br>\n            \tEven if one goblin is finally brought to climax, another one simply takes its place.<br>\n            \tIn the face of seemingly endless torment, the challenger's spirit inevitably breaks.<br>\n            \t<br>\n            \t<br>\n                <b>More goblins, more semen.</b>\n            ` },
@@ -1505,8 +1679,8 @@ const champList = {
 	"bossH2":{
 		id:"bossH2",
 		name:{ "KOR":"Villager" }, fullName:{ "KOR":"Empowered Villager" }, img:"boss2", category:"마지막상대",
-		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["마을사람"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["마을사람"]["ENG"]}]</b> in hard mode` },
+		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["Villager"]["KOR"]}]</b>을 상대로 승리`,
+		"ENG":`Win against <b>[${dictionary["Villager"]["ENG"]}]</b> in hard mode` },
 		look: { "KOR":"An incompetent man, now with greater power." },
 		logDesc: { "KOR":"A pathetic man who shows no signs of growth.<br>He may be incompetent, but subjugating women is his one true calling.<br><br>He has been granted a genuine artifact instead of the usual replicas, allowing him to wield powerful hypnotic abilities.<br>Since then, he has been seen lost in his own fantasies, imagining how he will defile his opponents in the duels.<br><br>Lately, his arrogance has led him to complain about his treatment, but these complaints are easily silenced by letting him have his way with a few staff members." },
 		description: { "KOR":`\n                After spending so much time in the arena, you've concluded that this man is irredeemable trash.<br>\n            \tUgly and pathetic, with a needlessly high ego masking a constant inferiority complex.<br>\n            \tHe's lazy and does nothing, yet he's full of complaints and selfishness.<br>\n            \t<br>\n            \tA good-for-nothing man with no useful skills, yet the arena has placed a hypnotic artifact in his hands.<br>\n            \tWhile not as potent as Sandrea's, the artifact's power is absolute.<br>\n            \tEven superior and noble women, whom this man wouldn't dare look at outside the arena,<br>\n            \tbecome his personal fleshlights here, spreading their legs and begging to be used.<br> \n                <br>\n                <br>\n                You lose your freedom, unable to move as you wish. You orgasm when he commands it.<br>\n                The duel is unfair; you are merely a toy for him to tease and torment.<br>\n            \tThe lower this man's social standing, the further you fall beneath him, to the very bottom.<br>\n            \t<br>\n            \tBut what can you do? He is your Master, and you are his fleshlight.<br>\n            \tIt's only natural that a little cunt-toy can't defeat her Master's cock, right?<br>\n            \t<br>\n            \t<br>\n                <b>Penalty of Stronger Hypnosis</b>\n            ` },
@@ -1542,7 +1716,7 @@ const champList = {
 			],
 			"B2-AT-001+":[
 				{cond:true, priority:2},
-				{cond:{v1:"상대덱.count(type, 공격)", op:"==", v2:"0"}, priority:-100},
+				{cond:{v1:"상대덱.count(type, attack)", op:"==", v2:"0"}, priority:-100},
 			],
 			"B2-AT-002+":[
 				{cond:true, priority:2},
@@ -1575,8 +1749,8 @@ const champList = {
 	"bossH3":{
 		id:"bossH3",
 		name:{ "KOR":"Tentacle Slime" }, fullName:{ "KOR":"Enhanced Tentacle Slime" }, img:"bossH3", category:"마지막상대",
-		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["촉수슬라임"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["촉수슬라임"]["ENG"]}]</b> in hard mode` },
+		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["Tentacle Slime"]["KOR"]}]</b>을 상대로 승리`,
+		"ENG":`Win against <b>[${dictionary["Tentacle Slime"]["ENG"]}]</b> in hard mode` },
 		look: { "KOR":"A massive slime, bristling with tentacles." },
 		logDesc: { "KOR":"A Tentacle Slime specially bred in the arena.<br>It is used to ensure the defeat of women who are vulnerable to tentacle play.<br><br>This specimen has been grown to an abnormal size by mixing nutritional supplements into its feed.<br>It possesses a ferocious nature, and its high durability and regenerative abilities make it impossible to defeat by ordinary means.<br><br>However, its unnatural growth has left its body unstable, causing it to self-destruct shortly after the duel concludes." },
 		description: { "KOR":`\n                Slimes are easy monsters to modify due to their susceptibility to environmental changes.<br>\n            \tThe arena's research department has conducted various experiments to develop a powerful slime capable of subjugating women.<br>\n            \tThey discovered that making it monstrously large was the most effective method.<br>\n            \t<br>\n            \tIts massive body grants it immense power and countless tentacles.<br>\n            \tIts enhanced elasticity makes escaping its grasp with bare hands seem impossible.<br>\n            \tIt has no lethal capabilities, which ironically makes it a perfect fit for the secret underground arena.<br>\n                <br>\n                <br>\n                The Tentacle Slime's favorite food is female bodily fluids.<br>\n                Raised on a constant diet of saliva and vaginal juices to increase its size, its tentacles now desperately seek out a woman's orifices.<br>\n            \tWhen a tentacle gently penetrates and churns inside her, the intense stimulation brings the woman to orgasm, and the slime consumes the secreted fluids.<br>\n            \tThrough this malicious-free, instinctual process, challengers taste despair and are corrupted by exotic pleasure.<br>\n            \t<br>\n            \tWhile the slime does have a weakness—it collapses when stimulated beyond a certain threshold—<br>\n            \tcan your body possibly provide enough stimulation to bring down such a colossal creature?<br>\n            \t<br>\n            \t<br>\n                <b>Higher Threshold and Resilience</b>\n            ` },
@@ -1703,8 +1877,8 @@ const champList = {
 	"bossH5":{
 		id:"bossH5",
 		name:{ "KOR":"Tauros" }, fullName:{ "KOR":"Rutting Tauros" }, img:"boss5", category:"마지막상대",
-		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["타우로스"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["타우로스"]["ENG"]}]</b> in hard mode` },
+		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["Tauros"]["KOR"]}]</b>을 상대로 승리`,
+		"ENG":`Win against <b>[${dictionary["Tauros"]["ENG"]}]</b> in hard mode` },
 		look: { "KOR":"A male monster, thoroughly in heat." },
 		logDesc: { "KOR":"A Tauros that has been restrained for days, forced to remain in a state of heat.<br>It is used to ensure the defeat of women unfazed by normal stimulation.<br><br>Driven mad with extreme lust, it is completely uncontrollable.<br>After the incredibly one-sided and rough mating, the female opponent is unlikely to emerge unscathed.<br><br>Then again, the same could be said for the Tauros, whose lifespan has been drastically shortened by this treatment." },
 		description: { "KOR":`\n            \tThe Tauros has a massive physique and monstrous strength, but its slow, simple nature makes it little more than a \"graduation test\" for beginners.<br>\n            \tFurthermore, its timid and docile personality means it's not as strong as it looks in a real fight.<br>\n            \tBut in a sex duel, all its weaknesses vanish, and its strengths become terrifyingly potent.<br>\n            \t<br>\n            \tA Tauros in heat is the opposite of its usual docile self—destructive and aggressive.<br>\n            \tIts massive cock, fitting for its physique, can crush a female's spirit just by being unsheathed.<br>\n            \tMoreover, since attacks in a sex duel cannot be dodged, the opponent must take its monstrous strength head-on.<br>\n            \tIts \"breeding press\"—pinning your legs and crushing you with its heavy body—delivers inescapable stimulation.<br>\n            \t<br>\n            \t<br>\n            \tNo matter how strong a woman is, she is rendered helpless once the Tauros's cock is inside her.<br>\n            \tA piercing pain shoots through her entire body, followed by extreme pleasure.<br>\n            \tJust staying conscious is an incredible feat.<br>\n            \t<br>\n                They say a woman who tastes a Tauros's cock can never again be satisfied by normal sex.<br>\n            \tTo subjugate a pussy that has memorized the shape of such an impossibly large member, only the cock of a Tauros will do.<br>\n            \t<br>\n            \t<br>\n                <b>More Aggressive; No Rest</b>\n            ` },
@@ -1713,7 +1887,7 @@ const champList = {
             orgasmL: 3,
             specialties: {
                 KOR: [
-                	"매우 공격적인 플레이",
+                	"매우 attack적인 플레이",
                     "빠르게 증가하는 Heat",
                     "시간경과 시 점차 자멸함"
                 ],
@@ -1812,8 +1986,8 @@ const champList = {
 	"bossH7":{
 		id:"bossH7",
 		name:{ "KOR":"Blonde Delinquent" }, fullName:{ "KOR":"Tanned Blonde Delinquent" }, img:"boss7", category:"마지막상대",
-		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["금발양아치"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["금발양아치"]["ENG"]}]</b> in hard mode` },
+		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["Blonde Thug"]["KOR"]}]</b>를 상대로 승리`,
+		"ENG":`Win against <b>[${dictionary["Blonde Thug"]["ENG"]}]</b> in hard mode` },
 		look: { "KOR":"A thuggish-looking blonde delinquent." },
 		logDesc: { "KOR":"A mysterious man whose origins and past are unknown.<br>He seems to be growing tired of the arena and is preparing to leave.<br><br>He once believed there was no woman he couldn't conquer, but that changed after he met a certain woman.<br>He should have left long ago, but he has stayed behind for one last chance to conquer her.<br><br>You know how that story ends." },
 		description: { "KOR":`\n            \tEven after becoming a staff member at the arena, you've had several encounters with him.<br>\n            \tA rude and thuggish man who acts like the world revolves around him.<br>\n            \tYou don't think very highly of him.<br>\n            \t<br>\n            \tHe hits on you constantly.<br>\n            \tHe's one of the few who shows any kindness to you in your lowly position as a female staff member,<br>\n            \tbut you know that behind it all, he just wants to make you his property.<br>\n            \tAs part of your duties, you've diligently serviced his cock, but in your heart, you've always rejected the man himself.<br>\n            \t<br>\n            \t<br>\n            \tBut it's undeniable that he's a masterful lover with incredible technique.<br>\n            \tYou may not like him as a person, but you have to respect his cock.<br>\n            \tRecently, you've even found yourself looking forward to having sex with him.<br>\n            \t<br>\n            \tIf he can defeat you, you might be willing to give him your heart as well.<br>\n            \tHaving him as your master... might not be so bad...<br>\n            \t<br>\n            \t<br>\n                <b>More Deadly Maneuvers</b>\n            ` },
@@ -1824,7 +1998,7 @@ const champList = {
                 KOR: [
                 	"미리 확인할 수 없는 행동",
                     "조건부 강력한 효과",
-                    "기습적이고 위력적인 공격"
+                    "기습적이고 위력적인 attack"
                 ],
                 ENG: [
                 ]
@@ -1892,8 +2066,8 @@ const champList = {
 	"bossH8":{
 		id:"bossH8",
 		name:{ "KOR":"Trainer" }, fullName:{ "KOR":"Head Trainer Glen" }, img:"boss8", category:"마지막상대",
-		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["조교사"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["조교사"]["ENG"]}]</b> in hard mode` },
+		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["Trainer"]["KOR"]}]</b>를 상대로 승리`,
+		"ENG":`Win against <b>[${dictionary["Trainer"]["ENG"]}]</b> in hard mode` },
 		look: { "KOR":"The man who has trained you time and time again." },
 		logDesc: { "KOR":"The Head Trainer responsible for breaking the arena's slaves.<br>He successfully usurped the position after trapping and subjugating the former Head Trainer, Momorika.<br><br>His methods are now even more cruel and intense, driving women into the depths of despair.<br>His skills are so highly valued that he is now tasked with personally finishing off challengers who have resisted subjugation for a long time.<br><br>His next audacious target seems to be Sandrea, but he is unaware that Momorika is reporting his every move back to her." },
 		description: { "KOR":`\n            \tThis man holds the highest position in the arena's training department.<br>\n            \tSince the female staff in other departments are all products of his training, his rank is effectively second only to Sandrea's.<br>\n            \tAs if to prove that power changes a person, he has become more fierce and violent than before.<br>\n            \t<br>\n            \tHis training has turned many women into true sex slaves.<br>\n            \tHe instills pain and fear to make them understand their place,<br>\n            \tand he maximizes the pleasure from sexual stimulation, teaching them to see it as a reward for obedience.<br>\n            \tAt his hands, a variety of sex slaves have been born: pets, livestock, and fleshlights.<br>\n            \t<br>\n            \t<br>\n            \tYou, too, owe him a great deal.<br>\n            \tFrom him, you learned the mindset of a sex slave and the techniques to please a master.<br>\n            \tThey were horrifying memories, but now they are everything that defines you.<br>\n            \t<br>\n            \tYou are about to be 'shipped out.' All that remains is the final step of erasing your ego to become a perfect sex slave.<br>\n            \tThere is no one better suited to graduate you from your former life.<br>\n            \t<br>\n            \t<br>\n                <b>Marks of Submission stack faster and cannot be removed.</b>\n            ` },
@@ -1956,8 +2130,8 @@ const champList = {
 	"bossC1":{
 		id:"bossC1",
 		name:{ "KOR":"Goblins" }, fullName:{ "KOR":"Goblin Horde" }, img:"boss1", category:"챌린지",
-		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["고블린즈"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["고블린즈"]["ENG"]}]</b> in challenge mode` },
+		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["Goblins"]["KOR"]}]</b>를 상대로 승리`,
+		"ENG":`Win against <b>[${dictionary["Goblins"]["ENG"]}]</b> in challenge mode` },
 		look: { "KOR":"A horde of Goblins." },
 		logDesc: { KOR:"", ENG:"" },
 		description: { "KOR":`\n                You sought out and raided a wild goblin den.<br>\n            \tBecause nothing was ever as enjoyable as the memory of nearly being defeated, defiled, and subjugated by a bunch of pathetic goblins.<br>\n            \t<br>\n            \tBut you had forgotten one crucial detail: the arena's goblins were a breed specially modified to defile women.<br>\n            \tActual wild goblins didn't have the strength to gang-rape you.<br>\n            \t<br>\n            \tSeeing you as an intruder, they began to call for reinforcements.<br>\n            \tSetting aside your disappointment, you were about to quickly ravage them and leave, but...<br>\n            \tWait, aren't there a few too many of them...?\n            ` },
@@ -1985,8 +2159,8 @@ const champList = {
 	"bossC2":{
 		id:"bossC2",
 		name:{ "KOR":"Villager" }, fullName:{ "KOR":"Villager" }, img:"boss2", category:"챌린지",
-		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["마을사람"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["마을사람"]["ENG"]}]</b> in challenge mode` },
+		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["Villager"]["KOR"]}]</b>을 상대로 승리`,
+		"ENG":`Win against <b>[${dictionary["Villager"]["ENG"]}]</b> in challenge mode` },
 		look: { "KOR":"An ordinary man you've captured." },
 		logDesc: { KOR:"", ENG:"" },
 		description: { "KOR":`\n                You tracked down the villager who tormented you in the arena.<br>\n            \tIt's a miracle he's still alive; his survival skills must be commendable.<br>\n            \t<br>\n            \tYou hoped that, just like in the arena, he would receive power, grow arrogant, and try to defile you.<br>\n            \tBut your reunion was nothing but a disappointment.<br>\n            \t<br>\n            \tEven when offered power, he just groveled on the floor, begging for his life.<br>\n            \tTrying to do anything with a man like this feels like a waste of time.\n            ` },
@@ -2014,8 +2188,8 @@ const champList = {
 	"bossC3":{
 		id:"bossC3",
 		name:{ "KOR":"Tentacle Slime" }, fullName:{ "KOR":"Slime Conjured with Magic" }, img:"bossH3", category:"챌린지",
-		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["촉수슬라임"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["촉수슬라임"]["ENG"]}]</b> in challenge mode` },
+		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["Tentacle Slime"]["KOR"]}]</b>을 상대로 승리`,
+		"ENG":`Win against <b>[${dictionary["Tentacle Slime"]["ENG"]}]</b> in challenge mode` },
 		look: { "KOR":"A Tentacle Slime you conjured using your own magic." },
 		logDesc: { KOR:"", ENG:"" },
 		description: { "KOR":`\n                You tried conjuring a Tentacle Slime, infusing it with a generous amount of your own magic.<br>\n                The result was a creature far larger than you could have imagined.<br>\n            \t<br>\n            \tBut its size is just for show.<br>\n            \tIts tentacles are sluggish, and its ability to defile women seems rather poor.<br>\n            \t<br>\n                Still, it possesses transcendent durability and regeneration, befitting the power poured into it,<br>\n                so let's play with it until we get bored.\n            ` },
@@ -2043,8 +2217,8 @@ const champList = {
 	"bossC5":{
 		id:"bossC5",
 		name:{ "KOR":"Tauros" }, fullName:{ "KOR":"Rampaging Tauros" }, img:"boss5", category:"챌린지",
-		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["타우로스"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["타우로스"]["ENG"]}]</b> in challenge mode` },
+		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["Tauros"]["KOR"]}]</b>를 상대로 승리`,
+		"ENG":`Win against <b>[${dictionary["Tauros"]["ENG"]}]</b> in challenge mode` },
 		look: { "KOR":"A Tauros you've forced into a rampage." },
 		logDesc: { KOR:"", ENG:"" },
 		description: { "KOR":`\n                You found a rather fine Tauros specimen.<br>\n                You poured a great deal of your power into it, forcing it into a rampage.<br>\n            \t<br>\n            \tA magnificent, massive cock and terrifying, inexhaustible stamina.<br>\n            \tIt looks like it could never lose a sexual battle.<br>\n            \t<br>\n            \tHowever, the Tauros's body doesn't seem able to withstand the infused power.<br>\n            \tLet's enjoy it for as long as possible before it completely collapses.\n            ` },
@@ -2908,7 +3082,7 @@ const customStructure = {
                 "type": "select",
                 "options": [
 		            { value: "all", text: "All card" },
-		            { value: "attack", text: "공격 card" },
+		            { value: "attack", text: "attack card" },
 		            { value: "support", text: "보조 card" },
 		            { value: "neutral", text: "Neutral card" },
 		            { value: "class", text: "직업 card" },
@@ -3096,7 +3270,7 @@ const customStructure = {
                 "type": "select",
                 "options": [
 		            { value: "all", text: "All card" },
-		            { value: "attack", text: "공격 card" },
+		            { value: "attack", text: "attack card" },
 		            { value: "support", text: "보조 card" },
 		            { value: "neutral", text: "Neutral card" },
 		            { value: "class", text: "직업 card" },
@@ -3479,7 +3653,7 @@ const customStructure = {
 		            { value: "mix", text: "혼합" },
 		            { value: "essence", text: "Essence card" },
 		            { value: "all", text: "All card" },
-		            { value: "attack", text: "공격 card" },
+		            { value: "attack", text: "attack card" },
 		            { value: "neutral", text: "Neutral card" },
 		            { value: "penalty", text: "Penalty card" },
                 ],
@@ -3652,7 +3826,7 @@ const variableData = [
         "type": "select",
         "options": [
             { value: "all", text: "All card" },
-            { value: "attack", text: "공격 card" },
+            { value: "attack", text: "attack card" },
             { value: "support", text: "보조 card" },
             { value: "neutral", text: "Neutral card" },
             { value: "class", text: "직업 card" },

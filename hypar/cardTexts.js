@@ -84,7 +84,7 @@ const cardTexts = {
 		"사용시":{
 			"KOR": "When you play a card, "
 		},
-		"공격사용시":{
+		"attack사용시":{
 			"KOR": "When you play an Attack card, "
 		},
 		"보조사용시":{
@@ -102,7 +102,7 @@ const cardTexts = {
 		"상대사용시":{
 			"KOR": "When the opponent plays a card, "
 		},
-		"상대공격사용시":{
+		"상대attack사용시":{
 			"KOR": "When the opponent plays an Attack card, "
 		},
 		"상대보조사용시":{
@@ -117,7 +117,7 @@ const cardTexts = {
 		"도전자사용시":{
 			"KOR": "When the Challenger plays a card, "
 		},
-		"도전자공격사용시":{
+		"도전자attack사용시":{
 			"KOR": "When the Challenger plays an Attack card, "
 		},
 		"도전자보조사용시":{
@@ -132,7 +132,7 @@ const cardTexts = {
 		"Champion사용시":{
 			"KOR": "When the Champion plays a card, "
 		},
-		"Champion공격사용시":{
+		"Championattack사용시":{
 			"KOR": "When the Champion plays an Attack card, "
 		},
 		"Champion보조사용시":{
@@ -147,7 +147,7 @@ const cardTexts = {
 		"누군가사용시":{
 			"KOR": "When you or the opponent plays a card, "
 		},
-		"누군가공격사용시":{
+		"누군가attack사용시":{
 			"KOR": "When you or the opponent plays an Attack card, "
 		},
 		"누군가보조사용시":{
@@ -938,10 +938,10 @@ const cardTexts = {
 
 	"effect":{
 		"자극":{
-			"KOR": "Inflict <b>[Stimulation]</b> on {repeat1} {target} {repeat2} times.",
+			"KOR": "Inflict <b>[Stimulation]</b> on {repeat1} {target} {repeat2} .",
 		},
 		"절정":{
-			"KOR": "Cause {repeat1} {target} to <b>Orgasm</b> {repeat2} times.",
+			"KOR": "Cause {repeat1} {target} to <b>Orgasm</b> {repeat2}.",
 		},
 		"상태부여이름":{
 			"KOR": "Apply {repeat} <b>{state}</b> to {target}.",
@@ -1109,10 +1109,10 @@ const cardTexts = {
 		"card사용불가자신":{
 			"KOR": "Cannot play cards.",
 		},
-		"공격사용불가":{
+		"attack사용불가":{
 			"KOR": "{actor} cannot play Attack cards.",
 		},
-		"공격사용불가자신":{
+		"attack사용불가자신":{
 			"KOR": "Cannot play Attack cards.",
 		},
 		"보조사용불가":{
@@ -1139,10 +1139,10 @@ const cardTexts = {
 		"Penalty사용불가자신":{
 			"KOR": "Cannot play Penalty cards.",
 		},
-		"공격강제사용":{
+		"attack강제사용":{
 			"KOR": "{actor} can only play Attack cards.",
 		},
-		"공격강제사용자신":{
+		"attack강제사용자신":{
 			"KOR": "Can only play Attack cards.",
 		},
 		"보조강제사용":{
@@ -1212,7 +1212,7 @@ const cardTexts = {
 		"Champion비활성화":{
 			"KOR": "The Champion's cards lose their effects.",
 		},
-		"Champion공격비활성화":{
+		"Championattack비활성화":{
 			"KOR": "The Champion's Attack cards lose their effects.",
 		},
 		"탈의비활성화":{
