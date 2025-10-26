@@ -13,7 +13,7 @@ const line = {
 //###################################################################################################################################################################################
 	"조우":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Goblins"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Goblins"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -22,7 +22,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Villager"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Villager"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -31,7 +31,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Tentacle Slime"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -40,7 +40,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"악동"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -49,7 +49,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Tauros"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Tauros"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -58,7 +58,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Mushroom Man"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Mushroom Man"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -67,7 +67,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Blonde Thug"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -76,7 +76,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Trainer"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Trainer"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -86,7 +86,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Goblins"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Goblins"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -95,7 +95,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Villager"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Villager"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -104,7 +104,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Tentacle Slime"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -113,7 +113,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"악동"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -122,7 +122,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Tauros"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Tauros"}], 
 			lineList:[
 				{
 					cond:true, pos:0, effect:"shake",
@@ -131,7 +131,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Mushroom Man"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Mushroom Man"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -140,7 +140,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Blonde Thug"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -149,7 +149,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Trainer"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Trainer"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -164,19 +164,19 @@ const line = {
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}], 
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
 					text:"Ready for the duel.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
 					text:"We're doing it here...?<br>There are too many people watching?!",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
 					text:"Please be gentle.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
 					text:"I can't take it anymore... Let's start now♡",
 				},
 			]
@@ -185,19 +185,19 @@ const line = {
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}], 
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
 					text:"Beginning semen extraction.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
 					text:"Is it that time again...<br>I'll try to endure it somehow.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
 					text:"I'll be in your care again today.<br>Please take good care of me.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
 					text:"My pussy... is already ready♡",
 				},
 			]
@@ -206,7 +206,7 @@ const line = {
 
 	"패배":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Goblins"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Goblins"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -215,7 +215,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Villager"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Villager"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -224,7 +224,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Tentacle Slime"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -233,7 +233,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"악동"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -242,7 +242,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Tauros"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Tauros"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -251,7 +251,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Mushroom Man"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Mushroom Man"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -260,7 +260,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Blonde Thug"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -269,7 +269,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Trainer"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Trainer"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -279,7 +279,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Goblins"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Goblins"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -288,7 +288,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Villager"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Villager"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -297,7 +297,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Tentacle Slime"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -306,7 +306,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"악동"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -315,7 +315,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Tauros"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Tauros"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -324,7 +324,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Mushroom Man"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Mushroom Man"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -333,7 +333,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Blonde Thug"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -342,7 +342,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Trainer"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Trainer"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -357,19 +357,19 @@ const line = {
 			priority:2, cond:true, 
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
 					text:"I have been defeated♡<br>I will become your sex slave♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
 					text:"Save me♡ Save meee...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
 					text:"I'll be...<br>I'll be your sex slave...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
 					text:"Something this pleasurable...<br>There's no way I can resist...♡",
 				},
 			]
@@ -378,19 +378,19 @@ const line = {
 			priority:0, cond:["and", "특수승리"], 
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
 					text:"... ...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
 					text:"Save me♡ Save meee...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
 					text:"I'll be...<br>I'll be your sex slave...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
 					text:"Something this pleasurable...<br>There's no way I can resist...♡",
 				},
 			]
@@ -399,20 +399,20 @@ const line = {
 
 	"승리":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Goblins"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Goblins"}], 
 			lineList:[
 				{
-					cond:["or", {v1:"특수승리", op:"!=", v2:true}, {v1:"Champion.절정", op:">=", v2:5}], pos:0,
+					cond:["or", {v1:"특수승리", op:"!=", v2:true}, {v1:"Champion.Orgasm", op:">=", v2:5}], pos:0,
 					text:"Goblin, comrade...<br>No more...",
 				},
 				{
-					cond:["and", "특수승리", {v1:"Champion.절정", op:"<", v2:5}], pos:0,
+					cond:["and", "특수승리", {v1:"Champion.Orgasm", op:"<", v2:5}], pos:0,
 					text:"Scary... female...",
 				},
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Villager"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Villager"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -421,7 +421,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Tentacle Slime"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -430,7 +430,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"악동"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -439,7 +439,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Tauros"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Tauros"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -448,7 +448,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Mushroom Man"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Mushroom Man"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -457,7 +457,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Blonde Thug"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -466,7 +466,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Trainer"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Trainer"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -476,7 +476,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Goblins"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Goblins"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -485,7 +485,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Villager"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Villager"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -494,7 +494,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Tentacle Slime"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -503,7 +503,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"악동"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -512,7 +512,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Tauros"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Tauros"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -521,7 +521,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Mushroom Man"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Mushroom Man"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -530,7 +530,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Blonde Thug"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -539,7 +539,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.이름", op:"==", v2:"Trainer"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Trainer"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -554,19 +554,19 @@ const line = {
 			priority:1, cond: {v1:"플레이어.표정", op:"in", v2:["corrupted"]}, 
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
 					text:"Ejaculation confirmed♡<br>Good work.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
 					text:"Premature ejaculator♡<br>You suck♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"},], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"},], pos:1, keepOriginal:true,
 					text:"It felt really good for me too♡<br>Good work♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
 					text:"Get up...<br>I'm not satisfied yet♡",
 				},
 			]
@@ -575,19 +575,19 @@ const line = {
 			priority:0, cond: true, 
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
 					text:"Mission complete.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
 					text:"It's over...<br>I won, what a relief...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
 					text:"I won this time.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
 					text:"I had fun for the first time in a while♡",
 				},
 			]
@@ -600,19 +600,19 @@ const line = {
 			priority:1, cond:true, 
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
 					text:"Limit... This is my limit...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
 					text:"I... I can't take it anymore...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
 					text:"I... have realized...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
 					text:"This is my limit... I can't take it anymore♡",
 				},
 			]
@@ -623,19 +623,19 @@ const line = {
 			priority:1, cond:true, 
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, keepOriginal:true, portrait:"corrupted", effect:"diffusion", keepPort:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, keepOriginal:true, portrait:"corrupted", effect:"diffusion", keepPort:true,
 					text:"I am a worthless slut,<br>I declare my defeat to Master Cock♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, keepOriginal:true, portrait:"corrupted", effect:"diffusion", keepPort:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, keepOriginal:true, portrait:"corrupted", effect:"diffusion", keepPort:true,
 					text:"I'm sorry for being so arrogant♡<br>P-please forgive me♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, keepOriginal:true, portrait:"corrupted", effect:"diffusion", keepPort:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, keepOriginal:true, portrait:"corrupted", effect:"diffusion", keepPort:true,
 					text:"It's only natural...<br>that a female can't win against Master Cock♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true, portrait:"corrupted", effect:"diffusion", keepPort:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true, portrait:"corrupted", effect:"diffusion", keepPort:true,
 					text:"I declare defeat♡ I lost♡<br>My life is over♡",
 				},
 			]
@@ -662,35 +662,35 @@ const line = {
 			priority:0, cond:true, repeatable:true,
 			lineList:[
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Goblins"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Goblins"}], pos:0,
 					text:"Kerek♡ I'm cumming♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Villager"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Villager"}], pos:0,
 					text:"Ugh...♡ It's coming♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Tentacle Slime"}], pos:0,
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tauros"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Tauros"}], pos:0,
 					text:"Hook♡ Hook♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"악동"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"악동"}], pos:0,
 					text:"I'm gonna cum♡ Sis♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Mushroom Man"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Mushroom Man"}], pos:0,
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Blonde Thug"}], pos:0,
 					text:"This bitch, what a tight pussy♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Trainer"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Trainer"}], pos:0,
 					text:"You're somewhat useful...",
 				},
 			]
@@ -699,35 +699,35 @@ const line = {
 			priority:0, cond:true, repeatable:true,
 			lineList:[
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Goblins"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Goblins"}], pos:0,
 					text:"Kyaak, I can't hold it in♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Villager"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Villager"}], pos:0,
 					text:"Ohot...♡ You're so tight♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Tentacle Slime"}], pos:0,
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tauros"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Tauros"}], pos:0,
 					text:"Hook♡ Hook♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"악동"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"악동"}], pos:0,
 					text:"Sis's pussy feels so good♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Mushroom Man"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Mushroom Man"}], pos:0,
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Blonde Thug"}], pos:0,
 					text:"Ha, I can't hold this in...♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Trainer"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Trainer"}], pos:0,
 					text:"Ugh... Not bad.",
 				},
 			]
@@ -736,35 +736,35 @@ const line = {
 			priority:0, cond:true, repeatable:true,
 			lineList:[
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Goblins"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Goblins"}], pos:0,
 					text:"Kerek... It's coming♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Villager"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Villager"}], pos:0,
 					text:"Uhot♡ I'm cumming♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Tentacle Slime"}], pos:0,
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tauros"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Tauros"}], pos:0,
 					text:"Hook♡ Hook♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"악동"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"악동"}], pos:0,
 					text:"Ugh♡ Hold on, sis♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Mushroom Man"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Mushroom Man"}], pos:0,
 					text:"*Brrrr...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Blonde Thug"}], pos:0,
 					text:"Damn, this feels good♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Trainer"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Trainer"}], pos:0,
 					text:"Kgh... How could this...",
 				},
 			]
@@ -777,35 +777,35 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Goblins"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Goblins"}], pos:0,
 					text:"Kyaak, I'm being squeezed dry♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Villager"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Villager"}], pos:0,
 					text:"Uhooot♡ This feels unbelievably good♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tentacle Slime"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Tentacle Slime"}], pos:0,
 					text:"*Shudder shudder...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Tauros"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Tauros"}], pos:0,
 					text:"Huoooook♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"악동"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"악동"}], pos:0,
 					text:"N-no♡<br>I'm supposed to be the incubus...♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Mushroom Man"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Mushroom Man"}], pos:0,
 					text:"*This body...<br>is no longer usable...*",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Blonde Thug"}], pos:0,
 					text:"Kgh♡ You're the best woman I've ever had♡",
 				},
 				{
-					cond:["and", {v1:"Champion.이름", op:"==", v2:"Trainer"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Trainer"}], pos:0,
 					text:"Female slaaaaave♡",
 				},
 			]
@@ -862,7 +862,7 @@ const line = {
 
 	"Goblins-교체":[
 		{
-			priority:7, cond:{v1:"Champion.절정", op:"==", v2:1}, 
+			priority:7, cond:{v1:"Champion.Orgasm", op:"==", v2:1}, 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -871,7 +871,7 @@ const line = {
 			]
 		},
 		{
-			priority:6, cond:{v1:"Champion.절정", op:"==", v2:2}, 
+			priority:6, cond:{v1:"Champion.Orgasm", op:"==", v2:2}, 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -880,7 +880,7 @@ const line = {
 			]
 		},
 		{
-			priority:5, cond:{v1:"Champion.절정", op:"==", v2:3}, 
+			priority:5, cond:{v1:"Champion.Orgasm", op:"==", v2:3}, 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -889,7 +889,7 @@ const line = {
 			]
 		},
 		{
-			priority:4, cond:{v1:"Champion.절정", op:"==", v2:4}, 
+			priority:4, cond:{v1:"Champion.Orgasm", op:"==", v2:4}, 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -898,7 +898,7 @@ const line = {
 			]
 		},
 		{
-			priority:3, cond:[{v1:"모드", op:"==", v2:1}, {v1:"Champion.절정", op:"==", v2:5}], 
+			priority:3, cond:[{v1:"모드", op:"==", v2:1}, {v1:"Champion.Orgasm", op:"==", v2:5}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -907,7 +907,7 @@ const line = {
 			]
 		},
 		{
-			priority:2, cond:[{v1:"모드", op:"==", v2:1}, {v1:"Champion.절정", op:"==", v2:6}], 
+			priority:2, cond:[{v1:"모드", op:"==", v2:1}, {v1:"Champion.Orgasm", op:"==", v2:6}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -916,7 +916,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:[{v1:"모드", op:"==", v2:1}, {v1:"Champion.절정", op:"==", v2:7}], 
+			priority:1, cond:[{v1:"모드", op:"==", v2:1}, {v1:"Champion.Orgasm", op:"==", v2:7}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1036,19 +1036,19 @@ const line = {
 					text:"*Slap♡ Slap♡*",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, effect:"shake", portrait:"ecstasy2",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, effect:"shake", portrait:"ecstasy2",
 					text:"I'm going♡<br>Forward... I'm going♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, effect:"shake", portrait:"ecstasy2",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, effect:"shake", portrait:"ecstasy2",
 					text:"Aah♡ Stop it♡<br>M-my body... is moving on its own♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, effect:"shake", portrait:"ecstasy2",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, effect:"shake", portrait:"ecstasy2",
 					text:"Aah♡ I'll go♡<br>Forward... I'll go♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, effect:"shake", portrait:"ecstasy2",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, effect:"shake", portrait:"ecstasy2",
 					text:"Aah♡ Okay♡<br>I'll go... forward♡",
 				},
 				{
@@ -1061,7 +1061,7 @@ const line = {
 
 	"Goblins-이벤트-개전":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1082,7 +1082,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -1107,7 +1107,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1128,7 +1128,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1150,7 +1150,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1171,7 +1171,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1192,7 +1192,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -1213,7 +1213,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -1236,7 +1236,7 @@ const line = {
 	],
 	"Goblins-이벤트-Excitement":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1257,7 +1257,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -1278,7 +1278,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -1299,7 +1299,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1325,7 +1325,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -1350,7 +1350,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1371,7 +1371,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -1392,7 +1392,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1415,7 +1415,7 @@ const line = {
 	],
 	"Goblins-이벤트-Corruption":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1436,7 +1436,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1457,7 +1457,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -1482,7 +1482,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -1508,7 +1508,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake",
@@ -1529,7 +1529,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -1558,7 +1558,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -1583,7 +1583,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -1640,19 +1640,19 @@ const line = {
 			priority:0, cond:["and", {v1:"플레이어.표정", op:"in", v2:["normal", "excited", "blank"]}],
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I will carry out the command.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"It's a command,<br>so I have to follow it...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Yes, master!",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"I'll follow your command, master♡",
 				},
 			]
@@ -1665,15 +1665,15 @@ const line = {
 					text:"Please give me your command♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Hmph, it's just because it's master's command<br>that I'm following it...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Yes, master♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Following my master's command♡<br>feels so good♡",
 				},
 			]
@@ -1688,19 +1688,19 @@ const line = {
 					text:"Hey, isn't it common sense to be naked for a duel?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Understood.<br>Beginning to undress.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Ugh...! I-I know, okay?<br>I was just about to take them off!",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Ah, I completely forgot.<br>Sorry, I'll hurry and undress.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Thanks for telling me.<br>I forgot something so obvious♡",
 				},
 			]
@@ -1713,19 +1713,19 @@ const line = {
 					text:"That's strange, why is a fucktoy wearing clothes~?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I apologize for the disturbance.<br>I will undress immediately.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Ugh...! Why, why was I wearing clothes?<br>I-it's embarrassing... Don't look!",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Oh? It's common sense for a fucktoy to always be naked,<br>I made a mistake...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Huh? You're right♡<br>Why was I wearing this crap?",
 				},
 			]
@@ -1782,19 +1782,19 @@ const line = {
 					text:"Sensitivity x100♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, portrait:"ecstasy2", effect:"shake",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, portrait:"ecstasy2", effect:"shake",
 					text:"Sensitivity has greatly increased♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, portrait:"ecstasy2", effect:"shake",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, portrait:"ecstasy2", effect:"shake",
 					text:"Gaaah♡<br>What is this...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, portrait:"ecstasy2", effect:"shake",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, portrait:"ecstasy2", effect:"shake",
 					text:"Aaaang♡<br>My body feels hot♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, portrait:"ecstasy2", effect:"shake",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, portrait:"ecstasy2", effect:"shake",
 					text:"Haang♡<br>This is amazing♡",
 				},
 			]
@@ -1822,7 +1822,7 @@ const line = {
 			]
 		},
 	],
-	"절정해라":[
+	"Orgasm해라":[
 		{
 			priority:0, cond:true,
 			lineList:[
@@ -1855,7 +1855,7 @@ const line = {
 
 	"Villager-이벤트-개전":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -1872,7 +1872,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -1897,7 +1897,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1918,7 +1918,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1936,7 +1936,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -1957,7 +1957,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1978,7 +1978,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -1999,7 +1999,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -2045,7 +2045,7 @@ const line = {
 	],
 	"Villager-이벤트-Excitement":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2074,7 +2074,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2099,7 +2099,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2120,7 +2120,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2142,7 +2142,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake", portrait:"ecstasy",
@@ -2167,7 +2167,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2188,7 +2188,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2213,7 +2213,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2240,7 +2240,7 @@ const line = {
 	],
 	"Villager-이벤트-Corruption":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake",
@@ -2265,7 +2265,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -2290,7 +2290,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -2311,7 +2311,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -2337,7 +2337,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake", portrait:"ecstasy2", keepPort:true,
@@ -2358,7 +2358,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2383,7 +2383,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2408,7 +2408,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2532,7 +2532,7 @@ const line = {
 
 	"Tentacle Slime-이벤트-개전":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2553,7 +2553,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -2578,7 +2578,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2599,7 +2599,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2620,7 +2620,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -2641,7 +2641,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -2662,7 +2662,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -2683,7 +2683,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2709,35 +2709,35 @@ const line = {
 					text:"*Splat...*",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Contact with a special mucus has been made.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Movement will be restricted.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Ugh, what...<br>I didn't hear it could spit something like this...!",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"(M-my body...<br>I can't move well...!)",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Ah, it's cold...<br>It's so sticky...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"(Huh...?<br>I can't move my body...!)",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Ah, cold...<br>What's this now?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"(Ahh...<br>It's a mucus to restrain my movements♡)",
 				},
 			]
@@ -2750,35 +2750,35 @@ const line = {
 					text:"*Splat♡<br>Gurgle♡ Gurgle♡*",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I'm covered in mucus.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I can't move...<br>as I wish♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"What is this...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"You're tying me up, what are you planning to do♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Oh, what is this mucus♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"It's so sticky, I can't move well♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Such a bold move...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"You must have been afraid of me♡",
 				},
 			]
@@ -2786,7 +2786,7 @@ const line = {
 	],
 	"Tentacle Slime-이벤트-Excitement":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -2807,7 +2807,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -2824,7 +2824,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -2845,7 +2845,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2863,7 +2863,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -2884,7 +2884,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -2905,7 +2905,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2926,7 +2926,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2945,7 +2945,7 @@ const line = {
 	],
 	"Tentacle Slime-이벤트-Corruption":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2966,7 +2966,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -2987,7 +2987,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3008,7 +3008,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -3030,7 +3030,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -3047,7 +3047,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -3072,7 +3072,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -3093,7 +3093,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3126,19 +3126,19 @@ const line = {
 					text:"Gotcha!<br>Sis's underwear acquired~",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"... ...<br>Movement not detected.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Th-this bastard! Since when!",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Eh? Wait.<br>H-how?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Oh, I didn't even notice.<br>Impressive sleight of hand.",
 				},
 			]
@@ -3151,19 +3151,19 @@ const line = {
 					text:"What color are your panties today~?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I am not wearing any.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Hmph, you're planning to steal them again, aren't you?<br>I knew it, so I didn't wear any today!",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Panties?<br>I'm not wearing any today!",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Wanna know?<br>Today... I'm not wearing any♡",
 				},
 				{
@@ -3238,19 +3238,19 @@ const line = {
 			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"플레이어.표정", op:"in", v2:["normal", "excited", "blank"]}],
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Pl-please untie me.<br>This prank has gone too far...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Aren't you going to untie this?<br>You damn little brat!",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Aah, I can't move.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"This position is a bit.<br>Even I feel embarrassed...?",
 				},
 				{
@@ -3329,7 +3329,7 @@ const line = {
 
 	"악동-이벤트-개전":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3350,7 +3350,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3371,7 +3371,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3392,7 +3392,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3413,7 +3413,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3434,7 +3434,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3455,7 +3455,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -3476,7 +3476,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3535,7 +3535,7 @@ const line = {
 	],
 	"악동-이벤트-Excitement":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3556,7 +3556,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3577,7 +3577,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3598,7 +3598,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -3620,7 +3620,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -3641,7 +3641,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake",
@@ -3666,7 +3666,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3695,7 +3695,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3718,7 +3718,7 @@ const line = {
 	],
 	"악동-이벤트-Corruption":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3739,7 +3739,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake", portrait:"ecstasy2", keepPort:true,
@@ -3768,7 +3768,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake", portrait:"ecstasy2", keepPort:true,
@@ -3793,7 +3793,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -3815,7 +3815,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake", portrait:"ecstasy2",
@@ -3840,7 +3840,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3869,7 +3869,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -3890,7 +3890,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4024,19 +4024,19 @@ const line = {
 			priority:0, cond:{v1:"모드", op:"==", v2:0},
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"A very large cock.<br>There is a high probability that my pussy will not be able to withstand it.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Y-you're kidding...<br>How am I supposed to handle a cock this size...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"A-are... cocks...<br>normally this huge...?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"You're going to... ravage me... with this...♡",
 				},
 			]
@@ -4045,19 +4045,19 @@ const line = {
 			priority:0, cond:{v1:"모드", op:"==", v2:1},
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Analyzing the cock.<br>It appears to be... larger than before.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Y-you think showing me something like this...<br>is going to intimidate me...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"I-it's still huge, but...<br>it somehow managed to fit.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"A huge... and masculine cock♡<br>Just looking at it... is making my womb throb♡",
 				},
 			]
@@ -4088,7 +4088,7 @@ const line = {
 
 	"Tauros-이벤트-개전":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4109,7 +4109,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -4134,7 +4134,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4155,7 +4155,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -4181,7 +4181,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4202,7 +4202,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4223,7 +4223,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4244,7 +4244,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4263,7 +4263,7 @@ const line = {
 	],
 	"Tauros-이벤트-Excitement":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake", portrait:"ecstasy",
@@ -4284,7 +4284,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1, portrait:"ecstasy2", keepPort:true,
@@ -4305,7 +4305,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4326,7 +4326,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -4348,7 +4348,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -4369,7 +4369,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -4394,7 +4394,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -4419,7 +4419,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -4510,7 +4510,7 @@ const line = {
 
 	"Mushroom Man-이벤트-개전":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -4531,7 +4531,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -4552,7 +4552,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -4569,7 +4569,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -4591,7 +4591,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4608,7 +4608,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4625,7 +4625,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4646,7 +4646,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4665,7 +4665,7 @@ const line = {
 	],
 	"Mushroom Man-이벤트-정신동기화":[
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Soldier"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Eldorian"}, {v1:"커스텀.Background", op:"==", v2:"Soldier"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4682,7 +4682,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Soldier"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Silvani"}, {v1:"커스텀.Background", op:"==", v2:"Soldier"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4699,7 +4699,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"Soldier"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Halfling"}, {v1:"커스텀.Background", op:"==", v2:"Soldier"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4716,7 +4716,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"Soldier"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Beastfolk"}, {v1:"커스텀.Background", op:"==", v2:"Soldier"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4733,7 +4733,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Noble"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Eldorian"}, {v1:"커스텀.Background", op:"==", v2:"Noble"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4750,7 +4750,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Noble"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Silvani"}, {v1:"커스텀.Background", op:"==", v2:"Noble"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4767,7 +4767,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"Noble"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Beastfolk"}, {v1:"커스텀.Background", op:"==", v2:"Noble"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4784,7 +4784,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Celebrity"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Eldorian"}, {v1:"커스텀.Background", op:"==", v2:"Celebrity"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4801,7 +4801,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Celebrity"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Silvani"}, {v1:"커스텀.Background", op:"==", v2:"Celebrity"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4818,7 +4818,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"Celebrity"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Halfling"}, {v1:"커스텀.Background", op:"==", v2:"Celebrity"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4835,7 +4835,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"Celebrity"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Beastfolk"}, {v1:"커스텀.Background", op:"==", v2:"Celebrity"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4852,7 +4852,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Cleric"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Eldorian"}, {v1:"커스텀.Background", op:"==", v2:"Cleric"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4869,7 +4869,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"Cleric"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Halfling"}, {v1:"커스텀.Background", op:"==", v2:"Cleric"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4886,7 +4886,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"Cleric"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Beastfolk"}, {v1:"커스텀.Background", op:"==", v2:"Cleric"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4903,7 +4903,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Eldorian"}, {v1:"커스텀.Background", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4920,7 +4920,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Silvani"}, {v1:"커스텀.Background", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4937,7 +4937,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Halfling"}, {v1:"커스텀.Background", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4954,7 +4954,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Beastfolk"}, {v1:"커스텀.Background", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4971,7 +4971,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Rogue"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Eldorian"}, {v1:"커스텀.Background", op:"==", v2:"Rogue"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -4988,7 +4988,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Rogue"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Silvani"}, {v1:"커스텀.Background", op:"==", v2:"Rogue"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5005,7 +5005,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"Rogue"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Halfling"}, {v1:"커스텀.Background", op:"==", v2:"Rogue"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5022,7 +5022,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"Rogue"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Beastfolk"}, {v1:"커스텀.Background", op:"==", v2:"Rogue"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5039,7 +5039,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Merchant"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Eldorian"}, {v1:"커스텀.Background", op:"==", v2:"Merchant"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5056,7 +5056,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Merchant"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Silvani"}, {v1:"커스텀.Background", op:"==", v2:"Merchant"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5073,7 +5073,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"Merchant"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Halfling"}, {v1:"커스텀.Background", op:"==", v2:"Merchant"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5090,7 +5090,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"Merchant"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Beastfolk"}, {v1:"커스텀.Background", op:"==", v2:"Merchant"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5107,7 +5107,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Mercenary"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Eldorian"}, {v1:"커스텀.Background", op:"==", v2:"Mercenary"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5124,7 +5124,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Mercenary"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Silvani"}, {v1:"커스텀.Background", op:"==", v2:"Mercenary"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5141,7 +5141,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"Mercenary"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Halfling"}, {v1:"커스텀.Background", op:"==", v2:"Mercenary"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5158,7 +5158,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"Mercenary"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Beastfolk"}, {v1:"커스텀.Background", op:"==", v2:"Mercenary"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5175,7 +5175,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"Soldier"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Background", op:"==", v2:"Soldier"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5188,7 +5188,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"Noble"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Background", op:"==", v2:"Noble"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5201,7 +5201,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"Celebrity"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Background", op:"==", v2:"Celebrity"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5214,7 +5214,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"Cleric"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Background", op:"==", v2:"Cleric"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5227,7 +5227,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Background", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5240,7 +5240,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"Rogue"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Background", op:"==", v2:"Rogue"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5253,7 +5253,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"Merchant"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Background", op:"==", v2:"Merchant"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5266,7 +5266,7 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.배경", op:"==", v2:"Mercenary"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Background", op:"==", v2:"Mercenary"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5281,7 +5281,7 @@ const line = {
 	],
 	"Mushroom Man-이벤트-Excitement":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -5298,7 +5298,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -5315,7 +5315,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -5336,7 +5336,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -5358,7 +5358,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -5379,7 +5379,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5396,7 +5396,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5413,7 +5413,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -5432,7 +5432,7 @@ const line = {
 	],
 	"Mushroom Man-이벤트-Corruption":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -5453,7 +5453,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5470,7 +5470,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5487,7 +5487,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -5504,7 +5504,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond: true,
@@ -5524,7 +5524,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond: true,
@@ -5544,7 +5544,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -5561,7 +5561,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -5679,11 +5679,11 @@ const line = {
 			priority:0, cond:{v1:"모드", op:"==", v2:0},
 			lineList:[
 				{
-					cond:{v1:"Champion.기록.이번.이벤트.절정", op:">", v2:0}, pos:0,
+					cond:{v1:"Champion.기록.이번.이벤트.Orgasm", op:">", v2:0}, pos:0,
 					text:"Kgh, you're so tight...<br>You don't mind if I cum inside, right?",
 				},
 				{
-					cond:{v1:"Champion.기록.이번.이벤트.절정", op:"==", v2:0}, pos:0,
+					cond:{v1:"Champion.기록.이번.이벤트.Orgasm", op:"==", v2:0}, pos:0,
 					text:"It's fine~ I'll pull out.<br>(That's a lie, though.)",
 				},
 			]
@@ -5769,7 +5769,7 @@ const line = {
 
 	"Blonde Thug-이벤트-개전":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5794,7 +5794,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5819,7 +5819,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5840,7 +5840,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -5858,7 +5858,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5879,7 +5879,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -5904,7 +5904,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5929,7 +5929,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5956,7 +5956,7 @@ const line = {
 	],
 	"Blonde Thug-이벤트-Excitement":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -5977,7 +5977,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6002,7 +6002,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -6023,7 +6023,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -6049,7 +6049,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6078,7 +6078,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6099,7 +6099,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6128,7 +6128,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6151,7 +6151,7 @@ const line = {
 	],
 	"Blonde Thug-이벤트-Corruption":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -6172,7 +6172,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6197,7 +6197,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6218,7 +6218,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -6240,7 +6240,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake", portrait:"ecstasy2", keepPort:true,
@@ -6261,7 +6261,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -6282,7 +6282,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -6303,7 +6303,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6480,19 +6480,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I will never submit.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"You think... I'll lose...<br>to a guy like you...?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"I haven't...<br>given in yet...!",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"How boring...<br>It doesn't even tickle...!",
 				},
 			]
@@ -6501,7 +6501,7 @@ const line = {
 
 	"Trainer-이벤트-개전":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6522,7 +6522,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6551,7 +6551,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6576,7 +6576,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6602,7 +6602,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6627,7 +6627,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -6652,7 +6652,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -6677,7 +6677,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6715,7 +6715,7 @@ const line = {
 	],
 	"Trainer-이벤트-Excitement":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6736,7 +6736,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0, effect:"shake",
@@ -6761,7 +6761,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6786,7 +6786,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6808,7 +6808,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -6833,7 +6833,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6862,7 +6862,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -6887,7 +6887,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -6910,7 +6910,7 @@ const line = {
 	],
 	"Trainer-이벤트-Corruption":[
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6931,7 +6931,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -6960,7 +6960,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:1, portrait:"ecstasy2", keepPort:true,
@@ -6981,7 +6981,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -7007,7 +7007,7 @@ const line = {
 		},
 
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"순종"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
 				{
 					cond:true, pos:1,
@@ -7028,7 +7028,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"저항"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"저항"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -7057,7 +7057,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"무지"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"무지"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -7078,7 +7078,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.성격", op:"==", v2:"Aggressive"}],
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -7358,19 +7358,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Will you... fuck me here...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Why do you like things like this...<br>Pervert...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"I want you to fuck me here...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"This place is empty,<br>won't someone fuck me~",
 				},
 			]
@@ -7382,19 +7382,19 @@ const line = {
 			priority:1, cond:["and", {v1:"플레이어.표정", op:"in", v2:["corrupted"]}],
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I will assume a more efficient position♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Doing it like this...<br>is a little better...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"It will feel good if we do it in this position♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"I like this position better♡",
 				},
 			]
@@ -7403,19 +7403,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I will change my position.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"I'll decide the position...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"I like this position.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Let's enjoy this position.",
 				},
 			]
@@ -7427,19 +7427,19 @@ const line = {
 			priority:1, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I have acquired the truth♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"This endlessly flowing forbidden language...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Ah, my brain feels like it's going to burn out...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Let me feel more of this power♡",
 				},
 			]
@@ -7448,19 +7448,19 @@ const line = {
 			priority:1, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I will realize the forbidden knowledge♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Show me more♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Infinite truth... is piercing through me♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"I'm being dominated♡",
 				},
 			]
@@ -7494,19 +7494,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Please, spray your semen in my mouth.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Ugh, hurry up and cum...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Please, spray your semen in my mouth.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Spray your semen in my mouth!",
 				},
 			]
@@ -7579,19 +7579,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, effect:"diffusion",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, effect:"diffusion",
 					text:"Pour your semen into me,<br>without leaving anything behind♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, effect:"diffusion",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, effect:"diffusion",
 					text:"My womb is trembling...♡<br>It's begging for your semen♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, effect:"diffusion",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, effect:"diffusion",
 					text:"I can't take it anymore♡ I'll tighten up♡<br>Please splooge all over me♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, effect:"diffusion",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, effect:"diffusion",
 					text:"A grip into which I've poured all my desire...♡<br>You won't be able to resist♡",
 				},
 			]
@@ -7603,19 +7603,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I will focus my strength on my lower abdomen,<br>and squeeze♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Do you think... your pathetic cock<br>can win against my trained pussy?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"I'll show you the results of my training♡<br>Please watch me, master!",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"You fell for it♡<br>You'll regret fucking me so deep.",
 				},
 				{
@@ -7643,19 +7643,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I will release...<br>all my sexual desire.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"I must face my inner desires...<br>Ooooh... Ooooooh♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Nnngh... I can't take it anymore♡<br>I want to do lots of pleasant things♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"I'll release everything inside me♡<br>I can't handle... what happens next♡",
 				},
 				{
@@ -7682,19 +7682,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Please admire my body.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"This outfit is so embarrassing...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Please take a closer look<br>at my lewd form.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"How is it, lewd right?<br>Are you hard?",
 				},
 			]
@@ -7705,19 +7705,19 @@ const line = {
 			priority:1, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, effect:"shake",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, effect:"shake",
 					text:"*jiggle jiggle*<br>I request to mate♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, effect:"shake",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, effect:"shake",
 					text:"*jiggle jiggle*<br>How much further are you going to humiliate me...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, effect:"shake",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, effect:"shake",
 					text:"*jiggle jiggle*<br>Hehek♡ I can't take it♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, effect:"shake",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, effect:"shake",
 					text:"*jiggle jiggle*<br>Fuck me♡ Fuck me with your cock♡",
 				},
 			]
@@ -7726,19 +7726,19 @@ const line = {
 			priority:1, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, effect:"shake",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, effect:"shake",
 					text:"*jiggle jiggle*<br>I offer my body to Lord Cock♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, effect:"shake",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, effect:"shake",
 					text:"*jiggle jiggle*<br>I'm begging like this♡ Ugh... Give me your cock♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, effect:"shake",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, effect:"shake",
 					text:"*jiggle jiggle*<br>Aing♡ Hurry up and ravage me♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, effect:"shake",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, effect:"shake",
 					text:"*jiggle jiggle*<br>Haah♡ I'm already soaking wet♡",
 				},
 			]
@@ -7758,19 +7758,19 @@ const line = {
 			priority:1, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Initiating mating♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Hurry... hurry up and finish...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"It's time for the mating I've been waiting for♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Cock♡ It's here♡<br>Aaaaang♡",
 				},
 			]
@@ -7791,19 +7791,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Reporting that that part felt good.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Wh-where are you licking...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"I won't let you go until I'm satisfied.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Try licking with a bit more effort.",
 				},
 			]
@@ -7827,19 +7827,19 @@ const line = {
 			priority:0, cond:["and", {v1:"라운드", op:"==", v2:1}],
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I will change into attire suitable for a duel.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"How is it... Now that I've undressed first, you can't do anything, right?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Where are you looking?<br>Those are my clothes.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Alright, I'm taking off these cumbersome clothes!",
 				},
 			]
@@ -7875,19 +7875,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Drink. This is my juice.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"D-drink it... quickly...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Please drink lots of the juice I made.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"It came from this hole...♡ Want more?",
 				},
 			]
@@ -7896,19 +7896,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Please accept everything that comes from this body.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Why are you enjoying drinking this... It's disgusting...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"I prepared it with what comes from my body.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"I made it with my whole body... Try swallowing it all♡",
 				},
 			]
@@ -7917,19 +7917,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I offer this to you.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"W-why are you getting excited drinking something like this...<br>You pervert...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"This is the taste of my heat... Please drink it all up.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Drink it. It's my heat-juice♡",
 				},
 			]
@@ -7941,19 +7941,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"According to the plan, I will begin the extraction process♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Hurry up and cum it all out...♡<br>Let's just get this over with♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Fill my womb completely...♡<br>Until it overflows outside♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"This cock is mine...♡<br>I'll squeeze out all your semen♡",
 				},
 			]
@@ -7965,19 +7965,19 @@ const line = {
 			priority:1, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I will fire.<br>Hnngh...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"No, don't look...<br>Hnngh♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Haah, I'm coming!<br>Nnggh...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"I'm cumming♡ I'm cuuumming♡<br>*shiver...*",
 				},
 				{
@@ -8005,19 +8005,19 @@ const line = {
 			priority:1, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Ooh♡<br>Thank you for the charge♡*",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"No... I don't want to do it again...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Nngh♡ Thank you for cumming inside...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Ooh♡ P-please... cum inside me♡",
 				},
 			]
@@ -8029,19 +8029,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"In the shadow that embraces all.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Don't look at me like that...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Gently, with all my heart.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Gently, and lewdly♡",
 				},
 			]
@@ -8053,19 +8053,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I will use my last resort.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"I didn't want to use this...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"The end is coming.<br>One drop is enough.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"You won't be able to avoid this.",
 				},
 			]
@@ -8076,19 +8076,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Do not leave any behind, drink it all.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"(This is how you make it, right?)",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Please accept everything that overflows from my pussy♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"This juice overflowing from my pussy...♡<br>You'll swallow it all, right?",
 				},
 			]
@@ -8100,19 +8100,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I will use a tool.<br>*click*",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Wear this!<br>*click*",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"It's a special onahole.<br>*click*",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"I'll make you feel good with this.<br>*click*",
 				},
 			]
@@ -8757,19 +8757,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"I will control time.<br>Prepare for the oncoming pleasure.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Stop!<br>From now on, it's my time!",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Time, stop!<br>I'll show you the pleasure of an eternal moment!",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Freeze right there♡<br>Now, you won't know what's happening to you♡",
 				},
 			]
@@ -8959,19 +8959,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"This is merely a medical procedure.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"I'm getting a bad feeling about this...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"I can feel myself getting stronger.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"We're sticking together and becoming one.",
 				},
 			]
@@ -8983,19 +8983,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Beginning treatment.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"This is just a medical procedure.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"I'll start the treatment!",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Looks like a doctor is needed here...♡",
 				},
 			]
@@ -9007,19 +9007,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Erection confirmed♡<br>Initiating rapid ejaculation therapy♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"This is just a medical procedure♡<br>There's absolutely no other intention♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"I will now begin treatment of the erect cock♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"What a healthy cock♡<br>I'll just do a little check-up...♡",
 				},
 			]
@@ -9043,19 +9043,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Corrupted erect cock detected♡<br>Initiating purification sex immediately♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"You've shown your true colors, you wicked thing♡<br>I'll purify you right now with my sacred pussy♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"My goodness, what a wicked cock♡<br>I'll purify it by sucking it right now♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"To think you were harboring such a wicked cock♡<br>I'll extract your semen with a purification fellatio right now♡",
 				},
 			]
@@ -9067,19 +9067,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"We become... one...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"We are becoming... one...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"We are becoming... one...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Let's become... one...♡",
 				},
 			]
@@ -9091,19 +9091,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"This medicine will make me<br>a perfect onahole.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"If I drink this...<br>I might not be able to return to being human...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"If I drink this,<br>I'll be able to fight better, right?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"To be able to turn into a perfect onahole...<br>Isn't that the best...♡",
 				},
 			]
@@ -9115,19 +9115,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, portrait:"ecstasy2",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, portrait:"ecstasy2",
 					text:"Ingestion complete♡<br>Effect manifesting♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, portrait:"ecstasy2",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, portrait:"ecstasy2",
 					text:"My body... my body is getting hot...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, portrait:"ecstasy2",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, portrait:"ecstasy2",
 					text:"Heek, my head... feels strange...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, portrait:"ecstasy2",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, portrait:"ecstasy2",
 					text:"Haaang♡ My brain is melting from pleasure♡",
 				},
 			]
@@ -9139,19 +9139,19 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Attempting personality manipulation.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Even after my personality is altered...<br>can I still be called 'me'...?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"To be able to control my mind,<br>that's a wonderful thing.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Mind manipulation, how interesting♡<br>While we're at it, let's make me a total perverted slut♡",
 				},
 			]
@@ -9162,23 +9162,23 @@ const line = {
 			priority:0, cond:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, effect:"diffusion", portrait:"ecstasy2",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, effect:"diffusion", portrait:"ecstasy2",
 					text:"Manipulation complete.<br>Target personality: Total perverted slut♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, effect:"diffusion", portrait:"ecstasy2",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, effect:"diffusion", portrait:"ecstasy2",
 					text:"Nnnggh♡ N-no♡<br>I am... not a total perverted slut...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, effect:"diffusion", portrait:"ecstasy2",
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, effect:"diffusion", portrait:"ecstasy2",
 					text:"Nnnggh♡ I-I am♡<br>a total perverted slut...♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Nothing changed?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Aha♡ I was already a total perverted slut♡",
 				},
 			]
@@ -9351,10 +9351,10 @@ const line = {
 		},
 	],
 
-	"플레이어-절정준비":[
+	"플레이어-Orgasm준비":[
 
 	],
-	"플레이어-절정":[
+	"플레이어-Orgasm":[
 		{
 			priority:0, cond:["and", {v1:"플레이어.표정", op:"in", v2:["ecstasy2"]}], repeatable:true,
 			lineList:[
@@ -9387,19 +9387,19 @@ const line = {
 			priority:0, cond:["and", {v1:"플레이어.표정", op:"in", v2:["corrupted"]}], repeatable:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
 					text:"Haang♡ I came♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
 					text:"Nngh, I caaame♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
 					text:"Aang♡ I came♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
 					text:"Nngh♡ I came♡",
 				}
 			]
@@ -9408,19 +9408,19 @@ const line = {
 			priority:0, cond:["and", {v1:"플레이어.표정", op:"in", v2:["corrupted"]}], repeatable:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
 					text:"Aah♡ This feels good♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
 					text:"Nngh♡ Feels good♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
 					text:"Haang♡ Feels good♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
 					text:"Nngh♡ Feels good♡",
 				}
 			]
@@ -9429,19 +9429,19 @@ const line = {
 			priority:0, cond:["and", {v1:"플레이어.표정", op:"in", v2:["corrupted"]}], repeatable:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
 					text:"Nngh♡ Orgasm, has arrived♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
 					text:"Haang♡ Orgasm is here♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
 					text:"Nngh♡ Orgasm has arrived♡",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
 					text:"Aang♡ Orgasm is here♡",
 				}
 			]
@@ -9451,15 +9451,15 @@ const line = {
 			priority:1, cond:["and", {v1:"플레이어.표정", op:"in", v2:["normal", "excited"]}], 
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
 					text:"Aah♡<br>No way... me...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
 					text:"Nngh♡<br>I came...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
 					text:"Aah♡<br>It's fine... just once...",
 				}
 			]
@@ -9468,15 +9468,15 @@ const line = {
 			priority:0, cond:["and", {v1:"플레이어.표정", op:"in", v2:["normal", "excited"]}], repeatable:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1, keepOriginal:true,
 					text:"Aang♡<br>This can't be happening...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1, keepOriginal:true,
 					text:"Haang♡<br>I came again...",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
 					text:"Aang♡<br>Th-this is dangerous...",
 				}
 			]
@@ -9486,7 +9486,7 @@ const line = {
 			priority:1, cond:["and", {v1:"플레이어.표정", op:"in", v2:["blank"]}], 
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
 					text:"Nngh♡<br>I have orgasmed.",
 				},
 			]
@@ -9495,7 +9495,7 @@ const line = {
 			priority:0, cond:["and", {v1:"플레이어.표정", op:"in", v2:["blank"]}], repeatable:true,
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1, keepOriginal:true,
 					text:"Haang♡<br>I have orgasmed again.",
 				},
 			]
@@ -9665,7 +9665,7 @@ const line = {
 	],
 	"개입-최면":[
 		{
-			priority:2, cond:["and", {v1:"Champion.이름", op:"==", v2:"Blonde Thug"}],
+			priority:2, cond:["and", {v1:"Champion.Name", op:"==", v2:"Blonde Thug"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"칼레스",
@@ -9690,26 +9690,26 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Eldorian"}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Eldorian"}, {v1:"커스텀.Background", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"칼레스",
 					text:"Haha, to think the academy's greatest genius would be in a place like this.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Who... are you?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Hmph, do you know me?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Oh my, do you know me?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"That's an unpleasant voice.",
 				},
 				{
@@ -9723,26 +9723,26 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Silvani"}, {v1:"커스텀.Background", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"칼레스",
 					text:"Did you know?<br>I was the one who sent you the invitation.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Thank you.<br>Are you well-versed in mind magic?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"It was you?<br>You've got a good eye for people.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Thank you for the invitation.<br>I'd love to talk with you more.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Really?<br>Let's talk a lot after the duel~",
 				},
 				{
@@ -9756,7 +9756,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"Eldorian"}],
+			priority:0, cond:["and", {v1:"커스텀.Race", op:"==", v2:"Eldorian"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"칼레스",
@@ -9765,7 +9765,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"Silvani"}],
+			priority:0, cond:["and", {v1:"커스텀.Race", op:"==", v2:"Silvani"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"칼레스",
@@ -9774,7 +9774,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"Halfling"}],
+			priority:0, cond:["and", {v1:"커스텀.Race", op:"==", v2:"Halfling"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"칼레스",
@@ -9783,7 +9783,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}],
+			priority:0, cond:["and", {v1:"커스텀.Race", op:"==", v2:"Beastfolk"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"칼레스",
@@ -9794,22 +9794,22 @@ const line = {
 	],
 	"개입-저주":[
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Soldier"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Silvani"}, {v1:"커스텀.Background", op:"==", v2:"Soldier"}],
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Inchouk!<br>Aren't you a wanted criminal!",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Inchouk!<br>What is a criminal like you doing here?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Inchouk!<br>I can't believe it... I'll arrest you as soon as this is over.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Inchouk?<br>Don't tell me they were hiding you here?",
 				},
 				{
@@ -9823,22 +9823,22 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Silvani"}, {v1:"커스텀.배경", op:"==", v2:"Rogue"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Silvani"}, {v1:"커스텀.Background", op:"==", v2:"Rogue"}],
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Lord Chouk?<br>I heard you went missing.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Chouk?<br>I was wondering where you went, so you were here?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Lord Chouk!<br>You were gone, but you were here?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Chouk?<br>Long time no see~ Fancy meeting you here~",
 				},
 				{
@@ -9852,7 +9852,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"Eldorian"}],
+			priority:0, cond:["and", {v1:"커스텀.Race", op:"==", v2:"Eldorian"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"추크",
@@ -9861,7 +9861,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"Silvani"}],
+			priority:0, cond:["and", {v1:"커스텀.Race", op:"==", v2:"Silvani"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"추크",
@@ -9870,7 +9870,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"Halfling"}],
+			priority:0, cond:["and", {v1:"커스텀.Race", op:"==", v2:"Halfling"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"추크",
@@ -9879,7 +9879,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}],
+			priority:0, cond:["and", {v1:"커스텀.Race", op:"==", v2:"Beastfolk"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"추크",
@@ -9890,22 +9890,22 @@ const line = {
 	],
 	"개입-Potion":[
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"Scholar"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Halfling"}, {v1:"커스텀.Background", op:"==", v2:"Scholar"}],
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Ooh, what is that drug?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Hey, that drug is?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Oh, is that drug what I think it is?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Uh, did you make that?",
 				},
 				{
@@ -9915,22 +9915,22 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Halfling"}, {v1:"커스텀.배경", op:"==", v2:"Rogue"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Halfling"}, {v1:"커스텀.Background", op:"==", v2:"Rogue"}],
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Comrade?<br>What are you doing in a place like this.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Comrade!<br>Are you also trapped here?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"To meet a comrade in a place like this.<br>Nice to see you.",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Hello~<br>Fancy seeing a comrade in a place like this.",
 				},
 				{
@@ -10018,7 +10018,7 @@ const line = {
 	],
 	"개입-고문":[
 		{
-			priority:2, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.이름", op:"==", v2:"Trainer"}],
+			priority:2, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Trainer"}],
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -10047,22 +10047,22 @@ const line = {
 			]
 		},
 		{
-			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, {v1:"커스텀.배경", op:"==", v2:"Rogue"}],
+			priority:1, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Race", op:"==", v2:"Beastfolk"}, {v1:"커스텀.Background", op:"==", v2:"Rogue"}],
 			lineList:[
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"순종"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"순종"}], pos:1,
 					text:"Huh?<br>Are you also an exile?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"저항"}], pos:1,
 					text:"Ooh,<br>were you also cast out from your beastfolk?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"무지"}], pos:1,
 					text:"Are you perhaps an exile like me?",
 				},
 				{
-					cond:["and", {v1:"커스텀.성격", op:"==", v2:"Aggressive"}], pos:1,
+					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
 					text:"Hey, nice to meet you~<br>Wanna get along, since we're both exiles?",
 				},
 				{
@@ -10076,7 +10076,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"Eldorian"}],
+			priority:0, cond:["and", {v1:"커스텀.Race", op:"==", v2:"Eldorian"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"모모리카",
@@ -10085,7 +10085,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"Silvani"}],
+			priority:0, cond:["and", {v1:"커스텀.Race", op:"==", v2:"Silvani"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"모모리카",
@@ -10094,7 +10094,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"Halfling"}],
+			priority:0, cond:["and", {v1:"커스텀.Race", op:"==", v2:"Halfling"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"모모리카",
@@ -10103,7 +10103,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"커스텀.종족", op:"==", v2:"Beastfolk"}],
+			priority:0, cond:["and", {v1:"커스텀.Race", op:"==", v2:"Beastfolk"}],
 			lineList:[
 				{
 					cond:true, pos:2, name:"모모리카",

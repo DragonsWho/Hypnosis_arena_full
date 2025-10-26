@@ -1,9 +1,9 @@
 const dictionary = {
 	"돌아가기":{ "KOR":"Back" },
 
-	"이름":{ "KOR":"Name" },
+	"Name":{ "KOR":"Name" },
 	"외모":{ "KOR":"Appearance" },
-	"종족":{ "KOR":"Race" },
+	"Race":{ "KOR":"Race" },
 	"Eldorian":{ "KOR":"Eldorian" },
 	"Silvani":{ "KOR":"Sylvani" },
 	"Halfling":{ "KOR":"Halfling" },
@@ -16,7 +16,7 @@ const dictionary = {
 		"Beastfolk":{ "KOR":"The Beastfolk indicate their origin by prefixing their given name with their tribal name. Even within the same race, cultures can vary drastically between beastfolks, so it is always wise to confirm a person's beastfolk when dealing with them.<br>Despite their cultural diversity, they share a common naming convention: most male names follow the pattern 'AAloB', and female names 'AAliB'.<br>Famous tribal names include Redspear, Thundermaw, Silverleaf, and Goldenstem. With countless beastfolks in existence, you may encounter new ones at any time." },
 	},
 
-	"얼굴":{ "KOR":"Face" },
+	"Face":{ "KOR":"Face" },
 	"머리":{ "KOR":"Hair" },
 	"털":{ "KOR":"Fur" },
 	"눈":{ "KOR":"Eyes" },
@@ -59,9 +59,9 @@ const dictionary = {
 	"육덕":{ "KOR":"Plump" },
 	"근육질":{ "KOR":"Muscular" },
 
-	"직업":{ "KOR":"Class" },
-	"배경":{ "KOR":"Background" },
-	"성격":{ "KOR":"Personality" },
+	"Class":{ "KOR":"Class" },
+	"Background":{ "KOR":"Background" },
+	"Personality":{ "KOR":"Personality" },
 	"순종":{ "KOR":"Obedient" },
     "저항":{ "KOR":"Resistant" },
     "무지":{ "KOR":"Naive" },
@@ -114,7 +114,7 @@ const dictionary = {
 	"Essence":{ "KOR":"Essence" },
 
 	"만능":{ "KOR":"Wildcard" },
-	"비전":{ "KOR":"Arcane" },
+	"Arcane":{ "KOR":"Arcane" },
 	"커스텀":{ "KOR":"Custom" },
 	"시련":{ "KOR":"Trial" },
 
@@ -137,7 +137,7 @@ const dictionary = {
 
 	"Excitement":{ "KOR":"Excitement" },
 	"Excitement Limit":{ "KOR":"Excitement Limit" },
-	"절정":{ "KOR":"Orgasm" },
+	"Orgasm":{ "KOR":"Orgasm" },
 	"Orgasm Limit":{ "KOR":"Orgasm Limit" },
 	"Heat":{ "KOR":"Heat" },
 	"실제Heat":{ "KOR":"Actual Heat" },
@@ -440,7 +440,7 @@ const champList = {
 			"B1-SU-002":[
 				{cond:true, priority:"상대덱.count(type, Penalty)"},
 				{cond:true, priority:"상대덱.count(type, Penalty)"},
-				{cond:['and', {v1:"상대.Remaining절정", op:"<=", v2:"1"}, {v1:"상대덱.count(type, Penalty)", op:">=", v2:"4"}], priority:100},
+				{cond:['and', {v1:"상대.RemainingOrgasm", op:"<=", v2:"1"}, {v1:"상대덱.count(type, Penalty)", op:">=", v2:"4"}], priority:100},
 				{cond:{v1:"상대덱.count(type, Penalty)", op:"==", v2:"3"}, priority:-2},
 				{cond:{v1:"상대덱.count(type, Penalty)", op:"<", v2:"3"}, priority:-Infinity},
 			],
@@ -1157,7 +1157,7 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 			"B1-SU-002":[
 				{cond:true, priority:"상대덱.count(type, Penalty)"},
 				{cond:true, priority:"상대덱.count(type, Penalty)"},
-				{cond:['and', {v1:"상대.Remaining절정", op:"<=", v2:"1"}, {v1:"상대덱.count(type, Penalty)", op:">=", v2:"4"}], priority:100},
+				{cond:['and', {v1:"상대.RemainingOrgasm", op:"<=", v2:"1"}, {v1:"상대덱.count(type, Penalty)", op:">=", v2:"4"}], priority:100},
 				{cond:{v1:"상대덱.count(type, Penalty)", op:"==", v2:3}, priority:-2},
 				{cond:{v1:"상대덱.count(type, Penalty)", op:"<", v2:3}, priority:-Infinity},
 			],
@@ -1526,7 +1526,7 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 			"B7-AT-004":[
 				{cond:{v1:"Wetness", op:">=", v2:"Heat"}, priority:-100},
 				{cond:{v1:"플레이어.RemainingExcitement", op:"<=", v2:"Heat"}, priority:10},
-				{cond:{v1:"Champion.기록.이번.이벤트.절정", op:">", v2:0}, priority:5}
+				{cond:{v1:"Champion.기록.이번.이벤트.Orgasm", op:">", v2:0}, priority:5}
 			],
 			"B7-AT-005":[
 				{cond:true, priority:-1000},
@@ -1793,135 +1793,135 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 const endingList = {
 	"normal_lose_bg1":{
 		name:{ "KOR":"Low-Rank Combatant" }, endingId:"lose_bg1", img:"ending_lose_1", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
 	},
 	"normal_lose_bg2":{
 		name:{ "KOR":"Pussy Pet" }, endingId:"lose_bg2", img:"ending_lose_2", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
 	},
 	"normal_lose_bg3":{
 		name:{ "KOR":"Display Figure" }, endingId:"lose_bg3", img:"ending_lose_3", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
 	},
 	"normal_lose_bg4":{
 		name:{ "KOR":"Ritual Sacrifice" }, endingId:"lose_bg4", img:"ending_lose_4", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
 	},
 	"normal_lose_bg5":{
 		name:{ "KOR":"Milking Farm Cow" }, endingId:"lose_bg5", img:"ending_lose_5", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
 	},
 	"normal_lose_bg6":{
 		name:{ "KOR":"Public Penance Fixture" }, endingId:"lose_bg6", img:"ending_lose_6", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
 	},
 	"normal_lose_bg7":{
 		name:{ "KOR":"Cheap Hole" }, endingId:"lose_bg7", img:"ending_lose_7", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
 	},
 	"normal_lose_bg8":{
 		name:{ "KOR":"Cum Dumpster" }, endingId:"lose_bg8", img:"ending_lose_8", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
 	},
 
 	"normal_win_bg1":{
 		name:{ "KOR":"Guard" }, endingId:"win_bg1", img:"ending_win_1", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
 	},
 	"normal_win_bg2":{
 		name:{ "KOR":"Entertainment Prostitute" }, endingId:"win_bg2", img:"ending_win_2", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
 	},
 	"normal_win_bg3":{
 		name:{ "KOR":"PR Prostitute" }, endingId:"win_bg3", img:"ending_win_3", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
 	},
 	"normal_win_bg4":{
 		name:{ "KOR":"Employee Welfare Facility" }, endingId:"win_bg4", img:"ending_win_4", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
 	},
 	"normal_win_bg5":{
 		name:{ "KOR":"Research Staff" }, endingId:"win_bg5", img:"ending_win_5", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
 	},
 	"normal_win_bg6":{
 		name:{ "KOR":"Meat Doll" }, endingId:"win_bg6", img:"ending_win_6", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
 	},
 	"normal_win_bg7":{
 		name:{ "KOR":"Slave Manager" }, endingId:"win_bg7", img:"ending_win_7", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
 	},
 	"normal_win_bg8":{
 		name:{ "KOR":"Female Champion" }, endingId:"win_bg8", img:"ending_win_8", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 배경이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
 	},
 
 
 	"hard_lose_bg1":{
 		name:{ "KOR":"Bodyguard Maid" }, endingId:"loseH_bg1", img:"endingH_lose_1", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
 	},
 	"hard_lose_bg2":{
 		name:{ "KOR":"Noble's Spouse" }, endingId:"loseH_bg2", img:"endingH_lose_2", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
 	},
 	"hard_lose_bg3":{
 		name:{ "KOR":"AV Actress" }, endingId:"loseH_bg3", img:"endingH_lose_3", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
 	},
 	"hard_lose_bg4":{
 		name:{ "KOR":"Lewd Saint" }, endingId:"loseH_bg4", img:"endingH_lose_4", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
 	},
 	"hard_lose_bg5":{
 		name:{ "KOR":"Clinical Test Subject" }, endingId:"loseH_bg5", img:"endingH_lose_5", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
 	},
 	"hard_lose_bg6":{
 		name:{ "KOR":"Underworld Guild" }, endingId:"loseH_bg6", img:"endingH_lose_6", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
 	},
 	"hard_lose_bg7":{
 		name:{ "KOR":"Casino Hostess" }, endingId:"loseH_bg7", img:"endingH_lose_7", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
 	},
 	"hard_lose_bg8":{
 		name:{ "KOR":"Underground Fighter" }, endingId:"loseH_bg8", img:"endingH_lose_8", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
 	},
 
 	"hard_win_bg1":{
 		name:{ "KOR":"The Demon Lord Appears" }, endingId:"winH_bg1", img:"endingH_win_1", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
 	},
 	"hard_win_bg2":{
 		name:{ "KOR":"Mass Reality Shift" }, endingId:"winH_bg2", img:"endingH_win_2", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
 	},
 	"hard_win_bg3":{
 		name:{ "KOR":"World Star" }, endingId:"winH_bg3", img:"endingH_win_3", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
 	},
 	"hard_win_bg4":{
 		name:{ "KOR":"Emerging Cult" }, endingId:"winH_bg4", img:"endingH_win_4", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
 	},
 	"hard_win_bg5":{
 		name:{ "KOR":"Stampede" }, endingId:"winH_bg5", img:"endingH_win_5", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
 	},
 	"hard_win_bg6":{
 		name:{ "KOR":"Queen of the Night" }, endingId:"winH_bg6", img:"endingH_win_6", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
 	},
 	"hard_win_bg7":{
 		name:{ "KOR":"Semen Economy" }, endingId:"winH_bg7", img:"endingH_win_7", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
 	},
 	"hard_win_bg8":{
 		name:{ "KOR":"As Desire Leads" }, endingId:"winH_bg8", img:"endingH_win_8", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 배경이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
+		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
 	},
 
 	"morvainEnd":{
@@ -2572,18 +2572,18 @@ const customStructure = {
 		            { value: "attack", text: "attack card" },
 		            { value: "support", text: "보조 card" },
 		            { value: "neutral", text: "Neutral card" },
-		            { value: "class", text: "직업 card" },
+		            { value: "class", text: "Class card" },
 		            { value: "normal", text: "일반 card" },
 		            { value: "expert", text: "숙련 card" },
 		            { value: "ultimate", text: "궁극 card" },
 		            { value: "penalty", text: "Penalty card" },
 		            { value: "self", text: "복사본" },
-            		{ value: "nelson", text: "조르기", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
-            		{ value: "manufacture", text: "Crafted", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
-            		{ value: "instantspell", text: "즉발 Magic", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} },
-            		{ value: "magiccircle", text: "Magic Circle", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} },
-            		{ value: "jewel", text: "Gem", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} },
-            		{ value: "essence", text: "Essence", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} },
+            		{ value: "nelson", text: "조르기", condition: {v1:"커스텀.Class", op:"==", v2:"Assassin"} },
+            		{ value: "manufacture", text: "Crafted", condition: {v1:"커스텀.Class", op:"==", v2:"Assassin"} },
+            		{ value: "instantspell", text: "즉발 Magic", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
+            		{ value: "magiccircle", text: "Magic Circle", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
+            		{ value: "jewel", text: "Gem", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
+            		{ value: "essence", text: "Essence", condition: {v1:"커스텀.Class", op:"==", v2:"Healer"} },
                 ],
                 "width": 50,
                 "subfields":[
@@ -2760,7 +2760,7 @@ const customStructure = {
 		            { value: "attack", text: "attack card" },
 		            { value: "support", text: "보조 card" },
 		            { value: "neutral", text: "Neutral card" },
-		            { value: "class", text: "직업 card" },
+		            { value: "class", text: "Class card" },
 		            { value: "normal", text: "일반 card" },
 		            { value: "expert", text: "숙련 card" },
 		            { value: "ultimate", text: "궁극 card" },
@@ -3179,9 +3179,9 @@ const customStructure = {
                 "label": "상태",
                 "type": "select",
                 "options": [
-		            { value: "poison", text: "독", condition:{v1:"커스텀.직업", op:"==", v2:"Assassin"} },
-		            { value: "frozen", text: "빙결", condition:{v1:"커스텀.직업", op:"==", v2:"Mage"} },
-		            { value: "absorption", text: "Essence 흡수", condition:{v1:"커스텀.직업", op:"==", v2:"Healer"} }
+		            { value: "poison", text: "독", condition:{v1:"커스텀.Class", op:"==", v2:"Assassin"} },
+		            { value: "frozen", text: "빙결", condition:{v1:"커스텀.Class", op:"==", v2:"Mage"} },
+		            { value: "absorption", text: "Essence 흡수", condition:{v1:"커스텀.Class", op:"==", v2:"Healer"} }
                 ],
                 "width": 50,
                 "subfields":[
@@ -3241,14 +3241,14 @@ const variableList = [
     { value: "excite", text: "Excitement" },
     { value: "exciteL", text: "Excitement Limit" },
     { value: "deck", text: "덱" },
-    { value: "state", text: "상태", condition:["or", {v1:"커스텀.직업", op:"==", v2:"Assassin"}, {v1:"커스텀.직업", op:"==", v2:"Mage"}] },
+    { value: "state", text: "상태", condition:["or", {v1:"커스텀.Class", op:"==", v2:"Assassin"}, {v1:"커스텀.Class", op:"==", v2:"Mage"}] },
     { value: "use", text: "사용" },
     { value: "get", text: "획득" },
-    { value: "discard", text: "버림", condition:{v1:"커스텀.직업", op:"==", v2:"Warrior"} },
-    { value: "lust", text: "Lust", condition:{v1:"커스텀.직업", op:"==", v2:"Warrior"} },
-    { value: "wetness", text: "Wetness", condition:{v1:"커스텀.직업", op:"==", v2:"Assassin"} },
-    { value: "sBlock", text: "Sense Block", condition:{v1:"커스텀.직업", op:"==", v2:"Mage"} },
-    { value: "corrupt", text: "Corruption", condition:{v1:"커스텀.직업", op:"==", v2:"Healer"} },
+    { value: "discard", text: "버림", condition:{v1:"커스텀.Class", op:"==", v2:"Warrior"} },
+    { value: "lust", text: "Lust", condition:{v1:"커스텀.Class", op:"==", v2:"Warrior"} },
+    { value: "wetness", text: "Wetness", condition:{v1:"커스텀.Class", op:"==", v2:"Assassin"} },
+    { value: "sBlock", text: "Sense Block", condition:{v1:"커스텀.Class", op:"==", v2:"Mage"} },
+    { value: "corrupt", text: "Corruption", condition:{v1:"커스텀.Class", op:"==", v2:"Healer"} },
     { value: "round", text: "라운드" },
     { value: "stack", text: "강화 스택" }
 ]
@@ -3274,9 +3274,9 @@ const variableData = [
             { value: "thisTurn", text: "이번 라운드" },
             { value: "lastTurn", text: "이전 라운드" },
             { value: "all", text: "결투 동안" },
-            { value: "recentTurn", text: "최근 라운드", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"}},
+            { value: "recentTurn", text: "최근 라운드", condition: {v1:"커스텀.Class", op:"==", v2:"Healer"}},
             { value: "remaining", text: "남음" },
-            { value: "delayed", text: "지연됨", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} }
+            { value: "delayed", text: "지연됨", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} }
         ],
         "conditions": ["excite"],
         "width": 33,
@@ -3302,7 +3302,7 @@ const variableData = [
             { value: "thisTurn", text: "이번 라운드" },
             { value: "lastTurn", text: "이전 라운드" },
             { value: "all", text: "결투 동안" },
-            { value: "recentTurn", text: "최근 라운드", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} }
+            { value: "recentTurn", text: "최근 라운드", condition: {v1:"커스텀.Class", op:"==", v2:"Healer"} }
         ],
         "conditions": ["use", "get", "discard"],
         "width": 33
@@ -3316,18 +3316,18 @@ const variableData = [
             { value: "attack", text: "attack card" },
             { value: "support", text: "보조 card" },
             { value: "neutral", text: "Neutral card" },
-            { value: "class", text: "직업 card" },
+            { value: "class", text: "Class card" },
             { value: "normal", text: "일반 card" },
             { value: "expert", text: "숙련 card" },
             { value: "ultimate", text: "궁극 card" },
             { value: "penalty", text: "Penalty card" },
             { value: "created", text: "생성된 card", exclude:["get"] },
-            { value: "nelson", text: "조르기", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
-            { value: "spell", text: "Magic card", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} },
-            { value: "magiccircle", text: "Magic Circle card", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} },
-            { value: "jewel", text: "Gem card", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} },
-            { value: "essence", text: "Essence card", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} },
-            { value: "combination", text: "결합물 card", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} }
+            { value: "nelson", text: "조르기", condition: {v1:"커스텀.Class", op:"==", v2:"Assassin"} },
+            { value: "spell", text: "Magic card", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
+            { value: "magiccircle", text: "Magic Circle card", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
+            { value: "jewel", text: "Gem card", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
+            { value: "essence", text: "Essence card", condition: {v1:"커스텀.Class", op:"==", v2:"Healer"} },
+            { value: "combination", text: "결합물 card", condition: {v1:"커스텀.Class", op:"==", v2:"Healer"} }
         ],
         "conditions": ["deck", "use", "get", "discard"],
         "width": 33,
@@ -3338,7 +3338,7 @@ const variableData = [
                 "type": "select",
                 "options": [
                     { value: "count", text: "의 수" },
-                    { value: "kind", text: "의 종류" }
+                    { value: "kind", text: "의 Type" }
                 ],
                 "width": 33,
                 "conditions": ["all", "attack", "support", "neutral", "class", "normal", "expert", "ultimate", "penalty", "created", "spell", "magiccircle", "jewel", "essence"]
@@ -3350,8 +3350,8 @@ const variableData = [
         "label": "",
         "type": "select",
         "options": [
-            { value: "poison", text: "독", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
-            { value: "frozen", text: "빙결", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} }
+            { value: "poison", text: "독", condition: {v1:"커스텀.Class", op:"==", v2:"Assassin"} },
+            { value: "frozen", text: "빙결", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} }
         ],
         "conditions": ["state"],
         "width": 33

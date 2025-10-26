@@ -135,7 +135,7 @@ const cardDB = {
 		flavorText:{ "KOR":"If you were to name the most physically superior race on the continent of Oldinsaleia, it would have to be the Beastfolk.<br>They are born with solid muscles, flexibility, and sharp senses.<br>If they were more numerous and unified, they would surely be the most formidable race." },
 		hypnoText:{ "KOR":"Lately, Beastfolk pets have become fashionable in the slave market.<br>They are sturdy and don't break easily, and if you think of them as beasts rather than people, they can be used without any moral burden." },
 		effect:[
-			{trigger:"always", cond:{v1:"자신.절정", op:"==", v2:0}, type:"exciteL", target:"self", op:"add", value:2},
+			{trigger:"always", cond:{v1:"자신.Orgasm", op:"==", v2:0}, type:"exciteL", target:"self", op:"add", value:2},
 		]
 	},
 	"AD-NT-TR-002":{
@@ -232,17 +232,17 @@ const cardDB = {
 	},
 	"AD-NT-BG5-001":{
 		name:{ "KOR":"Insight" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", bg:"Scholar", cost:10, owner:1,
-		tags:[], related:["tag:탐구"],
+		tags:[], related:["tag:Research"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"You possess a talent for seeing through to the essence of things with your deep knowledge and sharp analytical skills.<br>Your insight provides a clear path even in the most complex situations." },
 		hypnoText:{ "KOR":"Your field of study is researching and gaining insight into how to please men through intercourse.<br>You must use your own body as a test subject, analyzing the degree of erection and volume of ejaculate based on different positions and acts." },
 		effect:[
-			{trigger:"turnStart", cond:true, type:"state", target:"self", value:"randomCard(tags, 탐구)"},
+			{trigger:"turnStart", cond:true, type:"state", target:"self", value:"randomCard(tags, Research)"},
 		]
 	},
 	"AD-NT-BG5-001-1":{
 		name:{ "KOR":"Mechanics Research" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
-		tags:["탐구"],
+		tags:["Research"],
 		expiration:"turnEnd", duration:1,
 		effect:[
 			{trigger:"turnEnd", cond:{v1:"자신.기록.이번.사용.count(type, attack)", op:">", v2:0}, type:"lewd", op:"add", value:1},
@@ -250,7 +250,7 @@ const cardDB = {
 	},
 	"AD-NT-BG5-001-2":{
 		name:{ "KOR":"Observational Research" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
-		tags:["탐구"],
+		tags:["Research"],
 		expiration:"turnEnd", duration:1,
 		effect:[
 			{trigger:"turnEnd", cond:{v1:"자신.기록.이번.사용.count(type, 보조)", op:">", v2:0}, type:"Heat", op:"add", value:-1},
@@ -258,7 +258,7 @@ const cardDB = {
 	},
 	"AD-NT-BG5-001-3":{
 		name:{ "KOR":"Statistical Research" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
-		tags:["탐구"],
+		tags:["Research"],
 		expiration:"turnEnd", duration:1,
 		effect:[
 			{trigger:"turnEnd", cond:{v1:"자신.기록.이번.사용.count(type, Penalty)", op:">", v2:0}, type:"exciteL", target:"self", op:"add", value:1},
@@ -421,7 +421,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You lost someone you loved, and you've thrown everything away for revenge.<br>Vengeance is the only thing that drives you, and you will not stop until your enemy is defeated." },
 		hypnoText:{ "KOR":"After being repeatedly defeat-raped, your desire for revenge has faded.<br>Now, you charge into battle hoping to lose." },
 		effect:[
-			{trigger:"always", cond:{v1:"자신.기록.이전.이벤트.절정", op:">", v2:0}, type:"lewd", op:"add", value:3},
+			{trigger:"always", cond:{v1:"자신.기록.이전.이벤트.Orgasm", op:">", v2:0}, type:"lewd", op:"add", value:3},
 		]
 	},
 
@@ -437,12 +437,12 @@ const cardDB = {
 	},
 	"AD-NT-SY-BG2-001":{
 		name:{ "KOR":"Clan Council Member" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", race:"Silvani", bg:"Noble", cost:15, owner:1,
-		tags:[], related:["tag:비전"],
+		tags:[], related:["tag:Arcane"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"In the Sylvanian Federation, representatives from each clan are elected to a council to handle political matters.<br>Though the members' opinions often clash when creating or amending policies, Sylvania has progressed through this process of debate and compromise." },
 		hypnoText:{ "KOR":"A female council member's body is treated as a public asset for the clan.<br>Should a complaint arise during work, she must make her body available at any time." },
 		effect:[
-			{trigger:"gameStart", cond:true, type:"get", target:"self", value:"randomCard(tags, 비전)"},
+			{trigger:"gameStart", cond:true, type:"get", target:"self", value:"randomCard(tags, Arcane)"},
 		]
 	},
 	"AD-NT-SY-BG3-001":{
@@ -684,7 +684,7 @@ const cardDB = {
 		flavorText:{ "KOR":"For a champion of the fighting arena, being flashy is more important than winning.<br>Their specialty is creating tension and delivering a reversal to give the audience a sense of catharsis." },
 		hypnoText:{ "KOR":"An ahegao face and pig-like squeals are good for creating a sense of crisis.<br>It must not be mere acting; you must become truly vulgar." },
 		effect:[
-			{trigger:"always", cond:{v1:"자신.Remaining절정", op:"==", v2:1}, type:"exciteL", target:"self", op:"add", value:5},
+			{trigger:"always", cond:{v1:"자신.RemainingOrgasm", op:"==", v2:1}, type:"exciteL", target:"self", op:"add", value:5},
 		]
 	},
 	"AD-NT-TR-BG4-001":{
@@ -1632,7 +1632,7 @@ const cardDB = {
 		flavorText:{ "KOR":"Blessed by the gods, you can perform miraculous healing that ordinary healers cannot even dream of.<br>Reviving the dead or instantly healing incurable wounds, this miracle is considered not just a skill, but the power of the gods themselves." },
 		hypnoText:{ "KOR":"You must be thankful for the fact that you were born a female and can be fucked by men.<br>A lewd body, the pleasure felt when a cock pounds you, the happiness of submission—all are miracles bestowed by the gods so that you can be fucked." },
 		effect:[
-			{trigger:"always", cond:{v1:"자신.기록.이번.이벤트.절정", op:">", v2:0}, type:"immune", target:"self"}
+			{trigger:"always", cond:{v1:"자신.기록.이번.이벤트.Orgasm", op:">", v2:0}, type:"immune", target:"self"}
 		]
 	},
 
@@ -1700,18 +1700,18 @@ const cardDB = {
 	},
 	"AD-HE-BG7-002":{
 		name:{ "KOR":"Apothecary" }, class:"Healer", type:"특성", isDeck:false, rarity:"None", bg:"Merchant", cost:15, owner:1,
-		tags:[], related:["tag:물약"],
+		tags:[], related:["tag:Potion"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"You are a skilled merchant who brews and sells potions with various healing effects.<br>From simple wound treatment to advanced healing, mana restoration, and even forbidden elixirs, your potions are renowned for their quality." },
 		hypnoText:{ "KOR":"As an apothecary, you must sell your own urine.<br>For credibility, the manufacturing process must be shown in front of the customer." },
 		effect:[
-			{trigger:"turnEnd", cond:true, type:"get", target:"self", value:"randomCard(tags, 물약)"}
+			{trigger:"turnEnd", cond:true, type:"get", target:"self", value:"randomCard(tags, Potion)"}
 		]
 	},
 	"AD-HE-BG7-002-1":{
 		name:{ "KOR":"Healing Potion" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["물약"],
+		tags:["Potion"],
 		effect:[
 			{trigger:"used", cond:true, type:"excite", target:"self", op:"add", value:-2},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
@@ -1720,7 +1720,7 @@ const cardDB = {
 	"AD-HE-BG7-002-2":{
 		name:{ "KOR":"Awakening Potion" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["물약"],
+		tags:["Potion"],
 		effect:[
 			{trigger:"used", cond:true, type:"state", target:"self", value:"AD-HE-BG7-002-2-1"},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
@@ -1740,7 +1740,7 @@ const cardDB = {
 	"AD-HE-BG7-002-3":{
 		name:{ "KOR":"Calming Potion" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["물약"],
+		tags:["Potion"],
 		effect:[
 			{trigger:"used", cond:true, type:"state", target:"self", value:"AD-HE-BG7-002-3-1"},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
@@ -1760,7 +1760,7 @@ const cardDB = {
 	"AD-HE-BG7-002-4":{
 		name:{ "KOR":"Absorption Potion" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["물약"],
+		tags:["Potion"],
 		effect:[
 			{trigger:"used", cond:true, type:"state", target:"self", value:"AD-HE-BG7-002-4-1"},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
@@ -2217,18 +2217,18 @@ const cardDB = {
 	},
 	"DA-AS-BG7-001":{
 		name:{ "KOR":"Secondhand Trade" }, class:"Assassin", type:"특성", isDeck:false, rarity:"None", bg:"Merchant", cost:-10,
-		tags:["부정적"], related:["tag:불량품"],
+		tags:["부정적"], related:["tag:Defective"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Lacking funds, you often resorted to buying secondhand goods instead of new ones.<br>But until you try it, you can never be sure if the deal in front of you is real or a scam, and the outcome is always unpredictable." },
 		hypnoText:{ "KOR":"To raise money quickly, you can sell the underwear you're wearing or items used for masturbation and sex.<br>If you're really desperate, you can even produce them on the spot at the trade..." },
 		effect:[
-			{trigger:"turnStart", cond:{v1:"자기덱.count(tags, 불량품)", op:"==", v2:0}, type:"get", target:"self", value:"randomCard(tags, 불량품)"},
+			{trigger:"turnStart", cond:{v1:"자기덱.count(tags, Defective)", op:"==", v2:0}, type:"get", target:"self", value:"randomCard(tags, Defective)"},
 		]
 	},
 	"DA-AS-BG7-001-1":{
 		name:{ "KOR":"Defective: Broken Tool" }, class:"None", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["불량품"],
+		tags:["Defective"],
 		effect:[
 			{trigger:"get", cond:true, type:"excite", target:"self", op:"add", value:2},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
@@ -2237,7 +2237,7 @@ const cardDB = {
 	"DA-AS-BG7-001-2":{
 		name:{ "KOR":"Defective: Used Consumable" }, class:"None", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["불량품"],
+		tags:["Defective"],
 		effect:[
 			{trigger:"get", cond:true, type:"Heat", op:"add", value:1},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
@@ -2246,7 +2246,7 @@ const cardDB = {
 	"DA-AS-BG7-001-3":{
 		name:{ "KOR":"Defective: Worn-out Armor" }, class:"None", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["불량품"],
+		tags:["Defective"],
 		effect:[
 			{trigger:"get", cond:true, type:"exciteL", target:"self", op:"add", value:-1},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
@@ -2361,7 +2361,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You have committed several crimes, but you finally made a crucial mistake, and your activities have been exposed.<br>As a result, you are now under surveillance and being pursued, and you could be arrested or face an even greater crisis at any moment." },
 		hypnoText:{ "KOR":"You were once caught for your criminal activities.<br>They made you pay for the damages with your body, fucking you for days on end." },
 		effect:[
-			{trigger:"always", cond:{v1:"자신.절정", op:">=", v2:1}, type:"spellDisable"},
+			{trigger:"always", cond:{v1:"자신.Orgasm", op:">=", v2:1}, type:"spellDisable"},
 		]
 	},
 	"DA-MA-BG7-001":{
@@ -2525,10 +2525,10 @@ const cardDB = {
 		effect:[
 			{trigger:"trait", cond:true, notext:true, type:"ban", range:{category:"tags", value:"개입", count:1}},
 			{trigger:"gameStart", cond:true, type:"line", value:"개입-최면"},
-			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"Eldorian"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-001-1"},
-			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"Silvani"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-001-2"},
-			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"Halfling"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-001-3"},
-			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-001-4"},
+			{trigger:"gameStart", cond:{v1:"커스텀.Race", op:"==", v2:"Eldorian"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-001-1"},
+			{trigger:"gameStart", cond:{v1:"커스텀.Race", op:"==", v2:"Silvani"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-001-2"},
+			{trigger:"gameStart", cond:{v1:"커스텀.Race", op:"==", v2:"Halfling"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-001-3"},
+			{trigger:"gameStart", cond:{v1:"커스텀.Race", op:"==", v2:"Beastfolk"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-001-4"},
 			{trigger:"none", cond:true, type:"text", value:{ "KOR":"<span style=\"color: gray;\">[Duel Start]</span> Apply a race-specific hypnosis to yourself." }},
 		]
 	},
@@ -2547,7 +2547,7 @@ const cardDB = {
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"Applied if you are a Sylvani." }},
-			{trigger:"always", cond:{v1:"자신.절정", op:">", v2:0}, type:"supportBan", target:"self"},
+			{trigger:"always", cond:{v1:"자신.Orgasm", op:">", v2:0}, type:"supportBan", target:"self"},
 		]
 	},
 	"DA-NT-ALL-001-3":{
@@ -2556,7 +2556,7 @@ const cardDB = {
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"Applied if you are a Halfling." }},
-			{trigger:"always", cond:{v1:"자신.기록.이전.이벤트.절정", op:">", v2:0}, type:"penaltyMustUse", target:"self"},
+			{trigger:"always", cond:{v1:"자신.기록.이전.이벤트.Orgasm", op:">", v2:0}, type:"penaltyMustUse", target:"self"},
 		]
 	},
 	"DA-NT-ALL-001-4":{
@@ -2565,7 +2565,7 @@ const cardDB = {
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"Applied if you are a Beastfolk." }},
-			{trigger:"always", cond:{v1:"자신.Remaining절정", op:"==", v2:1}, type:"actBan", target:"self"},
+			{trigger:"always", cond:{v1:"자신.RemainingOrgasm", op:"==", v2:1}, type:"actBan", target:"self"},
 		]
 	},
 
@@ -2577,10 +2577,10 @@ const cardDB = {
 		effect:[
 			{trigger:"trait", cond:true, notext:true, type:"ban", range:{category:"tags", value:"개입", count:1}},
 			{trigger:"gameStart", cond:true, type:"line", value:"개입-저주"},
-			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"Eldorian"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-002-1"},
-			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"Silvani"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-002-2"},
-			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"Halfling"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-002-3"},
-			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-002-4"},
+			{trigger:"gameStart", cond:{v1:"커스텀.Race", op:"==", v2:"Eldorian"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-002-1"},
+			{trigger:"gameStart", cond:{v1:"커스텀.Race", op:"==", v2:"Silvani"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-002-2"},
+			{trigger:"gameStart", cond:{v1:"커스텀.Race", op:"==", v2:"Halfling"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-002-3"},
+			{trigger:"gameStart", cond:{v1:"커스텀.Race", op:"==", v2:"Beastfolk"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-002-4"},
 			{trigger:"none", cond:true, type:"text", value:{ "KOR":"<span style=\"color: gray;\">[Duel Start]</span> Apply a race-specific curse to yourself." }},
 			//{trigger:"turnEnd", cond:{v1:"라운드", op:"==", v2:3}, type:"use", value:"자신.상태.selectCards(tags, 저주, 1)"},
 		]
@@ -2674,10 +2674,10 @@ const cardDB = {
 		effect:[
 			{trigger:"trait", cond:true, notext:true, type:"ban", range:{category:"tags", value:"개입", count:1}},
 			{trigger:"gameStart", cond:true, type:"line", value:"개입-고문"},
-			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"Eldorian"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-004-1"},
-			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"Silvani"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-004-2"},
-			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"Halfling"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-004-3"},
-			{trigger:"gameStart", cond:{v1:"커스텀.종족", op:"==", v2:"Beastfolk"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-004-4"},
+			{trigger:"gameStart", cond:{v1:"커스텀.Race", op:"==", v2:"Eldorian"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-004-1"},
+			{trigger:"gameStart", cond:{v1:"커스텀.Race", op:"==", v2:"Silvani"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-004-2"},
+			{trigger:"gameStart", cond:{v1:"커스텀.Race", op:"==", v2:"Halfling"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-004-3"},
+			{trigger:"gameStart", cond:{v1:"커스텀.Race", op:"==", v2:"Beastfolk"}, notext:true, type:"state", target:"self", value:"DA-NT-ALL-004-4"},
 			{trigger:"none", cond:true, type:"text", value:{ "KOR":"<span style=\"color: gray;\">[Duel Start]</span> Apply a race-specific torture to yourself." }},
 		]
 	},
@@ -2872,7 +2872,7 @@ const cardDB = {
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"Position변경"},
 			{trigger:"used", cond:true, type:"posture"},
-			{trigger:"always", cond:{v1:"자기덱.count(class, 직업)", op:"==", v2:0}, type:"maxUse", target:"self", value:1},
+			{trigger:"always", cond:{v1:"자기덱.count(class, Class)", op:"==", v2:0}, type:"maxUse", target:"self", value:1},
 		]
 	},
 	"NT-PS-002":{
@@ -5785,11 +5785,11 @@ const cardDB = {
 	"HE-EX-SU-001-1":{
 		parents:"HE-EX-SU-001",
 		name:{ "KOR":"Revival" }, class:"Healer", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
-		cond:true, meet:{v1:"자신.기록.최근.이벤트.절정", op:">", v2:0},
+		cond:true, meet:{v1:"자신.기록.최근.이벤트.Orgasm", op:">", v2:0},
 		tags:[],
 		expiration:"turnEnd", duration:1,
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"자신.기록.최근.이벤트.절정", op:">", v2:0}, type:"exciteL", target:"self", op:"multiply", value:2},
+			{trigger:"turnEnd", cond:{v1:"자신.기록.최근.이벤트.Orgasm", op:">", v2:0}, type:"exciteL", target:"self", op:"multiply", value:2},
 		]
 	},
 	"HE-EX-SU-002":{
@@ -6076,44 +6076,44 @@ const cardDB = {
 
 
 	"BN-SY-001":{
-		name:{ "KOR":"Engineering: Mekarylon" }, class:"Neutral", type:"비전", isDeck:true, rarity:"None", race:"Silvani", cost:15, owner:1,
+		name:{ "KOR":"Engineering: Mekarylon" }, class:"Neutral", type:"Arcane", isDeck:true, rarity:"None", race:"Silvani", cost:15, owner:1,
 		cond:true,
-		tags:["보너스", "불가침", "비전"],
+		tags:["보너스", "불가침", "Arcane"],
 		effect:[
 			{trigger:"none", cond:false, type:"text", value:{ "KOR":"Gain the resources of the selected profession." }},
-			{trigger:"used", notext:true, cond:{v1:"커스텀.직업", op:"==", v2:"Warrior"}, type:"changeLust", op:"add", value:5},
-			{trigger:"none", cond:{v1:"커스텀.직업", op:"==", v2:"Warrior"}, type:"caption", value:{ "KOR":"<b>Desire +5</b>" }},
-			{trigger:"used", notext:true, cond:{v1:"커스텀.직업", op:"==", v2:"Assassin"}, type:"changeWetness", op:"add", value:5},
-			{trigger:"none", cond:{v1:"커스텀.직업", op:"==", v2:"Assassin"}, type:"caption", value:{ "KOR":"<b>Wetness +5</b>" }},
-			{trigger:"used", notext:true, cond:{v1:"커스텀.직업", op:"==", v2:"Mage"}, type:"changeSBlock", op:"add", value:4},
-			{trigger:"none", cond:{v1:"커스텀.직업", op:"==", v2:"Mage"}, type:"caption", value:{ "KOR":"<b>Sensory Deprivation +4</b>" }},
-			{trigger:"used", notext:true, cond:{v1:"커스텀.직업", op:"==", v2:"Healer"}, type:"changeCorrupt", op:"add", value:2},
-			{trigger:"none", cond:{v1:"커스텀.직업", op:"==", v2:"Healer"}, type:"caption", value:{ "KOR":"<b>Corruption +2</b>" }},
+			{trigger:"used", notext:true, cond:{v1:"커스텀.Class", op:"==", v2:"Warrior"}, type:"changeLust", op:"add", value:5},
+			{trigger:"none", cond:{v1:"커스텀.Class", op:"==", v2:"Warrior"}, type:"caption", value:{ "KOR":"<b>Desire +5</b>" }},
+			{trigger:"used", notext:true, cond:{v1:"커스텀.Class", op:"==", v2:"Assassin"}, type:"changeWetness", op:"add", value:5},
+			{trigger:"none", cond:{v1:"커스텀.Class", op:"==", v2:"Assassin"}, type:"caption", value:{ "KOR":"<b>Wetness +5</b>" }},
+			{trigger:"used", notext:true, cond:{v1:"커스텀.Class", op:"==", v2:"Mage"}, type:"changeSBlock", op:"add", value:4},
+			{trigger:"none", cond:{v1:"커스텀.Class", op:"==", v2:"Mage"}, type:"caption", value:{ "KOR":"<b>Sensory Deprivation +4</b>" }},
+			{trigger:"used", notext:true, cond:{v1:"커스텀.Class", op:"==", v2:"Healer"}, type:"changeCorrupt", op:"add", value:2},
+			{trigger:"none", cond:{v1:"커스텀.Class", op:"==", v2:"Healer"}, type:"caption", value:{ "KOR":"<b>Corruption +2</b>" }},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
 		]
 	},
 	"BN-SY-002":{
-		name:{ "KOR":"Magic: Manachron" }, class:"Neutral", type:"비전", isDeck:true, rarity:"None", race:"Silvani", cost:15, owner:1,
+		name:{ "KOR":"Magic: Manachron" }, class:"Neutral", type:"Arcane", isDeck:true, rarity:"None", race:"Silvani", cost:15, owner:1,
 		cond:true,
-		tags:["보너스", "불가침", "비전"],
+		tags:["보너스", "불가침", "Arcane"],
 		effect:[
 			{trigger:"used", cond:true, type:"useTimes", target:"self", value:1},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
 		]
 	},
 	"BN-SY-003":{
-		name:{ "KOR":"History: Artheron" }, class:"Neutral", type:"비전", isDeck:true, rarity:"None", race:"Silvani", cost:15, owner:1,
+		name:{ "KOR":"History: Artheron" }, class:"Neutral", type:"Arcane", isDeck:true, rarity:"None", race:"Silvani", cost:15, owner:1,
 		cond:true,
-		tags:["보너스", "불가침", "비전"],
+		tags:["보너스", "불가침", "Arcane"],
 		effect:[
 			{trigger:"used", cond:true, type:"get", target:"self", value:"자신.기록.이전.사용.selectCards(all, null, all)"},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1},
 		]
 	},
 	"BN-SY-004":{
-		name:{ "KOR":"Astrology: Celesthron" }, class:"Neutral", type:"비전", isDeck:true, rarity:"None", race:"Silvani", cost:15, owner:1,
+		name:{ "KOR":"Astrology: Celesthron" }, class:"Neutral", type:"Arcane", isDeck:true, rarity:"None", race:"Silvani", cost:15, owner:1,
 		cond:true,
-		tags:["보너스", "불가침", "비전"], related:["tag:Transcendent"],
+		tags:["보너스", "불가침", "Arcane"], related:["tag:Transcendent"],
 		effect:[
 			{trigger:"used", cond:true, type:"state", target:"self", value:"BN-SY-004-1"}
 		]
@@ -6129,9 +6129,9 @@ const cardDB = {
 		]
 	},
 	"BN-SY-005":{
-		name:{ "KOR":"Medicine: Elixaris" }, class:"Neutral", type:"비전", isDeck:true, rarity:"None", race:"Silvani", cost:15, owner:1,
+		name:{ "KOR":"Medicine: Elixaris" }, class:"Neutral", type:"Arcane", isDeck:true, rarity:"None", race:"Silvani", cost:15, owner:1,
 		cond:true,
-		tags:["보너스", "불가침", "비전"],
+		tags:["보너스", "불가침", "Arcane"],
 		effect:[
 			{trigger:"used", cond:true, type:"orgasmL", target:"self", op:"add", value:1},
 			{trigger:"used", cond:true, type:"state", target:"self", value:"BN-SY-005-1"},
@@ -6321,7 +6321,7 @@ const cardDB = {
 		cond:true,
 		tags:["덱빌딩"],
 		effect:[
-			{trigger:"always", inDeck:true, cond:{v1:"자신.기록.이전.이벤트.절정", op:">", v2:0}, type:"penaltyMustUse", target:"self"},
+			{trigger:"always", inDeck:true, cond:{v1:"자신.기록.이전.이벤트.Orgasm", op:">", v2:0}, type:"penaltyMustUse", target:"self"},
 		]
 	},
 	"PN-007":{
@@ -6499,7 +6499,7 @@ const cardDB = {
 		tags:["Champion덱", "클라이맥스"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"고블린penetration"},
-			{trigger:"used", cond:true, type:"attack", repeat:"자신.Remaining절정", target:"op"},
+			{trigger:"used", cond:true, type:"attack", repeat:"자신.RemainingOrgasm", target:"op"},
 		]
 	},
 
@@ -6604,7 +6604,7 @@ const cardDB = {
 		cond:true,
 		tags:["Champion덱"],
 		effect:[
-			{trigger:"used", cond:true, type:"line", value:"절정해라"},
+			{trigger:"used", cond:true, type:"line", value:"Orgasm해라"},
 			{trigger:"used", cond:{v1:"Heat", op:">=", v2:8}, type:"orgasm", target:"op"},
 		]
 	},
@@ -6961,7 +6961,7 @@ const cardDB = {
 	},
 	"B4-SU-001":{
 		name:{ "KOR":"Now You're It" }, class:"악동", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
-		cond:{v1:"자신.기록.이전.이벤트.절정", op:">", v2:0},
+		cond:{v1:"자신.기록.이전.이벤트.Orgasm", op:">", v2:0},
 		tags:["Champion덱"], related:["B4-PA-001"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"이제누나가술래야"},
@@ -6971,7 +6971,7 @@ const cardDB = {
 	},
 	"B4-SU-002":{
 		name:{ "KOR":"Loser Gets a Punishment" }, class:"악동", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
-		cond:{v1:"상대.기록.이전.이벤트.절정", op:">", v2:0},
+		cond:{v1:"상대.기록.이전.이벤트.Orgasm", op:">", v2:0},
 		tags:["Champion덱"], related:["B4-PA-001"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"지면벌칙이야"},
@@ -7024,7 +7024,7 @@ const cardDB = {
 	"B4-SU-001+":{
 		parents:"B4-SU-001",
 		name:{ "KOR":"Now You're It+" }, class:"악동", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
-		cond:{v1:"자신.기록.이전.이벤트.절정", op:">", v2:0},
+		cond:{v1:"자신.기록.이전.이벤트.Orgasm", op:">", v2:0},
 		tags:["Champion덱"], related:["B4-PA-001+"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"이제누나가술래야"},
@@ -7036,7 +7036,7 @@ const cardDB = {
 	"B4-SU-002+":{
 		parents:"B4-SU-002",
 		name:{ "KOR":"Loser Gets a Punishment+" }, class:"악동", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
-		cond:{v1:"상대.기록.이전.이벤트.절정", op:">", v2:0},
+		cond:{v1:"상대.기록.이전.이벤트.Orgasm", op:">", v2:0},
 		tags:["Champion덱"], related:["B4-PA-001+"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"지면벌칙이야"},
@@ -7077,7 +7077,7 @@ const cardDB = {
 		expiration:"always", duration:Infinity, stack:1,
 		effect:[
 			{trigger:"turnEnd", cond:true, type:"Heat", op:"add", value:2},
-			{trigger:"always", cond:{v1:"자신.기록.이번.이벤트.절정", op:">", v2:0}, type:"enemyDisable"},
+			{trigger:"always", cond:{v1:"자신.기록.이번.이벤트.Orgasm", op:">", v2:0}, type:"enemyDisable"},
 		]
 	},
 	"B5-UC-001":{
@@ -7124,7 +7124,7 @@ const cardDB = {
 		cond:true,
 		tags:["Champion덱"],
 		effect:[
-			{trigger:"always", inDeck:true, cond:{v1:"자신.기록.이전.이벤트.절정", op:">", v2:0}, type:"penaltyMustUse", target:"self"},
+			{trigger:"always", inDeck:true, cond:{v1:"자신.기록.이전.이벤트.Orgasm", op:">", v2:0}, type:"penaltyMustUse", target:"self"},
 		]
 	},*/
 
@@ -7427,7 +7427,7 @@ const cardDB = {
 		cond:true,
 		tags:["Champion덱", "Blonde Thug attack"], related:["tag:Blonde Thug attack"],
 		effect:[
-			{trigger:"used", cond:{v1:"자신.기록.이번.이벤트.절정", op:">", v2:0}, type:"Heat", op:"add", value:3},
+			{trigger:"used", cond:{v1:"자신.기록.이번.이벤트.Orgasm", op:">", v2:0}, type:"Heat", op:"add", value:3},
 			{trigger:"used", cond:true, type:"line", value:"가득채워주기"},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
 		]
@@ -7780,7 +7780,7 @@ const cardDB = {
 		tags:["Champion능력", "챌린지전용"],
 		expiration:"always", duration:Infinity,
 		effect:[
-			{trigger:"turnEnd", cond:true, type:"orgasmL", target:"self", op:"add", value:"자신.Remaining절정"},
+			{trigger:"turnEnd", cond:true, type:"orgasmL", target:"self", op:"add", value:"자신.RemainingOrgasm"},
 		]
 	},
 
@@ -7927,7 +7927,7 @@ function generateCardExcel() {
     // 엑셀 파일 생성
     const workbook = XLSX.utils.book_new();
     const worksheetData = [
-        ["이름", "클래스", "밸런스", "매커니즘", "기타"],
+        ["Name", "클래스", "밸런스", "매커니즘", "기타"],
         ...excelData.map(card => [card.name, card.class, card.balance, card.mechanism, card.others])
     ];
     const worksheet = XLSX.utils.aoa_to_sheet(worksheetData);

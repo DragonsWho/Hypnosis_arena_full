@@ -835,30 +835,30 @@ function selectCollection(type, id, history = true) {
 		    <div style="display: flex;">
 		`
 		if(cardData.class) {
-			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>직업:</b> ${cardData.class}</div>`;
+			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>Class:</b> ${cardData.class}</div>`;
 		}
 		if(cardData.type) {
-			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>종류:</b> ${cardData.type!="특성"?cardData.type:(cardData.tags.includes("부정적")?"단점":"장점")}</div>`;
+			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>Type:</b> ${cardData.type!="특성"?cardData.type:(cardData.tags.includes("부정적")?"Disadvantage":"장점")}</div>`;
 		}
 		if(cardData.rarity && cardData.rarity != 'None') {
 			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>등급:</b> ${cardData.rarity}</div>`;
 		}
 		if(cardData.race) {
-			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>종족:</b> ${cardData.race}</div>`;
+			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>Race:</b> ${cardData.race}</div>`;
 		}
 		if(cardData.bg) {
-			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>배경:</b> ${cardData.bg}</div>`;
+			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>Background:</b> ${cardData.bg}</div>`;
 		}
 		if(cardData.cost && cardData.cost != 0) {
-			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>비용:</b> ${cardData.cost}pt</div>`;
+			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>Cost:</b> ${cardData.cost}pt</div>`;
 		}
 		cltext += `</div>`;
 		cltext += `<div style="border: 1px solid var(--color-active); padding:16px;">${createCardText(cardData)}</div><br>`
 		if(cardData.flavorText) {
-			cltext += `<blockquote style="border-bottom: 1px solid var(--color-active);"><b>플레이버 텍스트:</b><br>${cardData.flavorText[language]}</blockquote>`;
+			cltext += `<blockquote style="border-bottom: 1px solid var(--color-active);"><b>Flavor Text:</b><br>${cardData.flavorText[language]}</blockquote>`;
 		}
 		if(cardData.hypnoText) {
-			cltext += `<blockquote style="border-bottom: 1px solid var(--color-active);"><b>개변 플레이버 텍스트:</b><br>${cardData.hypnoText[language]}</blockquote>`;
+			cltext += `<blockquote style="border-bottom: 1px solid var(--color-active);"><b>개변 Flavor Text:</b><br>${cardData.hypnoText[language]}</blockquote>`;
 		}
 		if(cardSave[cardData.id]) {
 			cltext += `
@@ -1949,13 +1949,13 @@ function ruleTab(num) {
 	    exciteVal.textContent = `${target == 'defeat'?5:0}/${target == 'enemy'?champList[`boss${bossNum}`]?.stats.exciteL:5}`;
 	    exciteP.appendChild(exciteVal);
 
-	    // 절정 상태 생성
+	    // Orgasm 상태 생성
 	    const orgasmP = document.createElement("p");
 	    orgasmP.style.flex = "0 calc(50% - 20px)";
 	    orgasmP.style.margin = "0 auto";
 	    orgasmP.style.fontSize = "2.5vh";
 	    orgasmP.style.textAlign = "center";
-	    orgasmP.textContent = `${getWord("절정")}: `;
+	    orgasmP.textContent = `${getWord("Orgasm")}: `;
 
 	    const orgasmVal = document.createElement("span");
 	    orgasmVal.classList.add("number");
@@ -2005,7 +2005,7 @@ function ruleTab(num) {
     	break;
     case 5:
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "만능")), 24, false, 101));
-		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "비전")), 24, false, 101));
+		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Arcane")), 24, false, 101));
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Crafted")), 24, false, 101));
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "시련")), 24, false, 101));
     	arrangeCards(cards, ruleCard, 2, 2, false)
@@ -2035,7 +2035,7 @@ function ruleTab(num) {
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Position" && cd.tags.includes("덱빌딩"))), 24, false, 101));
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "탈의" && !cd.tags.includes("챌린지전용"))), 24, false, 101));
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Penalty" && cd.tags.includes("덱빌딩"))), 24, false, 101));
-		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Transcendent" || cd.type == "만능" || cd.type == "비전" || cd.type == "Crafted" || cd.type == "시련")), 24, false, 101));
+		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Transcendent" || cd.type == "만능" || cd.type == "Arcane" || cd.type == "Crafted" || cd.type == "시련")), 24, false, 101));
     	arrangeCards(cards, ruleCard, 3, 2, false)
     	break;
     case 12:
@@ -2475,7 +2475,7 @@ function inputName(form = true) {
 	if(form) {
 		switch(choiceValues.race) {
 		case "Eldorian":
-			name = prompt("이름을 입력하세요. (Max 6글자)", player.name);
+			name = prompt("Name을 입력하세요. (Max 6글자)", player.name);
 			if (name !== null) {
 		    	name = nameRefine(name);
 		    	if(name.length > 6) {
@@ -2505,7 +2505,7 @@ function inputName(form = true) {
 		    }
 			break;
 		case "Silvani":
-			name = prompt("이름을 입력하세요. (1~2글자)", player.name);
+			name = prompt("Name을 입력하세요. (1~2글자)", player.name);
 			if (name !== null) {
 		    	name = nameRefine(name);
 		    	if(name.length > 2) {
@@ -2537,7 +2537,7 @@ function inputName(form = true) {
 			break;
 		case "Halfling":
 			surname = null;
-			name = prompt("이름을 입력하세요. (2~4글자)", player.name);
+			name = prompt("Name을 입력하세요. (2~4글자)", player.name);
 			if (name !== null) {
 		    	name = nameRefine(name);
 		    	if(name.length == 1) {
@@ -2557,7 +2557,7 @@ function inputName(form = true) {
         	playerName = name;
 			break;
 		case "Beastfolk":
-			name = prompt("이름을 입력하세요. (AA리B)", player.name);
+			name = prompt("Name을 입력하세요. (AA리B)", player.name);
 			if (name !== null) {
 		    	name = nameRefine(name);
 		    	let _name = `${name[0]}${name[0]}리`;
@@ -2608,7 +2608,7 @@ function inputName(form = true) {
 			break;
 		}
 	} else {
-		name = prompt("이름을 입력하세요.", playerName);
+		name = prompt("Name을 입력하세요.", playerName);
 		if (name !== null) {
 	    	name = nameRefine(name);
 	    	if(name.length > 12) {
@@ -2627,7 +2627,7 @@ function inputName(form = true) {
 }
 
 function inputDeckName() {
-    let name = prompt("이름을 입력하세요.", deckName);
+    let name = prompt("Name을 입력하세요.", deckName);
     
     if (name !== null) {
         name = name.replace(/\s+/g, ' ');
@@ -2857,20 +2857,20 @@ function stateUpdate() {
 			document.getElementById("quickApp").classList.remove("disabled");
 			document.getElementById("profileApp").style.display = "flex";
 		}
-		document.getElementById("quickRace").innerHTML = `<b>${getWord("종족")}: </b>`+getWord(choiceValues.race);
+		document.getElementById("quickRace").innerHTML = `<b>${getWord("Race")}: </b>`+getWord(choiceValues.race);
 		document.getElementById("faceA").src = `${imageSrc}face/portrait_player_${raceTag[choiceValues.race]}_A_normal.webp`;
 		document.getElementById("faceB").src = `${imageSrc}face/portrait_player_${raceTag[choiceValues.race]}_B_normal.webp`;
 		document.getElementById("faceC").src = `${imageSrc}face/portrait_player_${raceTag[choiceValues.race]}_C_normal.webp`;
 		document.getElementById("faceD").src = `${imageSrc}face/portrait_player_${raceTag[choiceValues.race]}_D_normal.webp`;
 		document.getElementById("faceE").src = `${imageSrc}face/portrait_player_${raceTag[choiceValues.race]}_E_normal.webp`;
 	} else {
-		document.getElementById("quickRace").innerHTML = `<b>${getWord("종족")}</b>`
+		document.getElementById("quickRace").innerHTML = `<b>${getWord("Race")}</b>`
 	}
 	if(player.name) {
-		document.getElementById("quickName").innerHTML = `<b>${getWord("이름")}: </b>${player.name}`
+		document.getElementById("quickName").innerHTML = `<b>${getWord("Name")}: </b>${player.name}`
 	}
 	if(choiceValues.face) {
-		document.getElementById("quickApp").innerHTML = `<b>${getWord("얼굴")}: </b>`+choiceValues.face;
+		document.getElementById("quickApp").innerHTML = `<b>${getWord("Face")}: </b>`+choiceValues.face;
 		if(document.getElementById("quickClass").classList.contains("disabled")) {
 			document.getElementById("facePreview").style.display = "flex";
 			document.getElementById("quickClass").classList.remove("disabled");
@@ -2906,7 +2906,7 @@ function stateUpdate() {
 		}
 		clothesChange(clothesNum);
 	} else {
-		document.getElementById("quickApp").innerHTML = `<b>${getWord("얼굴")}</b>`;
+		document.getElementById("quickApp").innerHTML = `<b>${getWord("Face")}</b>`;
 	}
 	/*
 	if(choiceValues.personality) {
@@ -2919,16 +2919,16 @@ function stateUpdate() {
 		document.getElementById("quickPs").innerHTML = `<b>${getWord("유형")}</b>`;
 	}*/
 	if(choiceValues.class) {
-		document.getElementById("quickClass").innerHTML = `<b>${getWord("직업")}: </b>`+getWord(choiceValues.class);
+		document.getElementById("quickClass").innerHTML = `<b>${getWord("Class")}: </b>`+getWord(choiceValues.class);
 		if(document.getElementById("quickBg").classList.contains("disabled")) {
 			document.getElementById("quickBg").classList.remove("disabled");
 			document.getElementById("profileBg").style.display = "flex";
 		}
 	} else {
-		document.getElementById("quickClass").innerHTML = `<b>${getWord("직업")}</b>`
+		document.getElementById("quickClass").innerHTML = `<b>${getWord("Class")}</b>`
 	}
 	if(choiceValues.background) {
-		document.getElementById("quickBg").innerHTML = `<b>${getWord("배경")}: </b>`+getWord(choiceValues.background);
+		document.getElementById("quickBg").innerHTML = `<b>${getWord("Background")}: </b>`+getWord(choiceValues.background);
 		if(playRecord.playCount > 0) {
 			document.getElementById('traitPreview').style.display = "flex";
 		}
@@ -2941,19 +2941,19 @@ function stateUpdate() {
 
 		}
 	} else {
-		document.getElementById("quickBg").innerHTML = `<b>${getWord("배경")}</b>`
+		document.getElementById("quickBg").innerHTML = `<b>${getWord("Background")}</b>`
 		document.getElementById('traitPreview').style.display = "none";
 	}
 
 	const backgroundElements = document.querySelectorAll('.background');
 	for(let subDiv of backgroundElements) {
-		if((subDiv.classList.contains(choiceValues.race) || subDiv.classList.contains("전종족")) && (subDiv.classList.contains(choiceValues.class) || subDiv.classList.contains("전직업"))) {
+		if((subDiv.classList.contains(choiceValues.race) || subDiv.classList.contains("전Race")) && (subDiv.classList.contains(choiceValues.class) || subDiv.classList.contains("전Class"))) {
 			subDiv.classList.remove("disabled");
 		} else {
 			if(subDiv.classList.contains("active")) {
 				subDiv.classList.remove("active");
 				choiceValues.background = null;
-				document.getElementById("quickBg").innerHTML = `<b>${getWord("배경")}</b>`
+				document.getElementById("quickBg").innerHTML = `<b>${getWord("Background")}</b>`
 				document.getElementById('traitPreview').style.display = "none";
 			}
 			subDiv.classList.add("disabled");
@@ -2974,9 +2974,9 @@ function stateUpdate() {
 	}
 
 	if(choiceValues.ps) {
-		document.getElementById("quickPs").innerHTML = `<b>${getWord("성격")}: </b>`+getWord(choiceValues.ps);
+		document.getElementById("quickPs").innerHTML = `<b>${getWord("Personality")}: </b>`+getWord(choiceValues.ps);
 	} else {
-		document.getElementById("quickPs").innerHTML = `<b>${getWord("성격")}</b>`
+		document.getElementById("quickPs").innerHTML = `<b>${getWord("Personality")}</b>`
 	}
 
 
@@ -3583,7 +3583,7 @@ function createCard(card, size, button=false, type=0) {
 	    if(card.tags.includes("만능")) {
 	    	cardDiv.classList.add("wildcard");
 	    }
-	    if(card.type == "단점" || card.type == "Penalty") {
+	    if(card.type == "Disadvantage" || card.type == "Penalty") {
 	    	//cardDiv.classList.add("bad");
 	    }
 	    cardDiv.setAttribute('data-id', card.id);
@@ -3605,7 +3605,7 @@ function createCard(card, size, button=false, type=0) {
 	    image.onerror = function() { handleImgError(this); }; // 이미지 로드 실패 시 처리
 	    imageDiv.appendChild(image);
 
-	    // card 이름 생성
+	    // card Name 생성
 	    const nameDiv = document.createElement('div');
 	    nameDiv.style.fontSize = adjustSize(size/10)+"vmin";
 	    nameDiv.className = 'card-name';
@@ -3626,7 +3626,7 @@ function createCard(card, size, button=false, type=0) {
 		}
 	    textDiv.appendChild(pDescription);
 
-	    // card 종류 생성
+	    // card Type 생성
 	    const typeDiv = document.createElement('div');
 	    typeDiv.style.fontSize = adjustSize(size/15)+"vmin";
 	    typeDiv.className = 'card-type';
@@ -3955,9 +3955,9 @@ function createCardText(card, reverse=false) {
 
 	    	"RemainingExcitement": "remainExcite",
 	    	"Excitement한계": "exciteL",
-	    	"절정": "orgasm",
-	    	"Remaining절정": "remainOrgasm",
-	    	"절정한계": "orgasmL",
+	    	"Orgasm": "orgasm",
+	    	"RemainingOrgasm": "remainOrgasm",
+	    	"Orgasm한계": "orgasmL",
 
 	    	"행동": "action",
 	    	"기록": "record",
@@ -3991,7 +3991,7 @@ function createCardText(card, reverse=false) {
 	    	"만료Magic": "expiredSpell",
 
 	    	"상태": "state",
-	    	"이름": "name",
+	    	"Name": "name",
 	    	"타입": "type",
 	    	"희귀도": "rarity",
 	    	"태그": "tags",
@@ -4005,10 +4005,10 @@ function createCardText(card, reverse=false) {
 
 	    	"커스텀": "choiceValues",
 	    	"캐릭터": "charData",
-	    	"종족": "race",
-	    	"직업": "class",
-	    	"배경": "background",
-	    	"성격": "ps",
+	    	"Race": "race",
+	    	"Class": "class",
+	    	"Background": "background",
+	    	"Personality": "ps",
 	    	"표정": "condition",
 	    	"특수상태": "specialCond",
 
@@ -4182,16 +4182,16 @@ function createCardText(card, reverse=false) {
 			}
 			if(cardsData.func == "selectCards") {
 				if(cardsData.args[2] == "all") {
-					_card = translateText(cardTexts["target"][cardpool?"card종류전부":"card전부"], { "cards":_card });
+					_card = translateText(cardTexts["target"][cardpool?"cardType전부":"card전부"], { "cards":_card });
 				} else {
 					if(cardsData.args[1] == "Crafted" && cardsData.args[2] != 1) {
 						_card = translateText(cardTexts["target"]["서로다른Crafted"], { });
 					}
-					_card = translateText(cardTexts["target"][cardpool?"card종류들":"card들"], { "cards":_card, "amount":cardsData.args[2] });
+					_card = translateText(cardTexts["target"][cardpool?"cardType들":"card들"], { "cards":_card, "amount":cardsData.args[2] });
 				}
 			}
 			if(cardsData.func == "countType") {
-				_card = translateText(cardTexts["target"]["card종류"], { "cards":_card });
+				_card = translateText(cardTexts["target"]["cardType"], { "cards":_card });
 			}
 			
 			return _card;
@@ -4230,9 +4230,9 @@ function createCardText(card, reverse=false) {
 			case "excite": stat = `<b>${getWord("Excitement")}</b>`; break;
 			case "remainExcite": stat = "Remaining <b>Excitement</b>"; break;
 			case "exciteL": stat = `<b>${getWord("Excitement한계")}</b>`; break;
-			case "orgasm": stat = `<b>${getWord("절정")}</b> Count`; break;
-			case "remainOrgasm": stat = "Remaining <b>절정</b> Count"; break;
-			case "orgasmL": stat = `<b>${getWord("절정한계")}</b>`; break;
+			case "orgasm": stat = `<b>${getWord("Orgasm")}</b> Count`; break;
+			case "remainOrgasm": stat = "Remaining <b>Orgasm</b> Count"; break;
+			case "orgasmL": stat = `<b>${getWord("Orgasm한계")}</b>`; break;
 			}
 			if((!reverse && obj[0] == "self") || (reverse && obj[0] == "op")) {
 				return stat;
@@ -4362,9 +4362,9 @@ function createCardText(card, reverse=false) {
 				switch(obj[4]) {
 				case "orgasm":
 					if((!reverse && obj[0] == "self") || (reverse && obj[0] == "op")) {
-						return translateText(cardTexts["target"]["기록절정자신"], { "time":time });
+						return translateText(cardTexts["target"]["기록Orgasm자신"], { "time":time });
 					} else {
-						return translateText(cardTexts["target"]["기록절정"], { "time":time, "actor":actor });
+						return translateText(cardTexts["target"]["기록Orgasm"], { "time":time, "actor":actor });
 					}
 					break;
 				case "attack":
@@ -4508,7 +4508,7 @@ function createCardText(card, reverse=false) {
 				
 				break;
 			case "type":
-				return translateText(cardTexts["target"]["기록소모한Lust"], { "card":getWord("원본"), "category":getWord("종류") });
+				return translateText(cardTexts["target"]["기록소모한Lust"], { "card":getWord("원본"), "category":getWord("Type") });
 				break;
 			}
 		}
@@ -4903,7 +4903,7 @@ function createCardText(card, reverse=false) {
 						_eventType = "자극받음";
 						break;
 					case "orgasm":
-						_eventType = "절정";
+						_eventType = "Orgasm";
 						break;
 					case "avoid":
 						_eventType = "회피";
@@ -5201,10 +5201,10 @@ function createCardText(card, reverse=false) {
 				text += translateText(cardTexts["trigger"]["결합될시"]);
 				break;
 			case "orgasm":
-				text += translateText(cardTexts["trigger"]["절정시"]);
+				text += translateText(cardTexts["trigger"]["Orgasm시"]);
 				break;
 			case "orgasmAny":
-				text += translateText(cardTexts["trigger"]["누군가절정시"]);
+				text += translateText(cardTexts["trigger"]["누군가Orgasm시"]);
 				break;
 			case "discarded":
 				text += translateText(cardTexts["trigger"]["버려질시"]);
@@ -5637,7 +5637,7 @@ function createCardText(card, reverse=false) {
 			case "op": _target = reverse?getWord("자신"):getWord("상대"); break;
 			case "self": _target = reverse?getWord("상대"):getWord("자신"); break;
 			}
-			text += translateText(cardTexts["effect"]["절정"], { "target":_target, "repeat1":repeatType == "specific"?repeatText:"", "repeat2":repeatType == "constant"?repeatText:"" });
+			text += translateText(cardTexts["effect"]["Orgasm"], { "target":_target, "repeat1":repeatType == "specific"?repeatText:"", "repeat2":repeatType == "constant"?repeatText:"" });
 			break;
 		case "orgasmL":
 			switch(e.target) {
@@ -5688,9 +5688,9 @@ function createCardText(card, reverse=false) {
 				}
 				var _stateName = `<b>[${cardDB[e.value].name[language].replace(/ /g, '&nbsp;')}]</b>`;
 				if(e.target == "self") {
-					text += translateText(cardTexts["effect"]["상태부여이름"], { "target":owner, "state":_stateName, "repeat":repeatText });
+					text += translateText(cardTexts["effect"]["상태부여Name"], { "target":owner, "state":_stateName, "repeat":repeatText });
 				} else {
-					text += translateText(cardTexts["effect"]["상태부여이름"], { "target":owner, "state":_stateName, "repeat":repeatText });
+					text += translateText(cardTexts["effect"]["상태부여Name"], { "target":owner, "state":_stateName, "repeat":repeatText });
 				}
 				/*if(e.value == 'MA-ST-002') {
 					text += `<br><span style=\"color: gray;\"><i>(${createCardText(cardDB[e.value])})</i></span>`
@@ -5714,7 +5714,7 @@ function createCardText(card, reverse=false) {
 					case "op": owner = reverse?getWord("자신"):getWord("상대"); break;
 					case "self": owner = reverse?getWord("상대"):getWord("자신"); break;
 					}
-				    text += translateText(cardTexts["effect"]["상태부여이름"], { "target":owner, "state":_getState, "repeat":repeatText });
+				    text += translateText(cardTexts["effect"]["상태부여Name"], { "target":owner, "state":_getState, "repeat":repeatText });
 				} else {
 					const st = cardDB[e.value];
 					text += createCardText(st, e.target == "op");
@@ -6456,9 +6456,9 @@ function createCardText(card, reverse=false) {
 			case "self": _target = reverse?getWord("상대"):""; break;
 			}
 			if((!reverse && e.target == "self") || (reverse && e.target == "op")) {
-				text += translateText(cardTexts["effect"]["절정금지자신"], { "actor":_target });
+				text += translateText(cardTexts["effect"]["Orgasm금지자신"], { "actor":_target });
 			} else {
-				text += translateText(cardTexts["effect"]["절정금지"], { "actor":_target });
+				text += translateText(cardTexts["effect"]["Orgasm금지"], { "actor":_target });
 			}
         	break;
         case "suppression":
@@ -6695,7 +6695,7 @@ function createCardText(card, reverse=false) {
 		text += translateText(cardTexts["effect"][card.cast==Infinity?"무한시전":"시전"], { "amount":card.cast });
 	}
 
-	if(["attack", "보조", "탈의", "Magic", "비전", "Essence", "Penalty"].includes(card.type)) {
+	if(["attack", "보조", "탈의", "Magic", "Arcane", "Essence", "Penalty"].includes(card.type)) {
     	text = text.replace(/지속:/g, '');
 	}
 
@@ -7029,7 +7029,7 @@ function cardStateUpdate() {
 					}
 				});
 			}
-			if(card.type == "비전" && countCard(deck, "type", "비전") >= 1) {
+			if(card.type == "Arcane" && countCard(deck, "type", "Arcane") >= 1) {
 				_check = false;
 			}
 		}
@@ -8436,9 +8436,9 @@ function returnText(v, self=null) {
     	"Excitement": "excite",
     	"RemainingExcitement": "remainExcite",
     	"Excitement한계": "exciteL",
-    	"절정": "orgasm",
-    	"Remaining절정": "remainOrgasm",
-    	"절정한계": "orgasmL",
+    	"Orgasm": "orgasm",
+    	"RemainingOrgasm": "remainOrgasm",
+    	"Orgasm한계": "orgasmL",
     	"행동": "action",
     	"효과발동": "effectActive",
 
@@ -8471,7 +8471,7 @@ function returnText(v, self=null) {
     	"만료Magic": "expiredSpell",
 
     	"상태": "state",
-    	"이름": "name",
+    	"Name": "name",
     	"타입": "type",
     	"희귀도": "rarity",
     	"태그": "tags",
@@ -8496,10 +8496,10 @@ function returnText(v, self=null) {
     	"승리": (battleEnd == 0),
     	"victory": (battleEnd == 0),
 
-    	"종족": "race",
-    	"직업": "class",
-	    "배경": "background",
-    	"성격": "ps",
+    	"Race": "race",
+    	"Class": "class",
+	    "Background": "background",
+    	"Personality": "ps",
 	    "표정": "condition",
 	    "특수상태": "specialCond",
 
@@ -8717,7 +8717,7 @@ function countCard(cards, category, value=null) {
 	let count = 0;
 	for(let card of cards) {
 		if(card[category]) {
-			if((category == 'tags' && (card.tags.includes(value) || (value == "변형목적" && card.type == "Penalty"))) || card[category] == value || (category == 'class' && value == "직업" && ["Warrior", "Assassin", "Mage", "Healer"].includes(card.class)) || (card.id == 'MA-MC-004' && category == 'id' && cardDB[value].tags.includes('Magic Circle'))) {
+			if((category == 'tags' && (card.tags.includes(value) || (value == "변형목적" && card.type == "Penalty"))) || card[category] == value || (category == 'class' && value == "Class" && ["Warrior", "Assassin", "Mage", "Healer"].includes(card.class)) || (card.id == 'MA-MC-004' && category == 'id' && cardDB[value].tags.includes('Magic Circle'))) {
 				count += 1;
 			}
 		}
@@ -8732,7 +8732,7 @@ function countCardType(cards, category, value=null) {
 			uniqueIds.add(cd.id);
 		})
 	} else {
-		cards.filter(cd => cd[category] && ((category == 'tags' && cd.tags.includes(value)) || cd[category] == value || (category == 'class' && value == "직업" && ["Warrior", "Assassin", "Mage", "Healer"].includes(card.class)) || (cd.id == 'MA-MC-004' && category == 'id' && cardDB[value].tags.includes('Magic Circle')))).forEach(function(cd) {
+		cards.filter(cd => cd[category] && ((category == 'tags' && cd.tags.includes(value)) || cd[category] == value || (category == 'class' && value == "Class" && ["Warrior", "Assassin", "Mage", "Healer"].includes(card.class)) || (cd.id == 'MA-MC-004' && category == 'id' && cardDB[value].tags.includes('Magic Circle')))).forEach(function(cd) {
 			uniqueIds.add(cd.id);
 		})
 	}
@@ -8770,12 +8770,12 @@ function randomCard(category, value=null) {
 			if(category == 'class') {
 				switch(value) {
 				case "Neutral":
-					return card.type != '단점' && card.type != 'Penalty' && card.type != "Position" && card.tags.includes("덱빌딩") && card[category] == value;
+					return card.type != 'Disadvantage' && card.type != 'Penalty' && card.type != "Position" && card.tags.includes("덱빌딩") && card[category] == value;
 					break;
 				case "Neutralattack":
 					return card.type == 'attack' && card.tags.includes("덱빌딩") && card.class == 'Neutral';
 					break;
-				case "직업":
+				case "Class":
 					return card.tags.includes("덱빌딩") && card.type != "Position" && card[category] == choiceValues.class;
 					break;
 				default:
@@ -8899,7 +8899,7 @@ function selectCards(cards, category, value=null, count="all") {
 			continue;
 		}
 		if(card[category]) {
-			if((category == 'tags' && (card.tags.includes(value) || (value == "변형목적" && card.type == "Penalty"))) || (category == 'class' && value == '직업' && card[category] == choiceValues.class) || 
+			if((category == 'tags' && (card.tags.includes(value) || (value == "변형목적" && card.type == "Penalty"))) || (category == 'class' && value == 'Class' && card[category] == choiceValues.class) || 
 				(category == 'tags' && value == '서막조건' && ( (prophecy[0] == 1 && card.class == "Neutral") || (prophecy[0] == 2 && card.type == "Penalty") || (prophecy[0] == 3 && card.tags.includes("Gem")) || (prophecy[0] == 4 && card.tags.includes("Magic")) )) || 
 				(category == 'tags' && value == '중막조건' && ((prophecy[1] == 1 && card.id == "MA-MC-001") || (prophecy[1] == 2 && card.id == "MA-MC-002") || (prophecy[1] == 3 && card.id == "MA-MC-003"))) || 
 				(category == 'tags' && value == '종막조건' && ((prophecy[2] == 1 && card.tags.includes("집중 Magic")) || (prophecy[2] == 2 && card.id == "MA-MC-004") || (prophecy[2] == 3 && card.tags.includes("Magic") && !spellSlot.some(spell => spell.id == card.id)) || (prophecy[2] == 4 && card.tags.includes("Transformed Twice")))) || 
@@ -13217,8 +13217,8 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
     		targetPort = playerPort;
     		targetExNumber = playerExNumber;
     		targetAcNumber = playerAcNumber;
-    		await addLine(line["플레이어-절정준비"]);
-    		addLine(line["플레이어-절정"]);
+    		await addLine(line["플레이어-Orgasm준비"]);
+    		addLine(line["플레이어-Orgasm"]);
 	        await wait(50);
     	}
     	if(target === enemy) {
@@ -14851,10 +14851,10 @@ function makeEnding() {
 			pTxt += player.name + ", " +  ((choiceValues.race != "Eldorian")?choiceValues.race+" ":"") + " 성노예<br>";
 		}
 	} else {
-		pTxt += "<b>이름:</b> " + playerName + "<br>";
+		pTxt += "<b>Name:</b> " + playerName + "<br>";
 	}
 
-	pTxt += `<b>종족:</b> ${choiceValues.race} | <b>직업:</b> ${choiceValues.class} | <b>배경:</b> ${choiceValues.background}`;
+	pTxt += `<b>Race:</b> ${choiceValues.race} | <b>Class:</b> ${choiceValues.class} | <b>Background:</b> ${choiceValues.background}`;
 
 	pTxt += "<br><br>- 결투 요약 -<br>";
 	pTxt += `<b>사용 card 수:</b> ${calcNested(player, "record", "use.length", "sum")}장<br>`;
@@ -14893,8 +14893,8 @@ function makeEnding() {
 	if(calcNested(player, "record", "event.excite.down", "sum") > 0) {
 		pTxt += `<b>회복한 Excitement:</b> ${calcNested(player, "record", "event.excite.down", "sum")}<br>`;
 	}
-	pTxt += `<br><b>절정 Count:</b> ${calcNested(player, "record", "event.orgasm", "sum")}회<br>`;
-	pTxt += `<br><b>상대의 절정 Count:</b> ${calcNested(enemy, "record", "event.orgasm", "sum")}회<br>`;
+	pTxt += `<br><b>Orgasm Count:</b> ${calcNested(player, "record", "event.orgasm", "sum")}회<br>`;
+	pTxt += `<br><b>상대의 Orgasm Count:</b> ${calcNested(enemy, "record", "event.orgasm", "sum")}회<br>`;
 	if(player.overkill > 0) {
 		pTxt += `<b>한계 초과:</b> ${player.overkill}회<br>`;
 	}
@@ -14926,20 +14926,20 @@ function makeEnding() {
 
 			if(fdata.getSum('enemy.excite') > 0) {
 				if(fdata.getSum('enemy.attacked') > 0) {
-					ftext += `상대를 ${fdata.getSum('enemy.attacked') > 1?`${fdata.getSum('enemy.attacked')}번 `:""}자극하여, ${fdata.getSum('enemy.excite')} 만큼의 Excitement을 안겨주어 절정하게 만들었다.`
+					ftext += `상대를 ${fdata.getSum('enemy.attacked') > 1?`${fdata.getSum('enemy.attacked')}번 `:""}자극하여, ${fdata.getSum('enemy.excite')} 만큼의 Excitement을 안겨주어 Orgasm하게 만들었다.`
 				} else {
-					ftext += `상대에게 ${fdata.getSum('enemy.excite')} 만큼의 Excitement을 안겨주어 절정하게 만들었다.`
+					ftext += `상대에게 ${fdata.getSum('enemy.excite')} 만큼의 Excitement을 안겨주어 Orgasm하게 만들었다.`
 				}
 			} else if(fdata.getSum('enemy.exciteL') < 0) {
-				ftext += `상대의 Excitement Limit를 ${-fdata.getSum('enemy.exciteL')} 만큼 감소시켜 절정하게 만들었다.`
+				ftext += `상대의 Excitement Limit를 ${-fdata.getSum('enemy.exciteL')} 만큼 감소시켜 Orgasm하게 만들었다.`
 			} else if(fdata.getSum('enemy.orgasmL') < 0) {
 				ftext += `상대의 Orgasm Limit를 ${-fdata.getSum('enemy.orgasmL')} 만큼 감소시켜 패배하게 만들었다.`
 			} else if(fdata.getSum('enemy.orgasm') > 0) {
-				ftext += `상대를 강제로 ${fdata.getSum('enemy.orgasm') > 1?`${fdata.getSum('enemy.orgasm')}번 `:""}절정하게 만들었다.`
+				ftext += `상대를 강제로 ${fdata.getSum('enemy.orgasm') > 1?`${fdata.getSum('enemy.orgasm')}번 `:""}Orgasm하게 만들었다.`
 			} else if(fdata.getSum('player.use.length') > 0) {
 				ftext += `${fdata.getSum('player.use.length')}장의 card의 효과를 발동시켜 승리했다.`
 			} else {
-				ftext += `특수한 조건을 만족하여 상대에게 절정을 안겨주었다.`
+				ftext += `특수한 조건을 만족하여 상대에게 Orgasm을 안겨주었다.`
 			}
 
 			endingDiv.appendChild(createEndingLog({"img":"card/"+fid, "text":"<b>마무리 - ["+cardDB[fid].name[language]+"]</b>"+(cardDB[fid].hypnoText?`<blockquote>${cardDB[fid].hypnoText[language]}</blockquote>`:"")+"<br>"+ftext}));
@@ -14966,16 +14966,16 @@ function makeEnding() {
 
 			if(fdata.getSum('player.excite') > 0) {
 				if(fdata.getSum('player.attacked') > 0) {
-					ftext += `${fdata.getSum('player.attacked') > 1?`${fdata.getSum('player.attacked')}번 `:""}자극당해 ${fdata.getSum('player.excite')} 만큼의 Excitement을 느껴 절정하고 말았다.`
+					ftext += `${fdata.getSum('player.attacked') > 1?`${fdata.getSum('player.attacked')}번 `:""}자극당해 ${fdata.getSum('player.excite')} 만큼의 Excitement을 느껴 Orgasm하고 말았다.`
 				} else {
-					ftext += `${fdata.getSum('player.excite')} 만큼의 Excitement을 느껴 절정하고 말았다.`
+					ftext += `${fdata.getSum('player.excite')} 만큼의 Excitement을 느껴 Orgasm하고 말았다.`
 				}
 			} else if(fdata.getSum('player.exciteL') < 0) {
-				ftext += `Excitement Limit가 ${-fdata.getSum('player.exciteL')} 만큼 감소해 절정하고 말았다.`
+				ftext += `Excitement Limit가 ${-fdata.getSum('player.exciteL')} 만큼 감소해 Orgasm하고 말았다.`
 			} else if(fdata.getSum('player.orgasmL') < 0) {
 				ftext += `Orgasm Limit가 ${-fdata.getSum('player.orgasmL')} 만큼 감소해 굴복하고 말았다.`
 			} else if(fdata.getSum('player.orgasm') > 0) {
-				ftext += `강제로 ${fdata.getSum('player.orgasm') > 1?`${fdata.getSum('player.orgasm')}번 `:""}절정해 굴복하고 말았다.`
+				ftext += `강제로 ${fdata.getSum('player.orgasm') > 1?`${fdata.getSum('player.orgasm')}번 `:""}Orgasm해 굴복하고 말았다.`
 			} else if(fdata.getSum('enemy.use.length') > 0) {
 				ftext += `${fdata.getSum('enemy.use.length')}장의 card의 효과가 발동해 패배했다.`
 			} else {
@@ -15061,10 +15061,10 @@ function copyDeckCode() {
     }
 
     let metaInfo = `### 덱 정보\n`;
-    metaInfo += deckCode.name?`# 이름: ${deckCode.name}\n`:``;
-    metaInfo += `# 직업: ${deckCode.class}\n`;
-    metaInfo += `# 종족: ${deckCode.race}\n`;
-    metaInfo += `# 배경: ${deckCode.bg}\n\n`;
+    metaInfo += deckCode.name?`# Name: ${deckCode.name}\n`:``;
+    metaInfo += `# Class: ${deckCode.class}\n`;
+    metaInfo += `# Race: ${deckCode.race}\n`;
+    metaInfo += `# Background: ${deckCode.bg}\n\n`;
 
     metaInfo += `### 덱\n`;
     deckCode.deck.forEach(id => {
@@ -15102,11 +15102,11 @@ function copyDeckCode() {
 
 async function inputDeckCode() {
     try {
-        // 클립보드에서 텍스트 읽기
+        // Read text from clipboard
         let inputData = await navigator.clipboard.readText();
 
         if (!inputData) {
-            alert("클립보드에서 텍스트를 읽을 수 없습니다.");
+            alert("Could not read text from the clipboard.");
             return;
         }
 
@@ -15115,39 +15115,39 @@ async function inputDeckCode() {
 
         if (deckCode) {
             if (!(deckCode.version && deckCode.deck && deckCode.state)) {
-                deckCodeLog.innerHTML = "잘못된 형식의 코드입니다.";
+                deckCodeLog.innerHTML = "Invalid code format.";
                 return 0;
             }
             if (deckCode.version != version) {
-                deckCodeLog.innerHTML = "이전 버전의 코드입니다.";
+                deckCodeLog.innerHTML = "Deck code is from an older version.";
                 return 0;
             }
             if (deckCode.class != choiceValues.class) {
-                deckCodeLog.innerHTML = "직업이 일치하지 않습니다.";
+                deckCodeLog.innerHTML = "Class does not match.";
                 return 0;
             }
             if (playRecord.playCount == 0 && deckCode.state.length > 0) {
-                confirm("현재 회차에서는 특성을 선택할 수 없어 누락됩니다.");
+                confirm("Traits cannot be selected on this playthrough and will be omitted. Continue?");
             } else if (deckCode.bg != choiceValues.background && deckCode.state.length > 0) {
-                confirm("배경이 코드와 일치하지 않습니다.\n일부 특성이 누락될 수 있습니다.");
+                confirm("Your Background does not match the deck code.\nSome Traits may be omitted. Continue?");
             }
 
             var _check = loadDeck(deckCode);
 
             if (_check) {
-                deckCodeLog.innerHTML = "성공적으로 덱을 불러왔습니다.";
+                deckCodeLog.innerHTML = "Deck loaded successfully.";
             } else {
-                deckCodeLog.innerHTML = "일부 특성 또는 Card 찾지 못했습니다.";
+                deckCodeLog.innerHTML = "Failed to find some Traits or Cards.";
             }
 
 			deckPos = -1;
         } else {
-            deckCodeLog.innerHTML = "잘못된 형식의 코드입니다.";
+            deckCodeLog.innerHTML = "Invalid code format.";
             return 0;
         }
     } catch (error) {
-        console.error("클립보드 읽기 오류:", error);
-        alert("클립보드에서 텍스트를 읽는 중 오류가 발생했습니다.");
+        console.error("Clipboard read error:", error);
+        alert("An error occurred while reading from the clipboard.");
     }
 }
 
@@ -15360,17 +15360,16 @@ function saveObject(key, obj) {
 	const jsonString = JSON.stringify(obj);
 	localStorage.setItem(`HA_${key}`, jsonString);
 }
-
 function loadObject(key) {
 	try {
 		const jsonString = localStorage.getItem(`HA_${key}`);
 		if (jsonString) {
 			return JSON.parse(jsonString);
-		}
-		console.log("저장 값 None");
+		} 
+		console.log("Saved value: None");
 		return null;
-	} catch(e) {
-		console.log("잘못된 저장 값");
+	} catch(e) { 
+		console.log("Invalid saved value.");
 		return null;
 	}
 }
@@ -15437,19 +15436,19 @@ function profileModalOpen() {
 
     const title = document.createElement('h2');
     title.className = 'box-title'
-    title.textContent = '최근 프로필 불러오기';
+    title.textContent = 'Load Recent Profile';
     modalBody.appendChild(title);
 
     const caption = document.createElement('div');
     caption.className = 'caption';
     const captions = [
-        { className: 'captionNum', text: '번호' },
-        { className: 'captionName', text: '이름' },
-        { className: '', text: '종족' },
-        { className: 'captionFace', text: '얼굴' },
-        { className: 'captionPs', text: '성격' },
-        { className: '', text: '직업' },
-        { className: '', text: '배경' }
+        { className: 'captionNum', text: '#' },
+        { className: 'captionName', text: 'Name' },
+        { className: '', text: 'Race' },
+        { className: 'captionFace', text: 'Face' },
+        { className: 'captionPs', text: 'Personality' },
+        { className: '', text: 'Class' },
+        { className: '', text: 'Background' }
     ];
     captions.forEach(captionInfo => {
         const span = document.createElement('span');
@@ -15511,7 +15510,7 @@ function deckModalOpen() {
 
     const title = document.createElement('h2');
     title.className = 'box-title'
-    title.textContent = '최근 덱 불러오기';
+    title.textContent = 'Load Recent Decks';
     titleBox.appendChild(title);
 
     const checkboxContainer = document.createElement('div');
@@ -15528,7 +15527,7 @@ function deckModalOpen() {
 
     const label = document.createElement('label');
     label.htmlFor = 'deckToggleCheckbox';
-    label.textContent = '종족, 배경, 모드 일치';
+    label.textContent = 'Match Race, Background, & Mode';
 
     checkbox?.addEventListener('change', (event) => {
         deckListRefresh(profileList);
@@ -15541,7 +15540,7 @@ function deckModalOpen() {
 
     const label2 = document.createElement('label');
     label2.htmlFor = 'morvainToggleCheckbox';
-    label2.innerHTML = '<b>[모르베인의 그림자]</b> 제외';
+    label2.innerHTML = 'Exclude <b>[Shadow of Morvane]</b>';
 
     checkbox2?.addEventListener('change', (event) => {
         deckListRefresh(profileList);
@@ -15568,11 +15567,11 @@ function deckListRefresh(div) {
     const caption = document.createElement('div');
     caption.className = 'caption';
     const captions = [
-        { className: 'captionNum', text: '번호' },
-        { className: '', text: '직업' },
-        { className: '', text: '종족' },
-        { className: '', text: '배경' },
-        { className: 'captionName', text: '이름' },
+        { className: 'captionNum', text: '#' },
+        { className: '', text: 'Class' },
+        { className: '', text: 'Race' },
+        { className: '', text: 'Background' },
+        { className: 'captionName', text: 'Name' },
     ];
     captions.forEach(captionInfo => {
         const span = document.createElement('span');
@@ -15594,7 +15593,7 @@ function deckListRefresh(div) {
 	if (decks.length === 0) {
         const noDecks = document.createElement('p');
         noDecks.style.textAlign = 'center';
-        noDecks.textContent = '저장된 덱이 없습니다.';
+        noDecks.textContent = 'No saved decks.';
         div.appendChild(noDecks);
         return ;
     }
@@ -15604,7 +15603,7 @@ function deckListRefresh(div) {
         listItem.className = 'profile-item';
         listItem.innerHTML = `
             <span class="captionNum">${index+1}</span>
-            <span>${choiceValues.class}${dc.state.some(st => st.startsWith("AD-SL"))?" (하드)":""/*(dc.deck.some(cd => cardDB[cd] && (cardDB[cd].type == "만능" || cardDB[cd].type == "비전" || cardDB[cd].type == "Crafted" || cardDB[cd].type == "시련"))?" (일반)":"")*/}</span>
+            <span>${choiceValues.class}${dc.state.some(st => st.startsWith("AD-SL"))?" (하드)":""/*(dc.deck.some(cd => cardDB[cd] && (cardDB[cd].type == "만능" || cardDB[cd].type == "Arcane" || cardDB[cd].type == "Crafted" || cardDB[cd].type == "시련"))?" (일반)":"")*/}</span>
             <span style="color: ${dc.race == "-" || choiceValues.race == dc.race?"var(--color-text)":"red"}">${dc.race}</span>
             <span style="color: ${dc.background == "-" || choiceValues.background == dc.background?"var(--color-text)":"red"}">${dc.background}</span>
             <span class="captionName">${dc.name}</span>
@@ -15643,18 +15642,18 @@ function showProfileDetail(profile, index) {
 			        <span class="value" style="font-size: 32px; font-weight: bolder; padding-left:16px; border-left:8px solid grey">${profile.name}</span>
 			    </div>
 			    <div class="info-item">
-			        <span class="value" style="font-size: 24px;">${profile.race}</span><span class="value" style="font-size: 18px;">/ 여성</span>
+			        <span class="value" style="font-size: 24px;">${profile.race}</span><span class="value" style="font-size: 18px;">/ Female</span>
 			    </div>
 			    <div class="info-item">
 			        <span class="value" style="font-size: 24px;">${profile.class}</span><span class="value" style="font-size: 20px;">(${profile.background})</span>
 			    </div>
 			    <div class="info-item">
-			        <span class="value" style="font-size: 18px;">${{"순종":"- 순종적이고 충실함.", "저항":"- 반항적이고 자존심 강함.", "무지":"- 순진하고 단순함.", "Aggressive":"- Aggressive적이고 도발적.", "None":""}[profile.ps && gamemode != 2?profile.ps:"None"]}</span>
+			        <span class="value" style="font-size: 18px;">${{"순종":"- 순종적이고 충실함.", "저항":"- Resistant.", "무지":"- 순진하고 단순함.", "Aggressive":"- Aggressive적이고 도발적.", "None":""}[profile.ps && gamemode != 2?profile.ps:"None"]}</span>
 			    </div>
 			</div>
-	        <div class="box button" style="flex: 0 calc(40% - 20px); text-align: center; background: var(--color-active); outline: double var(--color-active);" onclick="loadProfile(${index})">불러오기</div>
-	        <div class="box button" style="flex: 0 calc(30% - 20px); text-align: center;" onclick="if(profilePos == ${index}) { profilePos = -1; } deleteData('recentProfiles', ${index}); profileModalOpen();">삭제하기</div>
-	        <div class="box button" style="flex: 0 calc(30% - 20px); text-align: center;" onclick="profileModalOpen()">뒤로가기</div>
+	        <div class="box button" style="flex: 0 calc(40% - 20px); text-align: center; background: var(--color-active); outline: double var(--color-active);" onclick="loadProfile(${index})">Load</div>
+	        <div class="box button" style="flex: 0 calc(30% - 20px); text-align: center;" onclick="if(profilePos == ${index}) { profilePos = -1; } deleteData('recentProfiles', ${index}); profileModalOpen();">Delete</div>
+	        <div class="box button" style="flex: 0 calc(30% - 20px); text-align: center;" onclick="profileModalOpen()">Back</div>
         </div>
     `;
 
@@ -15665,7 +15664,7 @@ function showProfileDetail(profile, index) {
 
 function showDeckDetail(dc, key, index) {
 	function deckDataNameInput() {
-	    let name = prompt("이름을 입력하세요.", dc.name);
+	    let name = prompt("Enter Deck Name", dc.name);
 	    
 	    if (name !== null) {
 	        name = name.replace(/\s+/g, ' ');
@@ -15675,7 +15674,7 @@ function showDeckDetail(dc, key, index) {
 	        }
 	        if (name !== '') {
 	        	dc.name = name;
-    			deckNameText.textContent = `덱 이름: ${dc.name}`;
+    			deckNameText.textContent = `Deck Name: ${dc.name}`;
     			if(deckPos == index) {
     				deckPos = 0;
     			}
@@ -15703,7 +15702,7 @@ function showDeckDetail(dc, key, index) {
 
     const deckNameText = document.createElement('h2');
     deckNameText.className = 'box-title'
-    deckNameText.textContent = `덱 이름: ${dc.name}`;
+    deckNameText.textContent = `Deck Name: ${dc.name}`;
     deckNameDiv.appendChild(deckNameText);
     deckDetail.appendChild(deckNameDiv);
 
@@ -15714,7 +15713,7 @@ function showDeckDetail(dc, key, index) {
 
     const deckNameChangeText = document.createElement('h2');
     deckNameChangeText.className = 'box-title'
-    deckNameChangeText.textContent = `이름 변경`;
+    deckNameChangeText.textContent = `Change Name`;
     deckNameChangeDiv.appendChild(deckNameChangeText);
     deckDetail.appendChild(deckNameChangeDiv);
 
@@ -15725,7 +15724,7 @@ function showDeckDetail(dc, key, index) {
 
 	    const stateTitle = document.createElement('h2');
 	    stateTitle.className = 'box-title'
-	    stateTitle.textContent = '특성';
+	    stateTitle.textContent = 'Traits';
 	    stateDiv.appendChild(stateTitle);
 	    deckDetail.appendChild(stateDiv);
 
@@ -15855,7 +15854,7 @@ function showDeckDetail(dc, key, index) {
     loadDeckButton.className = 'box button active';
     loadDeckButton.style.flex = '0 calc(40% - 20px)';
     loadDeckButton.style.textAlign = 'center';
-    loadDeckButton.textContent = '불러오기';
+    loadDeckButton.textContent = 'Load';
     loadDeckButton?.addEventListener('click', function() {
     	var _check = loadDeck(dc);
     	deckPos = index;
@@ -15872,7 +15871,7 @@ function showDeckDetail(dc, key, index) {
     deleteDeckButton.className = 'box button';
     deleteDeckButton.style.flex = '0 calc(30% - 20px)';
     deleteDeckButton.style.textAlign = 'center';
-    deleteDeckButton.textContent = '삭제하기';
+    deleteDeckButton.textContent = 'Delete';
     deleteDeckButton?.addEventListener('click', function() {
     	if(deckPos == index) {
     		deckPos = -1;
@@ -15885,7 +15884,7 @@ function showDeckDetail(dc, key, index) {
     backButton.className = 'box button';
     backButton.style.flex = '0 calc(30% - 20px)';
     backButton.style.textAlign = 'center';
-    backButton.textContent = '뒤로가기';
+    backButton.textContent = 'Back';
     backButton?.addEventListener('click', function() {
         deckModalOpen();
     });
@@ -15901,7 +15900,7 @@ function showDeckDetail(dc, key, index) {
 
 
 function loadProfile(index) {
-    console.log("프로필 불러오기:", profile);
+    console.log("프로필 Load:", profile);
     // 필요한 로직 추가
     const charLoadLog = document.getElementById("charLoadLog");
     const profiles = loadObject('recentProfiles') || [];
@@ -17752,13 +17751,13 @@ function displayTooltip(event, keywords) {
     				statDesc = "<b>Excitement</b>이 증가하지 않는다.";
     				break;
     			case "orgasmBan":
-    				statDesc = "<b>절정</b>하지 않는다.";
+    				statDesc = "<b>Orgasm</b>하지 않는다.";
     				break;
     			case "suppression":
-    				statDesc = "<b>Excitement</b>으로는 <b>절정</b>하지 않는다.";
+    				statDesc = "<b>Excitement</b>으로는 <b>Orgasm</b>하지 않는다.";
     				break;
     			case "insensitive":
-    				statDesc = "<b>Excitement</b> 외의 수단으로 <b>절정</b>하지 않는다.";
+    				statDesc = "<b>Excitement</b> 외의 수단으로 <b>Orgasm</b>하지 않는다.";
     				break;
     			}
     			const infoDiv = createInfoDiv(cardDB[statTooltip.id].name[language], statDesc);
@@ -17903,7 +17902,7 @@ function exportData() {
 	URL.revokeObjectURL(url);
 }
 
-// 데이터 불러오기
+// 데이터 Load
 function importData() {
 	const input = document.createElement("input");
 	input.type = "file";
@@ -18302,7 +18301,7 @@ function copyDivContent(div) {
                 // 텍스트 노드 래핑
                 const span = document.createElement('span');
                 span.textContent = child.textContent;
-                span.style.backgroundColor = 'transparent'; // 배경색 제거
+                span.style.backgroundColor = 'transparent'; // Background색 제거
                 child.replaceWith(span);
             } else if (child.nodeType === Node.ELEMENT_NODE) {
                 wrapTextNodes(child); // 재귀적으로 처리
@@ -18312,7 +18311,7 @@ function copyDivContent(div) {
 
     wrapTextNodes(clonedDiv);
 
-    // All 요소에서 배경 제거
+    // All 요소에서 Background 제거
     const elements = clonedDiv.querySelectorAll('*');
     elements.forEach(el => {
         const computedStyle = window.getComputedStyle(el);
@@ -18395,7 +18394,7 @@ async function lineTest(options = {}) {
         for (let ps of playerStates) {
             choiceValues.ps = ps;
         	for (let num of eventNumbers) {
-                console.log(`현재 실행 중: \n${enemy.name}-이벤트-${num} \n(성격: ${choiceValues.ps}, 모드: ${gamemode == 1?"하드":"일반"})`);
+                console.log(`현재 실행 중: \n${enemy.name}-이벤트-${num} \n(Personality: ${choiceValues.ps}, 모드: ${gamemode == 1?"하드":"일반"})`);
 
                 switch(num) {
                 case "개전":
@@ -18444,7 +18443,7 @@ async function lineTest(options = {}) {
                 document.removeEventListener('keydown', eventSkipHandler);
                 await wait(500);
 
-                const proceed = confirm(`${enemy.name}-이벤트-${num} | (성격: ${choiceValues.ps}, 상태: ${player.condition}, 하드모드: ${gamemode}) 확인.`);
+                const proceed = confirm(`${enemy.name}-이벤트-${num} | (Personality: ${choiceValues.ps}, 상태: ${player.condition}, 하드모드: ${gamemode}) 확인.`);
                 if (!proceed) {
                     console.log("테스트를 중단합니다.");
                     resetLineData();

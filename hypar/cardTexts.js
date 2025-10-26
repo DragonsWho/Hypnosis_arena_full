@@ -51,10 +51,10 @@ const cardTexts = {
 		"결합될시":{
 			"KOR": "<span style=\"color: gray;\">[Combined]</span> "
 		},
-		"절정시":{
+		"Orgasm시":{
 			"KOR": "On Orgasm, "
 		},
-		"누군가절정시":{
+		"누군가Orgasm시":{
 			"KOR": "When you or the opponent has an Orgasm, "
 		},
 		"버려질시":{
@@ -268,10 +268,10 @@ const cardTexts = {
 		"기록결합":{
 			"KOR": "cards Combined {time}",
 		},
-		"기록절정":{
+		"기록Orgasm":{
 			"KOR": "the number of times {actor} had an <b>Orgasm</b> {time}",
 		},
-		"기록절정자신":{
+		"기록Orgasm자신":{
 			"KOR": "the number of times you had an <b>Orgasm</b> {time}",
 		},
 		"기록자극":{
@@ -359,16 +359,16 @@ const cardTexts = {
 		"card들":{
 			"KOR": "{amount} {cards}",
 		},
-		"card종류들":{
+		"cardType들":{
 			"KOR": "{amount} types of {cards}",
 		},
 		"card전부":{
 			"KOR": "All {cards}",
 		},
-		"card종류전부":{
+		"cardType전부":{
 			"KOR": "All types of {cards}",
 		},
-		"card종류":{
+		"cardType":{
 			"KOR": "different {cards}",
 		},
 		"복사본":{
@@ -730,52 +730,52 @@ const cardTexts = {
 			"KOR": "If you did not receive <b>[Stimulation]</b> exactly {amount} times {time}, ",
 		},
 
-		"이벤트절정":{
+		"이벤트Orgasm":{
 			"KOR": "If {actor} had an <b>Orgasm</b> {time}, ",
 		},
-		"이벤트절정자신":{
+		"이벤트Orgasm자신":{
 			"KOR": "If you had an <b>Orgasm</b> {time}, ",
 		},
-		"이벤트절정부정":{
+		"이벤트Orgasm부정":{
 			"KOR": "If {actor} did not have an <b>Orgasm</b> {time}, ",
 		},
-		"이벤트절정자신부정":{
+		"이벤트Orgasm자신부정":{
 			"KOR": "If you did not have an <b>Orgasm</b> {time}, ",
 		},
-		"이벤트절정일치":{
+		"이벤트Orgasm일치":{
 			"KOR": "If {actor} had an <b>Orgasm</b> exactly {amount} times {time}, ",
 		},
-		"이벤트절정자신일치":{
+		"이벤트Orgasm자신일치":{
 			"KOR": "If you had an <b>Orgasm</b> exactly {amount} times {time}, ",
 		},
-		"이벤트절정초과":{
+		"이벤트Orgasm초과":{
 			"KOR": "If {actor} had an <b>Orgasm</b> more than {amount} times {time}, ",
 		},
-		"이벤트절정자신초과":{
+		"이벤트Orgasm자신초과":{
 			"KOR": "If you had an <b>Orgasm</b> more than {amount} times {time}, ",
 		},
-		"이벤트절정미만":{
+		"이벤트Orgasm미만":{
 			"KOR": "If {actor} had an <b>Orgasm</b> fewer than {amount} times {time}, ",
 		},
-		"이벤트절정자신미만":{
+		"이벤트Orgasm자신미만":{
 			"KOR": "If you had an <b>Orgasm</b> fewer than {amount} times {time}, ",
 		},
-		"이벤트절정이상":{
+		"이벤트Orgasm이상":{
 			"KOR": "If {actor} had an <b>Orgasm</b> {amount} or more times {time}, ",
 		},
-		"이벤트절정자신이상":{
+		"이벤트Orgasm자신이상":{
 			"KOR": "If you had an <b>Orgasm</b> {amount} or more times {time}, ",
 		},
-		"이벤트절정이하":{
+		"이벤트Orgasm이하":{
 			"KOR": "If {actor} had an <b>Orgasm</b> {amount} or fewer times {time}, ",
 		},
-		"이벤트절정자신이하":{
+		"이벤트Orgasm자신이하":{
 			"KOR": "If you had an <b>Orgasm</b> {amount} or fewer times {time}, ",
 		},
-		"이벤트절정불일치":{
+		"이벤트Orgasm불일치":{
 			"KOR": "If {actor} did not have an <b>Orgasm</b> exactly {amount} times {time}, ",
 		},
-		"이벤트절정자신불일치":{
+		"이벤트Orgasm자신불일치":{
 			"KOR": "If you did not have an <b>Orgasm</b> exactly {amount} times {time}, ",
 		},
 
@@ -940,10 +940,10 @@ const cardTexts = {
 		"자극":{
 			"KOR": "Inflict <b>[Stimulation]</b> on {repeat1} {target} {repeat2} .",
 		},
-		"절정":{
+		"Orgasm":{
 			"KOR": "Cause {repeat1} {target} to <b>Orgasm</b> {repeat2}.",
 		},
-		"상태부여이름":{
+		"상태부여Name":{
 			"KOR": "Apply {repeat} <b>{state}</b> to {target}.",
 		},
 		"헤더":{
@@ -1282,10 +1282,10 @@ const cardTexts = {
 			"KOR": "The maximum number of cards you can play per round becomes {amount}.",
 		},
 
-		"절정금지":{
+		"Orgasm금지":{
 			"KOR": "{actor} cannot have an <b>Orgasm</b>.",
 		},
-		"절정금지자신":{
+		"Orgasm금지자신":{
 			"KOR": "Cannot have an <b>Orgasm</b>.",
 		},
 		"억압":{
