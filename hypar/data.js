@@ -93,7 +93,7 @@ const dictionary = {
 	"상금":{ "KOR":"Prize Money" },
 	"명예":{ "KOR":"Honor" },
 	"조사":{ "KOR":"Investigation" },
-	"없음":{ "KOR":"Nothing" },
+	"None":{ "KOR":"Nothing" },
 
 	"포인트":{ "KOR":"Point" },
 	"덱":{ "KOR":"Deck" },

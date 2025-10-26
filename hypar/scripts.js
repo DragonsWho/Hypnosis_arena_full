@@ -829,7 +829,7 @@ function selectCollection(type, id, history = true) {
 		if(cardData.type) {
 			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>종류:</b> ${cardData.type!="특성"?cardData.type:(cardData.tags.includes("부정적")?"단점":"장점")}</div>`;
 		}
-		if(cardData.rarity && cardData.rarity != '없음') {
+		if(cardData.rarity && cardData.rarity != 'None') {
 			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>등급:</b> ${cardData.rarity}</div>`;
 		}
 		if(cardData.race) {
@@ -4679,7 +4679,7 @@ function createCardText(card, reverse=false) {
 				switch(cond.op) {
 				case "==": 
 					if(typeof v2text === 'number' && v2[0] == 0) {
-						text += translateText(cardTexts["condition"]["덱card없음"], { "target":v1text });
+						text += translateText(cardTexts["condition"]["덱cardNone"], { "target":v1text });
 					} else {
 						text += translateText(cardTexts["condition"][typeof v2text === 'number'?"덱card일치숫자":"덱card일치값"], { "target":v1text, "amount":v2text });
 					}
@@ -4693,7 +4693,7 @@ function createCardText(card, reverse=false) {
 					break;
 				case "<": 
 					if(typeof v2text === 'number' && v2[0] <= 1) {
-						text += translateText(cardTexts["condition"]["덱card없음"], { "target":v1text });
+						text += translateText(cardTexts["condition"]["덱cardNone"], { "target":v1text });
 					} else {
 						text += translateText(cardTexts["condition"][typeof v2text === 'number'?"덱card미만숫자":"덱card미만값"], { "target":v1text, "amount":v2text });
 					}
@@ -4707,7 +4707,7 @@ function createCardText(card, reverse=false) {
 					break;
 				case "<=": 
 					if(typeof v2text === 'number' && v2[0] == 0) {
-						text += translateText(cardTexts["condition"]["덱card없음"], { "target":v1text });
+						text += translateText(cardTexts["condition"]["덱cardNone"], { "target":v1text });
 					} else {
 						text += translateText(cardTexts["condition"][typeof v2text === 'number'?"덱card이하숫자":"덱card이하값"], { "target":v1text, "amount":v2text });
 					}
@@ -4726,7 +4726,7 @@ function createCardText(card, reverse=false) {
 				switch(cond.op) {
 				case "==": 
 					if(typeof v2text === 'number' && v2[0] == 0) {
-						text += translateText(cardTexts["condition"]["상태없음"], { "target":v1text });
+						text += translateText(cardTexts["condition"]["상태None"], { "target":v1text });
 					} else {
 						text += translateText(cardTexts["condition"][typeof v2text === 'number'?"상태일치숫자":"상태일치값"], { "target":v1text, "amount":v2text });
 					}
@@ -4740,7 +4740,7 @@ function createCardText(card, reverse=false) {
 					break;
 				case "<": 
 					if(typeof v2text === 'number' && v2[0] <= 1) {
-						text += translateText(cardTexts["condition"]["상태없음"], { "target":v1text });
+						text += translateText(cardTexts["condition"]["상태None"], { "target":v1text });
 					} else {
 						text += translateText(cardTexts["condition"][typeof v2text === 'number'?"상태미만숫자":"상태미만값"], { "target":v1text, "amount":v2text });
 					}
@@ -4754,7 +4754,7 @@ function createCardText(card, reverse=false) {
 					break;
 				case "<=": 
 					if(typeof v2text === 'number' && v2[0] == 0) {
-						text += translateText(cardTexts["condition"]["상태없음"], { "target":v1text });
+						text += translateText(cardTexts["condition"]["상태None"], { "target":v1text });
 					} else {
 						text += translateText(cardTexts["condition"][typeof v2text === 'number'?"상태이하숫자":"상태이하값"], { "target":v1text, "amount":v2text });
 					}
@@ -4800,7 +4800,7 @@ function createCardText(card, reverse=false) {
 				switch(cond.op) {
 				case "==": 
 					if(typeof v2text === 'number' && v2[0] == 0) {
-						text += translateText(cardTexts["condition"]["낸card없음"], { "target":v1text });
+						text += translateText(cardTexts["condition"]["낸cardNone"], { "target":v1text });
 					} else {
 						text += translateText(cardTexts["condition"][typeof v2text === 'number'?"낸card일치숫자":"낸card일치값"], { "target":v1text, "amount":v2text });
 					}
@@ -4814,7 +4814,7 @@ function createCardText(card, reverse=false) {
 					break;
 				case "<": 
 					if(typeof v2text === 'number' && v2[0] <= 1) {
-						text += translateText(cardTexts["condition"]["낸card없음"], { "target":v1text });
+						text += translateText(cardTexts["condition"]["낸cardNone"], { "target":v1text });
 					} else {
 						text += translateText(cardTexts["condition"][typeof v2text === 'number'?"낸card미만숫자":"낸card미만값"], { "target":v1text, "amount":v2text });
 					}
@@ -4828,7 +4828,7 @@ function createCardText(card, reverse=false) {
 					break;
 				case "<=": 
 					if(typeof v2text === 'number' && v2[0] == 0) {
-						text += translateText(cardTexts["condition"]["낸card없음"], { "target":v1text });
+						text += translateText(cardTexts["condition"]["낸cardNone"], { "target":v1text });
 					} else {
 						text += translateText(cardTexts["condition"][typeof v2text === 'number'?"낸card이하숫자":"낸card이하값"], { "target":v1text, "amount":v2text });
 					}
@@ -6651,7 +6651,7 @@ function createCardText(card, reverse=false) {
 	}
 
 	if(card.cond === false) {
-		text += translateText(cardTexts["condition"]["낼수없음"], {}) + "<br>";
+		text += translateText(cardTexts["condition"]["낼수None"], {}) + "<br>";
 	} else if(card.isDeck && card.cond !== true) {
 		text += translateText(cardTexts["condition"]["낼수있음"], { "cond":conditionText(card.cond, card.expiration) }) + "<br>";
 	}
@@ -7806,7 +7806,7 @@ function infoUpdate() {
 			postureDiv.innerHTML += "("+trapPs.duration+")"
 		}*/
 	} else {
-		postureDiv.innerHTML = "없음";
+		postureDiv.innerHTML = "None";
 	}
 
 	const lustDiv = document.getElementById("lust");
@@ -9403,17 +9403,17 @@ function battleCardUpdate() {
 	const alertDiv = document.getElementById("cardSelectAlert");
 	alertDiv.style.color = "red";
 	if(clickable && selectable && action.length == 0) {
-		alertDiv.innerHTML = "card 미선택! "
+		alertDiv.innerHTML = "No card selected!"
 	} else if(clickable && selectable && action.length < Math.min(maxUse, useLimit)) {
-		alertDiv.innerHTML = "Card 더 고를 수 있음! "
+		alertDiv.innerHTML = "You can select more cards! "
 	} else if(selectMode) {
-		alertDiv.innerHTML = "Card 선택해야 함! "
+		alertDiv.innerHTML = "You must select a card."
 	} else {
 		alertDiv.style.color = "black";
 		alertDiv.innerHTML = ""
 	}
 	if(selectMode) {
-		alertDiv.innerHTML += "("+selectCount+"장 남음)"
+		alertDiv.innerHTML += "("+selectCount+"left)"
 	} else {
 		alertDiv.innerHTML += "("+action.length+"/"+maxUse+")"
 	}
@@ -9540,7 +9540,7 @@ function battleEndCheck() {
 
 async function combat() {
 	phase = "battle";
-	await showMessage("전투");
+	await showMessage("Fight!");
 
 	const deckDiv = document.getElementById("playerDeck");
 	const opActionDiv = document.getElementById("enemyAction");
@@ -9948,7 +9948,7 @@ async function turnEndEvent() {
 const shownCards = [];
 
 function calculateDisplayTime(card) {
-    if (combatOptions.cardWait_mode == "없음" || (combatOptions.cardWait_mode == "한 번만" && shownCards.includes(card.id))) {
+    if (combatOptions.cardWait_mode == "None" || (combatOptions.cardWait_mode == "한 번만" && shownCards.includes(card.id))) {
         return 1//turnSpeed/2;
     } else {
         shownCards.push(card.id);
@@ -11091,7 +11091,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 						await animationFloatIn(tempStateDiv, 'left', 40);
 						await wait([200, 300, 500, 750, 1000][turnSpeed])
 					    if(repeat > 1) {
-					    	await animationCopies(tempStateDiv, repeat, combatOptions.cardWait_mode == "없음" || (combatOptions.cardWait_mode == "한 번만" && shownCards.includes(newState.id)));
+					    	await animationCopies(tempStateDiv, repeat, combatOptions.cardWait_mode == "None" || (combatOptions.cardWait_mode == "한 번만" && shownCards.includes(newState.id)));
 					    }
 					    await waitOrClick(calculateDisplayTime(newState));
 					    await actionEffect(newState, "get", index);
@@ -11279,7 +11279,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 					    await animationFloatIn(tempStateDiv, 'left', 40);
 						await wait([200, 300, 500, 750, 1000][turnSpeed])
 					    if(repeat > 1) {
-					    	await animationCopies(tempStateDiv, repeat, combatOptions.cardWait_mode == "없음" || (combatOptions.cardWait_mode == "한 번만" && shownCards.includes(newCard.id)));
+					    	await animationCopies(tempStateDiv, repeat, combatOptions.cardWait_mode == "None" || (combatOptions.cardWait_mode == "한 번만" && shownCards.includes(newCard.id)));
 					    }
 					    if(newCards.length <= 3) {
 						    await waitOrClick(calculateDisplayTime(newCard));
@@ -15355,7 +15355,7 @@ function loadObject(key) {
 		if (jsonString) {
 			return JSON.parse(jsonString);
 		}
-		console.log("저장 값 없음");
+		console.log("저장 값 None");
 		return null;
 	} catch(e) {
 		console.log("잘못된 저장 값");
@@ -15637,7 +15637,7 @@ function showProfileDetail(profile, index) {
 			        <span class="value" style="font-size: 24px;">${profile.class}</span><span class="value" style="font-size: 20px;">(${profile.background})</span>
 			    </div>
 			    <div class="info-item">
-			        <span class="value" style="font-size: 18px;">${{"순종":"- 순종적이고 충실함.", "저항":"- 반항적이고 자존심 강함.", "무지":"- 순진하고 단순함.", "적극":"- 적극적이고 도발적.", "없음":""}[profile.ps && gamemode != 2?profile.ps:"없음"]}</span>
+			        <span class="value" style="font-size: 18px;">${{"순종":"- 순종적이고 충실함.", "저항":"- 반항적이고 자존심 강함.", "무지":"- 순진하고 단순함.", "적극":"- 적극적이고 도발적.", "None":""}[profile.ps && gamemode != 2?profile.ps:"None"]}</span>
 			    </div>
 			</div>
 	        <div class="box button" style="flex: 0 calc(40% - 20px); text-align: center; background: var(--color-active); outline: double var(--color-active);" onclick="loadProfile(${index})">불러오기</div>
@@ -16223,7 +16223,7 @@ function addEffectBlock() {
     selectCondition.classList.add("input", "custom-input");
     selectCondition.dataset.key = "trigger";
     selectCondition.innerHTML = `
-        <option value="none">없음</option>
+        <option value="none">None</option>
     `;
     variableList.forEach(vl => {
     	if(vl.value != "stack" && (!vl.condition || checkCondition(vl.condition, 0))) {

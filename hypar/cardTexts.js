@@ -393,7 +393,7 @@ const cardTexts = {
 		},
 	},
 	"condition":{
-		"낼수없음":{
+		"낼수None":{
 			"KOR": "Cannot be played.",
 		},
 		"낼수있음":{
@@ -484,7 +484,7 @@ const cardTexts = {
 			"KOR": "If it is round {amount}, ",
 		},
 
-		"덱card없음":{
+		"덱cardNone":{
 			"KOR": "If there is no {target}, ",
 		},
 		"덱card있음":{
@@ -527,7 +527,7 @@ const cardTexts = {
 			"KOR": "If there is not exactly {amount} {target}, ",
 		},
 
-		"상태없음":{
+		"상태None":{
 			"KOR": "If you do not have {target}, ",
 		},
 		"상태있음":{
@@ -589,7 +589,7 @@ const cardTexts = {
 			"KOR": "If {target} is not {amount}, ",
 		},
 
-		"낸card없음":{
+		"낸cardNone":{
 			"KOR": "If there is no {target}, ",
 		},
 		"낸card있음":{
