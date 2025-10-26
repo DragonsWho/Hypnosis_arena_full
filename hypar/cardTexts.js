@@ -384,7 +384,7 @@ const cardTexts = {
 			"KOR": "<b>Lust</b> spent",
 		},
 
-		"서로다른제조":{
+		"서로다른Crafted":{
 			"KOR": "different Crafted cards"
 		},
 
@@ -1036,7 +1036,7 @@ const cardTexts = {
 			"KOR": "Remove {state}.",
 		},
 		"사용":{
-			"KOR": "Activate the effect of {card} {repeat} times.",
+			"KOR": "Activate the effect of {card} {repeat}.",
 		},
 		"선택사용":{
 			"KOR": "Choose {select} to activate its effect {repeat} times.",

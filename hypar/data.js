@@ -7,13 +7,13 @@ const dictionary = {
 	"Eldorian":{ "KOR":"Eldorian" },
 	"Silvani":{ "KOR":"Sylvani" },
 	"Halfling":{ "KOR":"Halfling" },
-	"Beastfolk":{ "KOR":"Tribe" },
+	"Beastfolk":{ "KOR":"Beastfolk" },
 
 	"namingRule":{
 		"Eldorian":{ "KOR":"In the Kingdom of Eldoria, centered around the royal family and nobility, a family name carries great weight. An Eldorian's full name consists of their given name followed by their family name.<br>However, not all families possess a grand and noble lineage; the family names of commoners are often casually invented or non-existent.<br>Famous family names include Dawnbringer, Ezerwave, Verdantrock, Starfrost, Rosethorn, and the Eldorian royal family itself." },
 		"Silvani":{ "KOR":"Sylvani society is built upon clans, and they place great importance on preserving the history and traditions of each clan. The single character following a Sylvani's name is their surname, indicating which clan they belong to.<br>In Sylvani culture, the surname traditionally comes before the given name. However, when interacting with outsiders, they adopt the naming order of the common tongue.<br>Well-known clans include In, Shin, Ye, Ji, Jeong, Seon, and Jin. Given the reclusive nature of the Sylvani, there may be other clans not yet known to the outside world." },
 		"Halfling":{ "KOR":"The Hafmen lack the concept of surnames. This is due to their culture of viewing their entire race as one large family, and their short history since being liberated from slavery.<br>Their names are simply formed by combining two to four letters. This is not a strict rule, so names can be created in various other ways.<br>Their short lifespans and limited travel have prevented any issues so far, but as their lives stabilize, encounters with individuals sharing the same name are becoming more frequent." },
-		"Beastfolk":{ "KOR":"The Tribe indicate their origin by prefixing their given name with their tribal name. Even within the same race, cultures can vary drastically between tribes, so it is always wise to confirm a person's tribe when dealing with them.<br>Despite their cultural diversity, they share a common naming convention: most male names follow the pattern 'AAloB', and female names 'AAliB'.<br>Famous tribal names include Redspear, Thundermaw, Silverleaf, and Goldenstem. With countless tribes in existence, you may encounter new ones at any time." },
+		"Beastfolk":{ "KOR":"The Beastfolk indicate their origin by prefixing their given name with their tribal name. Even within the same race, cultures can vary drastically between beastfolks, so it is always wise to confirm a person's beastfolk when dealing with them.<br>Despite their cultural diversity, they share a common naming convention: most male names follow the pattern 'AAloB', and female names 'AAliB'.<br>Famous tribal names include Redspear, Thundermaw, Silverleaf, and Goldenstem. With countless beastfolks in existence, you may encounter new ones at any time." },
 	},
 
 	"얼굴":{ "KOR":"Face" },
@@ -71,7 +71,7 @@ const dictionary = {
 	"Neutralattack":{ "KOR":"Neutral Attack" },
 	"Warrior":{ "KOR":"Warrior" },
 	"Assassin":{ "KOR":"Assassin" },
-	"Magician":{ "KOR":"Magician" },
+	"Mage":{ "KOR":"Mage" },
 	"Healer":{ "KOR":"Healer" },
 
 	"Soldier":{ "KOR":"Soldier" },
@@ -953,7 +953,7 @@ const champList = {
 			"B1-SU-002":[
 				{cond:true, priority:"상대덱.count(type, Penalty)"},
 				{cond:true, priority:"상대덱.count(type, Penalty)"},
-				{cond:['and', {v1:"상대.남은절정", op:"<=", v2:"1"}, {v1:"상대덱.count(type, Penalty)", op:">=", v2:"4"}], priority:100},
+				{cond:['and', {v1:"상대.Remaining절정", op:"<=", v2:"1"}, {v1:"상대덱.count(type, Penalty)", op:">=", v2:"4"}], priority:100},
 				{cond:{v1:"상대덱.count(type, Penalty)", op:"==", v2:"3"}, priority:-2},
 				{cond:{v1:"상대덱.count(type, Penalty)", op:"<", v2:"3"}, priority:-Infinity},
 			],
@@ -1670,7 +1670,7 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 			"B1-SU-002":[
 				{cond:true, priority:"상대덱.count(type, Penalty)"},
 				{cond:true, priority:"상대덱.count(type, Penalty)"},
-				{cond:['and', {v1:"상대.남은절정", op:"<=", v2:"1"}, {v1:"상대덱.count(type, Penalty)", op:">=", v2:"4"}], priority:100},
+				{cond:['and', {v1:"상대.Remaining절정", op:"<=", v2:"1"}, {v1:"상대덱.count(type, Penalty)", op:">=", v2:"4"}], priority:100},
 				{cond:{v1:"상대덱.count(type, Penalty)", op:"==", v2:3}, priority:-2},
 				{cond:{v1:"상대덱.count(type, Penalty)", op:"<", v2:3}, priority:-Infinity},
 			],
@@ -2023,22 +2023,22 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 			],
 			"B7-AT-001":[
 				{cond:{v1:"Wetness", op:">=", v2:"Heat"}, priority:-100},
-				{cond:{v1:"플레이어.남은Excitement", op:"<=", v2:"Heat"}, priority:10},
+				{cond:{v1:"플레이어.RemainingExcitement", op:"<=", v2:"Heat"}, priority:10},
 				{cond:{v1:"플레이어.기록.이번.이벤트.자극함", op:">", v2:0}, priority:5}
 			],
 			"B7-AT-002":[
-				{cond:{v1:"플레이어.남은Excitement", op:"<=", v2:"Heat"}, priority:10},
+				{cond:{v1:"플레이어.RemainingExcitement", op:"<=", v2:"Heat"}, priority:10},
 				{cond:"Position", priority:5}
 			],
 			"B7-AT-003":[
 				{cond:{v1:"Wetness", op:">=", v2:"Heat"}, priority:-100},
-				{cond:{v1:"플레이어.남은Excitement", op:"<=", v2:"Heat"}, priority:10},
+				{cond:{v1:"플레이어.RemainingExcitement", op:"<=", v2:"Heat"}, priority:10},
 				{cond:{v1:"플레이어.행동.length", op:">=", v2:2}, priority:5},
 				{cond:{v1:"플레이어.행동.length", op:">=", v2:3}, priority:5},
 			],
 			"B7-AT-004":[
 				{cond:{v1:"Wetness", op:">=", v2:"Heat"}, priority:-100},
-				{cond:{v1:"플레이어.남은Excitement", op:"<=", v2:"Heat"}, priority:10},
+				{cond:{v1:"플레이어.RemainingExcitement", op:"<=", v2:"Heat"}, priority:10},
 				{cond:{v1:"Champion.기록.이번.이벤트.절정", op:">", v2:0}, priority:5}
 			],
 			"B7-AT-005":[
@@ -3093,9 +3093,9 @@ const customStructure = {
 		            { value: "self", text: "복사본" },
             		{ value: "nelson", text: "조르기", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
             		{ value: "manufacture", text: "Crafted", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
-            		{ value: "instantspell", text: "즉발 Magic", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
-            		{ value: "magiccircle", text: "Magic Circle", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
-            		{ value: "jewel", text: "Gem", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            		{ value: "instantspell", text: "즉발 Magic", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} },
+            		{ value: "magiccircle", text: "Magic Circle", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} },
+            		{ value: "jewel", text: "Gem", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} },
             		{ value: "essence", text: "Essence", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} },
                 ],
                 "width": 50,
@@ -3693,7 +3693,7 @@ const customStructure = {
                 "type": "select",
                 "options": [
 		            { value: "poison", text: "독", condition:{v1:"커스텀.직업", op:"==", v2:"Assassin"} },
-		            { value: "frozen", text: "빙결", condition:{v1:"커스텀.직업", op:"==", v2:"Magician"} },
+		            { value: "frozen", text: "빙결", condition:{v1:"커스텀.직업", op:"==", v2:"Mage"} },
 		            { value: "absorption", text: "Essence 흡수", condition:{v1:"커스텀.직업", op:"==", v2:"Healer"} }
                 ],
                 "width": 50,
@@ -3754,13 +3754,13 @@ const variableList = [
     { value: "excite", text: "Excitement" },
     { value: "exciteL", text: "Excitement Limit" },
     { value: "deck", text: "덱" },
-    { value: "state", text: "상태", condition:["or", {v1:"커스텀.직업", op:"==", v2:"Assassin"}, {v1:"커스텀.직업", op:"==", v2:"Magician"}] },
+    { value: "state", text: "상태", condition:["or", {v1:"커스텀.직업", op:"==", v2:"Assassin"}, {v1:"커스텀.직업", op:"==", v2:"Mage"}] },
     { value: "use", text: "사용" },
     { value: "get", text: "획득" },
     { value: "discard", text: "버림", condition:{v1:"커스텀.직업", op:"==", v2:"Warrior"} },
     { value: "lust", text: "Lust", condition:{v1:"커스텀.직업", op:"==", v2:"Warrior"} },
     { value: "wetness", text: "Wetness", condition:{v1:"커스텀.직업", op:"==", v2:"Assassin"} },
-    { value: "sBlock", text: "Sense Block", condition:{v1:"커스텀.직업", op:"==", v2:"Magician"} },
+    { value: "sBlock", text: "Sense Block", condition:{v1:"커스텀.직업", op:"==", v2:"Mage"} },
     { value: "corrupt", text: "Corruption", condition:{v1:"커스텀.직업", op:"==", v2:"Healer"} },
     { value: "round", text: "라운드" },
     { value: "stack", text: "강화 스택" }
@@ -3789,7 +3789,7 @@ const variableData = [
             { value: "all", text: "결투 동안" },
             { value: "recentTurn", text: "최근 라운드", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"}},
             { value: "remaining", text: "남음" },
-            { value: "delayed", text: "지연됨", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} }
+            { value: "delayed", text: "지연됨", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} }
         ],
         "conditions": ["excite"],
         "width": 33,
@@ -3836,9 +3836,9 @@ const variableData = [
             { value: "penalty", text: "Penalty card" },
             { value: "created", text: "생성된 card", exclude:["get"] },
             { value: "nelson", text: "조르기", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
-            { value: "spell", text: "Magic card", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
-            { value: "magiccircle", text: "Magic Circle card", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
-            { value: "jewel", text: "Gem card", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} },
+            { value: "spell", text: "Magic card", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} },
+            { value: "magiccircle", text: "Magic Circle card", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} },
+            { value: "jewel", text: "Gem card", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} },
             { value: "essence", text: "Essence card", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} },
             { value: "combination", text: "결합물 card", condition: {v1:"커스텀.직업", op:"==", v2:"Healer"} }
         ],
@@ -3864,7 +3864,7 @@ const variableData = [
         "type": "select",
         "options": [
             { value: "poison", text: "독", condition: {v1:"커스텀.직업", op:"==", v2:"Assassin"} },
-            { value: "frozen", text: "빙결", condition: {v1:"커스텀.직업", op:"==", v2:"Magician"} }
+            { value: "frozen", text: "빙결", condition: {v1:"커스텀.직업", op:"==", v2:"Mage"} }
         ],
         "conditions": ["state"],
         "width": 33

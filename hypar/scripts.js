@@ -11,7 +11,7 @@ const raceTag = {
 	"Halfling":"Ha",
 	"Beastfolk":"Tr",
 }
-const classNum = {"Warrior":1, "Assassin":2, "Magician":3, "Healer":4};
+const classNum = {"Warrior":1, "Assassin":2, "Mage":3, "Healer":4};
 
 const psTag = {
 	"A":["정중함", "정중함"],
@@ -315,13 +315,13 @@ function init() {
 		const cardDiv = createCard(cd, 28, true, 100);
 		collectionCard.appendChild(cardDiv);
 	});
-	Object.values(cardDB).filter(cd => cd.tags.includes('기본제조')).forEach(cd => {
+	Object.values(cardDB).filter(cd => cd.tags.includes('기본Crafted')).forEach(cd => {
 		const cardDiv = createCard(cd, 28, true, 100);
 		collectionCard.appendChild(cardDiv);
 	});
 	
-	collectionCard.appendChild(createTitledElement("Magician"));
-	Object.values(cardDB).filter(cd => cd.class == 'Magician' && cd.tags.includes('덱빌딩')).forEach(cd => {
+	collectionCard.appendChild(createTitledElement("Mage"));
+	Object.values(cardDB).filter(cd => cd.class == 'Mage' && cd.tags.includes('덱빌딩')).forEach(cd => {
 		const cardDiv = createCard(cd, 28, true, 100);
 		collectionCard.appendChild(cardDiv);
 	});
@@ -394,8 +394,8 @@ function init() {
 		collectionTrait.appendChild(cardDiv);
 	});
 
-	collectionTrait.appendChild(createTitledElement("Magician"));
-	Object.values(cardDB).filter(cd => cd.class == "Magician" && cd.type == '특성').forEach(cd => {
+	collectionTrait.appendChild(createTitledElement("Mage"));
+	Object.values(cardDB).filter(cd => cd.class == "Mage" && cd.type == '특성').forEach(cd => {
 		const cardDiv = createCard(cd, 28, true, 100);
 		collectionTrait.appendChild(cardDiv);
 	});
@@ -959,7 +959,7 @@ function selectCollection(type, id, history = true) {
 						switch(item.substr(4)) {
 						case "Poison Pouch":
 							replacementIDs = Object.values(cardDB)
-						    .filter(card => card.tags.includes("기본제조") && !card.tags.includes("Uncreatable"))
+						    .filter(card => card.tags.includes("기본Crafted") && !card.tags.includes("Uncreatable"))
 						    .map(card => card.id);
 							break;
 						case "즉발슬롯":
@@ -1149,7 +1149,7 @@ function initCardSelect() {
 			deckCardDiv.classList.add("deckCard");
 			document.getElementById('yourDeck').appendChild(deckCardDiv);
 			adjustCardFontSize(deckCardDiv);
-		} else if(choiceValues.class == "Assassin" && card.tags.includes("기본제조")) {
+		} else if(choiceValues.class == "Assassin" && card.tags.includes("기본Crafted")) {
 			const poisonSacDiv = document.getElementById('poison');
 			const cardDiv = createCard(card, 30, true, 2);
 			poisonSacDiv.appendChild(cardDiv);
@@ -1159,7 +1159,7 @@ function initCardSelect() {
 			deckCardDiv.classList.add("deckCard");
 			document.getElementById('yourPoisonSac').appendChild(deckCardDiv);
 			adjustCardFontSize(deckCardDiv);
-		} else if(choiceValues.class == "Magician" && card.tags.includes("기본Magic")) {
+		} else if(choiceValues.class == "Mage" && card.tags.includes("기본Magic")) {
 			const spellSlotDiv = document.getElementById('spellSlot');
 			const cardDiv = createCard(card, 30, true, 3);
 			spellSlotDiv.appendChild(cardDiv);
@@ -1477,7 +1477,7 @@ function changeEvent(num) {
 			document.getElementById('poison').style.display = "flex";
 			document.getElementById('quickPoison').style.display = "block";
 		}
-		if(choiceValues.class == "Magician") {
+		if(choiceValues.class == "Mage") {
 			document.getElementById('spellSlot').style.display = "flex";
 			document.getElementById('quickSpellSlot').style.display = "block";
 		}
@@ -1504,7 +1504,7 @@ function changeEvent(num) {
         	classInfo = document.getElementById("assassinInfo");
         	classGroups = ["Wetness", "추가 card", "Generated", "독"];
         	break;
-        case "Magician":
+        case "Mage":
         	classInfo = document.getElementById("mageInfo");
         	classGroups = ["Sense Block", "변형", "Magic Circle", "Magic"];
         	break;
@@ -1556,7 +1556,7 @@ function changeEvent(num) {
 		if(choiceValues.class == 'Assassin') {
 			deckData.poisonSac = startPoisonSac.map(po => po.id);
 		}
-		if(choiceValues.class == 'Magician') {
+		if(choiceValues.class == 'Mage') {
 			deckData.spellSlot = startSpellSlot.map(sp => sp.id);
 		}
 		if(choiceValues.class == 'Healer') {
@@ -1593,7 +1593,7 @@ function changeEvent(num) {
 				adjustCardFontSize(cardDiv);
 			}
 		}
-		if(choiceValues.class == 'Magician' && startSpellSlot.some(spell => spell != null)) {
+		if(choiceValues.class == 'Mage' && startSpellSlot.some(spell => spell != null)) {
 			document.getElementById("spellSlotView").style.display = 'flex';
 			for(let startSp of startSpellSlot) {
 				let cardDiv;
@@ -2327,7 +2327,7 @@ const fantasyNamePools = {
         ]
     },
     // Трайбы -> Зверолюди (кошкодевочки и т.д.)
-    tribe: {
+    beastfolk: {
         first: [
             "Kira", "Nya", "Shadow", "Claw", "Whisker", "Fang", "Ruby", "Terra",
             "Vex", "Jinx", "Saber", "Ember", "Rogue", "Ash", "Cinder", "Onyx",
@@ -2427,8 +2427,8 @@ function randomName(race) {
             break;
 
         case "Beastfolk": // Трайб (Зверолюди)
-            firstName = getRandomElement(fantasyNamePools.tribe.first);
-            const clanName = getRandomElement(fantasyNamePools.tribe.clan);
+            firstName = getRandomElement(fantasyNamePools.beastfolk.first);
+            const clanName = getRandomElement(fantasyNamePools.beastfolk.clan);
             player.name = firstName;
             player.surname = clanName; // Название клана считаем фамилией
             // Форматируем имя в стиле "Имя из клана Фамилия"
@@ -3953,10 +3953,10 @@ function createCardText(card, reverse=false) {
 	    	"지연Excitement": "delayedEx",
 	    	"Corruption": "corrupt",
 
-	    	"남은Excitement": "remainExcite",
+	    	"RemainingExcitement": "remainExcite",
 	    	"Excitement한계": "exciteL",
 	    	"절정": "orgasm",
-	    	"남은절정": "remainOrgasm",
+	    	"Remaining절정": "remainOrgasm",
 	    	"절정한계": "orgasmL",
 
 	    	"행동": "action",
@@ -4184,8 +4184,8 @@ function createCardText(card, reverse=false) {
 				if(cardsData.args[2] == "all") {
 					_card = translateText(cardTexts["target"][cardpool?"card종류전부":"card전부"], { "cards":_card });
 				} else {
-					if(cardsData.args[1] == "제조" && cardsData.args[2] != 1) {
-						_card = translateText(cardTexts["target"]["서로다른제조"], { });
+					if(cardsData.args[1] == "Crafted" && cardsData.args[2] != 1) {
+						_card = translateText(cardTexts["target"]["서로다른Crafted"], { });
 					}
 					_card = translateText(cardTexts["target"][cardpool?"card종류들":"card들"], { "cards":_card, "amount":cardsData.args[2] });
 				}
@@ -4228,10 +4228,10 @@ function createCardText(card, reverse=false) {
 			}
 			switch(obj[1]) {
 			case "excite": stat = `<b>${getWord("Excitement")}</b>`; break;
-			case "remainExcite": stat = "남은 <b>Excitement</b>"; break;
+			case "remainExcite": stat = "Remaining <b>Excitement</b>"; break;
 			case "exciteL": stat = `<b>${getWord("Excitement한계")}</b>`; break;
 			case "orgasm": stat = `<b>${getWord("절정")}</b> Count`; break;
-			case "remainOrgasm": stat = "남은 <b>절정</b> Count"; break;
+			case "remainOrgasm": stat = "Remaining <b>절정</b> Count"; break;
 			case "orgasmL": stat = `<b>${getWord("절정한계")}</b>`; break;
 			}
 			if((!reverse && obj[0] == "self") || (reverse && obj[0] == "op")) {
@@ -6018,7 +6018,7 @@ function createCardText(card, reverse=false) {
 		case "poisonAdd":
 			var _value;
 			if(e.value.startsWith("random")) {
-				_value = `${getWord("무작위")} ${getWord("제조")} ${getWord("card")}`
+				_value = `${getWord("무작위")} ${getWord("Crafted")} ${getWord("card")}`
 			} else if(cardDB[e.value]) {
 				_value = `<b>[${cardDB[e.value].name[language]}]</b>`;
 			}
@@ -6631,7 +6631,7 @@ function createCardText(card, reverse=false) {
 			text += ' <span style="color: gray;"><i>(Max&nbsp;'+e.maxValue+")</i></span>";
 		}
 		if(e.maxRepeat && e.repeat && typeof e.repeat !== 'number') {
-			text += ' <span style="color: gray;"><i>(Max&nbsp;'+e.maxRepeat+"번)</i></span>";
+			text += ' <span style="color: gray;"><i>(Max&nbsp;'+e.maxRepeat+"times)</i></span>";
 		}
 
 		if(lineWrap) {
@@ -6864,7 +6864,7 @@ function addCard(div, deck) {
 	    case "Assassin":
 	    	classInfo = document.getElementById("assassinInfo");
 	    	break;
-	    case "Magician":
+	    case "Mage":
 	    	classInfo = document.getElementById("mageInfo");
 	    	break;
 	    case "Healer":
@@ -7167,13 +7167,13 @@ function cardStateUpdate() {
 		yourPoisonSac.style.display = "flex";
 	}
 	const yourSpellSlot = document.getElementById("yourSpellSlot");
-	if(choiceValues.class != 'Magician' && yourSpellSlot.style.display != "none") {
+	if(choiceValues.class != 'Mage' && yourSpellSlot.style.display != "none") {
 		yourSpellSlot.style.display = "none";
 	}
-	if(choiceValues.class == 'Magician' && yourSpellSlot.style.display == "none") {
+	if(choiceValues.class == 'Mage' && yourSpellSlot.style.display == "none") {
 		yourSpellSlot.style.display = "flex";
 	}
-	if(choiceValues.class == 'Magician') {
+	if(choiceValues.class == 'Mage') {
 		const instantSpellDiv = document.getElementById('instantSpell');
 		const chantSpellDiv = document.getElementById('chantSpell');
 		const focusedSpellDiv = document.getElementById('focusedSpell');
@@ -7433,7 +7433,7 @@ function battleInit() {
 	case "Assassin":
 		document.getElementById("viewWetness").style.display = "flex";
 		break;
-	case "Magician":
+	case "Mage":
 		document.getElementById("viewSBlock").style.display = "flex";
 		break;
 	case "Healer":
@@ -8434,10 +8434,10 @@ function returnText(v, self=null) {
     	"corrupt": corrupt,
 
     	"Excitement": "excite",
-    	"남은Excitement": "remainExcite",
+    	"RemainingExcitement": "remainExcite",
     	"Excitement한계": "exciteL",
     	"절정": "orgasm",
-    	"남은절정": "remainOrgasm",
+    	"Remaining절정": "remainOrgasm",
     	"절정한계": "orgasmL",
     	"행동": "action",
     	"효과발동": "effectActive",
@@ -8717,7 +8717,7 @@ function countCard(cards, category, value=null) {
 	let count = 0;
 	for(let card of cards) {
 		if(card[category]) {
-			if((category == 'tags' && (card.tags.includes(value) || (value == "변형목적" && card.type == "Penalty"))) || card[category] == value || (category == 'class' && value == "직업" && ["Warrior", "Assassin", "Magician", "Healer"].includes(card.class)) || (card.id == 'MA-MC-004' && category == 'id' && cardDB[value].tags.includes('Magic Circle'))) {
+			if((category == 'tags' && (card.tags.includes(value) || (value == "변형목적" && card.type == "Penalty"))) || card[category] == value || (category == 'class' && value == "직업" && ["Warrior", "Assassin", "Mage", "Healer"].includes(card.class)) || (card.id == 'MA-MC-004' && category == 'id' && cardDB[value].tags.includes('Magic Circle'))) {
 				count += 1;
 			}
 		}
@@ -8732,7 +8732,7 @@ function countCardType(cards, category, value=null) {
 			uniqueIds.add(cd.id);
 		})
 	} else {
-		cards.filter(cd => cd[category] && ((category == 'tags' && cd.tags.includes(value)) || cd[category] == value || (category == 'class' && value == "직업" && ["Warrior", "Assassin", "Magician", "Healer"].includes(card.class)) || (cd.id == 'MA-MC-004' && category == 'id' && cardDB[value].tags.includes('Magic Circle')))).forEach(function(cd) {
+		cards.filter(cd => cd[category] && ((category == 'tags' && cd.tags.includes(value)) || cd[category] == value || (category == 'class' && value == "직업" && ["Warrior", "Assassin", "Mage", "Healer"].includes(card.class)) || (cd.id == 'MA-MC-004' && category == 'id' && cardDB[value].tags.includes('Magic Circle')))).forEach(function(cd) {
 			uniqueIds.add(cd.id);
 		})
 	}
@@ -8791,7 +8791,7 @@ function randomCard(category, value=null) {
 				case "Transcendent":
 					return card.tags.includes(value) && (!selectedTransc.includes(card.id) || selectedTransc.length >= 4);
 					break;
-				case "제조":
+				case "Crafted":
 					return poisonSac.some(po => card.id == po.id) && card.tags.includes(value) && !deck.some(cd => card.id == cd.id) && !enemy.state.some(st => card.id + "-1" == st.id);
 					break;
 				case "즉발 Magic":
@@ -8834,7 +8834,7 @@ function randomCard(category, value=null) {
 	if(category == "tags" && value == "Magic Circle" && cardPool.length == 0) {
 		cardPool = ["MA-MC-001", "MA-MC-002", "MA-MC-003"];
 	}
-	if(category == "tags" && value == "제조" && cardPool.length == 0) {
+	if(category == "tags" && value == "Crafted" && cardPool.length == 0) {
 		cardPool = poisonSac.map(po => po.id);
 	}
 	let result = (cardPool.length)?getRandom(cardPool):null
@@ -9524,7 +9524,7 @@ function cardUsableCheck(card) {
 	if(player.state.some(st => st.id == "DA-NT-BG7-002") && round == 1) {
 		return false;
 	}
-	if(player.state.some(st => st.id == "DA-AS-BG4-001") && round <= 3 && (card.tags.includes("제조") || card.id == "AS-NM-AT-000")) {
+	if(player.state.some(st => st.id == "DA-AS-BG4-001") && round <= 3 && (card.tags.includes("Crafted") || card.id == "AS-NM-AT-000")) {
 		return false;
 	}
 	if(card.tags.includes("Magic Circle")) {
@@ -12166,7 +12166,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            		if(tc.isDeck) {
 				            	if(target === player) {
 				            		targetObj = deck;
-				            		if (choiceValues.class == 'Magician' && actor == 1) {
+				            		if (choiceValues.class == 'Mage' && actor == 1) {
 			            				trsCount++;
 			            			}
 				            	}
@@ -12870,12 +12870,12 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            				var _e = posture.effect.find(e => e.type == "wetness");
 	            				var _e2 = _e.info.effect.find(e => e.type == "use");
 
-	            				var regex = /Poison Pouch\.selectCards\(tags, 제조, (\d+)\)/;
+	            				var regex = /Poison Pouch\.selectCards\(tags, Crafted, (\d+)\)/;
 								var match = _e2.value.match(regex);
 
 								if (match) {
 								    var n = parseInt(match[1], 10);
-								    _e2.value = `Poison Pouch.selectCards(tags, 제조, ${n*2})`
+								    _e2.value = `Poison Pouch.selectCards(tags, Crafted, ${n*2})`
 								}
 	            				break;
 	            			case "AS-EX-PS-002":
@@ -15050,7 +15050,7 @@ function copyDeckCode() {
         startPoisonSac.forEach(po => deckCode.poisonSac.push(po.id));
     }
 
-    if (choiceValues.class === 'Magician' && startSpellSlot.some(spell => spell != null)) {
+    if (choiceValues.class === 'Mage' && startSpellSlot.some(spell => spell != null)) {
         deckCode.spellSlot = [];
         startSpellSlot.forEach(sp => deckCode.spellSlot.push(sp.id));
     }
@@ -16074,7 +16074,7 @@ function relatedModalOpen(card) {
 	    		_cd = _c;
 	    	}
 	    	const cardDiv = createCard(_cd, 28);
-    		if(_cd.tags.includes("기본제조") && !poisonSac.some(po => po.id == _cd.id)) {
+    		if(_cd.tags.includes("기본Crafted") && !poisonSac.some(po => po.id == _cd.id)) {
     			cardDiv.classList.add("disabled");
     		}
     		relatedDetail.appendChild(cardDiv);
@@ -16268,7 +16268,7 @@ function addEffectBlock() {
     		<option value="changeWetness">Wetness</option>
     	`
     }
-    if(choiceValues.class == "Magician") {
+    if(choiceValues.class == "Mage") {
     	selectEffect.innerHTML += `
     		<option value="changeSBlock">Sense Block</option>
     		<option value="transform">변형</option>
@@ -17042,7 +17042,7 @@ function updateCustomCard() {
         	switch(effectObject.stateType) {
         	case "poison":
         		customEffect.type = "use";
-        		customEffect.value = "randomCard(tags, 제조)";
+        		customEffect.value = "randomCard(tags, Crafted)";
         		customCostAdd = 6;
         		break;
         	case "frozen":
@@ -17104,7 +17104,7 @@ function updateCustomCard() {
 		        case "nelson":
 		            return ["id", "AS-NM-AT-000"];
 		        case "manufacture":
-		            return ["tags", "제조"];
+		            return ["tags", "Crafted"];
 		        case "spell":
 		            return ["tags", "Magic"];
 		        case "magiccircle":
@@ -17400,7 +17400,7 @@ function updateCustomCard() {
 	    				expectValue = 3
 						break;
 					case "remaining":
-	    				realValue = object[`${valueName}Target`] == "self"?"자신.남은Excitement":"상대.남은Excitement";
+	    				realValue = object[`${valueName}Target`] == "self"?"자신.RemainingExcitement":"상대.RemainingExcitement";
 						if(object[`${valueName}Target`] == "self") {
 							expectValue = 4
 						}

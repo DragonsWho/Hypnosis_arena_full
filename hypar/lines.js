@@ -4775,7 +4775,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"Raising the honor... of the tribe...",
+					text:"Raising the honor... of the beastfolk...",
 				},
 				{
 					cond:true, pos:1,
@@ -7870,7 +7870,7 @@ const line = {
 		},
 	],
 
-	"제조":[
+	"Crafted":[
 		{
 			priority:0, cond:true,
 			lineList:[
@@ -10055,7 +10055,7 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"커스텀.성격", op:"==", v2:"저항"}], pos:1,
-					text:"Ooh,<br>were you also cast out from your tribe?",
+					text:"Ooh,<br>were you also cast out from your beastfolk?",
 				},
 				{
 					cond:["and", {v1:"커스텀.성격", op:"==", v2:"무지"}], pos:1,

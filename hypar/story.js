@@ -25,8 +25,8 @@ const storyProfile = {
 			"Beastfolk": {
 				"KOR": `
 					<b>Background:</b> Watchwoman<br>
-					- A watchwoman who guards her tribe, known for her strong loyalty and protective instincts.<br>
-					- With her exceptional senses and combat skills, she repels all threats to the tribe, a steadfast guardian who protects her comrades anytime, anywhere.
+					- A watchwoman who guards her beastfolk, known for her strong loyalty and protective instincts.<br>
+					- With her exceptional senses and combat skills, she repels all threats to the beastfolk, a steadfast guardian who protects her comrades anytime, anywhere.
 				`
 			}
 		}, // <--- ЗАПЯТАЯ
@@ -51,8 +51,8 @@ const storyProfile = {
 			"Beastfolk": {
 				"KOR": `
 					<b>Background:</b> Tribal Leader<br>
-					- As the leader of her tribe, she upholds generations of tradition and wisdom, earning the absolute trust of her people through her strength and composure.<br>
-					- She leads the tribe with exceptional judgment and combat skills, and is respected among neighboring tribes as a powerful figure who values honor.
+					- As the leader of her beastfolk, she upholds generations of tradition and wisdom, earning the absolute trust of her people through her strength and composure.<br>
+					- She leads the beastfolk with exceptional judgment and combat skills, and is respected among neighboring beastfolks as a powerful figure who values honor.
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
@@ -262,8 +262,8 @@ const storyProfile = {
 			"Beastfolk": {
 				"KOR": `
 					<b>Product Overview:</b> Former Watchwoman<br>
-					- A guard dog who used to protect the Tribe.<br>
-					- Captured using one of her tribe members as bait.<br>
+					- A guard dog who used to protect the Beastfolk.<br>
+					- Captured using one of her beastfolk members as bait.<br>
 					- Currently being trained as a fleshlight, brainwashed to pledge loyalty to a man's cock.
 				`,
 			},
@@ -291,7 +291,7 @@ const storyProfile = {
 			"Beastfolk": {
 				"KOR": `
 					<b>Product Overview:</b> Former Tribal Leader<br>
-					- A renowned chief who used to lead the Tribe.<br>
+					- A renowned chief who used to lead the Beastfolk.<br>
 					- Targeted because she had many enemies in the neighboring territories.<br>
 					- Currently being trained as a fleshlight, brainwashed to feel an obligation to serve men.
 				`,
@@ -1461,18 +1461,18 @@ const storyText = {
 	}, ],
 
  
-//Beastfolk Soldier (Tribe Soldier/Watchwoman)
+//Beastfolk Soldier (Beastfolk Soldier/Watchwoman)
 	"intro_Tr_bg1": [{
 		cond: true,
 		type: "text",
 		KOR: `
-				Your sacred duty is to protect every member of the tribe—not only those who dwell within your lands, but also those who wander the world beyond.<br>
+				Your sacred duty is to protect every member of the beastfolk—not only those who dwell within your lands, but also those who wander the world beyond.<br>
 				To this end, you have maintained a vigilant watch over your kin, keeping in close contact to ensure their well-being.<br>
 				<br>
 				One day, you abruptly lost contact with a dear friend, an adventurer working in the Eldoria Kingdom.<br>
 				She was a steadfast warrior with whom you spoke regularly. Your instincts screamed that something was terribly wrong.<br>
 				<br>
-				Abandoning your post as the tribe's watchwoman was no small matter.<br>
+				Abandoning your post as the beastfolk's watchwoman was no small matter.<br>
 				However, your keen, primal senses told you that you were the only one who could save her from whatever darkness had claimed her.<br>
 				After securing the chief's permission, you entrusted your duties to a colleague and set off to hunt for your friend.<br>
 				<br>
@@ -1522,11 +1522,11 @@ const storyText = {
 				Trying to clear the fog from your mind, you gradually remember waiting for a duel with the champion on the arena stage.<br>
 				<br>
 				<br>
-				You had to investigate this depraved arena to find your missing tribesister.<br>
+				You had to investigate this depraved arena to find your missing beastfolksister.<br>
 				To do that, you must engage in a sex duel with the champion.<br>
 				<br>
-				As the watchwoman of the tribe, you have always spread your cunt to appease outsiders and preserve the tribe's fragile peace.<br>
-				It was a tribal law, a grim necessity, to offer your body as a breeding vessel for any invader who threatened your people, to be constantly defiled for the tribe's survival.<br>
+				As the watchwoman of the beastfolk, you have always spread your cunt to appease outsiders and preserve the beastfolk's fragile peace.<br>
+				It was a tribal law, a grim necessity, to offer your body as a breeding vessel for any invader who threatened your people, to be constantly defiled for the beastfolk's survival.<br>
 				Therefore, fucking the champion was simply another day's work.<br>
 				<br>
 				If you lose the duel, you will become the arena's sex slave. That is only natural.<br>
@@ -1641,12 +1641,12 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				You were a watchwoman, a guardian of your tribe.<br>
+				You were a watchwoman, a guardian of your beastfolk.<br>
 				You were tasked with shielding your people from invaders and watching over your kin who had journeyed out into the world.<br>
 				You came to this hellhole because you sensed a friend had gone missing here.<br>
 				<br>
 				But it was a trap. A brutally simple and effective one.<br>
-				The arena has long preyed upon the Tribe's fierce solidarity, using it as the perfect bait to ensnare new chattel.<br>
+				The arena has long preyed upon the Beastfolk's fierce solidarity, using it as the perfect bait to ensnare new chattel.<br>
 				You walked right into a classic chain trap: capture one, and another will dutifully follow, one after another, until the whole pack is caged.<br>
 				<br>
 				<br>
@@ -1695,7 +1695,7 @@ const storyText = {
 				<br>
 				You ponder his words, lost in the wreckage of your thoughts.<br>
 				Your desire...<br>
-				It must be to resolve this, to hunt down every last one of your tribesisters sold off to these pits, and rescue them... right?
+				It must be to resolve this, to hunt down every last one of your beastfolksisters sold off to these pits, and rescue them... right?
 			`,
 	}, {
 		cond: true,
@@ -1727,7 +1727,7 @@ const storyText = {
 		type: "text",
 		KOR: `
 				He's right.<br>
-				You realize with a sickening lurch that you no longer feel any sense of belonging to the tribe, no shred of responsibility as its guardian.<br>
+				You realize with a sickening lurch that you no longer feel any sense of belonging to the beastfolk, no shred of responsibility as its guardian.<br>
 				At the same time, you come face to face with the depraved, undeniable truth festering in your soul.
 			`,
 	}, {
@@ -2351,26 +2351,26 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Beastfolk Noble (Tribe Elite/Chieftain)
+//Beastfolk Noble (Beastfolk Elite/Chieftain)
 	"intro_Tr_bg2": [{
 		cond: true,
 		type: "text",
 		KOR: `
-				For generations, your tribe has been locked in bitter conflict with the neighboring Eldorian territory.<br>
+				For generations, your beastfolk has been locked in bitter conflict with the neighboring Eldorian territory.<br>
 				A clash of cultures and interests fueled endless, bloody disputes.<br>
-				Recently, however, a fragile peace was forged. To commemorate this truce, the lord of Eldoria sent a special gift to you and your tribe as a supposed sign of reconciliation.<br>
+				Recently, however, a fragile peace was forged. To commemorate this truce, the lord of Eldoria sent a special gift to you and your beastfolk as a supposed sign of reconciliation.<br>
 				<br>
 				The gifts included rare treasures, foodstuffs... and a single, ornate invitation.<br>
 				The invitation was to a place called the <b>Underground Secret Arena</b>. Its luxurious design and provocative wording immediately seized your attention.<br>
 				As a leader who values honor and challenge above all else, you saw this not as mere entertainment, but as an omen.<br>
-				You felt it was a chance to elevate your tribe's name, to announce its power to the world.<br>
+				You felt it was a chance to elevate your beastfolk's name, to announce its power to the world.<br>
 				<br>
-				The tribe was enjoying a rare period of peace; your absence would not cripple its governance.<br>
+				The beastfolk was enjoying a rare period of peace; your absence would not cripple its governance.<br>
 				Thus, you decided to accept the invitation. It stirred your warrior's heart with an unusual intensity, making the journey feel less like a simple visit and more like a trial you were destined to face.<br>
 				<br>
 				You entrusted the mantle of chieftain to your second-in-command and set out alone.<br>
-				After making the necessary preparations as instructed, you quietly slipped away from the tribe.<br>
-				You took your first step towards a new challenge, a new trial that would either elevate your tribe's honor or shatter it completely.
+				After making the necessary preparations as instructed, you quietly slipped away from the beastfolk.<br>
+				You took your first step towards a new challenge, a new trial that would either elevate your beastfolk's honor or shatter it completely.
 			`,
 	}, {
 		cond: true,
@@ -2409,15 +2409,15 @@ const storyText = {
 				While trying to clear the fog from your mind, the memory of waiting for a duel with the champion on the arena stage slowly returns.<br>
 				<br>
 				<br>
-				You came to this arena to seize a challenge and bring honor to your tribe.<br>
+				You came to this arena to seize a challenge and bring honor to your beastfolk.<br>
 				That is why you are about to have a sex duel with the champion.<br>
 				<br>
-				As the chieftain, you have always honed your sexual prowess to prove the tribe's strength, dutifully servicing the needs of your people.<br>
+				As the chieftain, you have always honed your sexual prowess to prove the beastfolk's strength, dutifully servicing the needs of your people.<br>
 				In negotiations with outsiders, it was a chieftain's duty to dominate them with overwhelming sexual favors, twisting any deal to your advantage.<br>
 				Therefore, fucking the champion was not an unfamiliar task.<br>
 				<br>
 				If you lose the duel, you will become a sex slave of the arena. That is only natural.<br>
-				As the living embodiment of your tribe's honor, you could never commit the shameful act of breaking such a sacred rule.<br>
+				As the living embodiment of your beastfolk's honor, you could never commit the shameful act of breaking such a sacred rule.<br>
 				<br>
 				<br>
 				You immediately resume your preparations.<br>
@@ -2528,9 +2528,9 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				You were the chieftain, the living symbol of your tribe.<br>
+				You were the chieftain, the living symbol of your beastfolk.<br>
 				As a leader, you carried the heavy burden of guiding your people and representing their honor to the world.<br>
-				You came to this arena seeking a challenge, but more than that, to elevate your tribe's name.<br>
+				You came to this arena seeking a challenge, but more than that, to elevate your beastfolk's name.<br>
 				<br>
 				However, this was nothing but a cowardly trap that exploited your warrior's pride.<br>
 				Your power made you a thorn in the side of the neighboring territories.<br>
@@ -2582,7 +2582,7 @@ const storyText = {
 				<br>
 				You ponder his words, lost in the wreckage of your thoughts.<br>
 				Your desire...<br>
-				It must be to return to the tribe, to let them know you are safe... and then fight to reclaim the status you have lost... right?
+				It must be to return to the beastfolk, to let them know you are safe... and then fight to reclaim the status you have lost... right?
 			`,
 	}, {
 		cond: true,
@@ -2614,7 +2614,7 @@ const storyText = {
 		type: "text",
 		KOR: `
 				He's right.<br>
-				You realize with a sickening lurch that you no longer feel any sense of belonging to the tribe, no shred of responsibility as its chieftain.<br>
+				You realize with a sickening lurch that you no longer feel any sense of belonging to the beastfolk, no shred of responsibility as its chieftain.<br>
 				At the same time, you come face to face with the depraved, undeniable truth festering in your soul.
 			`,
 	}, {
@@ -3618,12 +3618,12 @@ const storyText = {
 
 
 
-//Beastfolk Celebrity (Tribe Celebrity/Arena Champion)
+//Beastfolk Celebrity (Beastfolk Celebrity/Arena Champion)
 	"intro_Tr_bg3": [{
 		cond: true,
 		type: "text",
 		KOR: `
-				After leaving your tribe to test your strength against the world's best, you were scouted by a fighting arena owner who recognized your raw power. You rose to become his champion.<br>
+				After leaving your beastfolk to test your strength against the world's best, you were scouted by a fighting arena owner who recognized your raw power. You rose to become his champion.<br>
 				You won countless bloody matches, amassing fame and fortune, but a creeping disillusionment began to poison your victories. You grew disgusted by the charade of staged fights and battles performed merely for the crowd's cheers.<br>
 				Sometimes you were forced to throw matches. The pure, honest purpose of competing with true skill had vanished.<br>
 				<br>
@@ -4524,7 +4524,7 @@ const storyText = {
 
 
 
-//Beastfolk Cleric (Tribe Religious)
+//Beastfolk Cleric (Beastfolk Religious)
 	"intro_Tr_bg4": [{
 		cond: true,
 		type: "text",
@@ -5721,7 +5721,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Beastfolk Scholar (Tribe Scholar/Wandering Sage)
+//Beastfolk Scholar (Beastfolk Scholar/Wandering Sage)
 	"intro_Tr_bg5": [{
 		cond: true,
 		type: "text",
@@ -6918,13 +6918,13 @@ const storyText = {
 
 
 
-//Beastfolk Rogue (Tribe Criminal)
+//Beastfolk Rogue (Beastfolk Criminal)
 "intro_Tr_bg6": [{
 	cond: true,
 	type: "text",
 	KOR: `
 				An exile has no home. No sanctuary.<br>
-				The brand seared into your flesh marks you as an outcast; no tribe would dare let you near.<br>
+				The brand seared into your flesh marks you as an outcast; no beastfolk would dare let you near.<br>
 				Of course, it was your own choice to prey on passersby just to fill your stomach.<br>
 				Because of that, you were a wanted woman in the cities of the Eldoria Kingdom, a ghost they wouldn't even let through the gates.<br>
 				<br>
@@ -6988,7 +6988,7 @@ const storyText = {
 				You had no fucking choice.<br>
 				<br>
 				As a marauder of the wastelands, you made a living by ambushing, stripping, and raping anyone who crossed your path.<br>
-				Nursing a bitter grudge against the tribe that cast you out, you lived by diligently using your body, fueled by the ambition of one day violating every last one of them.<br>
+				Nursing a bitter grudge against the beastfolk that cast you out, you lived by diligently using your body, fueled by the ambition of one day violating every last one of them.<br>
 				Therefore, fucking the champion was just another Tuesday.<br>
 				<br>
 				If you lose, you become the arena's sex slave. That's only natural.<br>
@@ -7094,7 +7094,7 @@ const storyText = {
 	cond: true,
 	type: "text",
 	KOR: `
-				You were a criminal, an outcast exiled from your own tribe.<br>
+				You were a criminal, an outcast exiled from your own beastfolk.<br>
 				With nowhere to belong, you wandered and plundered, preying on the weak to survive.<br>
 				Then, you stumbled upon an invitation to the arena, stole it, and were foolishly captured.<br>
 				<br>
@@ -8153,7 +8153,7 @@ const storyText = {
 
 
 
-//Beastfolk Merchant (Tribe Merchant)
+//Beastfolk Merchant (Beastfolk Merchant)
 "intro_Tr_bg7": [{
 	cond: true,
 	type: "text",
@@ -9332,7 +9332,7 @@ const storyText = {
 			`,
 }, ], // <--- ЗАПЯТАЯ
 
-//Beastfolk Mercenary (Tribe Mercenary)
+//Beastfolk Mercenary (Beastfolk Mercenary)
 "intro_Tr_bg8": [{
 	cond: true,
 	type: "text",
