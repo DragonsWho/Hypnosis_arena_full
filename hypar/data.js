@@ -1920,7 +1920,7 @@ const endingList = {
 		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
 	},
 	"hard_win_bg8":{
-		name:{ "KOR":"As Desire Leads" }, endingId:"winH_bg8", img:"endingH_win_8", category:"하드승리엔딩",
+		name:{ "KOR":"As Lust Leads" }, endingId:"winH_bg8", img:"endingH_win_8", category:"하드승리엔딩",
 		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
 	},
 
@@ -3444,16 +3444,16 @@ const keywordDict = {
         desc: { "KOR":"Combines multiple cards into a single Combined Card.<br>When a Combined Card is used, the effects of its material cards activate in sequence." }
     },
 	"Lust": {
-        name: { "KOR":"Desire" },
-        desc: { "KOR":"Whenever Excitement increases, gain an equal amount of Desire." }
+        name: { "KOR":"Lust" },
+        desc: { "KOR":"Whenever Excitement increases, gain an equal amount of Lust." }
     },
 	"Lustn": {
-        name: { "KOR":"Desire (n)" },
-        desc: { "KOR":"Whenever Excitement increases, gain an equal amount of Desire.<br>If you have n or more Desire, consume that much to gain the following effect." }
+        name: { "KOR":"Lust (n)" },
+        desc: { "KOR":"Whenever Excitement increases, gain an equal amount of Lust.<br>If you have n or more Lust, consume that much to gain the following effect." }
     },
 	"LustMaxn": {
-        name: { "KOR":"Desire (up to n)" },
-        desc: { "KOR":"Whenever Excitement increases, gain an equal amount of Desire.<br>Consume all your Desire, up to a maximum of n, to gain the following effect." }
+        name: { "KOR":"Lust (up to n)" },
+        desc: { "KOR":"Whenever Excitement increases, gain an equal amount of Lust.<br>Consume all your Lust, up to a maximum of n, to gain the following effect." }
     },
 	"Generated": {
         name: { "KOR":"Generated Card" },

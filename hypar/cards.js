@@ -1987,13 +1987,13 @@ const cardDB = {
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"You must always show a glamorous and positive side to the public." },
 		hypnoText:{ "KOR":"The virtues a star should have are ingrained in your mind.<br>No matter how much you don't want to do it or how painful it is, you must not lose your smile." },
-		text:{ "KOR":"<b>Desire</b> can only accumulate up to 12." },
+		text:{ "KOR":"<b>Lust</b> can only accumulate up to 12." },
 		effect:[
 			{trigger:"trait", cond:true, type:"maxLust", value:12},
 		]
 	},*/
 	"DA-WA-BG4-001":{
-		name:{ "KOR":"Desire is Sin" }, class:"Warrior", type:"특성", isDeck:false, rarity:"None", bg:"Cleric", cost:-15,
+		name:{ "KOR":"Lust is Sin" }, class:"Warrior", type:"특성", isDeck:false, rarity:"None", bg:"Cleric", cost:-15,
 		tags:["부정적"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Your faith teaches you to suppress desire.<br>It takes a very strict stance on the sin of not following this teaching." },
@@ -2003,12 +2003,12 @@ const cardDB = {
 		]
 	},
 	/*"DA-WA-BG4-002":{
-		name:{ "KOR":"Desire is Sin" }, class:"Warrior", type:"특성", isDeck:false, rarity:"None", bg:"Cleric", cost:-15,
+		name:{ "KOR":"Lust is Sin" }, class:"Warrior", type:"특성", isDeck:false, rarity:"None", bg:"Cleric", cost:-15,
 		tags:["부정적"],
 		expiration:"always", duration:Infinity,
-		flavorText:{ "KOR":"Desire corrupts people, so the doctrine does not permit it." },
+		flavorText:{ "KOR":"Lust corrupts people, so the doctrine does not permit it." },
 		hypnoText:{ "KOR":"Your extreme faith has taken deep root, making you hesitant to show desire." },
-		text:{ "KOR":"Cannot gain <b>Desire</b>." },
+		text:{ "KOR":"Cannot gain <b>Lust</b>." },
 		effect:[
 			{trigger:"always", cond:true, type:"lustBan"},
 		]
@@ -3298,7 +3298,7 @@ const cardDB = {
 				effect:[
 					{trigger:"used", cond:true, notext:true, type:"lewd", repeat:"consumeLust", op:"add", value:1},
 					{trigger:"used", cond:true, notext:true, type:"Heat", adverb:"and", repeat:"consumeLust", op:"add", value:-1},
-					{trigger:"none", cond:true, type:"text", value:{ "KOR":"For each <b>Desire</b> spent, <b>Lewdness +1, Heat -1.</b>" }},
+					{trigger:"none", cond:true, type:"text", value:{ "KOR":"For each <b>Lust</b> spent, <b>Lewdness +1, Heat -1.</b>" }},
 				]
 			}},
 		]
@@ -3372,7 +3372,7 @@ const cardDB = {
 			{trigger:"used", cond:{v1:"Heat", op:">=", v2:4}, type:"changeFace", target:"self", value:"ecstasy2"},
 			{trigger:"used", cond:{v1:"Heat", op:">=", v2:4}, type:"line", value:"전투포효"},
 			{trigger:"used", cond:true, notext:true, type:"specialA01"},
-			{trigger:"none", cond:true, type:"text", value:{ "KOR":"Reduce <b>Heat</b> to its minimum value and gain <b>Desire +2</b> for each point reduced." }},
+			{trigger:"none", cond:true, type:"text", value:{ "KOR":"Reduce <b>Heat</b> to its minimum value and gain <b>Lust +2</b> for each point reduced." }},
 			{trigger:"used", cond:{v1:"Heat", op:">=", v2:4}, type:"changeCond", target:"self", value:"corrupted"},
 		]
 	},
@@ -6082,7 +6082,7 @@ const cardDB = {
 		effect:[
 			{trigger:"none", cond:false, type:"text", value:{ "KOR":"Gain the resources of the selected profession." }},
 			{trigger:"used", notext:true, cond:{v1:"커스텀.Class", op:"==", v2:"Warrior"}, type:"changeLust", op:"add", value:5},
-			{trigger:"none", cond:{v1:"커스텀.Class", op:"==", v2:"Warrior"}, type:"caption", value:{ "KOR":"<b>Desire +5</b>" }},
+			{trigger:"none", cond:{v1:"커스텀.Class", op:"==", v2:"Warrior"}, type:"caption", value:{ "KOR":"<b>Lust +5</b>" }},
 			{trigger:"used", notext:true, cond:{v1:"커스텀.Class", op:"==", v2:"Assassin"}, type:"changeWetness", op:"add", value:5},
 			{trigger:"none", cond:{v1:"커스텀.Class", op:"==", v2:"Assassin"}, type:"caption", value:{ "KOR":"<b>Wetness +5</b>" }},
 			{trigger:"used", notext:true, cond:{v1:"커스텀.Class", op:"==", v2:"Mage"}, type:"changeSBlock", op:"add", value:4},
