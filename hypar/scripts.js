@@ -406,7 +406,7 @@ function init() {
 		collectionTrait.appendChild(cardDiv);
 	});
 
-	document.getElementById("collectionChamp").appendChild(createTitledElement("일반"));
+	document.getElementById("collectionChamp").appendChild(createTitledElement("Normal"));
 	let _hardStart = false;
 	let _challengeStart = false;
 	Object.keys(champList).forEach(id => {
@@ -427,7 +427,7 @@ function init() {
 		} else */
 		if(champData.category == '마지막상대' && !_hardStart) {
 			_hardStart = true;
-			document.getElementById("collectionChamp").appendChild(createTitledElement("하드"));
+			document.getElementById("collectionChamp").appendChild(createTitledElement("Hard"));
 		}
 		if(champData.category == '챌린지') {
 			if(!(cl && cl.boss[id])) {
@@ -435,7 +435,7 @@ function init() {
 			}
 			if(!_challengeStart) {
 				_challengeStart = true;
-				document.getElementById("collectionChamp").appendChild(createTitledElement("챌린지"));
+				document.getElementById("collectionChamp").appendChild(createTitledElement("Challenge"));
 			}
 		}
 
@@ -494,9 +494,9 @@ function init() {
 		document.getElementById("collectionChamp").appendChild(boxDiv);
 	});
 	let endingCount = 0;
-	const endingTitles = ["일반-패배", "일반-승리", "하드-패배", "하드-승리", "기타"];
+	const endingTitles = ["Normal - Defeat", "Normal - Victory", "Hardcore - Defeat", "Hardcore - Victory", "Other"];
 	Object.keys(endingList).forEach(id => {
-		if(endingList[id].category == "기타" && !(cl && cl.ending[id])) {
+		if(endingList[id].category == "Other" && !(cl && cl.ending[id])) {
 			return;
 		}
 		if(endingCount % 8 == 0) {
@@ -889,7 +889,7 @@ function selectCollection(type, id, history = true) {
 			    cltext += `
 			        <div style="width: 50%; border: 1px solid var(--color-active); border-radius:32px; padding: 16px; display: flex; flex-direction: column; gap: 16px;">
 					    <div style="font-size: 18px; font-weight: bold; margin-bottom: 8px; text-align: center;">
-					        하드 모드 클리어
+					        Hard 모드 클리어
 					    </div>
 					    
 					    <div style="display: flex; align-items: center; gap: 16px;">
@@ -1270,26 +1270,26 @@ function initEnemyCardSelect() {
 	/*for(let id in cardDB) {
 		const card = deepCopy(cardDB[id]);
 		if(card.tags.includes("Champion능력")) {
-			if(!card.tags.includes("하드전용")) {
+			if(!card.tags.includes("Hard Only")) {
 				const deckCardDiv = createCard(card, 32, false, 99);
 				document.getElementById(card.class+"능력").appendChild(deckCardDiv);
 				adjustCardFontSize(deckCardDiv);
 			}
 			/*if(!card.tags.includes("노말전용")) {
 				const deckCardDiv = createCard(card, 32);
-				document.getElementById(card.class+"(하드)능력").appendChild(deckCardDiv);
+				document.getElementById(card.class+"(Hard)능력").appendChild(deckCardDiv);
 				adjustCardFontSize(deckCardDiv);
 			}
 		}
 		if(card.tags.includes("Champion토큰")) {
-			if(!card.tags.includes("하드전용")) {
+			if(!card.tags.includes("Hard Only")) {
 				const deckCardDiv = createCard(card, 32, false, 99);
 				document.getElementById(card.class+"토큰").appendChild(deckCardDiv);
 				adjustCardFontSize(deckCardDiv);
 			}
 			if(!card.tags.includes("노말전용")) {
 				const deckCardDiv = createCard(card, 32);
-				document.getElementById(card.class+"(하드)토큰").appendChild(deckCardDiv);
+				document.getElementById(card.class+"(Hard)토큰").appendChild(deckCardDiv);
 				adjustCardFontSize(deckCardDiv);
 			}
 		}
@@ -1303,7 +1303,7 @@ function initEnemyCardSelect() {
 			adjustCardFontSize(deckCardDiv);
 		}
 	}
-	for(let champ of champions["하드"]) {
+	for(let champ of champions["Hard"]) {
 		for(let id of opDeckList[champ]) {
 			const card = deepCopy(cardDB[id]);
 			card.owner = 0;
@@ -2257,7 +2257,7 @@ function selectHardEnemy() {
 }
 
 function randomSelect(category) {
-	let choiceElements = Array.from(document.getElementsByClassName(category)).filter(div => div.style.display !== 'none' && !div.classList.contains('disabled') && div.querySelector("h2.box-title").textContent != '기타');
+	let choiceElements = Array.from(document.getElementsByClassName(category)).filter(div => div.style.display !== 'none' && !div.classList.contains('disabled') && div.querySelector("h2.box-title").textContent != 'Other');
 	let choiceElement = getRandom(choiceElements);
 
 	if(choiceElement) {
@@ -7265,7 +7265,7 @@ function cardStateUpdate() {
     document.getElementById("deck").innerHTML = `${getWord("덱")}: ` + deck.length+(maxDeckSize<99?("/"+maxDeckSize):"");
     document.getElementById("cards").innerHTML = `${getWord("attack")} ${getWord("card")}: ` + checkNum(deck, "type", "attack");
     document.getElementById("cards").innerHTML += ` | ${getWord("보조")} ${getWord("card")}: ` + checkNum(deck, "type", "보조");
-    document.getElementById("cards").innerHTML += ` | ${getWord("기타")} ${getWord("card")}: ` + (deck.length - (checkNum(deck, "type", "attack") + checkNum(deck, "type", "보조") + checkNum(deck, "type", "Penalty")));
+    document.getElementById("cards").innerHTML += ` | ${getWord("Other")} ${getWord("card")}: ` + (deck.length - (checkNum(deck, "type", "attack") + checkNum(deck, "type", "보조") + checkNum(deck, "type", "Penalty")));
 	document.getElementById("cards").innerHTML += ` | ${getWord("Penalty")} ${getWord("card")}: ` + checkNum(deck, "type", "Penalty");
 	if(essences.length > 0) {
 		document.getElementById("deck").innerHTML += ` + ${essences.length}/5`
@@ -9907,12 +9907,12 @@ async function turnEndEvent() {
 		case "boss3":
 			break;
 		case "boss4":
-			if(!eventsRecord.includes("악동-망할꼬맹이") && enemy.condition == 'normal' && enemy.state.some(cd => cd.id == "B4-PA-001" && cd.stack >= 3)) {
+			if(!eventsRecord.includes("Imp-망할꼬맹이") && enemy.condition == 'normal' && enemy.state.some(cd => cd.id == "B4-PA-001" && cd.stack >= 3)) {
 				eventLine += "-망할꼬맹이";
 				_specialEvent = true;
 				enemy.condition = "openEye";
 				changePortrait("openEye", 0);
-				eventsRecord.push("악동-망할꼬맹이");
+				eventsRecord.push("Imp-망할꼬맹이");
 			}
 			break;
 		case "boss5":
@@ -15603,7 +15603,7 @@ function deckListRefresh(div) {
         listItem.className = 'profile-item';
         listItem.innerHTML = `
             <span class="captionNum">${index+1}</span>
-            <span>${choiceValues.class}${dc.state.some(st => st.startsWith("AD-SL"))?" (하드)":""/*(dc.deck.some(cd => cardDB[cd] && (cardDB[cd].type == "만능" || cardDB[cd].type == "Arcane" || cardDB[cd].type == "Crafted" || cardDB[cd].type == "시련"))?" (일반)":"")*/}</span>
+            <span>${choiceValues.class}${dc.state.some(st => st.startsWith("AD-SL"))?" (Hard)":""/*(dc.deck.some(cd => cardDB[cd] && (cardDB[cd].type == "만능" || cardDB[cd].type == "Arcane" || cardDB[cd].type == "Crafted" || cardDB[cd].type == "시련"))?" (일반)":"")*/}</span>
             <span style="color: ${dc.race == "-" || choiceValues.race == dc.race?"var(--color-text)":"red"}">${dc.race}</span>
             <span style="color: ${dc.background == "-" || choiceValues.background == dc.background?"var(--color-text)":"red"}">${dc.background}</span>
             <span class="captionName">${dc.name}</span>
@@ -18394,7 +18394,7 @@ async function lineTest(options = {}) {
         for (let ps of playerStates) {
             choiceValues.ps = ps;
         	for (let num of eventNumbers) {
-                console.log(`현재 실행 중: \n${enemy.name}-이벤트-${num} \n(Personality: ${choiceValues.ps}, 모드: ${gamemode == 1?"하드":"일반"})`);
+                console.log(`현재 실행 중: \n${enemy.name}-이벤트-${num} \n(Personality: ${choiceValues.ps}, 모드: ${gamemode == 1?"Hard":"일반"})`);
 
                 switch(num) {
                 case "개전":
@@ -18443,7 +18443,7 @@ async function lineTest(options = {}) {
                 document.removeEventListener('keydown', eventSkipHandler);
                 await wait(500);
 
-                const proceed = confirm(`${enemy.name}-이벤트-${num} | (Personality: ${choiceValues.ps}, 상태: ${player.condition}, 하드모드: ${gamemode}) 확인.`);
+                const proceed = confirm(`${enemy.name}-이벤트-${num} | (Personality: ${choiceValues.ps}, 상태: ${player.condition}, Hard Mode: ${gamemode}) 확인.`);
                 if (!proceed) {
                     console.log("테스트를 중단합니다.");
                     resetLineData();

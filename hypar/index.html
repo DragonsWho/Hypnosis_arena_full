@@ -325,7 +325,7 @@
 
                     var matchesSearch = searchText.every(term => cardText.includes(term) || Object.values(Object.values(cardData)).some(value => typeof value == 'string' && value.toLowerCase().includes(term)));
                     var matchesClassFilter = !classFilterActive || classFilters.includes(cardData.class) || (classFilters.includes("Champion") && cardData.tags.includes("Champion덱"));
-                    var matchesTypeFilter = !typeFilterActive || typeFilters.includes(cardData.type) || (typeFilters.includes("기타") && !allTypeFilters.includes(cardData.type));
+                    var matchesTypeFilter = !typeFilterActive || typeFilters.includes(cardData.type) || (typeFilters.includes("Other") && !allTypeFilters.includes(cardData.type));
                     var matchesRarityFilter = !rarityFilterActive || rarityFilters.includes(cardData.rarity);
 
                     if (matchesSearch && matchesClassFilter && matchesTypeFilter && matchesRarityFilter) {
@@ -662,7 +662,7 @@
                 <label><input type="checkbox" class="typeFilter" value="보조"> Support</label>
                 <label><input type="checkbox" class="typeFilter" value="Position"> Position</label>
                 <label><input type="checkbox" class="typeFilter" value="Penalty"> Penalty</label>
-                <label><input type="checkbox" class="typeFilter" value="기타"> Other</label>
+                <label><input type="checkbox" class="typeFilter" value="Other"> Other</label>
             </div>
             <div class="filterGroup" style="width:33%;">
                 <label><input type="checkbox" class="rarityFilter" value="일반"> Common</label>

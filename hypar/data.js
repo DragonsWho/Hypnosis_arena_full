@@ -37,7 +37,7 @@ const dictionary = {
 	"파란색":{ "KOR":"Blue" },
 	"분홍색":{ "KOR":"Pink" },
 	"보라색":{ "KOR":"Violet" },
-	"기타":{ "KOR":"Other" },
+	"Other":{ "KOR":"Other" },
 
 	"연한색":{ "KOR":"Pale" },
 	"살구색":{ "KOR":"Apricot" },
@@ -180,17 +180,17 @@ const dictionary = {
 
 	"Magic Missile":{ "KOR":"Magic Missile" },
 
-	"하드모드":{ "KOR":"Hard Mode" },
+	"Hard Mode":{ "KOR":"Hard Mode" },
 
 	"Goblins":{ "KOR":"Goblins" },
 	"Villager":{ "KOR":"Villager" },
 	"Tentacle Slime":{ "KOR":"Tentacle Slime" },
-	"악동":{ "KOR":"Imp" },
+	"Imp":{ "KOR":"Imp" },
 	"Tauros":{ "KOR":"Tauros" },
 	"Mushroom Man":{ "KOR":"Mushroom Man" },
 	"Blonde Thug":{ "KOR":"Blonde Thug" },
 	"Trainer":{ "KOR":"Trainer" },
-	"산드레아":{ "KOR":"Sandrea" },
+	"Sandrea":{ "KOR":"Sandrea" },
 
  
 	"생성된 card": { "KOR": "Generated Card" },
@@ -348,8 +348,7 @@ const champList = {
 
 		id:"boss1",
 		name:{ "KOR":"Goblins" }, fullName:{ "KOR":"The Goblin Pack" }, img:"boss1", category:"First Opponent",
-		condDesc:{ "KOR":`Win against <b>[${dictionary["Goblins"]["KOR"]}]</b> in normal mode`,
-		"ENG":`Win against <b>[${dictionary["Goblins"]["KOR"]}]</b> in normal mode` },
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Goblins"]["KOR"]}]</b> in normal mode`},
 		look: { "KOR":"A pack of weak goblins... Are they serious?" },
     logDesc: { "KOR":`A pack of goblins, bred and raised in the Arena's pens specifically for this purpose: to watch a powerful female warrior get broken and bred by the lowest of monsters.<br><br>Individually, they are pathetic. Their strength comes from their numbers and their feral, swarming tactics. Genetically potent, they are infamous for their ability to impregnate females of almost any species, often dragging human women back to their nests to serve as broodmothers.<br><br>These particular goblins are kept in a constant state of savage heat, fed a diet laced with potent aphrodisiacs. This chemical cocktail contaminates their seed, acting as a potent drug that heightens the arousal and breaks the will of anyone they violate.` },
     description: { "KOR":`
@@ -490,8 +489,6 @@ const champList = {
 					"Shatters your concentration, breaking your combo.",
 	                "Punishes mistakes with massive damage"
                 ],
-                ENG: [
-                ]
             }
         },
 
@@ -565,12 +562,11 @@ const champList = {
 						<br>
 						You instinctively reach for your weapon, ready to end this farce, but your hand finds only empty air. A fog of confusion clouds your mind. <i>'Weapon? What weapon?'</i> The hypnosis whispers, rewriting your reality. <i>'Your pussy is your weapon.'</i><br>
 						<br>
-						How... How are you supposed to fight <i>this</i> with your pussy? How do you even begin to have sex with a shapeless mound of goo?<br>
+						How... how are you supposed to fight <i>this</i> with your pussy? How do you even begin to have sex with a shapeless mound of goo?<br>
 						<br>
-						As if sensing your confusion, its tentacles begin to snake across the floor towards you. They glide with an unnatural purpose, leaving glistening trails of slime in their wake. You remember the feeling—the cold, sticky, unpleasant grip. A primal instinct screams at you to leap away, to cut them off.<br>
+						As if sensing your confusion, its tentacles begin to snake across the floor towards you. You remember the feeling—the cold, sticky, unpleasant grip. A primal instinct screams at you to get away.<br>
 						<br>
-						But your mission, your purpose in this duel, is clear.  The thought is so bizarre it almost makes you laugh. You can't cut them. You have to... what? Welcome them?<br> 
-						Your only path to victory is to treat those probing appendages as cocks and somehow... somehow bring this creature to climax before it overwhelms you.<br>
+						But your mission in this duel is clear. Your only path to victory is to treat those probing appendages as cocks and somehow... somehow bring this creature to climax before it overwhelms you.<br>
 						<br>
 						The first tentacle brushes against your ankle. It's colder and stickier than you remember. And as it begins to coil its way up your leg, a horrifying thought strikes you.<br>
 						<br>
@@ -581,8 +577,8 @@ const champList = {
             orgasmL: 1,
             specialties: {
                 KOR: [
-					"Boasts incredible endurance, making for a long encounter.",
-					"Can recover from fatigue from attacks and prolong the fight.",
+					"Incredible endurance, making for a long encounter.",
+					"Recovers from attacks, prolonging the fight.",
 					"Its attacks grow more intense the longer the fight drags on."
                 ],
                 ENG: [
@@ -640,8 +636,8 @@ const champList = {
 	"boss4":{
 		id:"boss4",
 		name:{ "KOR":"Imp" }, fullName:{ "KOR":"Boyish Incubus" }, img:"boss4", category:"First Opponent",
-		condDesc:{ "KOR":`Win against <b>[${dictionary["악동"]["KOR"]}]</b> in normal mode`,
-		"ENG":`Win against <b>[${dictionary["악동"]["KOR"]}]</b> in normal mode` },
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Imp"]["KOR"]}]</b> in normal mode`,
+		"ENG":`Win against <b>[${dictionary["Imp"]["KOR"]}]</b> in normal mode` },
 		look: { "KOR":"He looks like just a boy, with mischief sparkling in his eyes..." },
  
 
@@ -1092,16 +1088,53 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 		}
 	},
 
-	//
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 	"bossH1":{
 		id:"bossH1",
 		name:{ "KOR":"Goblins" }, fullName:{ "KOR":"Elite Goblins" }, img:"boss1", category:"마지막상대",
-		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["Goblins"]["KOR"]}]</b>를 상대로 승리`,
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Goblins"]["ENG"]}]</b> in hard mode`,
 		"ENG":`Win against <b>[${dictionary["Goblins"]["ENG"]}]</b> in hard mode` },
 		look: { "KOR":"A squad of veteran goblins." },
-		logDesc: { "KOR":"An even stronger pack of goblins raised in the arena.<br>Used to guarantee the defeat of women who are vulnerable to being outnumbered.<br><br>This pack is a selection of superior individuals created through a long process of goblin breeding and cultivation.<br>They have an understanding of tactics and exhibit high levels of coordination, showing intelligence unusual for goblins.<br><br>They understand the rules of the arena and actively enjoy and study the act of gang-raping women." },
-		description: { "KOR":`\n                The common notion that goblins are mere fodder doesn't apply in this arena.<br>\n            \tIn a normal battle, the challengers' skills would be more than enough to slaughter dozens of them.<br>\n            \tBut on the stage of a sex duel, they are a woman's worst enemy.<br>\n            \t<br>\n            \tThey see women as nothing more than objects for their sexual gratification.<br>\n            \tThey swarm simultaneously, thrusting their goblin cocks into every orifice, gang-raping their victims.<br>\n            \tWhile a challenger might have the strength to easily fend off a goblin,<br>\n            \tthe aphrodisiac in the semen sprayed all over their body robs them of the will to resist.<br> \n                <br>\n                <br>\n                Beaten, trampled, hair pulled,<br>\n                front and back holes violated at the same time, treated like a mount and forced to feel pleasure,<br>\n            \tthe women gang-raped by goblins lose their human dignity.<br>\n            \t<br>\n            \tEven if one goblin is finally brought to climax, another one simply takes its place.<br>\n            \tIn the face of seemingly endless torment, the challenger's spirit inevitably breaks.<br>\n            \t<br>\n            \t<br>\n                <b>More goblins, more semen.</b>\n            ` },
+		logDesc: { "KOR":"A specially bred strain of the Arena's goblins, selected for their intelligence and coordinated tactics. <br>Where their lesser kin are a mindless swarm, these veterans understand strategy. They are connoisseurs of violation, having studied the art of breaking powerful women through coordinated sexual assault. <br>They exist for one purpose: to ensure that any challenger vulnerable to being outnumbered is thoroughly and repeatedly raped, their will shattered under a tide of goblin seed." },
+		description: { "KOR":`
+            You remember the goblins. Not the pathetic runts from forgotten caves, but the Arena's special breed. The shock is gone, replaced by a cold, familiar dread.<br>
+            <br>
+            There is no pretense of a duel here. In their eyes, you are not a warrior. You are a collection of holes to be filled, a toy for their gratification. They see your defiance not as a challenge, but as foreplay.<br>
+            <br>
+            They swarm, a coordinated wave of grasping hands and eager, twitching cocks. While you might fend off one, or even two, their true weapon is the very seed they spill. The aphrodisiac-laced cum doesn't just arouse; it corrodes your will, turning your body against you, making you crave the very violation you fight.<br>
+            <br>
+            To be pinned down, used like a breeding sow, every orifice violated at once... it's a humiliation designed to shatter a warrior's pride, to reduce her to a mindless, twitching sex toy. They know this. They relish it.<br>
+            <br>
+            Even if one cum, there is always another ready to take its place, another foul cock to continue the violation. It’s a relentless, living tide of rape. They won't stop. They won't tire. They will fuck you until your mind shatters, until your pride is just a forgotten memory drowned in a sea of goblin seed.<br>
+                <br>
+                <b>More goblins. More cum. No escape.</b>` },
         stats: {
             exciteL: 5,
             orgasmL: 8,
@@ -1166,19 +1199,30 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	"bossH2":{
 		id:"bossH2",
 		name:{ "KOR":"Villager" }, fullName:{ "KOR":"Empowered Villager" }, img:"boss2", category:"마지막상대",
-		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["Villager"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["Villager"]["ENG"]}]</b> in hard mode` },
-		look: { "KOR":"An incompetent man, now with greater power." },
-		logDesc: { "KOR":"A pathetic man who shows no signs of growth.<br>He may be incompetent, but subjugating women is his one true calling.<br><br>He has been granted a genuine artifact instead of the usual replicas, allowing him to wield powerful hypnotic abilities.<br>Since then, he has been seen lost in his own fantasies, imagining how he will defile his opponents in the duels.<br><br>Lately, his arrogance has led him to complain about his treatment, but these complaints are easily silenced by letting him have his way with a few staff members." },
-		description: { "KOR":`\n                After spending so much time in the arena, you've concluded that this man is irredeemable trash.<br>\n            \tUgly and pathetic, with a needlessly high ego masking a constant inferiority complex.<br>\n            \tHe's lazy and does nothing, yet he's full of complaints and selfishness.<br>\n            \t<br>\n            \tA good-for-nothing man with no useful skills, yet the arena has placed a hypnotic artifact in his hands.<br>\n            \tWhile not as potent as Sandrea's, the artifact's power is absolute.<br>\n            \tEven superior and noble women, whom this man wouldn't dare look at outside the arena,<br>\n            \tbecome his personal fleshlights here, spreading their legs and begging to be used.<br> \n                <br>\n                <br>\n                You lose your freedom, unable to move as you wish. You orgasm when he commands it.<br>\n                The duel is unfair; you are merely a toy for him to tease and torment.<br>\n            \tThe lower this man's social standing, the further you fall beneath him, to the very bottom.<br>\n            \t<br>\n            \tBut what can you do? He is your Master, and you are his fleshlight.<br>\n            \tIt's only natural that a little cunt-toy can't defeat her Master's cock, right?<br>\n            \t<br>\n            \t<br>\n                <b>Penalty of Stronger Hypnosis</b>\n            ` },
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Villager"]["KOR"]}]</b> in hard mode`, },
+		    look: { "KOR": "The same pathetic man, now with even more power over you." },
+    logDesc: { "KOR": `A pathetic man who shows no signs of growth or improvement. It seems subjugating powerful women is his one true calling.<br><br>He has been granted a genuine Mind-Leash artifact, not a mere prototype. Since then, he spends his days lost in filthy fantasies of how he will defile his next opponent.<br><br>His newfound power has made him arrogant, and he often complains about his treatment. These complaints are easily silenced by letting him have his way with a few female staff members.` },
+    description: { "KOR": `
+                After all this time in the Arena, you've reached a simple conclusion: this man is irredeemable trash.<br>
+                <br>
+                He's ugly and pathetic, with a fragile ego masking a bottomless inferiority complex. A lazy, selfish degenerate. And the Arena has placed an artifact of absolute power in his hands.<br>
+                <br>
+                Here, noble women who wouldn't spare him a glance on the street are forced to spread their legs and become his personal fleshlights, begging to be used. And you are no different.<br>
+                <br>
+                You lose all freedom. Your body moves only when he allows it. You orgasm when he commands it. The duel is a farce; you are simply a toy for his amusement.<br>
+                <br>
+                The lower he is, the further you fall beneath him. But what can you do? He is your Master. And a little cunt-toy can't be expected to defeat her Master's cock, can she?<br>
+                <br>
+                <b>His control is absolute.</b>
+            ` },
         stats: {
             exciteL: 12,
             orgasmL: 3,
             specialties: {
                 KOR: [
-	                "Prevents card use",
-	                "Disrupts combos ",
-	                "Punishes mistakes with massive damage"
+	                "Locks your cards with mental commands",
+					"Shatters your concentration, breaking combos.",
+					"Punishes any mistake with devastating mental attacks."
                 ],
                 ENG: [
                 ]
@@ -1236,22 +1280,31 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	"bossH3":{
 		id:"bossH3",
 		name:{ "KOR":"Tentacle Slime" }, fullName:{ "KOR":"Enhanced Tentacle Slime" }, img:"bossH3", category:"마지막상대",
-		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["Tentacle Slime"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["Tentacle Slime"]["ENG"]}]</b> in hard mode` },
-		look: { "KOR":"A massive slime, bristling with tentacles." },
-		logDesc: { "KOR":"A Tentacle Slime specially bred in the arena.<br>It is used to ensure the defeat of women who are vulnerable to tentacle play.<br><br>This specimen has been grown to an abnormal size by mixing nutritional supplements into its feed.<br>It possesses a ferocious nature, and its high durability and regenerative abilities make it impossible to defeat by ordinary means.<br><br>However, its unnatural growth has left its body unstable, causing it to self-destruct shortly after the duel concludes." },
-		description: { "KOR":`\n                Slimes are easy monsters to modify due to their susceptibility to environmental changes.<br>\n            \tThe arena's research department has conducted various experiments to develop a powerful slime capable of subjugating women.<br>\n            \tThey discovered that making it monstrously large was the most effective method.<br>\n            \t<br>\n            \tIts massive body grants it immense power and countless tentacles.<br>\n            \tIts enhanced elasticity makes escaping its grasp with bare hands seem impossible.<br>\n            \tIt has no lethal capabilities, which ironically makes it a perfect fit for the secret underground arena.<br>\n                <br>\n                <br>\n                The Tentacle Slime's favorite food is female bodily fluids.<br>\n                Raised on a constant diet of saliva and vaginal juices to increase its size, its tentacles now desperately seek out a woman's orifices.<br>\n            \tWhen a tentacle gently penetrates and churns inside her, the intense stimulation brings the woman to orgasm, and the slime consumes the secreted fluids.<br>\n            \tThrough this malicious-free, instinctual process, challengers taste despair and are corrupted by exotic pleasure.<br>\n            \t<br>\n            \tWhile the slime does have a weakness—it collapses when stimulated beyond a certain threshold—<br>\n            \tcan your body possibly provide enough stimulation to bring down such a colossal creature?<br>\n            \t<br>\n            \t<br>\n                <b>Higher Threshold and Resilience</b>\n            ` },
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Tentacle Slime"]["KOR"]}]</b> in hard mode`, },
+		look: { "KOR": "A massive slime, bristling with ravenous tentacles." },
+		logDesc: { "KOR": `A tentacle slime force-fed a cocktail of nutritional supplements and aphrodisiacs to grow it to an abnormal size. It is ferocious, unnaturally durable, and possesses regenerative abilities that make a conventional victory impossible.<br><br>The unnatural growth has left its body unstable; it is designed to self-destruct shortly after the duel, ensuring it can't escape its pen but can give its all in one, final encounter.` },
+		description: { "KOR": `
+					Slimes are simple creatures, easily modified. The Arena's researchers found that the most effective way to weaponize one against a female warrior was simply to make it monstrously large.<br>
+					<br>
+					Its colossal size gives it overwhelming power and a forest of tentacles. Its unnatural elasticity makes escape from its grasp impossible. It has no lethal attacks, which, ironically, makes it a perfect weapon for the Arena's sex duels.<br>
+					<br>
+					This slime has been conditioned on a diet of one thing: female bodily fluids. Saliva, sweat, and most of all, cunt juice. Its tentacles now instinctively and desperately seek out a woman's holes.<br>
+					<br>
+					When a tentacle slides inside, churning gently, the intense stimulation forces an orgasm. The slime then greedily consumes the fluids. There is no malice in it, only a simple, ravenous hunger that corrupts challengers with an alien pleasure as they are brought to despair.<br>
+					<br>
+					The slime has a weakness—it will collapse if stimulated past its limit. But can your body possibly produce enough pleasure to overwhelm a creature of this magnitude?<br>
+					<br>
+					<b>An endless sea of tentacles.</b>
+				` },
         stats: {
             exciteL: 50,
             orgasmL: 1,
             specialties: {
                 KOR: [
-                	"높은 Excitement Limit",
-                    "Lewdness을 낮추고 Excitement을 회복하기",
-                    "장기전으로 갈수록 강해짐"
-                ],
-                ENG: [
-                ]
+					"Extremely high Excitement limit.",
+					"Recovers its stamina by draining your lewdness.",
+					"Grows stronger the longer the fight drags on."
+                ], 
             }
         },
         deck:[
@@ -1302,19 +1355,29 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	"bossH4":{
 		id:"bossH4",
 		name:{ "KOR":"The Brat" }, fullName:{ "KOR":"Awakened Shota Incubus" }, img:"bossH4", category:"마지막상대",
-		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["악동"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["악동"]["ENG"]}]</b> in hard mode` },
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Imp"]["KOR"]}]</b> in hard mode`,  },
 		look: { "KOR":"A boy... no, a demon." },
-		logDesc: { "KOR":"An incubus who has gathered enough essence.<br>However, having tasted great success in his boyish form, he is fixated on maintaining it.<br><br>He possesses a demonic charm that bewitches women by stimulating their maternal instincts.<br>The slaves he entrances refuse to be separated from him, which creates problems for their training.<br><br>He seems to believe that with a little more power, he could even bewitch Sandrea, but that ambition is sure to get him into deep trouble soon." },
-		description: { "KOR":`\n                You now know this boy's true identity: an incubus in disguise.<br>\n            \tBehind his innocent smile lies a wicked plan to devour your essence,<br>\n            \tand you know that all his playful teasing is entirely intentional.<br>\n            \t<br>\n            \tHe pretends to be a child, but his penis is larger than an adult's.<br>\n            \tAllow him to cling to you like a spoiled child, and he will persistently caress your sensitive nipples.<br>\n            \tHe defiles women under the guise of play; the moment he penetrates you, a mere human stands no chance against an incubus.<br>\n            \tHe calls you \"Big Sis,\" but in his heart, he surely sees you as nothing more than a toy.<br>\n                <br>\n                <br>\n                But does any of that matter?<br>\n                The moment he changes from calling you \"Big Sis\" to \"Mommy,\" nothing else does.<br>\n            \tThis lovely boy must be your precious child.<br>\n            \t<br>\n            \tYou will do anything he desires.<br>\n            \tIf he asks you to lose and become his sex slave, so be it.<br>\n            \t<br>\n            \t<br>\n                <b>Faster, Harder-to-Counter Attacks</b>\n            ` },
+		logDesc: { "KOR":"An incubus who has gathered enough essence to truly awaken. However, having tasted great success in his boyish form, he is fixated on maintaining it.<br><br>Now, his demonic charm is potent enough to bewitch women by directly stimulating their maternal instincts, making them fiercely protective and submissive. The slaves he entrances refuse to be separated from him, which creates problems for their training.<br><br>He seems to believe that with a little more power, he could even bewitch Sandrea, but that ambition is sure to get him into deep trouble." },
+		description: { "KOR":`
+                You know his true identity now: an incubus wearing the skin of a boy. You know his smile is a lie, and his teasing touches are a carefully calculated hunt.<br>
+                <br>
+                He pretends to be a child, but his cock is larger than any adult's. If you let him cling to you, he'll relentlessly torment your sensitive spots, defiling you under the guise of innocent play.<br>
+                <br>
+                He calls you "Big Sis," but you know you're just a toy to him. A warm, wet hole to feed his growing lust.<br>
+                <br>
+                But none of that matters. The moment his whispers shift from "Big Sis" to "Mommy," everything else falls away. You are his mother. He is your precious child.<br>
+                <br>
+                You will do anything for him. If he asks you to lose and become his personal cumdump, you will obey. You will be the good mommy.<br>
+                <br>
+                <b>His attacks are faster, harder to counter.</b>` },
         stats: {
             exciteL: 7,
             orgasmL: 4,
             specialties: {
                 KOR: [
-                	"한 번에 여러 번 자극하기",
-                    "고정된 Heat 수치",
-                    "조건에 따른 점진적 성장"
+					"Stimulates multiple spots at once.",
+					"Constantly regains stamina.",
+					"Grows stronger as the fight progresses."
                 ],
                 ENG: [
                 ]
@@ -1364,19 +1427,28 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	"bossH5":{
 		id:"bossH5",
 		name:{ "KOR":"Tauros" }, fullName:{ "KOR":"Rutting Tauros" }, img:"boss5", category:"마지막상대",
-		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["Tauros"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["Tauros"]["ENG"]}]</b> in hard mode` },
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Tauros"]["KOR"]}]</b> in hard mode`, },
 		look: { "KOR":"A male monster, thoroughly in heat." },
-		logDesc: { "KOR":"A Tauros that has been restrained for days, forced to remain in a state of heat.<br>It is used to ensure the defeat of women unfazed by normal stimulation.<br><br>Driven mad with extreme lust, it is completely uncontrollable.<br>After the incredibly one-sided and rough mating, the female opponent is unlikely to emerge unscathed.<br><br>Then again, the same could be said for the Tauros, whose lifespan has been drastically shortened by this treatment." },
-		description: { "KOR":`\n            \tThe Tauros has a massive physique and monstrous strength, but its slow, simple nature makes it little more than a \"graduation test\" for beginners.<br>\n            \tFurthermore, its timid and docile personality means it's not as strong as it looks in a real fight.<br>\n            \tBut in a sex duel, all its weaknesses vanish, and its strengths become terrifyingly potent.<br>\n            \t<br>\n            \tA Tauros in heat is the opposite of its usual docile self—destructive and aggressive.<br>\n            \tIts massive cock, fitting for its physique, can crush a female's spirit just by being unsheathed.<br>\n            \tMoreover, since attacks in a sex duel cannot be dodged, the opponent must take its monstrous strength head-on.<br>\n            \tIts \"breeding press\"—pinning your legs and crushing you with its heavy body—delivers inescapable stimulation.<br>\n            \t<br>\n            \t<br>\n            \tNo matter how strong a woman is, she is rendered helpless once the Tauros's cock is inside her.<br>\n            \tA piercing pain shoots through her entire body, followed by extreme pleasure.<br>\n            \tJust staying conscious is an incredible feat.<br>\n            \t<br>\n                They say a woman who tastes a Tauros's cock can never again be satisfied by normal sex.<br>\n            \tTo subjugate a pussy that has memorized the shape of such an impossibly large member, only the cock of a Tauros will do.<br>\n            \t<br>\n            \t<br>\n                <b>More Aggressive; No Rest</b>\n            ` },
+		logDesc: { "KOR":"his Tauros has been restrained for days, force-fed aphrodisiacs, and kept on the very edge of release until it was driven mad with lust. It is used to ensure the defeat of women unfazed by normal stimulation.<br><br>After the incredibly one-sided and rough mating, the female opponent is unlikely to emerge unscathed. Then again, the same could be said for the Tauros, whose lifespan has been drastically shortened by this treatment." },
+		description: { "KOR":`The Tauros has a massive physique, but its slow, timid nature makes it little more than a "graduation test" for beginners. In a real fight, it's not as strong as it looks.<br>
+                <br>
+                But in a sex duel, all its weaknesses vanish. A Tauros in heat is the opposite of its usual self: destructive, aggressive, and single-minded.<br>
+                <br>
+                Its massive cock, fitting for its physique, can crush a female's spirit just by being unsheathed. And since you cannot dodge in a sex duel, you must take its monstrous strength head-on. Its "breeding press"—pinning you down and crushing you with its heavy body—delivers inescapable stimulation.<br>
+                <br>
+                Once the Tauros's cock is inside you, you are helpless. A piercing pain shoots through your entire body, followed by a wave of extreme pleasure. Just staying conscious is a feat.<br>
+                <br>
+                They say a woman who tastes a Tauros's cock can never again be satisfied by a normal man. Your cunt, stretched and reshaped by this impossible size, will forever hunger for this specific violation. Only the cock of a Tauros will do.<br>
+                <br>
+                <b>More aggressive. No rest. No mercy.</b>` },
         stats: {
             exciteL: 20,
             orgasmL: 3,
             specialties: {
                 KOR: [
-                	"매우 attack적인 플레이",
-                    "빠르게 증가하는 Heat",
-                    "시간경과 시 점차 자멸함"
+					"Extremely aggressive playstyle.",
+					"Heat increases at an incredible rate.",
+					"Will slowly burn itself out as the fight drags on."
                 ],
                 ENG: [
                 ]
@@ -1414,19 +1486,25 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	"bossH6":{
 		id:"bossH6",
 		name:{ "KOR":"Mushroom Man" }, fullName:{ "KOR":"Spore Lord's Host" }, img:"boss6", category:"마지막상대",
-		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["Mushroom Man"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["Mushroom Man"]["ENG"]}]</b> in hard mode` },
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Mushroom Man"]["KOR"]}]</b> in hard mode`  },
 		look: { "KOR":"A body controlled by a mushroom hive mind." },
-		logDesc: { "KOR":"A body controlled by the Spore Lord hive mind.<br>It uses the arena as a base to spread its swarm through sex.<br><br>The arena staff believes they completely remove the spores from women after each duel, but in truth, small amounts remain, lying dormant and waiting for the right moment.<br>Having failed many times before, the Spore Lord is cautiously waiting until its swarm is large enough.<br><br>The recent undead incident in the back alleys of Glit-haven is proof that it won't be long before they reveal themselves to the world." },
-		description: { "KOR":`\n            \tThe Spore Lord calls.<br>\n            \tJoin the swarm.<br>\n            \t<br>\n            \t<br>\n                <b>More Spores.</b>\n            ` },
+		logDesc: { "KOR":"This body is now a vessel for the Spore Lord hive mind, using the Arena as a bastion to spread its swarm through sex. The arena staff believes they cleanse the spores after each duel, but in truth, microscopic remnants remain, lying dormant. The Spore Lord is waiting, gathering strength. The recent undead incidents in the city are proof that its influence is spreading." },
+		description: { "KOR":`               The Spore Lord calls.<br>
+                Join the swarm.<br>
+                <br>
+                The memories of your old self feel distant, like a life you once read about. Your concerns are simpler now. Clearer.<br><br>
+                Open yourself.<br>
+                Become fertile ground.<br>
+                Spread the bloom.<br><br>
+                <b>We are legion.</b>` },
         stats: {
             exciteL: 15,
             orgasmL: 2,
             specialties: {
                 KOR: [
-                	"상대의 덱에 Spore를 결속시키기",
-                    "자극 외의 수단으로 Excitement 증가시키기",
-                    "여러 장의 card 사용하기"
+					"Infests your deck with potent Spore cards.",
+					"Raises your arousal without even touching you.",
+					"Commands multiple attacks in a single turn."
                 ],
                 ENG: [
                 ]
@@ -1473,19 +1551,22 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	"bossH7":{
 		id:"bossH7",
 		name:{ "KOR":"Blonde Delinquent" }, fullName:{ "KOR":"Tanned Blonde Delinquent" }, img:"boss7", category:"마지막상대",
-		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["Blonde Thug"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["Blonde Thug"]["ENG"]}]</b> in hard mode` },
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Blonde Thug"]["KOR"]}]</b> in hard mode`, },
 		look: { "KOR":"A thuggish-looking blonde delinquent." },
 		logDesc: { "KOR":"A mysterious man whose origins and past are unknown.<br>He seems to be growing tired of the arena and is preparing to leave.<br><br>He once believed there was no woman he couldn't conquer, but that changed after he met a certain woman.<br>He should have left long ago, but he has stayed behind for one last chance to conquer her.<br><br>You know how that story ends." },
-		description: { "KOR":`\n            \tEven after becoming a staff member at the arena, you've had several encounters with him.<br>\n            \tA rude and thuggish man who acts like the world revolves around him.<br>\n            \tYou don't think very highly of him.<br>\n            \t<br>\n            \tHe hits on you constantly.<br>\n            \tHe's one of the few who shows any kindness to you in your lowly position as a female staff member,<br>\n            \tbut you know that behind it all, he just wants to make you his property.<br>\n            \tAs part of your duties, you've diligently serviced his cock, but in your heart, you've always rejected the man himself.<br>\n            \t<br>\n            \t<br>\n            \tBut it's undeniable that he's a masterful lover with incredible technique.<br>\n            \tYou may not like him as a person, but you have to respect his cock.<br>\n            \tRecently, you've even found yourself looking forward to having sex with him.<br>\n            \t<br>\n            \tIf he can defeat you, you might be willing to give him your heart as well.<br>\n            \tHaving him as your master... might not be so bad...<br>\n            \t<br>\n            \t<br>\n                <b>More Deadly Maneuvers</b>\n            ` },
+		description: { "KOR":` Even as a member of the Arena staff, you've had to deal with him. A rude, thuggish man who acts like the world revolves around him. You don't think very highly of him.<br><br>
+                He hits on you constantly. He's one of the few who shows any kindness to you in your lowly position, but you know that behind it all, he just wants to make you his property. As part of your duties, you've serviced his cock many times, but you've always rejected the man himself.<br><br>
+                But it's undeniable that he's a masterful lover with incredible technique. You may not like him as a person, but you have to respect his cock. Lately, you've even found yourself looking forward to your sessions with him.<br><br>
+                The thought lingers, unwelcomed: if he can defeat you, truly dominate you not just in bed but in this duel... maybe you'd be willing to give him your heart as well. Having him as your master... might not be so bad after all...<br><br>
+                <b>His moves are even deadlier now.</b>` },
         stats: {
             exciteL: 12,
             orgasmL: 3,
             specialties: {
                 KOR: [
-                	"미리 확인할 수 없는 행동",
-                    "조건부 강력한 효과",
-                    "기습적이고 위력적인 attack"
+					"Unpredictable actions you can't foresee.",
+					"Powerful conditional effects.",
+					"Sudden, devastating strikes."
                 ],
                 ENG: [
                 ]
@@ -1553,19 +1634,22 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	"bossH8":{
 		id:"bossH8",
 		name:{ "KOR":"Trainer" }, fullName:{ "KOR":"Head Trainer Glen" }, img:"boss8", category:"마지막상대",
-		condDesc:{ "KOR":`하드모드에서 <b>[${dictionary["Trainer"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["Trainer"]["ENG"]}]</b> in hard mode` },
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Trainer"]["KOR"]}]</b> in hard mode`,  },
 		look: { "KOR":"The man who has trained you time and time again." },
-		logDesc: { "KOR":"The Head Trainer responsible for breaking the arena's slaves.<br>He successfully usurped the position after trapping and subjugating the former Head Trainer, Momorika.<br><br>His methods are now even more cruel and intense, driving women into the depths of despair.<br>His skills are so highly valued that he is now tasked with personally finishing off challengers who have resisted subjugation for a long time.<br><br>His next audacious target seems to be Sandrea, but he is unaware that Momorika is reporting his every move back to her." },
-		description: { "KOR":`\n            \tThis man holds the highest position in the arena's training department.<br>\n            \tSince the female staff in other departments are all products of his training, his rank is effectively second only to Sandrea's.<br>\n            \tAs if to prove that power changes a person, he has become more fierce and violent than before.<br>\n            \t<br>\n            \tHis training has turned many women into true sex slaves.<br>\n            \tHe instills pain and fear to make them understand their place,<br>\n            \tand he maximizes the pleasure from sexual stimulation, teaching them to see it as a reward for obedience.<br>\n            \tAt his hands, a variety of sex slaves have been born: pets, livestock, and fleshlights.<br>\n            \t<br>\n            \t<br>\n            \tYou, too, owe him a great deal.<br>\n            \tFrom him, you learned the mindset of a sex slave and the techniques to please a master.<br>\n            \tThey were horrifying memories, but now they are everything that defines you.<br>\n            \t<br>\n            \tYou are about to be 'shipped out.' All that remains is the final step of erasing your ego to become a perfect sex slave.<br>\n            \tThere is no one better suited to graduate you from your former life.<br>\n            \t<br>\n            \t<br>\n                <b>Marks of Submission stack faster and cannot be removed.</b>\n            ` },
+		logDesc: { "KOR":"The Head Trainer, responsible for breaking the Arena's slaves. He usurped the position after trapping and subjugating the former Head Trainer, Momorika.<br><br>His methods are now even more cruel and intense. He is personally tasked with finishing off challengers who have resisted subjugation for a long time." },
+		description: { "KOR":`This man holds the highest position in the Arena's training department. Every female staff member is a product of his training. His power is immense, and he has grown even fiercer, more violent.<br><br>
+                From his hands, many women have been reborn as true sex slaves. He uses pain to teach them their place and pleasure as a reward for obedience. He has an eye for potential, molding them into pets, livestock, or living fleshlights.<br><br>
+                You owe him everything. From him, you learned the mindset of a sex slave and the techniques to please a master. Those horrifying memories are now everything that defines you.<br><br>
+                This is your final lesson before you are 'shipped out.' The final step is the complete erasure of your ego. There is no one better suited to graduate you from your former life.<br><br>
+                <b>Marks of Submission stack faster and cannot be removed.</b>` },
         stats: {
             exciteL: 12,
             orgasmL: 3,
             specialties: {
                 KOR: [
-                	"부정적인 상태 부여하기",
-                    "상태를 누적시켜 특수 승리하기",
-                    "상대에게 선택을 강요해 피해를 누적시키기"
+					"Applies negative debuffs that stack quickly.",
+					"Can win instantly by overwhelming you with submission marks.",
+					"Forces choices that inflict stacking mental damage."
                 ],
                 ENG: [
                 ]
@@ -1612,20 +1696,48 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 		}
 	},
 
-	//
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 	"bossC1":{
 		id:"bossC1",
 		name:{ "KOR":"Goblins" }, fullName:{ "KOR":"Goblin Horde" }, img:"boss1", category:"챌린지",
-		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["Goblins"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["Goblins"]["ENG"]}]</b> in challenge mode` },
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Goblins"]["KOR"]}]</b> in challenge mode`,
+		 },
 		look: { "KOR":"A horde of Goblins." },
 		logDesc: { KOR:"", ENG:"" },
-		description: { "KOR":`\n                You sought out and raided a wild goblin den.<br>\n            \tBecause nothing was ever as enjoyable as the memory of nearly being defeated, defiled, and subjugated by a bunch of pathetic goblins.<br>\n            \t<br>\n            \tBut you had forgotten one crucial detail: the arena's goblins were a breed specially modified to defile women.<br>\n            \tActual wild goblins didn't have the strength to gang-rape you.<br>\n            \t<br>\n            \tSeeing you as an intruder, they began to call for reinforcements.<br>\n            \tSetting aside your disappointment, you were about to quickly ravage them and leave, but...<br>\n            \tWait, aren't there a few too many of them...?\n            ` },
+		description: { "KOR":`
+                You sought this out, raiding a wild goblin den on a whim. Nothing was ever quite as thrilling as the memory of being overwhelmed, defiled, and nearly subjugated by a pack of pathetic goblins. A taste of nostalgia.<br>
+                <br>
+                But in your arrogance, you forgot a crucial detail: the Arena's goblins were a special breed, modified specifically to break female warriors. These wild ones... they lack the potency to properly gang-rape you.<br>
+                <br>
+                As they shriek and call for reinforcements, you're about to put them out of their misery and leave, disappointed. But... wait. The ground is starting to shake.<br>
+                <br>
+                There are a lot more of them than you thought... A <i>lot</i> more.` },
         stats: {
             exciteL: 2,
             orgasmL: 4,
-            specialties: { "KOR":["",] }
+            specialties: { "KOR":["- Overwhelms you with sheer, unending numbers.",] }
         },
         deck:[
 			"BC-UC-001",
@@ -1646,11 +1758,18 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	"bossC2":{
 		id:"bossC2",
 		name:{ "KOR":"Villager" }, fullName:{ "KOR":"Villager" }, img:"boss2", category:"챌린지",
-		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["Villager"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["Villager"]["ENG"]}]</b> in challenge mode` },
-		look: { "KOR":"An ordinary man you've captured." },
-		logDesc: { KOR:"", ENG:"" },
-		description: { "KOR":`\n                You tracked down the villager who tormented you in the arena.<br>\n            \tIt's a miracle he's still alive; his survival skills must be commendable.<br>\n            \t<br>\n            \tYou hoped that, just like in the arena, he would receive power, grow arrogant, and try to defile you.<br>\n            \tBut your reunion was nothing but a disappointment.<br>\n            \t<br>\n            \tEven when offered power, he just groveled on the floor, begging for his life.<br>\n            \tTrying to do anything with a man like this feels like a waste of time.\n            ` },
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Villager"]["KOR"]}]</b> in challenge mode`, },
+look: { "KOR": "An ordinary man you've captured for your amusement." },
+    logDesc: { "KOR": "" },
+    description: { "KOR": `
+                You hunted down the villager who once tormented you. It's a small miracle he even managed to survive this long outside the Arena's protection.<br>
+                <br>
+                You hoped for a flicker of that old dynamic. That if you offered him power, he would grow arrogant and try to defile you all over again. A perfect nostalgic thrill.<br>
+                <br>
+                But your reunion was a bitter disappointment.<br>
+                <br>
+                He just groveled on the floor, begging for his life. Pathetic. Breaking a creature like this now would be a complete waste of your time.
+            ` },
         stats: {
             exciteL: 5,
             orgasmL: 3,
@@ -1674,12 +1793,19 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	},
 	"bossC3":{
 		id:"bossC3",
-		name:{ "KOR":"Tentacle Slime" }, fullName:{ "KOR":"Slime Conjured with Magic" }, img:"bossH3", category:"챌린지",
-		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["Tentacle Slime"]["KOR"]}]</b>을 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["Tentacle Slime"]["ENG"]}]</b> in challenge mode` },
-		look: { "KOR":"A Tentacle Slime you conjured using your own magic." },
-		logDesc: { KOR:"", ENG:"" },
-		description: { "KOR":`\n                You tried conjuring a Tentacle Slime, infusing it with a generous amount of your own magic.<br>\n                The result was a creature far larger than you could have imagined.<br>\n            \t<br>\n            \tBut its size is just for show.<br>\n            \tIts tentacles are sluggish, and its ability to defile women seems rather poor.<br>\n            \t<br>\n                Still, it possesses transcendent durability and regeneration, befitting the power poured into it,<br>\n                so let's play with it until we get bored.\n            ` },
+		name:{ "KOR":"Tentacle Slime" }, fullName:{ "KOR":"Conjured Slime" }, img:"bossH3", category:"챌린지",
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Tentacle Slime"]["KOR"]}]</b> in challenge mode`, },
+		look: { "KOR": "A Tentacle Slime you conjured with your own magic." },
+		logDesc: { "KOR": "" },
+		description: { "KOR": `
+					On a whim, you conjured a Tentacle Slime, pouring a generous amount of your own corrupted magic into its creation. The result is a creature far larger than you anticipated.<br>
+					<br>
+					But its size is just for show. Its tentacles are sluggish, almost clumsy. Its capacity for violation seems disappointingly low.<br>
+					<br>
+					Still, it possesses the transcendent durability and regenerative power you'd expect from something made of your own essence.<br>
+					<br>
+					You might as well play with it until you get bored.
+            ` },
         stats: {
             exciteL: 99,
             orgasmL: 1,
@@ -1704,11 +1830,16 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	"bossC5":{
 		id:"bossC5",
 		name:{ "KOR":"Tauros" }, fullName:{ "KOR":"Rampaging Tauros" }, img:"boss5", category:"챌린지",
-		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["Tauros"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["Tauros"]["ENG"]}]</b> in challenge mode` },
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Tauros"]["KOR"]}]</b> in challenge mode`, },
 		look: { "KOR":"A Tauros you've forced into a rampage." },
 		logDesc: { KOR:"", ENG:"" },
-		description: { "KOR":`\n                You found a rather fine Tauros specimen.<br>\n                You poured a great deal of your power into it, forcing it into a rampage.<br>\n            \t<br>\n            \tA magnificent, massive cock and terrifying, inexhaustible stamina.<br>\n            \tIt looks like it could never lose a sexual battle.<br>\n            \t<br>\n            \tHowever, the Tauros's body doesn't seem able to withstand the infused power.<br>\n            \tLet's enjoy it for as long as possible before it completely collapses.\n            ` },
+		description: { "KOR":`You found a rather magnificent specimen of a Tauros. Strong, proud, a perfect canvas.<br>
+                <br>
+                You poured a great deal of your own dark power into it, forcing its body into a state of constant, agonizing rut. A magnificent, massive cock and terrifying, inexhaustible stamina. It looks like a creature that could never lose a sexual battle, a primal god of lust.<br>
+                <br>
+                However, such a magnificent fire cannot burn for long. Its mortal form struggles to contain the divine energy you've forced into it.<br>
+                <br>
+                Now, the only question is how long can you enjoy the show before it collapses into a pile of steaming meat.` },
         stats: {
             exciteL: 15,
             orgasmL: 3,
@@ -1733,11 +1864,13 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	"bossC6":{
 		id:"bossC6",
 		name:{ "KOR":"Mushroom Man" }, fullName:{ "KOR":"Infectious Sporeshroom" }, img:"boss6", category:"챌린지",
-		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["Mushroom Man"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["Mushroom Man"]["ENG"]}]</b> in challenge mode` },
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Mushroom Man"]["KOR"]}]</b> in challenge mode` },
 		look: { "KOR":"Revived Sporeshroom" },
 		logDesc: { KOR:"", ENG:"" },
-		description: { "KOR":`\n                You captured an Infection Mushroom specimen that was wandering alone, its connection to the Spore Lord severed.<br>\n            \tTo improve its lackluster spores, you infused it with your power and modified it.<br>\n            \t<br>\n            \tThe results were decent. It can now emit some rather dangerous narcotic spores.<br>\n            \tHowever, perhaps because it's disconnected from the hive mind, its reproductive drive seems weak.<br>\n            \t<br>\n            \tStill, having sex while bathed in narcotic spores might be interesting.<br>\n            \tSqueamishness, hygiene... such things are no longer a concern for you.\n            ` },
+		description: { "KOR":`You found an Infection Mushroom specimen. A straggler, its connection to the Spore Lord's hive mind severed. It was weak, pathetic even.<br><br>
+                On a whim, you infused it with a spark of your own corrupted power, modifying its pitiful spores into something more potent. The results were... decent. It now emits a rather delightful haze of narcotic spores.<br><br>
+                However, perhaps because it's no longer part of a collective, its reproductive drive seems weak. It lacks the primal urge to dominate and spread.<br><br>
+                Still, having sex while your mind dissolves into a fog of sweet poison could be an interesting novelty. Squeamishness, hygiene... such things are relics of a past life. This will do. For now.` },
         stats: {
             exciteL: 15,
             orgasmL: 2,
@@ -1762,15 +1895,21 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	"bossC9":{
 		id:"bossC9",
 		name:{ "KOR":"Sandrea" }, fullName:{ "KOR":"Slave Sandrea" }, img:"boss9", category:"챌린지",
-		condDesc:{ "KOR":`챌린지모드에서 <b>[${dictionary["산드레아"]["KOR"]}]</b>를 상대로 승리`,
-		"ENG":`Win against <b>[${dictionary["산드레아"]["ENG"]}]</b> in challenge mode` },
+		condDesc:{ "KOR":`Win against <b>[${dictionary["Sandrea"]["KOR"]}]</b> in challenge mode`, },
 		look: { "KOR":"The woman who is now your slave." },
 		logDesc: { KOR:"", ENG:"" },
-		description: { "KOR":`\n                She was the one who brainwashed and trapped you in the arena, but now she's the one who's been brainwashed and is being dragged around by you.<br>\n            \tThere was a time when you truly resented her, but now you feel almost nothing.<br>\n            \t<br>\n                Her once-proud demeanor has vanished; she has become your complete plaything.<br>\n                You've experimented with much torture and training to test your powers on her, and the fact that her mind hasn't broken is a testament to her mental fortitude.<br>\n            \t<br>\n            \tThis time, you plan to torture her by making her desperate for release, only to deny her any stimulation.<br>\n            \tShe had better pray you don't lose interest.\n            ` },
+		description: { "KOR":`
+                She was the one who brainwashed you, trapped you in this Arena. Now, she's the one who's been brainwashed, dragged around on a leash like a pet.<br><br>
+                You once resented her with every fiber of your being. Now, you feel almost nothing. Her existence is a mere footnote in your story.<br><br>
+                Her once-proud demeanor is gone. You've broken her, reshaped her, tested the limits of both her spirit and your own power. The fact that her mind hasn't completely shattered under your torture is a testament to her will—a curiosity, nothing more.<br><br>
+                Today's experiment is denial. You will torment her, bringing her to the very edge of a desperate, pleading orgasm, only to deny her any touch, any release. You will watch her squirm, see the desperation grow in her eyes. It's a delicious kind of agony.<br.<br>
+                She had better pray you don't lose interest in your little game.` },
         stats: {
             exciteL: 5,
             orgasmL: 4,
-            specialties: { "KOR":["",] }
+            specialties: { "KOR":[
+            "Her body is yours to command.",
+            "Her mind is a playground for your cruelty."] }
         },
         deck:[
 			"BC8-UC-001",
@@ -1790,150 +1929,172 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	},
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const endingList = {
 	"normal_lose_bg1":{
-		name:{ "KOR":"Low-Rank Combatant" }, endingId:"lose_bg1", img:"ending_lose_1", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Low-Rank Combatant" }, endingId:"lose_bg1", img:"ending_lose_1", category:"Normal Lose Ending",
+		condDesc:{ "KOR":`Lose in normal mode with the <b>[${dictionary["Soldier"]["KOR"]}]</b> background.` },
 	},
 	"normal_lose_bg2":{
-		name:{ "KOR":"Pussy Pet" }, endingId:"lose_bg2", img:"ending_lose_2", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Pussy Pet" }, endingId:"lose_bg2", img:"ending_lose_2", category:"Normal Lose Ending",
+		condDesc:{ "KOR":`Lose in normal mode with the <b>[${dictionary["Noble"]["KOR"]}]</b> background.` },
 	},
 	"normal_lose_bg3":{
-		name:{ "KOR":"Display Figure" }, endingId:"lose_bg3", img:"ending_lose_3", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Display Figure" }, endingId:"lose_bg3", img:"ending_lose_3", category:"Normal Lose Ending",
+		condDesc:{ "KOR":`Lose in normal mode with the <b>[${dictionary["Celebrity"]["KOR"]}]</b> background.` },
 	},
 	"normal_lose_bg4":{
-		name:{ "KOR":"Ritual Sacrifice" }, endingId:"lose_bg4", img:"ending_lose_4", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Ritual Sacrifice" }, endingId:"lose_bg4", img:"ending_lose_4", category:"Normal Lose Ending",
+		condDesc:{ "KOR":`Lose in normal mode with the <b>[${dictionary["Cleric"]["KOR"]}]</b> background.` },
 	},
 	"normal_lose_bg5":{
-		name:{ "KOR":"Milking Farm Cow" }, endingId:"lose_bg5", img:"ending_lose_5", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Milking Farm Cow" }, endingId:"lose_bg5", img:"ending_lose_5", category:"Normal Lose Ending",
+		condDesc:{ "KOR":`Lose in normal mode with the <b>[${dictionary["Scholar"]["KOR"]}]</b> background.` },
 	},
 	"normal_lose_bg6":{
-		name:{ "KOR":"Public Penance Fixture" }, endingId:"lose_bg6", img:"ending_lose_6", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Public Penance Fixture" }, endingId:"lose_bg6", img:"ending_lose_6", category:"Normal Lose Ending",
+		condDesc:{ "KOR":`Lose in normal mode with the <b>[${dictionary["Rogue"]["KOR"]}]</b> background.` },
 	},
 	"normal_lose_bg7":{
-		name:{ "KOR":"Cheap Hole" }, endingId:"lose_bg7", img:"ending_lose_7", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Cheap Hole" }, endingId:"lose_bg7", img:"ending_lose_7", category:"Normal Lose Ending",
+		condDesc:{ "KOR":`Lose in normal mode with the <b>[${dictionary["Merchant"]["KOR"]}]</b> background.` },
 	},
 	"normal_lose_bg8":{
-		name:{ "KOR":"Cum Dumpster" }, endingId:"lose_bg8", img:"ending_lose_8", category:"노말패배엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in normal mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Cum Dumpster" }, endingId:"lose_bg8", img:"ending_lose_8", category:"Normal Lose Ending",
+		condDesc:{ "KOR":`Lose in normal mode with the <b>[${dictionary["Mercenary"]["KOR"]}]</b> background.` },
 	},
 
 	"normal_win_bg1":{
-		name:{ "KOR":"Guard" }, endingId:"win_bg1", img:"ending_win_1", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Guard" }, endingId:"win_bg1", img:"ending_win_1", category:"Normal Win Ending",
+		condDesc:{ "KOR":`Win in normal mode with the <b>[${dictionary["Soldier"]["KOR"]}]</b> background.` },
 	},
 	"normal_win_bg2":{
-		name:{ "KOR":"Entertainment Prostitute" }, endingId:"win_bg2", img:"ending_win_2", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Entertainment Prostitute" }, endingId:"win_bg2", img:"ending_win_2", category:"Normal Win Ending",
+		condDesc:{ "KOR":`Win in normal mode with the <b>[${dictionary["Noble"]["KOR"]}]</b> background.` },
 	},
 	"normal_win_bg3":{
-		name:{ "KOR":"PR Prostitute" }, endingId:"win_bg3", img:"ending_win_3", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"PR Prostitute" }, endingId:"win_bg3", img:"ending_win_3", category:"Normal Win Ending",
+		condDesc:{ "KOR":`Win in normal mode with the <b>[${dictionary["Celebrity"]["KOR"]}]</b> background.` },
 	},
 	"normal_win_bg4":{
-		name:{ "KOR":"Employee Welfare Facility" }, endingId:"win_bg4", img:"ending_win_4", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Employee Welfare Facility" }, endingId:"win_bg4", img:"ending_win_4", category:"Normal Win Ending",
+		condDesc:{ "KOR":`Win in normal mode with the <b>[${dictionary["Cleric"]["KOR"]}]</b> background.` },
 	},
 	"normal_win_bg5":{
-		name:{ "KOR":"Research Staff" }, endingId:"win_bg5", img:"ending_win_5", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Research Staff" }, endingId:"win_bg5", img:"ending_win_5", category:"Normal Win Ending",
+		condDesc:{ "KOR":`Win in normal mode with the <b>[${dictionary["Scholar"]["KOR"]}]</b> background.` },
 	},
 	"normal_win_bg6":{
-		name:{ "KOR":"Meat Doll" }, endingId:"win_bg6", img:"ending_win_6", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Meat Doll" }, endingId:"win_bg6", img:"ending_win_6", category:"Normal Win Ending",
+		condDesc:{ "KOR":`Win in normal mode with the <b>[${dictionary["Rogue"]["KOR"]}]</b> background.` },
 	},
 	"normal_win_bg7":{
-		name:{ "KOR":"Slave Manager" }, endingId:"win_bg7", img:"ending_win_7", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Slave Manager" }, endingId:"win_bg7", img:"ending_win_7", category:"Normal Win Ending",
+		condDesc:{ "KOR":`Win in normal mode with the <b>[${dictionary["Merchant"]["KOR"]}]</b> background.` },
 	},
 	"normal_win_bg8":{
-		name:{ "KOR":"Female Champion" }, endingId:"win_bg8", img:"ending_win_8", category:"노말승리엔딩",
-		condDesc:{ "KOR":`일반모드에서 Background이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in normal mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Female Champion" }, endingId:"win_bg8", img:"ending_win_8", category:"Normal Win Ending",
+		condDesc:{ "KOR":`Win in normal mode with the <b>[${dictionary["Mercenary"]["KOR"]}]</b> background.` },
 	},
 
 
 	"hard_lose_bg1":{
-		name:{ "KOR":"Bodyguard Maid" }, endingId:"loseH_bg1", img:"endingH_lose_1", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Bodyguard Maid" }, endingId:"loseH_bg1", img:"endingH_lose_1", category:"Hard Lose Ending",
+		condDesc:{ "KOR":`Lose in hard mode with the <b>[${dictionary["Soldier"]["KOR"]}]</b> background.` },
 	},
 	"hard_lose_bg2":{
-		name:{ "KOR":"Noble's Spouse" }, endingId:"loseH_bg2", img:"endingH_lose_2", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Noble's Spouse" }, endingId:"loseH_bg2", img:"endingH_lose_2", category:"Hard Lose Ending",
+		condDesc:{ "KOR":`Lose in hard mode with the <b>[${dictionary["Noble"]["KOR"]}]</b> background.` },
 	},
 	"hard_lose_bg3":{
-		name:{ "KOR":"AV Actress" }, endingId:"loseH_bg3", img:"endingH_lose_3", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"AV Actress" }, endingId:"loseH_bg3", img:"endingH_lose_3", category:"Hard Lose Ending",
+		condDesc:{ "KOR":`Lose in hard mode with the <b>[${dictionary["Celebrity"]["KOR"]}]</b> background.` },
 	},
 	"hard_lose_bg4":{
-		name:{ "KOR":"Lewd Saint" }, endingId:"loseH_bg4", img:"endingH_lose_4", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Lewd Saint" }, endingId:"loseH_bg4", img:"endingH_lose_4", category:"Hard Lose Ending",
+		condDesc:{ "KOR":`Lose in hard mode with the <b>[${dictionary["Cleric"]["KOR"]}]</b> background.` },
 	},
 	"hard_lose_bg5":{
-		name:{ "KOR":"Clinical Test Subject" }, endingId:"loseH_bg5", img:"endingH_lose_5", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Clinical Test Subject" }, endingId:"loseH_bg5", img:"endingH_lose_5", category:"Hard Lose Ending",
+		condDesc:{ "KOR":`Lose in hard mode with the <b>[${dictionary["Scholar"]["KOR"]}]</b> background.` },
 	},
 	"hard_lose_bg6":{
-		name:{ "KOR":"Underworld Guild" }, endingId:"loseH_bg6", img:"endingH_lose_6", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Underworld Guild" }, endingId:"loseH_bg6", img:"endingH_lose_6", category:"Hard Lose Ending",
+		condDesc:{ "KOR":`Lose in hard mode with the <b>[${dictionary["Rogue"]["KOR"]}]</b> background.` },
 	},
 	"hard_lose_bg7":{
-		name:{ "KOR":"Casino Hostess" }, endingId:"loseH_bg7", img:"endingH_lose_7", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Casino Hostess" }, endingId:"loseH_bg7", img:"endingH_lose_7", category:"Hard Lose Ending",
+		condDesc:{ "KOR":`Lose in hard mode with the <b>[${dictionary["Merchant"]["KOR"]}]</b> background.` },
 	},
 	"hard_lose_bg8":{
-		name:{ "KOR":"Underground Fighter" }, endingId:"loseH_bg8", img:"endingH_lose_8", category:"하드패배엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 패배`, "ENG":`Lose in hard mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Underground Fighter" }, endingId:"loseH_bg8", img:"endingH_lose_8", category:"Hard Lose Ending",
+		condDesc:{ "KOR":`Lose in hard mode with the <b>[${dictionary["Mercenary"]["KOR"]}]</b> background.` },
 	},
 
 	"hard_win_bg1":{
-		name:{ "KOR":"The Demon Lord Appears" }, endingId:"winH_bg1", img:"endingH_win_1", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Soldier"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Soldier"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"The Demon Lord Appears" }, endingId:"winH_bg1", img:"endingH_win_1", category:"Hard Win Ending",
+		condDesc:{ "KOR":`Win in hard mode with the <b>[${dictionary["Soldier"]["KOR"]}]</b> background.` },
 	},
 	"hard_win_bg2":{
-		name:{ "KOR":"Mass Reality Shift" }, endingId:"winH_bg2", img:"endingH_win_2", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Noble"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Noble"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Mass Reality Shift" }, endingId:"winH_bg2", img:"endingH_win_2", category:"Hard Win Ending",
+		condDesc:{ "KOR":`Win in hard mode with the <b>[${dictionary["Noble"]["KOR"]}]</b> background.` },
 	},
 	"hard_win_bg3":{
-		name:{ "KOR":"World Star" }, endingId:"winH_bg3", img:"endingH_win_3", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Celebrity"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Celebrity"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"World Star" }, endingId:"winH_bg3", img:"endingH_win_3", category:"Hard Win Ending",
+		condDesc:{ "KOR":`Win in hard mode with the <b>[${dictionary["Celebrity"]["KOR"]}]</b> background.` },
 	},
 	"hard_win_bg4":{
-		name:{ "KOR":"Emerging Cult" }, endingId:"winH_bg4", img:"endingH_win_4", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Cleric"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Cleric"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Emerging Cult" }, endingId:"winH_bg4", img:"endingH_win_4", category:"Hard Win Ending",
+		condDesc:{ "KOR":`Win in hard mode with the <b>[${dictionary["Cleric"]["KOR"]}]</b> background.` },
 	},
 	"hard_win_bg5":{
-		name:{ "KOR":"Stampede" }, endingId:"winH_bg5", img:"endingH_win_5", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Scholar"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Scholar"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Stampede" }, endingId:"winH_bg5", img:"endingH_win_5", category:"Hard Win Ending",
+		condDesc:{ "KOR":`Win in hard mode with the <b>[${dictionary["Scholar"]["KOR"]}]</b> background.` },
 	},
 	"hard_win_bg6":{
-		name:{ "KOR":"Queen of the Night" }, endingId:"winH_bg6", img:"endingH_win_6", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Rogue"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Rogue"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Queen of the Night" }, endingId:"winH_bg6", img:"endingH_win_6", category:"Hard Win Ending",
+		condDesc:{ "KOR":`Win in hard mode with the <b>[${dictionary["Rogue"]["KOR"]}]</b> background.` },
 	},
 	"hard_win_bg7":{
-		name:{ "KOR":"Semen Economy" }, endingId:"winH_bg7", img:"endingH_win_7", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Merchant"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Merchant"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"Semen Economy" }, endingId:"winH_bg7", img:"endingH_win_7", category:"Hard Win Ending",
+		condDesc:{ "KOR":`Win in hard mode with the <b>[${dictionary["Merchant"]["KOR"]}]</b> background.` },
 	},
 	"hard_win_bg8":{
-		name:{ "KOR":"As Lust Leads" }, endingId:"winH_bg8", img:"endingH_win_8", category:"하드승리엔딩",
-		condDesc:{ "KOR":`하드모드에서 Background이 <b>[${dictionary["Mercenary"]["KOR"]}]</b>일 때 승리`, "ENG":`Win in hard mode with the <b>[${dictionary["Mercenary"]["ENG"]}]</b> background.` },
+		name:{ "KOR":"As Lust Leads" }, endingId:"winH_bg8", img:"endingH_win_8", category:"Hard Win Ending",
+		condDesc:{ "KOR":`Win in hard mode with the <b>[${dictionary["Mercenary"]["KOR"]}]</b> background.` },
 	},
 
 	"morvainEnd":{
-		name:{ "KOR":"The Advent of Morvain" }, endingId:"morvainEnd", img:"ending_morvain", category:"기타",
+		name:{ "KOR":"The Advent of Morvain" }, endingId:"morvainEnd", img:"ending_morvain", category:"Other",
 		condDesc:{ "KOR":`Select <b>[Shadow of Morvain]</b>.` },
 	},
 	"challenge_win":{
-		name:{ "KOR":"Challenge Successful" }, endingId:"winC", img:"endingC_win", category:"기타",
+		name:{ "KOR":"Challenge Successful" }, endingId:"winC", img:"endingC_win", category:"Other",
 		condDesc:{ "KOR":`Win in challenge mode.` },
 	},
 	"challenge_lose":{
-		name:{ "KOR":"Challenge Failed" }, endingId:"loseC", img:"endingC_lose", category:"기타",
+		name:{ "KOR":"Challenge Failed" }, endingId:"loseC", img:"endingC_lose", category:"Other",
 		condDesc:{ "KOR":`Lose in challenge mode.` },
 	},
 }

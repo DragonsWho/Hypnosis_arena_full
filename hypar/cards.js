@@ -8,7 +8,7 @@ const cardColor = {
 	"Goblins":{"border":"#5F6F52", "name":"#B99470", "textbox":"#F9E0BB"},
 	"Villager":{"border":"#776B5D", "name":"#B0A695", "textbox":"#F9E0BB"},
 	"Tentacle Slime":{"border":"#164863", "name":"#9BBEC8", "textbox":"#F9E0BB"},
-	"악동":{"border":"#4B4B4B", "name":"#B44545", "textbox":"#F9E0BB"},
+	"Imp":{"border":"#4B4B4B", "name":"#B44545", "textbox":"#F9E0BB"},
 	"Tauros":{"border":"#2E2E2E", "name":"#9C9C9C", "textbox":"#F9E0BB"},
 	"Mushroom Man":{"border":"#2C3E3F", "name":"#6A7D6C", "textbox":"#F9E0BB"},
 	"Blonde Thug":{"border":"#5C4033", "name":"#B79F5B", "textbox":"#F9E0BB"},
@@ -6463,7 +6463,7 @@ const cardDB = {
 		parents:"B1-PA-001",
 		name:{ "KOR":"Aphrodisiac Cum+" }, class:"Goblins", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion능력", "하드전용"], related:["B1-PN-001"],
+		tags:["Champion능력", "Hard Only"], related:["B1-PN-001"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"turnEnd", cond:true, type:"get", target:"op", value:"B1-PN-001", repeat:2},
@@ -6474,7 +6474,7 @@ const cardDB = {
 		parents:"B1-UC-001",
 		name:{ "KOR":"Clothes Ripping+" }, class:"Goblins", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion덱", "하드전용"], related:["Penalty"],
+		tags:["Champion덱", "Hard Only"], related:["Penalty"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"옷찢기"},
 			{trigger:"used", cond:true, type:"clothes", value:"uncloth"},
@@ -6485,7 +6485,7 @@ const cardDB = {
 		parents:"B1-AT-002",
 		name:{ "KOR":"Double Penetration+" }, class:"Goblins", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion덱", "하드전용"],
+		tags:["Champion덱", "Hard Only"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"고블린penetration"},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
@@ -6657,7 +6657,7 @@ const cardDB = {
 		parents:"B2-PA-001",
 		name:{ "KOR":"Hypnotic Brainwashing+" }, class:"Villager", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion능력", "하드전용"], related:["B2-PA-001-1+", "B2-PA-001-2+"],
+		tags:["Champion능력", "Hard Only"], related:["B2-PA-001-1+", "B2-PA-001-2+"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"gameStart", cond:true, type:"line", value:"최면석판"},
@@ -6669,7 +6669,7 @@ const cardDB = {
 		parents:"B2-PA-001-1",
 		name:{ "KOR":"Attack Prohibition+" }, class:"Villager", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["Champion토큰", "하드전용"], related:["B2-PA-001-2+"],
+		tags:["Champion토큰", "Hard Only"], related:["B2-PA-001-2+"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"useAttack", cond:true, type:"orgasm", target:"self"},
@@ -6684,7 +6684,7 @@ const cardDB = {
 		parents:"B2-PA-001-2",
 		name:{ "KOR":"Defense Prohibition+" }, class:"Villager", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["Champion토큰", "하드전용"], related:["B2-PA-001-1+"],
+		tags:["Champion토큰", "Hard Only"], related:["B2-PA-001-1+"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"useSupport", cond:true, type:"orgasm", target:"self"},
@@ -6700,7 +6700,7 @@ const cardDB = {
 		parents:"B2-UC-001",
 		name:{ "KOR":"Strip+" }, class:"Villager", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion덱", "하드전용"], related:["B2-PN-001"],
+		tags:["Champion덱", "Hard Only"], related:["B2-PN-001"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"벗어라"},
 			{trigger:"used", cond:true, type:"clothes", value:"uncloth"},
@@ -6715,7 +6715,7 @@ const cardDB = {
 		parents:"B2-AT-001",
 		name:{ "KOR":"Masturbate+" }, class:"Villager", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion덱", "하드전용"], related:["B2-PN-001"],
+		tags:["Champion덱", "Hard Only"], related:["B2-PN-001"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"최면명령"},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
@@ -6730,7 +6730,7 @@ const cardDB = {
 		parents:"B2-AT-002",
 		name:{ "KOR":"Wet Yourself+" }, class:"Villager", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion덱", "하드전용"], related:["B2-PN-001"],
+		tags:["Champion덱", "Hard Only"], related:["B2-PN-001"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"최면명령"},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
@@ -6859,7 +6859,7 @@ const cardDB = {
 		parents:"B3-PA-001",
 		name:{ "KOR":"Innumerable Tentacles+" }, class:"Tentacle Slime", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion능력", "하드전용"], related:["B3-PA-001-1+"],
+		tags:["Champion능력", "Hard Only"], related:["B3-PA-001-1+"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"turnEnd", cond:true, type:"get", target:"self", byname:true, value:"B3-PA-001-1+"},
@@ -6870,7 +6870,7 @@ const cardDB = {
 		parents:"B3-PA-001-1",
 		name:{ "KOR":"Tentacle Insertion+" }, class:"Tentacle Slime", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion토큰", "하드전용"],
+		tags:["Champion토큰", "Hard Only"],
 		effect:[
 			{trigger:"used", cond:true, type:"Heat", op:"add", value:1},
 			{trigger:"used", cond:true, type:"excite", target:"self", op:"add", value:-10},
@@ -6893,7 +6893,7 @@ const cardDB = {
 		parents:"B3-SU-002",
 		name:{ "KOR":"Saliva Ingestion+" }, class:"Tentacle Slime", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion덱", "하드전용"],
+		tags:["Champion덱", "Hard Only"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"타액섭취"},
 			{trigger:"used", cond:true, type:"excite", target:"self", op:"set", value:0},
@@ -6914,7 +6914,7 @@ const cardDB = {
 	//
 
 	"B4-PA-001":{
-		name:{ "KOR":"Damn Brat" }, class:"악동", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Damn Brat" }, class:"Imp", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion능력", "노말전용"],
 		expiration:"always", duration:Infinity, stack:1,
@@ -6923,7 +6923,7 @@ const cardDB = {
 		]
 	},
 	"B4-UC-001":{
-		name:{ "KOR":"Mischievous Prank" }, class:"악동", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Mischievous Prank" }, class:"Imp", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion덱"], related:["B4-PA-001"],
 		effect:[
@@ -6933,7 +6933,7 @@ const cardDB = {
 		]
 	},
 	"B4-AT-001":{
-		name:{ "KOR":"I Wanna Touch Your Boobs" }, class:"악동", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"I Wanna Touch Your Boobs" }, class:"Imp", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion덱"],
 		effect:[
@@ -6942,7 +6942,7 @@ const cardDB = {
 		]
 	},
 	"B4-AT-002":{
-		name:{ "KOR":"Hug Me" }, class:"악동", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Hug Me" }, class:"Imp", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion덱"],
 		effect:[
@@ -6951,7 +6951,7 @@ const cardDB = {
 		]
 	},
 	"B4-AT-004":{
-		name:{ "KOR":"You're My Toy" }, class:"악동", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"You're My Toy" }, class:"Imp", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion덱", "노말전용"],
 		effect:[
@@ -6960,7 +6960,7 @@ const cardDB = {
 		]
 	},
 	"B4-SU-001":{
-		name:{ "KOR":"Now You're It" }, class:"악동", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Now You're It" }, class:"Imp", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:{v1:"자신.기록.이전.이벤트.Orgasm", op:">", v2:0},
 		tags:["Champion덱"], related:["B4-PA-001"],
 		effect:[
@@ -6970,7 +6970,7 @@ const cardDB = {
 		]
 	},
 	"B4-SU-002":{
-		name:{ "KOR":"Loser Gets a Punishment" }, class:"악동", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Loser Gets a Punishment" }, class:"Imp", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:{v1:"상대.기록.이전.이벤트.Orgasm", op:">", v2:0},
 		tags:["Champion덱"], related:["B4-PA-001"],
 		effect:[
@@ -6980,7 +6980,7 @@ const cardDB = {
 		]
 	},
 	"B4-SU-003":{
-		name:{ "KOR":"Teasing" }, class:"악동", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Teasing" }, class:"Imp", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:{v1:"상대.기록.이전.사용.length", op:">=", v2:2},
 		tags:["Champion덱", "노말전용"], related:["B4-PA-001"],
 		effect:[
@@ -6992,7 +6992,7 @@ const cardDB = {
 
 	"B4-PA-001+":{
 		parents:"B4-PA-001",
-		name:{ "KOR":"Damn Brat+" }, class:"악동", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Damn Brat+" }, class:"Imp", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion능력", "노말전용"],
 		expiration:"always", duration:Infinity, stack:0,
@@ -7002,7 +7002,7 @@ const cardDB = {
 	},
 	"B4-UC-001+":{
 		parents:"B4-UC-001",
-		name:{ "KOR":"Mischievous Prank+" }, class:"악동", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Mischievous Prank+" }, class:"Imp", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion덱"], related:["B4-PA-001+"],
 		effect:[
@@ -7013,9 +7013,9 @@ const cardDB = {
 	},
 	"B4-AT-004+":{
 		parents:"B4-AT-004",
-		name:{ "KOR":"You're My Toy+" }, class:"악동", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"You're My Toy+" }, class:"Imp", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion덱", "하드전용"],
+		tags:["Champion덱", "Hard Only"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"누나는장난감이야"},
 			{trigger:"used", cond:true, type:"attack", target:"op", repeat:"실제Heat"},
@@ -7023,7 +7023,7 @@ const cardDB = {
 	},
 	"B4-SU-001+":{
 		parents:"B4-SU-001",
-		name:{ "KOR":"Now You're It+" }, class:"악동", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Now You're It+" }, class:"Imp", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:{v1:"자신.기록.이전.이벤트.Orgasm", op:">", v2:0},
 		tags:["Champion덱"], related:["B4-PA-001+"],
 		effect:[
@@ -7035,7 +7035,7 @@ const cardDB = {
 	},
 	"B4-SU-002+":{
 		parents:"B4-SU-002",
-		name:{ "KOR":"Loser Gets a Punishment+" }, class:"악동", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Loser Gets a Punishment+" }, class:"Imp", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:{v1:"상대.기록.이전.이벤트.Orgasm", op:">", v2:0},
 		tags:["Champion덱"], related:["B4-PA-001+"],
 		effect:[
@@ -7047,9 +7047,9 @@ const cardDB = {
 	},
 	"B4-SU-003+":{
 		parents:"B4-SU-003",
-		name:{ "KOR":"Teasing+" }, class:"악동", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Teasing+" }, class:"Imp", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:{v1:"상대.기록.이전.사용.length", op:">=", v2:2},
-		tags:["Champion덱", "하드전용"], related:["B4-PA-001+"],
+		tags:["Champion덱", "Hard Only"], related:["B4-PA-001+"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"약올리기"},
 			{trigger:"used", cond:true, type:"stack", info:{target:"id:B4-PA-001+"}, op:"add", value:1, keepLine:true},
@@ -7059,7 +7059,7 @@ const cardDB = {
 	},
 
 	"B4-AT-003":{
-		name:{ "KOR":"Play With Me" }, class:"악동", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Play With Me" }, class:"Imp", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion덱", "클라이맥스"],
 		effect:[
@@ -7313,7 +7313,7 @@ const cardDB = {
 		parents:"B6-PA-001",
 		name:{ "KOR":"Proliferation+" }, class:"Mushroom Man", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion능력", "하드전용"], related:["B6-ST-001", "tag:Spore"],
+		tags:["Champion능력", "Hard Only"], related:["B6-ST-001", "tag:Spore"],
 		expiration:"always", duration:Infinity, stack:1,
 		effect:[
 			{trigger:"always", cond:{v1:"라운드", op:">=", v2:2}, type:"maxUse", target:"self", value:1},
@@ -7324,7 +7324,7 @@ const cardDB = {
 		parents:"B6-UC-001",
 		name:{ "KOR":"Corrosive Sap+" }, class:"Mushroom Man", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true, related:["B6-ST-001", "tag:Spore"],
-		tags:["Champion덱", "하드전용"],
+		tags:["Champion덱", "Hard Only"],
 		effect:[
 			{trigger:"used", cond:true, type:"clothes", value:"uncloth"},
 			{trigger:"used", cond:true, type:"state", target:"op", value:"B6-ST-001", byname:true, repeat:3},
@@ -7334,7 +7334,7 @@ const cardDB = {
 		parents:"B6-AT-001",
 		name:{ "KOR":"Spore-Cum Breeding+" }, class:"Mushroom Man", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion덱", "하드전용"], related:["B6-ST-001", "tag:Spore"],
+		tags:["Champion덱", "Hard Only"], related:["B6-ST-001", "tag:Spore"],
 		effect:[
 			{trigger:"used", cond:true, type:"state", target:"op", value:"B6-ST-001", byname:true, repeat:2},
 			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:1},
@@ -7476,7 +7476,7 @@ const cardDB = {
 		parents:"B7-PA-001",
 		name:{ "KOR":"Pickup Artist+" }, class:"Blonde Thug", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion능력", "하드전용"],
+		tags:["Champion능력", "Hard Only"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"none", cond:true, type:"text", value:{ "KOR":"After the challenger acts, chooses and plays the most lethal card." }}
@@ -7682,7 +7682,7 @@ const cardDB = {
 		parents:"B8-PA-001",
 		name:{ "KOR":"Submission Training+" }, class:"Trainer", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion능력", "하드전용"], related:["tag:규율", "B8-PA-001-1"],
+		tags:["Champion능력", "Hard Only"], related:["tag:규율", "B8-PA-001-1"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"turnStart", cond:true, type:"state", target:"op", value:"randomCard(tags, 규율)", repeat:2},
@@ -7693,7 +7693,7 @@ const cardDB = {
 		parents:"B8-UC-001",
 		name:{ "KOR":"Attire Correction+" }, class:"Trainer", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion덱", "하드전용"], related:["B8-UC-001-1"],
+		tags:["Champion덱", "Hard Only"], related:["B8-UC-001-1"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"복장교정"},
 			{trigger:"used", cond:true, type:"clothes", value:"uncloth"},
@@ -7704,7 +7704,7 @@ const cardDB = {
 		parents:"B8-AT-002",
 		name:{ "KOR":"Drug Training+" }, class:"Trainer", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion덱", "하드전용"], related:["tag:Potion", "B8-PA-001-1"],
+		tags:["Champion덱", "Hard Only"], related:["tag:Potion", "B8-PA-001-1"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"Potion조교"},
 			{trigger:"used", cond:true, type:"state", target:"op", value:"randomCard(tags, Potion)", repeat:"상대.상태.count(id, B8-PA-001-1)"},
@@ -7715,7 +7715,7 @@ const cardDB = {
 		parents:"B8-AT-003",
 		name:{ "KOR":"Torture Training+" }, class:"Trainer", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion덱", "하드전용"], related:["Penalty"],
+		tags:["Champion덱", "Hard Only"], related:["Penalty"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"고문조교"},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
@@ -7736,7 +7736,7 @@ const cardDB = {
 		parents:"B8-SU-002",
 		name:{ "KOR":"Erogenous Zone Training+" }, class:"Trainer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["Champion덱", "하드전용"], related:["B8-PA-001-1"],
+		tags:["Champion덱", "Hard Only"], related:["B8-PA-001-1"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"성감대조교"},
 			{trigger:"used", cond:true, type:"Heat", op:"add", value:2},
@@ -7927,7 +7927,7 @@ function generateCardExcel() {
     // 엑셀 파일 생성
     const workbook = XLSX.utils.book_new();
     const worksheetData = [
-        ["Name", "클래스", "밸런스", "매커니즘", "기타"],
+        ["Name", "클래스", "밸런스", "매커니즘", "Other"],
         ...excelData.map(card => [card.name, card.class, card.balance, card.mechanism, card.others])
     ];
     const worksheet = XLSX.utils.aoa_to_sheet(worksheetData);

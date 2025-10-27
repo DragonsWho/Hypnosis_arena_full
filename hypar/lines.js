@@ -40,7 +40,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Imp"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -113,7 +113,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Imp"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -233,7 +233,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Imp"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -306,7 +306,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Imp"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -430,7 +430,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"Champion.Name", op:"==", v2:"Imp"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -503,7 +503,7 @@ const line = {
 			]
 		},
 		{
-			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"악동"}], 
+			priority:0, cond:["and", {v1:"모드", op:"==", v2:1}, {v1:"Champion.Name", op:"==", v2:"Imp"}], 
 			lineList:[
 				{
 					cond:true, pos:0,
@@ -678,7 +678,7 @@ const line = {
 					text:"Hook♡ Hook♡",
 				},
 				{
-					cond:["and", {v1:"Champion.Name", op:"==", v2:"악동"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Imp"}], pos:0,
 					text:"I'm gonna cum♡ Sis♡",
 				},
 				{
@@ -715,7 +715,7 @@ const line = {
 					text:"Hook♡ Hook♡",
 				},
 				{
-					cond:["and", {v1:"Champion.Name", op:"==", v2:"악동"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Imp"}], pos:0,
 					text:"Sis's pussy feels so good♡",
 				},
 				{
@@ -752,7 +752,7 @@ const line = {
 					text:"Hook♡ Hook♡",
 				},
 				{
-					cond:["and", {v1:"Champion.Name", op:"==", v2:"악동"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Imp"}], pos:0,
 					text:"Ugh♡ Hold on, sis♡",
 				},
 				{
@@ -793,7 +793,7 @@ const line = {
 					text:"Huoooook♡",
 				},
 				{
-					cond:["and", {v1:"Champion.Name", op:"==", v2:"악동"}], pos:0,
+					cond:["and", {v1:"Champion.Name", op:"==", v2:"Imp"}], pos:0,
 					text:"N-no♡<br>I'm supposed to be the incubus...♡",
 				},
 				{
@@ -3327,7 +3327,7 @@ const line = {
 		},
 	],
 
-	"악동-이벤트-개전":[
+	"Imp-이벤트-개전":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
@@ -3497,7 +3497,7 @@ const line = {
 			]
 		},
 	],
-	"악동-이벤트-망할꼬맹이":[ 
+	"Imp-이벤트-망할꼬맹이":[ 
 		{
 			priority:0, cond:{v1:"모드", op:"==", v2:0}, repeatable:true,
 			lineList:[
@@ -3533,7 +3533,7 @@ const line = {
 			]
 		},
 	],
-	"악동-이벤트-Excitement":[
+	"Imp-이벤트-Excitement":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
@@ -3716,7 +3716,7 @@ const line = {
 			]
 		},
 	],
-	"악동-이벤트-Corruption":[
+	"Imp-이벤트-Corruption":[
 		{
 			priority:0, cond:["and", {v1:"모드", op:"==", v2:0}, {v1:"커스텀.Personality", op:"==", v2:"순종"}],
 			lineList:[
