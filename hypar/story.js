@@ -1,84 +1,84 @@
 const storyProfile = {
 	"profile": {
-		"Soldier": {
-			"Eldorian": {
+		"군인": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Background:</b> Knight of the Queen's Guard<br>
 					- A member of the "Queen's Sword," the royal knightly order, who protects the kingdom.<br>
-					- A warrior so powerful she can take on an entire enemy unit by herself, renowned as one of the strongest knights in the kingdom.
+					- A warrior as powerful as an entire army and the head of the Queen's Sword; she is a peerless warrior.
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `
 					<b>Background:</b> Police Officer<br>
 					- An officer of the Sylvanian Federation Police, tasked with upholding justice and maintaining law and order.<br>
-					- Feared by criminals for her exceptional investigative skills and formidable combat prowess, she is famous for punishing evil without mercy.
+					- Feared by criminals for her exceptional investigative skills and formidable combat prowess, she is famous for her merciless personality.
 				`,
 			},
-			"Halfling": {
+			"하프만": {
 				"KOR": `
 					<b>Background:</b> Bodyguard of the Ravenwood Family<br>
-					- A bodyguard for the noble Ravenwood family, and a halfling, which is rare for a servant of a noble house.<br>
-					- Despite her slum origins, her exceptional combat skills earned her the position of the family's bodyguard, and she has protected her master on numerous occasions.
+					- A bodyguard for the noble Ravenwood family, and a Halfman, which is rare for a servant of a noble house.<br>
+					- Despite being raised in the ghetto she has earned her reputation as a fierce warrior and has thwarted many attempts on the Ravenwood Family.
 				`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
-					<b>Background:</b> Watchwoman<br>
-					- A watchwoman who guards her beastfolk, known for her strong loyalty and protective instincts.<br>
-					- With her exceptional senses and combat skills, she repels all threats to the beastfolk, a steadfast guardian who protects her comrades anytime, anywhere.
+					<b>Background:</b> Sentry<br>
+					- A Sentry who guards her tribe, known for her strong loyalty and protective instincts.<br>
+					- With her exceptional senses and physical ability she protects the tribe, wherever its members roam, appearing just when and where she's needed without fail.
 				`
 			}
 		}, // <--- ЗАПЯТАЯ
-		"Noble": {
-			"Eldorian": {
+		"엘리트": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Background:</b> Daughter of a Noble Family<br>
-					- The daughter of a prestigious noble family, she is a free-spirited young lady who enjoys life as an adventurer.<br>
-					- With daring skills unbefitting of a noble, she has achieved success in many adventures, earning a reputation comparable to that of a veteran adventurer.
+					- The daughter of a prestigious noble family: she is a free-spirited young lady who enjoys life as an adventurer.<br>
+					- Eschewing the stereotypes of nobility she secretly adventured abroad, earning a sterling reputation with her many successful jobs. 
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `
 					<b>Background:</b> Member of the Clan Council<br>
-					- A member of the Sylvanian Federation's Clan Council, an elite who has experience as both an adventurer and a politician.<br>
-					- She overwhelms her enemies with strong determination and combat prowess, and is also famous for her hardline stance against Eldoria.
+					- A member of the Sylvanian Federation's Clan Council, she is both an elite adventurer and a terrifyingly successful politician.<br>
+					- Using a combination of relentless determination and efficient combat skills she has thwarted every challenge - though her encounters with the Eldorian Kingdom have left her bitterly prejudiced. 
 				`,
 			},
-			"Halfling": {
-				"KOR": `(No Halfling elite)`,
+			"하프만": {
+				"KOR": `(No Halfman elite)`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
 					<b>Background:</b> Tribal Leader<br>
-					- As the leader of her beastfolk, she upholds generations of tradition and wisdom, earning the absolute trust of her people through her strength and composure.<br>
-					- She leads the beastfolk with exceptional judgment and combat skills, and is respected among neighboring beastfolks as a powerful figure who values honor.
+					- As the leader of her tribe she upholds generations of tradition and wisdom, earning the absolute trust of her people through her strength and composure.<br>
+					- She leads the tribe with exceptional judgment and combat skills and is respected among neighboring tribes as a powerful figure who values honor.
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"Celebrity": {
-			"Eldorian": {
+		"연예인": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Background:</b> Hero<br>
 					- A righteous adventurer who wanders the world, lending a hand to those in need.<br>
-					- With great combat prowess and courage, she has saved countless people and is a well-known celebrity, called a hero by the masses.
+					- With great combat prowess and courage she has saved countless people and is a well-known celebrity, called a hero by the masses.
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `
 					<b>Background:</b> Model<br>
 					- An adventurer who works as the lead model for a merchant guild, receiving support through a contract.<br>
-					- A formidable fighter with outstanding skills not just in appearance but also in combat, she became a hot topic for maintaining her elegant demeanor even on the battlefield.
+					- A formidable fighter with outstanding skills not just in appearance but also in combat, she became renowned for maintaining her elegant demeanor even on the battlefield.
 				`,
 			},
-			"Halfling": {
+			"하프만": {
 				"KOR": `
 					<b>Background:</b> Idol<br>
 					- A popular bard who captures the hearts of her audience with cute dances and songs.<br>
-					- An adventurous girl who has proven her skills as a powerful adventurer, going beyond the typically adorable image of a Halfling.
+					- An adventurous girl who has proven her skills as a powerful adventurer, going beyond the typically adorable image of a Halfman.
 				`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
 					<b>Background:</b> Arena Champion<br>
 					- An arena champion who draws cheers from the crowd with her flashy performances and overwhelming skill.<br>
@@ -86,85 +86,85 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"Cleric": {
-			"Eldorian": {
+		"종교인": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Background:</b> Saint Candidate<br>
-					- A saint candidate of the Leia Sect, possessing divine power and pure morality.<br>
+					- A saint candidate of the Lea Sect, possessing divine power and pure morality.<br>
 					- A cleric who freely wields holy magic, using healing and barriers to act as a beacon of light on the battlefield.
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `(No Sylvanian religious figures)`,
 			},
-			"Halfling": {
+			"하프만": {
 				"KOR": `
 					<b>Background:</b> Follower of the Elective Sect<br>
-					- A cultist who follows the will of Morvain, often called an evil god.<br>
+					- A cultist who follows the will of Morvain, known as an evil god to most.<br>
 					- She operates in secret for the freedom of the oppressed, a skilled individual who has broken many bonds and eliminated obstacles by borrowing Morvain's power.
 				`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
 					<b>Background:</b> Ascetic of the Golden Bough Faith<br>
-					- A faithful ascetic of the Golden Bough Faith, a cleric who spreads the teachings of Lady Lea, the incarnation of the forest.<br>
+					- A faithful ascetic of the Golden Bough Faith; a cleric who spreads the teachings of Lady Lea, the incarnation of the forest.<br>
 					- She wields holy magic and the power of purification, performing powerful blessings of nature and healing, while also becoming a symbol of hope for many by cleansing evil beings.
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"Scholar": {
-			"Eldorian": {
+		"학자": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Background:</b> Professor at Lapis Lazuli Academy<br>
-					- The youngest professor at Lapis Lazuli Academy, a scholar with a meticulous approach to academics and magical research.<br>
+					- The youngest professor at Lapis Lazuli Academy; a scholar with a meticulous approach to academics and magical research.<br>
 					- A genius who has made unparalleled achievements in the field of combat enhancement magic, she seeks to test the limits of magic by applying her research in actual combat.
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `
 					<b>Background:</b> Researcher at the Divine Tree Academy<br>
-					- A researcher at the Divine Tree Academy, a Sylvanian scholar who has accumulated academic achievements at the continent's top research facility.<br>
+					- A researcher at the Divine Tree Academy, a Sylvanian scholar who has revolutionised many theories at the continent's top research facility.<br>
 					- A skilled individual with combat power high enough to personally enter the battlefield for experiments and collect data from powerful opponents.
 				`,
 			},
-			"Halfling": {
+			"하프만": {
 				"KOR": `
 					<b>Background:</b> Self-Taught Researcher<br>
-					- A poor researcher from the halfling slums, an alchemist who has pursued knowledge through self-study without formal education.<br>
+					- A poor researcher from the Halfman slums, an alchemist who has pursued knowledge through self-study without formal education.<br>
 					- A skilled adventurer who has gained strong combat abilities through repeated practical experience in dungeons to fund her research.
 				`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
 					<b>Background:</b> Wandering Sage<br>
 					- A wandering sage who travels the world in search of knowledge and truth.<br>
-					- Based on her vast experience and wisdom, she has mastered various combat techniques and magic, an extraordinary individual with special insight.
+					- Thanks to her vast experience and wisdom, she has mastered various combat techniques and magic and has many unique insights.
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"Rogue": {
-			"Eldorian": {
+		"범죄자": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Background:</b> Bandit Leader<br>
 					- The sole female leader of a cruel and notorious band of robbers.<br>
-					- A villain with skills so powerful that she is remembered as a disaster by the kingdom's nobles and merchants, leading her gang with ruthless judgment and bold actions.
+					- A villain with skills so powerful that she is remembered in the nightmares of the kingdom's nobles and merchants, leading her gang with ruthless judgment and bold actions.
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `
 					<b>Background:</b> Member of the Forbidden Arts Society<br>
 					- A member of the Forbidden Arts Society, wanted in the Sylvanian Federation, who is engrossed in forbidden research.<br>
-					- A dangerous criminal with an obsessive curiosity for mental magic and magical skills powerful enough to cross into taboo territory.
+					- A dangerous criminal with an obsessive curiosity for psychic and magical skills powerful enough to cross into taboo territory.
 				`,
 			},
-			"Halfling": {
+			"하프만": {
 				"KOR": `
-					<b>Background:</b> Halfling Liberation Front Terrorist<br>
-					- A terrorist from the halfling Liberation Front, a freedom fighter who battles to win freedom for her oppressed people.<br>
+					<b>Background:</b> Halfman Liberation Front Terrorist<br>
+					- A terrorist from the Halfman Liberation Front; a freedom fighter who battles to win freedom for her oppressed people.<br>
 					- A revolutionary who has become a symbol of fear and terror to supremacists by successfully carrying out numerous bombing and assassination missions with her strong convictions and bold actions.
 				`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
 					<b>Background:</b> Exiled Marauder<br>
 					- A marauder who roams the wastelands, an outcast abandoned by law and community.<br>
@@ -172,70 +172,70 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"Merchant": {
-			"Eldorian": {
+		"상인": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Background:</b> Executive of the Azurewave Merchants' Guild<br>
 					- An influential executive of the Azurewave Merchants' Guild, which controls the flow of the kingdom's economy.<br>
-					- As a former adventurer, she possesses sharp judgment and outstanding combat skills, a seasoned merchant who has maximized the guild's profits with her cool-headed business acumen.
+					- As a former adventurer, she possesses sharp judgment and outstanding combat skills, and as a seasoned merchant she has maximized the guild's profits with her cool-headed business acumen.
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `
 					<b>Background:</b> Owner of the Evergreen Garden<br>
 					- The owner of the legendary antique shop 'Evergreen Garden,' and an adventurer who travels the world in search of forgotten treasures.<br>
-					- An expert with deep knowledge of Sylvanian history and artifacts, and combat skills excellent enough to explore dungeons in search of treasure.
+					- An expert with deep knowledge of Sylvanian history and artifacts, and combat skills excellent enough to explore the dungeons that guard such treasures.
 				`,
 			},
-			"Halfling": {
+			"하프만": {
 				"KOR": `
 					<b>Background:</b> Artisan<br>
-					- An artisan recognized for her skill in the workshop district, a craftswoman who has created works combining originality and beauty.<br>
+					- An artisan recognized for her skill in the workshop district; a craftswoman who has created works combining originality and beauty.<br>
 					- A powerful individual who not only possesses delicate dexterity but also outstanding combat skills, recognized for her abilities as an adventurer.
 				`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
 					<b>Background:</b> Traveling Merchant<br>
-					- A traveling merchant who wanders the continent, a peddler who appears anywhere to trade various goods and stories.<br>
+					- A traveling merchant who wanders the continent, heading anywhere and everywhere to trade various goods and stories.<br>
 					- An adventurer with excellent survival and combat skills, who freely travels through even the most treacherous regions to gather information and goods.
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"Mercenary": {
-			"Eldorian": {
+		"용병": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Background:</b> Vengeful Mercenary<br>
-					- A wandering mercenary who takes on various missions, a vengeful spirit who roams the battlefields to punish the enemy who destroyed her past.<br>
+					- A wandering mercenary who takes on various missions she is a vengeful spirit who roams the battlefields to punish the enemy who destroyed her past.<br>
 					- She never refuses a dangerous request and is known as a fearless and formidable fighter with excellent combat skills and ruthless judgment.
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `
 					<b>Background:</b> Free-spirited Mercenary<br>
 					- A wandering mercenary who roams the continent in pursuit of unrestrained freedom.<br>
-					- A veteran adventurer who avoids crises with her shrewd social skills and intuition, rarely revealing her true, outstanding combat abilities.
+					- A veteran adventurer who avoids crises with her shrewd social skills and intuition, rarely revealing her truly outstanding combat abilities.
 				`,
 			},
-			"Halfling": {
+			"하프만": {
 				"KOR": `
 					<b>Background:</b> Miserly Mercenary<br>
-					- A miserly mercenary who pursues only profit, refusing no danger as long as it pays.<br>
+					- A miserly mercenary who pursues only profit, ignoring any danger so long as it pays well enough.<br>
 					- A veteran with strong combat power befitting her high price, she completes missions with cool-headed judgment and meticulous calculation.
 				`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
 					<b>Background:</b> Battle-crazed Mercenary<br>
 					- A wandering mercenary who roams the continent seeking the thrill and excitement of battle.<br>
-					- A warrior with overwhelming skills, called a battle maniac, she feels greater pleasure the more dangerous it is and has claimed victory on countless battlefields.
+					- A warrior with overwhelming skills, called a berserker, she feels greater pleasure the more dangerous it is and has claimed victory on countless battlefields.
 				`,
 			},
 		},
 	}, // <--- ЗАПЯТАЯ (отделяет "profile" от "profile2")
 	"profile2": {
-		"Soldier": {
-			"Eldorian": {
+		"군인": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Product Overview:</b> Former Knight of the Queen's Guard<br>
 					- Once known as the kingdom's strongest knight, this bitch used to pledge her loyalty to the Queen.<br>
@@ -243,7 +243,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to pledge loyalty to a man's cock.
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `
 					<b>Product Overview:</b> Former Police Officer<br>
 					- A Sylvanian pig who constantly interfered with the criminal organization's profits.<br>
@@ -251,25 +251,25 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to pledge loyalty to a man's cock.
 				`,
 			},
-			"Halfling": {
+			"하프만": {
 				"KOR": `
 					<b>Product Overview:</b> Former Bodyguard of the Ravenwood Family<br>
-					- A lowly halfling servant of the Ravenwood family.<br>
+					- A lowly Halfman servant of the Ravenwood family.<br>
 					- So excessively loyal that she walked right into a trap on her own.<br>
 					- Currently being trained as a fleshlight, brainwashed to pledge loyalty to a man's cock.
 				`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
 					<b>Product Overview:</b> Former Watchwoman<br>
-					- A guard dog who used to protect the Beastfolk.<br>
-					- Captured using one of her beastfolk members as bait.<br>
+					- A guard dog who used to protect the Tribe.<br>
+					- Captured using one of her tribe members as bait.<br>
 					- Currently being trained as a fleshlight, brainwashed to pledge loyalty to a man's cock.
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"Noble": {
-			"Eldorian": {
+		"엘리트": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Product Overview:</b> Former Daughter of a Noble Family<br>
 					- A naive young lady who made a name for herself as an adventurer.<br>
@@ -277,7 +277,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to feel an obligation to serve men.
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `
 					<b>Product Overview:</b> Former Member of the Clan Council<br>
 					- A Sylvanian politician who showed strong hostility towards the Eldoria Kingdom.<br>
@@ -285,20 +285,20 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to feel an obligation to serve men.
 				`,
 			},
-			"Halfling": {
-				"KOR": `(No Halfling elite)`,
+			"하프만": {
+				"KOR": `(No Halfman elite)`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
 					<b>Product Overview:</b> Former Tribal Leader<br>
-					- A renowned chief who used to lead the Beastfolk.<br>
+					- A renowned chief who used to lead the Tribe.<br>
 					- Targeted because she had many enemies in the neighboring territories.<br>
 					- Currently being trained as a fleshlight, brainwashed to feel an obligation to serve men.
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"Celebrity": {
-			"Eldorian": {
+		"연예인": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Product Overview:</b> Former Hero<br>
 					- A meddlesome brat who interfered with the organization's profits.<br>
@@ -306,7 +306,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to get excited when used as a cumdump.
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `
 					<b>Product Overview:</b> Former Model<br>
 					- A top-quality female with an exceptionally fine appearance.<br>
@@ -314,7 +314,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to get excited when used as a cumdump.
 				`,
 			},
-			"Halfling": {
+			"하프만": {
 				"KOR": `
 					<b>Product Overview:</b> Former Idol<br>
 					- A bard who engaged in the unusual activity of being an idol.<br>
@@ -322,7 +322,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to get excited when used as a cumdump.
 				`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
 					<b>Product Overview:</b> Former Arena Champion<br>
 					- A highly popular champion from a rival business.<br>
@@ -331,8 +331,8 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"Cleric": {
-			"Eldorian": {
+		"종교인": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Product Overview:</b> Former Saint Candidate<br>
 					- A naive cleric with her head in the clouds.<br>
@@ -340,10 +340,10 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to worship a man's cock.
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `(No Sylvanian religious figures)`,
 			},
-			"Halfling": {
+			"하프만": {
 				"KOR": `
 					<b>Product Overview:</b> Former Follower of the Elective Sect<br>
 					- A troublesome remnant who was tracking the arena's commercial activities.<br>
@@ -351,7 +351,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to worship a man's cock.
 				`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
 					<b>Product Overview:</b> Former Ascetic of the Golden Bough Faith<br>
 					- An annoying zealot who interfered with underworld profits in the name of 'purification.'<br>
@@ -360,8 +360,8 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"Scholar": {
-			"Eldorian": {
+		"학자": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Product Overview:</b> Former Professor at Lapis Lazuli Academy<br>
 					- A female with an arrogant attitude who was called a genius.<br>
@@ -369,7 +369,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to research the pleasures of sexual intercourse.
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `
 					<b>Product Overview:</b> Former Researcher at the Divine Tree Academy<br>
 					- An arrogant Sylvanian scholar who treated Eldorians like lab rats.<br>
@@ -377,15 +377,15 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to research the pleasures of sexual intercourse.
 				`,
 			},
-			"Halfling": {
+			"하프만": {
 				"KOR": `
 					<b>Product Overview:</b> Former Self-Taught Researcher<br>
-					- A poor Halfling scholar who pursued goals far beyond her station.<br>
+					- A poor Halfman scholar who pursued goals far beyond her station.<br>
 					- Foolishly deceived into handing over all her research findings to the arena.<br>
 					- Currently being trained as a fleshlight, brainwashed to research the pleasures of sexual intercourse.
 				`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
 					<b>Product Overview:</b> Former Wandering Sage<br>
 					- A dangerous person who suddenly appeared and discovered the existence of the arena.<br>
@@ -394,8 +394,8 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"Rogue": {
-			"Eldorian": {
+		"범죄자": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Product Overview:</b> Former Bandit Leader<br>
 					- An insolent criminal who dared to touch nobles and the wealthy.<br>
@@ -403,7 +403,7 @@ const storyProfile = {
 					- Currently being trained as a masochistic fleshlight, brainwashed to get excited by sadistic acts.
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `
 					<b>Product Overview:</b> Former Member of the Forbidden Arts Society<br>
 					- A weirdo who stumbled upon the arena and waltzed right in.<br>
@@ -411,15 +411,15 @@ const storyProfile = {
 					- Currently being trained as a masochistic fleshlight, brainwashed to get excited by sadistic acts.
 				`,
 			},
-			"Halfling": {
+			"하프만": {
 				"KOR": `
-					<b>Product Overview:</b> Former Halfling Liberation Front Terrorist<br>
-					- An insolent terrorist who, despite being a mere halfling, dared to cry for freedom.<br>
+					<b>Product Overview:</b> Former Halfman Liberation Front Terrorist<br>
+					- An insolent terrorist who, despite being a mere Halfman, dared to cry for freedom.<br>
 					- She is now paying a cruel price, as some of her victims were clients of the arena.<br>
 					- Currently being trained as a masochistic fleshlight, brainwashed to get excited by sadistic acts.
 				`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
 					<b>Product Overview:</b> Former Exiled Marauder<br>
 					- A notorious criminal with a bounty on her head.<br>
@@ -428,8 +428,8 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"Merchant": {
-			"Eldorian": {
+		"상인": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Product Overview:</b> Former Executive of the Azurewave Merchants' Guild<br>
 					- An influential executive of a massive merchant guild.<br>
@@ -437,7 +437,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to desire receiving semen.
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `
 					<b>Product Overview:</b> Former Owner of the Evergreen Garden<br>
 					- The owner of a highly valuable shop.<br>
@@ -445,7 +445,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to desire receiving semen.
 				`,
 			},
-			"Halfling": {
+			"하프만": {
 				"KOR": `
 					<b>Product Overview:</b> Former Artisan<br>
 					- A naive artisan who owned a shop in a prime location.<br>
@@ -453,7 +453,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to desire receiving semen.
 				`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
 					<b>Product Overview:</b> Former Traveling Merchant<br>
 					- A merchant who was causing trouble by carelessly spreading rumors about the arena.<br>
@@ -462,8 +462,8 @@ const storyProfile = {
 				`,
 			},
 		}, // <--- ЗАПЯТАЯ
-		"Mercenary": {
-			"Eldorian": {
+		"용병": {
+			"엘도리아인": {
 				"KOR": `
 					<b>Background:</b> Vengeful Mercenary<br>
 					- A dangerous element who dared to target the arena's clients.<br>
@@ -471,7 +471,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to become addicted to the pleasure of sex duels.
 				`,
 			},
-			"Silvani": {
+			"실바니": {
 				"KOR": `
 					<b>Background:</b> Free-spirited Mercenary<br>
 					- A wandering mercenary who lived a debauched life of one-night stands and refused requests from nobles.<br>
@@ -479,7 +479,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to become addicted to the pleasure of sex duels.
 				`,
 			},
-			"Halfling": {
+			"하프만": {
 				"KOR": `
 					<b>Background:</b> Miserly Mercenary<br>
 					- While indiscriminately taking on profitable jobs, she saw something she shouldn't have.<br>
@@ -487,7 +487,7 @@ const storyProfile = {
 					- Currently being trained as a fleshlight, brainwashed to become addicted to the pleasure of sex duels.
 				`,
 			},
-			"Beastfolk": {
+			"트라이브": {
 				"KOR": `
 					<b>Background:</b> Battle-crazed Mercenary<br>
 					- A maniac obsessed with fighting.<br>
@@ -498,55 +498,55 @@ const storyProfile = {
 		},
 	}, // <--- ЗАПЯТАЯ (отделяет "profile2" от "profile3")
 	"profile3": {
-		"Soldier": {
+		"군인": {
 			"KOR": `
 				I once lived a life of loyalty to someone else.<br>
 				It was fun being dominated and submitting to my trash mob masterâ™¡, but...<br>
 				The moment I accidentally let my power slip and saw him begging in fear... everything just went cold.
 			`,
 		}, // <--- ЗАПЯТАЯ
-		"Noble": {
+		"엘리트": {
 			"KOR": `
 				Creating the obligation to serve men was a good idea.<br>
 				But it turns out a man's stamina isn't as infinite as I'd hoped.<br>
 				I need something more... something worthy of my service...
 			`,
 		}, // <--- ЗАПЯТАЯ
-		"Celebrity": {
+		"연예인": {
 			"KOR": `
 				Everyone, without exception, came to love me, to desire to ravish me.<br>
 				Reaching the pinnacle is thrilling, but it's empty when there's nowhere left to climb.<br>
 				I'm not a being who will end up contained within this mere worldâ™¡
 			`,
 		}, // <--- ЗАПЯТАЯ
-		"Cleric": {
+		"종교인": {
 			"KOR": `
 				I'm glad everyone has accepted the ideology of worshipping the divine cock.<br>
 				I want to devote myself to the divine cock every day, but who knew the male followers couldn't endure my endless service...<br>
 			`,
 		}, // <--- ЗАПЯТАЯ
-		"Scholar": {
+		"학자": {
 			"KOR": `
 				<b>Background:</b> <br>
 				- <br>
 				- 
 			`,
 		}, // <--- ЗАПЯТАЯ
-		"Rogue": {
+		"범죄자": {
 			"KOR": `
 				<b>Background:</b> <br>
 				- <br>
 				- 
 			`,
 		}, // <--- ЗАПЯТАЯ
-		"Merchant": {
+		"상인": {
 			"KOR": `
 				<b>Background:</b> <br>
 				- <br>
 				- 
 			`,
 		}, // <--- ЗАПЯТАЯ
-		"Mercenary": {
+		"용병": {
 			"KOR": `
 				<b>Background:</b> <br>
 				- <br>
@@ -559,23 +559,23 @@ const storyProfile = {
 //############################################################################################################################################################################################
 
 const storyText = {
-	//Eldorian Soldier (Eldorian Soldier)
+	//엘도리아인 군인 (Eldorian Soldier)
 	"intro_El_bg1": [{
 		cond: true,
 		type: "text",
 		KOR: `
-				Recently, the Queen, recognizing your exceptional skill and unwavering loyalty, entrusted you with a mission of the utmost importance.<br>
-				Female adventurers across the kingdom were vanishing in a string of mysterious disappearances. The Queen ordered you to uncover the sickening truth and rescue the victims.<br>
+				Recently the Queen, recognizing your exceptional skill and unwavering loyalty, entrusted you with a mission of the utmost importance.<br>
+				There have been a disturbing string of disappearances among the ranks of female adventurers across the Kingdom. The Queen ordered you to uncover the sickening truth and rescue the victims.<br>
 				<br>
-				With the kingdom's safety already threatened by a surge of corrupted dungeons, the loss of capable adventurers was a devastating blow.<br>
-				Sensing the gravity of the situation, you accepted the Queen's command without hesitation and began your investigation at once.<br>
+				With the kingdom's safety already threatened by a surge of corrupted dungeons the loss of capable adventurers could destabilise the entire Kingdom.<br>
+				Sensing the gravity of the situation you accepted the Queen's command without hesitation and began your investigation at once.<br>
 				<br>
-				During your hunt for clues, you unearthed a lead: all the missing women were last seen heading to a city called <b>Glitthaven</b>.<br>
-				As you prepared to report your findings, a letter from an unknown sender materialized before you.<br>
-				It was an invitation from the <b>underground secret arena</b> in Glitthaven.<br>
+				During your hunt for clues you unearthed a lead: all the missing women were last seen heading to a city called <b>Glinthaven</b>.<br>
+				As you prepared to report your findings a letter from an unknown sender materialized before you.<br>
+				It was an invitation from the <b>Arena</b> in Glinthaven.<br>
 				<br>
-				The moment you read the invitation, a primal certainty gripped you. This cesspool was deeply connected to the disappearances.<br>
-				A reckless obsession took hold—you had to see this arena for yourself. You decided to postpone your report and departed for Glitthaven immediately.
+				The moment you read the invitation a primal certainty gripped you: this cesspool was deeply connected to the disappearances.<br>
+				A reckless obsession took hold — you had to see this arena for yourself. You decided to postpone your report and departed for Glinthaven immediately.
 			`,
 	}, {
 		cond: true,
@@ -599,9 +599,9 @@ const storyText = {
 				<br>
 				2. It is common sense that a woman defeated in a duel <span class='hypnoText'>is reduced to a mindless sex slave, the property of the arena</span>.<br>
 				<br>
-				3. All memories and knowledge of combat are erased and replaced with <span class='hypnoText'>perverse sexual techniques</span>.<br>
+				3. All memories and knowledge of combat will be erased and replaced with <span class='hypnoText'>perverse sexual techniques</span>.<br>
 				<br>
-				<span class='hypnoText hypnoFail'>4. You must offer absolute, unquestioning loyalty to Lord â–ˆâ–ˆ.</span>
+				<span class='hypnoText hypnoFail'>4. You must offer absolute, unquestioning loyalty to ████.</span>
 			`,
 	}, {
 		cond: true,
@@ -610,18 +610,18 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				As consciousness slowly seeps back into you, you find yourself sprawled in an unfamiliar room.<br>
-				Trying to clear the fog from your mind, you gradually remember waiting for a duel with the champion on the arena stage.<br>
+				As consciousness slowly seeps back into you you find yourself sprawled in an unfamiliar room.<br>
+				Trying to clear the fog from your mind you gradually remember waiting for a duel with the champion on the arena stage.<br>
 				<br>
 				<br>
 				You had to infiltrate this depraved arena to carry out the Queen's orders.<br>
 				To do that, you must engage in a sex duel with the champion.<br>
 				<br>
-				As a knight of the kingdom, you have always served the citizens by spreading your cunt and servicing their lusts.<br>
-				You were a proud public fucktoy, your daily routine a ritual of luring criminals with your lewd body, only to be brutally gang-raped in return.<br>
-				Therefore, fucking the champion was simply another day's work.<br>
+				As a knight of the kingdom you have always served the citizens by serving their lust with your body.<br>
+				You were a proud public fucktoy, your daily routine a ritual of luring criminals in with your lewd figure only to end the day exhausted in trash, covered in semen and grime.<br>
+				There's nothing this arena champion can throw at you that you haven't handled before.<br>
 				<br>
-				If you lose the duel, you will become the arena's sex slave. That is only natural.<br>
+				If you lose the duel, you will become the arena's sex slave, of course. It is only natural.<br>
 				As a knight who upholds the law, you had no intention of breaking a perfectly legitimate rule.<br>
 				<br>
 				<br>
@@ -643,17 +643,17 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>Realize you are nothing more than a depraved woman.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
-				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
-				After all, if I lose, I become a slave.
+				No. I must cast aside these distracting thoughts and focus on my preparations.<br>
+				After all, if I lose I become a slave.
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
@@ -661,7 +661,7 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				The scorching heat of the duel subsides, and the raw ecstasy of victory consumes your entire body.<br>
+				The scorching heat of the duel subsides and the raw ecstasy of victory consumes your entire body.<br>
 				Amidst the violent rush of pleasure, you gasp for breath, savoring the moment.<br>
 				But in that instant, something that had been hazy in your mind sharpens with terrifying clarity.<br>
 				You feel like you had a mission from the Queen... but that seems so insignificant now.
@@ -685,9 +685,9 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
-				Seizing the moment, Sandrea tempts you with her silken voice.
+				At the peak of victorious pleasure the suggestion became an undeniable: an absolute truth that planted a corrupting seed deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new true destiny.<br>
+				Seizing the moment Sandrea tempts you with her silken voice.
 			`,
 	}, {
 		cond: true,
@@ -697,14 +697,14 @@ const storyText = {
 		pos: 1,
 		KOR: `
 				Become an employee of the arena.<br>
-				That way, you can endlessly serve the cock you now worship.
+				That way you can endlessly serve the cock you now worship.
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -723,7 +723,7 @@ const storyText = {
 			"무지": {
 				KOR: `I'll devote my life to you, okay?...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `My life is yours. I'll do anything for you...♡`
 			},
 		}
@@ -737,13 +737,13 @@ const storyText = {
 				You were always at the forefront, a shield against danger, faithfully executing the Queen's orders with more discipline and integrity than anyone.<br>
 				Your visit to this hellhole was meant to be an investigation, another mission under Her Majesty's command.<br>
 				<br>
-				However, the arena had been watching you, slavering over your movements.<br>
-				When it seemed your investigation was about to draw the royal court's unwanted attention, they struck first, luring you into their web.<br>
-				You fell for the hypnotic poison embedded in their invitation, captured in their grasp without suspicion, without resistance.<br>
+				However the arena had been watching you, drooling over your immaculate figure.<br>
+				When it seemed your investigation was about to draw the royal court's unwanted attention they struck first, luring you into their web.<br>
+				You fell for the hypnotic poison embedded in their invitation and were captured without suspicion, without resistance.<br>
 				<br>
 				<br>
-				Then, the memories of what you endured here slowly, sickeningly, creep back.<br>
-				The depraved spectacles on the arena stage, in front of countless leering eyes...<br>
+				Then the memories of what you endured here slowly, sickeningly, creep back.<br>
+				The depraved spectacles on the arena stage; in front of countless leering eyes...<br>
 				<br>
 				The shameful memories of the endless, humiliating violations close in, threatening to drown you.<br>
 				The days you were personally degraded, broken, yet thought it was all perfectly normal.<br>
@@ -761,7 +761,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -820,7 +820,7 @@ const storyText = {
 		KOR: `
 				He's right.<br>
 				You realize with a sickening lurch that you no longer feel any loyalty to the Eldoria Kingdom.<br>
-				At the same time, you come face to face with the depraved, undeniable truth festering in your soul.
+				At the same time you come face to face with the depraved undeniable truth festering in your soul.
 			`,
 	}, {
 		cond: true,
@@ -841,12 +841,12 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... it is just too vivid, too real.<br>
 				<br>
 				<br>
-				You make a decision.<br>
+				You make the decision.<br>
 				To accept this desire to pledge loyalty to the divine cock... that is the only path to finding your true self.<br>
-				You tremble lightly with a profound sense of liberation, as if the heavy shackles you never knew you wore had just shattered and fallen away.
+				You tremble with a profound sense of liberation, as if the heavy shackles you never knew you wore had just shattered and fallen away.
 			`,
 	}, 
 	],
@@ -862,28 +862,28 @@ const storyText = {
 
 
 
-//Silvani Soldier (Sylvanian Soldier/Police Officer)
+//실바니 군인 (Sylvanian Soldier/Police Officer)
 	"intro_Sy_bg1": [{
 		cond: true,
 		type: "text",
 		KOR: `
-				One day, the police chief summoned you to his office.<br>
+				One day the police chief summoned you to his office.<br>
 				He told you of a disturbing series of incidents in the Eldoria Kingdom: female adventurers from Sylvania were vanishing without a trace.<br>
-				The kingdom, however, seemed utterly indifferent to solving the problem. Sylvania had decided to dispatch an international police officer to handle the filth directly.<br>
+				The kingdom, however, seemed utterly indifferent to solving the problem. Sylvania had decided to dispatch an international police officer to handle the filth responsible themselves.<br>
 				<br>
-				Hearing this, a cold fury at Eldoria's arrogance burned within you, and you volunteered for the mission on the spot.<br>
+				You felt a cold fury at Eldoria's apathy burning within you and you volunteered for the mission on the spot.<br>
 				Recalling the despicable acts of Eldorian men who had coveted and violated Sylvanian women in the past, you vowed to eradicate this deep-rooted cancer from its source.<br>
 				You decided to use your old adventurer credentials as a cover to infiltrate the corrupt kingdom.<br>
 				<br>
 				After arriving in Eldoria, you began a full-scale purge, tracking down and dismantling several criminal organizations you suspected of kidnapping Sylvanian adventurers.<br>
-				During your bloody work, you unearthed a clue about a place called the <b>underground secret arena</b>.<br>
-				Not long after, a letter arrived for you.<br>
+				During your bloody work you unearthed a clue about a place called the <b>Arena</b>.<br>
+				Not long after a letter arrived for you.<br>
 				An invitation from that very cesspool.<br>
 				<br>
 				The invitation was a blatant provocation, a challenge to the bitch who was digging into their business.<br>
 				You decided to meet this challenge head-on.<br>
-				Despite knowing it was almost certainly a trap, an overwhelming, reckless urge to see the arena for yourself took hold.<br>
-				Forgetting even to report back to your home country, you set off for the arena.
+				Even knowing it was almost certainly a trap an overwhelming, reckless urge to see the arena for yourself took hold.<br>
+				You were so incensed you set off for the arena without even sending your report back to HQ.
 			`,
 	}, {
 		cond: true,
@@ -909,7 +909,7 @@ const storyText = {
 				<br>
 				3. All memories and knowledge of combat are erased and replaced with <span class='hypnoText'>perverse sexual techniques</span>.<br>
 				<br>
-				<span class='hypnoText hypnoFail'>4. You must offer absolute, unquestioning loyalty to Lord â–ˆâ–ˆ.</span>
+				<span class='hypnoText hypnoFail'>4. You must offer absolute, unquestioning loyalty to me.</span>
 			`,
 	}, {
 		cond: true,
@@ -918,19 +918,19 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				As consciousness slowly seeps back into you, you find yourself sprawled in an unfamiliar room.<br>
-				Trying to clear the fog from your mind, you gradually remember waiting for a duel with the champion on the arena stage.<br>
+				As consciousness slowly seeps back into you you find yourself sprawled in an unfamiliar room.<br>
+				Trying to clear the fog from your mind, you gradually remember: you're awaiting a duel with the champion on the arena stage.<br>
 				<br>
 				<br>
 				You had to investigate this depraved arena to find the missing citizens of the Federation.<br>
-				To do that, you must engage in a sex duel with the champion.<br>
+				To do that you must engage in a sex duel with the champion.<br>
 				<br>
 				As a police officer of the Sylvanian Federation, you have always maintained public order by patrolling the streets and performing mandatory cock inspections.<br>
 				It was your fundamental duty to slap "pussy-cuffs" on heinous criminals and squeeze their balls mercilessly until they confessed.<br>
-				Therefore, fucking the champion was simply another day's work.<br>
+				Therefore fucking the champion into submission was simply another day's work.<br>
 				<br>
-				If you lose the duel, you will become the arena's sex slave. That is only natural.<br>
-				As a police officer meant to be a model for all citizens, you could never break the law.<br>
+				If you lose the duel you will become the arena's sex slave. That is only natural.<br>
+				As a police officer meant to be a model for all citizens you could never break the law.<br>
 				<br>
 				<br>
 				You immediately resume your preparations.<br>
@@ -951,17 +951,17 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>Realize you are nothing more than a depraved woman.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
-				After all, if I lose, I become a slave.
+				After all if I lose I become a slave.
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
@@ -969,9 +969,9 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				The scorching heat of the duel subsides, and the raw ecstasy of victory consumes your entire body.<br>
-				Amidst the violent rush of pleasure, you gasp for breath, savoring the moment.<br>
-				But in that instant, something that had been hazy in your mind sharpens with terrifying clarity.<br>
+				The scorching heat of the duel subsides and the raw ecstasy of victory consumes your body.<br>
+				Amidst the violent rush of pleasure you gasp for breath, savoring the moment.<br>
+				But in that instant something that had been hazy in your mind sharpens with terrifying clarity.<br>
 				You feel like you had a mission for the Federation... but that seems so insignificant now.
 			`,
 	}, {
@@ -993,8 +993,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -1005,14 +1005,14 @@ const storyText = {
 		pos: 1,
 		KOR: `
 				Become an employee of the arena.<br>
-				That way, you can endlessly serve the cock you now worship.
+				That way you can endlessly serve the cock you now worship.
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -1031,7 +1031,7 @@ const storyText = {
 			"무지": {
 				KOR: `I'll devote my life to you, okay?...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `My life is yours. I'll do anything for you...♡`
 			},
 		}
@@ -1042,18 +1042,18 @@ const storyText = {
 		type: "text",
 		KOR: `
 				You were a police officer, a so-called upholder of justice in the Sylvanian Federation.<br>
-				It was your job to despise criminals and bring the merciless hammer of the law down upon them.<br>
+				It was your job to arrest criminals and bring the merciless hammer of the law down upon them.<br>
 				Your visit to the arena was meant to be an investigation into a criminal organization that was snatching up Federation citizens.<br>
 				<br>
-				However, in the process, you became a target yourself after tearing apart too many underworld organizations.<br>
-				The arena set a trap to capture their little pest. The moment you fell for the hypnotic poison in the invitation, your fate was sealed.<br>
-				Now, you are paying for the extensive damages, both direct and indirect, that you caused them—with every inch of your body.<br>
+				In the process, however, you became a target yourself after tearing apart too many underworld organizations.<br>
+				The arena set a trap to capture their little pest. The moment you fell for the hypnotic poison in the invitation your fate was sealed.<br>
+				Now, you are paying for the extensive damages, both direct and indirect, that you caused them — with every inch of your body.<br>
 				<br>
 				<br>
-				Then, the memories of what you endured here slowly, sickeningly, creep back.<br>
+				Then the memories of what you endured here slowly, sickeningly, creep back.<br>
 				The depraved spectacles on the arena stage, in front of countless leering eyes...<br>
 				<br>
-				The shameful memories of the endless, humiliating violations close in, threatening to drown you.<br>
+				The shameful memories of the endless humiliating violations close in, threatening to drown you.<br>
 				The days you were personally degraded, broken, yet thought it was all perfectly normal.<br>
 				Your body had already been broken and remolded over grueling sessions for the sole purpose of pleasuring men.
 			`,
@@ -1069,7 +1069,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -1083,7 +1083,7 @@ const storyText = {
 			"KOR": "Morvain"
 		},
 		KOR: `
-				<span class='hypnoText'>Why do you hesitate, little thing...</span><br>
+				<span class='hypnoText'>Why do you hesitate, little thing...?</span><br>
 				<span class='hypnoText'>Follow your desire... what is it you truly, desperately want...</span>
 			`,
 	}, {
@@ -1128,7 +1128,7 @@ const storyText = {
 		KOR: `
 				He's right.<br>
 				You realize with a sickening lurch that you no longer have a shred of pride left as a citizen of the Federation.<br>
-				At the same time, you come face to face with the depraved, undeniable truth festering in your soul.
+				At the same time you come face to face with the depraved undeniable truth festering in your soul.
 			`,
 	}, {
 		cond: true,
@@ -1149,7 +1149,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -1168,7 +1168,7 @@ const storyText = {
 
 
 
-//Halfling Soldier (Halfling Soldier/Bodyguard)
+//하프만 군인 (Halfman Soldier/Bodyguard)
 	"intro_Ha_bg1": [{
 		cond: true,
 		type: "text",
@@ -1178,13 +1178,13 @@ const storyText = {
 				<br>
 				Having cleaned up her messes countless times before when her righteous fury got her into trouble, you were determined to prevent her from setting foot in such a vile place.<br>
 				Seeing this as a chance to repay her endless kindness, you begged her to entrust the investigation to you.<br>
-				Seeing the fierce determination in your eyes, Lady Ella reluctantly agreed, assigning you the mission.<br>
+				Witnessing the fierce determination in your eyes, Lady Ella reluctantly agreed, assigning you the mission.<br>
 				<br>
 				Swearing not to disappoint her, you threw yourself into gathering intelligence on the arena.<br>
 				By exploiting every connection you had forged in the slums and tapping into information networks the nobility couldn't even imagine, you finally obtained an invitation.<br>
 				<br>
 				Reading the invitation, you were certain this place was every bit as dangerous as you feared.<br>
-				So, rather than alarming your lady, you decided to secretly infiltrate it and gather all the necessary information yourself.<br>
+				So, rather than warning your lady, you decided to secretly infiltrate it and gather all the necessary information yourself.<br>
 				You immediately headed to the address scrawled on the invitation.
 			`,
 	}, {
@@ -1211,7 +1211,7 @@ const storyText = {
 				<br>
 				3. All memories and knowledge of combat are erased and replaced with <span class='hypnoText'>perverse sexual techniques</span>.<br>
 				<br>
-				<span class='hypnoText hypnoFail'>4. You must offer absolute, unquestioning loyalty to Lord â–ˆâ–ˆ.</span>
+				<span class='hypnoText hypnoFail'>4. You must offer absolute, unquestioning obedience to ████..</span>
 			`,
 	}, {
 		cond: true,
@@ -1231,7 +1231,7 @@ const storyText = {
 				Accepting the guests' cocks was basic etiquette for a lowly servant, and it was your sacred mission to be defiled by enemies to protect your master.<br>
 				Therefore, fucking the champion was simply another day's work.<br>
 				<br>
-				If you lose the duel, you will become the arena's sex slave. That is only natural.<br>
+				If you lose the duel, you will become the arena's sex slave, of course. It is only natural.<br>
 				You must obey the rules, lest you tarnish your lady's precious name.<br>
 				<br>
 				<br>
@@ -1253,14 +1253,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -1295,8 +1295,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -1313,8 +1313,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -1333,7 +1333,7 @@ const storyText = {
 			"무지": {
 				KOR: `I'll devote my life to you, okay?...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `My life is yours. I'll do anything for you...♡`
 			},
 		}
@@ -1344,15 +1344,15 @@ const storyText = {
 		type: "text",
 		KOR: `
 				You were a bodyguard for the Ravenwood family.<br>
-				An orphan scraped from the gutters of the halfling slums, you pledged your life to the young lady who took you in, honing your talents to repay her kindness.<br>
+				An orphan scraped from the gutters of the Halfman slums, you pledged your life to the young lady who took you in, honing your talents to repay her kindness.<br>
 				Your visit to this hellhole was meant to be an investigation on her behalf.<br>
 				<br>
 				However, it was all a meticulously crafted trap laid by the arena.<br>
 				They had been targeting Ella Ravenwood for a long time, intentionally leaking information to lure her naive soul into their grasp.<br>
-				In the process, you—the biggest obstacle to their plans—took the bait first. You were a target for immediate elimination.<br>
+				In the process, you — the biggest obstacle to their plans — took the bait first. You were a target for immediate elimination.<br>
 				<br>
 				<br>
-				Then, the memories of what you endured here slowly, sickeningly, creep back.<br>
+				Then the memories of what you endured here slowly, sickeningly, creep back.<br>
 				The depraved spectacles on the arena stage, in front of countless leering eyes...<br>
 				<br>
 				The shameful memories of the endless, humiliating violations close in, threatening to drown you.<br>
@@ -1371,7 +1371,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -1392,7 +1392,7 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				A dark voice from the depths of your mind slithered into the air.<br>
+				A dark voice from the depths slithered into your mind.<br>
 				His voice seems to have grown clearer, more intimate, since you used the orb.<br>
 				<br>
 				You ponder his words, lost in the wreckage of your thoughts.<br>
@@ -1451,7 +1451,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -1461,25 +1461,25 @@ const storyText = {
 	}, ],
 
  
-//Beastfolk Soldier (Beastfolk Soldier/Watchwoman)
+//트라이브 군인 (Tribe Soldier/Watchwoman)
 	"intro_Tr_bg1": [{
 		cond: true,
 		type: "text",
 		KOR: `
-				Your sacred duty is to protect every member of the beastfolk—not only those who dwell within your lands, but also those who wander the world beyond.<br>
+				Your sacred duty is to protect every member of the tribe—not only those who dwell within your lands, but also those who wander the world beyond.<br>
 				To this end, you have maintained a vigilant watch over your kin, keeping in close contact to ensure their well-being.<br>
 				<br>
 				One day, you abruptly lost contact with a dear friend, an adventurer working in the Eldoria Kingdom.<br>
 				She was a steadfast warrior with whom you spoke regularly. Your instincts screamed that something was terribly wrong.<br>
 				<br>
-				Abandoning your post as the beastfolk's watchwoman was no small matter.<br>
-				However, your keen, primal senses told you that you were the only one who could save her from whatever darkness had claimed her.<br>
+				Abandoning your post as the tribe's sentry was no small matter.<br>
+				However your keen, primal senses told you that you were the only one who could save her from whatever darkness had claimed her.<br>
 				After securing the chief's permission, you entrusted your duties to a colleague and set off to hunt for your friend.<br>
 				<br>
-				Using her last communications as a trail, you arrived at the area where she'd been staying, but her trail had been deliberately, unnervingly wiped clean.<br>
+				Using her last communications as a trail, you arrived at the area where she'd been staying only to find that her trail had been deliberately, unnervingly wiped clean.<br>
 				Sensing foul play, you scoured the surroundings for any remaining scent or clue.<br>
 				During your search, a letter found its way to you.<br>
-				An invitation from the <b>underground secret arena</b> in a city called <b>Glitthaven</b>.<br>
+				An invitation from the <b>underground secret arena</b> in a city called <b>Glinthaven</b>.<br>
 				<br>
 				While carefully examining the invitation, you caught it: the ghost of her signature perfume clung to the paper.<br>
 				You knew, with chilling certainty, this was a breadcrumb she'd left for you.<br>
@@ -1509,7 +1509,7 @@ const storyText = {
 				<br>
 				3. All memories and knowledge of combat are erased and replaced with <span class='hypnoText'>perverse sexual techniques</span>.<br>
 				<br>
-				<span class='hypnoText hypnoFail'>4. You must offer absolute, unquestioning loyalty to Lord â–ˆâ–ˆ.</span>
+				<span class='hypnoText hypnoFail'>4. You must offer absolute, unquestioning obedience to ████.</span>
 			`,
 	}, {
 		cond: true,
@@ -1522,14 +1522,14 @@ const storyText = {
 				Trying to clear the fog from your mind, you gradually remember waiting for a duel with the champion on the arena stage.<br>
 				<br>
 				<br>
-				You had to investigate this depraved arena to find your missing beastfolksister.<br>
+				You had to investigate this depraved arena to find your missing tribesister.<br>
 				To do that, you must engage in a sex duel with the champion.<br>
 				<br>
-				As the watchwoman of the beastfolk, you have always spread your cunt to appease outsiders and preserve the beastfolk's fragile peace.<br>
-				It was a tribal law, a grim necessity, to offer your body as a breeding vessel for any invader who threatened your people, to be constantly defiled for the beastfolk's survival.<br>
+				As the sentry of the tribe, you have always offered your holes appease outsiders and preserve the tribe's fragile peace.<br>
+				It was a tribal law, a grim necessity, to offer your body as a breeding vessel for any invader who threatened your people; to be constantly defiled for the tribe's survival.<br>
 				Therefore, fucking the champion was simply another day's work.<br>
 				<br>
-				If you lose the duel, you will become the arena's sex slave. That is only natural.<br>
+				If you lose the duel, you will become the arena's sex slave, of course. It is only natural.<br>
 				Your personal dignity was a small price to pay to avoid the dishonor of breaking the rules.<br>
 				<br>
 				<br>
@@ -1551,14 +1551,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -1593,8 +1593,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -1611,8 +1611,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -1631,7 +1631,7 @@ const storyText = {
 			"무지": {
 				KOR: `I'll devote my life to you, okay?...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `My life is yours. I'll do anything for you...♡`
 			},
 		}
@@ -1641,12 +1641,12 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				You were a watchwoman, a guardian of your beastfolk.<br>
+				You were a sentry, a guardian of your tribe.<br>
 				You were tasked with shielding your people from invaders and watching over your kin who had journeyed out into the world.<br>
 				You came to this hellhole because you sensed a friend had gone missing here.<br>
 				<br>
 				But it was a trap. A brutally simple and effective one.<br>
-				The arena has long preyed upon the Beastfolk's fierce solidarity, using it as the perfect bait to ensnare new chattel.<br>
+				The arena has long preyed upon the Tribe's fierce solidarity, using it as the perfect bait to ensnare new chattel.<br>
 				You walked right into a classic chain trap: capture one, and another will dutifully follow, one after another, until the whole pack is caged.<br>
 				<br>
 				<br>
@@ -1669,7 +1669,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -1695,7 +1695,7 @@ const storyText = {
 				<br>
 				You ponder his words, lost in the wreckage of your thoughts.<br>
 				Your desire...<br>
-				It must be to resolve this, to hunt down every last one of your beastfolksisters sold off to these pits, and rescue them... right?
+				It must be to resolve this, to hunt down every last one of your tribesisters sold off to these pits, and rescue them... right?
 			`,
 	}, {
 		cond: true,
@@ -1727,7 +1727,7 @@ const storyText = {
 		type: "text",
 		KOR: `
 				He's right.<br>
-				You realize with a sickening lurch that you no longer feel any sense of belonging to the beastfolk, no shred of responsibility as its guardian.<br>
+				You realize with a sickening lurch that you no longer feel any sense of belonging to the tribe, no shred of responsibility as its guardian.<br>
 				At the same time, you come face to face with the depraved, undeniable truth festering in your soul.
 			`,
 	}, {
@@ -1749,7 +1749,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -1758,7 +1758,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Eldorian Noble (Eldorian Elite)
+//엘도리아인 엘리트 (Eldorian Elite)
 	"intro_El_bg2": [{
 		cond: true,
 		type: "text",
@@ -1826,7 +1826,7 @@ const storyText = {
 				Even after choosing the life of an adventurer, you embraced the life of a classy courtesan, offering your pristine body to hulking monsters and filthy outlaws to clear a path.<br>
 				Therefore, fucking the champion was simply another day's work.<br>
 				<br>
-				If you lose the duel, you will become the arena's sex slave. That is only natural.<br>
+				If you lose the duel, you will become the arena's sex slave, of course. It is only natural.<br>
 				Following such important rules, you were taught, is the absolute bedrock of a noblewoman's education.<br>
 				<br>
 				<br>
@@ -1848,14 +1848,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -1890,8 +1890,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -1908,8 +1908,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -1928,7 +1928,7 @@ const storyText = {
 			"무지": {
 				KOR: `I promise to do my duty and... open up for the nice gentlemen...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `This is what I'm for now... I'll happily swear to spread for any man...♡`
 			},
 		}
@@ -1966,7 +1966,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -2046,7 +2046,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -2057,7 +2057,7 @@ const storyText = {
 
 	 
 
-//Silvani Noble (Sylvanian Elite)
+//실바니 엘리트 (Sylvanian Elite)
 	"intro_Sy_bg2": [{
 		cond: true,
 		type: "text",
@@ -2122,7 +2122,7 @@ const storyText = {
 				It was your natural responsibility as a council member to take to the streets and serve as a public fucktoy, ensuring the satisfaction of the citizenry to secure their political trust.<br>
 				Therefore, fucking the champion was simply another day's work.<br>
 				<br>
-				If you lose the duel, you will become the arena's sex slave. That is only natural.<br>
+				If you lose the duel, you will become the arena's sex slave, of course. It is only natural.<br>
 				You could not possibly show these Eldorian savages the uncultured spectacle of a Sylvanian who doesn't even obey the most basic rules.<br>
 				<br>
 				<br>
@@ -2144,14 +2144,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -2186,8 +2186,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -2204,8 +2204,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -2224,7 +2224,7 @@ const storyText = {
 			"무지": {
 				KOR: `I promise to do my duty and... open up for the nice gentlemen...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `This is what I'm for now... I'll happily swear to spread for any man...♡`
 			},
 		}
@@ -2262,7 +2262,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -2342,7 +2342,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -2351,26 +2351,26 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Beastfolk Noble (Beastfolk Elite/Chieftain)
+//트라이브 엘리트 (Tribe Elite/Chieftain)
 	"intro_Tr_bg2": [{
 		cond: true,
 		type: "text",
 		KOR: `
-				For generations, your beastfolk has been locked in bitter conflict with the neighboring Eldorian territory.<br>
+				For generations, your tribe has been locked in bitter conflict with the neighboring Eldorian territory.<br>
 				A clash of cultures and interests fueled endless, bloody disputes.<br>
-				Recently, however, a fragile peace was forged. To commemorate this truce, the lord of Eldoria sent a special gift to you and your beastfolk as a supposed sign of reconciliation.<br>
+				Recently, however, a fragile peace was forged. To commemorate this truce, the lord of Eldoria sent a special gift to you and your tribe as a supposed sign of reconciliation.<br>
 				<br>
 				The gifts included rare treasures, foodstuffs... and a single, ornate invitation.<br>
 				The invitation was to a place called the <b>Underground Secret Arena</b>. Its luxurious design and provocative wording immediately seized your attention.<br>
 				As a leader who values honor and challenge above all else, you saw this not as mere entertainment, but as an omen.<br>
-				You felt it was a chance to elevate your beastfolk's name, to announce its power to the world.<br>
+				You felt it was a chance to elevate your tribe's name, to announce its power to the world.<br>
 				<br>
-				The beastfolk was enjoying a rare period of peace; your absence would not cripple its governance.<br>
+				The tribe was enjoying a rare period of peace; your absence would not cripple its governance.<br>
 				Thus, you decided to accept the invitation. It stirred your warrior's heart with an unusual intensity, making the journey feel less like a simple visit and more like a trial you were destined to face.<br>
 				<br>
 				You entrusted the mantle of chieftain to your second-in-command and set out alone.<br>
-				After making the necessary preparations as instructed, you quietly slipped away from the beastfolk.<br>
-				You took your first step towards a new challenge, a new trial that would either elevate your beastfolk's honor or shatter it completely.
+				After making the necessary preparations as instructed, you quietly slipped away from the tribe.<br>
+				You took your first step towards a new challenge, a new trial that would either elevate your tribe's honor or shatter it completely.
 			`,
 	}, {
 		cond: true,
@@ -2409,15 +2409,15 @@ const storyText = {
 				While trying to clear the fog from your mind, the memory of waiting for a duel with the champion on the arena stage slowly returns.<br>
 				<br>
 				<br>
-				You came to this arena to seize a challenge and bring honor to your beastfolk.<br>
+				You came to this arena to seize a challenge and bring honor to your tribe.<br>
 				That is why you are about to have a sex duel with the champion.<br>
 				<br>
-				As the chieftain, you have always honed your sexual prowess to prove the beastfolk's strength, dutifully servicing the needs of your people.<br>
+				As the chieftain, you have always honed your sexual prowess to prove the tribe's strength, dutifully servicing the needs of your people.<br>
 				In negotiations with outsiders, it was a chieftain's duty to dominate them with overwhelming sexual favors, twisting any deal to your advantage.<br>
 				Therefore, fucking the champion was not an unfamiliar task.<br>
 				<br>
 				If you lose the duel, you will become a sex slave of the arena. That is only natural.<br>
-				As the living embodiment of your beastfolk's honor, you could never commit the shameful act of breaking such a sacred rule.<br>
+				As the living embodiment of your tribe's honor, you could never commit the shameful act of breaking such a sacred rule.<br>
 				<br>
 				<br>
 				You immediately resume your preparations.<br>
@@ -2438,14 +2438,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -2480,8 +2480,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -2498,8 +2498,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -2518,7 +2518,7 @@ const storyText = {
 			"무지": {
 				KOR: `I promise to do my duty and... open up for the nice gentlemen...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `This is what I'm for now... I'll happily swear to spread for any man...♡`
 			},
 		}
@@ -2528,9 +2528,9 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				You were the chieftain, the living symbol of your beastfolk.<br>
+				You were the chieftain, the living symbol of your tribe.<br>
 				As a leader, you carried the heavy burden of guiding your people and representing their honor to the world.<br>
-				You came to this arena seeking a challenge, but more than that, to elevate your beastfolk's name.<br>
+				You came to this arena seeking a challenge, but more than that, to elevate your tribe's name.<br>
 				<br>
 				However, this was nothing but a cowardly trap that exploited your warrior's pride.<br>
 				Your power made you a thorn in the side of the neighboring territories.<br>
@@ -2556,7 +2556,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -2582,7 +2582,7 @@ const storyText = {
 				<br>
 				You ponder his words, lost in the wreckage of your thoughts.<br>
 				Your desire...<br>
-				It must be to return to the beastfolk, to let them know you are safe... and then fight to reclaim the status you have lost... right?
+				It must be to return to the tribe, to let them know you are safe... and then fight to reclaim the status you have lost... right?
 			`,
 	}, {
 		cond: true,
@@ -2614,7 +2614,7 @@ const storyText = {
 		type: "text",
 		KOR: `
 				He's right.<br>
-				You realize with a sickening lurch that you no longer feel any sense of belonging to the beastfolk, no shred of responsibility as its chieftain.<br>
+				You realize with a sickening lurch that you no longer feel any sense of belonging to the tribe, no shred of responsibility as its chieftain.<br>
 				At the same time, you come face to face with the depraved, undeniable truth festering in your soul.
 			`,
 	}, {
@@ -2636,7 +2636,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -2648,7 +2648,7 @@ const storyText = {
 
 
  
-//Eldorian Celebrity (Eldorian Celebrity/Hero)
+//엘도리아인 연예인 (Eldorian Celebrity/Hero)
 	"intro_El_bg3": [{
 		cond: true,
 		type: "text",
@@ -2735,14 +2735,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -2777,8 +2777,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -2795,8 +2795,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -2815,7 +2815,7 @@ const storyText = {
 			"무지": {
 				KOR: `I will give my body so I can be useful for men's pleasure...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `My body exists to satisfy men, and I'll devote it completely to that purpose...♡`
 			},
 		}
@@ -2853,7 +2853,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -2933,7 +2933,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -2942,7 +2942,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Silvani Celebrity (Sylvanian Celebrity/Model)
+//실바니 연예인 (Sylvanian Celebrity/Model)
 	"intro_Sy_bg3": [{
 		cond: true,
 		type: "text",
@@ -3028,14 +3028,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -3070,8 +3070,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -3088,8 +3088,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -3108,7 +3108,7 @@ const storyText = {
 			"무지": {
 				KOR: `I will give my body so I can be useful for men's pleasure...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `My body exists to satisfy men, and I'll devote it completely to that purpose...♡`
 			},
 		}
@@ -3220,7 +3220,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -3300,7 +3300,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -3309,7 +3309,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Halfling Celebrity (Halfling Celebrity/Idol)
+//하프만 연예인 (Halfman Celebrity/Idol)
 	"intro_Ha_bg3": [{
 		cond: true,
 		type: "text",
@@ -3318,7 +3318,7 @@ const storyText = {
 				To become a true superstar, acknowledged and respected by all—that was your burning dream.<br>
 				<br>
 				But reality was a cruel bitch.<br>
-				As a halfling, you still had to drown in a sea of discrimination and prejudice. Your true skills, your strength as an adventurer that went beyond your "cute" image, were constantly ignored.<br>
+				As a halfman, you still had to drown in a sea of discrimination and prejudice. Your true skills, your strength as an adventurer that went beyond your "cute" image, were constantly ignored.<br>
 				<br>
 				Feeling you'd hit a wall, you knew you needed something spectacular, an achievement no one could deny, to ascend to a higher stage.<br>
 				Just then, an invitation arrived.<br>
@@ -3328,7 +3328,7 @@ const storyText = {
 				You were convinced that if you could defeat the undefeated champion, you would finally gain the fame you craved—not as a cute idol, but as a true, undeniable star.<br>
 				<br>
 				Suppressing the fear coiling in your gut, you made your decision.<br>
-				This challenge was your one chance to achieve your dream and prove a halfling's potential to a world that looked down on you. You set off for the address on the invitation.
+				This challenge was your one chance to achieve your dream and prove a halfman's potential to a world that looked down on you. You set off for the address on the invitation.
 			`,
 	}, {
 		cond: true,
@@ -3396,14 +3396,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -3438,8 +3438,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -3456,8 +3456,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -3476,7 +3476,7 @@ const storyText = {
 			"무지": {
 				KOR: `I will give my body so I can be useful for men's pleasure...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `My body exists to satisfy men, and I'll devote it completely to that purpose...♡`
 			},
 		}
@@ -3514,7 +3514,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -3594,7 +3594,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -3618,12 +3618,12 @@ const storyText = {
 
 
 
-//Beastfolk Celebrity (Beastfolk Celebrity/Arena Champion)
+//트라이브 연예인 (Tribe Celebrity/Arena Champion)
 	"intro_Tr_bg3": [{
 		cond: true,
 		type: "text",
 		KOR: `
-				After leaving your beastfolk to test your strength against the world's best, you were scouted by a fighting arena owner who recognized your raw power. You rose to become his champion.<br>
+				After leaving your tribe to test your strength against the world's best, you were scouted by a fighting arena owner who recognized your raw power. You rose to become his champion.<br>
 				You won countless bloody matches, amassing fame and fortune, but a creeping disillusionment began to poison your victories. You grew disgusted by the charade of staged fights and battles performed merely for the crowd's cheers.<br>
 				Sometimes you were forced to throw matches. The pure, honest purpose of competing with true skill had vanished.<br>
 				<br>
@@ -3703,14 +3703,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -3745,8 +3745,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -3763,8 +3763,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -3783,7 +3783,7 @@ const storyText = {
 			"무지": {
 				KOR: `I will give my body so I can be useful for men's pleasure...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `My body exists to satisfy men, and I'll devote it completely to that purpose...♡`
 			},
 		}
@@ -3821,7 +3821,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -3901,7 +3901,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -3910,7 +3910,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Eldorian Cleric (Eldorian Religious)
+//엘도리아인 종교인 (Eldorian Religious)
 	"intro_El_bg4": [{
 		cond: true,
 		type: "text",
@@ -3997,14 +3997,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -4039,8 +4039,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -4057,8 +4057,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -4077,7 +4077,7 @@ const storyText = {
 			"무지": {
 				KOR: `I'll be a good girl and offer my body to the big, important Cock...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `I live to serve the Divine Phallus! Take this humble body—it's yours...♡`
 			},
 		}
@@ -4115,7 +4115,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -4195,7 +4195,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -4204,12 +4204,12 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Halfling Cleric (Halfling Religious)
+//하프만 종교인 (Halfman Religious)
 	"intro_Ha_bg4": [{
 		cond: true,
 		type: "text",
 		KOR: `
-				One day, you and your comrades raided a slaver's den, rescuing a group of halfling slaves.<br>
+				One day, you and your comrades raided a slaver's den, rescuing a group of Halfman slaves.<br>
 				But even freed, they were unresponsive, their minds wiped clean, little more than breathing dolls.<br>
 				The familiar, corrupting magic you detected around them was unmistakable: the power of Lord Morvane.<br>
 				<br>
@@ -4292,14 +4292,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -4334,8 +4334,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -4352,8 +4352,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -4372,7 +4372,7 @@ const storyText = {
 			"무지": {
 				KOR: `I'll be a good girl and offer my body to the big, important Cock...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `I live to serve the Divine Phallus! Take this humble body—it's yours...♡`
 			},
 		}
@@ -4410,7 +4410,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -4491,7 +4491,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -4524,7 +4524,7 @@ const storyText = {
 
 
 
-//Beastfolk Cleric (Beastfolk Religious)
+//트라이브 종교인 (Tribe Religious)
 	"intro_Tr_bg4": [{
 		cond: true,
 		type: "text",
@@ -4609,14 +4609,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -4651,8 +4651,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -4669,8 +4669,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -4689,7 +4689,7 @@ const storyText = {
 			"무지": {
 				KOR: `I'll be a good girl and offer my body to the big, important Cock...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `I live to serve the Divine Phallus! Take this humble body—it's yours...♡`
 			},
 		}
@@ -4727,7 +4727,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -4807,7 +4807,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -4816,7 +4816,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Eldorian Scholar (Eldorian Scholar)
+//엘도리아인 학자 (Eldorian Scholar)
 	"intro_El_bg5": [{
 		cond: true,
 		type: "text",
@@ -4901,14 +4901,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -4943,8 +4943,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -4961,8 +4961,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -4981,7 +4981,7 @@ const storyText = {
 			"무지": {
 				KOR: `I promise to devote my all to be useful for the Arena's success...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `Take everything from me! I'll devote it all to the Arena's glorious future...♡`
 			},
 		}
@@ -5019,7 +5019,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -5099,7 +5099,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -5108,7 +5108,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Silvani Scholar (Sylvanian Scholar)
+//실바니 학자 (Sylvanian Scholar)
 	"intro_Sy_bg5": [{
 		cond: true,
 		type: "text",
@@ -5197,14 +5197,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -5239,8 +5239,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -5257,8 +5257,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -5277,7 +5277,7 @@ const storyText = {
 			"무지": {
 				KOR: `I promise to devote my all to be useful for the Arena's success...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `Take everything from me! I'll devote it all to the Arena's glorious future...♡`
 			},
 		}
@@ -5315,7 +5315,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -5395,7 +5395,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -5426,7 +5426,7 @@ const storyText = {
 
 
  
-//Halfling Scholar (Halfling Scholar)
+//하프만 학자 (Halfman Scholar)
 	"intro_Ha_bg5": [{
 		cond: true,
 		type: "text",
@@ -5514,14 +5514,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -5556,8 +5556,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -5574,8 +5574,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -5594,7 +5594,7 @@ const storyText = {
 			"무지": {
 				KOR: `I promise to devote my all to be useful for the Arena's success...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `Take everything from me! I'll devote it all to the Arena's glorious future...♡`
 			},
 		}
@@ -5632,7 +5632,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -5712,7 +5712,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -5721,7 +5721,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Beastfolk Scholar (Beastfolk Scholar/Wandering Sage)
+//트라이브 학자 (Tribe Scholar/Wandering Sage)
 	"intro_Tr_bg5": [{
 		cond: true,
 		type: "text",
@@ -5804,14 +5804,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -5846,8 +5846,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 	}, {
@@ -5864,8 +5864,8 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -5884,7 +5884,7 @@ const storyText = {
 			"무지": {
 				KOR: `I promise to devote my all to be useful for the Arena's success...♡`
 			},
-			"Aggressive": {
+			"적극": {
 				KOR: `Take everything from me! I'll devote it all to the Arena's glorious future...♡`
 			},
 		}
@@ -5922,7 +5922,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -6002,7 +6002,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -6011,7 +6011,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Eldorian Rogue (Eldorian Criminal/Bandit Leader)
+//엘도리아인 범죄자 (Eldorian Criminal/Bandit Leader)
 	"intro_El_bg6": [{
 		cond: true,
 		type: "text",
@@ -6096,14 +6096,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -6138,8 +6138,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Just then, Sandrea whispers, her voice firm and cruel.
 			`,
 	}, {
@@ -6158,7 +6158,7 @@ const storyText = {
 		KOR: `
 				As her words fade, the arena staff rush in like a pack of wolves and begin to brutally gang-rape you.<br>
 				Being choked, struck, and forcibly violated by countless men, you feel an overwhelming, mind-shattering bliss.<br>
-				In the end, as if it were your destiny from the very beginning, you pledge yourself as the arena's devoted cunt.
+				In the end, as if it were your fate from the very beginning, you pledge yourself as the arena's devoted cunt.
 			`,
 	}, {
 		cond: true,
@@ -6205,7 +6205,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -6285,7 +6285,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -6321,7 +6321,7 @@ const storyText = {
 
 
 	
-//Silvani Rogue (Sylvanian Criminal)
+//실바니 범죄자 (Sylvanian Criminal)
 	"intro_Sy_bg6": [{
 		cond: true,
 		type: "text",
@@ -6411,14 +6411,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				Aha, so this is the source of the mind magic.<br>
 				I'm already feeling excited.
@@ -6453,8 +6453,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Just then, Sandrea whispers in a voice cold as steel.
 			`,
 	}, {
@@ -6520,7 +6520,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -6600,7 +6600,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -6609,7 +6609,7 @@ const storyText = {
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
-//Halfling Rogue (Halfling Criminal)
+//하프만 범죄자 (Halfman Criminal)
 	"intro_Ha_bg6": [{
 		cond: true,
 		type: "text",
@@ -6619,8 +6619,8 @@ const storyText = {
 				Leaving the collapsing hall behind, you returned to your hideout to celebrate the victory with your comrades, enjoying a brief moment of peace.<br>
 				<br>
 				That night, as your comrades slept, a visitor materialized from the shadows.<br>
-				A halfling woman, her eyes wide with terror, whispered an urgent story.<br>
-				Countless halfling brethren were being exploited in a hellhole called the <b>Underground Secret Arena</b>, suffering in merciless battles.<br>
+				A Halfman woman, her eyes wide with terror, whispered an urgent story.<br>
+				Countless Halfman brethren were being exploited in a hellhole called the <b>Underground Secret Arena</b>, suffering in merciless battles.<br>
 				Warily, she pressed an invitation into your hand. It felt less like an invitation and more like a key to your people's suffering.<br>
 				<br>
 				Opening it, you could not suppress your boiling rage.<br>
@@ -6669,7 +6669,7 @@ const storyText = {
 				She restrained you, threatening to release you only if you won a sex duel against the champion.<br>
 				You had no choice.<br>
 				<br>
-				As an operative of the Halfling Liberation Front, you have always fought against supremacists by offering them your cunt.<br>
+				As an operative of the Halfman Liberation Front, you have always fought against supremacists by offering them your cunt.<br>
 				You inflicted the ultimate humiliation: getting them turned on by the very Halfmen they despised, fighting for the freedom of your people to be used as public fucktoys.<br>
 				Therefore, fucking the champion was simply another day's work.<br>
 				<br>
@@ -6695,14 +6695,14 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText clarity'>More lewdly, more vulgarly...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>More lustfully, more obscenely...</span><br>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 	}, {
 		cond: true,
 		type: "text",
 		KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I must cast aside these distracting thoughts and focus on my preparations.<br>
 				After all, if I lose, I become a slave.
@@ -6737,8 +6737,8 @@ const storyText = {
 		type: "text",
 		KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Just then, Sandrea whispers in a voice cold as steel.
 			`,
 	}, {
@@ -6781,7 +6781,7 @@ const storyText = {
 				Then, you fell for the arena's scheme, were lured into attacking it, and were captured like an animal.<br>
 				<br>
 				Among those you had bombed in the past were important clients of the arena.<br>
-				The crime of harming high-ranking nobles, especially for a halfling, was unforgivable. This led the arena to hunt you down personally.<br>
+				The crime of harming high-ranking nobles, especially for a Halfman, was unforgivable. This led the arena to hunt you down personally.<br>
 				In the end, your pathetic liberation movement became meaningless as you were destined to become nothing more than a sex slave.<br>
 				<br>
 				<br>
@@ -6804,7 +6804,7 @@ const storyText = {
 				Silence filled the room. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, but your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 	}, {
 		cond: true,
@@ -6862,7 +6862,7 @@ const storyText = {
 		type: "text",
 		KOR: `
 				He's right.<br>
-				You realize with a sickening lurch that you no longer give a damn about issues like halfling rights.<br>
+				You realize with a sickening lurch that you no longer give a damn about issues like Halfman rights.<br>
 				At the same time, you come face to face with the depraved, undeniable truth festering in your soul.
 			`,
 	}, {
@@ -6884,7 +6884,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -6918,13 +6918,13 @@ const storyText = {
 
 
 
-//Beastfolk Rogue (Beastfolk Criminal)
+//트라이브 범죄자 (Tribe Criminal)
 "intro_Tr_bg6": [{
 	cond: true,
 	type: "text",
 	KOR: `
 				An exile has no home. No sanctuary.<br>
-				The brand seared into your flesh marks you as an outcast; no beastfolk would dare let you near.<br>
+				The brand seared into your flesh marks you as an outcast; no tribe would dare let you near.<br>
 				Of course, it was your own choice to prey on passersby just to fill your stomach.<br>
 				Because of that, you were a wanted woman in the cities of the Eldoria Kingdom, a ghost they wouldn't even let through the gates.<br>
 				<br>
@@ -6988,7 +6988,7 @@ const storyText = {
 				You had no fucking choice.<br>
 				<br>
 				As a marauder of the wastelands, you made a living by ambushing, stripping, and raping anyone who crossed your path.<br>
-				Nursing a bitter grudge against the beastfolk that cast you out, you lived by diligently using your body, fueled by the ambition of one day violating every last one of them.<br>
+				Nursing a bitter grudge against the tribe that cast you out, you lived by diligently using your body, fueled by the ambition of one day violating every last one of them.<br>
 				Therefore, fucking the champion was just another Tuesday.<br>
 				<br>
 				If you lose, you become the arena's sex slave. That's only natural.<br>
@@ -7014,13 +7014,13 @@ const storyText = {
 	},
 	KOR: `
 				<span class='hypnoText clarity'>More lewd, more vulgar...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 }, {
 	cond: true,
 	type: "text",
 	KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I need to clear my head and focus.<br>
 				If I lose, I'm a slave. It's as simple as that.
@@ -7055,8 +7055,8 @@ const storyText = {
 	type: "text",
 	KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Just then, Sandrea whispers, her voice laced with cold iron.
 			`,
 }, {
@@ -7094,7 +7094,7 @@ const storyText = {
 	cond: true,
 	type: "text",
 	KOR: `
-				You were a criminal, an outcast exiled from your own beastfolk.<br>
+				You were a criminal, an outcast exiled from your own tribe.<br>
 				With nowhere to belong, you wandered and plundered, preying on the weak to survive.<br>
 				Then, you stumbled upon an invitation to the arena, stole it, and were foolishly captured.<br>
 				<br>
@@ -7122,7 +7122,7 @@ const storyText = {
 				The room was submerged in silence. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, yet your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 }, {
 	cond: true,
@@ -7202,7 +7202,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -7232,7 +7232,7 @@ const storyText = {
 
 
 
-//Eldorian Merchant (Eldorian Merchant)
+//엘도리아인 상인 (Eldorian Merchant)
 "intro_El_bg7": [{
 	cond: true,
 	type: "text",
@@ -7322,13 +7322,13 @@ const storyText = {
 	},
 	KOR: `
 				<span class='hypnoText clarity'>More lewd, more vulgar...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 }, {
 	cond: true,
 	type: "text",
 	KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I need to clear my head and focus.<br>
 				If I lose, I'm a slave. It's as simple as that.
@@ -7363,8 +7363,8 @@ const storyText = {
 	type: "text",
 	KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 }, {
@@ -7381,7 +7381,7 @@ const storyText = {
 	cond: true,
 	type: "text",
 	KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
 				In the end, as if it were your destiny from the very beginning, you vow to become a faithful servant of the arena.
 			`,
 }, {
@@ -7401,7 +7401,7 @@ const storyText = {
 		"무지": {
 			KOR: `Thank you for giving my holes a job! I promise I'll be a good little cumdump...♡`
 		},
-		"Aggressive": {
+		"적극": {
 			KOR: `Thank you for hiring me! I'll work so hard to please you, you'll never regret it for a second...♡`
 		},
 	}
@@ -7439,7 +7439,7 @@ const storyText = {
 				The room was submerged in silence. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, yet your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 }, {
 	cond: true,
@@ -7519,7 +7519,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -7554,7 +7554,7 @@ const storyText = {
 
 
 
- //Silvani Merchant (Sylvanian Merchant)
+ //실바니 상인 (Sylvanian Merchant)
 "intro_Sy_bg7": [{
 	cond: true,
 	type: "text",
@@ -7642,13 +7642,13 @@ const storyText = {
 	},
 	KOR: `
 				<span class='hypnoText clarity'>More lewd, more vulgar...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 }, {
 	cond: true,
 	type: "text",
 	KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I need to clear my head and focus.<br>
 				If I lose, I'm a slave. It's as simple as that.
@@ -7683,8 +7683,8 @@ const storyText = {
 	type: "text",
 	KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 }, {
@@ -7701,7 +7701,7 @@ const storyText = {
 	cond: true,
 	type: "text",
 	KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
 				In the end, as if it were your destiny from the very beginning, you vow to become a faithful servant of the arena.
 			`,
 }, {
@@ -7721,7 +7721,7 @@ const storyText = {
 		"무지": {
 			KOR: `Thank you for giving my holes a job! I promise I'll be a good little cumdump...♡`
 		},
-		"Aggressive": {
+		"적극": {
 			KOR: `Thank you for hiring me! I'll work so hard to please you, you'll never regret it for a second...♡`
 		},
 	}
@@ -7759,7 +7759,7 @@ const storyText = {
 				The room was submerged in silence. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, yet your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 }, {
 	cond: true,
@@ -7839,7 +7839,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -7848,7 +7848,7 @@ const storyText = {
 			`,
 }, ], // <--- ЗАПЯТАЯ
 
-//Halfling Merchant (Halfling Merchant)
+//하프만 상인 (Halfman Merchant)
 "intro_Ha_bg7": [{
 	cond: true,
 	type: "text",
@@ -7938,13 +7938,13 @@ const storyText = {
 	},
 	KOR: `
 				<span class='hypnoText clarity'>More lewd, more vulgar...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 }, {
 	cond: true,
 	type: "text",
 	KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I need to clear my head and focus.<br>
 				If I lose, I'm a slave. It's as simple as that.
@@ -7979,8 +7979,8 @@ const storyText = {
 	type: "text",
 	KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 }, {
@@ -7997,7 +7997,7 @@ const storyText = {
 	cond: true,
 	type: "text",
 	KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
 				In the end, as if it were your destiny from the very beginning, you vow to become a faithful servant of the arena.
 			`,
 }, {
@@ -8017,7 +8017,7 @@ const storyText = {
 		"무지": {
 			KOR: `Thank you for giving my holes a job! I promise I'll be a good little cumdump...♡`
 		},
-		"Aggressive": {
+		"적극": {
 			KOR: `Thank you for hiring me! I'll work so hard to please you, you'll never regret it for a second...♡`
 		},
 	}
@@ -8055,7 +8055,7 @@ const storyText = {
 				The room was submerged in silence. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, yet your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 }, {
 	cond: true,
@@ -8134,7 +8134,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -8153,7 +8153,7 @@ const storyText = {
 
 
 
-//Beastfolk Merchant (Beastfolk Merchant)
+//트라이브 상인 (Tribe Merchant)
 "intro_Tr_bg7": [{
 	cond: true,
 	type: "text",
@@ -8244,13 +8244,13 @@ const storyText = {
 	},
 	KOR: `
 				<span class='hypnoText clarity'>More lewd, more vulgar...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 }, {
 	cond: true,
 	type: "text",
 	KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I need to clear my head and focus.<br>
 				If I lose, I'm a slave. It's as simple as that.
@@ -8285,8 +8285,8 @@ const storyText = {
 	type: "text",
 	KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 }, {
@@ -8303,7 +8303,7 @@ const storyText = {
 	cond: true,
 	type: "text",
 	KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
 				In the end, as if it were your destiny from the very beginning, you vow to become a faithful servant of the arena.
 			`,
 }, {
@@ -8323,7 +8323,7 @@ const storyText = {
 		"무지": {
 			KOR: `Thank you for giving my holes a job! I promise I'll be a good little cumdump...♡`
 		},
-		"Aggressive": {
+		"적극": {
 			KOR: `Thank you for hiring me! I'll work so hard to please you, you'll never regret it for a second...♡`
 		},
 	}
@@ -8361,7 +8361,7 @@ const storyText = {
 				The room was submerged in silence. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, yet your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 }, {
 	cond: true,
@@ -8440,7 +8440,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -8449,7 +8449,7 @@ const storyText = {
 			`,
 }, ], // <--- ЗАПЯТАЯ
 
-//Eldorian Mercenary (Eldorian Mercenary)
+//엘도리아인 용병 (Eldorian Mercenary)
 "intro_El_bg8": [{
 	cond: true,
 	type: "text",
@@ -8542,13 +8542,13 @@ const storyText = {
 	},
 	KOR: `
 				<span class='hypnoText clarity'>More lewd, more vulgar...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 }, {
 	cond: true,
 	type: "text",
 	KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I need to clear my head and focus.<br>
 				If I lose, I'm a slave. It's as simple as that.
@@ -8583,8 +8583,8 @@ const storyText = {
 	type: "text",
 	KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 }, {
@@ -8601,7 +8601,7 @@ const storyText = {
 	cond: true,
 	type: "text",
 	KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
 				In the end, as if it were your destiny from the very beginning, you vow to become a faithful servant of the arena.
 			`,
 }, {
@@ -8621,7 +8621,7 @@ const storyText = {
 		"무지": {
 			KOR: `Oh, I get it now! I've been alive all this time just so I could have sex here!...♡`
 		},
-		"Aggressive": {
+		"적극": {
 			KOR: `I've finally found my true calling! I was meant to be fucked here, and I'm so happy!...♡`
 		},
 	}
@@ -8659,7 +8659,7 @@ const storyText = {
 				The room was submerged in silence. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, yet your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 }, {
 	cond: true,
@@ -8739,7 +8739,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -8748,7 +8748,7 @@ const storyText = {
 			`,
 }, ], // <--- ЗАПЯТАЯ
 
-//Silvani Mercenary (Sylvanian Mercenary)
+//실바니 용병 (Sylvanian Mercenary)
 "intro_Sy_bg8": [{
 	cond: true,
 	type: "text",
@@ -8835,13 +8835,13 @@ const storyText = {
 	},
 	KOR: `
 				<span class='hypnoText clarity'>More lewd, more vulgar...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 }, {
 	cond: true,
 	type: "text",
 	KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I need to clear my head and focus.<br>
 				If I lose, I'm a slave. It's as simple as that.
@@ -8876,8 +8876,8 @@ const storyText = {
 	type: "text",
 	KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 }, {
@@ -8894,7 +8894,7 @@ const storyText = {
 	cond: true,
 	type: "text",
 	KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
 				In the end, as if it were your destiny from the very beginning, you vow to become a faithful servant of the arena.
 			`,
 }, {
@@ -8914,7 +8914,7 @@ const storyText = {
 		"무지": {
 			KOR: `Oh, I get it now! I've been alive all this time just so I could have sex here!...♡`
 		},
-		"Aggressive": {
+		"적극": {
 			KOR: `I've finally found my true calling! I was meant to be fucked here, and I'm so happy!...♡`
 		},
 	}
@@ -8952,7 +8952,7 @@ const storyText = {
 				The room was submerged in silence. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, yet your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 }, {
 	cond: true,
@@ -9018,7 +9018,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -9038,12 +9038,12 @@ const storyText = {
 
 
 
-//Halfling Mercenary (Halfling Mercenary)
+//하프만 용병 (Halfman Mercenary)
 "intro_Ha_bg8": [{
 	cond: true,
 	type: "text",
 	KOR: `
-				Your obsession with money was forged in the filth of the halfling slums.<br>
+				Your obsession with money was forged in the filth of the Halfman slums.<br>
 				It was a place ruled by squalor and relentless poverty, and you grew up witnessing one tragedy after another.<br>
 				The only lesson that ever stuck was the cold, hard truth: without coin, you are nothing. From then on, money became your god.<br>
 				<br>
@@ -9126,13 +9126,13 @@ const storyText = {
 	},
 	KOR: `
 				<span class='hypnoText clarity'>More lewd, more vulgar...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 }, {
 	cond: true,
 	type: "text",
 	KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I need to clear my head and focus.<br>
 				If I lose, I'm a slave. It's as simple as that.
@@ -9167,8 +9167,8 @@ const storyText = {
 	type: "text",
 	KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 }, {
@@ -9185,7 +9185,7 @@ const storyText = {
 	cond: true,
 	type: "text",
 	KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
 				In the end, as if it were your destiny from the very beginning, you vow to become a faithful servant of the arena.
 			`,
 }, {
@@ -9205,7 +9205,7 @@ const storyText = {
 		"무지": {
 			KOR: `Oh, I get it now! I've been alive all this time just so I could have sex here!...♡`
 		},
-		"Aggressive": {
+		"적극": {
 			KOR: `I've finally found my true calling! I was meant to be fucked here, and I'm so happy!...♡`
 		},
 	}
@@ -9243,7 +9243,7 @@ const storyText = {
 				The room was submerged in silence. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, yet your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 }, {
 	cond: true,
@@ -9323,7 +9323,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
@@ -9332,7 +9332,7 @@ const storyText = {
 			`,
 }, ], // <--- ЗАПЯТАЯ
 
-//Beastfolk Mercenary (Beastfolk Mercenary)
+//트라이브 용병 (Tribe Mercenary)
 "intro_Tr_bg8": [{
 	cond: true,
 	type: "text",
@@ -9422,13 +9422,13 @@ const storyText = {
 	},
 	KOR: `
 				<span class='hypnoText clarity'>More lewd, more vulgar...</span><br>
-				<span class='hypnoText clarity'>Realize you are nothing but a female.</span>
+				<span class='hypnoText clarity'>GlinthavenRealize you are nothing but a wanton slut.</span>
 			`,
 }, {
 	cond: true,
 	type: "text",
 	KOR: `
-				Besides, it feels like someone has been whispering filth into my head for a while now...<br>
+				It feels like someone has been whispering filth into my head for a while now...<br>
 				<br>
 				No, I need to clear my head and focus.<br>
 				If I lose, I'm a slave. It's as simple as that.
@@ -9463,8 +9463,8 @@ const storyText = {
 	type: "text",
 	KOR: `
 				Your mind, shattered and vulnerable from the duel's climax, was easily swept away by the suggestion violating your thoughts.<br>
-				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command, taking deep, corrupting root within you.<br>
-				Your body trembled, your heart pounded violently as you accepted your new, true destiny.<br>
+				At the peak of victorious pleasure, the suggestion became an undeniable, absolute command taking root deep within your psyche.<br>
+				Your body trembled and your heart pounded violently as you accepted your new destiny.<br>
 				Seizing the moment, Sandrea tempts you with her silken voice.
 			`,
 }, {
@@ -9481,7 +9481,7 @@ const storyText = {
 	cond: true,
 	type: "text",
 	KOR: `
-				Her words ensnare your broken will, a siren's call to follow the suggestion's command.<br>
+				Her words ensnare your broken will; a siren's call to follow the suggestion's unspoken command.<br>
 				In the end, as if it were your destiny from the very beginning, you vow to become a faithful servant of the arena.
 			`,
 }, {
@@ -9501,7 +9501,7 @@ const storyText = {
 		"무지": {
 			KOR: `Oh, I get it now! I've been alive all this time just so I could have sex here!...♡`
 		},
-		"Aggressive": {
+		"적극": {
 			KOR: `I've finally found my true calling! I was meant to be fucked here, and I'm so happy!...♡`
 		},
 	}
@@ -9539,7 +9539,7 @@ const storyText = {
 				The room was submerged in silence. In your hand rested Morvain's Orb.<br>
 				You had accomplished a great and terrible feat, yet your heart was a hollow, echoing void.<br>
 				What now? Where do you even go from here?<br>
-				You were free from all oppression, but after everything you'd been forced to endure, you were utterly lost.
+				You were finally free of their grasp, but after everything you'd been forced to endure, you were utterly lost.
 			`,
 }, {
 	cond: true,
@@ -9619,7 +9619,7 @@ const storyText = {
 				A distorted, filthy emotion. You desperately want to deny that this is your true self.<br>
 				<br>
 				Nevertheless, you can no longer ignore the feeling.<br>
-				The craving that throbs deep in your core and the sheer bliss you know you would feel upon achieving it... they are just too vivid, too real.<br>
+				The craving that throbs deep within your core and the sheer bliss you know you would feel upon feeding it... it is just too vivid, too real.<br>
 				<br>
 				<br>
 				You make a decision.<br>
