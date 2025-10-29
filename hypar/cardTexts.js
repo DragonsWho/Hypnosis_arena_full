@@ -72,7 +72,7 @@ const cardTexts = {
 		"자극받을시":{
 			"KOR": "When receiving <b>[Stimulation]</b>, "
 		},
-		"상대자극받을시":{
+		"Opponent자극받을시":{
 			"KOR": "When the opponent receives <b>[Stimulation]</b>, "
 		},
 		"누군가자극받을시":{
@@ -99,19 +99,19 @@ const cardTexts = {
 		"사격사용시":{
 			"KOR": "When you play a Shot card, "
 		},
-		"상대사용시":{
+		"Opponent사용시":{
 			"KOR": "When the opponent plays a card, "
 		},
-		"상대attack사용시":{
+		"Opponentattack사용시":{
 			"KOR": "When the opponent plays an Attack card, "
 		},
-		"상대보조사용시":{
+		"Opponent보조사용시":{
 			"KOR": "When the opponent plays a Support card, "
 		},
-		"상대Position사용시":{
+		"OpponentPosition사용시":{
 			"KOR": "When the opponent plays a Position card, "
 		},
-		"상대Penalty사용시":{
+		"OpponentPenalty사용시":{
 			"KOR": "When the opponent plays a Penalty card, "
 		},
 		"도전자사용시":{
@@ -191,16 +191,16 @@ const cardTexts = {
 		"반복배수값":{
 			"KOR": " multiplied by {repeat}"
 		},
-		"덱":{
+		"Deck":{
 			"KOR": "{owner}'s deck"
 		},
-		"덱조건":{
+		"Deck조건":{
 			"KOR": "{cards} in {deck}"
 		},
-		"덱목적":{
+		"Deck목적":{
 			"KOR": "{cards} in {deck}"
 		},
-		"특수덱":{
+		"특수Deck":{
 			"KOR": "{amount} types of {cards}"
 		},
 		"스탯":{
@@ -484,46 +484,46 @@ const cardTexts = {
 			"KOR": "If it is round {amount}, ",
 		},
 
-		"덱cardNone":{
+		"DeckcardNone":{
 			"KOR": "If there is no {target}, ",
 		},
-		"덱card있음":{
+		"Deckcard있음":{
 			"KOR": "If there is {target}, ",
 		},
-		"덱card일치숫자":{
+		"Deckcard일치숫자":{
 			"KOR": "If there are exactly {amount} {target}, ",
 		},
-		"덱card일치값":{
+		"Deckcard일치값":{
 			"KOR": "If there is exactly {amount} {target}, ",
 		},
-		"덱card초과숫자":{
+		"Deckcard초과숫자":{
 			"KOR": "If there are more than {amount} {target}, ",
 		},
-		"덱card초과값":{
+		"Deckcard초과값":{
 			"KOR": "If there is more than {amount} {target}, ",
 		},
-		"덱card미만숫자":{
+		"Deckcard미만숫자":{
 			"KOR": "If there are fewer than {amount} {target}, ",
 		},
-		"덱card미만값":{
+		"Deckcard미만값":{
 			"KOR": "If there is less than {amount} {target}, ",
 		},
-		"덱card이상숫자":{
+		"Deckcard이상숫자":{
 			"KOR": "If there are {amount} or more {target}, ",
 		},
-		"덱card이상값":{
+		"Deckcard이상값":{
 			"KOR": "If there is {amount} or more {target}, ",
 		},
-		"덱card이하숫자":{
+		"Deckcard이하숫자":{
 			"KOR": "If there are {amount} or fewer {target}, ",
 		},
-		"덱card이하값":{
+		"Deckcard이하값":{
 			"KOR": "If there is {amount} or less {target}, ",
 		},
-		"덱card불일치숫자":{
+		"Deckcard불일치숫자":{
 			"KOR": "If there are not exactly {amount} {target}, ",
 		},
-		"덱card불일치값":{
+		"Deckcard불일치값":{
 			"KOR": "If there is not exactly {amount} {target}, ",
 		},
 
@@ -1001,13 +1001,13 @@ const cardTexts = {
 			"KOR": "<span style='color: gray;''><i>(Changes to the following <b>Position</b>.)</i></span>",
 		},
 
-		"덱card획득":{
+		"Deckcard획득":{
 			"KOR": "Gain {repeat} {card}.",
 		},
-		"덱card선택획득":{
+		"Deckcard선택획득":{
 			"KOR": "Choose a {card} and gain {repeat} copies of it.",
 		},
-		"덱card추가":{
+		"Deckcard추가":{
 			"KOR": "Give {target} {repeat} {card}.",
 		},
 
@@ -1268,13 +1268,13 @@ const cardTexts = {
 			"KOR": "<b>Corruption</b> cannot exceed {amount}.",
 		},
 
-		"덱포함필수":{
+		"Deck포함필수":{
 			"KOR": "Your deck must contain {amount} {card}.",
 		},
-		"덱포함금지":{
+		"Deck포함금지":{
 			"KOR": "Cannot add {card} to your deck.",
 		},
-		"덱포함수량":{
+		"Deck포함수량":{
 			"KOR": "Cannot have more than {amount} {card} in your deck.",
 		},
 

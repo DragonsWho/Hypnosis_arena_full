@@ -179,7 +179,7 @@
                     const card = cardDB[id];
                     if (card.type === "특성") {
                         traits.push(card);
-                    } else if (card.tags.includes("덱빌딩")) {
+                    } else if (card.tags.includes("Deck빌딩")) {
                         cards.push(card);
                     } else {
                         tokens.push(card);
@@ -324,7 +324,7 @@
                     var cardText = card.innerText.toLowerCase();
 
                     var matchesSearch = searchText.every(term => cardText.includes(term) || Object.values(Object.values(cardData)).some(value => typeof value == 'string' && value.toLowerCase().includes(term)));
-                    var matchesClassFilter = !classFilterActive || classFilters.includes(cardData.class) || (classFilters.includes("Champion") && cardData.tags.includes("Champion덱"));
+                    var matchesClassFilter = !classFilterActive || classFilters.includes(cardData.class) || (classFilters.includes("Champion") && cardData.tags.includes("ChampionDeck"));
                     var matchesTypeFilter = !typeFilterActive || typeFilters.includes(cardData.type) || (typeFilters.includes("Other") && !allTypeFilters.includes(cardData.type));
                     var matchesRarityFilter = !rarityFilterActive || rarityFilters.includes(cardData.rarity);
 
@@ -388,7 +388,7 @@
 
         function generateDialogueDocument(data) {
             const output = [];
-            const personalityTypes = ["순종", "저항", "무지", "Aggressive"];
+            const personalityTypes = ["Obedient", "Resistant", "Naive", "Aggressive"];
 
             // Iterate over keys in the data object
             for (const sceneKey in data) {
@@ -397,7 +397,7 @@
                     const [characterName, sceneName] = sceneKey.split("-이벤트-");
                     const events = data[sceneKey];
 
-                    output.push(`장면 Name: ${sceneName} (상대: ${characterName})\n`);
+                    output.push(`장면 Name: ${sceneName} (Opponent: ${characterName})\n`);
 
                     // Iterate through all event objects in the array
                     events.forEach((event, eventIndex) => {
@@ -562,13 +562,13 @@
             <p class="box-text langText KOR"><b>1. NSFW WARNING:</b> This is an explicit adult game. Before you proceed, understand what awaits you within.<br>
                 <br>
                 Here's a taste of what's inside:<br>
-                - A female lead who exists to be used, degraded, and broken.<br>
+                - A heroine who exists to be used, degraded, and broken.<br>
                 - Graphic scenes of monstrous violation, including interspecies breeding and tentacle rape.<br>
                 - Plenty of fuckable shortstacks and one nasty shota.<br>
                 <br>
                 ※ All live toys here are 18+ only!<br>
                 <br><br>
-                <b>2. AI Origins:</b> Yeah, all the art is made by a AI. But with high quality!<br>
+                <b>2. AI Origins:</b> Yeah, the art's AI-generated, but this is the good stuff. No kidding!<br>
                 <br></p>
         </div>
 
@@ -903,7 +903,7 @@
                 <h2 class="box-title langText KOR">The Jackpot</h2>
                 <hr>
                 <div class="box-content">
-                    <p class="box-text langText KOR">he prize... Heh. The stories they tell. <br><br>
+                    <p class="box-text langText KOR">The prize... Heh. The stories they tell. <br><br>
                         Some say the winner's purse has grown so big you could buy this whole damn city and still have enough left over for a private army. <br><br>
                         Probably bullshit, but a girl can dream, right? It's the one thing everyone agrees on: win in the Arena, and you're set for life.<br></p>
                 </div>
@@ -1785,7 +1785,7 @@
                     <img src="image/personality1.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">순종</h2> 
+                <h2 class="box-title" style="display: none;">Obedient</h2> 
                 <h2 class="box-title langText KOR">Obedient</h2>
                 <hr>
                 <blockquote class="langText KOR">"I will follow your orders."</blockquote>
@@ -1801,7 +1801,7 @@
                     <img src="image/personality2.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">저항</h2> 
+                <h2 class="box-title" style="display: none;">Resistant</h2> 
                 <h2 class="box-title langText KOR">Resistant</h2>
                 <hr>
                 <blockquote class="langText KOR">"Ugh, if it weren't for the command..."</blockquote>
@@ -1817,7 +1817,7 @@
                     <img src="image/personality3.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">무지</h2> 
+                <h2 class="box-title" style="display: none;">Naive</h2> 
                 <h2 class="box-title langText KOR">Naive</h2>
                 <hr>
                 <blockquote class="langText KOR">"Huh? Like this?"</blockquote>
@@ -1833,7 +1833,7 @@
                     <img src="image/personality4.webp" onerror="handleImgError(this)" alt="">
                 </div>
                 <hr>
-                <h2 class="box-title" style="display: none;">Aggressive</h2> 
+                <h2 class="box-title" style="display: none;">Proactive</h2> 
                 <h2 class="box-title langText KOR">Proactive</h2>
                 <hr>
                 <blockquote class="langText KOR">"Can you satisfy me?♡"</blockquote>
@@ -2024,7 +2024,7 @@
             <div class="box" style="flex: 0 calc(40% - 20px);">
                 <h2 class="box-title" style="text-align: left; padding: 0 5%;"><i><span id="deckCodeLog"></span></i></h2>
             </div>
-            <div class="box button button2" style="flex: 0 calc(20% - 20px);" onclick="clearDeck(); document.getElementById('deckCodeLog').innerHtml = `덱을 비웠습니다.`;">
+            <div class="box button button2" style="flex: 0 calc(20% - 20px);" onclick="clearDeck(); document.getElementById('deckCodeLog').innerHtml = `Deck을 비웠습니다.`;">
                 <h2 class="box-title langText KOR">🗑️ Empty Deck</h2>
             </div>
 

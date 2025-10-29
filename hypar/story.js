@@ -714,13 +714,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I will pledge my undying loyalty, Master...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `Fine. I will sacrifice my life and be loyal...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I'll devote my life to you, okay?...♡`
 			},
 			"Aggressive": {
@@ -1022,13 +1022,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I will pledge my undying loyalty, Master...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `Fine. I will sacrifice my life and be loyal...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I'll devote my life to you, okay?...♡`
 			},
 			"Aggressive": {
@@ -1324,13 +1324,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I will pledge my undying loyalty, Master...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `Fine. I will sacrifice my life and be loyal...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I'll devote my life to you, okay?...♡`
 			},
 			"Aggressive": {
@@ -1622,13 +1622,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I will pledge my undying loyalty, Master...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `Fine. I will sacrifice my life and be loyal...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I'll devote my life to you, okay?...♡`
 			},
 			"Aggressive": {
@@ -1919,13 +1919,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I solemnly swear to fulfill my duty and spread myself for any man...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `Fine. I'll swear to do my 'duty' and spread for men...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I promise to do my duty and... open up for the nice gentlemen...♡`
 			},
 			"Aggressive": {
@@ -2215,13 +2215,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I solemnly swear to fulfill my duty and spread myself for any man...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `Fine. I'll swear to do my 'duty' and spread for men...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I promise to do my duty and... open up for the nice gentlemen...♡`
 			},
 			"Aggressive": {
@@ -2509,13 +2509,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I solemnly swear to fulfill my duty and spread myself for any man...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `Fine. I'll swear to do my 'duty' and spread for men...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I promise to do my duty and... open up for the nice gentlemen...♡`
 			},
 			"Aggressive": {
@@ -2806,13 +2806,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I shall offer my body to serve as a vessel for men's pleasure...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `So I'm just a tool for men's release. I will hand over my body...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I will give my body so I can be useful for men's pleasure...♡`
 			},
 			"Aggressive": {
@@ -3099,13 +3099,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I shall offer my body to serve as a vessel for men's pleasure...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `So I'm just a tool for men's release. I will hand over my body...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I will give my body so I can be useful for men's pleasure...♡`
 			},
 			"Aggressive": {
@@ -3467,13 +3467,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I shall offer my body to serve as a vessel for men's pleasure...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `So I'm just a tool for men's release. I will hand over my body...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I will give my body so I can be useful for men's pleasure...♡`
 			},
 			"Aggressive": {
@@ -3774,13 +3774,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I shall offer my body to serve as a vessel for men's pleasure...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `So I'm just a tool for men's release. I will hand over my body...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I will give my body so I can be useful for men's pleasure...♡`
 			},
 			"Aggressive": {
@@ -4068,13 +4068,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I sacrifice this worthless body to the Divine Phallus...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `Fine. I will offer my humble body to the so-called 'Divine Cock'...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I'll be a good girl and offer my body to the big, important Cock...♡`
 			},
 			"Aggressive": {
@@ -4363,13 +4363,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I sacrifice this worthless body to the Divine Phallus...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `Fine. I will offer my humble body to the so-called 'Divine Cock'...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I'll be a good girl and offer my body to the big, important Cock...♡`
 			},
 			"Aggressive": {
@@ -4680,13 +4680,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I sacrifice this worthless body to the Divine Phallus...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `Fine. I will offer my humble body to the so-called 'Divine Cock'...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I'll be a good girl and offer my body to the big, important Cock...♡`
 			},
 			"Aggressive": {
@@ -4972,13 +4972,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I dedicate my very being to serve the advancement of the Arena...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `Fine. I'll give everything I have to 'contribute' to the Arena's success...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I promise to devote my all to be useful for the Arena's success...♡`
 			},
 			"Aggressive": {
@@ -5268,13 +5268,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I dedicate my very being to serve the advancement of the Arena...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `Fine. I'll give everything I have to 'contribute' to the Arena's success...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I promise to devote my all to be useful for the Arena's success...♡`
 			},
 			"Aggressive": {
@@ -5585,13 +5585,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I dedicate my very being to serve the advancement of the Arena...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `Fine. I'll give everything I have to 'contribute' to the Arena's success...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I promise to devote my all to be useful for the Arena's success...♡`
 			},
 			"Aggressive": {
@@ -5875,13 +5875,13 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		psText: {
-			"순종": {
+			"Obedient": {
 				KOR: `I dedicate my very being to serve the advancement of the Arena...♡`
 			},
-			"저항": {
+			"Resistant": {
 				KOR: `Fine. I'll give everything I have to 'contribute' to the Arena's success...♡`
 			},
-			"무지": {
+			"Naive": {
 				KOR: `I promise to devote my all to be useful for the Arena's success...♡`
 			},
 			"Aggressive": {
@@ -7392,13 +7392,13 @@ const storyText = {
 	pos: 0,
 	nude: true,
 	psText: {
-		"순종": {
+		"Obedient": {
 			KOR: `You won't regret hiring my holes; I will ensure your complete satisfaction...♡`
 		},
-		"저항": {
+		"Resistant": {
 			KOR: `You've purchased the use of my holes. I'll make sure you get your money's worth...♡`
 		},
-		"무지": {
+		"Naive": {
 			KOR: `Thank you for giving my holes a job! I promise I'll be a good little cumdump...♡`
 		},
 		"Aggressive": {
@@ -7712,13 +7712,13 @@ const storyText = {
 	pos: 0,
 	nude: true,
 	psText: {
-		"순종": {
+		"Obedient": {
 			KOR: `You won't regret hiring my holes; I will ensure your complete satisfaction...♡`
 		},
-		"저항": {
+		"Resistant": {
 			KOR: `You've purchased the use of my holes. I'll make sure you get your money's worth...♡`
 		},
-		"무지": {
+		"Naive": {
 			KOR: `Thank you for giving my holes a job! I promise I'll be a good little cumdump...♡`
 		},
 		"Aggressive": {
@@ -8008,13 +8008,13 @@ const storyText = {
 	pos: 0,
 	nude: true,
 	psText: {
-		"순종": {
+		"Obedient": {
 			KOR: `You won't regret hiring my holes; I will ensure your complete satisfaction...♡`
 		},
-		"저항": {
+		"Resistant": {
 			KOR: `You've purchased the use of my holes. I'll make sure you get your money's worth...♡`
 		},
-		"무지": {
+		"Naive": {
 			KOR: `Thank you for giving my holes a job! I promise I'll be a good little cumdump...♡`
 		},
 		"Aggressive": {
@@ -8314,13 +8314,13 @@ const storyText = {
 	pos: 0,
 	nude: true,
 	psText: {
-		"순종": {
+		"Obedient": {
 			KOR: `You won't regret hiring my holes; I will ensure your complete satisfaction...♡`
 		},
-		"저항": {
+		"Resistant": {
 			KOR: `You've purchased the use of my holes. I'll make sure you get your money's worth...♡`
 		},
-		"무지": {
+		"Naive": {
 			KOR: `Thank you for giving my holes a job! I promise I'll be a good little cumdump...♡`
 		},
 		"Aggressive": {
@@ -8612,13 +8612,13 @@ const storyText = {
 	pos: 0,
 	nude: true,
 	psText: {
-		"순종": {
+		"Obedient": {
 			KOR: `It was my destiny to live only to have sex in this place...♡`
 		},
-		"저항": {
+		"Resistant": {
 			KOR: `Apparently, my entire existence was just a prelude to having sex here...♡`
 		},
-		"무지": {
+		"Naive": {
 			KOR: `Oh, I get it now! I've been alive all this time just so I could have sex here!...♡`
 		},
 		"Aggressive": {
@@ -8905,13 +8905,13 @@ const storyText = {
 	pos: 0,
 	nude: true,
 	psText: {
-		"순종": {
+		"Obedient": {
 			KOR: `It was my destiny to live only to have sex in this place...♡`
 		},
-		"저항": {
+		"Resistant": {
 			KOR: `Apparently, my entire existence was just a prelude to having sex here...♡`
 		},
-		"무지": {
+		"Naive": {
 			KOR: `Oh, I get it now! I've been alive all this time just so I could have sex here!...♡`
 		},
 		"Aggressive": {
@@ -9196,13 +9196,13 @@ const storyText = {
 	pos: 0,
 	nude: true,
 	psText: {
-		"순종": {
+		"Obedient": {
 			KOR: `It was my destiny to live only to have sex in this place...♡`
 		},
-		"저항": {
+		"Resistant": {
 			KOR: `Apparently, my entire existence was just a prelude to having sex here...♡`
 		},
-		"무지": {
+		"Naive": {
 			KOR: `Oh, I get it now! I've been alive all this time just so I could have sex here!...♡`
 		},
 		"Aggressive": {
@@ -9492,13 +9492,13 @@ const storyText = {
 	pos: 0,
 	nude: true,
 	psText: {
-		"순종": {
+		"Obedient": {
 			KOR: `It was my destiny to live only to have sex in this place...♡`
 		},
-		"저항": {
+		"Resistant": {
 			KOR: `Apparently, my entire existence was just a prelude to having sex here...♡`
 		},
-		"무지": {
+		"Naive": {
 			KOR: `Oh, I get it now! I've been alive all this time just so I could have sex here!...♡`
 		},
 		"Aggressive": {

@@ -62,9 +62,9 @@ const dictionary = {
 	"Class":{ "KOR":"Class" },
 	"Background":{ "KOR":"Background" },
 	"Personality":{ "KOR":"Personality" },
-	"순종":{ "KOR":"Obedient" },
-    "저항":{ "KOR":"Resistant" },
-    "무지":{ "KOR":"Naive" },
+	"Obedient":{ "KOR":"Obedient" },
+    "Resistant":{ "KOR":"Resistant" },
+    "Naive":{ "KOR":"Naive" },
     "Aggressive":{ "KOR":"Proactive" },
 
 	"Neutral":{ "KOR":"Neutral" },
@@ -89,14 +89,14 @@ const dictionary = {
 	"순진함":{ "KOR":"Naivety" },
 	"상냥함":{ "KOR":"Kindness" },
 
-	"강한 상대":{ "KOR":"Strong Opponent" },
+	"강한 Opponent":{ "KOR":"Strong Opponent" },
 	"상금":{ "KOR":"Prize Money" },
 	"명예":{ "KOR":"Honor" },
 	"조사":{ "KOR":"Investigation" },
 	"None":{ "KOR":"Nothing" },
 
 	"포인트":{ "KOR":"Point" },
-	"덱":{ "KOR":"Deck" },
+	"Deck":{ "KOR":"Deck" },
 	"card":{ "KOR":"Cards" },
 	"Poison Pouch":{ "KOR":"Poison Pouch" },
 
@@ -129,7 +129,7 @@ const dictionary = {
 
 	"라운드":{ "KOR":"Round" },
 	"Max라운드":{ "KOR":"Max Round" },
-	"덱크기":{ "KOR":"Deck Size" },
+	"Deck크기":{ "KOR":"Deck Size" },
 	"원본":{ "KOR":"Original Card" },
 	"Derived":{ "KOR":"That Card" },
 	"재귀Derived":{ "KOR":"This Card" },
@@ -160,7 +160,7 @@ const dictionary = {
 	"도전자":{ "KOR":"Challenger" },
 	"Champion":{ "KOR":"Champion" },
 	"자신":{ "KOR":"Self" },
-	"상대":{ "KOR":"Opponent" },
+	"Opponent":{ "KOR":"Opponent" },
 
 	"능력치":{ "KOR":"Stats" },
 	"전적":{ "KOR":"Record" },
@@ -402,12 +402,12 @@ const champList = {
 			],
 			"B1-AT-001":[
 				{cond:true, priority:2},
-				{cond:{v1:"상대덱.count(id, B1-PN-001)", op:">=", v2:2}, priority:3},
+				{cond:{v1:"OpponentDeck.count(id, B1-PN-001)", op:">=", v2:2}, priority:3},
 			],
 			"B1-AT-002":[
-				{cond:true, priority:"상대덱.count(type, Penalty)"},
-				{cond:true, priority:"상대덱.count(type, Penalty)"},
-				{cond:{v1:"상대덱.count(type, Penalty)", op:"==", v2:0}, priority:-Infinity},
+				{cond:true, priority:"OpponentDeck.count(type, Penalty)"},
+				{cond:true, priority:"OpponentDeck.count(type, Penalty)"},
+				{cond:{v1:"OpponentDeck.count(type, Penalty)", op:"==", v2:0}, priority:-Infinity},
 			],
 			"B1-AT-003":[
 				{cond:true, priority:2},
@@ -415,7 +415,7 @@ const champList = {
 			],
 			"B1-AT-004":[
 				{cond:true, priority:2},
-				{cond:true, priority:"상대덱.count(type, Penalty)"},
+				{cond:true, priority:"OpponentDeck.count(type, Penalty)"},
 				{cond:{v1:"Heat", op:"<", v2:3}, priority:1},
 			],
 			"B1-AT-005":[
@@ -423,13 +423,13 @@ const champList = {
 			],
 			"B1-SU-001":[
 				{cond:true, priority:1},
-				{cond:{v1:"상대덱.count(id, B1-PN-001)", op:"==", v2:0}, priority:2},
+				{cond:{v1:"OpponentDeck.count(id, B1-PN-001)", op:"==", v2:0}, priority:2},
 				{cond:{v1:"Heat", op:"<", v2:4}, priority:2},
 				{cond:{v1:"Heat", op:"<", v2:2}, priority:4},
 			],
 			/*"B1-SU-002":[
 				{cond:true, priority:0},
-				{cond:{v1:"상대덱.count(id, B1-PN-001)", op:">=", v2:"1"}, priority:3},
+				{cond:{v1:"OpponentDeck.count(id, B1-PN-001)", op:">=", v2:"1"}, priority:3},
 				{cond:{v1:"라운드", op:"<", v2:"4"}, priority:2},
 			],
 			"B1-SU-003":[
@@ -437,11 +437,11 @@ const champList = {
 				{cond:{v1:"라운드", op:"<", v2:"4"}, priority:2},
 			],*/
 			"B1-SU-002":[
-				{cond:true, priority:"상대덱.count(type, Penalty)"},
-				{cond:true, priority:"상대덱.count(type, Penalty)"},
-				{cond:['and', {v1:"상대.RemainingOrgasm", op:"<=", v2:"1"}, {v1:"상대덱.count(type, Penalty)", op:">=", v2:"4"}], priority:100},
-				{cond:{v1:"상대덱.count(type, Penalty)", op:"==", v2:"3"}, priority:-2},
-				{cond:{v1:"상대덱.count(type, Penalty)", op:"<", v2:"3"}, priority:-Infinity},
+				{cond:true, priority:"OpponentDeck.count(type, Penalty)"},
+				{cond:true, priority:"OpponentDeck.count(type, Penalty)"},
+				{cond:['and', {v1:"Opponent.RemainingOrgasm", op:"<=", v2:"1"}, {v1:"OpponentDeck.count(type, Penalty)", op:">=", v2:"4"}], priority:100},
+				{cond:{v1:"OpponentDeck.count(type, Penalty)", op:"==", v2:"3"}, priority:-2},
+				{cond:{v1:"OpponentDeck.count(type, Penalty)", op:"<", v2:"3"}, priority:-Infinity},
 			],
 		},
 	},
@@ -513,11 +513,11 @@ const champList = {
 			],
 			"B2-AT-001":[
 				{cond:true, priority:2},
-				{cond:{v1:"상대덱.count(type, attack)", op:"==", v2:"0"}, priority:-Infinity},
+				{cond:{v1:"OpponentDeck.count(type, attack)", op:"==", v2:"0"}, priority:-Infinity},
 			],
 			"B2-AT-002":[
 				{cond:true, priority:2},
-				{cond:{v1:"상대덱.count(type, 보조)", op:"==", v2:"0"}, priority:-Infinity},
+				{cond:{v1:"OpponentDeck.count(type, 보조)", op:"==", v2:"0"}, priority:-Infinity},
 			],
 			"B2-AT-003":[
 				{cond:true, priority:-1000},
@@ -535,7 +535,7 @@ const champList = {
 				{cond:{v1:"Heat", op:">=", v2:"8"}, priority:90},
 			],
 			"B2-SU-004":[
-				{cond:{v1:"상대덱.count(id, B2-PN-001)", op:">=", v2:"3"}, priority:3},
+				{cond:{v1:"OpponentDeck.count(id, B2-PN-001)", op:">=", v2:"3"}, priority:3},
 				{cond:true, priority:1},
 				
 			],
@@ -894,14 +894,14 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 				{cond:true, priority:5}
 			],
 			"B6-AT-002":[
-				{cond:{v1:"상대덱.count(tags, Spore)", op:">=", v2:1}, priority:99}
+				{cond:{v1:"OpponentDeck.count(tags, Spore)", op:">=", v2:1}, priority:99}
 			],
 			"B6-AT-003":[
 				{cond:true, priority:-1000},
 			],
 			"B6-SU-001":[
-				{cond:{v1:"상대덱.count(tags, Spore)", op:"<=", v2:2}, priority:-10},
-				{cond:{v1:"상대덱.count(tags, Spore)", op:">=", v2:4}, priority:10},
+				{cond:{v1:"OpponentDeck.count(tags, Spore)", op:"<=", v2:2}, priority:-10},
+				{cond:{v1:"OpponentDeck.count(tags, Spore)", op:">=", v2:4}, priority:10},
 			],
 			"B6-SU-002":[
 				{cond:{v1:"라운드", op:">=", v2:5}, priority:100},
@@ -1118,7 +1118,7 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 
 	"bossH1":{
 		id:"bossH1",
-		name:{ "KOR":"Goblins" }, fullName:{ "KOR":"Elite Goblins" }, img:"boss1", category:"마지막상대",
+		name:{ "KOR":"Goblins" }, fullName:{ "KOR":"Elite Goblins" }, img:"boss1", category:"마지막Opponent",
 		condDesc:{ "KOR":`Win against <b>[${dictionary["Goblins"]["ENG"]}]</b> in hard mode`,
 		"ENG":`Win against <b>[${dictionary["Goblins"]["ENG"]}]</b> in hard mode` },
 		look: { "KOR":"A squad of veteran goblins." },
@@ -1161,13 +1161,13 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 			],
 			"B1-AT-001":[
 				{cond:true, priority:2},
-				{cond:{v1:"상대덱.count(id, B1-PN-001)", op:">=", v2:1}, priority:2},
+				{cond:{v1:"OpponentDeck.count(id, B1-PN-001)", op:">=", v2:1}, priority:2},
 				{cond:{v1:"라운드", op:">=", v2:"5"}, priority:2},
 			],
 			"B1-AT-002+":[
-				{cond:true, priority:"상대덱.count(type, Penalty)"},
-				{cond:true, priority:"상대덱.count(type, Penalty)"},
-				{cond:{v1:"상대덱.count(type, Penalty)", op:"==", v2:0}, priority:-Infinity},
+				{cond:true, priority:"OpponentDeck.count(type, Penalty)"},
+				{cond:true, priority:"OpponentDeck.count(type, Penalty)"},
+				{cond:{v1:"OpponentDeck.count(type, Penalty)", op:"==", v2:0}, priority:-Infinity},
 			],
 			"B1-AT-003":[
 				{cond:true, priority:2},
@@ -1175,7 +1175,7 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 			],
 			"B1-AT-004":[
 				{cond:true, priority:3},
-				{cond:true, priority:"상대덱.count(type, Penalty)"},
+				{cond:true, priority:"OpponentDeck.count(type, Penalty)"},
 				{cond:{v1:"Heat", op:"<", v2:3}, priority:2},
 			],
 			"B1-AT-005":[
@@ -1183,22 +1183,22 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 			],
 			"B1-SU-001":[
 				{cond:true, priority:1},
-				{cond:{v1:"상대덱.count(id, B1-PN-001)", op:"==", v2:0}, priority:2},
+				{cond:{v1:"OpponentDeck.count(id, B1-PN-001)", op:"==", v2:0}, priority:2},
 				{cond:{v1:"Heat", op:"<", v2:4}, priority:2},
 				{cond:{v1:"Heat", op:"<", v2:2}, priority:4},
 			],
 			"B1-SU-002":[
-				{cond:true, priority:"상대덱.count(type, Penalty)"},
-				{cond:true, priority:"상대덱.count(type, Penalty)"},
-				{cond:['and', {v1:"상대.RemainingOrgasm", op:"<=", v2:"1"}, {v1:"상대덱.count(type, Penalty)", op:">=", v2:"4"}], priority:100},
-				{cond:{v1:"상대덱.count(type, Penalty)", op:"==", v2:3}, priority:-2},
-				{cond:{v1:"상대덱.count(type, Penalty)", op:"<", v2:3}, priority:-Infinity},
+				{cond:true, priority:"OpponentDeck.count(type, Penalty)"},
+				{cond:true, priority:"OpponentDeck.count(type, Penalty)"},
+				{cond:['and', {v1:"Opponent.RemainingOrgasm", op:"<=", v2:"1"}, {v1:"OpponentDeck.count(type, Penalty)", op:">=", v2:"4"}], priority:100},
+				{cond:{v1:"OpponentDeck.count(type, Penalty)", op:"==", v2:3}, priority:-2},
+				{cond:{v1:"OpponentDeck.count(type, Penalty)", op:"<", v2:3}, priority:-Infinity},
 			],
 		},
 	},
 	"bossH2":{
 		id:"bossH2",
-		name:{ "KOR":"Villager" }, fullName:{ "KOR":"Empowered Villager" }, img:"boss2", category:"마지막상대",
+		name:{ "KOR":"Villager" }, fullName:{ "KOR":"Empowered Villager" }, img:"boss2", category:"마지막Opponent",
 		condDesc:{ "KOR":`Win against <b>[${dictionary["Villager"]["KOR"]}]</b> in hard mode`, },
 		    look: { "KOR": "The same pathetic man, now with even more power over you." },
     logDesc: { "KOR": `A pathetic man who shows no signs of growth or improvement. It seems subjugating powerful women is his one true calling.<br><br>He has been granted a genuine Mind-Leash artifact, not a mere prototype. Since then, he spends his days lost in filthy fantasies of how he will defile his next opponent.<br><br>His newfound power has made him arrogant, and he often complains about his treatment. These complaints are easily silenced by letting him have his way with a few female staff members.` },
@@ -1247,11 +1247,11 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 			],
 			"B2-AT-001+":[
 				{cond:true, priority:2},
-				{cond:{v1:"상대덱.count(type, attack)", op:"==", v2:"0"}, priority:-100},
+				{cond:{v1:"OpponentDeck.count(type, attack)", op:"==", v2:"0"}, priority:-100},
 			],
 			"B2-AT-002+":[
 				{cond:true, priority:2},
-				{cond:{v1:"상대덱.count(type, 보조)", op:"==", v2:"0"}, priority:-100},
+				{cond:{v1:"OpponentDeck.count(type, 보조)", op:"==", v2:"0"}, priority:-100},
 			],
 			"B2-AT-003":[
 				{cond:true, priority:-1000},
@@ -1269,7 +1269,7 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 				{cond:{v1:"라운드", op:"==", v2:"Max라운드"}, priority:-Infinity},
 			],
 			"B2-SU-004":[
-				{cond:true, priority:"상대덱.count(id, B2-PN-001+)"},
+				{cond:true, priority:"OpponentDeck.count(id, B2-PN-001+)"},
 			],
 
 			"B2-PN-001+":[
@@ -1279,7 +1279,7 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	},
 	"bossH3":{
 		id:"bossH3",
-		name:{ "KOR":"Tentacle Slime" }, fullName:{ "KOR":"Enhanced Tentacle Slime" }, img:"bossH3", category:"마지막상대",
+		name:{ "KOR":"Tentacle Slime" }, fullName:{ "KOR":"Enhanced Tentacle Slime" }, img:"bossH3", category:"마지막Opponent",
 		condDesc:{ "KOR":`Win against <b>[${dictionary["Tentacle Slime"]["KOR"]}]</b> in hard mode`, },
 		look: { "KOR": "A massive slime, bristling with ravenous tentacles." },
 		logDesc: { "KOR": `A tentacle slime force-fed a cocktail of nutritional supplements and aphrodisiacs to grow it to an abnormal size. It is ferocious, unnaturally durable, and possesses regenerative abilities that make a conventional victory impossible.<br><br>The unnatural growth has left its body unstable; it is designed to self-destruct shortly after the duel, ensuring it can't escape its pen but can give its all in one, final encounter.` },
@@ -1354,7 +1354,7 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	},
 	"bossH4":{
 		id:"bossH4",
-		name:{ "KOR":"The Brat" }, fullName:{ "KOR":"Awakened Shota Incubus" }, img:"bossH4", category:"마지막상대",
+		name:{ "KOR":"The Brat" }, fullName:{ "KOR":"Awakened Shota Incubus" }, img:"bossH4", category:"마지막Opponent",
 		condDesc:{ "KOR":`Win against <b>[${dictionary["Imp"]["KOR"]}]</b> in hard mode`,  },
 		look: { "KOR":"A boy... no, a demon." },
 		logDesc: { "KOR":"An incubus who has gathered enough essence to truly awaken. However, having tasted great success in his boyish form, he is fixated on maintaining it.<br><br>Now, his demonic charm is potent enough to bewitch women by directly stimulating their maternal instincts, making them fiercely protective and submissive. The slaves he entrances refuse to be separated from him, which creates problems for their training.<br><br>He seems to believe that with a little more power, he could even bewitch Sandrea, but that ambition is sure to get him into deep trouble." },
@@ -1426,7 +1426,7 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	},
 	"bossH5":{
 		id:"bossH5",
-		name:{ "KOR":"Tauros" }, fullName:{ "KOR":"Rutting Tauros" }, img:"boss5", category:"마지막상대",
+		name:{ "KOR":"Tauros" }, fullName:{ "KOR":"Rutting Tauros" }, img:"boss5", category:"마지막Opponent",
 		condDesc:{ "KOR":`Win against <b>[${dictionary["Tauros"]["KOR"]}]</b> in hard mode`, },
 		look: { "KOR":"A male monster, thoroughly in heat." },
 		logDesc: { "KOR":"his Tauros has been restrained for days, force-fed aphrodisiacs, and kept on the very edge of release until it was driven mad with lust. It is used to ensure the defeat of women unfazed by normal stimulation.<br><br>After the incredibly one-sided and rough mating, the female opponent is unlikely to emerge unscathed. Then again, the same could be said for the Tauros, whose lifespan has been drastically shortened by this treatment." },
@@ -1485,7 +1485,7 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	},
 	"bossH6":{
 		id:"bossH6",
-		name:{ "KOR":"Mushroom Man" }, fullName:{ "KOR":"Spore Lord's Host" }, img:"boss6", category:"마지막상대",
+		name:{ "KOR":"Mushroom Man" }, fullName:{ "KOR":"Spore Lord's Host" }, img:"boss6", category:"마지막Opponent",
 		condDesc:{ "KOR":`Win against <b>[${dictionary["Mushroom Man"]["KOR"]}]</b> in hard mode`  },
 		look: { "KOR":"A body controlled by a mushroom hive mind." },
 		logDesc: { "KOR":"This body is now a vessel for the Spore Lord hive mind, using the Arena as a bastion to spread its swarm through sex. The arena staff believes they cleanse the spores after each duel, but in truth, microscopic remnants remain, lying dormant. The Spore Lord is waiting, gathering strength. The recent undead incidents in the city are proof that its influence is spreading." },
@@ -1531,14 +1531,14 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 				{cond:true, priority:5}
 			],
 			"B6-AT-002":[
-				{cond:{v1:"상대덱.count(tags, Spore)", op:">=", v2:1}, priority:99}
+				{cond:{v1:"OpponentDeck.count(tags, Spore)", op:">=", v2:1}, priority:99}
 			],
 			"B6-AT-003+":[
 				{cond:true, priority:-1000}
 			],
 			"B6-SU-001":[
-				{cond:{v1:"상대덱.count(tags, Spore)", op:"<=", v2:2}, priority:-10},
-				{cond:{v1:"상대덱.count(tags, Spore)", op:">=", v2:4}, priority:10},
+				{cond:{v1:"OpponentDeck.count(tags, Spore)", op:"<=", v2:2}, priority:-10},
+				{cond:{v1:"OpponentDeck.count(tags, Spore)", op:">=", v2:4}, priority:10},
 			],
 			"B6-SU-002":[
 				{cond:{v1:"라운드", op:">=", v2:5}, priority:100},
@@ -1550,7 +1550,7 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	},
 	"bossH7":{
 		id:"bossH7",
-		name:{ "KOR":"Blonde Delinquent" }, fullName:{ "KOR":"Tanned Blonde Delinquent" }, img:"boss7", category:"마지막상대",
+		name:{ "KOR":"Blonde Delinquent" }, fullName:{ "KOR":"Tanned Blonde Delinquent" }, img:"boss7", category:"마지막Opponent",
 		condDesc:{ "KOR":`Win against <b>[${dictionary["Blonde Thug"]["KOR"]}]</b> in hard mode`, },
 		look: { "KOR":"A thuggish-looking blonde delinquent." },
 		logDesc: { "KOR":"A mysterious man whose origins and past are unknown.<br>He seems to be growing tired of the arena and is preparing to leave.<br><br>He once believed there was no woman he couldn't conquer, but that changed after he met a certain woman.<br>He should have left long ago, but he has stayed behind for one last chance to conquer her.<br><br>You know how that story ends." },
@@ -1633,7 +1633,7 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 	},
 	"bossH8":{
 		id:"bossH8",
-		name:{ "KOR":"Trainer" }, fullName:{ "KOR":"Head Trainer Glen" }, img:"boss8", category:"마지막상대",
+		name:{ "KOR":"Trainer" }, fullName:{ "KOR":"Head Trainer Glen" }, img:"boss8", category:"마지막Opponent",
 		condDesc:{ "KOR":`Win against <b>[${dictionary["Trainer"]["KOR"]}]</b> in hard mode`,  },
 		look: { "KOR":"The man who has trained you time and time again." },
 		logDesc: { "KOR":"The Head Trainer, responsible for breaking the Arena's slaves. He usurped the position after trapping and subjugating the former Head Trainer, Momorika.<br><br>His methods are now even more cruel and intense. He is personally tasked with finishing off challengers who have resisted subjugation for a long time." },
@@ -2153,21 +2153,32 @@ const namePool = {
 	"namePart2T": { "KOR":["ga", "go", "gu", "gi", "ge", "na", "no", "nu", "ne", "nyo", "da", "do", "du", "di", "de", "ra", "ro", "ru", "re", "ma", "mo", "mu", "mi", "me", "ba", "bo", "bu", "bi", "be", "sa", "so", "si", "se", "jo", "ji", "je", "cha", "cho", "chu", "chi", "che", "ka", "ko", "ku", "ki", "ka", "kyo", "ta", "to", "tu", "ti", "te", "pa", "po", "pu", "pi", "pe", "ha", "ho", "hu", "hi", "he"] }
 }
 
+
+
+
+
+
+
+
+
+
+
+
 const customStructure = {
 	"condOp": {
 		"label": "op",
         "fields": [
             {
             	"id": "condOp",
-                "label": "비교",
+                "label": "Comparison",
                 "type": "select",
                 "options": [
-                    { value: ">=", text: "이상" },
-                    { value: "<=", text: "이하" },
-                    { value: ">", text: "초과" },
-                    { value: "<", text: "미만" },
-                    { value: "==", text: "일치" },
-                    { value: "!=", text: "불일치" },
+                    { value: ">=", text: "Greater than or equal to" },
+                    { value: "<=", text: "Less than or equal to" },
+                    { value: ">", text: "Greater than" },
+                    { value: "<", text: "Less than" },
+                    { value: "==", text: "Equal to" },
+                    { value: "!=", text: "Not equal to" },
                 ],
                 "width": 100
             }
@@ -2178,11 +2189,11 @@ const customStructure = {
         "fields": [
 	        {
 	        	"id": "v2Type",
-	            "label": "값",
+	            "label": "Value",
 	            "type": "select",
 	            "options": [
-	                { value: "constant", text: "숫자" },
-	                { value: "specific", text: "변수" }
+	                { value: "constant", text: "Constant" },
+	                { value: "specific", text: "Variable" }
 	            ],
 	            "width": 50,
 	            "subfields": [
@@ -2209,25 +2220,25 @@ const customStructure = {
         ]
 	},
     "attack": {
-        "label": "자극",
+        "label": "Stimulation",
         "fields": [
             {
             	"id": "target",
-                "label": "대상",
+                "label": "Target",
                 "type": "select",
                 "options": [
-                    { value: "op", text: "상대" },
-                    { value: "self", text: "자신" }
+                    { value: "op", text: "Opponent" },
+                    { value: "self", text: "Self" }
                 ],
                 "width": 100
             },
             {
             	"id": "repeatType",
-                "label": "반복",
+                "label": "Repeat",
                 "type": "select",
                 "options": [
-                    { value: "constant", text: "숫자" },
-                    { value: "specific", text: "변수" }
+                    { value: "constant", text: "Constant" },
+                    { value: "specific", text: "Variable" }
                 ],
                 "width": 50,
                 "subfields": [
@@ -2258,23 +2269,23 @@ const customStructure = {
         "fields": [
             {
             	"id": "target",
-                "label": "대상",
+                "label": "Target",
                 "type": "select",
                 "options": [
-                    { value: "op", text: "상대" },
-                    { value: "self", text: "자신" }
+                    { value: "op", text: "Opponent" },
+                    { value: "self", text: "Self" }
                 ],
                 "width": 100
             },
             {
             	"id": "op",
-                "label": "연산",
+                "label": "Operation",
                 "type": "select",
                 "options": [
-                    { value: "add", text: "증가" },
-                    { value: "subtract", text: "회복" },
-                    { value: "multiply", text: "2배" },
-                    { value: "set", text: "지정" }
+                    { value: "add", text: "Increase" },
+                    { value: "subtract", text: "Recover" },
+                    { value: "multiply", text: "Double" },
+                    { value: "set", text: "Set" }
                 ],
                 "width": 50,
                 "subfields":[
@@ -2283,8 +2294,8 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-		                    { value: "constant", text: "숫자" },
-		                    { value: "specific", text: "변수" }
+		                    { value: "constant", text: "Constant" },
+		                    { value: "specific", text: "Variable" }
 		                ],
 		                "conditions": ["add", "subtract"],
 		                "width": 50,
@@ -2309,12 +2320,12 @@ const customStructure = {
 						    },
 				            {
 				            	"id": "repeatType",
-				                "label": "반복",
+				                "label": "Repeat",
 				                "type": "select",
 								"conditions": ["constant"],
 				                "options": [
-				                    { value: "constant", text: "숫자" },
-				                    { value: "specific", text: "변수" }
+				                    { value: "constant", text: "Constant" },
+				                    { value: "specific", text: "Variable" }
 				                ],
 				                "width": 50,
 				                "subfields": [
@@ -2345,8 +2356,8 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-		                    { value: "constant", text: "숫자" },
-		                    { value: "specific", text: "변수" }
+		                    { value: "constant", text: "Constant" },
+		                    { value: "specific", text: "Variable" }
 		                ],
 		                "conditions": ["set"],
 		                "width": 50,
@@ -2380,23 +2391,23 @@ const customStructure = {
         "fields": [
             {
             	"id": "target",
-                "label": "대상",
+                "label": "Target",
                 "type": "select",
                 "options": [
-                    { value: "self", text: "자신" },
-                    { value: "op", text: "상대" }
+                    { value: "self", text: "Self" },
+                    { value: "op", text: "Opponent" }
                 ],
                 "width": 100
             },
             {
             	"id": "op",
-                "label": "연산",
+                "label": "Operation",
                 "type": "select",
                 "options": [
-                    { value: "add", text: "증가" },
-                    { value: "subtract", text: "감소" },
-                    { value: "multiply", text: "2배" },
-                    { value: "set", text: "지정" }
+                    { value: "add", text: "Increase" },
+                    { value: "subtract", text: "Decrease" },
+                    { value: "multiply", text: "Double" },
+                    { value: "set", text: "Set" }
                 ],
                 "width": 50,
                 "subfields":[
@@ -2405,8 +2416,8 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-		                    { value: "constant", text: "숫자" },
-		                    { value: "specific", text: "변수" }
+		                    { value: "constant", text: "Constant" },
+		                    { value: "specific", text: "Variable" }
 		                ],
 		                "conditions": ["add", "subtract"],
 		                "width": 50,
@@ -2431,12 +2442,12 @@ const customStructure = {
 						    },
 				            {
 				            	"id": "repeatType",
-				                "label": "반복",
+				                "label": "Repeat",
 				                "type": "select",
 								"conditions": ["constant"],
 				                "options": [
-				                    { value: "constant", text: "숫자" },
-				                    { value: "specific", text: "변수" }
+				                    { value: "constant", text: "Constant" },
+				                    { value: "specific", text: "Variable" }
 				                ],
 				                "width": 50,
 				                "subfields": [
@@ -2467,8 +2478,8 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-		                    { value: "constant", text: "숫자" },
-		                    { value: "specific", text: "변수" }
+		                    { value: "constant", text: "Constant" },
+		                    { value: "specific", text: "Variable" }
 		                ],
 		                "conditions": ["set"],
 		                "width": 50,
@@ -2502,13 +2513,13 @@ const customStructure = {
         "fields": [
             {
             	"id": "op",
-                "label": "연산",
+                "label": "Operation",
                 "type": "select",
                 "options": [
-                    { value: "add", text: "증가" },
-                    { value: "subtract", text: "감소" },
-                    { value: "multiply", text: "2배" },
-                    { value: "set", text: "지정" }
+                    { value: "add", text: "Increase" },
+                    { value: "subtract", text: "Decrease" },
+                    { value: "multiply", text: "Double" },
+                    { value: "set", text: "Set" }
                 ],
                 "width": 50,
                 "subfields":[
@@ -2517,8 +2528,8 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-		                    { value: "constant", text: "숫자" },
-		                    { value: "specific", text: "변수" }
+		                    { value: "constant", text: "Constant" },
+		                    { value: "specific", text: "Variable" }
 		                ],
 		                "conditions": ["add", "subtract"],
 		                "width": 50,
@@ -2543,12 +2554,12 @@ const customStructure = {
 						    },
 				            {
 				            	"id": "repeatType",
-				                "label": "반복",
+				                "label": "Repeat",
 				                "type": "select",
 								"conditions": ["constant"],
 				                "options": [
-				                    { value: "constant", text: "숫자" },
-				                    { value: "specific", text: "변수" }
+				                    { value: "constant", text: "Constant" },
+				                    { value: "specific", text: "Variable" }
 				                ],
 				                "width": 50,
 				                "subfields": [
@@ -2579,8 +2590,8 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-		                    { value: "constant", text: "숫자" },
-		                    { value: "specific", text: "변수" }
+		                    { value: "constant", text: "Constant" },
+		                    { value: "specific", text: "Variable" }
 		                ],
 		                "conditions": ["set"],
 		                "width": 50,
@@ -2614,13 +2625,13 @@ const customStructure = {
         "fields": [
             {
             	"id": "op",
-                "label": "연산",
+                "label": "Operation",
                 "type": "select",
                 "options": [
-                    { value: "add", text: "증가" },
-                    { value: "subtract", text: "감소" },
-                    { value: "multiply", text: "2배" },
-                    { value: "set", text: "지정" }
+                    { value: "add", text: "Increase" },
+                    { value: "subtract", text: "Decrease" },
+                    { value: "multiply", text: "Double" },
+                    { value: "set", text: "Set" }
                 ],
                 "width": 50,
                 "subfields":[
@@ -2629,8 +2640,8 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-		                    { value: "constant", text: "숫자" },
-		                    { value: "specific", text: "변수" }
+		                    { value: "constant", text: "Constant" },
+		                    { value: "specific", text: "Variable" }
 		                ],
 		                "conditions": ["add", "subtract"],
 		                "width": 50,
@@ -2655,12 +2666,12 @@ const customStructure = {
 						    },
 				            {
 				            	"id": "repeatType",
-				                "label": "반복",
+				                "label": "Repeat",
 				                "type": "select",
 								"conditions": ["constant"],
 				                "options": [
-				                    { value: "constant", text: "숫자" },
-				                    { value: "specific", text: "변수" }
+				                    { value: "constant", text: "Constant" },
+				                    { value: "specific", text: "Variable" }
 				                ],
 				                "width": 50,
 				                "subfields": [
@@ -2691,8 +2702,8 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-		                    { value: "constant", text: "숫자" },
-		                    { value: "specific", text: "변수" }
+		                    { value: "constant", text: "Constant" },
+		                    { value: "specific", text: "Variable" }
 		                ],
 		                "conditions": ["set"],
 		                "width": 50,
@@ -2722,26 +2733,26 @@ const customStructure = {
         ],
     },
     "get": {
-        "label": "card 획득",
+        "label": "Gain Card",
         "fields": [
             {
             	"id": "value",
-                "label": "card",
+                "label": "Card",
                 "type": "select",
                 "options": [
-		            { value: "all", text: "All card" },
-		            { value: "attack", text: "attack card" },
-		            { value: "support", text: "보조 card" },
-		            { value: "neutral", text: "Neutral card" },
-		            { value: "class", text: "Class card" },
-		            { value: "normal", text: "일반 card" },
-		            { value: "expert", text: "숙련 card" },
-		            { value: "ultimate", text: "궁극 card" },
-		            { value: "penalty", text: "Penalty card" },
-		            { value: "self", text: "복사본" },
-            		{ value: "nelson", text: "조르기", condition: {v1:"커스텀.Class", op:"==", v2:"Assassin"} },
+		            { value: "all", text: "All Card" },
+		            { value: "attack", text: "Attack Card" },
+		            { value: "support", text: "Support Card" },
+		            { value: "neutral", text: "Neutral Card" },
+		            { value: "class", text: "Class Card" },
+		            { value: "normal", text: "Normal Card" },
+		            { value: "expert", text: "Expert Card" },
+		            { value: "ultimate", text: "Ultimate Card" },
+		            { value: "penalty", text: "Penalty Card" },
+		            { value: "self", text: "Copy of this card" },
+            		{ value: "nelson", text: "Pester", condition: {v1:"커스텀.Class", op:"==", v2:"Assassin"} },
             		{ value: "manufacture", text: "Crafted", condition: {v1:"커스텀.Class", op:"==", v2:"Assassin"} },
-            		{ value: "instantspell", text: "즉발 Magic", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
+            		{ value: "instantspell", text: "Instant Spell", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
             		{ value: "magiccircle", text: "Magic Circle", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
             		{ value: "jewel", text: "Gem", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
             		{ value: "essence", text: "Essence", condition: {v1:"커스텀.Class", op:"==", v2:"Healer"} },
@@ -2753,8 +2764,8 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-				            { value: "spellslot", text: "Magic 슬롯" },
-				            { value: "random", text: "무작위" }
+				            { value: "spellslot", text: "Spell Slot" },
+				            { value: "random", text: "Random" }
 		                ],
 		        		"conditions":["instantspell"],
 		                "width": 50
@@ -2764,11 +2775,11 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-				            { value: "magiccircle", text: "무작위" },
-				            { value: "red", text: "진홍색" },
-				            { value: "blue", text: "담청색" },
-				            { value: "yellow", text: "황금색" },
-				            { value: "white", text: "순백색" },
+				            { value: "magiccircle", text: "Random" },
+				            { value: "red", text: "Crimson" },
+				            { value: "blue", text: "Pale Blue" },
+				            { value: "yellow", text: "Golden" },
+				            { value: "white", text: "Pure White" },
 		                ],
 		                "conditions":["magiccircle"],
 		                "width": 50
@@ -2778,10 +2789,10 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-				            { value: "jewel", text: "무작위" },
-				            { value: "ruby", text: "루비" },
-				            { value: "sapphire", text: "사파이어" },
-				            { value: "topaz", text: "토파즈" }
+				            { value: "jewel", text: "Random" },
+				            { value: "ruby", text: "Ruby" },
+				            { value: "sapphire", text: "Sapphire" },
+				            { value: "topaz", text: "Topaz" }
 		                ],
 		                "conditions":["jewel"],
 		                "width": 50
@@ -2791,16 +2802,16 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-				            { value: "essence", text: "무작위" },
-				            { value: "essence1", text: "생명의 Essence" },
-				            { value: "essence2", text: "가시의 Essence" },
-				            { value: "essence3", text: "그림자의 Essence" },
-				            { value: "essence4", text: "각성의 Essence" },
-				            { value: "essence5", text: "평온의 Essence" },
-				            { value: "essence6", text: "메아리의 Essence" },
-				            { value: "essence7", text: "부동의 Essence" },
-				            { value: "essence8", text: "신속의 Essence" },
-				            { value: "essence9", text: "흡혈의 Essence" }
+				            { value: "essence", text: "Random" },
+				            { value: "essence1", text: "Essence of Life" },
+				            { value: "essence2", text: "Essence of Thorns" },
+				            { value: "essence3", text: "Essence of Shadow" },
+				            { value: "essence4", text: "Essence of Awakening" },
+				            { value: "essence5", text: "Essence of Serenity" },
+				            { value: "essence6", text: "Essence of Echo" },
+				            { value: "essence7", text: "Essence of Stillness" },
+				            { value: "essence8", text: "Essence of Swiftness" },
+				            { value: "essence9", text: "Essence of Vampirism" }
 		                ],
 		                "conditions":["essence"],
 		                "width": 50
@@ -2809,11 +2820,11 @@ const customStructure = {
             },
             {
 	            "id": "repeatType",
-                "label": "반복",
+                "label": "Repeat",
                 "type": "select",
                 "options": [
-                    { value: "constant", text: "숫자" },
-                    { value: "specific", text: "변수" }
+                    { value: "constant", text: "Constant" },
+                    { value: "specific", text: "Variable" }
                 ],
                 "width": 50,
                 "subfields": [
@@ -2840,7 +2851,7 @@ const customStructure = {
         ],
     },
     "maxUse": {
-        "label": "card 획득",
+        "label": "Gain Card",
         "fields": []
     },
     "changeLust": {
@@ -2851,8 +2862,8 @@ const customStructure = {
                 "label": "Lust",
                 "type": "select",
                 "options": [
-                    { value: "constant", text: "숫자" },
-                    { value: "specific", text: "변수" }
+                    { value: "constant", text: "Constant" },
+                    { value: "specific", text: "Variable" }
                 ],
                 "width": 50,
                 "subfields": [
@@ -2876,12 +2887,12 @@ const customStructure = {
 				    },
 		            {
 		            	"id": "repeatType",
-		                "label": "반복",
+		                "label": "Repeat",
 		                "type": "select",
 						"conditions": ["constant"],
 		                "options": [
-		                    { value: "constant", text: "숫자" },
-		                    { value: "specific", text: "변수" }
+		                    { value: "constant", text: "Constant" },
+		                    { value: "specific", text: "Variable" }
 		                ],
 		                "width": 50,
 		                "subfields": [
@@ -2910,43 +2921,43 @@ const customStructure = {
         ]
     },
     "discard": {
-        "label": "버리기",
+        "label": "Discard",
         "fields": [
             {
             	"id": "card",
-                "label": "card",
+                "label": "Card",
                 "type": "select",
                 "options": [
-		            { value: "all", text: "All card" },
-		            { value: "attack", text: "attack card" },
-		            { value: "support", text: "보조 card" },
-		            { value: "neutral", text: "Neutral card" },
-		            { value: "class", text: "Class card" },
-		            { value: "normal", text: "일반 card" },
-		            { value: "expert", text: "숙련 card" },
-		            { value: "ultimate", text: "궁극 card" },
-		            { value: "penalty", text: "Penalty card" }
+		            { value: "all", text: "All Card" },
+		            { value: "attack", text: "Attack Card" },
+		            { value: "support", text: "Support Card" },
+		            { value: "neutral", text: "Neutral Card" },
+		            { value: "class", text: "Class Card" },
+		            { value: "normal", text: "Normal Card" },
+		            { value: "expert", text: "Expert Card" },
+		            { value: "ultimate", text: "Ultimate Card" },
+		            { value: "penalty", text: "Penalty Card" }
                 ],
                 "width": 50,
             },
         	{
 	            "id": "selectType",
-                "label": "방식",
+                "label": "Method",
                 "type": "select",
                 "options": [
-                    { value: "choice", text: "선택" },
-                    { value: "random", text: "무작위" }
+                    { value: "choice", text: "Select" },
+                    { value: "random", text: "Random" }
                 ],
                 "width": 50,
                 "subfields":[
                 	{
 		            	"id": "countType",
-		                "label": "매수",
+		                "label": "Amount",
 		                "type": "select",
 		                "options": [
-				            { value: "count", text: "수량" },
+				            { value: "count", text: "Quantity" },
 				            { value: "max", text: "Max" },
-				            { value: "all", text: "전부" }
+				            { value: "all", text: "All" }
 		                ],
 		                "conditions":["choice"],
 		                "width": 50,
@@ -2984,8 +2995,8 @@ const customStructure = {
                 "label": "Wetness",
                 "type": "select",
                 "options": [
-                    { value: "constant", text: "숫자" },
-                    { value: "specific", text: "변수" }
+                    { value: "constant", text: "Constant" },
+                    { value: "specific", text: "Variable" }
                 ],
                 "width": 50,
                 "subfields": [
@@ -3009,12 +3020,12 @@ const customStructure = {
 				    },
 		            {
 		            	"id": "repeatType",
-		                "label": "반복",
+		                "label": "Repeat",
 		                "type": "select",
 						"conditions": ["constant"],
 		                "options": [
-		                    { value: "constant", text: "숫자" },
-		                    { value: "specific", text: "변수" }
+		                    { value: "constant", text: "Constant" },
+		                    { value: "specific", text: "Variable" }
 		                ],
 		                "width": 50,
 		                "subfields": [
@@ -3043,18 +3054,18 @@ const customStructure = {
         ]
     },
     "transform": {
-        "label": "변형",
+        "label": "Transform",
         "fields": [
             {
             	"id": "range",
-                "label": "소재",
+                "label": "Source Material",
                 "type": "select",
                 "options": [
-		            { value: "all", text: "All card" },
-		            { value: "neutral", text: "Neutral card" },
-		            { value: "magiccircle", text: "Magic Circle card" },
-		            { value: "jewel", text: "Gem card" },
-		            { value: "penalty", text: "Penalty card" }
+		            { value: "all", text: "All Card" },
+		            { value: "neutral", text: "Neutral Card" },
+		            { value: "magiccircle", text: "Magic Circle Card" },
+		            { value: "jewel", text: "Gem Card" },
+		            { value: "penalty", text: "Penalty Card" }
                 ],
                 "width": 50,
                 "subfields":[
@@ -3064,10 +3075,10 @@ const customStructure = {
 		                "type": "select",
 		                "options": [
 				            { value: "magiccircle", text: "All" },
-				            { value: "red", text: "진홍색" },
-				            { value: "blue", text: "담청색" },
-				            { value: "yellow", text: "황금색" },
-				            { value: "white", text: "순백색" }
+				            { value: "red", text: "Crimson" },
+				            { value: "blue", text: "Pale Blue" },
+				            { value: "yellow", text: "Golden" },
+				            { value: "white", text: "Pure White" }
 		                ],
 		                "conditions":["magiccircle"],
 		                "width": 50
@@ -3076,22 +3087,22 @@ const customStructure = {
             },
         	{
 	            "id": "selectType",
-                "label": "방식",
+                "label": "Method",
                 "type": "select",
                 "options": [
-                    { value: "choice", text: "선택" },
-                    { value: "random", text: "무작위" }
+                    { value: "choice", text: "Select" },
+                    { value: "random", text: "Random" }
                 ],
                 "width": 50,
                 "subfields":[
                 	{
 		            	"id": "countType",
-		                "label": "매수",
+		                "label": "Amount",
 		                "type": "select",
 		                "options": [
-				            { value: "count", text: "수량" },
+				            { value: "count", text: "Quantity" },
 				            { value: "max", text: "Max" },
-				            { value: "all", text: "전부" }
+				            { value: "all", text: "All" }
 		                ],
 		                "conditions":["choice"],
 		                "width": 50,
@@ -3120,12 +3131,12 @@ const customStructure = {
             },
             {
             	"id": "value",
-                "label": "결과",
+                "label": "Result",
                 "type": "select",
                 "options": [
-		            { value: "chantspell", text: "영창 Magic" },
-		            { value: "focusedspell", text: "집중 Magic" },
-		            { value: "magiccircle", text: "Magic Circle card" }
+		            { value: "chantspell", text: "Chant Spell" },
+		            { value: "focusedspell", text: "Focus Spell" },
+		            { value: "magiccircle", text: "Magic Circle Card" }
                 ],
                 "width": 50,
                 "subfields":[
@@ -3134,8 +3145,8 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-				            { value: "spellslot", text: "Magic 슬롯" },
-				            { value: "random", text: "무작위" }
+				            { value: "spellslot", text: "Spell Slot" },
+				            { value: "random", text: "Random" }
 		                ],
 		        		"conditions":["chantspell", "focusedspell"],
 		                "width": 50
@@ -3145,11 +3156,11 @@ const customStructure = {
 		                "label": "",
 		                "type": "select",
 		                "options": [
-				            { value: "magiccircle", text: "무작위" },
-				            { value: "red", text: "진홍색" },
-				            { value: "blue", text: "담청색" },
-				            { value: "yellow", text: "황금색" },
-				            { value: "white", text: "순백색" },
+				            { value: "magiccircle", text: "Random" },
+				            { value: "red", text: "Crimson" },
+				            { value: "blue", text: "Pale Blue" },
+				            { value: "yellow", text: "Golden" },
+				            { value: "white", text: "Pure White" },
 		                ],
 		                "conditions":["magiccircle"],
 		                "width": 50
@@ -3166,8 +3177,8 @@ const customStructure = {
                 "label": "Sense Block",
                 "type": "select",
                 "options": [
-                    { value: "constant", text: "숫자" },
-                    { value: "specific", text: "변수" }
+                    { value: "constant", text: "Constant" },
+                    { value: "specific", text: "Variable" }
                 ],
                 "width": 50,
                 "subfields": [
@@ -3191,12 +3202,12 @@ const customStructure = {
 				    },
 		            {
 		            	"id": "repeatType",
-		                "label": "반복",
+		                "label": "Repeat",
 		                "type": "select",
 						"conditions": ["constant"],
 		                "options": [
-		                    { value: "constant", text: "숫자" },
-		                    { value: "specific", text: "변수" }
+		                    { value: "constant", text: "Constant" },
+		                    { value: "specific", text: "Variable" }
 		                ],
 		                "width": 50,
 		                "subfields": [
@@ -3232,8 +3243,8 @@ const customStructure = {
                 "label": "Corruption",
                 "type": "select",
                 "options": [
-                    { value: "constant", text: "숫자" },
-                    { value: "specific", text: "변수" }
+                    { value: "constant", text: "Constant" },
+                    { value: "specific", text: "Variable" }
                 ],
                 "width": 50,
                 "subfields": [
@@ -3257,12 +3268,12 @@ const customStructure = {
 				    },
 		            {
 		            	"id": "repeatType",
-		                "label": "반복",
+		                "label": "Repeat",
 		                "type": "select",
 						"conditions": ["constant"],
 		                "options": [
-		                    { value: "constant", text: "숫자" },
-		                    { value: "specific", text: "변수" }
+		                    { value: "constant", text: "Constant" },
+		                    { value: "specific", text: "Variable" }
 		                ],
 		                "width": 50,
 		                "subfields": [
@@ -3291,28 +3302,28 @@ const customStructure = {
         ]
     },
     "combine": {
-        "label": "결합",
+        "label": "Combine",
         "fields": [
             {
             	"id": "range",
-                "label": "소재",
+                "label": "Source Material",
                 "type": "select",
                 "options": [
-		            { value: "mix", text: "혼합" },
-		            { value: "essence", text: "Essence card" },
-		            { value: "all", text: "All card" },
-		            { value: "attack", text: "attack card" },
-		            { value: "neutral", text: "Neutral card" },
-		            { value: "penalty", text: "Penalty card" },
+		            { value: "mix", text: "Mix" },
+		            { value: "essence", text: "Essence Card" },
+		            { value: "all", text: "All Card" },
+		            { value: "attack", text: "Attack Card" },
+		            { value: "neutral", text: "Neutral Card" },
+		            { value: "penalty", text: "Penalty Card" },
                 ],
                 "width": 50,
                 "subfields":[
 		        	{
 		            	"id": "countType",
-		                "label": "매수",
+		                "label": "Amount",
 		                "type": "select",
 		                "options": [
-				            { value: "count", text: "수량" },
+				            { value: "count", text: "Quantity" },
 				            { value: "max", text: "Max" }
 		                ],
 		                "width": 50,
@@ -3333,26 +3344,26 @@ const customStructure = {
         ]
     },
     "state": {
-        "label": "상태",
+        "label": "State",
         "fields": [
             {
             	"id": "stateType",
-                "label": "상태",
+                "label": "State",
                 "type": "select",
                 "options": [
-		            { value: "poison", text: "독", condition:{v1:"커스텀.Class", op:"==", v2:"Assassin"} },
-		            { value: "frozen", text: "빙결", condition:{v1:"커스텀.Class", op:"==", v2:"Mage"} },
-		            { value: "absorption", text: "Essence 흡수", condition:{v1:"커스텀.Class", op:"==", v2:"Healer"} }
+		            { value: "poison", text: "Poison", condition:{v1:"커스텀.Class", op:"==", v2:"Assassin"} },
+		            { value: "frozen", text: "Frozen", condition:{v1:"커스텀.Class", op:"==", v2:"Mage"} },
+		            { value: "absorption", text: "Essence Absorption", condition:{v1:"커스텀.Class", op:"==", v2:"Healer"} }
                 ],
                 "width": 50,
                 "subfields":[
 		            {
 		            	"id": "repeatType",
-		                "label": "반복",
+		                "label": "Repeat",
 		                "type": "select",
 		                "options": [
-		                    { value: "constant", text: "숫자" },
-		                    { value: "specific", text: "변수" }
+		                    { value: "constant", text: "Constant" },
+		                    { value: "specific", text: "Variable" }
 		                ],
 		                "conditions":["poison", "frozen"],
 		                "width": 50,
@@ -3382,7 +3393,7 @@ const customStructure = {
         ]
     },
     "stack": {
-        "label": "강화",
+        "label": "Stack",
         "fields": [
         	{
             	"id": "value",
@@ -3401,17 +3412,17 @@ const variableList = [
     { value: "Heat", text: "Heat" },
     { value: "excite", text: "Excitement" },
     { value: "exciteL", text: "Excitement Limit" },
-    { value: "deck", text: "덱" },
-    { value: "state", text: "상태", condition:["or", {v1:"커스텀.Class", op:"==", v2:"Assassin"}, {v1:"커스텀.Class", op:"==", v2:"Mage"}] },
-    { value: "use", text: "사용" },
-    { value: "get", text: "획득" },
-    { value: "discard", text: "버림", condition:{v1:"커스텀.Class", op:"==", v2:"Warrior"} },
+    { value: "deck", text: "Deck" },
+    { value: "state", text: "State", condition:["or", {v1:"커스텀.Class", op:"==", v2:"Assassin"}, {v1:"커스텀.Class", op:"==", v2:"Mage"}] },
+    { value: "use", text: "Cards Used" },
+    { value: "get", text: "Cards Gained" },
+    { value: "discard", text: "Cards Discarded", condition:{v1:"커스텀.Class", op:"==", v2:"Warrior"} },
     { value: "lust", text: "Lust", condition:{v1:"커스텀.Class", op:"==", v2:"Warrior"} },
     { value: "wetness", text: "Wetness", condition:{v1:"커스텀.Class", op:"==", v2:"Assassin"} },
     { value: "sBlock", text: "Sense Block", condition:{v1:"커스텀.Class", op:"==", v2:"Mage"} },
     { value: "corrupt", text: "Corruption", condition:{v1:"커스텀.Class", op:"==", v2:"Healer"} },
-    { value: "round", text: "라운드" },
-    { value: "stack", text: "강화 스택" }
+    { value: "round", text: "Round" },
+    { value: "stack", text: "Stack Count" }
 ]
 
 const variableData = [
@@ -3421,7 +3432,7 @@ const variableData = [
         "type": "select",
         "options": [
             { value: "self", text: "자신" },
-            { value: "op", text: "상대" }
+            { value: "op", text: "Opponent" }
         ],
         "conditions": ["excite", "exciteL", "deck", "use", "get", "discard"],
         "width": 33
