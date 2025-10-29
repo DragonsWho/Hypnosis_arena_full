@@ -1667,6 +1667,12 @@ function changeEvent(num) {
 				}
 			} else {
 				playRecord.bossRecord[enemy.id].lose += 1;
+				// --- НАЧАЛО: НАШ ТРИГГЕР СЕКРЕТНОГО БОССА ---
+				// Проверяем, что мы проиграли рабыне-Sandrea (bossC9) в Challenge Mode
+				if (gamemode == 2 && enemy.id === 'bossC9') {
+					prepareSecretBossFight(); // Запускаем подготовку к секретному бою
+					return; // Прерываем стандартную логику поражения
+				}
 				if(gamemode == 1) {
 					collection.ending[`hard_lose_${bgTag[choiceValues.background]}`] = true;
 				} else if(gamemode == 0) {

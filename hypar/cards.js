@@ -2864,6 +2864,164 @@ const cardDB = {
 		]
 	},
 
+	// --- НАЧАЛО: КАРТЫ ДЛЯ СЕКРЕТНОГО БОССА SANDREA (bossSecret1) ---
+
+	"BCS-PA-001": { // Уникальный пассивный трейт (состояние)
+		name: { "KOR": "Dark Deity's Gaze", "ENG": "Dark Deity's Gaze" },
+		class: "Sandrea", // Используем ее имя как "класс" для организации
+		type: "특성", // Тип: Трейт
+		isDeck: false,
+		rarity: "None",
+		owner: 0, // Принадлежит врагу
+		nochange: true,
+		tags: ["Champion능력", "챌린지전용"], // Теги для способностей чемпиона в челендж режиме
+		expiration: "always",
+		duration: Infinity,
+		effect: [
+			// Пример эффекта: Каждый ход увеличивает ее возбуждение и возбуждение игрока
+			{
+				trigger: "turnStart", 
+				cond: true, 
+				type: "excite", // Тип эффекта
+				target: "self", // Цель - она сама
+				op: "add",      // Операция - добавить
+				value: 2        // Значение
+			},
+			{
+				trigger: "turnStart", 
+				cond: true, 
+				type: "excite", 
+				target: "op",   // Цель - оппонент (игрок)
+				op: "add",      
+				value: 1        
+			},
+			{trigger:"always", cond:true, type:"lewd", op:"add", value:1}, // Постоянно увеличивает похоть игрока
+		]
+	},
+	"BCS-UC-001": { // Карта раздевания
+		name: { "KOR": "Hypnotic Strip", "ENG": "Hypnotic Strip" },
+		class: "Sandrea",
+		type: "탈의",
+		isDeck: true,
+		rarity: "None",
+		owner: 0,
+		nochange: true,
+		cond: true,
+		tags: ["ChampionDeck", "챌린지전용"],
+		effect: [
+			{ trigger: "used", cond: true, type: "line", value: "최면탈의" }, // Новая строка диалога
+			{ trigger: "used", cond: true, type: "clothes", value: "uncloth" },
+			{ trigger: "used", cond: true, type: "exciteL", target: "op", op: "add", value: -2 }
+		]
+	},
+	"BCS-AT-001": { // Атакующая карта 1
+		name: { "KOR": "Mind Shatter", "ENG": "Mind Shatter" },
+		class: "Sandrea",
+		type: "attack",
+		isDeck: true,
+		rarity: "None",
+		owner: 0,
+		nochange: true,
+		cond: true,
+		tags: ["ChampionDeck", "챌린지전용"],
+		effect: [
+			{ trigger: "used", cond: true, type: "attack", target: "op", repeat: 2 },
+			{ trigger: "used", cond: true, type: "discard", target: "op", info: { target: "opDeck.selectCards(all, null, 1)" } }
+		]
+	},
+	"BCS-AT-002": { // Атакующая карта 2
+		name: { "KOR": "Pleasure Overload", "ENG": "Pleasure Overload" },
+		class: "Sandrea",
+		type: "attack",
+		isDeck: true,
+		rarity: "None",
+		owner: 0,
+		nochange: true,
+		cond: true,
+		tags: ["ChampionDeck", "챌린지전용"],
+		effect: [
+			{ trigger: "used", cond: true, type: "excite", target: "op", op: "add", value: 5 },
+			{ trigger: "used", cond: { v1: "Opponent.excite", op: ">=", v2: 10 }, type: "orgasm", target: "op" }
+		]
+	},
+	"BCS-SU-001": { // Поддерживающая карта 1
+		name: { "KOR": "Hypnotic Suggestion", "ENG": "Hypnotic Suggestion" },
+		class: "Sandrea",
+		type: "보조",
+		isDeck: true,
+		rarity: "None",
+		owner: 0,
+		nochange: true,
+		cond: true,
+		tags: ["ChampionDeck", "챌린지전용"],
+		effect: [
+			{ trigger: "used", cond: true, type: "state", target: "op", value: "DA-NT-ALL-001-1" } // Применяем гипноз Элдориана
+		]
+	},
+	"BCS-SU-002": { // Поддерживающая карта 2
+		name: { "KOR": "Will Breaker", "ENG": "Will Breaker" },
+		class: "Sandrea",
+		type: "보조",
+		isDeck: true,
+		rarity: "None",
+		owner: 0,
+		nochange: true,
+		cond: true,
+		tags: ["ChampionDeck", "챌린지전용"],
+		effect: [
+			{ trigger: "used", cond: true, type: "discard", target: "op", info: { target: "opDeck.selectCards(all, Penalty제외, 1)" } },
+			{ trigger: "used", cond: true, type: "get", target: "op", value: "PN-010" } // Даем игроку карту "Сдаться"
+		]
+	},
+	"BCS-SU-003": { // Поддерживающая карта 3
+		name: { "KOR": "Dark Pact", "ENG": "Dark Pact" },
+		class: "Sandrea",
+		type: "보조",
+		isDeck: true,
+		rarity: "None",
+		owner: 0,
+		nochange: true,
+		cond: true,
+		tags: ["ChampionDeck", "챌린지전용"],
+		effect: [
+			{ trigger: "used", cond: true, type: "excite", target: "self", op: "add", value: -5 }, // Сандреа жертвует своим возбуждением
+			{ trigger: "used", cond: true, type: "excite", target: "op", op: "add", value: 10 } // Чтобы сильно возбудить игрока
+		]
+	},
+	"BCS-PS-001": { // Карта позиции
+		name: { "KOR": "Dominatrix Stance", "ENG": "Dominatrix Stance" },
+		class: "Sandrea",
+		type: "Position",
+		isDeck: true,
+		rarity: "None",
+		owner: 0,
+		nochange: true,
+		cond: true,
+		tags: ["ChampionDeck", "챌린지전용"],
+		expiration: "always",
+		duration: Infinity,
+		effect: [
+			{ trigger: "used", cond: true, type: "posture" },
+			{ trigger: "always", cond: true, type: "orgasmL", target: "op", op: "add", value: -1 } // Снижает лимит оргазмов игрока
+		]
+	},
+	"BCS-CLIMAX-001": { // Ультимативная карта
+		name: { "KOR": "Absolute Submission", "ENG": "Absolute Submission" },
+		class: "Sandrea",
+		type: "attack",
+		isDeck: true,
+		rarity: "None",
+		owner: 0,
+		nochange: true,
+		cond: true,
+		tags: ["ChampionDeck", "클라이맥스", "챌린지전용"],
+		effect: [
+			{ trigger: "used", cond: true, type: "line", value: "복종" }, // Новая строка диалога
+			{ trigger: "used", cond: true, type: "orgasm", target: "op", repeat: "Opponent.orgasmL" } // Игрок получает все оставшиеся оргазмы
+		]
+	},
+	// --- КОНЕЦ: КАРТЫ ДЛЯ СЕКРЕТНОГО БОССА SANDREA (bossSecret1) ---
+
 	"NT-PS-001":{
 		name:{ "KOR":"Missionary" }, class:"Neutral", type:"Position", isDeck:true, rarity:"None", cost:5, owner:1, nochange:true,
 		cond:true,
