@@ -1,3 +1,10 @@
+battleEnd = 0; combatEnd();
+
+
+
+
+
+
 (() => {
     // This function will execute immediately once pasted into the console.
 

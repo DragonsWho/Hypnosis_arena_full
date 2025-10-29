@@ -15861,7 +15861,7 @@ function showDeckDetail(dc, key, index) {
     	modal.style.display = 'none';
 		const deckCodeLog = document.getElementById("deckCodeLog");
 		if(_check) {
-			deckCodeLog.innerHTML = "성공적으로 덱을 불러왔습니다.";
+			deckCodeLog.innerHTML = "Deck loaded successfully.";
 		} else {
 			deckCodeLog.innerHTML = "일부 특성 또는 Card 찾지 못했습니다.";
 		}
