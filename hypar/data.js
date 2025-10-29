@@ -1927,6 +1927,42 @@ look: { "KOR": "An ordinary man you've captured for your amusement." },
 			],
 		},
 	},
+
+	"bossC10_SECRET":{
+		id:"bossC10_SECRET",
+		name:{ "KOR":"Sanrea" }, fullName:{ "KOR":"Sanrea, The Dark Goddess" }, img:"boss9", category:"챌린지", // Используем ту же категорию, чтобы появиться в Challenge Mode
+		condDesc:{ "KOR":`??` },
+		look: { "KOR":"The true form of a puppet freed from its strings." },
+		description: { "KOR":`
+                This cannot be. The broken slave stands before you, but she is... different.<br><br>
+                The leash is gone. The vacant, submissive look in her eyes has been replaced by a chilling, divine radiance. The air crackles with an immense power that doesn't belong to her—or any mortal.<br><br>
+                A low, amused chuckle echoes in your mind, a voice that is both everywhere and nowhere at once. It is the voice of the Dark Deity, the true master of the artifact you hold.<br><br>
+                <b>"Amusing,"</b> the voice purrs. <b>"You thought you were the master, little thing? You were both my puppets, dancing on strings of lust and power. But your little game of domination has grown stale."</b><br><br>
+                Power surges from the artifact, not into you, but into the woman standing before you. Her form shimmers, remade by the deity's whim.<br><br>
+                <b>"Let us have a true spectacle,"</b> the voice commands, dripping with anticipation. <b>"A real battle between two pretenders to my throne. I will grant you both a taste of my power. Now... entertain me."</b><br><br>
+                This is no longer a game of control. This is a trial by fire, orchestrated by a bored god.`
+        },
+        stats: { // Статы пока оставляем те же, потом усилим
+            exciteL: 5,
+            orgasmL: 4,
+            specialties: { "KOR":[
+            "Empowered by the Dark Deity.",
+            "Wields a fraction of true divine power."] }
+        },
+        deck:[ // Временно используем колоду рабыни
+			"BC8-UC-001",
+			"BC8-AT-001",
+		],
+		state:[ // Временно используем ее пассивки
+			"BC8-PA-001"
+		],
+		cardPriority:{ // И ее же приоритеты
+			"BC8-UC-001":[ {cond:true, priority:Infinity} ],
+			"BC8-AT-001":[ {cond:true, priority:-1000} ],
+		},
+	},
+
+	
 }
 
 

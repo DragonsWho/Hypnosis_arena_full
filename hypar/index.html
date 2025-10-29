@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="html2canvas.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
@@ -38,6 +40,7 @@
             "Sinking into pleasure...",
             "Unleashing hidden lusts...",
         ];
+ 
 
         var unusedMessages = [...loadingMessages];
         var usedMessages = [];
@@ -456,6 +459,28 @@
             link.click();
         }
 
+function toggleMusic() {
+    const musicButton = document.getElementById('musicButton');
+    const musicButtonText = musicButton.querySelector('.box-title');
+    const audioContainer = document.getElementById('audio-container');
+
+    if (audioContainer.innerHTML !== '') {
+        audioContainer.innerHTML = '';
+        musicButtonText.innerHTML = '🎵 Music';
+        musicButton.classList.remove('active');
+    } else {
+        const videoId = 'pnaAzQdN3t4';
+        const iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        iframe.allow = 'autoplay';
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}&controls=0&rel=0`;
+        
+        audioContainer.appendChild(iframe);
+        musicButtonText.innerHTML = '🎵 Music';
+        musicButton.classList.add('active');
+    }
+}
+
 
 // --- CODE FOR TRIPLE CLICK AND CHEAT ---
         (() => {
@@ -593,12 +618,15 @@
         </div>
     </div>
     <div style="width:100%; height:80px;"></div>
-    <div class="box button button2" id="manage-data" style="padding: 0; flex: 0 calc(20% - 20px); text-align: center; align-items: center; display: flex;">
-        <h2 class="box-title">💽 Data</h2>
+<div class="box button button2" id="manage-data" style="padding: 0; flex: 0 calc(20% - 20px); text-align: center; align-items: center; display: flex;">
+        <h2 class="box-title"><i class="fa-solid fa-database"></i> Data</h2>
     </div>
-    <div class="box button button2" id="manage-data" style="padding: 0; flex: 0 calc(20% - 20px); text-align: center; align-items: center; display: flex;" onclick="combatConfigModalOpen();">
-        <h2 class="box-title">⚙️ Settings</h2>
-    </div> 
+    <div class="box button button2" id="settings-button" style="padding: 0; flex: 0 calc(20% - 20px); text-align: center; align-items: center; display: flex;" onclick="combatConfigModalOpen();">
+        <h2 class="box-title"><i class="fa-solid fa-gear"></i> Settings</h2>
+    </div>
+    <div class="box button button2" id="musicButton" style="padding: 0; flex: 0 calc(20% - 20px); text-align: center; align-items: center; display: flex;" onclick="toggleMusic()">
+        <h2 class="box-title"><i class="fa-solid fa-music"></i> Music</h2>
+    </div>
     <div style="width:100%; height:10px;"></div>
 <!--   
     <div class="box button language" id="KOR" style="padding: 0; flex: 0 calc(20% - 20px); text-align: center; align-items: center; display: flex;" onclick="changeLanguage('KOR');">
@@ -794,12 +822,12 @@
                     they press in from all sides, an overwhelming assault on your senses. It's a city that chews up the unwary and spits them out, broken.<br>
                     <br>
                     But you're not here for the cheap thrills on the surface. Your purpose lies in the city's rotten heart.<br>
-                    You duck off the main road, plunging into the back alleys. Instantly, the world changes. <br>
+                    You duck off the main road, plunging into the back alleys. Instantly, the world changes. <br> 
                     The light dies here. Even the moon seems afraid to look, hiding behind towering, decrepit buildings. This is a different kind of darkness.<br>
                     <br>
                     Every corner reeks of brutality. The glint of discarded needles, dark stains on the cobblestones that you know are dried blood, the slumped shape in a doorway that might be a sleeping drunk or a fresh corpse. The city's cheerful din fades to a dead silence, so heavy it makes the hairs on your neck prickle.<br>
                     <br>
-                    You're a veteran of a hundred battles, but this place... this place feels different. <br>
+                    You're a veteran of a hundred battles, but this place... this place feels different. <br> 
                     <br>
                     Every step echoes with the threat of a knife in the dark. Your instincts scream at you to run, to get back to the light.<br>
                     But you can't. Because you were invited. You hold an invitation to a myth, a legend hidden in this maze of filth.<br>
@@ -813,17 +841,17 @@
                 </div>
                 <p class="box-text langText KOR"><br>
                     Consciousness returns like a slow, painful tide. <br>
-                    The first thing you register is the cold. A damp, biting chill seeping into your bones from the stone floor beneath you. <br>
-                    The air is thick, heavy with the smell of mold and something else... something metallic and foul. <br>
+                    The first thing you register is the cold. A damp, biting chill seeping into your bones from the stone floor beneath you. <br> 
+                    The air is thick, heavy with the smell of mold and something else... something metallic and foul. <br> 
                     There are no windows. The suffocating silence is broken only by the ragged sound of your own breathing.<br>
                     You force your eyes open. A wave of dizziness washes over you. Your body feels heavy, wrong. Cold metal bites into your skin.<br>
 <br>
                     Shit.<br>
 <br>
-                    Heavy shackles clamp your wrists and ankles, chaining you to the wall. You tug, but they don't give an inch. <br>
-                    You're completely naked, exposed to the chilling air. <br>
-                    And your skin... <br>
-                    it's slick with something. <br>
+                    Heavy shackles clamp your wrists and ankles, chaining you to the wall. You tug, but they don't give an inch. <br> 
+                    You're completely naked, exposed to the chilling air. <br> 
+                    And your skin... <br> 
+                    it's slick with something. <br> 
                     A sticky, foul-smelling liquid runs down your thighs. The smell is unidentifiable, sickly sweet, and it makes your stomach churn.<br>
                     You try to push yourself up, but a splitting headache explodes behind your eyes, forcing you back down with a gasp. Your vision blurs.<br>
 <br>
@@ -832,12 +860,12 @@
                     Shards of memory pierce the fog in your head. Unfamiliar eyes... leering, probing. The sharp, cold touch of metal tools on your skin.<br>
                     A wave of chilling, primal fear. The images flash, chaotic and terrifying, but then they start to sharpen.<br>
                     And beneath the terror, a sickening, familiar thrill... a whisper of pleasure in the depths of your humiliation.<br>
-                    Words echo in your mind, words you don't want to remember. You force yourself to breathe, to piece it all together. <br>
-                    The leering faces, the cold restraints, the feeling of being watched... <br>
+                    Words echo in your mind, words you don't want to remember. You force yourself to breathe, to piece it all together. <br> 
+                    The leering faces, the cold restraints, the feeling of being watched... <br> 
 <br>
                     Violated.<br>
 <br>
-                    As the fog clears, one horrifying truth solidifies. This isn't just a prison. <br>
+                    As the fog clears, one horrifying truth solidifies. This isn't just a prison. <br> 
                     You remember what they did to you. And you know, with dawning dread, what they're going to do next.<br>
                     <br></p>
             </div>
@@ -2629,22 +2657,22 @@
     <div id="info-tab">
         <div class="enemyInfo">
             <div class="box" style="flex: 0 calc(100% - 20px);">
-                <h2 class="box-title langText KOR" id="round" style="font-size: 3vh; font-weight: normal; font-family: 'Jua', sans-serif;"></h2>
+                <h2 class="box-title langText KOR" id="round" style="font-size: 2.5vh; font-weight: normal; font-family: 'Jua', sans-serif;"></h2>
             </div>
             <div class="box-img portraitBattle" id="enemyPortrait">
                 <div class="filter"></div>
                 <img src="image/no_image.webp" onerror="handleImgError(this)" alt="">
             </div>
             <div class="container">
-                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.5vh; text-align: center;"><span class="langText KOR">Excitement</span><span class="langText ENG">Excitement</span>: <span id="enemyExcite" class="number">0</span> <span class="number">/</span> <span id="enemyExciteL" class="number" onmouseenter="displayTooltip(event, 'enemy.exciteL');" onmouseleave="hideTooltip();">5</span></p>
-                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.5vh; text-align: center;"><span class="langText KOR">Orgasm</span><span class="langText ENG">Orgasm</span>: <span id="enemyOrgasm" class="number">0</span> <span class="number">/</span> <span id="enemyOrgasmL" class="number" onmouseenter="displayTooltip(event, 'enemy.orgasmL');" onmouseleave="hideTooltip();">5</span></p>
+                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.1vh; text-align: center;"><span class="langText KOR">Excitement</span><span class="langText ENG">Excitement</span>: <span id="enemyExcite" class="number">0</span> <span class="number">/</span> <span id="enemyExciteL" class="number" onmouseenter="displayTooltip(event, 'enemy.exciteL');" onmouseleave="hideTooltip();">5</span></p>
+                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.1vh; text-align: center;"><span class="langText KOR">Orgasm</span><span class="langText ENG">Orgasm</span>: <span id="enemyOrgasm" class="number">0</span> <span class="number">/</span> <span id="enemyOrgasmL" class="number" onmouseenter="displayTooltip(event, 'enemy.orgasmL');" onmouseleave="hideTooltip();">5</span></p>
             </div>
         </div>
         <div class="container stats" style="justify-content: space-evenly;">
-            <div class="box" style="flex: 0 calc(30% - 20px); margin:0 auto; font-size: 3vh; margin: 0 0% 0 0%; padding: 0; text-align: center;"><span class="langText KOR">Lewdness</span><span class="langText ENG">Lewdness</span></div>
-            <p id="lewd" class="number" style="flex: 0 calc(10% - 20px); margin:0 auto; font-size: 3vh; margin: 0; padding: 0; text-align: center;" onmouseenter="displayTooltip(event, 'lewd');" onmouseleave="hideTooltip();">2</p>
-            <div class="box" style="flex: 0 calc(30% - 20px); margin:0 auto; font-size: 3vh; margin: 0 0% 0 10%; padding: 0; text-align: center;"><span class="langText KOR">Heat</span><span class="langText ENG">Heat</span></div>
-            <p id="Heat" class="number" style="flex: 0 calc(10% - 20px); margin:0 auto; font-size: 3vh; margin: 0; padding: 0; text-align: center;" onmouseenter="displayTooltip(event, 'Heat');" onmouseleave="hideTooltip();">2</p>
+            <div class="box" style="flex: 0 calc(30% - 20px); margin:0 auto; font-size: 2.5vh; margin: 0 0% 0 0%; padding: 0; text-align: center;"><span class="langText KOR">Lewdness</span><span class="langText ENG">Lewdness</span></div>
+            <p id="lewd" class="number" style="flex: 0 calc(10% - 20px); margin:0 auto; font-size: 2.5vh; margin: 0; padding: 0; text-align: center;" onmouseenter="displayTooltip(event, 'lewd');" onmouseleave="hideTooltip();">2</p>
+            <div class="box" style="flex: 0 calc(30% - 20px); margin:0 auto; font-size: 2.5vh; margin: 0 0% 0 10%; padding: 0; text-align: center;"><span class="langText KOR">Heat</span><span class="langText ENG">Heat</span></div>
+            <p id="Heat" class="number" style="flex: 0 calc(10% - 20px); margin:0 auto; font-size: 2.5vh; margin: 0; padding: 0; text-align: center;" onmouseenter="displayTooltip(event, 'Heat');" onmouseleave="hideTooltip();">2</p>
         </div>
         <div class="playerInfo">
             <div class="box-img portraitBattle" id="playerPortrait">
@@ -2653,14 +2681,14 @@
                 <img id="playerClothes" class="clothes" src="image/no_image.webp" onerror="handleImgError(this)" alt="">
             </div>
             <div class="container">
-                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.5vh; text-align: center;"><span class="langText KOR">Excitement</span><span class="langText ENG">Excitement</span>: <span id="playerExcite" class="number">0</span> <span class="number">/</span> <span id="playerExciteL" class="number" onmouseenter="displayTooltip(event, 'player.exciteL');" onmouseleave="hideTooltip();">5</span></p>
-                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.5vh; text-align: center;"><span class="langText KOR">Orgasm</span><span class="langText ENG">Orgasm</span>: <span id="playerOrgasm" class="number">0</span> <span class="number">/</span> <span id="playerOrgasmL" class="number" onmouseenter="displayTooltip(event, 'player.orgasmL');" onmouseleave="hideTooltip();">5</span></p>
+                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.1vh; text-align: center;"><span class="langText KOR">Excitement</span><span class="langText ENG">Excitement</span>: <span id="playerExcite" class="number">0</span> <span class="number">/</span> <span id="playerExciteL" class="number" onmouseenter="displayTooltip(event, 'player.exciteL');" onmouseleave="hideTooltip();">5</span></p>
+                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.1vh; text-align: center;"><span class="langText KOR">Orgasm</span><span class="langText ENG">Orgasm</span>: <span id="playerOrgasm" class="number">0</span> <span class="number">/</span> <span id="playerOrgasmL" class="number" onmouseenter="displayTooltip(event, 'player.orgasmL');" onmouseleave="hideTooltip();">5</span></p>
             </div>
             <div class="container">
                 <p id="viewPosture" style="margin:0 auto; font-size: 2vh; text-align: center;"><span class="langText KOR">Position</span><span class="langText ENG">Position</span>: <span id="posture"></span></p>
                 <p id="viewLust" style="display: none; margin:0 auto; font-size: 2vh; text-align: center;"><span class="langText KOR">Lust</span><span class="langText ENG">Lust</span>: <span id="lust" class="number">0</span></p>
                 <p id="viewWetness" style="display: none; margin:0 auto; font-size: 2vh; text-align: center;"><span class="langText KOR">Wetness</span><span class="langText ENG">Wetness</span>: <span id="wetness" class="number">0</span></p>
-                <p id="viewSBlock" style="display: none; margin:0 auto; font-size: 2vh; text-align: center;"><span class="langText KOR">Sensation Block/span><span class="langText ENG">Sensation Block</span>: <span id="sBlock" class="number">0</span></p>
+                <p id="viewSBlock" style="display: none; margin:0 auto; font-size: 2vh; text-align: center;"><span class="langText KOR">Sensation Block</span><span class="langText ENG">Sensation Block</span>: <span id="sBlock" class="number">0</span></p>
                 <p id="viewCorrupt" style="display: none; margin:0 auto; font-size: 2vh; text-align: center;"><span class="langText KOR">Corruption</span><span class="langText ENG">Corruption</span>: <span id="corrupt" class="number">0</span></p>
             </div>
         </div>
@@ -2711,7 +2739,7 @@
 
     <div id="button-tab">
         <div class="buttons top">
-            <h2 class="box-title langText KOR" style="font-size: 3vh;">Champion</h2>
+            <h2 class="box-title langText KOR" style="font-size: 2.5vh;">Champion</h2>
             <div class="box button battleButton active disabled" id="enemyActionButton" style="flex: 0 calc(100% - 20px); margin:0 auto; text-align: center;">
                 <p class="langText KOR">Champion's Action</p>
             </div>
@@ -2730,7 +2758,7 @@
             <div></div>
         </div>
         <div class="buttons bottom">
-            <h2 class="box-title langText KOR" style="font-size: 3vh;">You</h2>
+            <h2 class="box-title langText KOR" style="font-size: 2.5vh;">You</h2>
             <div class="box button battleButton active disabled" id="playerDeckButton" style="flex: 0 calc(100% - 20px); margin:0 auto; text-align: center;">
                 <p class="langText KOR">Your Deck</p>
             </div>
@@ -2867,5 +2895,6 @@
     //nextButton(13, false);
     //changeEvent(9);
 </script>
+<div id="audio-container" style="display: none;"></div>
 </body>
-</html>
+</html> 

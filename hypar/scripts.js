@@ -1243,6 +1243,20 @@ function capitalizeFirst(string) {
 
 function initEnemyCardSelect() {
 	Object.values(champList).forEach(champ => {
+        // --- НАЧАЛО ИЗМЕНЕНИЙ ---
+        // Условие для отображения секретного босса Sandrea.
+        // Она появляется, только если количество поражений от Sandrea-рабыни (bossC9) БОЛЬШЕ 0.
+        // Соответственно, мы скрываем ее, если это условие НЕ выполняется.
+
+        // Используем "optional chaining" (?.) чтобы избежать ошибок, если playRecord.bossRecord['bossC9'] еще не существует.
+        // `?.lose` вернет undefined, если 'bossC9' нет.
+        // `|| 0` превратит undefined или null в 0.
+        // В итоге мы просто проверяем, что количество поражений не больше нуля.
+        if (champ.id === 'bossC10_SECRET' && (playRecord.bossRecord['bossC9']?.lose || 0) <= 0) {
+            return; // Пропускаем создание иконки для этого чемпиона
+        }
+        // --- КОНЕЦ ИЗМЕНЕНИЙ ---
+
 		const enemyContainer = document.getElementById(champ.category == "First Opponent"?'enemyContainer':(champ.category == "마지막Opponent"?'enemyHardContainer':'enemyChallengeContainer'));
 		const enemyDescContainer = document.getElementById(champ.category == "First Opponent"?'enemyDescContainer':(champ.category == "마지막Opponent"?'enemyHardDescContainer':'enemyChallengeDescContainer'));
 
@@ -1648,7 +1662,10 @@ function changeEvent(num) {
 				if(battleEnd == 0) {
 					collection.ending["challenge_win"] = true;
 				} else {
-					collection.ending["challenge_lose"] = true;
+                collection.ending["challenge_lose"] = true; 
+                if (playRecord.bossRecord[enemy.id]) {  
+                    playRecord.bossRecord[enemy.id].lose += 1;
+                } 
 				}
 			} else {
 				collection.ending["morvainEnd"] = true;
@@ -1904,7 +1921,7 @@ function ruleTab(num) {
     function createPortrait(target) {
     	const battleDiv = document.createElement("div");
 	    battleDiv.style.fontFamily = "'Jua', sans-serif";
-	    battleDiv.style.width = "45vh"
+	    battleDiv.style.width = "30vh"
 
 	    // 이미지 박스 생성
 	    const boxImgDiv = document.createElement("div");
@@ -1940,7 +1957,7 @@ function ruleTab(num) {
 	    const exciteP = document.createElement("p");
 	    exciteP.style.flex = "0 calc(50% - 20px)";
 	    exciteP.style.margin = "0 auto";
-	    exciteP.style.fontSize = "2.5vh";
+	    exciteP.style.fontSize = "2.1vh";
 	    exciteP.style.textAlign = "center";
 	    exciteP.textContent = `${getWord("Excitement")}: `;
 
@@ -1953,7 +1970,7 @@ function ruleTab(num) {
 	    const orgasmP = document.createElement("p");
 	    orgasmP.style.flex = "0 calc(50% - 20px)";
 	    orgasmP.style.margin = "0 auto";
-	    orgasmP.style.fontSize = "2.5vh";
+	    orgasmP.style.fontSize = "2.1vh";
 	    orgasmP.style.textAlign = "center";
 	    orgasmP.textContent = `${getWord("Orgasm")}: `;
 
@@ -2194,6 +2211,7 @@ function selectRepresentCards(group) {
     return result || [];
 }
 
+// selectEnemy from scripts.js
 function selectEnemy(id) {
 	let choiceElements = document.getElementsByClassName("enemyType");
 	for(let e of choiceElements) {
@@ -2217,6 +2235,26 @@ function selectEnemy(id) {
 			e.style.display = "none";
 		}
 	}
+
+    // --- НАЧАЛО ИЗМЕНЕНИЙ ---
+    // Если выбран наш секретный босс, заменяем его описание на кат-сцену
+    if (id === 'bossC10_SECRET') {
+        const champ = champList[id];
+        const descriptionContainer = document.getElementById(champ.id + "desc");
+        
+        // Находим главный контейнер с картинкой и текстом
+        const storyBox = descriptionContainer.querySelector('.box.halfimage');
+        
+        if (storyBox) {
+            // Очищаем стандартное содержимое
+            storyBox.innerHTML = '';
+            
+            // Вызываем функцию создания истории, передавая ей наш контейнер и ключ истории
+            createStory(storyBox, 'intro_bossC10_SECRET');
+        }
+    }
+    // --- КОНЕЦ ИЗМЕНЕНИЙ ---
+
 	let battleStartButton = document.getElementById(champList[id].category == 'First Opponent'?"battleStart":(champList[id].category == '마지막Opponent'?"hardEnemyConfirm":"challengeEnemyConfirm"));
 	if(battleStartButton.style.display == "none") {
 		battleStartButton.style.display = "block";
@@ -8055,7 +8093,7 @@ async function talkEffect(message, pos = 0, div = null) {
 	speechBubble.style.position = "fixed";
 	if (pos == -1) {
 		speechBubble.classList.remove("speechArrow");
-		speechBubble.style.left = 'calc(45vh + 10px)';
+		speechBubble.style.left = 'calc(30vh + 10px)';
 		speechBubble.style.top = '50%';
 		speechBubble.style.transform = 'translate(0%, -50%)';
 	} else if (pos == 0) {
@@ -15977,7 +16015,7 @@ function loadProfile(index) {
 	player.surname = charData.surname;
 	document.getElementById('playerName').textContent = playerName;
 
-	charLoadLog.innerHTML = "성공적으로 불러왔습니다.";
+	charLoadLog.innerHTML = "Loaded successfully.";
 	document.getElementById('quickName').classList.remove('disabled');
 	document.getElementById('quickApp').classList.remove('disabled');
 	document.getElementById('quickClass').classList.remove('disabled');

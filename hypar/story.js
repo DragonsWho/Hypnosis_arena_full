@@ -10852,4 +10852,80 @@ const storyText = {
             `,
         },
     ],
-}
+
+
+
+
+
+    // --- НАЧАЛО ИЗМЕНЕНИЙ ---
+    "intro_bossC10_SECRET": [
+        {
+            cond: true,
+            type: "title",
+            KOR: `A Familiar Presence, A Foreign Power`
+        },
+        {
+            cond: true,
+            type: "text",
+            KOR: `You select your former slave for another round of... 'training'. But as the arena floor solidifies around you, a chilling pressure descends. It is not the familiar presence of a broken mind, but something ancient, powerful, and deeply amused.`
+        },
+        {
+            cond: true,
+            type: "dialogue",
+            character: "sandrea", // Используем 'player' для отображения портрета Sandrea, но с другим именем
+            expression: "corrupted",
+            pos: 1, // Справа
+            nude: true, // Без одежды
+            name: { "KOR": "Sanrea" },
+            img: "boss9", // Указываем картинку, если нужно
+            KOR: `...`
+        },
+        {
+            cond: true,
+            type: "text",
+            KOR: `She stands not as a slave, but as an avatar. The vacant look is gone, replaced by a divine, cold light. A voice echoes not from her lips, but directly inside your skull.`
+        },
+        {
+            cond: true,
+            type: "dialogue",
+            character: "sandrea",
+            expression: "normal",
+            pos: 1,
+            nude: true,
+            negative: true,
+            name: { "KOR": "Dark Deity" },
+            KOR: `<span class='hypnoText'>Did you truly believe you were in control?</span>`
+        },
+        {
+            cond: true,
+            type: "dialogue",
+            character: "sandrea",
+            expression: "normal",
+            pos: 1,
+            nude: true,
+            negative: true,
+            name: { "KOR": "Dark Deity" },
+            KOR: `<span class='hypnoText'>You held the cage, she rattled the bars. Both of you were merely my entertainment. And your little game has become... predictable.</span>`
+        },
+        {
+            cond: true,
+            type: "text",
+            KOR: `A wave of terrifying power washes over Sanrea, reshaping her. The same dark energy flows into you from the artifact, a fraction of what she receives, but enough to make your head spin and your body ache with forbidden pleasure.`
+        },
+        {
+            cond: true,
+            type: "dialogue",
+            character: "sandrea",
+            expression: "normal",
+            pos: 1,
+            nude: true,
+            negative: true,
+            name: { "KOR": "Dark Deity" },
+            KOR: `<span class='hypnoText'>Let's have a real fight. A true test. I will grant you both a sliver of my essence. Now...</span><br><br><span class='hypnoText hypnoFail'>Entertain me.</span>`
+        }
+    ]
+    // --- КОНЕЦ ИЗМЕНЕНИЙ ---
+};
+
+
+ 

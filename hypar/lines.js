@@ -1905,7 +1905,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"...?<br>Yes, okay.",
+					text:"...?<br>Oh, okay.",
 				},
 				{
 					cond:true, pos:1, effect:"shake",
