@@ -41,8 +41,12 @@
     --color-normal: #B0B0B0;
     --color-expert: #87CEFA;
     --color-ultimate: #FFD700;
+    --color-heat: #52d68a; /* ДОБАВЛЕНО: Зеленый цвет для показателя Heat */
 
     --scaledown-speed: 1s;
+
+
+    
 }
 
 html {
@@ -652,7 +656,7 @@ label {
     position: fixed;
     left: 0;
     top: 0;
-    width: 30vh;
+    width: 30vh; /* ИЗМЕНЕНО: было 45vh, стало 30vh для компактности */
     height: 100%;
     background: rgba(26, 20, 43, 0.9);
     backdrop-filter: blur(8px);
@@ -685,6 +689,14 @@ label {
     color: var(--color-accent);
     text-shadow: 0 0 5px var(--color-glow);
     transition: color 0.5s;
+}
+
+/* ДОБАВЛЕНО: Правила для исправления цвета цифр */
+#lewd.number {
+    color: var(--color-text); /* Устанавливаем цвет как у обычного текста */
+}
+#Heat.number {
+    color: var(--color-heat); /* Используем новую переменную для зеленого цвета */
 }
 
 #info-tab .box { padding: 0; overflow: visible; align-items: center; background: transparent; border: none; box-shadow: none; }
@@ -730,7 +742,7 @@ label {
 
 #main-content {
     flex-grow: 1;
-    padding-left: 30vh;
+    padding-left: 30vh; /* ИЗМЕНЕНО: было 45vh, стало 30vh */
     padding-right: 10vw;
     box-sizing: border-box;
 }
@@ -812,7 +824,7 @@ label {
     color: white;
     position: fixed;
     bottom: 0;
-    left: 30vh;
+    left: 30vh; /* ИЗМЕНЕНО: было 45vh, стало 30vh */
     right: 10vw;
     height: 20vh;
     opacity: 0.8;
@@ -1035,3 +1047,37 @@ label {
 }
 
 @media screen and (min-width: 769px) { .hide-on-desktop { display: none; } }
+
+
+/* --- 1. Левая панель (статы и портрет игрока/врага) --- */
+#info-tab {
+    width: 30vh;            /* Ширина панели. Можете уменьшить, например, до 25vh. */
+    padding: 5px;           /* Внутренние отступы. Уменьшено с 20px до 5px. */
+}
+
+/* --- 2. Портреты в левой панели --- */
+.portraitBattle {
+    width: 25vh;            /* Ширина круглого портрета. Уменьшено с 30vh. */
+    height: 25vh;           /* Высота круглого портрета. Уменьшено с 30vh. */
+    margin-bottom: 10px;    /* Отступ снизу. Уменьшено с 20px. */
+}
+
+/* --- 3. Правая панель (кнопки) --- */
+#button-tab {
+    width: 7vw;             /* Ширина панели. Уменьшено с 10vw. */
+    padding: 5px;           /* Внутренние отступы. Уменьшено с 20px до 5px. */
+}
+
+/* --- 4. Основная игровая область (центр) --- */
+/* Этот блок нужен, чтобы контент не залезал под боковые панели. */
+#main-content {
+    padding-left: 30vh;     /* Должно совпадать с шириной левой панели (width у #info-tab) */
+    padding-right: 7vw;     /* Должно совпадать с шириной правой панели (width у #button-tab) */
+}
+
+/* --- 5. Контейнер лога внизу --- */
+/* Этот блок тоже нужно скорректировать под новые размеры панелей. */
+#log-container {
+    left: 30vh;             /* Должно совпадать с шириной левой панели (width у #info-tab) */
+    right: 7vw;             /* Должно совпадать с шириной правой панели (width у #button-tab) */
+}

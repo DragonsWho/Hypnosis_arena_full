@@ -7523,6 +7523,12 @@ function battleInit() {
 	eventProgress();
 }
 
+
+
+
+
+
+
 function infoUpdate() {
 	options.maintain = false;
 	options.lustBan = false;
@@ -7744,29 +7750,29 @@ function infoUpdate() {
 	const eExDiv = document.getElementById("enemyExcite");
 	eExDiv.innerHTML = enemy.excite;
 	if(enemy.immune) {
-		eExDiv.style.color = 'rgba(0, 180, 255, 1)'
+		eExDiv.style.color = 'rgba(0, 255, 255, 1)'; // ИЗМЕНЕНО: Яркий бирюзовый
 	} else if(enemy.excite > enemy.real_excite || enemy.healBan) {
-		eExDiv.style.color = 'rgba(255, 0, 0, 1)'
+		eExDiv.style.color = 'rgba(255, 0, 0, 1)';
 	} else if(enemy.excite < enemy.real_excite) {
-		eExDiv.style.color = 'rgba(0, 255, 0, 1)'
+		eExDiv.style.color = 'rgba(0, 255, 0, 1)';
 	} else {
-		eExDiv.style.color = 'rgba(255, 255, 255, 1)'
+		eExDiv.style.color = 'rgba(255, 255, 255, 1)';
 	}
 
 	const eExLDiv = document.getElementById("enemyExciteL");
 	eExLDiv.innerHTML = enemy.exciteL;
 	if(enemy.exciteL < enemy.real_exciteL) {
-		eExLDiv.style.color = 'rgba(255, 0, 0, 1)'
+		eExLDiv.style.color = 'rgba(255, 0, 0, 1)';
 	} else if(enemy.exciteL > enemy.real_exciteL) {
-		eExLDiv.style.color = 'rgba(0, 255, 0, 1)'
+		eExLDiv.style.color = 'rgba(0, 255, 0, 1)';
 	} else {
-		eExLDiv.style.color = 'rgba(255, 255, 255, 1)'
+		eExLDiv.style.color = 'rgba(255, 255, 255, 1)';
 	}
 
 	const eAcDiv = document.getElementById("enemyOrgasm");
 	eAcDiv.innerHTML = enemy.orgasm;
 	if(enemy.orgasmBan) {
-		eAcDiv.style.color = 'rgba(100, 100, 100, 1)';
+		eAcDiv.style.color = 'rgba(160, 160, 160, 1)'; // ИЗМЕНЕНО: Светло-серый
 	} else {
 		eAcDiv.style.color = 'rgba(255, 255, 255, 1)';
 	}
@@ -7774,39 +7780,39 @@ function infoUpdate() {
 	const eAcLDiv = document.getElementById("enemyOrgasmL");
 	eAcLDiv.innerHTML = enemy.orgasmL;
 	if(enemy.orgasmL < enemy.real_orgasmL) {
-		eAcLDiv.style.color = 'rgba(255, 0, 0, 1)'
+		eAcLDiv.style.color = 'rgba(255, 0, 0, 1)';
 	} else if(enemy.orgasmL > enemy.real_orgasmL) {
-		eAcLDiv.style.color = 'rgba(0, 255, 0, 1)'
+		eAcLDiv.style.color = 'rgba(0, 255, 0, 1)';
 	} else {
-		eAcLDiv.style.color = 'rgba(255, 255, 255, 1)'
+		eAcLDiv.style.color = 'rgba(255, 255, 255, 1)';
 	}
 
 	const pExDiv = document.getElementById("playerExcite");
 	pExDiv.innerHTML = player.excite;
 	if(player.immune) {
-		pExDiv.style.color = 'rgba(0, 180, 255, 1)'
+		pExDiv.style.color = 'rgba(0, 255, 255, 1)'; // ИЗМЕНЕНО: Яркий бирюзовый
 	} else if(player.excite > player.real_excite || player.healBan) {
-		pExDiv.style.color = 'rgba(255, 0, 0, 1)'
+		pExDiv.style.color = 'rgba(255, 0, 0, 1)';
 	} else if(player.excite < player.real_excite) {
-		pExDiv.style.color = 'rgba(0, 255, 0, 1)'
+		pExDiv.style.color = 'rgba(0, 255, 0, 1)';
 	} else {
-		pExDiv.style.color = 'rgba(255, 255, 255, 1)'
+		pExDiv.style.color = 'rgba(255, 255, 255, 1)';
 	}
 
 	const pExLDiv = document.getElementById("playerExciteL");
 	pExLDiv.innerHTML = player.exciteL;
 	if(player.exciteL < player.real_exciteL) {
-		pExLDiv.style.color = 'rgba(255, 0, 0, 1)'
+		pExLDiv.style.color = 'rgba(255, 0, 0, 1)';
 	} else if(player.exciteL > player.real_exciteL) {
-		pExLDiv.style.color = 'rgba(0, 255, 0, 1)'
+		pExLDiv.style.color = 'rgba(0, 255, 0, 1)';
 	} else {
-		pExLDiv.style.color = 'rgba(255, 255, 255, 1)'
+		pExLDiv.style.color = 'rgba(255, 255, 255, 1)';
 	}
 
 	const pAcDiv = document.getElementById("playerOrgasm");
 	pAcDiv.innerHTML = player.orgasm;
 	if(player.orgasmBan) {
-		pAcDiv.style.color = 'rgba(100, 100, 100, 1)';
+		pAcDiv.style.color = 'rgba(160, 160, 160, 1)'; // ИЗМЕНЕНО: Светло-серый
 	} else {
 		pAcDiv.style.color = 'rgba(255, 255, 255, 1)';
 	}
@@ -7814,11 +7820,11 @@ function infoUpdate() {
 	const pAcLDiv = document.getElementById("playerOrgasmL");
 	pAcLDiv.innerHTML = player.orgasmL;
 	if(player.orgasmL < player.real_orgasmL) {
-		pAcLDiv.style.color = 'rgba(255, 0, 0, 1)'
+		pAcLDiv.style.color = 'rgba(255, 0, 0, 1)';
 	} else if(player.orgasmL > player.real_orgasmL) {
-		pAcLDiv.style.color = 'rgba(0, 255, 0, 1)'
+		pAcLDiv.style.color = 'rgba(0, 255, 0, 1)';
 	} else {
-		pAcLDiv.style.color = 'rgba(255, 255, 255, 1)'
+		pAcLDiv.style.color = 'rgba(255, 255, 255, 1)';
 	}
 
 	const lewdDiv = document.getElementById("lewd");
@@ -7827,11 +7833,11 @@ function infoUpdate() {
 		lewdDiv.innerHTML += "<span style='color:rgba(255, 255, 255, 1); font-size: 2vh;'>("+real_lewd+")</span>";
 	}
 	if(lewd < real_lewd) {
-		lewdDiv.style.color = 'rgba(0, 0, 255, 1)'
+		lewdDiv.style.color = 'rgba(120, 180, 255, 1)'; // ИЗМЕНЕНО: Светло-голубой
 	} else if(lewd > real_lewd) {
-		lewdDiv.style.color = 'rgba(0, 255, 0, 1)'
+		lewdDiv.style.color = 'rgba(0, 255, 0, 1)';
 	} else {
-		lewdDiv.style.color = 'rgba(255, 255, 255, 1)'
+		lewdDiv.style.color = 'rgba(255, 255, 255, 1)';
 	}
 
 	const HeatDiv = document.getElementById("Heat");
@@ -7840,11 +7846,11 @@ function infoUpdate() {
 		HeatDiv.innerHTML += "<span style='color:rgba(255, 255, 255, 1); font-size: 2vh;'>("+real_Heat+")</span>";
 	}
 	if(Heat > real_Heat) {
-		HeatDiv.style.color = 'rgba(0, 255, 0, 1)'
+		HeatDiv.style.color = 'rgba(0, 255, 0, 1)';
 	} else if(Heat < real_Heat) {
-		HeatDiv.style.color = 'rgba(0, 0, 255, 1)'
+		HeatDiv.style.color = 'rgba(120, 180, 255, 1)'; // ИЗМЕНЕНО: Светло-голубой
 	} else {
-		HeatDiv.style.color = 'rgba(255, 255, 255, 1)'
+		HeatDiv.style.color = 'rgba(255, 255, 255, 1)';
 	}
 
 	const postureDiv = document.getElementById("posture");
@@ -7867,6 +7873,17 @@ function infoUpdate() {
 	const corruptDiv = document.getElementById("corrupt");
 	corruptDiv.innerHTML = `${corrupt}`;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 function toggleTab(tabId, buttonId) {
     const tab = document.getElementById(tabId);
@@ -15719,7 +15736,7 @@ function showProfileDetail(profile, index) {
 			        <span class="value" style="font-size: 24px;">${profile.class}</span><span class="value" style="font-size: 20px;">(${profile.background})</span>
 			    </div>
 			    <div class="info-item">
-			        <span class="value" style="font-size: 18px;">${{"Obedient":"- Obedient적이고 충실함.", "Resistant":"- Resistant.", "Naive":"- 순진하고 단순함.", "Aggressive":"- Aggressive적이고 도발적.", "None":""}[profile.ps && gamemode != 2?profile.ps:"None"]}</span>
+			        <span class="value" style="font-size: 18px;">${{"Obedient":"- Obedient", "Resistant":"- Resistant.", "Naive":"- Naive.", "Aggressive":"- Aggressive.", "None":""}[profile.ps && gamemode != 2?profile.ps:"None"]}</span>
 			    </div>
 			</div>
 	        <div class="box button" style="flex: 0 calc(40% - 20px); text-align: center; background: var(--color-active); outline: double var(--color-active);" onclick="loadProfile(${index})">Load</div>
@@ -15934,7 +15951,7 @@ function showDeckDetail(dc, key, index) {
 		if(_check) {
 			deckCodeLog.innerHTML = "Deck loaded successfully.";
 		} else {
-			deckCodeLog.innerHTML = "일부 특성 또는 Card 찾지 못했습니다.";
+			deckCodeLog.innerHTML = "Some attributes or Cards were not found.";
 		}
     });
 
@@ -15978,12 +15995,12 @@ function loadProfile(index) {
     const charData = profiles[index];
 
 	if(!charData) {
-		charLoadLog.innerHTML = "기록이 존재하지 않습니다.";
+		charLoadLog.innerHTML = "No records exist.";
 		return 0;
 	}
 
 	if(!(charData.name && charData.onlyName && charData.race && charData.face && charData.class && charData.background)) {
-		charLoadLog.innerHTML = "기록이 존재하지 않습니다.(손상됨)";
+		charLoadLog.innerHTML = "The record does not exist (corrupted)";
 		return 0;
 	}
 
