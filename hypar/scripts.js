@@ -3721,7 +3721,7 @@ function createCard(card, size, button=false, type=0) {
 			totalDiv.style.alignContent = "center";
 			totalDiv.style.alignItems = "center";
 			totalDiv.style.flexDirection = 'column';
-			totalDiv.style.width = "320px";
+			totalDiv.style.width = "390px";
 			totalDiv.style.margin = "0.5%";
 
 			if(card.type == "특성") {
@@ -3832,7 +3832,7 @@ function createCard(card, size, button=false, type=0) {
 			totalDiv.style.alignContent = "center";
 			totalDiv.style.alignItems = "center";
 			totalDiv.style.flexDirection = 'column';
-			totalDiv.style.width = "320px";
+			totalDiv.style.width = "410px";
 			totalDiv.style.margin = "0.5%";
 			totalDiv.setAttribute('data-id', card.id);
 			totalDiv.appendChild(cardDiv);

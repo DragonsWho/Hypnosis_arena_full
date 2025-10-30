@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx-style/0.8.13/xlsx-style.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=0.3, maximum-scale=1, user-scalable=no">
     <script>
         if ('scrollRestoration' in history) {
@@ -466,7 +466,7 @@ function toggleMusic() {
 
     if (audioContainer.innerHTML !== '') {
         audioContainer.innerHTML = '';
-        musicButtonText.innerHTML = '🎵 Music';
+        musicButtonText.innerHTML = '<i class="fa-solid fa-music"></i> Music';
         musicButton.classList.remove('active');
     } else {
         const videoId = 'pnaAzQdN3t4';
@@ -476,7 +476,7 @@ function toggleMusic() {
         iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}&controls=0&rel=0`;
         
         audioContainer.appendChild(iframe);
-        musicButtonText.innerHTML = '🎵 Music';
+        musicButtonText.innerHTML = '<i class="fa-solid fa-music"></i> Music';
         musicButton.classList.add('active');
     }
 }
@@ -649,10 +649,10 @@ function toggleMusic() {
 
 <div class="container" id="collectionPart" style="display: none;">
     <div class="box button scrollTo" id="scrollToTop" style="flex: 0 calc(10% - 20px); text-align: center;" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-        <h2 class="box-title">▲</h2>
+        <h2 class="box-title"><i class="fa-solid fa-chevron-up"></i></h2>
     </div>
     <div class="box button scrollTo" id="scrollToBottom2" style="flex: 0 calc(10% - 20px); text-align: center;" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });">
-        <h2 class="box-title">▼</h2>
+        <h2 class="box-title"><i class="fa-solid fa-chevron-down"></i></h2>
     </div>
     <div class="box button active collectionTab" data-num="0" style="flex: 0 calc(25% - 20px); padding:8px; text-align: center;" onclick="collectionTabChange(0);">
         <h2 class="box-title langText KOR">Cards</h2>
@@ -759,8 +759,8 @@ function toggleMusic() {
                     <img id="collectionImgSmall" class="collectionImg" style="width:auto; height:auto;" src="image/no_image.webp" onerror="handleImgError(this)" alt="">
                     <img id="collectionImg" class="collectionImg" style="display:none; width:auto; height:auto;" src="image/no_image.webp" onload="document.getElementById('collectionImgSmall').style.display='none'; this.style.display='block';" alt="">
                     <div style="width:100%; height:8px;"></div>
-                    <div class="box button" id="collectionImgSwap">🔄</div>
-                    <div class="box button active" id="collectionImgDetail" onclick="openImgTab();">🔍</div>
+                    <div class="box button" id="collectionImgSwap"><i class="fa-solid fa-arrows-rotate"></i></div>
+                    <div class="box button active" id="collectionImgDetail" onclick="openImgTab();"><i class="fa-solid fa-magnifying-glass"></i></div>
                 </div>
                 <p class="box-text" id="collectionDesc" style="align-self: flex-start;">
                 </p>
@@ -802,7 +802,7 @@ function toggleMusic() {
 
 <div class="container" id="prePart" style="display: none;">
     <div class="box button scrollTo" id="scrollToBottom" style="flex: 0 calc(10% - 20px); text-align: center;" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });">
-        <h2 class="box-title">▼</h2>
+        <h2 class="box-title"><i class="fa-solid fa-chevron-down"></i></h2>
     </div>
     <div style="width:100%; height:40px;"></div>
     <div class="container" id="part0" style="display: none;">
@@ -2016,7 +2016,7 @@ function toggleMusic() {
         <div style="width:100%; height:40px;"></div>
 
         <div class="box button button2 disabled active" id="prePageButton" style="flex: 0 calc(5% - 40px); margin-right:0; display: flex; justify-content: center; align-items: center; height:60%;" onclick="ruleTab(rulePage - 1);">
-            <h2 class="box-title">◀</h2>
+            <h2 class="box-title"><i class="fa-solid fa-chevron-left"></i></h2>
         </div>
         
         <div class="box halfimage rulePage" style="flex: 0 calc(80% - 40px);">
@@ -2030,7 +2030,7 @@ function toggleMusic() {
         </div>
 
         <div class="box button button2 active" id="postPageButton" style="flex: 0 calc(5% - 40px); margin-left:0; display: flex; justify-content: center; align-items: center; height:60%;" onclick="ruleTab(rulePage + 1);">
-            <h2 class="box-title">▶</h2>
+            <h2 class="box-title"><i class="fa-solid fa-chevron-right"></i></h2>
         </div>
         <div style="width:100%; height:40px;"></div>
 
@@ -2044,16 +2044,16 @@ function toggleMusic() {
         <div class="container" id="deckBuild">
             <div style="width:100%; height:80px;"></div>
             <div class="box button button2" style="flex: 0 calc(20% - 20px);" onclick="deckModalOpen()">
-                <h2 class="box-title langText KOR">📂 Load Recent Deck</h2>
+                <h2 class="box-title langText KOR"><i class="fa-solid fa-folder-open"></i> Load Recent Deck</h2>
             </div>
             <div class="box button button2" style="flex: 0 calc(20% - 20px);" onclick="inputDeckCode()">
-                <h2 class="box-title langText KOR">📋 Paste Deck Code</h2>
+                <h2 class="box-title langText KOR"><i class="fa-solid fa-paste"></i> Paste Deck Code</h2>
             </div>
             <div class="box" style="flex: 0 calc(40% - 20px);">
                 <h2 class="box-title" style="text-align: left; padding: 0 5%;"><i><span id="deckCodeLog"></span></i></h2>
             </div>
             <div class="box button button2" style="flex: 0 calc(20% - 20px);" onclick="clearDeck(); document.getElementById('deckCodeLog').innerHtml = `Deck을 비웠습니다.`;">
-                <h2 class="box-title langText KOR">🗑️ Empty Deck</h2>
+                <h2 class="box-title langText KOR"><i class="fa-solid fa-trash-can"></i> Empty Deck</h2>
             </div>
 
             <div class="container" id="warriorInfo" style="display: none;">
@@ -2794,10 +2794,10 @@ function toggleMusic() {
         </div>
         <div class="buttons">
             <div class="box button battleButton" id="ruleButton" style="flex: 0 calc(50% - 20px); margin:0 auto; text-align: center;" onclick="const width = window.screen.width; const height = window.screen.height; window.open('rule.html', '규칙 설명', `width=${width},height=${height}`);">
-                <p class="langText KOR">ℹ️ Rules</p>
+                <p class="langText KOR"><i class="fa-solid fa-circle-info"></i> Rules</p>
             </div>
             <div class="box button battleButton" id="combatConfigButton" style="flex: 0 calc(50% - 20px); margin:0 auto; text-align: center;" onclick="combatConfigModalOpen();">
-                <p class="langText KOR">⚙️ Settings</p>
+                <p class="langText KOR"><i class="fa-solid fa-gear"></i> Settings</p>
             </div>
         </div>
     </div>
@@ -2817,7 +2817,7 @@ function toggleMusic() {
             <h2 class="box-title langText KOR">Duel Record</h2>
         </div>
         <div class="box button button2" style="flex: 0 calc(100% - 20px);" onclick="downloadDivAsImage('endingDocument', 'productInfo')">
-            <h2 class="box-title langText KOR">🖼️ Download as Image</h2>
+            <h2 class="box-title langText KOR"><i class="fa-solid fa-image"></i> Download as Image</h2>
         </div>
         <div style="width:100%; height:80px;"></div>
         <div class="box" id="startDeckDiv" style="flex: 0 calc(100% - 20px);">
@@ -2851,14 +2851,14 @@ function toggleMusic() {
             </div>
         </div>
         <div class="box button button2" style="flex: 0 calc(50% - 20px);" onclick="downloadDivAsImage('startDeckDiv', 'deck')">
-            <h2 class="box-title langText KOR">🖼️ Download as Image</h2>
+            <h2 class="box-title langText KOR"><i class="fa-solid fa-image"></i> Download as Image</h2>
         </div>
         <div class="box button button2" id="deckCopy" style="flex: 0 calc(50% - 20px);" onclick="copyDeckCode()">
-            <h2 class="box-title langText KOR">📋 Copy Deck Code</h2>
+            <h2 class="box-title langText KOR"><i class="fa-solid fa-copy"></i> Copy Deck Code</h2>
         </div>
         <div style="width:100%; height:80px;"></div>
         <div class="box" style="flex: 0 calc(100% - 20px);">
-            <h2 class="box-title langText KOR" onclick="logFold();"><span class="logFold">▼</span><span class="logUnfold" style="display:none;">▶</span>Duel Log</h2>
+            <h2 class="box-title langText KOR" onclick="logFold();"><span class="logFold"><i class="fa-solid fa-chevron-down"></i></span><span class="logUnfold" style="display:none;"><i class="fa-solid fa-chevron-right"></i></span> Duel Log</h2>
             <div style="display:flex; justify-content: center; gap:16px;">
                 <label style=""><b class="langText KOR">Show Dialogue</b><input type="checkbox" id="lineLogCheckbox" onchange="Array.from(document.getElementsByClassName('lineLog')).forEach(l => l.style.display = this.checked?'block':'none')" checked=""></label>
                 <label style=""><b class="langText KOR">Show Effects</b><input type="checkbox" id="effectTextLogCheckbox" onchange="Array.from(document.getElementsByClassName('effectTextLog')).forEach(l => l.style.display = this.checked?'inline':'none')" checked=""></label>
@@ -2876,7 +2876,7 @@ function toggleMusic() {
         </div>
         <div style="width:100%; height:160px;"></div>
         <div class="box button button2" style="flex: 0 calc(80% - 20px);" onclick="location.reload();">
-            <h2 class="box-title langText KOR">🔃 Restart from the beginning</h2>
+            <h2 class="box-title langText KOR"><i class="fa-solid fa-rotate-right"></i> Restart from the beginning</h2>
         </div>
     </div>
 </div>

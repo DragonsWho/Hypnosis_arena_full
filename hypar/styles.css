@@ -506,7 +506,7 @@ label {
     font-family: 'RIDIBatang';
     width: 30vmin;
     height: 45vmin;
-    margin: 20px;
+    margin: 18px 10px;
     border-radius: 20px;
     overflow: visible;
     transition: all 0.2s ease;
@@ -553,19 +553,19 @@ label {
 
 .card-name {
     overflow: hidden;
-    width: 100%;
+    width: 99%;
     height: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: -2%;
+    margin-left: -1%;
     top: -5%;
     padding: 2%;
     position: relative;
     color: white;
     text-shadow: 0 1px 3px #000;
     text-align: center;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     border-radius: 5px;
     z-index: 2;
 }
@@ -573,9 +573,9 @@ label {
 .card-text {
     left: 5%;
     top: -5%;
-    width: 80%;
-    height: 23%;
-    padding: 5%;
+    width: 82%;
+    height: 23.5%;
+    padding: 4%;
     position: relative;
     display: flex;
     align-items: center;

@@ -169,7 +169,7 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1, keepOriginal:true,
-					text:"We're doing it here...?<br>There are too many people watching?!",
+					text:"We're doing it here...?<br>While so many people watching?!",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1, keepOriginal:true,
