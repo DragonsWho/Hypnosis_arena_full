@@ -773,11 +773,11 @@ const cardDB = {
 		]
 	},
 	"AD-SL-boss2":{
-		name:{ "KOR":"I'd Never Fall for Hypnosis" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", boss:2, cost:-20, owner:1,
+		name:{ "KOR":"Iron Will" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", boss:2, cost:-20, owner:1,
 		tags:["전문가"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Mind magic? That's just nonsense.<br>Someone with a strong will would never fall for such petty tricks.<br>In the end, it's all a matter of mental strength." },
-		hypnoText:{ "KOR":"I'd never fall for the hypnosis of this pathetic man.<br>Besides, isn't it perfectly natural to have to perform perverted orgasmic masturbation as a pussy slave?" },
+		hypnoText:{ "KOR":"I'd never fall for the hypnosis of this pathetic man.<br>Besides, isn't it perfectly natural to have to perform perverted orgasmic masturbation as a sex slave?" },
 		effect:[
 			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"Won against <b>[The Villager]</b> in normal mode." }},
 			{trigger:"none", cond:true, type:"text", value:{ "KOR":"Gain bonus points." }},
@@ -2226,7 +2226,7 @@ const cardDB = {
 		]
 	},
 	"DA-AS-BG7-001-1":{
-		name:{ "KOR":"Defective: Broken Tool" }, class:"None", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Junk: Used Toy" }, class:"None", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Defective"],
 		effect:[
@@ -2235,7 +2235,7 @@ const cardDB = {
 		]
 	},
 	"DA-AS-BG7-001-2":{
-		name:{ "KOR":"Defective: Used Consumable" }, class:"None", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Junk: Leftovers" }, class:"None", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Defective"],
 		effect:[
@@ -2244,7 +2244,7 @@ const cardDB = {
 		]
 	},
 	"DA-AS-BG7-001-3":{
-		name:{ "KOR":"Defective: Worn-out Armor" }, class:"None", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Junk: Rugs" }, class:"None", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Defective"],
 		effect:[
@@ -4118,7 +4118,7 @@ const cardDB = {
 		]
 	},
 	"MA-MC-004":{
-		name:{ "KOR":"Pristine White Magic Circle" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"White Magic Circle" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:false,
 		tags:["Magic Circle", "기본Magic Circle", "진홍색", "담청색", "황금색", "변형목적"],
 		effect:[
@@ -5230,7 +5230,7 @@ const cardDB = {
 	},
 	"MA-UL-PS-001-1-9":{
 		parents:"MA-UL-PS-001-1-10",
-		name:{ "KOR":"Miyeong's Mental Instability" }, class:"Mage", type:"-", rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Miyeong's Doubt" }, class:"Mage", type:"-", rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:[],
 		effect:[
@@ -5646,7 +5646,7 @@ const cardDB = {
 		]
 	},
 	"HE-NM-PS-001-2":{
-		name:{ "KOR":"Improved Trauma Care" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Trauma Care +" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["개선됨"], related:["HE-NM-PS-001-4"],
 		expiration:"always", duration:Infinity,
@@ -5666,7 +5666,7 @@ const cardDB = {
 		]
 	},
 	"HE-NM-PS-001-4":{
-		name:{ "KOR":"Improved Instant Heal" }, class:"Healer", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Instant Heal +" }, class:"Healer", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:[],
 		effect:[
@@ -5701,7 +5701,7 @@ const cardDB = {
 		]
 	},
 	"HE-NM-PS-002-2":{
-		name:{ "KOR":"Improved Fracture Treatment" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Fracture Treatment +" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["개선됨"],
 		expiration:"always", duration:Infinity,
@@ -5830,7 +5830,7 @@ const cardDB = {
 	},
 	"HE-EX-SU-003-1":{
 		parents:"HE-EX-SU-003",
-		name:{ "KOR":"Complex Essence Combination" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Essence Combination" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Combination"],
 		effect:[
@@ -5894,7 +5894,7 @@ const cardDB = {
 		]
 	},
 	"HE-EX-PS-001-2":{
-		name:{ "KOR":"Improved Poison Treatment" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Poison Treatment +" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["개선됨"],
 		expiration:"always", duration:Infinity,
@@ -5931,7 +5931,7 @@ const cardDB = {
 		]
 	},
 	"HE-EX-PS-002-2":{
-		name:{ "KOR":"Improved Infection Treatment" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Purification Rite" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["개선됨"],
 		expiration:"always", duration:Infinity,
@@ -6052,7 +6052,7 @@ const cardDB = {
 		]
 	},
 	"HE-UL-PS-001-2":{
-		name:{ "KOR":"Improved Psychotherapy" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Psychotherapy +" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["개선됨"],
 		expiration:"always", duration:Infinity,
@@ -6252,7 +6252,7 @@ const cardDB = {
 	},
 
 	"BN-TR-004":{
-		name:{ "KOR":"Crossroads of Life and Death" }, class:"Healer", type:"시련", isDeck:true, rarity:"None", race:"Beastfolk", cost:20, owner:1,
+		name:{ "KOR":"Life's Edge" }, class:"Healer", type:"시련", isDeck:true, rarity:"None", race:"Beastfolk", cost:20, owner:1,
 		cond:true,
 		tags:["보너스", "불가침", "시련"],
 		effect:[
@@ -6431,7 +6431,7 @@ const cardDB = {
 		]
 	},
 	"B1-AT-004":{
-		name:{ "KOR":"Irresponsible Creampie" }, class:"Goblins", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Creampie" }, class:"Goblins", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -6776,7 +6776,7 @@ const cardDB = {
 	},
 
 	"B3-UC-001":{
-		name:{ "KOR":"Clothes-Melting Slime" }, class:"Tentacle Slime", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Clothes-Melting" }, class:"Tentacle Slime", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -6836,7 +6836,7 @@ const cardDB = {
 		]
 	},
 	"B3-SU-003":{
-		name:{ "KOR":"Protective Slime Secretion" }, class:"Tentacle Slime", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Protective Secretion" }, class:"Tentacle Slime", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -7235,7 +7235,7 @@ const cardDB = {
 		]
 	},
 	"B6-AT-001":{
-		name:{ "KOR":"Spore-Cum Breeding" }, class:"Mushroom Man", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Spore-Cum" }, class:"Mushroom Man", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B6-ST-001", "tag:Spore"],
 		effect:[
@@ -7332,7 +7332,7 @@ const cardDB = {
 	},
 	"B6-AT-001+":{
 		parents:"B6-AT-001",
-		name:{ "KOR":"Spore-Cum Breeding+" }, class:"Mushroom Man", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Spore-Cum +" }, class:"Mushroom Man", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "Hard Only"], related:["B6-ST-001", "tag:Spore"],
 		effect:[
@@ -7547,7 +7547,7 @@ const cardDB = {
 		]
 	},
 	"B8-PA-001-4":{
-		name:{ "KOR":"Engrave Pain onto the Body" }, class:"Trainer", type:"상태", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Engrave Pain" }, class:"Trainer", type:"상태", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Rule"], related:["B8-PA-001-1"],
 		expiration:"turnEnd", duration:1,
@@ -7557,7 +7557,7 @@ const cardDB = {
 		]
 	},
 	"B8-PA-001-5":{
-		name:{ "KOR":"Be Obedient to Commands" }, class:"Trainer", type:"상태", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Be Obedient" }, class:"Trainer", type:"상태", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Rule"], related:["B8-PA-001-1"],
 		expiration:"turnEnd", duration:1,
@@ -7648,7 +7648,7 @@ const cardDB = {
 		]
 	},
 	"B8-SU-002":{
-		name:{ "KOR":"Erogenous Zone Training" }, class:"Trainer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Sensitivity Training" }, class:"Trainer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B8-PA-001-1"],
 		effect:[
@@ -7734,7 +7734,7 @@ const cardDB = {
 	},
 	"B8-SU-002+":{
 		parents:"B8-SU-002",
-		name:{ "KOR":"Erogenous Zone Training+" }, class:"Trainer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Sensitivity Training+" }, class:"Trainer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "Hard Only"], related:["B8-PA-001-1"],
 		effect:[
@@ -7826,7 +7826,7 @@ const cardDB = {
 	},
 
 	"BC6-PA-001":{
-		name:{ "KOR":"Indiscriminate Proliferation" }, class:"Mushroom Man", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Rampant Growth" }, class:"Mushroom Man", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion능력", "챌린지전용"], related:["BC6-PA-001-1"],
 		expiration:"always", duration:Infinity,
