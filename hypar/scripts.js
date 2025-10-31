@@ -841,7 +841,7 @@ function selectCollection(type, id, history = true) {
 			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>Type:</b> ${cardData.type!="특성"?cardData.type:(cardData.tags.includes("부정적")?"Disadvantage":"장점")}</div>`;
 		}
 		if(cardData.rarity && cardData.rarity != 'None') {
-			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>등급:</b> ${cardData.rarity}</div>`;
+			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>Rarity:</b> ${cardData.rarity}</div>`;
 		}
 		if(cardData.race) {
 			cltext += `<div style="border: 1px solid var(--color-active); border-radius:32px; padding:16px; margin:16px;"><b>Race:</b> ${cardData.race}</div>`;
@@ -858,7 +858,7 @@ function selectCollection(type, id, history = true) {
 			cltext += `<blockquote style="border-bottom: 1px solid var(--color-active);"><b>Flavor Text:</b><br>${cardData.flavorText[language]}</blockquote>`;
 		}
 		if(cardData.hypnoText) {
-			cltext += `<blockquote style="border-bottom: 1px solid var(--color-active);"><b>개변 Flavor Text:</b><br>${cardData.hypnoText[language]}</blockquote>`;
+			cltext += `<blockquote style="border-bottom: 1px solid var(--color-active);"><b>Real Text:</b><br>${cardData.hypnoText[language]}</blockquote>`;
 		}
 		if(cardSave[cardData.id]) {
 			cltext += `
@@ -869,7 +869,7 @@ function selectCollection(type, id, history = true) {
 			    cltext += `
 			        <div style="width: 50%; border: 1px solid var(--color-active); border-radius:32px; padding: 16px; display: flex; flex-direction: column; gap: 16px;">
 					    <div style="font-size: 18px; font-weight: bold; margin-bottom: 8px; text-align: center;">
-					        일반 모드 클리어
+					        Normal 모드 클리어
 					    </div>
 					    
 					    <div style="display: flex; align-items: center; gap: 16px;">
@@ -940,9 +940,9 @@ function selectCollection(type, id, history = true) {
 
 					relatedList.push(...replacementIDs);
 					break;
-				case "궁극":
+				case "Ultimate":
 					replacementIDs = Object.values(cardDB)
-					    .filter(card => card.rarity === "궁극" && card.class == choiceValues.class && !card.tags.includes("Uncreatable"))
+					    .filter(card => card.rarity === "Ultimate" && card.class == choiceValues.class && !card.tags.includes("Uncreatable"))
 					    .map(card => card.id);
 
 					relatedList.push(...replacementIDs);
@@ -1129,13 +1129,13 @@ function initCardSelect() {
 				document.getElementById('neutral').appendChild(cardDiv);
 			}
 			if(card.class == choiceValues.class) {
-				if(card.rarity == '일반') {
+				if(card.rarity == 'Normal') {
 					document.getElementById('normal').appendChild(cardDiv);
 				}
-				if(card.rarity == '숙련') {
+				if(card.rarity == 'expert') {
 					document.getElementById('expert').appendChild(cardDiv);
 				}
-				if(card.rarity == '궁극') {
+				if(card.rarity == 'Ultimate') {
 					document.getElementById('ultimate').appendChild(cardDiv);
 				}
 			}
@@ -1634,7 +1634,7 @@ function changeEvent(num) {
 		if(deckData.wildcard) {
 			const _wildcard = deepCopy(cardDB[deckData.wildcard]);
 			_wildcard.owner = 1;
-			_wildcard.tags.push("만능");
+			_wildcard.tags.push("wildcard");
 			deck.splice(deck.findIndex(cd => cd.id == "BN-EL-001"), 1, _wildcard);
 
 			document.getElementById("wildcardView").style.display = 'flex';
@@ -1996,9 +1996,9 @@ function ruleTab(num) {
     	break;
     case 1:
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.class == "Neutral" && cd.tags.includes("Deck빌딩"))), 24, false, 101));
-		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.rarity == "일반" && (!choiceValues.class || cd.class == choiceValues.class))), 24, false, 101));
-		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.rarity == "숙련" && (!choiceValues.class || cd.class == choiceValues.class))), 24, false, 101));
-		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.rarity == "궁극" && (!choiceValues.class || cd.class == choiceValues.class))), 24, false, 101));
+		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.rarity == "Normal" && (!choiceValues.class || cd.class == choiceValues.class))), 24, false, 101));
+		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.rarity == "expert" && (!choiceValues.class || cd.class == choiceValues.class))), 24, false, 101));
+		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.rarity == "Ultimate" && (!choiceValues.class || cd.class == choiceValues.class))), 24, false, 101));
     	arrangeCards(cards, ruleCard, 2, 2, false)
     	break;
     case 2:
@@ -2021,7 +2021,7 @@ function ruleTab(num) {
     	arrangeCards(cards, ruleCard, 4, 2, false)
     	break;
     case 5:
-		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "만능")), 24, false, 101));
+		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "wildcard")), 24, false, 101));
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Arcane")), 24, false, 101));
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Crafted")), 24, false, 101));
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "시련")), 24, false, 101));
@@ -2048,11 +2048,11 @@ function ruleTab(num) {
     	break;
     case 11:
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "attack" && cd.tags.includes("Deck빌딩"))), 24, false, 101));
-		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "보조" && cd.tags.includes("Deck빌딩"))), 24, false, 101));
+		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Support" && cd.tags.includes("Deck빌딩"))), 24, false, 101));
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Position" && cd.tags.includes("Deck빌딩"))), 24, false, 101));
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "탈의" && !cd.tags.includes("챌린지전용"))), 24, false, 101));
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Penalty" && cd.tags.includes("Deck빌딩"))), 24, false, 101));
-		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Transcendent" || cd.type == "만능" || cd.type == "Arcane" || cd.type == "Crafted" || cd.type == "시련")), 24, false, 101));
+		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Transcendent" || cd.type == "wildcard" || cd.type == "Arcane" || cd.type == "Crafted" || cd.type == "시련")), 24, false, 101));
     	arrangeCards(cards, ruleCard, 3, 2, false)
     	break;
     case 12:
@@ -2060,7 +2060,7 @@ function ruleTab(num) {
 			cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.tags.includes("Deck빌딩") && cd.type == "attack")), 24, false, 101));
 		}
 		for(let i=0; i<3; i++) {
-			cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.tags.includes("Deck빌딩") && cd.type == "보조")), 24, false, 101));
+			cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.tags.includes("Deck빌딩") && cd.type == "Support")), 24, false, 101));
 		}
     	arrangeCards(cards, ruleCard, 3, 2, false)
     	break;
@@ -3437,7 +3437,7 @@ function adjustSize(size) {
     if (deviceWidth < 480) {
         return size * 0.6; // 작은 스마트폰 (iPhone SE, Galaxy Mini)
     } else if (deviceWidth < 768) {
-        return size * 0.7; // 일반 스마트폰
+        return size * 0.7; // Normal 스마트폰
     } else if (deviceWidth < 1024) {
         return size * 0.85; // 태블릿
     }
@@ -3504,8 +3504,8 @@ function createCard(card, size, button=false, type=0) {
 		if(card.related && card.related.includes("MA-ST-002")) {
 			keywords.add("id:MA-ST-002");
 		}
-		if(card.cast && card.tags.includes("자동시전")) {
-			keywords.add("자동시전");
+		if(card.cast && card.tags.includes("Autocast")) {
+			keywords.add("Autocast");
 		}
 		if(card.effect.some(e => e.type == "absorption" || (e.type == "state" && cardDB[e.value] && cardDB[e.value].effect.some(_e => _e.type == "absorption")))) {
 			keywords.add("Essence흡수");
@@ -3618,7 +3618,7 @@ function createCard(card, size, button=false, type=0) {
 	    		cardDiv.classList.add('type'+type);
 	    	}
 	    }
-	    if(card.tags.includes("만능")) {
+	    if(card.tags.includes("wildcard")) {
 	    	cardDiv.classList.add("wildcard");
 	    }
 	    if(card.type == "Disadvantage" || card.type == "Penalty") {
@@ -3669,7 +3669,7 @@ function createCard(card, size, button=false, type=0) {
 	    typeDiv.style.fontSize = adjustSize(size/15)+"vmin";
 	    typeDiv.className = 'card-type';
 	    typeDiv.textContent = getWord(card.type);
-		typeDiv.style.background = card.rarity == "일반"?cardColor["등급"].normal:(card.rarity == "숙련"?cardColor["등급"].expert:(card.rarity == "궁극"?cardColor["등급"].ultimate:palette.name));
+		typeDiv.style.background = card.rarity == "Normal"?cardColor["Rating"].normal:(card.rarity == "expert"?cardColor["Rating"].expert:(card.rarity == "Ultimate"?cardColor["Rating"].ultimate:palette.name));
 
 		const _cardId = card.tags.includes("Magic요약") && card.parents && !card.noInherit?card.parents:card.id;
 
@@ -3810,7 +3810,7 @@ function createCard(card, size, button=false, type=0) {
 			totalDiv.setAttribute('data-id', card.id);
 			return totalDiv;
 	    } else if(type == 10) {
-	    	if(card.tags.includes("자동시전")) {
+	    	if(card.tags.includes("Autocast")) {
 	    		cardDiv.classList.add("spell");
 	    	}
 
@@ -5277,7 +5277,7 @@ function createCardText(card, reverse=false) {
 				text += translateText(cardTexts["trigger"]["attack사용시"]);
 				break;
 			case "useSupport":
-				text += translateText(cardTexts["trigger"]["보조사용시"]);
+				text += translateText(cardTexts["trigger"]["Support사용시"]);
 				break;
 			case "usePosture":
 				text += translateText(cardTexts["trigger"]["Position사용시"]);
@@ -5295,7 +5295,7 @@ function createCardText(card, reverse=false) {
 				text += translateText(cardTexts["trigger"]["Opponentattack사용시"]);
 				break;
 			case "useSupportOp":
-				text += translateText(cardTexts["trigger"]["Opponent보조사용시"]);
+				text += translateText(cardTexts["trigger"]["OpponentSupport사용시"]);
 				break;
 			case "usePostureOp":
 				text += translateText(cardTexts["trigger"]["OpponentPosition사용시"]);
@@ -5310,7 +5310,7 @@ function createCardText(card, reverse=false) {
 				text += translateText(cardTexts["trigger"]["도전자attack사용시"]);
 				break;
 			case "useSupportPlayer":
-				text += translateText(cardTexts["trigger"]["도전자보조사용시"]);
+				text += translateText(cardTexts["trigger"]["도전자Support사용시"]);
 				break;
 			case "usePosturePlayer":
 				text += translateText(cardTexts["trigger"]["도전자Position사용시"]);
@@ -5325,7 +5325,7 @@ function createCardText(card, reverse=false) {
 				text += translateText(cardTexts["trigger"]["Championattack사용시"]);
 				break;
 			case "useSupportEnemy":
-				text += translateText(cardTexts["trigger"]["Champion보조사용시"]);
+				text += translateText(cardTexts["trigger"]["ChampionSupport사용시"]);
 				break;
 			case "usePostureEnemy":
 				text += translateText(cardTexts["trigger"]["ChampionPosition사용시"]);
@@ -5340,7 +5340,7 @@ function createCardText(card, reverse=false) {
 				text += translateText(cardTexts["trigger"]["누군가attack사용시"]);
 				break;
 			case "useSupportAny":
-				text += translateText(cardTexts["trigger"]["누군가보조사용시"]);
+				text += translateText(cardTexts["trigger"]["누군가Support사용시"]);
 				break;
 			case "usePostureAny":
 				text += translateText(cardTexts["trigger"]["누군가Position사용시"]);
@@ -5387,12 +5387,13 @@ function createCardText(card, reverse=false) {
 	    if(e.repeat && e.repeat != 1) {
 		    let repeat = stringObjectify(e.repeat);
 			repeatText = objToText(repeat, 1);
+			
 			if(!isNaN(repeatText) || /^\*\d+\*$/.test(repeatText)) {
 				repeatType = "constant";
 				if(e.type == "get" || e.type == "poisonAdd") {
 					repeatText = translateText(cardTexts["target"][`Countcard`], { "amount":repeatText });
 				} else if(e.op != "set") {
-					repeatText = translateText(cardTexts["target"][`Count숫자`], { "amount":repeatText });
+					repeatText = translateText(cardTexts["target"][`CountTimes`], { "amount":repeatText });
 				}
 			} else {
 				repeatType = "specific";
@@ -5421,7 +5422,7 @@ function createCardText(card, reverse=false) {
 			}
 			if(e.division) {
 				let realValue = e.value == "stack"?card.stack:returnText(e.value, card.owner);
-				eValueText = e.division==2?`${eValueText}의 절반<span style="color: gray;"><i>(${Math.floor(realValue/2)})</i></span>`:`${eValueText}/${e.division} <span style="color: gray;"><i>(${Math.floor(realValue/e.division)})</i></span>`
+				eValueText = e.division==2?`${eValueText}/2<span style="color: gray;"><i>(${Math.floor(realValue/2)})</i></span>`:`${eValueText}/${e.division} <span style="color: gray;"><i>(${Math.floor(realValue/e.division)})</i></span>`
 			}
 		}
 
@@ -6216,9 +6217,9 @@ function createCardText(card, reverse=false) {
 			case "self": _target = reverse?getWord("Opponent"):""; break;
 			}
 			if((!reverse && e.target == "self") || (reverse && e.target == "op")) {
-				text += translateText(cardTexts["effect"]["보조사용불가자신"], { "actor":_target });
+				text += translateText(cardTexts["effect"]["Support사용불가자신"], { "actor":_target });
 			} else {
-				text += translateText(cardTexts["effect"]["보조사용불가"], { "actor":_target });
+				text += translateText(cardTexts["effect"]["Support사용불가"], { "actor":_target });
 			}
         	break;
         case "postureBan":
@@ -6281,9 +6282,9 @@ function createCardText(card, reverse=false) {
 			case "self": _target = reverse?getWord("Opponent"):""; break;
 			}
 			if((!reverse && e.target == "self") || (reverse && e.target == "op")) {
-				text += translateText(cardTexts["effect"]["보조강제사용자신"], { "actor":_target });
+				text += translateText(cardTexts["effect"]["Support강제사용자신"], { "actor":_target });
 			} else {
-				text += translateText(cardTexts["effect"]["보조강제사용"], { "actor":_target });
+				text += translateText(cardTexts["effect"]["Support강제사용"], { "actor":_target });
 			}
         	break;
         case "postureMustUse":
@@ -6333,9 +6334,9 @@ function createCardText(card, reverse=false) {
 			case "self": _target = reverse?getWord("Opponent"):""; break;
 			}
 			if((!reverse && e.target == "self") || (reverse && e.target == "op")) {
-				text += translateText(cardTexts["effect"]["결합물강제사용자신"], { "actor":_target });
+				text += translateText(cardTexts["effect"]["Combination강제사용자신"], { "actor":_target });
 			} else {
-				text += translateText(cardTexts["effect"]["결합물강제사용"], { "actor":_target });
+				text += translateText(cardTexts["effect"]["Combination강제사용"], { "actor":_target });
 			}
         	break;
         case "boundMustUse":
@@ -6669,7 +6670,7 @@ function createCardText(card, reverse=false) {
 			text += ' <span style="color: gray;"><i>(Max&nbsp;'+e.maxValue+")</i></span>";
 		}
 		if(e.maxRepeat && e.repeat && typeof e.repeat !== 'number') {
-			text += ' <span style="color: gray;"><i>(Max&nbsp;'+e.maxRepeat+"times)</i></span>";
+			text += ' <span style="color: gray;"><i>(Max ' + e.maxRepeat + ' times)</i></span>';
 		}
 
 		if(lineWrap) {
@@ -6705,11 +6706,11 @@ function createCardText(card, reverse=false) {
 		text += translateText(cardTexts["condition"]["낼수있음"], { "cond":conditionText(card.cond, card.expiration) }) + "<br>";
 	}
 
-	if(card.cast && card.tags && card.tags.includes("자동시전")) {
+	if(card.cast && card.tags && card.tags.includes("Autocast")) {
 		if(card.cast == Infinity) {
 			text += translateText(cardTexts["effect"]["영구시전"], { }) + "<br>";
 		} else {
-			text += translateText(cardTexts["effect"]["자동시전"], { "amount":card.cast }) + "<br>";
+			text += translateText(cardTexts["effect"]["Autocast"], { "amount":card.cast }) + "<br>";
 		}
 	}
 
@@ -6729,11 +6730,11 @@ function createCardText(card, reverse=false) {
 	if(card.stack && card.stack >= 2) {
 		text += '<span style="color: gray;"><i>('+card.stack+"회 중첩됨)</i></span>";
 	}
-	if(card.cast && (!card.tags || !card.tags.includes("자동시전")) && card.cast > 1) {
+	if(card.cast && (!card.tags || !card.tags.includes("Autocast")) && card.cast > 1) {
 		text += translateText(cardTexts["effect"][card.cast==Infinity?"무한시전":"시전"], { "amount":card.cast });
 	}
 
-	if(["attack", "보조", "탈의", "Magic", "Arcane", "Essence", "Penalty"].includes(card.type)) {
+	if(["attack", "Support", "탈의", "Magic", "Arcane", "Essence", "Penalty"].includes(card.type)) {
     	text = text.replace(/지속:/g, '');
 	}
 
@@ -6747,6 +6748,11 @@ function createCardText(card, reverse=false) {
 	if (text.endsWith('<br>')) {
         text = text.substring(0, text.length - 4);
     }
+	text = text.trim(); // Убирает пробелы в начале и в конце
+    text = text.replace(/\s+<br>/g, '<br>'); // Убирает пробелы перед <br>
+    text = text.replace(/ \./g, '.'); // Убирает пробел перед точкой
+    text = text.replace(/ ,/g, ',');  // Убирает пробел перед запятой
+    text = text.replace(/<br>\s*$/, ''); // Убирает <br> и пробелы в самом конце
 
     for (let item of preAdverb) {
         const pattern = new RegExp('.<br>' + item, 'g');
@@ -7302,8 +7308,8 @@ function cardStateUpdate() {
     document.getElementById("cost").innerHTML = `${getWord("포인트")}: ` + (infinitePoint?`<span class='glitchNumbers'>${glitchNumber}</span>`:point);
     document.getElementById("deck").innerHTML = `${getWord("Deck")}: ` + deck.length+(maxDeckSize<99?("/"+maxDeckSize):"");
     document.getElementById("cards").innerHTML = `${getWord("attack")} ${getWord("card")}: ` + checkNum(deck, "type", "attack");
-    document.getElementById("cards").innerHTML += ` | ${getWord("보조")} ${getWord("card")}: ` + checkNum(deck, "type", "보조");
-    document.getElementById("cards").innerHTML += ` | ${getWord("Other")} ${getWord("card")}: ` + (deck.length - (checkNum(deck, "type", "attack") + checkNum(deck, "type", "보조") + checkNum(deck, "type", "Penalty")));
+    document.getElementById("cards").innerHTML += ` | ${getWord("Support")} ${getWord("card")}: ` + checkNum(deck, "type", "Support");
+    document.getElementById("cards").innerHTML += ` | ${getWord("Other")} ${getWord("card")}: ` + (deck.length - (checkNum(deck, "type", "attack") + checkNum(deck, "type", "Support") + checkNum(deck, "type", "Penalty")));
 	document.getElementById("cards").innerHTML += ` | ${getWord("Penalty")} ${getWord("card")}: ` + checkNum(deck, "type", "Penalty");
 	if(essences.length > 0) {
 		document.getElementById("deck").innerHTML += ` + ${essences.length}/5`
@@ -8809,7 +8815,7 @@ function randomCard(category, value=null) {
 			if(category == 'type') {
 				switch(value) {
 				case "attack":
-				case "보조":
+				case "Support":
 				case "Position":
 					return card.tags.includes("Deck빌딩") && (card.class == 'Neutral' || card.class == choiceValues.class) && card[category] == value;
 					break;
@@ -8906,7 +8912,7 @@ function selectCards(cards, category, value=null, count="all") {
 			result = result.filter(cd => cd.type != "탈의");
 		}
 		if(value == "추가card제외") {
-			result = result.filter(cd => cd.cond != false && !cd.effect.some(e => e.type == "maxUse") && !cd.tags.includes("자동시전"));
+			result = result.filter(cd => cd.cond != false && !cd.effect.some(e => e.type == "maxUse") && !cd.tags.includes("Autocast"));
 		}
 		if(value == "조르기제외") {
 			result = result.filter(cd => cd.id != "AS-NM-AT-000");
@@ -9176,7 +9182,7 @@ async function roundStart() {
 			card.style.background = palette.border;
 			pDescription.style.background = palette.textbox;
 			pName.style.background = palette.name;
-			pType.style.background = card.rarity == "일반"?cardColor["등급"].normal:(card.rarity == "숙련"?cardColor["등급"].expert:(card.rarity == "궁극"?cardColor["등급"].ultimate:palette.name));
+			pType.style.background = card.rarity == "Normal"?cardColor["Rating"].normal:(card.rarity == "expert"?cardColor["Rating"].expert:(card.rarity == "Ultimate"?cardColor["Rating"].ultimate:palette.name));
 			pDescription.innerHTML = createCardText(cardDB["B6-SU-003-2"]);
 			pType.innerHTML = getWord(cardDB["B6-SU-003-2"].type);
 			pName.innerHTML = cardDB["B6-SU-003-2"].name[language];
@@ -9361,7 +9367,7 @@ function enemyActionSelect() {
 		const highest = [];
 		let i = 0;
 		for(let card of opDeck) {
-			if(checkCondition(card.cond, 0) && !(enemy.ban.all) && !(enemy.ban.attack && card.type == "attack") && !(enemy.ban.support && card.type == "보조") && !(enemy.ban.uncloth && card.type == "탈의") && !(enemy.ban.penalty && card.type == "Penalty") && !(enemy.mustuse.attack && card.type != "attack") && !(enemy.mustuse.support && card.type != "보조") && !(enemy.mustuse.uncloth && card.type != "탈의") && !(enemy.mustuse.penalty && card.type != "Penalty") && !(enemy.mustuse.bound && !card.bounded) && !selectPos.includes(i)) {
+			if(checkCondition(card.cond, 0) && !(enemy.ban.all) && !(enemy.ban.attack && card.type == "attack") && !(enemy.ban.support && card.type == "Support") && !(enemy.ban.uncloth && card.type == "탈의") && !(enemy.ban.penalty && card.type == "Penalty") && !(enemy.mustuse.attack && card.type != "attack") && !(enemy.mustuse.support && card.type != "Support") && !(enemy.mustuse.uncloth && card.type != "탈의") && !(enemy.mustuse.penalty && card.type != "Penalty") && !(enemy.mustuse.bound && !card.bounded) && !selectPos.includes(i)) {
 				let priority = 0;
 				if(cardPriority[card.id]) {
 					for(let p of cardPriority[card.id]) {
@@ -9415,7 +9421,7 @@ function battleCardUpdate() {
 		if(player.state.some(st => st.id == "B2-PA-001-1" || st.id == "B2-PA-001-1+") && cd.type == "attack") {
 			return true;
 		}
-		if(player.state.some(st => st.id == "B2-PA-001-2" || st.id == "B2-PA-001-2+") && cd.type == "보조") {
+		if(player.state.some(st => st.id == "B2-PA-001-2" || st.id == "B2-PA-001-2+") && cd.type == "Support") {
 			return true;
 		}
 		return false;
@@ -9517,7 +9523,7 @@ function cardTextUpdate(div, card) {
 	div.style.background = palette.border;
 	pDescription.style.background = palette.textbox;
 	pName.style.background = palette.name;
-	pType.style.background = card.rarity == "일반"?cardColor["등급"].normal:(card.rarity == "숙련"?cardColor["등급"].expert:(card.rarity == "궁극"?cardColor["등급"].ultimate:palette.name));
+	pType.style.background = card.rarity == "Normal"?cardColor["Rating"].normal:(card.rarity == "expert"?cardColor["Rating"].expert:(card.rarity == "Ultimate"?cardColor["Rating"].ultimate:palette.name));
 
 	if(card.text) {
     	pDescription.innerHTML = card.text[language];
@@ -9531,7 +9537,7 @@ function cardTextUpdate(div, card) {
 		pType.innerHTML = getWord(card.type);
 	}
 
-	if(card.tags.includes("만능")) {
+	if(card.tags.includes("wildcard")) {
 		div.classList.add("wildcard");
 	} else if(div.classList.contains("wildcard")) {
 		div.classList.remove("wildcard");
@@ -9546,7 +9552,7 @@ function cardUsableCheck(card) {
 	if((player.ban.attack || (round == 1 && !player.state.some(st => st.id == "AD-NT-EL-BG6-001"))) && card.type == "attack") {
 		return false;
 	}
-	if(player.ban.support && card.type == "보조") {
+	if(player.ban.support && card.type == "Support") {
 		return false;
 	}
 	if(player.ban.posture && card.type == "Position") {
@@ -9558,7 +9564,7 @@ function cardUsableCheck(card) {
 	if(player.mustuse.attack && card.type != "attack") {
 		return false;
 	}
-	if(player.mustuse.support && card.type != "보조") {
+	if(player.mustuse.support && card.type != "Support") {
 		return false;
 	}
 	if(player.mustuse.posture && card.type != "Position") {
@@ -9567,7 +9573,7 @@ function cardUsableCheck(card) {
 	if(player.mustuse.penalty && card.type != "Penalty") {
 		return false;
 	}
-	if(player.mustuse.combination && !card.tags.includes("결합물")) {
+	if(player.mustuse.combination && !card.tags.includes("Combination")) {
 		return false;
 	}
 	if(player.mustuse.bound && !card.bounded) {
@@ -9585,7 +9591,7 @@ function cardUsableCheck(card) {
 	if(card.tags.includes("Magic Circle")) {
 		return false;
 	}
-	if(card.tags.includes("자동시전")) {
+	if(card.tags.includes("Autocast")) {
 		return false;
 	}
 
@@ -9635,7 +9641,7 @@ async function combat() {
 	const actions = [];
 
 	for(let cd of deck) {
-		if(cd.tags.includes("자동시전")) {
+		if(cd.tags.includes("Autocast")) {
 			player.action.push(cd);
 		}
 	}
@@ -13420,7 +13426,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 				case "attack":
 					useType = "useAttack";
 					break;
-				case "보조":
+				case "Support":
 					useType = "useSupport";
 					break;
 				case "Position":
@@ -15691,7 +15697,7 @@ function deckListRefresh(div) {
         listItem.className = 'profile-item';
         listItem.innerHTML = `
             <span class="captionNum">${index+1}</span>
-            <span>${choiceValues.class}${dc.state.some(st => st.startsWith("AD-SL"))?" (Hard)":""/*(dc.deck.some(cd => cardDB[cd] && (cardDB[cd].type == "만능" || cardDB[cd].type == "Arcane" || cardDB[cd].type == "Crafted" || cardDB[cd].type == "시련"))?" (일반)":"")*/}</span>
+            <span>${choiceValues.class}${dc.state.some(st => st.startsWith("AD-SL"))?" (Hard)":""/*(dc.deck.some(cd => cardDB[cd] && (cardDB[cd].type == "wildcard" || cardDB[cd].type == "Arcane" || cardDB[cd].type == "Crafted" || cardDB[cd].type == "시련"))?" (Normal)":"")*/}</span>
             <span style="color: ${dc.race == "-" || choiceValues.race == dc.race?"var(--color-text)":"red"}">${dc.race}</span>
             <span style="color: ${dc.background == "-" || choiceValues.background == dc.background?"var(--color-text)":"red"}">${dc.background}</span>
             <span class="captionName">${dc.name}</span>
@@ -15911,12 +15917,12 @@ function showDeckDetail(dc, key, index) {
 
 	    const wildTitle = document.createElement('h2');
 	    wildTitle.className = 'box-title'
-	    wildTitle.textContent = '만능 card';
+	    wildTitle.textContent = 'wildcard card';
 	    wildDiv.appendChild(wildTitle);
 	    deckDetail.appendChild(wildDiv);
 
 	    const _wildcard = deepCopy(cardDB[dc.wildcard]);
-	    _wildcard.tags.push("만능");
+	    _wildcard.tags.push("wildcard");
     	const _div = createCard(_wildcard, 24);
 	    if(choiceValues.race != "Eldorian") {
 	    	_div.style.opacity = "0.5"
@@ -16104,9 +16110,9 @@ function relatedModalOpen(card) {
 
 					relatedList.push(...replacementIDs);
 					break;
-				case "궁극":
+				case "Ultimate":
 					replacementIDs = Object.values(cardDB)
-					    .filter(cd => cd.rarity === "궁극" && cd.class == choiceValues.class && !cd.tags.includes("Uncreatable"))
+					    .filter(cd => cd.rarity === "Ultimate" && cd.class == choiceValues.class && !cd.tags.includes("Uncreatable"))
 					    .map(cd => cd.id);
 
 					relatedList.push(...replacementIDs);
@@ -16224,7 +16230,7 @@ function addWildcard(id) {
 
 	addCard(wildcardDiv, deck);
 	const _wildcard = deepCopy(cardDB[id]);
-	_wildcard.tags.push("만능")
+	_wildcard.tags.push("wildcard")
 	cardTextUpdate(wildcardDiv, _wildcard);
 	cardTextUpdate(document.getElementById('yourDeck').querySelector('div.card[data-id="BN-EL-001"]'), _wildcard);
 
@@ -16590,7 +16596,7 @@ function removeSubfields(container, subfields) {
 // 전역 배열 customEffects 업데이트 함수
 function updateCustomCard() {
 	let customClass = "Neutral";
-	let customType = "보조";
+	let customType = "Support";
     const customEffects = cardDB["BN-HA-001"].effect;
     cardDB["BN-HA-001"].related = [];
     const customRelated = cardDB["BN-HA-001"].related;
@@ -17193,17 +17199,17 @@ function updateCustomCard() {
 		        case "attack":
 		            return ["type", "attack"];
 		        case "support":
-		            return ["type", "보조"];
+		            return ["type", "Support"];
 		        case "neutral":
 		            return ["class", "Neutral"];
 		        case "class":
 		            return ["class", choiceValues.class];
 		        case "normal":
-		            return ["rarity", "일반"];
+		            return ["rarity", "Normal"];
 		        case "expert":
-		            return ["rarity", "숙련"];
+		            return ["rarity", "expert"];
 		        case "ultimate":
-		            return ["rarity", "궁극"];
+		            return ["rarity", "Ultimate"];
 		        case "penalty":
 		            return ["type", "Penalty"];
 		        case "created":
@@ -17229,7 +17235,7 @@ function updateCustomCard() {
 		        case "essence":
 		            return ["tags", "Essence"];
 		        case "combination":
-		            return ["tags", "결합물"];
+		            return ["tags", "Combination"];
 		        case "mix":
 		        	return ["mix", "all"]
 		        default:
@@ -18502,7 +18508,7 @@ async function lineTest(options = {}) {
         for (let ps of playerStates) {
             choiceValues.ps = ps;
         	for (let num of eventNumbers) {
-                console.log(`현재 실행 중: \n${enemy.name}-이벤트-${num} \n(Personality: ${choiceValues.ps}, 모드: ${gamemode == 1?"Hard":"일반"})`);
+                console.log(`현재 실행 중: \n${enemy.name}-이벤트-${num} \n(Personality: ${choiceValues.ps}, 모드: ${gamemode == 1?"Hard":"Normal"})`);
 
                 switch(num) {
                 case "개전":

@@ -1081,3 +1081,35 @@ label {
     left: 30vh;             /* Должно совпадать с шириной левой панели (width у #info-tab) */
     right: 7vw;             /* Должно совпадать с шириной правой панели (width у #button-tab) */
 }
+
+/* --- Стили для разделителя категорий (КЛАССЫ / РАСЫ) --- */
+.categoryTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2em 0; /* Добавил умеренные отступы для воздуха, можете убрать, если не нужно */
+}
+
+.categoryTitle h2 {
+    white-space: nowrap;
+    /* ИЗМЕНЕНИЕ ЗДЕСЬ: Добавляем !important, чтобы переопределить инлайн-стиль */
+    color: var(--color-accent) !important; 
+    font-size: 2em;
+    text-shadow: 0 0 8px var(--color-glow);
+}
+
+.categoryTitle div {
+    flex-grow: 1;
+    height: 1px;
+}
+
+.categoryTitle div:first-of-type {
+    margin-right: 15px;
+    background: linear-gradient(to right, transparent, var(--color-border));
+}
+
+.categoryTitle div:last-of-type {
+    margin-left: 15px;
+    background: linear-gradient(to left, transparent, var(--color-border));
+}

@@ -1,1424 +1,452 @@
+// Полностью переработанный cardTexts.js для английского языка
 const cardTexts = {
 	"trigger":{
-		"처음으로":{
-			"KOR": "<span style=\"color: gray;\">[Activates once]</span> "
-		},
-		"처음n번":{
-			"KOR": "<span style=\"color: gray;\">[Activates {duration} times]</span> "
-		},
-		"다음으로":{
-			"KOR": "<span style=\"color: gray;\">[Activates once]</span> "
-		},
-		"다음n번":{
-			"KOR": "<span style=\"color: gray;\">[Activates {duration} times]</span> "
-		},
-		"이라운드":{
-			"KOR": "For this round, "
-		},
-		"다음라운드":{
-			"KOR": "Until next round, "
-		},
-		"n라운드":{
-			"KOR": "For {amount} rounds, "
-		},
-		"n라운드후":{
-			"KOR": "After {amount} rounds, "
-		},
-		"결투시작시":{
-			"KOR": "<span style=\"color: gray;\">[Start of Duel]</span> "
-		},
-		"라운드시작시":{
-			"KOR": "<span style=\"color: gray;\">[Start of Round]</span> "
-		},
-		"라운드종료시":{
-			"KOR": "<span style=\"color: gray;\">[End of Round]</span> "
-		},
-		"획득시":{
-			"KOR": "<span style=\"color: gray;\">[On Gain]</span> "
-		},
-		"Position획득시":{
-			"KOR": "When you gain this Position, "
-		},
-		"Position상실시":{
-			"KOR": "When you lose this Position, "
-		},
-		"Position획득상실시":{
-			"KOR": "When you gain or lose this Position, "
-		},
-		"변형될시":{
-			"KOR": "<span style=\"color: gray;\">[Transformed]</span> "
-		},
-		"결합될시":{
-			"KOR": "<span style=\"color: gray;\">[Combined]</span> "
-		},
-		"Orgasm시":{
-			"KOR": "On Orgasm, "
-		},
-		"누군가Orgasm시":{
-			"KOR": "When you or the opponent has an Orgasm, "
-		},
-		"버려질시":{
-			"KOR": "<span style=\"color: gray;\">[Discarded]</span> "
-		},
-		"버릴시":{
-			"KOR": "When you discard a card, "
-		},
-		"만료시":{
-			"KOR": "<span style=\"color: gray;\">[Expired]</span> "
-		},
-		"자극시":{
-			"KOR": "When inflicting <b>[Stimulation]</b>, "
-		},
-		"자극받을시":{
-			"KOR": "When receiving <b>[Stimulation]</b>, "
-		},
-		"Opponent자극받을시":{
-			"KOR": "When the opponent receives <b>[Stimulation]</b>, "
-		},
-		"누군가자극받을시":{
-			"KOR": "When you or the opponent receives <b>[Stimulation]</b>, "
-		},
-		"회피시":{
-			"KOR": "When evading, "
-		},
-		"사용시":{
-			"KOR": "When you play a card, "
-		},
-		"attack사용시":{
-			"KOR": "When you play an Attack card, "
-		},
-		"보조사용시":{
-			"KOR": "When you play a Support card, "
-		},
-		"Position사용시":{
-			"KOR": "When you play a Position card, "
-		},
-		"Penalty사용시":{
-			"KOR": "When you play a Penalty card, "
-		},
-		"사격사용시":{
-			"KOR": "When you play a Shot card, "
-		},
-		"Opponent사용시":{
-			"KOR": "When the opponent plays a card, "
-		},
-		"Opponentattack사용시":{
-			"KOR": "When the opponent plays an Attack card, "
-		},
-		"Opponent보조사용시":{
-			"KOR": "When the opponent plays a Support card, "
-		},
-		"OpponentPosition사용시":{
-			"KOR": "When the opponent plays a Position card, "
-		},
-		"OpponentPenalty사용시":{
-			"KOR": "When the opponent plays a Penalty card, "
-		},
-		"도전자사용시":{
-			"KOR": "When the Challenger plays a card, "
-		},
-		"도전자attack사용시":{
-			"KOR": "When the Challenger plays an Attack card, "
-		},
-		"도전자보조사용시":{
-			"KOR": "When the Challenger plays a Support card, "
-		},
-		"도전자Position사용시":{
-			"KOR": "When the Challenger plays a Position card, "
-		},
-		"도전자Penalty사용시":{
-			"KOR": "When the Challenger plays a Penalty card, "
-		},
-		"Champion사용시":{
-			"KOR": "When the Champion plays a card, "
-		},
-		"Championattack사용시":{
-			"KOR": "When the Champion plays an Attack card, "
-		},
-		"Champion보조사용시":{
-			"KOR": "When the Champion plays a Support card, "
-		},
-		"ChampionPosition사용시":{
-			"KOR": "When the Champion plays a Position card, "
-		},
-		"ChampionPenalty사용시":{
-			"KOR": "When the Champion plays a Penalty card, "
-		},
-		"누군가사용시":{
-			"KOR": "When you or the opponent plays a card, "
-		},
-		"누군가attack사용시":{
-			"KOR": "When you or the opponent plays an Attack card, "
-		},
-		"누군가보조사용시":{
-			"KOR": "When you or the opponent plays a Support card, "
-		},
-		"누군가Position사용시":{
-			"KOR": "When you or the opponent plays a Position card, "
-		},
-		"누군가Penalty사용시":{
-			"KOR": "When you or the opponent plays a Penalty card, "
-		},
-		"생성사용시":{
-			"KOR": "When playing a generated card, "
-		},
-		"card획득시":{
-			"KOR": "When you gain a card, "
-		},
-		"Penalty획득시":{
-			"KOR": "When you gain a Penalty card, "
-		},
-		"card변형시":{
-			"KOR": "When a card is Transformed, "
-		},
-		"Magic만료시":{
-			"KOR": "When a Magic expires, "
-		},
-		"결합시":{
-			"KOR": "When combining cards, "
-		},
-		"초과치유시":{
-			"KOR": "When you overheal <b>Excitement</b>, "
-		},
+		"처음으로": { "KOR": "<span style=\"color: gray;\">[Activates once]</span> " },
+		"처음n번": { "KOR": "<span style=\"color: gray;\">[Activates {duration} times]</span> " },
+		"다음으로": { "KOR": "<span style=\"color: gray;\">[Activates once]</span> " },
+		"다음n번": { "KOR": "<span style=\"color: gray;\">[Activates {duration} times]</span> " },
+		"이라운드": { "KOR": "For this round, " },
+		"다음라운드": { "KOR": "For the next round, " },
+		"n라운드": { "KOR": "For {amount} rounds, " },
+		"n라운드후": { "KOR": "After {amount} rounds, " },
+		"결투시작시": { "KOR": "<span style=\"color: gray;\">[Start of Duel]</span> " },
+		"라운드시작시": { "KOR": "<span style=\"color: gray;\">[Start of Round]</span> " },
+		"라운드종료시": { "KOR": "<span style=\"color: gray;\">[End of Round]</span> " },
+		"획득시": { "KOR": "<span style=\"color: gray;\">[On Gain]</span> " },
+		"Position획득시": { "KOR": "When you gain this Position, " },
+		"Position상실시": { "KOR": "When you lose this Position, " },
+		"Position획득상실시": { "KOR": "When you gain or lose this Position, " },
+		"변형될시": { "KOR": "<span style=\"color: gray;\">[When Transformed]</span> " },
+		"결합될시": { "KOR": "<span style=\"color: gray;\">[When Combined]</span> " },
+		"Orgasm시": { "KOR": "On <b>Orgasm</b>, " },
+		"누군가Orgasm시": { "KOR": "When anyone has an <b>Orgasm</b>, " },
+		"버려질시": { "KOR": "<span style=\"color: gray;\">[When Discarded]</span> " },
+		"버릴시": { "KOR": "When you discard a card, " },
+		"만료시": { "KOR": "<span style=\"color: gray;\">[When Expired]</span> " },
+		"자극시": { "KOR": "When you inflict <b>Stimulation</b>, " },
+		"자극받을시": { "KOR": "When you receive <b>Stimulation</b>, " },
+		"Opponent자극받을시": { "KOR": "When the Opponent receives <b>Stimulation</b>, " },
+		"누군가자극받을시": { "KOR": "When anyone receives <b>Stimulation</b>, " },
+		"회피시": { "KOR": "When you evade, " },
+		"사용시": { "KOR": "When you play a card, " },
+		"attack사용시": { "KOR": "When you play an Attack card, " },
+		"Support사용시": { "KOR": "When you play a Support card, " },
+		"Position사용시": { "KOR": "When you play a Position card, " },
+		"Penalty사용시": { "KOR": "When you play a Penalty card, " },
+		"사격사용시": { "KOR": "When you play a Shot card, " },
+		"Opponent사용시": { "KOR": "When the Opponent plays a card, " },
+		"Opponentattack사용시": { "KOR": "When the Opponent plays an Attack card, " },
+		"OpponentSupport사용시": { "KOR": "When the Opponent plays a Support card, " },
+		"OpponentPosition사용시": { "KOR": "When the Opponent plays a Position card, " },
+		"OpponentPenalty사용시": { "KOR": "When the Opponent plays a Penalty card, " },
+		"도전자사용시": { "KOR": "When the Challenger plays a card, " },
+		"도전자attack사용시": { "KOR": "When the Challenger plays an Attack card, " },
+		"도전자Support사용시": { "KOR": "When the Challenger plays a Support card, " },
+		"도전자Position사용시": { "KOR": "When the Challenger plays a Position card, " },
+		"도전자Penalty사용시": { "KOR": "When the Challenger plays a Penalty card, " },
+		"Champion사용시": { "KOR": "When the Champion plays a card, " },
+		"Championattack사용시": { "KOR": "When the Champion plays an Attack card, " },
+		"ChampionSupport사용시": { "KOR": "When the Champion plays a Support card, " },
+		"ChampionPosition사용시": { "KOR": "When the Champion plays a Position card, " },
+		"ChampionPenalty사용시": { "KOR": "When the Champion plays a Penalty card, " },
+		"누군가사용시": { "KOR": "When anyone plays a card, " },
+		"누군가attack사용시": { "KOR": "When anyone plays an Attack card, " },
+		"누군가Support사용시": { "KOR": "When anyone plays a Support card, " },
+		"누군가Position사용시": { "KOR": "When anyone plays a Position card, " },
+		"누군가Penalty사용시": { "KOR": "When anyone plays a Penalty card, " },
+		"생성사용시": { "KOR": "When you play a generated card, " },
+		"card획득시": { "KOR": "When you gain a card, " },
+		"Penalty획득시": { "KOR": "When you gain a Penalty card, " },
+		"card변형시": { "KOR": "When a card is <b>Transformed</b>, " },
+		"Magic만료시": { "KOR": "When a Magic card expires, " },
+		"결합시": { "KOR": "When you <b>Combine</b> cards, " },
+		"초과치유시": { "KOR": "When you overheal <b>Excitement</b>, " },
 	},
 	"target":{
-		"수량":{
-			"KOR": "the number of {target}"
-		},
-		"반복배수숫자":{
-			"KOR": " times {repeat}"
-		},
-		"반복배수값":{
-			"KOR": " multiplied by {repeat}"
-		},
-		"Deck":{
-			"KOR": "{owner}'s deck"
-		},
-		"Deck조건":{
-			"KOR": "{cards} in {deck}"
-		},
-		"Deck목적":{
-			"KOR": "{cards} in {deck}"
-		},
-		"특수Deck":{
-			"KOR": "{amount} types of {cards}"
-		},
-		"스탯":{
-			"KOR": "{owner}'s {stat}"
-		},
-		"card정보":{
-			"KOR": "{card}'s {category}"
-		},
-		"효과발동자신":{
-			"KOR": "If none of your card effects activated this round, "
-		},
-		"효과발동":{
-			"KOR": "If none of {actor}'s card effects activated this round, "
-		},
-		"사용card자신":{
-			"KOR": "{cards} played this round"
-		},
-		"사용card":{
-			"KOR": "{cards} played by {actor} this round"
-		},
-		"시작card":{
-			"KOR": "{cards} in {deck} at the start of the duel"
-		},
-		"상태":{
-			"KOR": "the {state} {owner} has"
-		},
-		"상태자신":{
-			"KOR": "the {state} you have"
-		},
-		"상태목적":{
-			"KOR": "{owner}'s {state}"
-		},
-		"상태자신목적":{
-			"KOR": "{state}"
-		},
-
-		"결투동안":{
-			"KOR": "during the duel",
-		},
-		"이번라운드":{
-			"KOR": "this round",
-		},
-		"이전라운드":{
-			"KOR": "last round",
-		},
-		"최근라운드":{
-			"KOR": "in recent rounds",
-		},
-
-		"기록사용":{
-			"KOR": "{cards} {actor} played {time}",
-		},
-		"기록사용자신":{
-			"KOR": "{cards} you played {time}",
-		},
-		"기록버림":{
-			"KOR": "{cards} {actor} discarded {time}",
-		},
-		"기록버림자신":{
-			"KOR": "{cards} you discarded {time}",
-		},
-		"기록변형":{
-			"KOR": "cards Transformed {time}",
-		},
-		"기록결합":{
-			"KOR": "cards Combined {time}",
-		},
-		"기록Orgasm":{
-			"KOR": "the number of times {actor} had an <b>Orgasm</b> {time}",
-		},
-		"기록Orgasm자신":{
-			"KOR": "the number of times you had an <b>Orgasm</b> {time}",
-		},
-		"기록자극":{
-			"KOR": "the number of times {actor} inflicted <b>[Stimulation]</b> {time}",
-		},
-		"기록자극자신":{
-			"KOR": "the number of times you inflicted <b>[Stimulation]</b> {time}",
-		},
-		"기록자극받음":{
-			"KOR": "the number of times {actor} received <b>[Stimulation]</b> {time}",
-		},
-		"기록자극받음자신":{
-			"KOR": "the number of times you received <b>[Stimulation]</b> {time}",
-		},
-		"기록Excitement증가":{
-			"KOR": "<b>Excitement</b> {actor} gained {time}",
-		},
-		"기록Excitement증가자신":{
-			"KOR": "<b>Excitement</b> you gained {time}",
-		},
-		"기록Excitement감소":{
-			"KOR": "<b>Excitement</b> {actor} recovered {time}",
-		},
-		"기록Excitement감소자신":{
-			"KOR": "<b>Excitement</b> you recovered {time}",
-		},
-		"기록Lewdness증가":{
-			"KOR": "<b>Lewdness</b> gained {time}",
-		},
-		"기록Lewdness감소":{
-			"KOR": "<b>Lewdness</b> lost {time}",
-		},
-		"기록Heat증가":{
-			"KOR": "<b>Heat</b> gained {time}",
-		},
-		"기록Heat감소":{
-			"KOR": "<b>Heat</b> lost {time}",
-		},
-		"기록Lust획득":{
-			"KOR": "<b>Lust</b> gained {time}",
-		},
-		"기록Wetness획득":{
-			"KOR": "<b>Wetness</b> gained {time}",
-		},
-		"기록Sense Block획득":{
-			"KOR": "<b>Numbness</b> gained {time}",
-		},
-		"기록Corruption획득":{
-			"KOR": "<b>Corruption</b> gained {time}",
-		},
-		"기록획득":{
-			"KOR": "{cards} {actor} gained {time}",
-		},
-		"기록획득자신":{
-			"KOR": "{cards} you gained {time}",
-		},
-		"기록소모한Lust":{
-			"KOR": "<b>Lust</b> spent {time}",
-		},
-		"기록회피":{
-			"KOR": "the number of times {actor} evaded {time}",
-		},
-		"기록회피자신":{
-			"KOR": "the number of times you evaded {time}",
-		},
-		"기록만료Magic":{
-			"KOR": "{cards} expired {time}",
-		},
-
-		"Count숫자":{
-			"KOR": "{amount} times",
-		},
-		"Count값":{
-			"KOR": "by {amount}",
-		},
-		"Countcard":{
-			"KOR": "{amount}",
-		},
-		"Count상태":{
-			"KOR": "{amount}",
-		},
-		"Count발동":{
-			"KOR": "Activates {amount} times.",
-		},
-		"card들":{
-			"KOR": "{amount} {cards}",
-		},
-		"cardType들":{
-			"KOR": "{amount} types of {cards}",
-		},
-		"card전부":{
-			"KOR": "All {cards}",
-		},
-		"cardType전부":{
-			"KOR": "All types of {cards}",
-		},
-		"cardType":{
-			"KOR": "different {cards}",
-		},
-		"복사본":{
-			"KOR": "a copy of {card}",
-		},
-		"All트랩":{
-			"KOR": "All Trap cards in your deck",
-		},
-		"지속시간":{
-			"KOR": "the duration of {target}",
-		},
-		"소모한Lust":{
-			"KOR": "<b>Lust</b> spent",
-		},
-
-		"서로다른Crafted":{
-			"KOR": "different Crafted cards"
-		},
-
-		"Magic Slot":{
-			"KOR": "{cards} in Magic Slots"
-		},
+		"수량": { "KOR": "the number of {target}" },
+		"반복배수숫자": { "KOR": " {repeat} times" },
+		"반복배수값": { "KOR": " multiplied by {repeat}" },
+		"Deck": { "KOR": "{owner}'s Deck" },
+		"Deck조건": { "KOR": "{cards} in {deck}" },
+		"Deck목적": { "KOR": "{cards} in {deck}" },
+		"특수Deck": { "KOR": "{amount} types of {cards}" },
+		"스탯": { "KOR": "{owner}'s {stat}" },
+		"card정보": { "KOR": "{card}'s {category}" },
+		"효과발동자신": { "KOR": "If you haven't activated any card effects this round, " },
+		"효과발동": { "KOR": "If {actor} hasn't activated any card effects this round, " },
+		"사용card자신": { "KOR": "cards you played this round" },
+		"사용card": { "KOR": "cards {actor} played this round" },
+		"시작card": { "KOR": "{cards} in {deck} at the start of the duel" },
+		"상태": { "KOR": "{state} on {owner}" },
+		"상태자신": { "KOR": "your {state}" },
+		"상태목적": { "KOR": "{owner}'s {state}" },
+		"상태자신목적": { "KOR": "{state}" },
+		"결투동안": { "KOR": "this duel" },
+		"이번라운드": { "KOR": "this round" },
+		"이전라운드": { "KOR": "last round" },
+		"최근라운드": { "KOR": "in recent rounds" },
+		"기록사용": { "KOR": "the number of {cards} {actor} played {time}" },
+		"기록사용자신": { "KOR": "the number of {cards} you played {time}" },
+		"기록버림": { "KOR": "the number of {cards} {actor} discarded {time}" },
+		"기록버림자신": { "KOR": "the number of {cards} you discarded {time}" },
+		"기록변형": { "KOR": "the number of cards <b>Transformed</b> {time}" },
+		"기록결합": { "KOR": "the number of cards <b>Combined</b> {time}" },
+		"기록Orgasm": { "KOR": "the number of times {actor} has had an <b>Orgasm</b> {time}" },
+		"기록Orgasm자신": { "KOR": "the number of times you have had an <b>Orgasm</b> {time}" },
+		"기록자극": { "KOR": "the amount of <b>Stimulation</b> {actor} inflicted {time}" },
+		"기록자극자신": { "KOR": "the amount of <b>Stimulation</b> you inflicted {time}" },
+		"기록자극받음": { "KOR": "the amount of <b>Stimulation</b> {actor} received {time}" },
+		"기록자극받음자신": { "KOR": "the amount of <b>Stimulation</b> you received {time}" },
+		"기록Excitement증가": { "KOR": "<b>Excitement</b> {actor} gained {time}" },
+		"기록Excitement증가자신": { "KOR": "<b>Excitement</b> you gained {time}" },
+		"기록Excitement감소": { "KOR": "<b>Excitement</b> {actor} recovered {time}" },
+		"기록Excitement감소자신": { "KOR": "<b>Excitement</b> you recovered {time}" },
+		"기록Lewdness증가": { "KOR": "<b>Lewdness</b> gained {time}" },
+		"기록Lewdness감소": { "KOR": "<b>Lewdness</b> lost {time}" },
+		"기록Heat증가": { "KOR": "<b>Heat</b> gained {time}" },
+		"기록Heat감소": { "KOR": "<b>Heat</b> lost {time}" },
+		"기록Lust획득": { "KOR": "<b>Lust</b> gained {time}" },
+		"기록Wetness획득": { "KOR": "<b>Wetness</b> gained {time}" },
+		"기록Sense Block획득": { "KOR": "<b>Numbness</b> gained {time}" },
+		"기록Corruption획득": { "KOR": "<b>Corruption</b> gained {time}" },
+		"기록획득": { "KOR": "the number of {cards} {actor} gained {time}" },
+		"기록획득자신": { "KOR": "the number of {cards} you gained {time}" },
+		"기록소모한Lust": { "KOR": "<b>Lust</b> spent {time}" },
+		"기록회피": { "KOR": "the number of times {actor} evaded {time}" },
+		"기록회피자신": { "KOR": "the number of times you evaded {time}" },
+		"기록만료Magic": { "KOR": "{cards} that expired {time}" },
+		"Count숫자": { "KOR": "{amount}" }, // ВАЖНО: Убираем отсюда "times"
+        "CountTimes": { "KOR": "{amount} times" }, // ВАЖНО: Добавляем новый ключ
+		"Count값": { "KOR": "by {amount}" },
+		"Countcard": { "KOR": "{amount}" },
+		"Count상태": { "KOR": "{amount}" },
+		"Count발동": { "KOR": "Activates {amount} times." },
+		"card들": { "KOR": "{amount} {cards}" },
+		"cardType들": { "KOR": "{amount} types of {cards}" },
+		"card전부": { "KOR": "all {cards}" },
+		"cardType전부": { "KOR": "all types of {cards}" },
+		"cardType": { "KOR": "different {cards}" },
+		"복사본": { "KOR": "a copy of {card}" },
+		"All트랩": { "KOR": "all Trap cards in your deck" },
+		"지속시간": { "KOR": "{target}'s duration" },
+		"소모한Lust": { "KOR": "<b>Lust</b> spent" },
+		"서로다른Crafted": { "KOR": "different Crafted cards" },
+		"Magic Slot": { "KOR": "{cards} in your Magic Slots" },
 	},
 	"condition":{
-		"낼수None":{
-			"KOR": "Cannot be played.",
-		},
-		"낼수있음":{
-			"KOR": "Can be played {cond}.",
-		},
-		"존재":{
-			"KOR": "If you have {object}, ",
-		},
-		"비존재":{
-			"KOR": "If you do not have {object}, ",
-		},
-		"라운드시작시":{
-			"KOR": "<span style=\"color: gray;\">[Start of Round]</span> ",
-		},
-		"라운드종료시":{
-			"KOR": "<span style=\"color: gray;\">[End of Round]</span> ",
-		},
-		"라운드일치시작시":{
-			"KOR": "<span style=\"color: gray;\">[Start of Round {amount}]</span> ",
-		},
-		"라운드일치종료시":{
-			"KOR": "<span style=\"color: gray;\">[End of Round {amount}]</span> ",
-		},
-		"라운드일치특성":{
-			"KOR": "On round {amount}, ",
-		},
-		"라운드일치숫자":{
-			"KOR": "If it is round {amount}, ",
-		},
-		"라운드일치값":{
-			"KOR": "If the current round is {amount}, ",
-		},
-		"라운드초과특성":{
-			"KOR": "After round {amount}, ",
-		},
-		"라운드초과숫자":{
-			"KOR": "If more than {amount} rounds have passed, ",
-		},
-		"라운드초과값":{
-			"KOR": "If the current round is greater than {amount}, ",
-		},
-		"라운드이상특성":{
-			"KOR": "From round {amount}, ",
-		},
-		"라운드이상숫자":{
-			"KOR": "If {amount} or more rounds have passed, ",
-		},
-		"라운드이상값":{
-			"KOR": "If the current round is {amount} or greater, ",
-		},
-		"라운드미만특성":{
-			"KOR": "Before round {amount}, ",
-		},
-		"라운드미만숫자":{
-			"KOR": "If it is before round {amount}, ",
-		},
-		"라운드미만값":{
-			"KOR": "If the current round is less than {amount}, ",
-		},
-		"라운드이하특성":{
-			"KOR": "Until round {amount}, ",
-		},
-		"라운드이하숫자":{
-			"KOR": "If {amount} rounds have not yet passed, ",
-		},
-		"라운드이하값":{
-			"KOR": "If the current round is {amount} or less, ",
-		},
-		"라운드불일치특성":{
-			"KOR": "Except on round {amount}, ",
-		},
-		"라운드불일치숫자":{
-			"KOR": "If it is not round {amount}, ",
-		},
-		"라운드불일치값":{
-			"KOR": "If the current round is not {amount}, ",
-		},
-		"라운드포함시작시":{
-			"KOR": "<span style=\"color: gray;\">[Start of Round {amount}]</span> ",
-		},
-		"라운드포함종료시":{
-			"KOR": "<span style=\"color: gray;\">[End of Round {amount}]</span> ",
-		},
-		"라운드포함특성":{
-			"KOR": "On round {amount}, ",
-		},
-		"라운드포함":{
-			"KOR": "If it is round {amount}, ",
-		},
-
-		"DeckcardNone":{
-			"KOR": "If there is no {target}, ",
-		},
-		"Deckcard있음":{
-			"KOR": "If there is {target}, ",
-		},
-		"Deckcard일치숫자":{
-			"KOR": "If there are exactly {amount} {target}, ",
-		},
-		"Deckcard일치값":{
-			"KOR": "If there is exactly {amount} {target}, ",
-		},
-		"Deckcard초과숫자":{
-			"KOR": "If there are more than {amount} {target}, ",
-		},
-		"Deckcard초과값":{
-			"KOR": "If there is more than {amount} {target}, ",
-		},
-		"Deckcard미만숫자":{
-			"KOR": "If there are fewer than {amount} {target}, ",
-		},
-		"Deckcard미만값":{
-			"KOR": "If there is less than {amount} {target}, ",
-		},
-		"Deckcard이상숫자":{
-			"KOR": "If there are {amount} or more {target}, ",
-		},
-		"Deckcard이상값":{
-			"KOR": "If there is {amount} or more {target}, ",
-		},
-		"Deckcard이하숫자":{
-			"KOR": "If there are {amount} or fewer {target}, ",
-		},
-		"Deckcard이하값":{
-			"KOR": "If there is {amount} or less {target}, ",
-		},
-		"Deckcard불일치숫자":{
-			"KOR": "If there are not exactly {amount} {target}, ",
-		},
-		"Deckcard불일치값":{
-			"KOR": "If there is not exactly {amount} {target}, ",
-		},
-
-		"상태None":{
-			"KOR": "If you do not have {target}, ",
-		},
-		"상태있음":{
-			"KOR": "If you have {target}, ",
-		},
-		"상태일치숫자":{
-			"KOR": "If you have exactly {amount} {target}, ",
-		},
-		"상태일치값":{
-			"KOR": "If you have exactly {amount} {target}, ",
-		},
-		"상태초과숫자":{
-			"KOR": "If you have more than {amount} {target}, ",
-		},
-		"상태초과값":{
-			"KOR": "If you have more than {amount} {target}, ",
-		},
-		"상태미만숫자":{
-			"KOR": "If you have fewer than {amount} {target}, ",
-		},
-		"상태미만값":{
-			"KOR": "If you have less than {amount} {target}, ",
-		},
-		"상태이상숫자":{
-			"KOR": "If you have {amount} or more {target}, ",
-		},
-		"상태이상값":{
-			"KOR": "If you have {amount} or more {target}, ",
-		},
-		"상태이하숫자":{
-			"KOR": "If you have {amount} or fewer {target}, ",
-		},
-		"상태이하값":{
-			"KOR": "If you have {amount} or less {target}, ",
-		},
-		"상태불일치숫자":{
-			"KOR": "If you do not have exactly {amount} {target}, ",
-		},
-		"상태불일치값":{
-			"KOR": "If you do not have exactly {amount} {target}, ",
-		},
-
-		"값일치":{
-			"KOR": "If {target} is {amount}, ",
-		},
-		"값초과":{
-			"KOR": "If {target} is greater than {amount}, ",
-		},
-		"값미만":{
-			"KOR": "If {target} is less than {amount}, ",
-		},
-		"값이상":{
-			"KOR": "If {target} is {amount} or greater, ",
-		},
-		"값이하":{
-			"KOR": "If {target} is {amount} or less, ",
-		},
-		"값불일치":{
-			"KOR": "If {target} is not {amount}, ",
-		},
-
-		"낸cardNone":{
-			"KOR": "If there is no {target}, ",
-		},
-		"낸card있음":{
-			"KOR": "If there is {target}, ",
-		},
-		"낸card일치숫자":{
-			"KOR": "If {target} is exactly {amount}, ",
-		},
-		"낸card일치값":{
-			"KOR": "If {target} is exactly {amount}, ",
-		},
-		"낸card초과숫자":{
-			"KOR": "If {target} is more than {amount}, ",
-		},
-		"낸card초과값":{
-			"KOR": "If {target} is more than {amount}, ",
-		},
-		"낸card미만숫자":{
-			"KOR": "If {target} is less than {amount}, ",
-		},
-		"낸card미만값":{
-			"KOR": "If {target} is less than {amount}, ",
-		},
-		"낸card이상숫자":{
-			"KOR": "If {target} is {amount} or more, ",
-		},
-		"낸card이상값":{
-			"KOR": "If {target} is {amount} or more, ",
-		},
-		"낸card이하숫자":{
-			"KOR": "If {target} is {amount} or less, ",
-		},
-		"낸card이하값":{
-			"KOR": "If {target} is {amount} or less, ",
-		},
-		"낸card불일치숫자":{
-			"KOR": "If {target} is not exactly {amount}, ",
-		},
-		"낸card불일치값":{
-			"KOR": "If {target} is not exactly {amount}, ",
-		},
-
-		"이벤트자극":{
-			"KOR": "If {actor} inflicted <b>[Stimulation]</b> {time}, ",
-		},
-		"이벤트자극자신":{
-			"KOR": "If you inflicted <b>[Stimulation]</b> {time}, ",
-		},
-		"이벤트자극부정":{
-			"KOR": "If {actor} did not inflict <b>[Stimulation]</b> {time}, ",
-		},
-		"이벤트자극자신부정":{
-			"KOR": "If you did not inflict <b>[Stimulation]</b> {time}, ",
-		},
-		"이벤트자극일치":{
-			"KOR": "If {actor} inflicted <b>[Stimulation]</b> exactly {amount} times {time}, ",
-		},
-		"이벤트자극자신일치":{
-			"KOR": "If you inflicted <b>[Stimulation]</b> exactly {amount} times {time}, ",
-		},
-		"이벤트자극초과":{
-			"KOR": "If {actor} inflicted <b>[Stimulation]</b> more than {amount} times {time}, ",
-		},
-		"이벤트자극자신초과":{
-			"KOR": "If you inflicted <b>[Stimulation]</b> more than {amount} times {time}, ",
-		},
-		"이벤트자극미만":{
-			"KOR": "If {actor} inflicted <b>[Stimulation]</b> fewer than {amount} times {time}, ",
-		},
-		"이벤트자극자신미만":{
-			"KOR": "If you inflicted <b>[Stimulation]</b> fewer than {amount} times {time}, ",
-		},
-		"이벤트자극이상":{
-			"KOR": "If {actor} inflicted <b>[Stimulation]</b> {amount} or more times {time}, ",
-		},
-		"이벤트자극자신이상":{
-			"KOR": "If you inflicted <b>[Stimulation]</b> {amount} or more times {time}, ",
-		},
-		"이벤트자극이하":{
-			"KOR": "If {actor} inflicted <b>[Stimulation]</b> {amount} or fewer times {time}, ",
-		},
-		"이벤트자극자신이하":{
-			"KOR": "If you inflicted <b>[Stimulation]</b> {amount} or fewer times {time}, ",
-		},
-		"이벤트자극불일치":{
-			"KOR": "If {actor} did not inflict <b>[Stimulation]</b> exactly {amount} times {time}, ",
-		},
-		"이벤트자극자신불일치":{
-			"KOR": "If you did not inflict <b>[Stimulation]</b> exactly {amount} times {time}, ",
-		},
-
-		"이벤트자극받음":{
-			"KOR": "If {actor} received <b>[Stimulation]</b> {time}, ",
-		},
-		"이벤트자극받음자신":{
-			"KOR": "If you received <b>[Stimulation]</b> {time}, ",
-		},
-		"이벤트자극받음부정":{
-			"KOR": "If {actor} did not receive <b>[Stimulation]</b> {time}, ",
-		},
-		"이벤트자극받음자신부정":{
-			"KOR": "If you did not receive <b>[Stimulation]</b> {time}, ",
-		},
-		"이벤트자극받음일치":{
-			"KOR": "If {actor} received <b>[Stimulation]</b> exactly {amount} times {time}, ",
-		},
-		"이벤트자극받음자신일치":{
-			"KOR": "If you received <b>[Stimulation]</b> exactly {amount} times {time}, ",
-		},
-		"이벤트자극받음초과":{
-			"KOR": "If {actor} received <b>[Stimulation]</b> more than {amount} times {time}, ",
-		},
-		"이벤트자극받음자신초과":{
-			"KOR": "If you received <b>[Stimulation]</b> more than {amount} times {time}, ",
-		},
-		"이벤트자극받음미만":{
-			"KOR": "If {actor} received <b>[Stimulation]</b> fewer than {amount} times {time}, ",
-		},
-		"이벤트자극받음자신미만":{
-			"KOR": "If you received <b>[Stimulation]</b> fewer than {amount} times {time}, ",
-		},
-		"이벤트자극받음이상":{
-			"KOR": "If {actor} received <b>[Stimulation]</b> {amount} or more times {time}, ",
-		},
-		"이벤트자극받음자신이상":{
-			"KOR": "If you received <b>[Stimulation]</b> {amount} or more times {time}, ",
-		},
-		"이벤트자극받음이하":{
-			"KOR": "If {actor} received <b>[Stimulation]</b> {amount} or fewer times {time}, ",
-		},
-		"이벤트자극받음자신이하":{
-			"KOR": "If you received <b>[Stimulation]</b> {amount} or fewer times {time}, ",
-		},
-		"이벤트자극받음불일치":{
-			"KOR": "If {actor} did not receive <b>[Stimulation]</b> exactly {amount} times {time}, ",
-		},
-		"이벤트자극받음자신불일치":{
-			"KOR": "If you did not receive <b>[Stimulation]</b> exactly {amount} times {time}, ",
-		},
-
-		"이벤트Orgasm":{
-			"KOR": "If {actor} had an <b>Orgasm</b> {time}, ",
-		},
-		"이벤트Orgasm자신":{
-			"KOR": "If you had an <b>Orgasm</b> {time}, ",
-		},
-		"이벤트Orgasm부정":{
-			"KOR": "If {actor} did not have an <b>Orgasm</b> {time}, ",
-		},
-		"이벤트Orgasm자신부정":{
-			"KOR": "If you did not have an <b>Orgasm</b> {time}, ",
-		},
-		"이벤트Orgasm일치":{
-			"KOR": "If {actor} had an <b>Orgasm</b> exactly {amount} times {time}, ",
-		},
-		"이벤트Orgasm자신일치":{
-			"KOR": "If you had an <b>Orgasm</b> exactly {amount} times {time}, ",
-		},
-		"이벤트Orgasm초과":{
-			"KOR": "If {actor} had an <b>Orgasm</b> more than {amount} times {time}, ",
-		},
-		"이벤트Orgasm자신초과":{
-			"KOR": "If you had an <b>Orgasm</b> more than {amount} times {time}, ",
-		},
-		"이벤트Orgasm미만":{
-			"KOR": "If {actor} had an <b>Orgasm</b> fewer than {amount} times {time}, ",
-		},
-		"이벤트Orgasm자신미만":{
-			"KOR": "If you had an <b>Orgasm</b> fewer than {amount} times {time}, ",
-		},
-		"이벤트Orgasm이상":{
-			"KOR": "If {actor} had an <b>Orgasm</b> {amount} or more times {time}, ",
-		},
-		"이벤트Orgasm자신이상":{
-			"KOR": "If you had an <b>Orgasm</b> {amount} or more times {time}, ",
-		},
-		"이벤트Orgasm이하":{
-			"KOR": "If {actor} had an <b>Orgasm</b> {amount} or fewer times {time}, ",
-		},
-		"이벤트Orgasm자신이하":{
-			"KOR": "If you had an <b>Orgasm</b> {amount} or fewer times {time}, ",
-		},
-		"이벤트Orgasm불일치":{
-			"KOR": "If {actor} did not have an <b>Orgasm</b> exactly {amount} times {time}, ",
-		},
-		"이벤트Orgasm자신불일치":{
-			"KOR": "If you did not have an <b>Orgasm</b> exactly {amount} times {time}, ",
-		},
-
-		"이벤트Excitement증가":{
-			"KOR": "If {target} was gained {time}, ",
-		},
-		"이벤트Excitement증가부정":{
-			"KOR": "If {target} was not gained {time}, ",
-		},
-		"이벤트Excitement증가일치":{
-			"KOR": "If exactly {amount} {target} was gained {time}, ",
-		},
-		"이벤트Excitement증가초과":{
-			"KOR": "If more than {amount} {target} was gained {time}, ",
-		},
-		"이벤트Excitement증가미만":{
-			"KOR": "If less than {amount} {target} was gained {time}, ",
-		},
-		"이벤트Excitement증가이상":{
-			"KOR": "If {amount} or more {target} was gained {time}, ",
-		},
-		"이벤트Excitement증가이하":{
-			"KOR": "If {amount} or less {target} was gained {time}, ",
-		},
-		"이벤트Excitement증가불일치":{
-			"KOR": "If not exactly {amount} {target} was gained {time}, ",
-		},
-
-		"이벤트Excitement회복":{
-			"KOR": "If {target} was recovered {time}, ",
-		},
-		"이벤트Excitement회복부정":{
-			"KOR": "If {target} was not recovered {time}, ",
-		},
-		"이벤트Excitement회복일치":{
-			"KOR": "If exactly {amount} {target} was recovered {time}, ",
-		},
-		"이벤트Excitement회복초과":{
-			"KOR": "If more than {amount} {target} was recovered {time}, ",
-		},
-		"이벤트Excitement회복미만":{
-			"KOR": "If less than {amount} {target} was recovered {time}, ",
-		},
-		"이벤트Excitement회복이상":{
-			"KOR": "If {amount} or more {target} was recovered {time}, ",
-		},
-		"이벤트Excitement회복이하":{
-			"KOR": "If {amount} or less {target} was recovered {time}, ",
-		},
-		"이벤트Excitement회복불일치":{
-			"KOR": "If not exactly {amount} {target} was recovered {time}, ",
-		},
-
-		"이벤트Count":{
-			"KOR": "If you have {target}, ",
-		},
-		"이벤트Count부정":{
-			"KOR": "If you do not have {target}, ",
-		},
-		"이벤트Count일치":{
-			"KOR": "If you have exactly {amount} {target}, ",
-		},
-		"이벤트Count초과":{
-			"KOR": "If you have more than {amount} {target}, ",
-		},
-		"이벤트Count미만":{
-			"KOR": "If you have less than {amount} {target}, ",
-		},
-		"이벤트Count이상":{
-			"KOR": "If you have {amount} or more {target}, ",
-		},
-		"이벤트Count이하":{
-			"KOR": "If you have {amount} or less {target}, ",
-		},
-		"이벤트Count불일치":{
-			"KOR": "If you do not have exactly {amount} {target}, ",
-		},
-
-		"이벤트회피":{
-			"KOR": "If {actor} evaded {time}, ",
-		},
-		"이벤트회피자신":{
-			"KOR": "If you evaded {time}, ",
-		},
-		"이벤트회피부정":{
-			"KOR": "If {actor} did not evade {time}, ",
-		},
-		"이벤트회피자신부정":{
-			"KOR": "If you did not evade {time}, ",
-		},
-		"이벤트회피일치":{
-			"KOR": "If {actor} evaded exactly {amount} times {time}, ",
-		},
-		"이벤트회피자신일치":{
-			"KOR": "If you evaded exactly {amount} times {time}, ",
-		},
-		"이벤트회피초과":{
-			"KOR": "If {actor} evaded more than {amount} times {time}, ",
-		},
-		"이벤트회피자신초과":{
-			"KOR": "If you evaded more than {amount} times {time}, ",
-		},
-		"이벤트회피미만":{
-			"KOR": "If {actor} evaded fewer than {amount} times {time}, ",
-		},
-		"이벤트회피자신미만":{
-			"KOR": "If you evaded fewer than {amount} times {time}, ",
-		},
-		"이벤트회피이상":{
-			"KOR": "If {actor} evaded {amount} or more times {time}, ",
-		},
-		"이벤트회피자신이상":{
-			"KOR": "If you evaded {amount} or more times {time}, ",
-		},
-		"이벤트회피이하":{
-			"KOR": "If {actor} evaded {amount} or fewer times {time}, ",
-		},
-		"이벤트회피자신이하":{
-			"KOR": "If you evaded {amount} or fewer times {time}, ",
-		},
-		"이벤트회피불일치":{
-			"KOR": "If {actor} did not evade exactly {amount} times {time}, ",
-		},
-		"이벤트회피자신불일치":{
-			"KOR": "If you did not evade exactly {amount} times {time}, ",
-		},
-
-		"원본일치":{
-			"KOR": "If the original card is {card}, ",
-		},
-		"원본불일치":{
-			"KOR": "If the original card is not {card}, ",
-		},
-
-		"강화존재":{
-			"KOR": "If upgraded, ",
-		},
-		"강화부정":{
-			"KOR": "If not upgraded, ",
-		},
-		"강화일치":{
-			"KOR": "If upgraded exactly {amount} times, ",
-		},
-		"강화초과":{
-			"KOR": "If upgraded more than {amount} times, ",
-		},
-		"강화미만":{
-			"KOR": "If upgraded fewer than {amount} times, ",
-		},
-		"강화이상":{
-			"KOR": "If upgraded {amount} or more times, ",
-		},
-		"강화이하":{
-			"KOR": "If upgraded {amount} or fewer times, ",
-		},
-		"강화불일치":{
-			"KOR": "If not upgraded exactly {amount} times, ",
-		},
+		"낼수None": { "KOR": "Cannot be played." },
+		"낼수있음": { "KOR": "Playable if {cond}." },
+		"존재": { "KOR": "If you have {object}, " },
+		"비존재": { "KOR": "If you don't have {object}, " },
+		"라운드시작시": { "KOR": "<span style=\"color: gray;\">[Start of Round]</span> " },
+		"라운드종료시": { "KOR": "<span style=\"color: gray;\">[End of Round]</span> " },
+		"라운드일치시작시": { "KOR": "<span style=\"color: gray;\">[Start of Round {amount}]</span> " },
+		"라운드일치종료시": { "KOR": "<span style=\"color: gray;\">[End of Round {amount}]</span> " },
+		"라운드일치특성": { "KOR": "On round {amount}, " },
+		"라운드일치숫자": { "KOR": "If it is round {amount}, " },
+		"라운드일치값": { "KOR": "If the current round is {amount}, " },
+		"라운드초과특성": { "KOR": "After round {amount}, " },
+		"라운드초과숫자": { "KOR": "If the round is after {amount}, " },
+		"라운드초과값": { "KOR": "If the current round is greater than {amount}, " },
+		"라운드이상특성": { "KOR": "On round {amount} and after, " },
+		"라운드이상숫자": { "KOR": "If it is round {amount} or later, " },
+		"라운드이상값": { "KOR": "If the current round is {amount} or greater, " },
+		"라운드미만특성": { "KOR": "Before round {amount}, " },
+		"라운드미만숫자": { "KOR": "If it is before round {amount}, " },
+		"라운드미만값": { "KOR": "If the current round is less than {amount}, " },
+		"라운드이하특성": { "KOR": "Until the end of round {amount}, " },
+		"라운드이하숫자": { "KOR": "If it is round {amount} or earlier, " },
+		"라운드이하값": { "KOR": "If the current round is {amount} or less, " },
+		"라운드불일치특성": { "KOR": "If it is not round {amount}, " },
+		"라운드불일치숫자": { "KOR": "If it is not round {amount}, " },
+		"라운드불일치값": { "KOR": "If the current round is not {amount}, " },
+		"라운드포함시작시": { "KOR": "<span style=\"color: gray;\">[Start of Round {amount}]</span> " },
+		"라운드포함종료시": { "KOR": "<span style=\"color: gray;\">[End of Round {amount}]</span> " },
+		"라운드포함특성": { "KOR": "On rounds {amount}, " },
+		"라운드포함": { "KOR": "If it is round {amount}, " },
+		"DeckcardNone": { "KOR": "If there are no {target}, " },
+		"Deckcard있음": { "KOR": "If there is at least one {target}, " },
+		"Deckcard일치숫자": { "KOR": "If there are exactly {amount} {target}, " },
+		"Deckcard일치값": { "KOR": "If the number of {target} is {amount}, " },
+		"Deckcard초과숫자": { "KOR": "If there are more than {amount} {target}, " },
+		"Deckcard초과값": { "KOR": "If the number of {target} is greater than {amount}, " },
+		"Deckcard미만숫자": { "KOR": "If there are fewer than {amount} {target}, " },
+		"Deckcard미만값": { "KOR": "If the number of {target} is less than {amount}, " },
+		"Deckcard이상숫자": { "KOR": "If there are {amount} or more {target}, " },
+		"Deckcard이상값": { "KOR": "If the number of {target} is {amount} or more, " },
+		"Deckcard이하숫자": { "KOR": "If there are {amount} or fewer {target}, " },
+		"Deckcard이하값": { "KOR": "If the number of {target} is {amount} or less, " },
+		"Deckcard불일치숫자": { "KOR": "If the number of {target} is not {amount}, " },
+		"Deckcard불일치값": { "KOR": "If the number of {target} is not {amount}, " },
+		"상태None": { "KOR": "If you don't have {target}, " },
+		"상태있음": { "KOR": "If you have {target}, " },
+		"상태일치숫자": { "KOR": "If you have exactly {amount} {target}, " },
+		"상태일치값": { "KOR": "If you have exactly {amount} of {target}, " },
+		"상태초과숫자": { "KOR": "If you have more than {amount} {target}, " },
+		"상태초과값": { "KOR": "If you have more than {amount} of {target}, " },
+		"상태미만숫자": { "KOR": "If you have fewer than {amount} {target}, " },
+		"상태미만값": { "KOR": "If you have less than {amount} of {target}, " },
+		"상태이상숫자": { "KOR": "If you have {amount} or more {target}, " },
+		"상태이상값": { "KOR": "If you have {amount} or more of {target}, " },
+		"상태이하숫자": { "KOR": "If you have {amount} or fewer {target}, " },
+		"상태이하값": { "KOR": "If you have {amount} or less of {target}, " },
+		"상태불일치숫자": { "KOR": "If you don't have exactly {amount} {target}, " },
+		"상태불일치값": { "KOR": "If you don't have exactly {amount} of {target}, " },
+		"값일치": { "KOR": "If {target} is {amount}, " },
+		"값초과": { "KOR": "If {target} is greater than {amount}, " },
+		"값미만": { "KOR": "If {target} is less than {amount}, " },
+		"값이상": { "KOR": "If {target} is {amount} or greater, " },
+		"값이하": { "KOR": "If {target} is {amount} or less, " },
+		"값불일치": { "KOR": "If {target} is not {amount}, " },
+		"낸cardNone": { "KOR": "If no {target} were played, " },
+		"낸card있음": { "KOR": "If any {target} were played, " },
+		"낸card일치숫자": { "KOR": "If exactly {amount} {target} were played, " },
+		"낸card일치값": { "KOR": "If the number of {target} played is {amount}, " },
+		"낸card초과숫자": { "KOR": "If more than {amount} {target} were played, " },
+		"낸card초과값": { "KOR": "If the number of {target} played is more than {amount}, " },
+		"낸card미만숫자": { "KOR": "If fewer than {amount} {target} were played, " },
+		"낸card미만값": { "KOR": "If the number of {target} played is less than {amount}, " },
+		"낸card이상숫자": { "KOR": "If {amount} or more {target} were played, " },
+		"낸card이상값": { "KOR": "If the number of {target} played is {amount} or more, " },
+		"낸card이하숫자": { "KOR": "If {amount} or fewer {target} were played, " },
+		"낸card이하값": { "KOR": "If the number of {target} played is {amount} or less, " },
+		"낸card불일치숫자": { "KOR": "If the number of {target} played was not {amount}, " },
+		"낸card불일치값": { "KOR": "If the number of {target} played was not {amount}, " },
+		"이벤트자극": { "KOR": "If {actor} inflicted <b>Stimulation</b> {time}, " },
+		"이벤트자극자신": { "KOR": "If you inflicted <b>Stimulation</b> {time}, " },
+		"이벤트자극부정": { "KOR": "If {actor} did not inflict <b>Stimulation</b> {time}, " },
+		"이벤트자극자신부정": { "KOR": "If you did not inflict <b>Stimulation</b> {time}, " },
+		"이벤트자극일치": { "KOR": "If {actor} inflicted <b>Stimulation</b> exactly {amount} {time}, " },
+		"이벤트자극자신일치": { "KOR": "If you inflicted <b>Stimulation</b> exactly {amount} {time}, " },
+		"이벤트자극초과": { "KOR": "If {actor} inflicted <b>Stimulation</b> more than {amount} {time}, " },
+		"이벤트자극자신초과": { "KOR": "If you inflicted <b>Stimulation</b> more than {amount} {time}, " },
+		"이벤트자극미만": { "KOR": "If {actor} inflicted <b>Stimulation</b> fewer than {amount} {time}, " },
+		"이벤트자극자신미만": { "KOR": "If you inflicted <b>Stimulation</b> fewer than {amount} {time}, " },
+		"이벤트자극이상": { "KOR": "If {actor} inflicted <b>Stimulation</b> {amount} or more {time}, " },
+		"이벤트자극자신이상": { "KOR": "If you inflicted <b>Stimulation</b> {amount} or more {time}, " },
+		"이벤트자극이하": { "KOR": "If {actor} inflicted <b>Stimulation</b> {amount} or fewer {time}, " },
+		"이벤트자극자신이하": { "KOR": "If you inflicted <b>Stimulation</b> {amount} or fewer {time}, " },
+		"이벤트자극불일치": { "KOR": "If {actor} did not inflict <b>Stimulation</b> exactly {amount} {time}, " },
+		"이벤트자극자신불일치": { "KOR": "If you did not inflict <b>Stimulation</b> exactly {amount} {time}, " },
+		"이벤트자극받음": { "KOR": "If {actor} received <b>Stimulation</b> {time}, " },
+		"이벤트자극받음자신": { "KOR": "If you received <b>Stimulation</b> {time}, " },
+		"이벤트자극받음부정": { "KOR": "If {actor} did not receive <b>Stimulation</b> {time}, " },
+		"이벤트자극받음자신부정": { "KOR": "If you did not receive <b>Stimulation</b> {time}, " },
+		"이벤트자극받음일치": { "KOR": "If {actor} received <b>Stimulation</b> exactly {amount} {time}, " },
+		"이벤트자극받음자신일치": { "KOR": "If you received <b>Stimulation</b> exactly {amount} {time}, " },
+		"이벤트자극받음초과": { "KOR": "If {actor} received <b>Stimulation</b> more than {amount} {time}, " },
+		"이벤트자극받음자신초과": { "KOR": "If you received <b>Stimulation</b> more than {amount} {time}, " },
+		"이벤트자극받음미만": { "KOR": "If {actor} received <b>Stimulation</b> fewer than {amount} {time}, " },
+		"이벤트자극받음자신미만": { "KOR": "If you received <b>Stimulation</b> fewer than {amount} {time}, " },
+		"이벤트자극받음이상": { "KOR": "If {actor} received <b>Stimulation</b> {amount} or more {time}, " },
+		"이벤트자극받음자신이상": { "KOR": "If you received <b>Stimulation</b> {amount} or more {time}, " },
+		"이벤트자극받음이하": { "KOR": "If {actor} received <b>Stimulation</b> {amount} or fewer {time}, " },
+		"이벤트자극받음자신이하": { "KOR": "If you received <b>Stimulation</b> {amount} or fewer {time}, " },
+		"이벤트자극받음불일치": { "KOR": "If {actor} did not receive <b>Stimulation</b> exactly {amount} {time}, " },
+		"이벤트자극받음자신불일치": { "KOR": "If you did not receive <b>Stimulation</b> exactly {amount} {time}, " },
+		"이벤트Orgasm": { "KOR": "If {actor} had an <b>Orgasm</b> {time}, " },
+		"이벤트Orgasm자신": { "KOR": "If you had an <b>Orgasm</b> {time}, " },
+		"이벤트Orgasm부정": { "KOR": "If {actor} did not have an <b>Orgasm</b> {time}, " },
+		"이벤트Orgasm자신부정": { "KOR": "If you did not have an <b>Orgasm</b> {time}, " },
+		"이벤트Orgasm일치": { "KOR": "If {actor} had an <b>Orgasm</b> exactly {amount} {time}, " },
+		"이벤트Orgasm자신일치": { "KOR": "If you had an <b>Orgasm</b> exactly {amount} {time}, " },
+		"이벤트Orgasm초과": { "KOR": "If {actor} had an <b>Orgasm</b> more than {amount} {time}, " },
+		"이벤트Orgasm자신초과": { "KOR": "If you had an <b>Orgasm</b> more than {amount} {time}, " },
+		"이벤트Orgasm미만": { "KOR": "If {actor} had an <b>Orgasm</b> fewer than {amount} {time}, " },
+		"이벤트Orgasm자신미만": { "KOR": "If you had an <b>Orgasm</b> fewer than {amount} {time}, " },
+		"이벤트Orgasm이상": { "KOR": "If {actor} had an <b>Orgasm</b> {amount} or more {time}, " },
+		"이벤트Orgasm자신이상": { "KOR": "If you had an <b>Orgasm</b> {amount} or more {time}, " },
+		"이벤트Orgasm이하": { "KOR": "If {actor} had an <b>Orgasm</b> {amount} or fewer {time}, " },
+		"이벤트Orgasm자신이하": { "KOR": "If you had an <b>Orgasm</b> {amount} or fewer {time}, " },
+		"이벤트Orgasm불일치": { "KOR": "If {actor} did not have an <b>Orgasm</b> exactly {amount} {time}, " },
+		"이벤트Orgasm자신불일치": { "KOR": "If you did not have an <b>Orgasm</b> exactly {amount} {time}, " },
+		"이벤트Count": { "KOR": "If {target} occurred, " },
+		"이벤트Count부정": { "KOR": "If {target} did not occur, " },
+		"이벤트Count일치": { "KOR": "If the total {target} is exactly {amount}, " },
+		"이벤트Count초과": { "KOR": "If the total {target} is more than {amount}, " },
+		"이벤트Count미만": { "KOR": "If the total {target} is less than {amount}, " },
+		"이벤트Count이상": { "KOR": "If the total {target} is {amount} or more, " },
+		"이벤트Count이하": { "KOR": "If the total {target} is {amount} or less, " },
+		"이벤트Count불일치": { "KOR": "If the total {target} is not {amount}, " },
+		"이벤트회피": { "KOR": "If {actor} evaded {time}, " },
+		"이벤트회피자신": { "KOR": "If you evaded {time}, " },
+		"이벤트회피부정": { "KOR": "If {actor} did not evade {time}, " },
+		"이벤트회피자신부정": { "KOR": "If you did not evade {time}, " },
+		"이벤트회피일치": { "KOR": "If {actor} evaded exactly {amount} {time}, " },
+		"이벤트회피자신일치": { "KOR": "If you evaded exactly {amount} {time}, " },
+		"이벤트회피초과": { "KOR": "If {actor} evaded more than {amount} {time}, " },
+		"이벤트회피자신초과": { "KOR": "If you evaded more than {amount} {time}, " },
+		"이벤트회피미만": { "KOR": "If {actor} evaded fewer than {amount} {time}, " },
+		"이벤트회피자신미만": { "KOR": "If you evaded fewer than {amount} {time}, " },
+		"이벤트회피이상": { "KOR": "If {actor} evaded {amount} or more {time}, " },
+		"이벤트회피자신이상": { "KOR": "If you evaded {amount} or more {time}, " },
+		"이벤트회피이하": { "KOR": "If {actor} evaded {amount} or fewer {time}, " },
+		"이벤트회피자신이하": { "KOR": "If you evaded {amount} or fewer {time}, " },
+		"이벤트회피불일치": { "KOR": "If {actor} did not evade exactly {amount} {time}, " },
+		"이벤트회피자신불일치": { "KOR": "If you did not evade exactly {amount} {time}, " },
+		"원본일치": { "KOR": "If the original card is {card}, " },
+		"원본불일치": { "KOR": "If the original card is not {card}, " },
+		"강화존재": { "KOR": "If upgraded, " },
+		"강화부정": { "KOR": "If not upgraded, " },
+		"강화일치": { "KOR": "If upgraded exactly {amount} times, " },
+		"강화초과": { "KOR": "If upgraded more than {amount} times, " },
+		"강화미만": { "KOR": "If upgraded fewer than {amount} times, " },
+		"강화이상": { "KOR": "If upgraded {amount} or more times, " },
+		"강화이하": { "KOR": "If upgraded {amount} or fewer times, " },
+		"강화불일치": { "KOR": "If not upgraded exactly {amount} times, " },
 	},
-
 	"effect":{
-		"자극":{
-			"KOR": "Inflict <b>[Stimulation]</b> on {repeat1} {target} {repeat2} .",
-		},
-		"Orgasm":{
-			"KOR": "Cause {repeat1} {target} to <b>Orgasm</b> {repeat2}.",
-		},
-		"상태부여Name":{
-			"KOR": "Apply {repeat} <b>{state}</b> to {target}.",
-		},
-		"헤더":{
-			"KOR": "<b>{value}:</b> ",
-		},
-		"헤더값":{
-			"KOR": "<b>{value}({amount}):</b> ",
-		},
-		"클라이맥스":{
-			"KOR": "<span style=\"color: gray;\">Orgasm</span>",
-		},
-		"자동시전":{
-			"KOR": "<span style=\"color: gray;\">Auto Cast ({amount})</span>",
-		},
-		"영구시전":{
-			"KOR": "<span style=\"color: gray;\">Auto Cast (Infinite)</span>",
-		},
-		"시전":{
-			"KOR": "<span style=\"color: gray;\">({amount} uses)</span>",
-		},
-		"무한시전":{
-			"KOR": "<span style=\"color: gray;\">(Infinite uses)</span>",
-		},
-		"반복":{
-			"KOR": "Repeat {repeat} times.",
-		},
-
-		"증가숫자":{
-			"KOR": "{repeat} {value}&nbsp;<b>+{amount}</b>.",
-		},
-		"감소숫자":{
-			"KOR": "{repeat} {value}&nbsp;<b>{amount}</b>.",
-		},
-		"증가값":{
-			"KOR": "Increase {value} by {amount}.",
-		},
-		"감소값":{
-			"KOR": "Decrease {value} by {amount}.",
-		},
-		"배수숫자":{
-			"KOR": "Multiply {value} by {amount}.",
-		},
-		"지정숫자":{
-			"KOR": "Set {value} to {amount}.",
-		},
-		"지정값":{
-			"KOR": "Make {value} equal to {amount}.",
-		},
-
-		"Position삭제":{
-			"KOR": "Remove the <b>Position</b>.",
-		},
-
-		"Position부여":{
-			"KOR": "<span style='color: gray;''><i>(Changes to the following <b>Position</b>.)</i></span>",
-		},
-
-		"Deckcard획득":{
-			"KOR": "Gain {repeat} {card}.",
-		},
-		"Deckcard선택획득":{
-			"KOR": "Choose a {card} and gain {repeat} copies of it.",
-		},
-		"Deckcard추가":{
-			"KOR": "Give {target} {repeat} {card}.",
-		},
-
-
-		"패배":{
-			"KOR": "Lose the duel.",
-		},
-		"승리":{
-			"KOR": "Win the duel.",
-		},
-
-		"추가card":{
-			"KOR": "{target}'s <b>Additional Cards +{amount}</b>.",
-		},
-		"추가card자신":{
-			"KOR": "<b>Additional Cards +{amount}</b>.",
-		},
-
-		"버리기":{
-			"KOR": "Discard {card}.",
-		},
-		"선택버리기":{
-			"KOR": "Choose a {card} to discard.",
-		},
-		"제거하기":{
-			"KOR": "Remove {state}.",
-		},
-		"사용":{
-			"KOR": "Activate the effect of {card} {repeat}.",
-		},
-		"선택사용":{
-			"KOR": "Choose {select} to activate its effect {repeat} times.",
-		},
-		"재귀효과추가":{
-			"KOR": "Gain the effect \"{effect}\" {repeat} times.",
-		},
-		"선택효과추가":{
-			"KOR": "Choose a {card} and add the effect \"{effect}\" to it {repeat} times.",
-		},
-		"효과추가":{
-			"KOR": "Add the effect \"{effect}\" to {card} {repeat} times.",
-		},
-		"특별한효과추가":{
-			"KOR": "Add the {effect} effect to {card} {repeat} times.",
-		},
-
-		"독부여무작위":{
-			"KOR": "Apply a random Poison to {target} {repeat} times.<br>If they already have it, upgrade it instead.",
-		},
-		"독부여지정":{
-			"KOR": "Apply {repeat} {poison} to {target}.<br><span style=\"color: gray;\"><i>(If they already have it, upgrade it instead.)</i></span>",
-		},
-
-		"독추가":{
-			"KOR": "Add {value} to the Poison Pouch {repeat} times.",
-		},
-
-		"카운트감소숫자":{
-			"KOR": "{repeat} <b>Countdown&nbsp;-{amount}</b>.",
-		},
-		"카운트감소값":{
-			"KOR": "Decrease Countdown by {amount}, {repeat} times.",
-		},
-		"카운트지정감소숫자":{
-			"KOR": "{repeat} {target}'s <b>Countdown&nbsp;-{amount}</b>.",
-		},
-		"카운트지정감소값":{
-			"KOR": "Decrease {target}'s Countdown by {amount}, {repeat} times.",
-		},
-
-		"반복발동":{
-			"KOR": "The effect of the next card {target} plays activates {amount} additional times.",
-		},
-		"반복발동자신":{
-			"KOR": "The effect of the next card you play activates {amount} additional times.",
-		},
-		"복구":{
-			"KOR": "Return {target}.",
-		},
-		"변형":{
-			"KOR": "<b>Transform</b> {target} into {object}.",
-		},
-		"선택변형":{
-			"KOR": "Choose a {card} to <b>Transform</b> into {object}.",
-		},
-		"재귀변형":{
-			"KOR": "<b>Transform</b> into {object}.",
-		},
-		"면역":{
-			"KOR": "{actor}'s <b>Excitement</b> cannot be increased.",
-		},
-		"면역자신":{
-			"KOR": "<b>Excitement</b> cannot be increased.",
-		},
-
-		"card사용불가":{
-			"KOR": "{actor} cannot play cards.",
-		},
-		"card사용불가자신":{
-			"KOR": "Cannot play cards.",
-		},
-		"attack사용불가":{
-			"KOR": "{actor} cannot play Attack cards.",
-		},
-		"attack사용불가자신":{
-			"KOR": "Cannot play Attack cards.",
-		},
-		"보조사용불가":{
-			"KOR": "{actor} cannot play Support cards.",
-		},
-		"보조사용불가자신":{
-			"KOR": "Cannot play Support cards.",
-		},
-		"Position사용불가":{
-			"KOR": "{actor} cannot play Position cards.",
-		},
-		"Position사용불가자신":{
-			"KOR": "Cannot play Position cards.",
-		},
-		"탈의사용불가":{
-			"KOR": "{actor} cannot play Stripping cards.",
-		},
-		"탈의사용불가자신":{
-			"KOR": "Cannot play Stripping cards.",
-		},
-		"Penalty사용불가":{
-			"KOR": "{actor} cannot play Penalty cards.",
-		},
-		"Penalty사용불가자신":{
-			"KOR": "Cannot play Penalty cards.",
-		},
-		"attack강제사용":{
-			"KOR": "{actor} can only play Attack cards.",
-		},
-		"attack강제사용자신":{
-			"KOR": "Can only play Attack cards.",
-		},
-		"보조강제사용":{
-			"KOR": "{actor} can only play Support cards.",
-		},
-		"보조강제사용자신":{
-			"KOR": "Can only play Support cards.",
-		},
-		"Position강제사용":{
-			"KOR": "{actor} can only play Position cards.",
-		},
-		"Position강제사용자신":{
-			"KOR": "Can only play Position cards.",
-		},
-		"탈의강제사용":{
-			"KOR": "{actor} can only play Stripping cards.",
-		},
-		"탈의강제사용자신":{
-			"KOR": "Can only play Stripping cards.",
-		},
-		"Penalty강제사용":{
-			"KOR": "{actor} can only play Penalty cards.",
-		},
-		"Penalty강제사용자신":{
-			"KOR": "Can only play Penalty cards.",
-		},
-		"결합물강제사용":{
-			"KOR": "{actor} can only play Combined cards.",
-		},
-		"결합물강제사용자신":{
-			"KOR": "Can only play Combined cards.",
-		},
-		"결속강제사용":{
-			"KOR": "{actor} can only play Bound cards.",
-		},
-		"결속강제사용자신":{
-			"KOR": "Can only play Bound cards.",
-		},
-
-		"Max라운드":{
-			"KOR": "<b>Max Rounds: {amount}</b>",
-		},
-
-		"최저Lewdness":{
-			"KOR": "The minimum value of <b>Lewdness</b> becomes {amount}.",
-		},
-		"MaxLewdness":{
-			"KOR": "The maximum value of <b>Lewdness</b> becomes {amount}.",
-		},
-		"최저Heat":{
-			"KOR": "The minimum value of <b>Heat</b> becomes {amount}.",
-		},
-		"MaxHeat":{
-			"KOR": "The maximum value of <b>Heat</b> becomes {amount}.",
-		},
-
-		"추가증가":{
-			"KOR": "When {stat} increases, it increases by an additional +{amount}.",
-		},
-		"추가감소":{
-			"KOR": "When {stat} decreases, it decreases by an additional -{amount}.",
-		},
-
-		"강탈":{
-			"KOR": "Steal {cards}. <span style=\"color: gray;\"><i>(The card's <b>Lewdness</b> and <b>Heat</b> effects are swapped.)</i></span>",
-		},
-		"Champion비활성화":{
-			"KOR": "The Champion's cards lose their effects.",
-		},
-		"Championattack비활성화":{
-			"KOR": "The Champion's Attack cards lose their effects.",
-		},
-		"탈의비활성화":{
-			"KOR": "Stripping cards lose their effects.",
-		},
-		"Penalty비활성화":{
-			"KOR": "Penalty cards lose their effects.",
-		},
-		"독비활성화":{
-			"KOR": "Poisons lose their effects.",
-		},
-		"Magic비활성화":{
-			"KOR": "Magic cards lose their effects.",
-		},
-
-		"시작Lust":{
-			"KOR": "Start with {amount} <b>Lust</b>.",
-		},
-		"Lust금지":{
-			"KOR": "Cannot gain <b>Lust</b>.",
-		},
-		"Lust제한":{
-			"KOR": "<b>Lust</b> cannot exceed {amount}.",
-		},
-		"Wetness금지":{
-			"KOR": "Cannot gain <b>Wetness</b>.",
-		},
-		"Wetness제한":{
-			"KOR": "<b>Lust</b> cannot exceed {amount}.",
-		},
-		"Wetness금지":{
-			"KOR": "Cannot gain <b>Wetness</b>.",
-		},
-		"회피금지":{
-			"KOR": "Cannot evade.",
-		},
-		"시작Sense Block":{
-			"KOR": "Start with {amount} <b>Numbness</b>.",
-		},
-		"Sense Block금지":{
-			"KOR": "Cannot gain <b>Numbness</b>.",
-		},
-		"Sense Block제한":{
-			"KOR": "<b>Numbness</b> cannot exceed {amount}.",
-		},
-		"시작Corruption":{
-			"KOR": "Start with {amount} <b>Corruption</b>.",
-		},
-		"Corruption금지":{
-			"KOR": "Cannot gain <b>Corruption</b>.",
-		},
-		"Corruption제한":{
-			"KOR": "<b>Corruption</b> cannot exceed {amount}.",
-		},
-
-		"Deck포함필수":{
-			"KOR": "Your deck must contain {amount} {card}.",
-		},
-		"Deck포함금지":{
-			"KOR": "Cannot add {card} to your deck.",
-		},
-		"Deck포함수량":{
-			"KOR": "Cannot have more than {amount} {card} in your deck.",
-		},
-
-		"Max사용":{
-			"KOR": "The maximum number of cards you can play per round becomes {amount}.",
-		},
-
-		"Orgasm금지":{
-			"KOR": "{actor} cannot have an <b>Orgasm</b>.",
-		},
-		"Orgasm금지자신":{
-			"KOR": "Cannot have an <b>Orgasm</b>.",
-		},
-		"억압":{
-			"KOR": "{actor} cannot have an <b>Orgasm</b> from <b>Excitement</b>.",
-		},
-		"억압자신":{
-			"KOR": "Cannot have an <b>Orgasm</b> from <b>Excitement</b>.",
-		},
-		"무감":{
-			"KOR": "{actor} can only have an <b>Orgasm</b> from <b>Excitement</b>.",
-		},
-		"무감자신":{
-			"KOR": "Can only have an <b>Orgasm</b> from <b>Excitement</b>.",
-		},
-		"Essence흡수":{
-			"KOR": "{actor} gains <b>Essence Drain</b>.",
-		},
-		"Essence흡수자신":{
-			"KOR": "Gain <b>Essence Drain</b>.",
-		},
-
-		"스택":{
-			"KOR": "Upgrade {card} {amount} times.",
-		},
-		"스택초기화":{
-			"KOR": "Reset {card}'s upgrades.",
-		},
-
-		"Magic교체":{
-			"KOR": "Replace the {slot} slot with {card}.",
-		},
-
-		"결합":{
-			"KOR": "<b>Combine</b> {target} into one card.",
-		},
-		"선택결합":{
-			"KOR": "Choose {card} to <b>Combine</b> into one card.",
-		},
-		
-		"결속":{
-			"KOR": "Bind {card} to {target}.",
-		},
-		"선택결속":{
-			"KOR": "Choose a {target} to bind {card} to.",
-		},
-		"결속됨":{
-			"KOR": "<span style=\"color: gray;\">(Bound with <b>[{card}]</b>.)</span>",
-		},
-
-		"치료금지":{
-			"KOR": "{actor}'s <b>Excitement</b> cannot be recovered.",
-		},
-		"치료금지자신":{
-			"KOR": "<b>Excitement</b> cannot be recovered.",
-		},
+		"자극": { "KOR": "Inflict <b>Stimulation</b> on {target}{repeat2}." },
+		"Orgasm": { "KOR": "Make {target} <b>Orgasm</b>{repeat2}." },
+		"상태부여Name": { "KOR": "Apply {repeat} {state} to {target}." },
+		"헤더": { "KOR": "<b>{value}:</b> " },
+		"헤더값": { "KOR": "<b>{value} {amount}:</b> " },
+		"클라이맥스": { "KOR": "<span style=\"color: gray;\">Climax</span>" },
+		"Autocast": { "KOR": "<span style=\"color: gray;\">Auto-Cast ({amount})</span>" },
+		"영구시전": { "KOR": "<span style=\"color: gray;\">Auto-Cast (Infinite)</span>" },
+		"시전": { "KOR": "<span style=\"color: gray;\">({amount} casts)</span>" },
+		"무한시전": { "KOR": "<span style=\"color: gray;\">(Infinite casts)</span>" },
+		"반복": { "KOR": "Repeat {repeat}." },
+		"증가숫자": { "KOR": "Increase {value} by <b>{amount}</b>{repeat}." },
+		"감소숫자": { "KOR": "Decrease {value} by <b>{amount}</b>{repeat}." },
+		"증가값": { "KOR": "Increase {value} by {amount}." },
+		"감소값": { "KOR": "Decrease {value} by {amount}." },
+		"배수숫자": { "KOR": "Multiply {value} by {amount}." },
+		"지정숫자": { "KOR": "Set {value} to {amount}." },
+		"지정값": { "KOR": "Set {value} to {amount}." },
+		"Position삭제": { "KOR": "Remove your current <b>Position</b>." },
+		"Position부여": { "KOR": "<span style='color: gray;''><i>(Change to this <b>Position</b>.)</i></span>" },
+		"Deckcard획득": { "KOR": "Gain {repeat} {card}." },
+		"Deckcard선택획득": { "KOR": "Choose one {card} and gain {repeat} of it." },
+		"Deckcard추가": { "KOR": "Add {repeat} {card} to {target}'s hand." },
+		"패배": { "KOR": "You lose the duel." },
+		"승리": { "KOR": "You win the duel." },
+		"추가card": { "KOR": "Increase {target}'s Max Hand Size by {amount}." },
+		"추가card자신": { "KOR": "Increase your Max Hand Size by {amount}." },
+		"버리기": { "KOR": "Discard {card}." },
+		"선택버리기": { "KOR": "Choose and discard {card}." },
+		"제거하기": { "KOR": "Remove {state}." },
+		"사용": { "KOR": "Play {card}{repeat}." },
+		"선택사용": { "KOR": "Choose {select} and play it{repeat}." },
+		"재귀효과추가": { "KOR": "This card gains the effect: \"{effect}\"{repeat}." },
+		"선택효과추가": { "KOR": "Choose a {card} and add the effect: \"{effect}\"{repeat}." },
+		"효과추가": { "KOR": "Add the following effect to {card}: \"{effect}\"{repeat}." },
+		"특별한효과추가": { "KOR": "Add a {effect} effect to {card}{repeat}." },
+		"독부여무작위": { "KOR": "Apply a random Poison to {target}{repeat}. If they already have it, upgrade it instead." },
+		"독부여지정": { "KOR": "Apply {repeat} {poison} to {target}. <span style=\"color: gray;\"><i>(Upgrades if already present.)</i></span>" },
+		"독추가": { "KOR": "Add {value} to the Poison Pouch{repeat}." },
+		"카운트감소숫자": { "KOR": "Reduce <b>Countdown</b> by {amount}{repeat}." },
+		"카운트감소값": { "KOR": "Reduce <b>Countdown</b> by {amount}{repeat}." },
+		"카운트지정감소숫자": { "KOR": "Reduce {target}'s <b>Countdown</b> by {amount}{repeat}." },
+		"카운트지정감소값": { "KOR": "Reduce {target}'s <b>Countdown</b> by {amount}{repeat}." },
+		"반복발동": { "KOR": "The next card {target} plays activates {amount} additional times." },
+		"반복발동자신": { "KOR": "The next card you play activates {amount} additional times." },
+		"복구": { "KOR": "Revert to <b>{target}</b>." },
+		"변형": { "KOR": "<b>Transform</b> {target} into {object}." },
+		"선택변형": { "KOR": "Choose a {card} to <b>Transform</b> into {object}." },
+		"재귀변형": { "KOR": "<b>Transform</b> this card into {object}." },
+		"면역": { "KOR": "{actor}'s <b>Excitement</b> cannot be increased." },
+		"면역자신": { "KOR": "Your <b>Excitement</b> cannot be increased." },
+		"card사용불가": { "KOR": "{actor} cannot play cards." },
+		"card사용불가자신": { "KOR": "You cannot play cards." },
+		"attack사용불가": { "KOR": "{actor} cannot play Attack cards." },
+		"attack사용불가자신": { "KOR": "You cannot play Attack cards." },
+		"Support사용불가": { "KOR": "{actor} cannot play Support cards." },
+		"Support사용불가자신": { "KOR": "You cannot play Support cards." },
+		"Position사용불가": { "KOR": "{actor} cannot play Position cards." },
+		"Position사용불가자신": { "KOR": "You cannot play Position cards." },
+		"탈의사용불가": { "KOR": "{actor} cannot play Stripping cards." },
+		"탈의사용불가자신": { "KOR": "You cannot play Stripping cards." },
+		"Penalty사용불가": { "KOR": "{actor} cannot play Penalty cards." },
+		"Penalty사용불가자신": { "KOR": "You cannot play Penalty cards." },
+		"attack강제사용": { "KOR": "{actor} can only play Attack cards." },
+		"attack강제사용자신": { "KOR": "You can only play Attack cards." },
+		"Support강제사용": { "KOR": "{actor} can only play Support cards." },
+		"Support강제사용자신": { "KOR": "You can only play Support cards." },
+		"Position강제사용": { "KOR": "{actor} can only play Position cards." },
+		"Position강제사용자신": { "KOR": "You can only play Position cards." },
+		"탈의강제사용": { "KOR": "{actor} can only play Stripping cards." },
+		"탈의강제사용자신": { "KOR": "You can only play Stripping cards." },
+		"Penalty강제사용": { "KOR": "{actor} can only play Penalty cards." },
+		"Penalty강제사용자신": { "KOR": "You can only play Penalty cards." },
+		"Combination강제사용": { "KOR": "{actor} can only play Combined cards." },
+		"Combination강제사용자신": { "KOR": "You can only play Combined cards." },
+		"결속강제사용": { "KOR": "{actor} can only play Bound cards." },
+		"결속강제사용자신": { "KOR": "You can only play Bound cards." },
+		"Max라운드": { "KOR": "<b>Max Rounds: {amount}</b>" },
+		"최저Lewdness": { "KOR": "<b>Lewdness</b> cannot go below {amount}." },
+		"MaxLewdness": { "KOR": "<b>Lewdness</b> cannot exceed {amount}." },
+		"최저Heat": { "KOR": "<b>Heat</b> cannot go below {amount}." },
+		"MaxHeat": { "KOR": "<b>Heat</b> cannot exceed {amount}." },
+		"추가증가": { "KOR": "Whenever {stat} increases, increase it by an additional +{amount}." },
+		"추가감소": { "KOR": "Whenever {stat} decreases, decrease it by an additional -{amount}." },
+		"강탈": { "KOR": "Steal {cards}. <span style=\"color: gray;\"><i>(The card's <b>Lewdness</b> and <b>Heat</b> effects are swapped.)</i></span>" },
+		"Champion비활성화": { "KOR": "The Champion's cards lose their effects." },
+		"Championattack비활성화": { "KOR": "The Champion's Attack cards lose their effects." },
+		"탈의비활성화": { "KOR": "Stripping cards lose their effects." },
+		"Penalty비활성화": { "KOR": "Penalty cards lose their effects." },
+		"독비활성화": { "KOR": "Poisons lose their effects." },
+		"Magic비활성화": { "KOR": "Magic cards lose their effects." },
+		"시작Lust": { "KOR": "Start with {amount} <b>Lust</b>." },
+		"Lust금지": { "KOR": "You cannot gain <b>Lust</b>." },
+		"Lust제한": { "KOR": "Your <b>Lust</b> cannot exceed {amount}." },
+		"Wetness금지": { "KOR": "You cannot gain <b>Wetness</b>." },
+		"Wetness제한": { "KOR": "Your <b>Wetness</b> cannot exceed {amount}." },
+		"회피금지": { "KOR": "You cannot evade." },
+		"시작Sense Block": { "KOR": "Start with {amount} <b>Numbness</b>." },
+		"Sense Block금지": { "KOR": "You cannot gain <b>Numbness</b>." },
+		"Sense Block제한": { "KOR": "Your <b>Numbness</b> cannot exceed {amount}." },
+		"시작Corruption": { "KOR": "Start with {amount} <b>Corruption</b>." },
+		"Corruption금지": { "KOR": "You cannot gain <b>Corruption</b>." },
+		"Corruption제한": { "KOR": "Your <b>Corruption</b> cannot exceed {amount}." },
+		"Deck포함필수": { "KOR": "Your deck must contain {amount} {card}." },
+		"Deck포함금지": { "KOR": "You cannot add {card} to your deck." },
+		"Deck포함수량": { "KOR": "You cannot have more than {amount} {card} in your deck." },
+		"Max사용": { "KOR": "You can play a maximum of {amount} cards per round." },
+		"Orgasm금지": { "KOR": "{actor} cannot have an <b>Orgasm</b>." },
+		"Orgasm금지자신": { "KOR": "You cannot have an <b>Orgasm</b>." },
+		"억압": { "KOR": "{actor} cannot have an <b>Orgasm</b> from <b>Excitement</b>." },
+		"억압자신": { "KOR": "You cannot have an <b>Orgasm</b> from <b>Excitement</b>." },
+		"무감": { "KOR": "{actor} can only have an <b>Orgasm</b> from <b>Excitement</b>." },
+		"무감자신": { "KOR": "You can only have an <b>Orgasm</b> from <b>Excitement</b>." },
+		"Essence흡수": { "KOR": "{actor} gains <b>Essence Drain</b>." },
+		"Essence흡수자신": { "KOR": "You gain <b>Essence Drain</b>." },
+		"스택": { "KOR": "Upgrade {card} {amount} times." },
+		"스택초기화": { "KOR": "Reset {card}'s upgrades." },
+		"Magic교체": { "KOR": "Replace the {slot} slot with {card}." },
+		"결합": { "KOR": "<b>Combine</b> {target}." },
+		"선택결합": { "KOR": "Choose {card} to <b>Combine</b>." },
+		"결속": { "KOR": "<b>Bind</b> {card} to {target}." },
+		"선택결속": { "KOR": "Choose a {target} to <b>Bind</b> {card} to." },
+		"결속됨": { "KOR": "<span style=\"color: gray;\">(Bound to <b>[{card}]</b>)</span>" },
+		"치료금지": { "KOR": "{actor}'s <b>Excitement</b> cannot be recovered." },
+		"치료금지자신": { "KOR": "Your <b>Excitement</b> cannot be recovered." },
 	},
-
 	"special":{
-		"specialA01":{
-			"KOR": "When <b>Heat</b> is temporarily decreased, <b>Lewdness</b> is temporarily increased by the same amount.",
-		},
-		"specialA02":{
-			"KOR": "Modify Crafted cards in the Poison Pouch.<br>They apply twice at once, but only last for 2 rounds.",
-		},
-		"specialA04":{
-			"KOR": "Cannot play Crafted cards or <b>[Pester]</b>.",
-		},
-		"specialA05":{
-			"KOR": "Prepare to gain a random Transcendence card {repeat} times. ({trace}/3)",
-		},
-		"specialA06":{
-			"KOR": "Position effects are doubled.",
-		},
-		"specialA07":{
-			"KOR": "Gradually fall <b>[Unconscious]</b>. ({stack}/{maxStack})",
-		},
-		"specialA08":{
-			"KOR": "Something offers help.<br><br>After providing 3 types of help, an obsession begins. <span style=\"color: gray;\">({count} left)</span>",
-		},
-		"specialA09":{
-			"KOR": "Upgrade all Magic Bullets {repeat} times.",
-		},
-		"specialA10":{
-			"KOR": "Effects that recover your <b>Excitement</b> increase the opponent's <b>Excitement</b> instead.",
-		},
-		"specialA11":{
-			"KOR": "When gaining a random Essence card, you gain one that was in your starting deck.",
-		},
-		"specialA12":{
-			"KOR": "Each round, <b>Corruption</b> decreases instead of increasing.",
-		},
-		"specialA13":{
-			"KOR": "Can play Attack cards on round 1.",
-		},
-		"specialA14":{
-			"KOR": "Gain double Lust.",
-		},
-		"specialA15":{
-			"KOR": "Improves the Healer Positions in your deck.",
-		},
-		"specialA16":{
-			"KOR": "Gain a needed Magic Circle instead of a random one.",
-		},
-		"specialA17":{
-			"KOR": "Cannot gain <b>Numbness</b> from Transforming cards.",
-		},
-		"specialA18":{
-			"KOR": "The conditions for Prelude, Interlude, and Finale are randomized.",
-		},
-		"specialA19":{
-			"KOR": "Upgrade all <b>[Heart Throbs]</b> twice.",
-		},
-		"specialA20":{
-			"KOR": "Neutral Attack card effects activate {value} additional times.",
-		},
-
-		"specialV05":{
-			"KOR": "Number of Essence cards used as material",
-		},
-		"specialV06":{
-			"KOR": "Number of cards the opponent discarded, Transformed, or Combined during the duel",
-		},
-		"specialV07":{
-			"KOR": "Once for every 4 cards discarded this round",
-		},
-		"specialV08":{
-			"KOR": "The effects of other Spores, excluding <b>[Catalyst Spore]</b>, are increased by {amount}.",
-		},
-		"specialV08영구":{
-			"KOR": "The effects of Spores are permanently increased by {amount}.",
-		},
-		"specialV09":{
-			"KOR": "Stacks of all Poisons except <b>[Lethal Poison]</b>",
-		},
+		"specialA01": { "KOR": "When <b>Heat</b> is temporarily decreased, <b>Lewdness</b> is temporarily increased by the same amount." },
+		"specialA02": { "KOR": "Modify Crafted cards in your Poison Pouch. They apply twice but only last for 2 rounds." },
+		"specialA04": { "KOR": "Cannot play Crafted cards or <b>[Pester]</b>." },
+		"specialA05": { "KOR": "Prepare to gain a random Transcendence card {repeat} times. ({trace}/3)" },
+		"specialA06": { "KOR": "<b>Position</b> effects are doubled." },
+		"specialA07": { "KOR": "Gradually fall <b>Unconscious</b>. ({stack}/{maxStack})" },
+		"specialA08": { "KOR": "Something offers to help. After 3 types of help are provided, it will become obsessed. <span style=\"color: gray;\">({count} remaining)</span>" },
+		"specialA09": { "KOR": "Upgrade all Magic Bullets {repeat} times." },
+		"specialA10": { "KOR": "Effects that would recover your <b>Excitement</b> increase the Opponent's <b>Excitement</b> instead." },
+		"specialA11": { "KOR": "When gaining a random Essence card, you gain one that was in your starting deck." },
+		"specialA12": { "KOR": "Each round, <b>Corruption</b> decreases instead of increasing." },
+		"specialA13": { "KOR": "Can play Attack cards on round 1." },
+		"specialA14": { "KOR": "Gain double <b>Lust</b>." },
+		"specialA15": { "KOR": "Improves all Healer <b>Positions</b> in your deck." },
+		"specialA16": { "KOR": "Gain a needed Magic Circle instead of a random one." },
+		"specialA17": { "KOR": "Cannot gain <b>Numbness</b> from <b>Transforming</b> cards." },
+		"specialA18": { "KOR": "The conditions for Prelude, Interlude, and Finale are randomized." },
+		"specialA19": { "KOR": "Upgrade all <b>[Heart Throbs]</b> twice." },
+		"specialA20": { "KOR": "Neutral Attack cards activate {value} additional times." },
+		"specialV05": { "KOR": "The number of Essence cards used as material." },
+		"specialV06": { "KOR": "The number of cards the Opponent has discarded, Transformed, or Combined this duel." },
+		"specialV07": { "KOR": "Once for every 4 cards discarded this round." },
+		"specialV08": { "KOR": "The effects of other Spores (excluding <b>[Catalyst Spore]</b>) are increased by {amount}." },
+		"specialV08영구": { "KOR": "The effects of Spores are permanently increased by {amount}." },
+		"specialV09": { "KOR": "Stacks of all Poisons except <b>[Lethal Poison]</b>." },
 	}
-}
+};
