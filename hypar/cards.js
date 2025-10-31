@@ -19,7 +19,7 @@ const cardColor = {
 
 const cardDB = {
 	"AD-NT-EL-001":{
-		name:{ "KOR":"Adaptability of fuck and fuck of fuck" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", race:"Eldorian", cost:10, owner:1,
+		name:{ "KOR":"Adaptability" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", race:"Eldorian", cost:10, owner:1,
 		tags:[],
 		expiration:"active", duration:1,
 		flavorText:{ "KOR":"Islands, deserts, snowfields... there is no place an Eldorian cannot live.<br>All across the continent of Oldinsaleia, you can see Eldorians who have adapted to their environments." },

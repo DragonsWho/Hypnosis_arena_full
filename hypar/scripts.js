@@ -3445,6 +3445,69 @@ function adjustSize(size) {
 }
 
 
+
+
+
+/**
+ * Вычисляет "взвешенную" длину строки, теперь с учетом ЗАГЛАВНЫХ букв.
+ * @param {string} text - Строка для измерения.
+ * @returns {number} - Взвешенная длина.
+ */
+function calculateWeightedLength(text) {
+    let weightedLength = 0;
+    // Наборы символов разной ширины
+    const wideChars = 'wm@';
+    const narrowChars = 'ijltfr.,! ';
+    const uppercaseRegex = /^[A-ZА-Я0-9]$/; // Заглавные буквы и цифры
+
+    for (const char of text) {
+        if (uppercaseRegex.test(char)) {
+            weightedLength += 1.2; // Заглавные буквы и цифры шире
+        } else if (wideChars.includes(char.toLowerCase())) {
+            weightedLength += 1.4; // Особо широкие строчные
+        } else if (narrowChars.includes(char.toLowerCase())) {
+            weightedLength += 0.6; // Узкие строчные и знаки
+        } else {
+            weightedLength += 1.0; // Стандартные строчные буквы
+        }
+    }
+    return weightedLength;
+}
+
+/**
+ * Определяет делитель для размера шрифта по простому линейному принципу.
+ * @param {object} card - Объект карточки.
+ * @param {number} size - Базовый размер карточки.
+ * @param {string} language - Текущий язык.
+ * @returns {number} - Делитель для вычисления font-size.
+ */
+function getAdjustedNameSize(card, size, language) {
+    const name = card.name[language];
+    const weightedLength = calculateWeightedLength(name);
+
+    // <<< ЗДЕСЬ МОЖНО НАСТРАИВАТЬ >>>
+    const BASE_DIVISOR = 10.5;      // 1. Делитель для коротких названий (чем меньше, тем крупнее шрифт).
+    const LENGTH_THRESHOLD = 23;    // 2. Длина, после которой шрифт НАЧИНАЕТ уменьшаться.
+    const DECREASE_PER_CHAR = 0.25; // 3. На сколько УВЕЛИЧИВАТЬ делитель за каждый "лишний" символ. Это главный регулятор!
+    const MAX_DIVISOR = 18.0;       // 4. Максимальный делитель (ограничитель, чтобы шрифт не стал микроскопическим).
+    // <<< КОНЕЦ НАСТРОЕК >>>
+
+    // Если длина в пределах нормы, используем базовый размер.
+    if (weightedLength <= LENGTH_THRESHOLD) {
+        return BASE_DIVISOR;
+    }
+
+    // Вычисляем, на сколько символов название длиннее порога.
+    const overflowLength = weightedLength - LENGTH_THRESHOLD;
+    
+    // Рассчитываем новый делитель по простому принципу: база + (превышение * шаг).
+    const newDivisor = BASE_DIVISOR + (overflowLength * DECREASE_PER_CHAR);
+
+    // Возвращаем новый делитель, но не больше максимального значения.
+    return Math.min(newDivisor, MAX_DIVISOR);
+}
+
+
 function createCard(card, size, button=false, type=0) {
 	function createKeywords(card) {
 		const keywords = new Set(card.keywords || []);
@@ -3646,25 +3709,10 @@ function createCard(card, size, button=false, type=0) {
 // card Name 생성
 	    const nameDiv = document.createElement('div');
 	    
-	    const nameLength = card.name[language].length;
-	    let nameFontSize;
+        // Получаем оптимальный делитель с помощью нашей новой функции
+        const nameDivisor = getAdjustedNameSize(card, size, language);
+	    nameDiv.style.fontSize = adjustSize(size / nameDivisor) + "vmin"; // <-- ИСПОЛЬЗУЕМ ЕГО ЗДЕСЬ
 
-	    // Подбираем размер шрифта в зависимости от длины названия в символах
-	    if (nameLength <= 22) {
-	        // Для коротких названий (до 22 символов) — стандартный размер
-	        nameFontSize = adjustSize(size / 10.5);
-	    } else if (nameLength <= 28) {
-	        // Для средних названий (23-28 символов) — немного уменьшаем
-	        nameFontSize = adjustSize(size / 12.5);
-	    } else if (nameLength <= 35) {
-	        // Для длинных (29-35 символов) — уменьшаем еще
-	        nameFontSize = adjustSize(size / 15);
-	    } else {
-	        // Для очень длинных (больше 35) — самый маленький размер
-	        nameFontSize = adjustSize(size / 18);
-	    }
-	    
-	    nameDiv.style.fontSize = nameFontSize + "vmin";
 	    nameDiv.className = 'card-name';
 	    nameDiv.innerHTML = card.name[language];
 	    nameDiv.style.background = palette.name;
