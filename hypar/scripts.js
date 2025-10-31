@@ -3643,9 +3643,28 @@ function createCard(card, size, button=false, type=0) {
 	    image.onerror = function() { handleImgError(this); }; // 이미지 로드 실패 시 처리
 	    imageDiv.appendChild(image);
 
-	    // card Name 생성
+// card Name 생성
 	    const nameDiv = document.createElement('div');
-	    nameDiv.style.fontSize = adjustSize(size/10.5)+"vmin";
+	    
+	    const nameLength = card.name[language].length;
+	    let nameFontSize;
+
+	    // Подбираем размер шрифта в зависимости от длины названия в символах
+	    if (nameLength <= 22) {
+	        // Для коротких названий (до 22 символов) — стандартный размер
+	        nameFontSize = adjustSize(size / 10.5);
+	    } else if (nameLength <= 28) {
+	        // Для средних названий (23-28 символов) — немного уменьшаем
+	        nameFontSize = adjustSize(size / 12.5);
+	    } else if (nameLength <= 35) {
+	        // Для длинных (29-35 символов) — уменьшаем еще
+	        nameFontSize = adjustSize(size / 15);
+	    } else {
+	        // Для очень длинных (больше 35) — самый маленький размер
+	        nameFontSize = adjustSize(size / 18);
+	    }
+	    
+	    nameDiv.style.fontSize = nameFontSize + "vmin";
 	    nameDiv.className = 'card-name';
 	    nameDiv.innerHTML = card.name[language];
 	    nameDiv.style.background = palette.name;
