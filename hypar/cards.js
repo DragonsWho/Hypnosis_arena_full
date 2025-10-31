@@ -249,7 +249,7 @@ const cardDB = {
 		]
 	},
 	"AD-NT-BG5-001-2":{
-		name:{ "KOR":"Observational Research" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Scrutiny" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		tags:["Research"],
 		expiration:"turnEnd", duration:1,
 		effect:[
@@ -466,10 +466,10 @@ const cardDB = {
 		]
 	},
 	"AD-NT-SY-BG6-001":{
-		name:{ "KOR":"Forbidden Arts Society" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", race:"Silvani", bg:"Rogue", cost:15, owner:1,
+		name:{ "KOR":"Shadow Coven" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", race:"Silvani", bg:"Rogue", cost:15, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
-		flavorText:{ "KOR":"The Forbidden Arts Society is a club for those who cannot contain their curiosity about forbidden magic.<br>Forbidden arts are forbidden for a reason.<br>They frequently cause rampages and disasters, and are wanted throughout the Federation." },
+		flavorText:{ "KOR":"The Shadow Coven is a club for those who cannot contain their curiosity about forbidden magic.<br>Forbidden arts are forbidden for a reason.<br>They frequently cause rampages and disasters, and are wanted throughout the Federation." },
 		hypnoText:{ "KOR":"You've become captivated by the tentacles from beyond the dimensional gate.<br>Feed them nutrients and mana. Capture women to offer to them." },
 		effect:[
 			{trigger:"always", cond:{v1:"라운드", op:"==", v2:1}, type:"maxUse", target:"self", value:1},
@@ -657,7 +657,7 @@ const cardDB = {
 	},
 
 	"AD-NT-TR-BG1-001":{
-		name:{ "KOR":"Guardian of the Beastfolk" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", race:"Beastfolk", bg:"Soldier", cost:10, owner:1,
+		name:{ "KOR":"Primal Honor" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", race:"Beastfolk", bg:"Soldier", cost:10, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Guardians are those who have volunteered to take up spear and staff to protect the beastfolk from conflicts, disasters, invasions, and other external factors.<br>This position is usually held by the second strongest person in the beastfolk." },
@@ -817,7 +817,7 @@ const cardDB = {
 		]
 	},
 	"AD-SL-boss6":{
-		name:{ "KOR":"Mushrooms are the best!" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", boss:6, cost:-20, owner:1,
+		name:{ "KOR":"Mushroom lover" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", boss:6, cost:-20, owner:1,
 		tags:["전문가"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Delicious and good for you, mushrooms!<br>As long as you avoid the poisonous ones, they're harmless!" },
@@ -1375,7 +1375,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You perform magic on stage, captivating the audience's attention.<br>With dazzling effects and intricate techniques, you perfectly adorn your performance, and no one can take their eyes off your magic.<br>Your shows always become the talk of the town." },
 		hypnoText:{ "KOR":"Let's perform a magic trick where your clothes disappear.<br>Next up is a trick where you pull things out of your pussy." },
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"자신.기록.전체.이벤트.만료Magic.length", op:">=", v2:4}, type:"get", target:"self", value:"randomCard(tags, Magic Circle)"},
+			{trigger:"turnEnd", cond:{v1:"자신.기록.전체.이벤트.만료Magic.length", op:">=", v2:4}, type:"get", target:"self", value:"randomCard(tags, Runes)"},
 		]
 	},
 	"AD-MA-BG3-002":{
@@ -1494,7 +1494,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You have nowhere left to retreat.<br>In a situation where you must risk everything on the battlefield, you must fight the enemy with no option of retreat.<br>With your back to the wall, you are prepared to fight to the end, with only victory in your sights." },
 		hypnoText:{ "KOR":"When facing the threat of rape, you must not think of escape, but face it head-on.<br>You must accept being fucked." },
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"Sense Block", op:"==", v2:0}, type:"get", target:"self", value:"randomCard(tags, Magic Circle)"},
+			{trigger:"turnEnd", cond:{v1:"Sense Block", op:"==", v2:0}, type:"get", target:"self", value:"randomCard(tags, Runes)"},
 		]
 	},
 	"AD-MA-BG8-002":{
@@ -1570,7 +1570,7 @@ const cardDB = {
 		]
 	},
 	"AD-HE-BG2-002":{
-		name:{ "KOR":"The Other Side of Power" }, class:"Healer", type:"특성", isDeck:false, rarity:"None", bg:"Noble", cost:15, owner:1,
+		name:{ "KOR":"Other Side of Power" }, class:"Healer", type:"특성", isDeck:false, rarity:"None", bg:"Noble", cost:15, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Those with power must act for political deals and profit, and sometimes they must make difficult choices to protect those under their care.<br>With your cool-headed and sometimes cruel judgment, you understood exactly what you had to do." },
@@ -1659,7 +1659,7 @@ const cardDB = {
 	},
 	"AD-HE-BG5-002-1":{
 		parents:"AD-HE-BG5-002",
-		name:{ "KOR":"Alchemical Combination" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Alchemical Combo" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Combination"],
 		effect:[
@@ -1789,7 +1789,7 @@ const cardDB = {
 		]
 	},
 	"AD-HE-BG8-002":{
-		name:{ "KOR":"Crisis into Opportunity" }, class:"Healer", type:"특성", isDeck:false, rarity:"None", bg:"Mercenary", cost:10, owner:1,
+		name:{ "KOR":"Calculated Risk" }, class:"Healer", type:"특성", isDeck:false, rarity:"None", bg:"Mercenary", cost:10, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"You have the ability to find opportunity in the midst of a life-threatening crisis.<br>Even when cornered or in a disadvantageous situation, you calmly analyze the situation and create a moment of reversal." },
@@ -2192,7 +2192,7 @@ const cardDB = {
 		]
 	},
 	"DA-AS-BG5-001":{
-		name:{ "KOR":"Black-and-White Thinking" }, class:"Assassin", type:"특성", isDeck:false, rarity:"None", bg:"Scholar", cost:-20,
+		name:{ "KOR":"Black-and-White" }, class:"Assassin", type:"특성", isDeck:false, rarity:"None", bg:"Scholar", cost:-20,
 		tags:["부정적"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"You see the world only in extremes.<br>You divide everything into good and evil, right and wrong, and do not acknowledge the gray area in between.<br>This rigid way of thinking makes complex situations more difficult and hinders cooperation and understanding." },
@@ -2308,7 +2308,7 @@ const cardDB = {
 		]
 	},
 	"DA-MA-BG2-001-1":{
-		name:{ "KOR":"Flashy But Useless Magic" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Flashy Magic" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["부정적", "Magic", "시전"], cast:1,
 		effect:[
@@ -2336,7 +2336,7 @@ const cardDB = {
 		]
 	},
 	"DA-MA-BG5-001":{
-		name:{ "KOR":"0 Days Since Last Accident" }, class:"Mage", type:"특성", isDeck:false, rarity:"None", bg:"Scholar", cost:-15,
+		name:{ "KOR":"...Since Last Accident" }, class:"Mage", type:"특성", isDeck:false, rarity:"None", bg:"Scholar", cost:-15,
 		tags:["부정적"], related:["DA-MA-BG5-001-1"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"You always cause minor accidents during experiments or research.<br>You hope that nothing will happen until the research is finished, but unexpected problems always arise, and peaceful days never come to the lab." },
@@ -4094,35 +4094,35 @@ const cardDB = {
 
 
 	"MA-MC-001":{
-		name:{ "KOR":"Crimson Magic Circle" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Crimson Runes" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:false,
-		tags:["Magic Circle", "기본Magic Circle", "진홍색", "변형목적"],
+		tags:["Runes", "기본Runes", "진홍색", "변형목적"],
 		effect:[
 			//{trigger:"transformed", cond:true, type:"state", target:"self", value:"MA-ST-001"},
 		]
 	},
 	"MA-MC-002":{
-		name:{ "KOR":"Azure Magic Circle" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Azure Runes" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:false,
-		tags:["Magic Circle", "기본Magic Circle", "담청색", "변형목적"],
+		tags:["Runes", "기본Runes", "담청색", "변형목적"],
 		effect:[
 			//{trigger:"transformed", cond:true, type:"state", target:"op", byname:true, value:"MA-ST-002"},
 		]
 	},
 	"MA-MC-003":{
-		name:{ "KOR":"Golden Magic Circle" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Golden Runes" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:false,
-		tags:["Magic Circle", "기본Magic Circle", "황금색", "변형목적"],
+		tags:["Runes", "기본Runes", "황금색", "변형목적"],
 		effect:[
 			//{trigger:"transformed", cond:true, type:"changeSBlock", op:"add", value:2},
 		]
 	},
 	"MA-MC-004":{
-		name:{ "KOR":"White Magic Circle" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"White Runes" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:false,
-		tags:["Magic Circle", "기본Magic Circle", "진홍색", "담청색", "황금색", "변형목적"],
+		tags:["Runes", "기본Runes", "진홍색", "담청색", "황금색", "변형목적"],
 		effect:[
-			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"This magic circle can be treated as a magic circle of any color." }},
+			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"This Runes can be treated as a Runes of any color." }},
 		]
 	},
 
@@ -4338,7 +4338,7 @@ const cardDB = {
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "즉발 Magic"], cast:1,
 		effect:[
-			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Magic Circle)"},
+			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Runes)"},
 		]
 	},
 	"MA-MG-NT-002+":{
@@ -4348,7 +4348,7 @@ const cardDB = {
 		tags:["Magic", "시전", "기본Magic", "영창 Magic"], cast:2,
 		effect:[
 			{trigger:"get", cond:true, type:"line", value:"역장-영창"},
-			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Magic Circle)"},
+			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Runes)"},
 		]
 	},
 	"MA-MG-NT-002++":{
@@ -4359,7 +4359,7 @@ const cardDB = {
 		effect:[
 			{trigger:"get", cond:true, type:"line", value:"역장-집중"},
 			{trigger:"used", cond:true, type:"changeSBlock", op:"add", value:2},
-			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Magic Circle)", repeat:2},
+			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Runes)", repeat:2},
 		]
 	},
 	"MA-MG-NT-002-def":{
@@ -4449,7 +4449,7 @@ const cardDB = {
 	},
 
 	"MA-MG-EA-002":{
-		name:{ "KOR":"Instant: Power of Earth" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Instant: Stone Root" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "즉발 Magic", "대지 Magic"], related:["tag:즉발 Magic"], cast:1,
 		effect:[
@@ -4458,7 +4458,7 @@ const cardDB = {
 	},
 	"MA-MG-EA-002+":{
 		parents:"MA-MG-EA-002",
-		name:{ "KOR":"Chant: Power of Earth" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Chant: Stone Root" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "영창 Magic", "대지 Magic"], related:["tag:즉발 Magic"], cast:2,
 		effect:[
@@ -4468,7 +4468,7 @@ const cardDB = {
 	},
 	"MA-MG-EA-002++":{
 		parents:"MA-MG-EA-002",
-		name:{ "KOR":"Focus: Power of Earth" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Stone Root" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "집중 Magic", "대지 Magic"], related:["tag:즉발 Magic"], cast:2,
 		effect:[
@@ -4479,7 +4479,7 @@ const cardDB = {
 	},
 	"MA-MG-EA-002-def":{
 		parents:"MA-MG-EA-002",
-		name:{ "KOR":"Power of Earth" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Stone Root" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic요약"], related:["MA-MG-EA-002", "MA-MG-EA-002+", "MA-MG-EA-002++"],
 		effect:[
@@ -4674,7 +4674,7 @@ const cardDB = {
 	"MA-NM-AT-003":{
 		name:{ "KOR":"Ring of Embers" }, class:"Mage", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Eldorian", "group:Magic Circle", "act:penetration"], related:["MA-MC-001"],
+		tags:["Deck빌딩", "race:Eldorian", "group:Runes", "act:penetration"], related:["MA-MC-001"],
 		flavorText:{ "KOR":"Crimson mana contains destructive power.<br>It often manifests as flames or explosions, and those who handle this element well tend to have eccentric or dangerous personalities." },
 		hypnoText:{ "KOR":"A lust crest is engraved on your stomach, and a hot stimulus spreads from deep within your womb.<br>The crest's effect makes you grip your opponent's cock tighter, becoming an even better cunt." },
 		effect:[
@@ -4696,12 +4696,12 @@ const cardDB = {
 	"MA-NM-AT-005":{
 		name:{ "KOR":"Basic Elementalism" }, class:"Mage", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Eldorian", "group:Magic Circle", "act:orgy"], related:["MA-MC-001", "MA-MC-002", "MA-MC-003"],
+		tags:["Deck빌딩", "race:Eldorian", "group:Runes", "act:orgy"], related:["MA-MC-001", "MA-MC-002", "MA-MC-003"],
 		flavorText:{ "KOR":"There are many fields of magic, but what generally comes to mind when one thinks of 'magic' is elementalism.<br>In elementalism, one handles one or more of the three types of mana—crimson, azure, and golden—and each person has a different specialty." },
 		hypnoText:{ "KOR":"A technique that uses all three of a mage's attributes: breasts, pussy, and ass.<br>You choose between pussy sex, paizuri, and anal sex as the situation demands." },
 		effect:[
 			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:2},
-			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Magic Circle)"},
+			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Runes)"},
 		]
 	},
 	"MA-NM-AT-006":{
@@ -4743,7 +4743,7 @@ const cardDB = {
 	"MA-NM-SU-003":{
 		name:{ "KOR":"Ring of Frost" }, class:"Mage", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Beastfolk", "group:Magic Circle"], related:["MA-ST-002", "MA-MC-002"],
+		tags:["Deck빌딩", "race:Beastfolk", "group:Runes"], related:["MA-ST-002", "MA-MC-002"],
 		flavorText:{ "KOR":"Azure mana has the property of absorbing power.<br>It is strongly associated with static imagery, such as removing heat to freeze or eliminating vitality to harden." },
 		hypnoText:{ "KOR":"Increase your vulgarity by engraving words on your breasts.<br>It is good to write self-deprecating expressions such as 'pervert,' 'sow,' or 'cum-dumpster.'" },
 		effect:[
@@ -4754,7 +4754,7 @@ const cardDB = {
 	"MA-NM-SU-004":{
 		name:{ "KOR":"Ring of Rock" }, class:"Mage", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Beastfolk", "group:Magic Circle", "group:변형"], related:["MA-MC-003"],
+		tags:["Deck빌딩", "race:Beastfolk", "group:Runes", "group:변형"], related:["MA-MC-003"],
 		flavorText:{ "KOR":"Golden mana specializes in protection and transformation.<br>It possesses the firmness of the earth and, at the same time, the versatility to become anything depending on how it is processed." },
 		hypnoText:{ "KOR":"Increase your lewdness by engraving the number of times you've been cummed in on your ass.<br>It gives the feeling of being treated like an object, making you a more usable onahole." },
 		effect:[
@@ -4782,7 +4782,7 @@ const cardDB = {
 		hypnoText:{ "KOR":"It is common sense that a man's semen has a high mana-charging effect.<br>Ask your opponent to spray his cum on your body." },
 		effect:[
 			{trigger:"used", cond:true, type:"changeSBlock", op:"add", value:3},
-			{trigger:"choice", cond:true, range:{category:"tags", value:"Magic Circle", count:1}, type:"transform", target:"self",
+			{trigger:"choice", cond:true, range:{category:"tags", value:"Runes", count:1}, type:"transform", target:"self",
 			info:{
 				value:"Magic Slot.집중",
 			}},
@@ -4829,7 +4829,7 @@ const cardDB = {
 	"MA-NM-PS-002":{
 		name:{ "KOR":"Automaton Golem" }, class:"Mage", type:"Position", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Eldorian", "group:변형", "group:Magic Circle"], related:["tag:Gem", "MA-MC-003"],
+		tags:["Deck빌딩", "race:Eldorian", "group:변형", "group:Runes"], related:["tag:Gem", "MA-MC-003"],
 		flavorText:{ "KOR":"Magitech, which combines Sylvani mechanical engineering and magic, is a highly sought-after field.<br>Among them, golem engineering is the essence of magitech, consisting of a combination of precise physical design and complex magic formulas." },
 		hypnoText:{ "KOR":"Your partner is a female onahole golem that faithfully carries out any command.<br>The tightness and wrinkles of her hole were modeled after yours, so using her is no different from fucking you." },
 		expiration:"always", duration:Infinity,
@@ -4849,7 +4849,7 @@ const cardDB = {
 	"MA-EX-AT-001":{
 		name:{ "KOR":"Mana Explosion" }, class:"Mage", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Beastfolk", "group:Magic Circle", "group:Sense Block", "act:fellatio"], related:["MA-MC-004"],
+		tags:["Deck빌딩", "race:Beastfolk", "group:Runes", "group:Sense Block", "act:fellatio"], related:["MA-MC-004"],
 		flavorText:{ "KOR":"Pure mana has no special properties.<br>If one possesses a blessed amount of mana, they can produce an impressive amount of power just by releasing it without processing it into magic." },
 		hypnoText:{ "KOR":"A technique to drink cum until it overflows from your mouth.<br>You must deep-throat the cock until the ejaculated volume flows back out and swallow it." },
 		effect:[
@@ -4872,11 +4872,11 @@ const cardDB = {
 	"MA-EX-AT-003":{
 		name:{ "KOR":"Multi-Elementalism" }, class:"Mage", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Silvani", "group:Magic", "group:Magic Circle", "즉발슬롯", "act:orgy"], related:["ref:즉발슬롯"],
+		tags:["Deck빌딩", "race:Silvani", "group:Magic", "group:Runes", "즉발슬롯", "act:orgy"], related:["ref:즉발슬롯"],
 		flavorText:{ "KOR":"Most elementalists possess mana of a single specialized element, but very rarely, there are those who possess multiple types of mana.<br>Multi-elementalism allows one to utilize this talent to respond to various situations, but it requires twice the effort of practicing a single focused element." },
 		hypnoText:{ "KOR":"A technique to handle a cock using two or more of your breasts, pussy, and ass.<br>You must strive to become a full-body cum-dumpster." },
 		effect:[
-			{trigger:"used", cond:true, type:"get", target:"self", repeat:"자기Deck.count(tags, Magic Circle)", maxRepeat:3, value:"Magic Slot.즉발"},
+			{trigger:"used", cond:true, type:"get", target:"self", repeat:"자기Deck.count(tags, Runes)", maxRepeat:3, value:"Magic Slot.즉발"},
 			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", repeat:"자기Deck.count(tags, Magic)", value:1},
 		]
 	},
@@ -4908,7 +4908,7 @@ const cardDB = {
 	"MA-EX-SU-002":{
 		name:{ "KOR":"Conflagration" }, class:"Mage", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Silvani", "group:Magic Circle", "group:Magic", "group:변형", "집중슬롯", "진홍색 Magic Circle"], related:["MA-MC-001", "ref:집중슬롯"],
+		tags:["Deck빌딩", "race:Silvani", "group:Runes", "group:Magic", "group:변형", "집중슬롯", "진홍색 Runes"], related:["MA-MC-001", "ref:집중슬롯"],
 		flavorText:{ "KOR":"Battle mages, by their nature, tend to possess crimson mana, which emphasizes destructive power.<br>With destructive flames that burn everything to ash, they boast the power to turn the battlefield into a sea of fire." },
 		hypnoText:{ "KOR":"A technique to spray orgasmic pussy juice through passionate masturbation.<br>Though it takes time to get sufficiently heated up, it is a preparatory process for more lewd and intense acts." },
 		effect:[
@@ -4922,7 +4922,7 @@ const cardDB = {
 	"MA-EX-SU-003":{
 		name:{ "KOR":"Cold Snap" }, class:"Mage", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Halfling", "group:Magic Circle", "group:Magic", "group:변형", "집중슬롯", "담청색 Magic Circle"], related:["MA-MC-002", "ref:집중슬롯"],
+		tags:["Deck빌딩", "race:Halfling", "group:Runes", "group:Magic", "group:변형", "집중슬롯", "담청색 Runes"], related:["MA-MC-002", "ref:집중슬롯"],
 		flavorText:{ "KOR":"The gushing azure mana freezes even the air, causing a cold, sharp wind to overwhelm the enemy.<br>It is a powerful magic that seals the enemy's movements and freezes everything, covering the entire battlefield in ice." },
 		hypnoText:{ "KOR":"If you have large breasts, you must not cover them with clothes or underwear.<br>It is common sense to expose large breasts to please the eyes of men." },
 		effect:[
@@ -4936,7 +4936,7 @@ const cardDB = {
 	"MA-EX-SU-004":{
 		name:{ "KOR":"Meditation" }, class:"Mage", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Eldorian", "group:Magic", "group:변형", "group:Magic Circle", "group:Sense Block", "영창슬롯", "황금색 Magic Circle"], related:["ref:영창슬롯", "tag:변형목적"], keywords:["변형목적"],
+		tags:["Deck빌딩", "race:Eldorian", "group:Magic", "group:변형", "group:Runes", "group:Sense Block", "영창슬롯", "황금색 Runes"], related:["ref:영창슬롯", "tag:변형목적"], keywords:["변형목적"],
 		flavorText:{ "KOR":"The sages of the Lightweaver clan use a method of mental training to handle golden mana.<br>By entering a deep meditation and circulating golden mana within their bodies, they recover spent energy and stabilize the flow of mana." },
 		hypnoText:{ "KOR":"A technique to fall into a trance, becoming so unaware that you don't even notice you're being fucked.<br>By the time you come to your senses, you'll find your entire body drenched in cum." },
 		effect:[
@@ -4950,7 +4950,7 @@ const cardDB = {
 	"MA-EX-PS-001":{
 		name:{ "KOR":"Flask Phoenix" }, class:"Mage", type:"Position", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Eldorian", "group:Magic Circle", "진홍색 Magic Circle"], related:["MA-MC-001"],
+		tags:["Deck빌딩", "race:Eldorian", "group:Runes", "진홍색 Runes"], related:["MA-MC-001"],
 		flavorText:{ "KOR":"Spiritism is a technique with very desirable power, but it cannot be used without the talent to communicate with capricious spirits.<br>To overcome this, the World Tree Academy in Sylvania is attempting to create artificial spirits with whom communication is easy." },
 		hypnoText:{ "KOR":"Your partner is a female monster with an intense sexual curiosity.<br>With an innocent expression, she pesters men to attack them and engage in a 'game' that feels good." },
 		expiration:"always", duration:Infinity,
@@ -4965,17 +4965,17 @@ const cardDB = {
 	"MA-EX-PS-002":{
 		name:{ "KOR":"Mana Slime" }, class:"Mage", type:"Position", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Halfling", "group:Magic Circle", "group:변형"], related:["tag:Magic Circle", "MA-EX-PS-002-2"],
+		tags:["Deck빌딩", "race:Halfling", "group:Runes", "group:변형"], related:["tag:Runes", "MA-EX-PS-002-2"],
 		flavorText:{ "KOR":"Though called a slime because of its amorphous form, the Mana Slime is a completely different being from the monster of the same name.<br>Because of its property of absorbing and growing from surrounding mana, it is used for various experiments, mana detection, and as a countermeasure against mages." },
 		hypnoText:{ "KOR":"Your partner is a slime that mimics the form of a human female.<br>Its main food is semen, which it consumes by squeezing a cock with a sticky hole that mimics a pussy, forcing it to ejaculate.<br>※ Do not feed it more than the appropriate amount." },
 		expiration:"count", duration:5, defaultDuration:5,
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"마나슬라임-1"},
 			{trigger:"used", cond:true, type:"posture"},
-			{trigger:"turnStart", cond:{v1:"자기Deck.count(tags, Magic Circle)", op:">", v2:0}, type:"line", value:"마나슬라임-2"},
-			{trigger:"turnStart", cond:{v1:"자기Deck.count(tags, Magic Circle)", op:">", v2:0}, condOmit:true, type:"transform", target:"self",
+			{trigger:"turnStart", cond:{v1:"자기Deck.count(tags, Runes)", op:">", v2:0}, type:"line", value:"마나슬라임-2"},
+			{trigger:"turnStart", cond:{v1:"자기Deck.count(tags, Runes)", op:">", v2:0}, condOmit:true, type:"transform", target:"self",
 			info:{
-				target:"자기Deck.selectCards(tags, Magic Circle, 1)",
+				target:"자기Deck.selectCards(tags, Runes, 1)",
 				value:"MA-EX-PS-002-2",
 			}},
 			{trigger:"expired", cond:true, type:"line", value:"마나슬라임-3"},
@@ -5025,7 +5025,7 @@ const cardDB = {
 	"MA-UL-AT-001":{
 		name:{ "KOR":"Falling Star" }, class:"Mage", type:"attack", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Beastfolk", "group:Magic Circle", "group:변형", "진홍색 Magic Circle"], related:["MA-MC-001", "MA-UL-AT-001-1"],
+		tags:["Deck빌딩", "race:Beastfolk", "group:Runes", "group:변형", "진홍색 Runes"], related:["MA-MC-001", "MA-UL-AT-001-1"],
 		flavorText:{ "KOR":"The art of reading the movements of the stars has long been dismissed as impractical due to a lack of information, poor observation accuracy, and reliance on chance.<br>However, that perception changed when a Beastfolk sage cast the grand magic Meteor Shower, combining crimson mana and astrology to protect their beastfolk, an event that devastated the entire area.<br>The attempt to systematize this unknown field to prevent a repeat of the tragedy led to the birth of astrology, or Celesthron." },
 		hypnoText:{ "KOR":"A finishing move that turns the caster's pussy into the ultimate onahole with an enhanced lust crest carved into the womb.<br>It has the effect of making any man cum instantly, but as an aftereffect, the caster suffers when not penetrated, forcing them to live the rest of their life as a fucktoy." },
 		effect:[
@@ -5037,7 +5037,7 @@ const cardDB = {
 		]
 	},
 	"MA-UL-AT-001-1":{
-		name:{ "KOR":"Grand Magic: Meteor Shower" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Meteor Shower" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Magic", "Autocast"], cast:1,
 		effect:[
@@ -5048,7 +5048,7 @@ const cardDB = {
 	"MA-UL-AT-002":{
 		name:{ "KOR":"Frozen World" }, class:"Mage", type:"attack", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Eldorian", "group:Magic Circle", "group:변형", "담청색 Magic Circle"], related:["MA-ST-002", "MA-MC-002", "MA-UL-AT-002-1"],
+		tags:["Deck빌딩", "race:Eldorian", "group:Runes", "group:변형", "담청색 Runes"], related:["MA-ST-002", "MA-MC-002", "MA-UL-AT-002-1"],
 		flavorText:{ "KOR":"In the snowy mountain regions of the northern Eldorian Kingdom live minority groups who have been there for ages.<br>To survive in the harsh environment, they have developed strong physiques and hearty personalities, along with the talent to handle the abundant azure mana from the mountains, their fighting spirit, and their strength to overcome the cold.<br>The grand magic they mainly use freezes the entire area, allowing them to turn any battlefield into their home turf." },
 		hypnoText:{ "KOR":"A finishing move where you cover a cock with your breasts, delivering extreme pressure and tightness for immense pleasure.<br>Your soft breasts wrap around and swallow the cock, trapping your opponent in their soft stimulation so they cannot escape." },
 		effect:[
@@ -5061,7 +5061,7 @@ const cardDB = {
 		]
 	},
 	"MA-UL-AT-002-1":{
-		name:{ "KOR":"Grand Magic: Permafrost" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Permafrost" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Magic", "Autocast"], related:["MA-ST-002"], cast:Infinity,
 		effect:[
@@ -5074,7 +5074,7 @@ const cardDB = {
 	"MA-UL-SU-001":{
 		name:{ "KOR":"Veins of Mana" }, class:"Mage", type:"Support", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Halfling", "group:Magic Circle", "group:변형", "group:Magic", "황금색 Magic Circle"], related:["MA-MC-003", "tag:집중 Magic"],
+		tags:["Deck빌딩", "race:Halfling", "group:Runes", "group:변형", "group:Magic", "황금색 Runes"], related:["MA-MC-003", "tag:집중 Magic"],
 		flavorText:{ "KOR":"Deep within the earth, there are ley lines through which immense mana flows, and the gradual leakage of this to the surface is what constitutes natural mana.<br>Rarely, there are points where a ley line passes relatively close to the surface and can be directly accessed, and standing there allows one to use that vast mana as if it were their own.<br>A mage using a ley line is like a natural disaster, so understanding the surrounding mana terrain is crucial in war, and it is best not to set up a base near a ley line that cannot be secured." },
 		hypnoText:{ "KOR":"A technique to cast a curse on yourself that turns your entire body into an erogenous zone.<br>You become able to feel pleasure from just caresses and skinship, allowing you to enjoy sex even more." },
 		effect:[
@@ -5083,7 +5083,7 @@ const cardDB = {
 				value:"Magic Slot.집중",
 			}},
 			//{trigger:"used", cond:true, type:"specialA13"},
-			//{trigger:"used", cond:true, type:"text", value:{ "KOR":"Select a <b>[Golden Magic Circle]</b>, <b>transform</b> it into Focus, and grant it automatic casting." }},
+			//{trigger:"used", cond:true, type:"text", value:{ "KOR":"Select a <b>[Golden Runes]</b>, <b>transform</b> it into Focus, and grant it automatic casting." }},
 			{trigger:"used", cond:true, type:"get", target:"self", value:"MA-UL-SU-001"},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1}
 		]
@@ -5160,11 +5160,11 @@ const cardDB = {
 		cond:true,
 		tags:["Miyeong's Help"],
 		effect:[
-			{trigger:"none", cond:true, type:"text", value:{ "KOR":"<b>Condition:</b> If you have 2 or more magic circle cards in your deck," }},
+			{trigger:"none", cond:true, type:"text", value:{ "KOR":"<b>Condition:</b> If you have 2 or more Runes cards in your deck," }},
 			{trigger:"used", cond:true, type:"line", value:"미영-3"},
 			{trigger:"used", cond:true, type:"transform", target:"self",
 			info:{
-				target:"자기Deck.selectCards(tags, Magic Circle, 1)",
+				target:"자기Deck.selectCards(tags, Runes, 1)",
 				value:"Magic Slot.영창"
 			}},
 		]
@@ -5182,7 +5182,7 @@ const cardDB = {
 	},
 	"MA-UL-PS-001-1-5":{
 		parents:"MA-UL-PS-001-1-1",
-		name:{ "KOR":"Miyeong's Encouragement" }, class:"Mage", type:"-", rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Miyeong's Motivation" }, class:"Mage", type:"-", rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Miyeong's Help"],
 		effect:[
@@ -5994,7 +5994,7 @@ const cardDB = {
 	},
 	"HE-UL-SU-001-1":{
 		parents:"HE-UL-SU-001",
-		name:{ "KOR":"Combination of All Things" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"All at Once" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Combination"],
 		effect:[
@@ -6139,7 +6139,7 @@ const cardDB = {
 	},
 	"BN-SY-005-1":{
 		parents:"BN-SY-005",
-		name:{ "KOR":"Death Is Not Permitted" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Death Denied" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		expiration:"turnEnd", duration:1,
 		tags:[],
@@ -6206,7 +6206,7 @@ const cardDB = {
 		]
 	},
 	"BN-TR-003-1":{
-		name:{ "KOR":"Prologue: Harbinger of Doom" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", race:"Beastfolk", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Verse I: The Omen" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", race:"Beastfolk", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["시련", "불가침"], related:["BN-TR-003-2", "BN-TR-003-3", "BN-TR-003-4"], keywords:["Generated"],
 		effect:[
@@ -6218,7 +6218,7 @@ const cardDB = {
 		]
 	},
 	"BN-TR-003-2":{
-		name:{ "KOR":"Interlude: The Coming Calamity" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", race:"Beastfolk", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Verse II: The Calamity" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", race:"Beastfolk", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["시련", "불가침"], related:["BN-TR-003-3", "BN-TR-003-4"],
 		effect:[
@@ -6230,7 +6230,7 @@ const cardDB = {
 		]
 	},
 	"BN-TR-003-3":{
-		name:{ "KOR":"Epilogue: The Final Day" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", race:"Beastfolk", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Verse III: Doomsday" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", race:"Beastfolk", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["시련", "불가침"], related:["BN-TR-003-4"],
 		effect:[
@@ -6243,7 +6243,7 @@ const cardDB = {
 
 	"BN-TR-003-4":{
 		parents:"BN-TR-003",
-		name:{ "KOR":"Ending: Overcoming Fate" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true, noInherit:true,
+		name:{ "KOR":"Finale: Fate Defied" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true, noInherit:true,
 		cond:true,
 		tags:["시련", "불가침"],
 		effect:[
@@ -6506,7 +6506,7 @@ const cardDB = {
 	//
 
 	"B2-PA-001":{
-		name:{ "KOR":"Hypnotic Brainwashing" }, class:"Villager", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Brainwashing" }, class:"Villager", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion능력", "노말전용"], related:["B2-PA-001-1", "B2-PA-001-2"],
 		expiration:"always", duration:Infinity,
@@ -6655,7 +6655,7 @@ const cardDB = {
 
 	"B2-PA-001+":{
 		parents:"B2-PA-001",
-		name:{ "KOR":"Hypnotic Brainwashing+" }, class:"Villager", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Brainwashing+" }, class:"Villager", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion능력", "Hard Only"], related:["B2-PA-001-1+", "B2-PA-001-2+"],
 		expiration:"always", duration:Infinity,
@@ -6923,7 +6923,7 @@ const cardDB = {
 		]
 	},
 	"B4-UC-001":{
-		name:{ "KOR":"Mischievous Prank" }, class:"Imp", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Mischief" }, class:"Imp", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B4-PA-001"],
 		effect:[
@@ -6933,7 +6933,7 @@ const cardDB = {
 		]
 	},
 	"B4-AT-001":{
-		name:{ "KOR":"I Wanna Touch Your Boobs" }, class:"Imp", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Cheeky Grope" }, class:"Imp", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -6942,7 +6942,7 @@ const cardDB = {
 		]
 	},
 	"B4-AT-002":{
-		name:{ "KOR":"Hug Me" }, class:"Imp", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Clingy Hug" }, class:"Imp", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -6970,7 +6970,7 @@ const cardDB = {
 		]
 	},
 	"B4-SU-002":{
-		name:{ "KOR":"Loser Gets a Punishment" }, class:"Imp", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Penalty Game" }, class:"Imp", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:{v1:"Opponent.기록.이전.이벤트.Orgasm", op:">", v2:0},
 		tags:["ChampionDeck"], related:["B4-PA-001"],
 		effect:[
@@ -7035,7 +7035,7 @@ const cardDB = {
 	},
 	"B4-SU-002+":{
 		parents:"B4-SU-002",
-		name:{ "KOR":"Loser Gets a Punishment+" }, class:"Imp", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Penalty Game+" }, class:"Imp", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:{v1:"Opponent.기록.이전.이벤트.Orgasm", op:">", v2:0},
 		tags:["ChampionDeck"], related:["B4-PA-001+"],
 		effect:[
@@ -7283,7 +7283,7 @@ const cardDB = {
 		]
 	},
 	"B6-SU-003":{
-		name:{ "KOR":"Mental Synchronization" }, class:"Mushroom Man", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Mental Connection" }, class:"Mushroom Man", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B6-SU-003-2"],
 		effect:[

@@ -1520,7 +1520,7 @@ function changeEvent(num) {
         	break;
         case "Mage":
         	classInfo = document.getElementById("mageInfo");
-        	classGroups = ["Sense Block", "변형", "Magic Circle", "Magic"];
+        	classGroups = ["Sense Block", "변형", "Runes", "Magic"];
         	break;
         case "Healer":
         	classInfo = document.getElementById("healerInfo");
@@ -3645,7 +3645,7 @@ function createCard(card, size, button=false, type=0) {
 
 	    // card Name 생성
 	    const nameDiv = document.createElement('div');
-	    nameDiv.style.fontSize = adjustSize(size/10)+"vmin";
+	    nameDiv.style.fontSize = adjustSize(size/10.5)+"vmin";
 	    nameDiv.className = 'card-name';
 	    nameDiv.innerHTML = card.name[language];
 	    nameDiv.style.background = palette.name;
@@ -4123,29 +4123,29 @@ function createCardText(card, reverse=false) {
 			case "중막조건":
 				switch(prophecy[1]) {
 				case 0:
-					_card = `<span style="color: gray;"><i>(<b>[${getWord("진홍색 Magic Circle")}]</b>, <b>[${getWord("담청색 Magic Circle")}]</b>, <b>[${getWord("황금색 Magic Circle")}]</b>)</i></span>`;
+					_card = `<span style="color: gray;"><i>(<b>[${getWord("진홍색 Runes")}]</b>, <b>[${getWord("담청색 Runes")}]</b>, <b>[${getWord("황금색 Runes")}]</b>)</i></span>`;
 					break;
 				case 1:
-					_card = `<b>[${getWord("진홍색 Magic Circle")}]</b>`;
+					_card = `<b>[${getWord("진홍색 Runes")}]</b>`;
 					break;
 				case 2:
-					_card = `<b>[${getWord("담청색 Magic Circle")}]</b>`;
+					_card = `<b>[${getWord("담청색 Runes")}]</b>`;
 					break;
 				case 3:
-					_card = `<b>[${getWord("황금색 Magic Circle")}]</b>`;
+					_card = `<b>[${getWord("황금색 Runes")}]</b>`;
 					break;
 				}
 				break;
 			case "종막조건":
 				switch(prophecy[2]) {
 				case 0:
-					_card = `<span style="color: gray;"><i>(${getWord("집중 Magic")}, <b>[${getWord("순백색 Magic Circle")}]</b>, ${getWord("슬롯에 없는 Magic")}, ${getWord("두 번 이상 변형된")})</i></span> ${getWord("card")}`;
+					_card = `<span style="color: gray;"><i>(${getWord("집중 Magic")}, <b>[${getWord("순백색 Runes")}]</b>, ${getWord("슬롯에 없는 Magic")}, ${getWord("두 번 이상 변형된")})</i></span> ${getWord("card")}`;
 					break;
 				case 1:
 					_card = `${getWord("집중 Magic")} ${getWord("card")}`;
 					break;
 				case 2:
-					_card = `<b>[${getWord("순백색 Magic Circle")}]</b>`;
+					_card = `<b>[${getWord("순백색 Runes")}]</b>`;
 					break;
 				case 3:
 					_card = `${getWord("슬롯에 없는 Magic")} ${getWord("card")}`;
@@ -8778,7 +8778,7 @@ function countCard(cards, category, value=null) {
 	let count = 0;
 	for(let card of cards) {
 		if(card[category]) {
-			if((category == 'tags' && (card.tags.includes(value) || (value == "변형목적" && card.type == "Penalty"))) || card[category] == value || (category == 'class' && value == "Class" && ["Warrior", "Assassin", "Mage", "Healer"].includes(card.class)) || (card.id == 'MA-MC-004' && category == 'id' && cardDB[value].tags.includes('Magic Circle'))) {
+			if((category == 'tags' && (card.tags.includes(value) || (value == "변형목적" && card.type == "Penalty"))) || card[category] == value || (category == 'class' && value == "Class" && ["Warrior", "Assassin", "Mage", "Healer"].includes(card.class)) || (card.id == 'MA-MC-004' && category == 'id' && cardDB[value].tags.includes('Runes'))) {
 				count += 1;
 			}
 		}
@@ -8793,7 +8793,7 @@ function countCardType(cards, category, value=null) {
 			uniqueIds.add(cd.id);
 		})
 	} else {
-		cards.filter(cd => cd[category] && ((category == 'tags' && cd.tags.includes(value)) || cd[category] == value || (category == 'class' && value == "Class" && ["Warrior", "Assassin", "Mage", "Healer"].includes(card.class)) || (cd.id == 'MA-MC-004' && category == 'id' && cardDB[value].tags.includes('Magic Circle')))).forEach(function(cd) {
+		cards.filter(cd => cd[category] && ((category == 'tags' && cd.tags.includes(value)) || cd[category] == value || (category == 'class' && value == "Class" && ["Warrior", "Assassin", "Mage", "Healer"].includes(card.class)) || (cd.id == 'MA-MC-004' && category == 'id' && cardDB[value].tags.includes('Runes')))).forEach(function(cd) {
 			uniqueIds.add(cd.id);
 		})
 	}
@@ -8858,11 +8858,11 @@ function randomCard(category, value=null) {
 				case "즉발 Magic":
 					return card.id != "MA-MG-EA-002" && card.tags.includes(value);
 					break;
-				case "Magic Circle":
+				case "Runes":
 					if(player.state.some(st => st.id == "AD-MA-BG5-001")) {
-						return card.tags.includes('Magic Circle') && deck.some(cd => (id == 'MA-MC-001' && cd.tags.includes("진홍색 Magic Circle")) || (id == 'MA-MC-002' && cd.tags.includes("담청색 Magic Circle")) || (id == 'MA-MC-003' && cd.tags.includes("황금색 Magic Circle")) || (id == 'MA-MC-004' && cd.tags.includes("순백색 Magic Circle")) );
+						return card.tags.includes('Runes') && deck.some(cd => (id == 'MA-MC-001' && cd.tags.includes("진홍색 Runes")) || (id == 'MA-MC-002' && cd.tags.includes("담청색 Runes")) || (id == 'MA-MC-003' && cd.tags.includes("황금색 Runes")) || (id == 'MA-MC-004' && cd.tags.includes("순백색 Runes")) );
 					} else {
-						return card.type == 'Magic Circle' && id != 'MA-MC-004';
+						return card.type == 'Runes' && id != 'MA-MC-004';
 					}
 					break;
 				case "서막조건":
@@ -8892,7 +8892,7 @@ function randomCard(category, value=null) {
 		});
 	}
 	cardPool = cardPool.filter(id => !cardDB[id].tags.includes("Uncreatable"))
-	if(category == "tags" && value == "Magic Circle" && cardPool.length == 0) {
+	if(category == "tags" && value == "Runes" && cardPool.length == 0) {
 		cardPool = ["MA-MC-001", "MA-MC-002", "MA-MC-003"];
 	}
 	if(category == "tags" && value == "Crafted" && cardPool.length == 0) {
@@ -9264,7 +9264,7 @@ function checkSelectable(type, card, category, value) {
 	if(card[category] == value) {
 		return true;
 	}
-	if(card.id == 'MA-MC-004' && category == 'id' && cardDB[value].tags.includes('Magic Circle')) {
+	if(card.id == 'MA-MC-004' && category == 'id' && cardDB[value].tags.includes('Runes')) {
 		return true;
 	}
 
@@ -9588,7 +9588,7 @@ function cardUsableCheck(card) {
 	if(player.state.some(st => st.id == "DA-AS-BG4-001") && round <= 3 && (card.tags.includes("Crafted") || card.id == "AS-NM-AT-000")) {
 		return false;
 	}
-	if(card.tags.includes("Magic Circle")) {
+	if(card.tags.includes("Runes")) {
 		return false;
 	}
 	if(card.tags.includes("Autocast")) {
@@ -12987,7 +12987,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 		            			}
 		            			break;
 		            		case "MA-UL-PS-001-1-3":
-		            			if(countCard(deck, "tags", "Magic Circle") >= 2) {
+		            			if(countCard(deck, "tags", "Runes") >= 2) {
 		            				validHelp.push(id);
 		            			}
 		            			break;
@@ -13129,9 +13129,9 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	            	prophecy[1] = Math.floor(Math.random() * 3) + 1;
 	            	prophecy[2] = Math.floor(Math.random() * 4) + 1;
 
-	            	cardDB['BN-TR-003-2'].tags.push(["진홍색 Magic Circle", "담청색 Magic Circle", "황금색 Magic Circle"][prophecy[1] - 1])
+	            	cardDB['BN-TR-003-2'].tags.push(["진홍색 Runes", "담청색 Runes", "황금색 Runes"][prophecy[1] - 1])
 	            	if(prophecy[2] == 2) {
-	            		cardDB['BN-TR-003-3'].tags.push("순백색 Magic Circle");
+	            		cardDB['BN-TR-003-3'].tags.push("순백색 Runes");
 	            	}
 
 	            	let _condCardNames = [
@@ -16899,8 +16899,8 @@ function updateCustomCard() {
         		customClass = choiceValues.class;
         		switch(effectObject.magiccircleType) {
         		case "magiccircle":
-        			customEffect.value = `randomCard(tags, Magic Circle)`;
-        			//customRelated.push("tag:Magic Circle");
+        			customEffect.value = `randomCard(tags, Runes)`;
+        			//customRelated.push("tag:Runes");
         			break;
         		case "red":
         			customEffect.value = `MA-MC-001`;
@@ -17058,7 +17058,7 @@ function updateCustomCard() {
 	        if(effectObject.value == "magiccircle") {
 	        	switch(effectObject.magiccircleType) {
 	        	case "magiccircle":
-	        		_value = `randomCard(tags, Magic Circle)`;
+	        		_value = `randomCard(tags, Runes)`;
 	        		break;
 	        	case "red":
 	        		_value = `MA-MC-001`;
@@ -17221,7 +17221,7 @@ function updateCustomCard() {
 		        case "spell":
 		            return ["tags", "Magic"];
 		        case "magiccircle":
-		            return ["tags", "Magic Circle"];
+		            return ["tags", "Runes"];
 		        case "red":
 		            return ["id", "MA-MC-001"];
 		        case "blue":

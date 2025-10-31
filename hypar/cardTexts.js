@@ -437,7 +437,7 @@ const cardTexts = {
 		"specialA13": { "KOR": "Can play Attack cards on round 1." },
 		"specialA14": { "KOR": "Gain double <b>Lust</b>." },
 		"specialA15": { "KOR": "Improves all Healer <b>Positions</b> in your deck." },
-		"specialA16": { "KOR": "Gain a needed Magic Circle instead of a random one." },
+		"specialA16": { "KOR": "Gain a needed Runes instead of a random one." },
 		"specialA17": { "KOR": "Cannot gain <b>Numbness</b> from <b>Transforming</b> cards." },
 		"specialA18": { "KOR": "The conditions for Prelude, Interlude, and Finale are randomized." },
 		"specialA19": { "KOR": "Upgrade all <b>[Heart Throbs]</b> twice." },

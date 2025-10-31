@@ -152,8 +152,8 @@ const storyProfile = {
 			},
 			"Silvani": {
 				"KOR": `
-					<b>Background:</b> Member of the Forbidden Arts Society<br>
-					- A member of the Forbidden Arts Society, wanted in the Sylvanian Federation, who is engrossed in forbidden research.<br>
+					<b>Background:</b> Member of the Shadow Coven<br>
+					- A member of the Shadow Coven, wanted in the Sylvanian Federation, who is engrossed in forbidden research.<br>
 					- A dangerous criminal with an obsessive curiosity for mental magic and magical skills powerful enough to cross into taboo territory.
 				`,
 			},
@@ -405,9 +405,9 @@ const storyProfile = {
 			},
 			"Silvani": {
 				"KOR": `
-					<b>Product Overview:</b> Former Member of the Forbidden Arts Society<br>
+					<b>Product Overview:</b> Former Member of the Shadow Coven<br>
 					- A weirdo who stumbled upon the arena and waltzed right in.<br>
-					- Are all those Forbidden Arts Society folks this crazy...<br>
+					- Are all those Shadow Coven folks this crazy...<br>
 					- Currently being trained as a masochistic fleshlight, brainwashed to get excited by sadistic acts.
 				`,
 			},
@@ -6492,7 +6492,7 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				As a member of the Forbidden Arts Society, you were a criminal with an insatiable curiosity for mind magic.<br>
+				As a member of the Shadow Coven, you were a criminal with an insatiable curiosity for mind magic.<br>
 				To satisfy this lust for knowledge, you disregarded all laws and ethics, committing countless crimes and acts of terror.<br>
 				Then, you happened upon the arena's existence and, impressed by its sophisticated mind magic, brazenly invaded and were captured.<br>
 				<br>

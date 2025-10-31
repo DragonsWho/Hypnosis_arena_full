@@ -109,7 +109,7 @@ const dictionary = {
 	"특성":{ "KOR":"Trait" },
 	"Penalty":{ "KOR":"Penalty" },
 	"Magic":{ "KOR":"Magic" },
-	"Magic Circle":{ "KOR":"Magic Circle" },
+	"Runes":{ "KOR":"Runes" },
 	"Combination":{ "KOR":"Combined" },
 	"Essence":{ "KOR":"Essence" },
 
@@ -205,10 +205,10 @@ const dictionary = {
  
 	"Gem": { "KOR": "Jewel" }, 
 
-	"진홍색 Magic Circle": { "KOR": "Crimson Magic Circle" },
-	"담청색 Magic Circle": { "KOR": "Azure Magic Circle" },
-	"황금색 Magic Circle": { "KOR": "Golden Magic Circle" },
-	"순백색 Magic Circle": { "KOR": "White Magic Circle" },
+	"진홍색 Runes": { "KOR": "Crimson Runes" },
+	"담청색 Runes": { "KOR": "Azure Runes" },
+	"황금색 Runes": { "KOR": "Golden Runes" },
+	"순백색 Runes": { "KOR": "White Runes" },
 	"슬롯에 없는 Magic": { "KOR": "Magic not in a slot" },
 
 
@@ -2789,7 +2789,7 @@ const customStructure = {
             		{ value: "nelson", text: "Pester", condition: {v1:"커스텀.Class", op:"==", v2:"Assassin"} },
             		{ value: "manufacture", text: "Crafted", condition: {v1:"커스텀.Class", op:"==", v2:"Assassin"} },
             		{ value: "instantspell", text: "Instant Spell", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
-            		{ value: "magiccircle", text: "Magic Circle", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
+            		{ value: "magiccircle", text: "Runes", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
             		{ value: "jewel", text: "Gem", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
             		{ value: "essence", text: "Essence", condition: {v1:"커스텀.Class", op:"==", v2:"Healer"} },
                 ],
@@ -3099,7 +3099,7 @@ const customStructure = {
                 "options": [
 		            { value: "all", text: "All Card" },
 		            { value: "neutral", text: "Neutral Card" },
-		            { value: "magiccircle", text: "Magic Circle Card" },
+		            { value: "magiccircle", text: "Runes Card" },
 		            { value: "jewel", text: "Gem Card" },
 		            { value: "penalty", text: "Penalty Card" }
                 ],
@@ -3172,7 +3172,7 @@ const customStructure = {
                 "options": [
 		            { value: "chantspell", text: "Chant Spell" },
 		            { value: "focusedspell", text: "Focus Spell" },
-		            { value: "magiccircle", text: "Magic Circle Card" }
+		            { value: "magiccircle", text: "Runes Card" }
                 ],
                 "width": 50,
                 "subfields":[
@@ -3532,7 +3532,7 @@ const variableData = [
             { value: "created", text: "생성된 card", exclude:["get"] },
             { value: "nelson", text: "조르기", condition: {v1:"커스텀.Class", op:"==", v2:"Assassin"} },
             { value: "spell", text: "Magic card", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
-            { value: "magiccircle", text: "Magic Circle card", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
+            { value: "magiccircle", text: "Runes card", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
             { value: "jewel", text: "Gem card", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
             { value: "essence", text: "Essence card", condition: {v1:"커스텀.Class", op:"==", v2:"Healer"} },
             { value: "combination", text: "Combination card", condition: {v1:"커스텀.Class", op:"==", v2:"Healer"} }
@@ -3645,7 +3645,7 @@ const keywordDict = {
     },
 	"변형목적": {
         name: { "KOR":"Transform Target" },
-        desc: { "KOR":"Cards that exist for the purpose of being transformed, such as Magic Circles or Gems." }
+        desc: { "KOR":"Cards that exist for the purpose of being transformed, such as Runess or Gems." }
     },
 	"결합": {
         name: { "KOR":"Combine" },
