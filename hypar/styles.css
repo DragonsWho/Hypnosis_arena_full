@@ -109,7 +109,7 @@ hr {
     align-items: center;
     z-index: 1000;
     background: var(--color-background);
-    color: #ffffff;
+    color: var(--color-accent-dark);
     font-size: 1.5rem;
     margin-top: 20px;
     text-align: center;
