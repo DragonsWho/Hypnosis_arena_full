@@ -104,7 +104,7 @@ const dictionary = {
 	"Support":{ "KOR":"Support" },
 	"자세":{ "KOR":"Posture" },
 	"Position":{ "KOR":"Position" },
-	"탈의":{ "KOR":"Stripping" },
+	"Stripping":{ "KOR":"Stripping" },
 	"상태":{ "KOR":"State" },
 	"특성":{ "KOR":"Trait" },
 	"Penalty":{ "KOR":"Penalty" },
@@ -174,7 +174,7 @@ const dictionary = {
 	"현재":{ "KOR":"Currently" },
 	"즉시":{ "KOR":"Immediately" },
 	"무작위":{ "KOR":"Random" },
-	"지속":{ "KOR":"Passive" },
+	"Passive":{ "KOR":"Passive" },
 	"소지":{ "KOR":"In Hand" },
 	"자동":{ "KOR":"Auto" },
 

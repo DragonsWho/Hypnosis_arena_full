@@ -2050,7 +2050,7 @@ function ruleTab(num) {
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "attack" && cd.tags.includes("Deck빌딩"))), 24, false, 101));
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Support" && cd.tags.includes("Deck빌딩"))), 24, false, 101));
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Position" && cd.tags.includes("Deck빌딩"))), 24, false, 101));
-		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "탈의" && !cd.tags.includes("챌린지전용"))), 24, false, 101));
+		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Stripping" && !cd.tags.includes("챌린지전용"))), 24, false, 101));
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Penalty" && cd.tags.includes("Deck빌딩"))), 24, false, 101));
 		cards.push(createCard(getRandom(Object.values(cardDB).filter(cd => cd.type == "Transcendent" || cd.type == "wildcard" || cd.type == "Arcane" || cd.type == "Crafted" || cd.type == "시련")), 24, false, 101));
     	arrangeCards(cards, ruleCard, 3, 2, false)
@@ -5216,7 +5216,7 @@ function createCardText(card, reverse=false) {
 		if(e.inDeck && !(lastEffect && lastEffect.inDeck)) {
 			text += translateText(cardTexts["effect"]["헤더"], { "value":getWord("소지") });
 		} else if(e.trigger == "always" && e.type != "corrupt" && (!card.tags || !card.tags.includes("독"))) {
-			text += translateText(cardTexts["effect"]["헤더"], { "value":getWord("지속") });
+			text += translateText(cardTexts["effect"]["헤더"], { "value":getWord("Passive") });
 		}
 
 		if(card.tags && card.tags.includes("Essence") && e.trigger != "always" && !e.adverb) {
@@ -6171,7 +6171,7 @@ function createCardText(card, reverse=false) {
 			}
 			var dValue = stringObjectify(e.info.value);
 			var dValueText = objToText(dValue, 1);
-        	text += translateText(cardTexts["effect"][e.info.value>0?"증가숫자":"감소숫자"], { "value":translateText(cardTexts["target"]["지속시간"], { "target":_card }), "amount":dValueText, "repeat":repeatText });
+        	text += translateText(cardTexts["effect"][e.info.value>0?"증가숫자":"감소숫자"], { "value":translateText(cardTexts["target"]["Passive시간"], { "target":_card }), "amount":dValueText, "repeat":repeatText });
         	break;
         case "transform":
         	var tCard, oCard = "";
@@ -6310,9 +6310,9 @@ function createCardText(card, reverse=false) {
 			case "self": _target = reverse?getWord("Opponent"):""; break;
 			}
 			if((!reverse && e.target == "self") || (reverse && e.target == "op")) {
-				text += translateText(cardTexts["effect"]["탈의사용불가자신"], { "actor":_target });
+				text += translateText(cardTexts["effect"]["Stripping사용불가자신"], { "actor":_target });
 			} else {
-				text += translateText(cardTexts["effect"]["탈의사용불가"], { "actor":_target });
+				text += translateText(cardTexts["effect"]["Stripping사용불가"], { "actor":_target });
 			}
         	break;
         case "penaltyBan":
@@ -6375,9 +6375,9 @@ function createCardText(card, reverse=false) {
 			case "self": _target = reverse?getWord("Opponent"):""; break;
 			}
 			if((!reverse && e.target == "self") || (reverse && e.target == "op")) {
-				text += translateText(cardTexts["effect"]["탈의강제사용자신"], { "actor":_target });
+				text += translateText(cardTexts["effect"]["Stripping강제사용자신"], { "actor":_target });
 			} else {
-				text += translateText(cardTexts["effect"]["탈의강제사용"], { "actor":_target });
+				text += translateText(cardTexts["effect"]["Stripping강제사용"], { "actor":_target });
 			}
         	break;
         case "penaltyMustUse":
@@ -6496,7 +6496,7 @@ function createCardText(card, reverse=false) {
         	text += translateText(cardTexts["effect"]["Championattack비활성화"], { })
         	break;
         case "unclothDisable":
-        	text += translateText(cardTexts["effect"]["탈의비활성화"], { })
+        	text += translateText(cardTexts["effect"]["Stripping비활성화"], { })
         	break;
         case "penaltyDisable":
         	text += translateText(cardTexts["effect"]["Penalty비활성화"], { })
@@ -6801,8 +6801,8 @@ function createCardText(card, reverse=false) {
 		text += translateText(cardTexts["effect"][card.cast==Infinity?"무한시전":"시전"], { "amount":card.cast });
 	}
 
-	if(["attack", "Support", "탈의", "Magic", "Arcane", "Essence", "Penalty"].includes(card.type)) {
-    	text = text.replace(/지속:/g, '');
+	if(["attack", "Support", "Stripping", "Magic", "Arcane", "Essence", "Penalty"].includes(card.type)) {
+    	text = text.replace(/Passive:/g, '');
 	}
 
 	if (text.startsWith('<br>')) {
@@ -6826,7 +6826,7 @@ function createCardText(card, reverse=false) {
         text = text.replace(pattern, ", "+item);
     }
 
-    if(battleEnd == -1 && ((card.type == "Penalty" && options.penaltyDisable) || (card.type == "탈의" && options.unclothDisable) || (card.isDeck && options.enemyDisable && card.owner == 0) || (card.type == "attack" && options.enemyAttackDisable && card.owner == 0) || (card.tags && card.tags.includes("독") && options.poisonDisable) || (card.tags && card.tags.includes("Magic") && options.spellDisable))) {
+    if(battleEnd == -1 && ((card.type == "Penalty" && options.penaltyDisable) || (card.type == "Stripping" && options.unclothDisable) || (card.isDeck && options.enemyDisable && card.owner == 0) || (card.type == "attack" && options.enemyAttackDisable && card.owner == 0) || (card.tags && card.tags.includes("독") && options.poisonDisable) || (card.tags && card.tags.includes("Magic") && options.spellDisable))) {
     	text = `<s>${text}</s>`
     }
 
@@ -8975,8 +8975,8 @@ function selectCards(cards, category, value=null, count="all") {
 		if(value == "Penalty제외") {
 			result = result.filter(cd => cd.type != "Penalty");
 		}
-		if(value == "탈의제외") {
-			result = result.filter(cd => cd.type != "탈의");
+		if(value == "Stripping제외") {
+			result = result.filter(cd => cd.type != "Stripping");
 		}
 		if(value == "추가card제외") {
 			result = result.filter(cd => cd.cond != false && !cd.effect.some(e => e.type == "maxUse") && !cd.tags.includes("Autocast"));
@@ -9434,7 +9434,7 @@ function enemyActionSelect() {
 		const highest = [];
 		let i = 0;
 		for(let card of opDeck) {
-			if(checkCondition(card.cond, 0) && !(enemy.ban.all) && !(enemy.ban.attack && card.type == "attack") && !(enemy.ban.support && card.type == "Support") && !(enemy.ban.uncloth && card.type == "탈의") && !(enemy.ban.penalty && card.type == "Penalty") && !(enemy.mustuse.attack && card.type != "attack") && !(enemy.mustuse.support && card.type != "Support") && !(enemy.mustuse.uncloth && card.type != "탈의") && !(enemy.mustuse.penalty && card.type != "Penalty") && !(enemy.mustuse.bound && !card.bounded) && !selectPos.includes(i)) {
+			if(checkCondition(card.cond, 0) && !(enemy.ban.all) && !(enemy.ban.attack && card.type == "attack") && !(enemy.ban.support && card.type == "Support") && !(enemy.ban.uncloth && card.type == "Stripping") && !(enemy.ban.penalty && card.type == "Penalty") && !(enemy.mustuse.attack && card.type != "attack") && !(enemy.mustuse.support && card.type != "Support") && !(enemy.mustuse.uncloth && card.type != "Stripping") && !(enemy.mustuse.penalty && card.type != "Penalty") && !(enemy.mustuse.bound && !card.bounded) && !selectPos.includes(i)) {
 				let priority = 0;
 				if(cardPriority[card.id]) {
 					for(let p of cardPriority[card.id]) {
@@ -10156,7 +10156,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 			e.op = e.op == "add"?e.op = "subtract":e.op = "add";
 		}
 
-        if((e.trigger == trigger || (e.trigger == "choice" && trigger == "used")) && !(!inDeckTrigger.includes(trigger) && action.isDeck && !e.inDeck) && checkCondition(e.cond, actor) && (!e.alter || !defActive) && !(action.type == "Penalty" && options.penaltyDisable) && !(action.type == "탈의" && options.unclothDisable) && !(options.enemyDisable && actor == 0 && action.isDeck) && !(options.enemyAttackDisable && actor == 0 && action.type == "attack" && action.isDeck)) {
+        if((e.trigger == trigger || (e.trigger == "choice" && trigger == "used")) && !(!inDeckTrigger.includes(trigger) && action.isDeck && !e.inDeck) && checkCondition(e.cond, actor) && (!e.alter || !defActive) && !(action.type == "Penalty" && options.penaltyDisable) && !(action.type == "Stripping" && options.unclothDisable) && !(options.enemyDisable && actor == 0 && action.isDeck) && !(options.enemyAttackDisable && actor == 0 && action.type == "attack" && action.isDeck)) {
         	let target, tpos, eValue, tText;
         	var selectPool = [];
         	let repeat = 1;
@@ -13427,7 +13427,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 	let effect = action.effect;
 	let effectExists = false;
 	effect.forEach(function(e) {
-		if( (((e.trigger === trigger) || (e.trigger === "choice" && trigger === "used")) && !(!inDeckTrigger.includes(trigger) &&  action.isDeck && !e.inDeck) && (e.type != 'count' || action.duration > 0)) && !(action.type == "Penalty" && options.penaltyDisable) && !(action.type == "탈의" && options.unclothDisable) && !(options.enemyDisable && actor == 0 && action.isDeck) && !(options.enemyAttackDisable && actor == 0 && action.type == "attack" && action.isDeck) && ((e.type != "line" && e.type != "changeCond" && e.type != "changeFace") || e.essential) ) {
+		if( (((e.trigger === trigger) || (e.trigger === "choice" && trigger === "used")) && !(!inDeckTrigger.includes(trigger) &&  action.isDeck && !e.inDeck) && (e.type != 'count' || action.duration > 0)) && !(action.type == "Penalty" && options.penaltyDisable) && !(action.type == "Stripping" && options.unclothDisable) && !(options.enemyDisable && actor == 0 && action.isDeck) && !(options.enemyAttackDisable && actor == 0 && action.type == "attack" && action.isDeck) && ((e.type != "line" && e.type != "changeCond" && e.type != "changeFace") || e.essential) ) {
 			if(checkCondition(e.cond, actor)) {
 				effectExists = true;
 			}
@@ -13499,7 +13499,7 @@ async function actionEffect(action, trigger="used", index=0, size=32, noImg=fals
 				case "Position":
 					useType = "usePosture";
 					break;
-				case "탈의":
+				case "Stripping":
 					useType = "useUncloth";
 					break;
 				case "Penalty":
@@ -14293,7 +14293,7 @@ async function stateEffect(state, trigger) {
 		console.log(trigger);
 	}
 
-	if((state.type == "Penalty" && options.penaltyDisable) || (state.type == "탈의" && options.unclothDisable) || (state.tags.includes("독") && options.poisonDisable) || (state.tags.includes("Magic") && options.spellDisable)) {
+	if((state.type == "Penalty" && options.penaltyDisable) || (state.type == "Stripping" && options.unclothDisable) || (state.tags.includes("독") && options.poisonDisable) || (state.tags.includes("Magic") && options.spellDisable)) {
 		return 0;
 	}
 

@@ -3740,7 +3740,7 @@ const cardDB = {
 		]
 	},
 	"AS-NM-UC-001":{
-		name:{ "KOR":"Shadow Step" }, class:"Assassin", type:"탈의", isDeck:true, rarity:"Normal", cost:10, owner:1,
+		name:{ "KOR":"Shadow Step" }, class:"Assassin", type:"Stripping", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:추가 card", "race:Beastfolk"],
 		flavorText:{ "KOR":"The Bloodmist Beastfolk is a special beastfolk of those with white fur and red eyes who were abandoned as cursed children due to the lack of knowledge about albinism.<br>In their struggle for survival, they learned to hide in the shadows and erase their presence, eventually becoming professional assassins in the underworld." },
@@ -6382,7 +6382,7 @@ const cardDB = {
 	},
 
 	"B1-UC-001":{
-		name:{ "KOR":"Clothes Ripping" }, class:"Goblins", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Clothes Ripping" }, class:"Goblins", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "노말전용"], related:["Penalty"],
 		effect:[
@@ -6472,7 +6472,7 @@ const cardDB = {
 
 	"B1-UC-001+":{
 		parents:"B1-UC-001",
-		name:{ "KOR":"Clothes Ripping+" }, class:"Goblins", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Clothes Ripping+" }, class:"Goblins", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "Hard Only"], related:["Penalty"],
 		effect:[
@@ -6558,7 +6558,7 @@ const cardDB = {
 	},
 
 	"B2-UC-001":{
-		name:{ "KOR":"Strip" }, class:"Villager", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Strip" }, class:"Villager", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "노말전용"], related:["B2-PN-001"],
 		effect:[
@@ -6698,7 +6698,7 @@ const cardDB = {
 
 	"B2-UC-001+":{
 		parents:"B2-UC-001",
-		name:{ "KOR":"Strip+" }, class:"Villager", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Strip+" }, class:"Villager", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "Hard Only"], related:["B2-PN-001"],
 		effect:[
@@ -6776,7 +6776,7 @@ const cardDB = {
 	},
 
 	"B3-UC-001":{
-		name:{ "KOR":"Clothes-Melting" }, class:"Tentacle Slime", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Clothes-Melting" }, class:"Tentacle Slime", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -6923,7 +6923,7 @@ const cardDB = {
 		]
 	},
 	"B4-UC-001":{
-		name:{ "KOR":"Mischief" }, class:"Imp", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Mischief" }, class:"Imp", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B4-PA-001"],
 		effect:[
@@ -7002,7 +7002,7 @@ const cardDB = {
 	},
 	"B4-UC-001+":{
 		parents:"B4-UC-001",
-		name:{ "KOR":"Mischievous Prank+" }, class:"Imp", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Mischievous Prank+" }, class:"Imp", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B4-PA-001+"],
 		effect:[
@@ -7081,7 +7081,7 @@ const cardDB = {
 		]
 	},
 	"B5-UC-001":{
-		name:{ "KOR":"Armor Break" }, class:"Tauros", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Armor Break" }, class:"Tauros", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -7140,7 +7140,7 @@ const cardDB = {
 	},
 	"B5-UC-001+":{
 		parents:"B5-UC-001",
-		name:{ "KOR":"Armor Break+" }, class:"Tauros", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Armor Break+" }, class:"Tauros", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -7225,7 +7225,7 @@ const cardDB = {
 	},
 
 	"B6-UC-001":{
-		name:{ "KOR":"Corrosive Sap" }, class:"Mushroom Man", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Corrosive Sap" }, class:"Mushroom Man", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true, related:["B6-ST-001", "tag:Spore"],
 		tags:["ChampionDeck"],
 		effect:[
@@ -7322,7 +7322,7 @@ const cardDB = {
 	},
 	"B6-UC-001+":{
 		parents:"B6-UC-001",
-		name:{ "KOR":"Corrosive Sap+" }, class:"Mushroom Man", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Corrosive Sap+" }, class:"Mushroom Man", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true, related:["B6-ST-001", "tag:Spore"],
 		tags:["ChampionDeck", "Hard Only"],
 		effect:[
@@ -7384,9 +7384,9 @@ const cardDB = {
 		]
 	},
 	"B7-UC-001":{
-		name:{ "KOR":"Skillful Undressing" }, class:"Blonde Thug", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Skillful Undressing" }, class:"Blonde Thug", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["ChampionDeck", "Blonde Thug탈의"], related:["tag:Blonde Thug탈의"],
+		tags:["ChampionDeck", "Blonde ThugStripping"], related:["tag:Blonde ThugStripping"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"능숙하게벗기기"},
 			{trigger:"used", cond:true, type:"clothes", value:"uncloth"},
@@ -7578,7 +7578,7 @@ const cardDB = {
 	},
 
 	"B8-UC-001":{
-		name:{ "KOR":"Attire Correction" }, class:"Trainer", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Attire Correction" }, class:"Trainer", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B8-UC-001-1"],
 		effect:[
@@ -7691,7 +7691,7 @@ const cardDB = {
 	},
 	"B8-UC-001+":{
 		parents:"B8-UC-001",
-		name:{ "KOR":"Attire Correction+" }, class:"Trainer", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Attire Correction+" }, class:"Trainer", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "Hard Only"], related:["B8-UC-001-1"],
 		effect:[
@@ -7758,7 +7758,7 @@ const cardDB = {
 	//
 
 	"BC-UC-001":{
-		name:{ "KOR":"Wandering" }, class:"Neutral", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Wandering" }, class:"Neutral", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "챌린지전용"],
 		effect:[
@@ -7854,7 +7854,7 @@ const cardDB = {
 		]
 	},
 	"BC8-UC-001":{
-		name:{ "KOR":"Wandering" }, class:"Neutral", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Wandering" }, class:"Neutral", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "챌린지전용"],
 		effect:[

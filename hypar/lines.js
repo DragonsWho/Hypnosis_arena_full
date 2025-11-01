@@ -2443,7 +2443,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"shake",
-					text:"*Splat*",
+					text: "*A glob of acidic mucus shoots out, splattering across your clothes... and they begin to dissolve.*",
 				},
 			]
 		},
@@ -2454,7 +2454,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Wriggle wriggle*",
+					text: "*Slimy tendrils squirm and probe...*",
 				},
 			]
 		},
@@ -2463,7 +2463,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Squirm squirm*",
+					text: "*A wet, writhing mass slides against your skin...*",
 				},
 			]
 		},
@@ -2472,7 +2472,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Slither slither*",
+					text: "*A thick tentacle slithers up your leg...*",
 				},
 			]
 		},
@@ -2481,7 +2481,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Slide*",
+					text: "*A cold, smooth limb slides into a sensitive crevice...*",
 				},
 			]
 		},
@@ -2490,7 +2490,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Squish squish*",
+					text: "*Suckers pulse and squish against your flesh...*",
 				},
 			]
 		},
@@ -2501,7 +2501,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"shake",
-					text:"*Squeeze*",
+					 text: "*A thick tentacle wraps around you, squeezing tight!*",
 				},
 			]
 		},
@@ -2512,7 +2512,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Gulp gulp*",
+					 text: "*A tendril forces a strange, sweet saliva down your throat... Gulp...*",
 				},
 			]
 		},
@@ -2523,7 +2523,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"shake",
-					text:"*Gurgle gurgle*",
+					text: "*The slime gurgles as it coats itself in a thick, protective layer of mucus.*",
 				},
 			]
 		},
@@ -2536,7 +2536,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Gurgle... Wriggle...*",
+					text: "*A low gurgle echoes as a mass of tentacles writhes before you...*",
 				},
 				{
 					cond:true, pos:1,
@@ -2544,11 +2544,11 @@ const line = {
 				},
 				{
 					cond:true, pos:0,
-					text:"*Slither slither*",
+					 text: "*A single tentacle slithers forward, tapping the ground expectantly.*",
 				},
 				{
 					cond:true, pos:1,
-					text:"Mate with this tentacle...<br>Understood. I understand.",
+					text:"Mate with this tentacle...<br>Understood.",
 				},
 			]
 		},
@@ -2557,23 +2557,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Hey, couldn't it at least be a humanoid enemy?!",
+					 text: "You have got to be kidding me! Couldn't they have sent something with a normal cock?!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Sex with a slime...?<br>How do you even do that!",
+					 text: "Sex with a blob of goo? How does that even work?!",
 				},
 				{
 					cond:true, pos:0,
-					text:"*Wriggle wriggle...*",
+					 text: "*In response, a dozen tentacles unfurl, writhing hungrily.*",
 				},
 				{
 					cond:true, pos:1,
-					text:"T-tentacles?<br>Disgusting...",
+					 text: "T-Tentacles?! Oh, gods, that's disgusting...",
 				},
 				{
 					cond:true, pos:1,
-					text:"D-don't tell me, I have to... do it with that...?",
+					text: "D-Don't tell me I have to stick *that* inside of me...?",
 				},
 			]
 		},
@@ -2582,19 +2582,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Gurgle... Wriggle...*",
+					text: "*A gelatinous blob wobbles and gurgles.*",
 				},
 				{
 					cond:true, pos:1,
-					text:"I didn't expect my opponent to be a small, cute slime.",
+					text: "Oh, wow! My opponent is a cute little slime!",
 				},
 				{
 					cond:true, pos:1,
-					text:"But, since it's an enemy, I must defeat it.",
+					 text: "It's still my opponent, though, so I have to try my best.",
 				},
 				{
 					cond:true, pos:1,
-					text:"It's 'common sense' to use your pussy to catch a slime...<br>right?",
+					text:"It's common sense to use your pussy to catch a slime...<br>right?",
 				},
 			]
 		},
@@ -2603,19 +2603,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Squirm squirm... Drip...*",
+					 text: "*The creature oozes and drips, its tentacles squirming...*",
 				},
 				{
 					cond:true, pos:1,
-					text:"Haa... This sticky stuff isn't so bad♡<br>How are you going to play with me?",
+					text: "Haaah... this sticky feeling isn't half bad.♡ So, how are you planning to use me?",
 				},
 				{
 					cond:true, pos:0,
-					text:"*Slither... Slither...*",
+					text: "*A thick, glistening tentacle rises to meet your gaze.*",
 				},
 				{
 					cond:true, pos:1,
-					text:"Alright♡<br>Try entering my hole♡",
+					 text: "Oh, I see.♡ Well, don't be shy. Come on in.♡",
 				},
 			]
 		},
@@ -2636,7 +2636,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"If you are ready, I will spread my genitals<br>to accept the tentacle.",
+					 text: "If you are prepared, I will now assume the receptive position.",
 				},
 			]
 		},
@@ -2649,15 +2649,15 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"Being tied up, unable to move,<br>and getting fucked in every hole...",
+					 text: "Getting tied up, helpless, while they force their way into every single one of your holes...",
 				},
 				{
 					cond:true, pos:1,
-					text:"It just feels too good...",
+					text: "...it just feels way too fucking good.",
 				},
 				{
 					cond:true, pos:1, effect:"shake",
-					text:"Ah, no. I mean, it's painful.",
+					 text: "I-I mean, it's awful! Painful!",
 				},
 			]
 		},
@@ -2666,7 +2666,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Wow, it's gotten huge!<br>I've never seen a slime this big before!",
+					text: "Whoa, you got so big! I've never seen a slime this huge before!",
 				},
 				{
 					cond:true, pos:0,
@@ -2674,11 +2674,11 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"The tentacles... they're so big and there are so many.",
+					text: "And all those tentacles... they're so long and thick...",
 				},
 				{
 					cond:true, pos:1,
-					text:"I know...<br>I'm going to put these in my pussy now, right♡",
+					text: "I know what happens next... You're going to put all of these inside me, aren't you?♡",
 				},
 			]
 		},
@@ -2687,15 +2687,15 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Grrrr... Gurgle...*",
+					text: "*The massive slime pulses with a deep, hungry groan.*",
 				},
 				{
 					cond:true, pos:1,
-					text:"Big... and wriggling...<br>It's so wonderful♡",
+					text: "So big... and all those writhing limbs... It's magnificent.♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"To modify a slime like this...<br>The arena knows what it's doing♡",
+					 text: "Whoever engineered this beast... they really know what a girl wants.♡",
 				},
 			]
 		},
@@ -2706,27 +2706,27 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"shake",
-					text:"*Splat...*",
+					   text:"*With a wet splat, a thick mucus covers your body...*",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1,
-					text:"Contact with a special mucus has been made.",
+					text:"I've been covered in a strange slime...",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1,
-					text:"Movement will be restricted.",
+					text:" My movements are becoming sluggish",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1,
-					text:"Ugh, what...<br>I didn't hear it could spit something like this...!",
+					 text:"Agh, what is this stuff?! It's so sticky!",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1,
-					text:"(M-my body...<br>I can't move well...!)",
+					 text:"(Shit... it's getting hard to move...!)",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1,
-					text:"Ah, it's cold...<br>It's so sticky...",
+					 text:"Eek, it's cold! And so gooey...",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1,
@@ -2734,11 +2734,11 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
-					text:"Ah, cold...<br>What's this now?",
+					text:"Ooh, cold... What's this little trick?",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
-					text:"(Ahh...<br>It's a mucus to restrain my movements♡)",
+					text:"(Ahh... trying to hold me still, are we? Kinky.♡)",
 				},
 			]
 		},
@@ -2747,11 +2747,11 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"shake",
-					text:"*Splat♡<br>Gurgle♡ Gurgle♡*",
+					 text:"*Another wave of sticky mucus envelops you...♡*",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1,
-					text:"I'm covered in mucus.",
+					text:"I am completely covered...",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1,
@@ -2759,27 +2759,27 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1,
-					text:"What is this...♡",
+					text:"More of this crap...?♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1,
-					text:"You're tying me up, what are you planning to do♡",
+					text:"So you're just going to tie me up and have your way with me?♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1,
-					text:"Oh, what is this mucus♡",
+					text:"Wow, there's so much of it now...♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1,
-					text:"It's so sticky, I can't move well♡",
+					text:"It's so sticky, It's so hard to move...♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
-					text:"Such a bold move...♡",
+					text:"Getting desperate, are we?♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
-					text:"You must have been afraid of me♡",
+					text:"Pinning me down so I can't fight back?♡",
 				},
 			]
 		},
@@ -2790,7 +2790,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Orgasm confirmed.<br>Defeat is expected if this continues.",
+					text:"Orgasm confirmed.<br>Continued stimulation will likely result in defeat.",
 				},
 				{
 					cond:true, pos:0,
@@ -2867,11 +2867,11 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Orgasm achieved.<br>Initiating female ejaculation.",
+					text:"Orgasm achieved.<br>Initiating squirt.",
 				},
 				{
 					cond:true, pos:1, effect:"shake", portrait:"ecstasy2",
-					text:"*shiver...*",
+					text:"*Your body convulses as she releases a torrent...*",
 				},
 				{
 					cond:true, pos:0,
@@ -2879,7 +2879,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"Consumption confirmed.<br>If more is needed, I will orgasm again.",
+					text:"It has been consumed. If more is required, I can produce another orgasm.",
 				},
 			]
 		},
@@ -2949,19 +2949,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Gurgle... Gurgle gurgle...*",
+					text:"*The tentacles pulse and throb, burrowing deeper...*",
 				},
 				{
 					cond:true, pos:1,
-					text:"The human body is...<br>unsuitable for tentacle sex... confirmed...",
+					text:"The human form... is ill-suited for this level of penetration...♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"*shudder shudder...<br>throb...*",
+					text:"*They swell inside her, filling every void...*",
 				},
 				{
 					cond:true, pos:1,
-					text:"Reporting that the body's durability... has reached its limit...<br>Danger... Danger...",
+					text:"Reporting that the body's durability... has reached its limit...<br>Danger... ",
 				},
 			]
 		},
@@ -3042,7 +3042,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"I'm being squeezed dry...♡<br>I'm cumming again...♡",
+					 text:"It's wringing me out...♡ I'm coming again, and again...♡",
 				},
 			]
 		},
@@ -3115,6 +3115,10 @@ const line = {
 		},
 	],
 
+
+
+
+
 //###################################################################################################################################################################################
 	
 	"짓궂은장난":[
@@ -3123,23 +3127,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"shake",
-					text:"Gotcha!<br>Sis's underwear acquired~",
+					 text:"Got 'em! I got your panties, big sis~!",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1,
-					text:"... ...<br>Movement not detected.",
+					 text:"...My undergarments... have been removed.",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1,
-					text:"Th-this bastard! Since when!",
+					  text:"Hey! Get back here, you little thief!",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1,
-					text:"Eh? Wait.<br>H-how?",
+					 text:"Huh? Wait, when did you...? My panties are gone!",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
-					text:"Oh, I didn't even notice.<br>Impressive sleight of hand.",
+					 text:"Heh, didn't even feel it. Not bad, kid.",
 				},
 			]
 		},
@@ -3148,7 +3152,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"What color are your panties today~?",
+					  text:"What color panties are you wearing today~?",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1,
@@ -3156,19 +3160,19 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1,
-					text:"Hmph, you're planning to steal them again, aren't you?<br>I knew it, so I didn't wear any today!",
+					 text:"Hah! I knew you'd try that again! That's why I didn't wear any today, you little brat!",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1,
-					text:"Panties?<br>I'm not wearing any today!",
+					  text:"Panties? I'm not wearing any!",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
-					text:"Wanna know?<br>Today... I'm not wearing any♡",
+					  text:"Want to check for yourself?♡ I decided to go commando today.♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Liar~ Take them off and show me~",
+					  text:"Liar~ Let me see~",
 				},
 			]
 		},
@@ -3179,7 +3183,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Sis~ Can't I touch your breasts?<br>Just once! Just a little!",
+					 text:"Big sis~ Your boobs look so soft... Can I touch 'em? Please? Just a little!",
 				},
 			]
 		},
@@ -3188,7 +3192,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Let me touch your breasts~<br>You're going to let me anyway~",
+					text:"C'mon, let me touch 'em~ You're gonna let me anyway, right~?",
 				},
 			]
 		},
@@ -3199,7 +3203,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Sis, hug me~",
+					text:"Big sis, give me a hug~",
 				},
 			]
 		},
@@ -3208,7 +3212,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Sis, I want to put my cock in your pussy~",
+					text:"Big sis, I wanna stick my pee-pee in your special place~♡",
 				},
 			]
 		},
@@ -3219,7 +3223,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Let's play, sis~<br>Get on all fours like a puppy~",
+					 text:"Let's play house, big sis! You can be the puppy!",
 				},
 			]
 		},
@@ -3228,7 +3232,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"The way you twitch every time I pound you is hilarious!",
+					 text:"Hehe, you twitch every time I push in! It's so funny!",
 				},
 			]
 		},
@@ -3239,27 +3243,27 @@ const line = {
 			lineList:[
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1,
-					text:"Pl-please untie me.<br>This prank has gone too far...",
+					text:"Please... release me. This 'game' has gone far enough...",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1,
-					text:"Aren't you going to untie this?<br>You damn little brat!",
+					 text:"Are you going to untie me or not, you little shit?!",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1,
-					text:"Aah, I can't move.",
+					 text:"Oh, I'm all tied up. I can't move at all.",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
-					text:"This position is a bit.<br>Even I feel embarrassed...?",
+					text:"My, this is quite the position. I almost feel... embarrassed.♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"So this is what your pussy looks like~<br>What would happen if I poked it with this?",
+					text:"So that's what your hole looks like up close~ What happens if I poke it with this?",
 				},
 				{
 					cond:true, pos:1, effect:"shake",
-					text:"Ah♡ Nooo♡",
+					text:"Ah!♡ N-No, don't!♡",
 				},
 			]
 		},
@@ -3268,15 +3272,15 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake",
-					text:"Mmph...♡<br>Mmmph...♡",
+					 text:"Mmph...♡ Nngh...♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Your pussy is completely soaked~<br>Did you get that turned on? You're such a pervert~",
+					text:"Whoa, you're all wet down there! Did you like that? You're such a perv, big sis~",
 				},
 				{
 					cond:true, pos:1,
-					text:"Mmmph...♡",
+					  text:"Mmmph...♡",
 				},
 			]
 		},
@@ -3317,7 +3321,7 @@ const line = {
 			lineList:[
 				{
 					cond:{v1:"모드", op:"==", v2:0}, pos:0,
-					text:"She's a perverted adult<br>who gets turned on by a kid's cock~",
+					text:"She's a perverted adult<br>who gets turned on by my cock~",
 				},
 				{
 					cond:{v1:"모드", op:"==", v2:1}, pos:0,
@@ -3914,13 +3918,39 @@ const line = {
 
 //###################################################################################################################################################################################
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	"방어구파괴":[
 		{
 			priority:0, cond:true,
 			lineList:[
 				{
 					cond:true, pos:0, effect:"diffusion",
-					text:"*Kuuuoooh!!*",
+					text:"*With a furious bellow, it charges and shatters your armor!*",
 				},
 			]
 		},
@@ -3931,7 +3961,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Moooooo!!!*",
+					text:"*MMMOOOOOO!!!*",
 				},
 			]
 		},
@@ -3940,7 +3970,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Huuuu...<br>Prrrr...*",
+					 text:"*A low growl rumbles in its chest...*",
 				},
 			]
 		},
@@ -3949,7 +3979,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Grrrr...<br>Mooo...*",
+					text:"*It paws the ground, snorting aggressively.*",
 				},
 			]
 		},
@@ -3978,7 +4008,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"shake",
-					text:"*Huooooo!!! Prrrng!!!*",
+					text:"*With a powerful roar, it slams its massive body against yours!*",
 				},
 			]
 		},
@@ -3987,7 +4017,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"shake",
-					text:"*Ruuuumble... Mooo!!!*",
+					text:"*It drives you into the ground with overwhelming force! MOOO!*",
 				},
 			]
 		},
@@ -4029,15 +4059,15 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1,
-					text:"Y-you're kidding...<br>How am I supposed to handle a cock this size...",
+					text:"You have to be joking... There's no way something that huge will fit...",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1,
-					text:"A-are... cocks...<br>normally this huge...?",
+					 text:"Th-that's... is that a normal size for... one of those?",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
-					text:"You're going to... ravage me... with this...♡",
+					text:"Oh my... You're planning to use *that* on me...?♡",
 				},
 			]
 		},
@@ -4050,15 +4080,15 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1,
-					text:"Y-you think showing me something like this...<br>is going to intimidate me...",
+					text:"D-Don't think just showing me that thing is going to scare me...",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1,
-					text:"I-it's still huge, but...<br>it somehow managed to fit.",
+					 text:"I-It's still so big... I can't believe it fit inside me last time.",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
-					text:"A huge... and masculine cock♡<br>Just looking at it... is making my womb throb♡",
+					 text:"So big... so powerful...♡ Just looking at it makes my womb ache...♡",
 				},
 			]
 		},
@@ -4071,7 +4101,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Hoo... Hoo...*",
+					 text:"*The beast takes a step back, breathing heavily.*",
 				},
 			]
 		},
@@ -4080,7 +4110,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Hoo... Hoo...*",
+					text:"Hoo... Hoo... <br>*It lets out a low growl, catching its breath before the next assault.*",
 				},
 			]
 		},
@@ -4117,7 +4147,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"There's no way something that big will fit!!",
+					 text:"It's a fucking battering ram! There's no way that'll fit!",
 				},
 				{
 					cond:true, pos:0,
@@ -4125,11 +4155,11 @@ const line = {
 				},
 				{
 					cond:true, pos:1, effect:"shake",
-					text:"W-wait... Don't come closer!",
+					text:"H-Hey! Stay back! Don't you come near me!",
 				},
 				{
 					cond:true, pos:1,
-					text:"No, my pussy is not your disposable masturbation toy!",
+					  text:"My body is not some disposable toy for a fucking animal!",
 				},
 			]
 		},
@@ -4142,15 +4172,15 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"You poor thing...<br>You're in pain from being so aroused, aren't you...?",
+					 text:"Oh, you poor thing... You must be in pain, being so... swollen.",
 				},
 				{
 					cond:true, pos:1,
-					text:"Don't worry.<br>Use my pussy as you please.",
+					text:"Don't worry.<br>You can use my pussy if it will make you feel better.",
 				},
 				{
 					cond:true, pos:1,
-					text:"Haha... Now that I see it up close...<br>it's even bigger...?",
+				 text:"Hehe... Wow, up close it's even... bigger than I thought.",
 				},
 			]
 		},
@@ -4159,7 +4189,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"If I put something like that in... my pussy will be so stretched out,<br>I'll never be able to use it again...♡",
+				      text:"If I take something that massive... my cunt will be stretched out forever...♡",
 				},
 				{
 					cond:true, pos:1,
@@ -4197,7 +4227,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"From now on, I will become a single onahole.",
+					 text:"I will now serve my purpose as its vessel.",
 				},
 			]
 		},
@@ -4210,15 +4240,15 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"I knew you'd show up.",
+					  text:"You again...",
 				},
 				{
 					cond:true, pos:1,
-					text:"Now my pussy can only... with your cock...",
+					 text:"After you... no other cock feels like anything...",
 				},
 				{
 					cond:true, pos:1,
-					text:"A-ah, it's nothing!<br>Hmph, bring it on.",
+					  text:"A-ah, never mind! Just... bring it on!",
 				},
 			]
 		},
@@ -4231,15 +4261,15 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"So, I was an onahole<br>for Master Tauros's cock, right?",
+					  text:"So, my purpose was to be a onahole for Master Tauros's big cock, right?",
 				},
 				{
 					cond:true, pos:1,
-					text:"The reason my pussy is loose<br>was to accommodate the giant cock without any problems.",
+					 text:"Is that why my hole got stretched out? So it would fit you perfectly?",
 				},
 				{
 					cond:true, pos:1,
-					text:"I'm happy to finally be able to fulfill my purpose again!",
+				  text:"I'm so happy I get to fulfill my purpose again!",
 				},
 			]
 		},
@@ -4271,7 +4301,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"I-I can... endure it♡",
+					  text:"I... I can withstand this... for my master...♡",
 				},
 				{
 					cond:true, pos:0,
@@ -4279,7 +4309,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1, effect:"shake", portrait:"ecstasy2",
-					text:"Uuugh...!!",
+					  text:"Nnggghhh...!!",
 				},
 			]
 		},
@@ -4352,7 +4382,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"I had a light orgasm...<br>but there is no problem.",
+					text:"A minor orgasm has occurred...<br>but there is no problem.",
 				},
 				{
 					cond:true, pos:0,
@@ -4360,11 +4390,11 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"My legs are convulsing...<br>but I can still move.",
+				   text:"My legs are trembling... but I can still serve.",
 				},
 				{
 					cond:true, pos:1,
-					text:"I will focus on tightening.",
+					   text:"I will focus on gripping you tighter.",
 				},
 			]
 		},
@@ -4446,15 +4476,15 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake", portrait:"ecstasy2", keepPort:true,
-					text:"*quiver quiver...*",
+					 text:"*Your body convulses uncontrollably, eyes rolling back...*",
 				},
 				{
 					cond:true, pos:1,
-					text:"Ugh♡ Aguuk...♡",
+					  text:"Unnngh...♡ Ggghk...♡",
 				},
 				{
 					cond:true, pos:1, portrait:"ecstasy2",
-					text:"Aahk♡ Ahiik♡",
+					text:"Ahhhk!♡ Aaaahhh!♡",
 				},
 			]
 		},
@@ -4468,7 +4498,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"shake",
-					text:"*Pshhh...*",
+					 text:"*A fine, corrosive mist sprays from its cap...*",
 				},
 			]
 		},
@@ -4480,7 +4510,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Gogogok...",
+					text:"*It lets out a dry, clicking sound as it prepares to spread its seed...*",
 				},
 			]
 		},
@@ -4491,7 +4521,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Suck suck*",
+					  text:"*Small tendrils latch onto you, draining your warmth...*",
 				},
 			]
 		},
@@ -4502,7 +4532,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Pshhh...*",
+					 text:"*A puff of spores erupts from its body!*",
 				},
 			]
 		},
@@ -4514,11 +4544,11 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"The opponent appears to be undead,<br>but its reproductive functions seem to be working.",
+					 text:"The opponent appears mushroom, yet it seems to possess... reproductive capabilities.",
 				},
 				{
 					cond:true, pos:1,
-					text:"In that case, I must have sex.",
+					 text:"If that is the case, my duty is clear.",
 				},
 				{
 					cond:true, pos:0,
@@ -4526,7 +4556,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"I have finished preparing to mate with it.",
+					text:"I am prepared to to mate with it.",
 				},
 			]
 		},
@@ -4535,19 +4565,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"What is this? Is a corpse moving?<br>How disgusting...",
+					   text:"What the hell is that? A walking corpse? That's disgusting...",
 				},
 				{
 					cond:true, pos:1,
-					text:"I have to have sex with a monster like this?<br>No way! Don't come near me!",
+					 text:"You expect me to do *it* with that thing? No fucking way! Stay back!",
 				},
 				{
 					cond:true, pos:0, effect:"shake",
-					text:"*Pshhh...*",
+					text:"Pshhh... *It releases a cloud of fine spores in her direction...*",
 				},
 				{
 					cond:true, pos:1,
-					text:"(Huh...? Why does my body feel so sluggish...?<br>My vision is blurring...)",
+					 text:"(Huh...? Suddenly... my body feels heavy... My head's getting foggy...)",
 				},
 			]
 		},
@@ -4585,7 +4615,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"Wow♡ For an undead, that's a pretty magnificent piece♡<br>Looks like I'm in for some fun♡",
+					text:"Wow♡ For an shroom, that's a pretty magnificent piece♡<br>Looks like I'm in for some fun♡",
 				},
 			]
 		},
@@ -4595,7 +4625,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*You will become a part of us.<br>Offer your body for the swarm.*",
+					text:"*You will become one with us. Offer your flesh to the swarm.*",
 				},
 				{
 					cond:true, pos:1,
