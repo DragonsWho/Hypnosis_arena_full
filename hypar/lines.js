@@ -17,7 +17,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Kikik... Kiek!<br>A new female...!",
+					text: "Kikik! Look what we got!<br>Fresh meat...!",
 				},
 			]
 		},
@@ -26,7 +26,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Uhehe, another good woman this time, huh?",
+					 text: "Heh heh... Now that's a prime piece of ass they brought me.",
 				},
 			]
 		},
@@ -35,7 +35,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Gurgle... Wriggle...*",
+					text: "*A wet squelch... followed by a hundred writhing limbs...*",
 				},
 			]
 		},
@@ -44,7 +44,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Hi, sis!<br>Let's play!",
+					text: "Hey, big sis! You gonna play with me? Pleeease?",
 				},
 			]
 		},
@@ -53,7 +53,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Moooooo!!!<br>Grrrr...",
+					 text: "MMMOOOOOO!!!<br>*A guttural snort echoes in the arena...*",
 				},
 			]
 		},
@@ -62,7 +62,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Ggggeuk... Gogogok...",
+					text:"*Gggghk... G'gogok...*",
 				},
 			]
 		},
@@ -71,7 +71,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Oh, you're pretty cute.<br>Wanna be my woman?",
+					text: "Well, look at you. Not bad at all.<br>How about you become my personal plaything?",
 				},
 			]
 		},
@@ -80,7 +80,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"An undisciplined female.<br>I will begin your training.",
+					text:"An undisciplined female.<br>Your training begins now.",
 				},
 			]
 		},
@@ -90,7 +90,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Kiek... A new broodmare...!",
+					 text: "Kiek! Another womb to fill!<br>A new broodmare for the tribe!",
 				},
 			]
 		},
@@ -99,7 +99,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Buhit, this time I'll make you mine for sure~",
+					text: "N'gyah ha! You're back for more, eh? This time, I'll break you for good!",
 				},
 			]
 		},
@@ -108,7 +108,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Krrreung... Grrrrreuk...*",
+					 text: "*A low, predatory gurgle... It remembers you...*",
 				},
 			]
 		},
@@ -117,7 +117,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Sis, I wanna do lewd things with you again today!",
+					 text: "Big sis! You came back to play!<br>I've been thinking of all the naughty things we can do!",
 				},
 			]
 		},
@@ -126,7 +126,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"shake",
-					text:"Moooooo!!!",
+					text: "MMMOOOOO!!!<br>*It recognizes your scent. It wants to breed.*",
 				},
 			]
 		},
@@ -135,7 +135,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Why do you reject the swarm?*",
+					 text: "*You have returned. Why do you resist unity? Join the swarm.*",
 				},
 			]
 		},
@@ -144,7 +144,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"You're the first one<br>to reject me like this.",
+					text: "You again? Heh. You're the first bitch who ever made me work for it.<br>Today, I'm breaking that pride of yours.",
 				},
 			]
 		},
@@ -153,7 +153,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Let's check the results of the training.",
+					text:"Let's check the results of your training.",
 				},
 			]
 		},
@@ -165,19 +165,19 @@ const line = {
 			lineList:[
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1, keepOriginal:true,
-					text:"Ready for the duel.",
+					text: "I am ready. Awaiting your command.",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1, keepOriginal:true,
-					text:"We're doing it here...?<br>While so many people watching?!",
+					text:"We're doing this... *here*?<br>With all these people watching?!",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1, keepOriginal:true,
-					text:"Please be gentle.",
+					text:"Please... be gentle with me.",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
-					text:"I can't take it anymore... Let's start now♡",
+					text:"I can't wait any longer... <br>Let's get this started already.♡",
 				},
 			]
 		},
@@ -190,15 +190,15 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1, keepOriginal:true,
-					text:"Is it that time again...<br>I'll try to endure it somehow.",
+					text: "Ugh, it's that time again...<br>Just have to get through this. Again.",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1, keepOriginal:true,
-					text:"I'll be in your care again today.<br>Please take good care of me.",
+					text: "Hello again! I'm ready for you.<br>Please use me well today.♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
-					text:"My pussy... is already ready♡",
+					text: "Haaah... I'm already dripping for you.♡",
 				},
 			]
 		},
@@ -237,7 +237,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"You lost already?<br>You're an adult, how pathetic~",
+					text:" You lost already?<br>And you're a grown-up? How lame~",
 				},
 			]
 		},
@@ -255,7 +255,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*New host, reproduce for the swarm.*",
+					text:"*A new host... You will reproduce for the swarm.*",
 				},
 			]
 		},
@@ -264,7 +264,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"4 out of 10.<br>What a boring pussy.",
+					text:"A solid 4/10.<br>What a boring fuck.",
 				},
 			]
 		},
@@ -337,7 +337,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Finally conquered.<br>Playing hard to get, what an arrogant bitch.",
+					text:"Finally broke you.<br>Fucking arrogant bitch, playing hard to get.",
 				},
 			]
 		},
@@ -352,25 +352,25 @@ const line = {
 		},
 	],
 
-	"플레이어-패배":[
+	"플레이어-패배":[ // PLAYER DEFEAT
 		{
 			priority:2, cond:true, 
 			lineList:[
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1, keepOriginal:true,
-					text:"I have been defeated♡<br>I will become your sex slave♡",
+					text: "Defeat confirmed.♡<br>I am now your property. Please use me as you see fit.♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1, keepOriginal:true,
-					text:"Save me♡ Save meee...♡",
+					text: "No... no more... please...♡ I give up... I'll do anything...♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1, keepOriginal:true,
-					text:"I'll be...<br>I'll be your sex slave...♡",
+					text: "I... I lost...?<br>Does that mean... I'm your toy now...?♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
-					text:"Something this pleasurable...<br>There's no way I can resist...♡",
+					text: "Haaaah♡ So this is what it feels like to lose...<br>I can't fight it anymore... It's just too good...♡",
 				},
 			]
 		},
@@ -379,7 +379,7 @@ const line = {
 			lineList:[
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1, keepOriginal:true,
-					text:"... ...♡",
+					text: "System overload... Function ceasing...♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1, keepOriginal:true,
@@ -403,11 +403,11 @@ const line = {
 			lineList:[
 				{
 					cond:["or", {v1:"특수승리", op:"!=", v2:true}, {v1:"Champion.Orgasm", op:">=", v2:5}], pos:0,
-					text:"Goblin, comrade...<br>No more...",
+                    text: "Kiek...!<br>Strong female... Too strong...!",
 				},
 				{
 					cond:["and", "특수승리", {v1:"Champion.Orgasm", op:"<", v2:5}], pos:0,
-					text:"Scary... female...",
+					text:"S-scary female... Run away!",
 				},
 			]
 		},
@@ -416,7 +416,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Oooh...<br>I'm being squeezed dry♡",
+					 text: "Ohhh! My balls... completely drained...",
 				},
 			]
 		},
@@ -434,7 +434,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Sis...♡<br>You're so strong...♡",
+                    text: "Whoa... Big sis, you're amazing...♡ S-so strong...♡",
 				},
 			]
 		},
@@ -443,7 +443,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Hoo... hoo...<br>*thud*",
+                    text: "*Heavy, exhausted snorts...<br>It collapses with a heavy *thud*.*",
 				},
 			]
 		},
@@ -452,7 +452,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Stagger, stagger...<br>thud*",
+                    text: "*The host body collapses... spores cease to flow...*",
 				},
 			]
 		},
@@ -480,7 +480,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Retreat, retreat...!",
+                    text: "Gah! Retreat! Retreat! This one's too much!",
 				}
 			]
 		},
@@ -489,7 +489,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Oook...♡<br>Nothing more's coming out...♡",
+					text:"N'gyaaah! I'm... I'm empty! There's nothing left to give!",
 				}
 			]
 		},
@@ -498,7 +498,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Pshhh... Bubble bubble...*",
+                    text: "*With a final, pained shudder, its tentacles retract...*",
 				}
 			]
 		},
@@ -507,7 +507,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Nooo...<br>All the essence I've gathered...♡",
+                    text: "No fair... You were supposed to be my toy...♡<br>How could you be so strong...♡",
 				},
 			]
 		},
@@ -516,7 +516,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Grooo... Kuo...<br>*thud*",
+                    text: "*A low groan... it collapses to its knees, utterly spent.*",
 				},
 			]
 		},
@@ -534,7 +534,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Me...<br>To a mere whore...",
+                    text: "Tch... To lose to a slut like you... This isn't over.",
 				},
 			]
 		},
@@ -543,7 +543,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"This can't be...<br>Did my training fail...?",
+					text:"Impossible...<br>Could my methods have failed...?",
 				},
 			]
 		},
@@ -555,19 +555,19 @@ const line = {
 			lineList:[
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1, keepOriginal:true,
-					text:"Ejaculation confirmed♡<br>Good work.",
+					text:"Ejaculation confirmed.♡<br>Mission accomplished.",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1, keepOriginal:true,
-					text:"Premature ejaculator♡<br>You suck♡",
+                    text: "Heh. Done already? Pathetic.♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"},], pos:1, keepOriginal:true,
-					text:"It felt really good for me too♡<br>Good work♡",
+                    text: "Wow, that felt amazing! Thank you for playing with me!♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
-					text:"Get up...<br>I'm not satisfied yet♡",
+                    text: "That's it? Get up. I'm not done with you yet.♡",
 				},
 			]
 		},
@@ -580,15 +580,15 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1, keepOriginal:true,
-					text:"It's over...<br>I won, what a relief...",
+					text:"It's finally over...<br>Thank god I won...",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1, keepOriginal:true,
-					text:"I won this time.",
+					text:"Yay, I won!",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
-					text:"I had fun for the first time in a while♡",
+					text:"Heh, that was the most fun I've had in a while.♡",
 				},
 			]
 		},
@@ -601,19 +601,19 @@ const line = {
 			lineList:[
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1, keepOriginal:true,
-					text:"Limit... This is my limit...",
+					text:"Limit... I have reached my limit...",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1, keepOriginal:true,
-					text:"I... I can't take it anymore...",
+                    text: "No... I can't...  <br>I can't fight this feeling anymore...",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1, keepOriginal:true,
-					text:"I... have realized...",
+                    text: "I... I think I understand now... This feeling is...",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true,
-					text:"This is my limit... I can't take it anymore♡",
+					text:"This is my limit... <br>okay, okay, you win...  <br>I can't hold back any longer...♡",
 				},
 			]
 		},
@@ -624,19 +624,19 @@ const line = {
 			lineList:[
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1, keepOriginal:true, portrait:"corrupted", effect:"diffusion", keepPort:true,
-					text:"I am a worthless slut,<br>I declare my defeat to Master Cock♡",
+                    text: "I am a worthless sex toy. <br>I surrender my body to my new Master.♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1, keepOriginal:true, portrait:"corrupted", effect:"diffusion", keepPort:true,
-					text:"I'm sorry for being so arrogant♡<br>P-please forgive me♡",
+                    text: "I was wrong... so wrong...  <br>I'm sorry for fighting back...♡  <br>P-please... use me...♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1, keepOriginal:true, portrait:"corrupted", effect:"diffusion", keepPort:true,
-					text:"It's only natural...<br>that a female can't win against Master Cock♡",
+                    text: "Oh... I see now. It's silly for a girl to fight back...  <br>My only purpose is to please you...♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, keepOriginal:true, portrait:"corrupted", effect:"diffusion", keepPort:true,
-					text:"I declare defeat♡ I lost♡<br>My life is over♡",
+					text:"I surrender!♡ I lost!♡ <br>My life is over...♡",
 				},
 			]
 		},
@@ -663,35 +663,35 @@ const line = {
 			lineList:[
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Goblins"}], pos:0,
-					text:"Kerek♡ I'm cumming♡",
+					text:"Kerek I'm cumming!",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Villager"}], pos:0,
-					text:"Ugh...♡ It's coming♡",
+					text:"Ugh... Here it comes! Here it cums!",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Tentacle Slime"}], pos:0,
-					text:"*Brrrr...*",
+                    text: "*Its whole body starts to quiver violently...*",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Tauros"}], pos:0,
-					text:"Hook♡ Hook♡",
+                    text: "*Heavy, ragged snorts... Its hips tense up...*",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Imp"}], pos:0,
-					text:"I'm gonna cum♡ Sis♡",
+                    text: "Ngh! Sis, I'm gonna... I'm gonna CUM!",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Mushroom Man"}], pos:0,
-					text:"*Brrrr...*",
+                    text: "*A low thrumming vibrates through its body...*",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Blonde Thug"}], pos:0,
-					text:"This bitch, what a tight pussy♡",
+                    text: "Fuck, you're so tight... Can't... hold back...",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Trainer"}], pos:0,
-					text:"You're somewhat useful...",
+					text:"You serve your purpose well...",
 				},
 			]
 		},
@@ -700,11 +700,11 @@ const line = {
 			lineList:[
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Goblins"}], pos:0,
-					text:"Kyaak, I can't hold it in♡",
+					text:"Kiek! Can't stop it!",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Villager"}], pos:0,
-					text:"Ohot...♡ You're so tight♡",
+					text:"Ohot... You're so tight!",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Tentacle Slime"}], pos:0,
@@ -716,7 +716,7 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Imp"}], pos:0,
-					text:"Sis's pussy feels so good♡",
+					text: "Your pussy feels so warm, big sis!♡",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Mushroom Man"}], pos:0,
@@ -724,11 +724,11 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Blonde Thug"}], pos:0,
-					text:"Ha, I can't hold this in...♡",
+					text:"Ah, fuck, I can't hold it in...",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Trainer"}], pos:0,
-					text:"Ugh... Not bad.",
+					text:"Hngh... Not bad at all.",
 				},
 			]
 		},
@@ -761,11 +761,11 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Blonde Thug"}], pos:0,
-					text:"Damn, this feels good♡",
+					text:"Damn, that feels amazing...♡",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Trainer"}], pos:0,
-					text:"Kgh... How could this...",
+					text:"Nngh... How could I...",
 				},
 			]
 		},
@@ -782,7 +782,7 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Villager"}], pos:0,
-					text:"Uhooot♡ This feels unbelievably good♡",
+					text:"Uhooot♡ Best... fucking... ever...♡",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Tentacle Slime"}], pos:0,
@@ -790,23 +790,23 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Tauros"}], pos:0,
-					text:"Huoooook♡",
+					text:"MMMRRRROOOOOHH!!,
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Imp"}], pos:0,
-					text:"N-no♡<br>I'm supposed to be the incubus...♡",
+                    text: "N-no way...♡<br>Big sis is milking me dry...<br>I'm supposed to be the incubus!♡",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Mushroom Man"}], pos:0,
-					text:"*This body...<br>is no longer usable...*",
+                    text: "*The host body expels its last spores... then goes limp...*",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Blonde Thug"}], pos:0,
-					text:"Kgh♡ You're the best woman I've ever had♡",
+                   text: "Hnngh! Fuck... You're the best damn ride I've ever had!",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Trainer"}], pos:0,
-					text:"Female slaaaaave♡",
+                    text: "Unnngh... Worthless... fucking... cunt...",
 				},
 			]
 		},
@@ -818,7 +818,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Splooge♡ Sploooge♡*",
+                    text: "*Splooge♡ Splurt♡*",
 				},
 			]
 		},
@@ -827,7 +827,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Splooge♡ Splurt♡*",
+                    text: "*Spurt♡ Sploooge♡*",
 				},
 			]
 		},
@@ -836,7 +836,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Ssplooooge♡ Splurt♡*",
+                    text: "*Splurt♡ Splurt♡ Sploooge♡*",
 				},
 			]
 		},
@@ -845,7 +845,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Spurt♡ Sploooge♡*",
+                    text: "*Splooge♡ Throb♡ Splurt♡*",
 				},
 			]
 		},
@@ -854,7 +854,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Splurt♡ Splurt♡*",
+					text:"*Splurt♡ Spurt♡*",
 				},
 			]
 		},
@@ -866,7 +866,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Keke, my turn.",
+					text:"Keke, my turn now!",
 				}
 			]
 		},
@@ -875,7 +875,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Kyaruk... Ravage the female!",
+					text:"G'hyark! Wreck that female!",
 				}
 			]
 		},
@@ -884,7 +884,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Move it, idiot!",
+					text:"Outta the way, moron!",
 				}
 			]
 		},
@@ -893,7 +893,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Kyak.<br>Useless fools, can't even dominate one female.",
+                    text: "Kyak! Useless! Let a real goblin show you how it's done.",
 				}
 			]
 		},
@@ -902,7 +902,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Now, it's my turn.",
+					text:"Alright. *My* turn.",
 				}
 			]
 		},
@@ -911,7 +911,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Switch without resting!",
+                    text: "Don't let her rest! Next one in!",
 				}
 			]
 		},
@@ -920,7 +920,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Kyakya... Waited long for this.",
+                    text: "Kyakya... Been waiting for this hole!",
 				}
 			]
 		},
@@ -929,7 +929,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Kerek... My turn again!",
+                    text: "Kerek! Me again! Round two!",
 				}
 			]
 		},
@@ -943,7 +943,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Keke, cumming on the female.",
+                    text: "Keke, painting the female white!",
 				},
 			]
 		},
@@ -955,7 +955,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Kikik, strip off all those cumbersome clothes...!",
+                    text: "Kikik, rip it all off! No need for clothes!",
 				},
 			]
 		},
@@ -966,7 +966,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:2,
-					text:"*Grope grope squeeze*",
+                    text: "*Rough hands grope and squeeze mercilessly*",
 				},
 			]
 		},
@@ -977,7 +977,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Get pregnant with a goblin child!",
+					text: "Make goblin babies! Breed for us!",
 				},
 			]
 		},
@@ -986,7 +986,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Cumming in the fuck-toy pussy!",
+					text: "Fill the fuck-toy's cunt!",
 				},
 			]
 		},
@@ -995,7 +995,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Using the female's pussy,<br>as a cum dumpster!",
+					text: "This hole is our cum dumpster now!",
 				},
 			]
 		},
@@ -1008,7 +1008,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1, keepOriginal:true,
-					text:"Mmph..!",
+					text: "Mmph! Ggghk...!",
 				},
 			]
 		},
@@ -1017,7 +1017,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1, keepOriginal:true,
-					text:"Mmph..♡",
+					 text: "Mmmph...♡ Glk...♡",
 				},
 			]
 		},
@@ -1029,31 +1029,31 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Giddy-up, giddy-up.<br>Go forward!",
+					 text: "Giddy-up, human-horse! Faster!",
 				},
 				{
 					cond:true, pos:0, effect:"shake",
-					text:"*Slap♡ Slap♡*",
+					text:"*Slap! Slap!*",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1, effect:"shake", portrait:"ecstasy2",
-					text:"I'm going♡<br>Forward... I'm going♡",
+					    text: "Yes, Master!♡ G-Going forward...♡ Ungh!♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1, effect:"shake", portrait:"ecstasy2",
-					text:"Aah♡ Stop it♡<br>M-my body... is moving on its own♡",
+					text: "N-No! Stop!♡ M-my body won't... stop moving... Aah!♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1, effect:"shake", portrait:"ecstasy2",
-					text:"Aah♡ I'll go♡<br>Forward... I'll go♡",
+					 text: "O-Okay!♡ Faster! Giddy-up... ungh!♡ I'm going!♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, effect:"shake", portrait:"ecstasy2",
-					text:"Aah♡ Okay♡<br>I'll go... forward♡",
+					text: "Hah!♡ You want faster? You'll get faster!♡ Nngh!♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyakakya! Completely livestock!",
+					text: "Kyahaha! She's just like a dumb animal!",
 				},
 			]
 		},
@@ -1065,19 +1065,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Kekeke... The female's body is so lewd...<br>I want to make her my cum dumpster!",
+					text: "Kekeke... Look at that body. Perfect for a cum dumpster!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Understood.<br>From now on, I will become the Goblins' cum dumpster.",
+					text:"Understood.<br>I will serve as the goblins' cum dumpster.",
 				},
 				{
 					cond:true, pos:0,
-					text:"Ooh, she's spreading her legs on her own!<br>This female is already a fucktoy in her mind, kyakya!",
+					text:"Ooh, look! She's spreading her legs on her own!<br>This one's already a broken fucktoy, kyahaha!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Please use me as you wish.",
+					text: "I await your cum.",
 				},
 			]
 		},
@@ -1086,11 +1086,11 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Filthy... and barbaric creatures...<br>Don't touch my body!",
+					text:"You filthy, barbaric creatures...<br>Don't you dare touch me!",
 				},
 				{
 					cond:true, pos:0,
-					text:"Kekeke... Are you refusing the duel, female?<br>Then that's a forfeit. An immediate loss.",
+					text:"Kekeke...Refusing the duel, are we, female? <br>That's a forfeit. An instant loss.",
 				},
 				{
 					cond:true, pos:1,
@@ -1102,7 +1102,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"(Damn it, damn it... me, having sex with goblins...<br>But... it's a duel, so I guess I have no choice...)",
+					text:"(Damn it, I can't believe this... with *goblins*? But... it's the rules. I have to...)",
 				},
 			]
 		},
@@ -1111,19 +1111,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Kekeke... The female's body is so lewd...<br>I wanna fuck her. Show me your pussy!",
+					 text: "Kekeke... What a nice body... Show us your hole!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Okay~!<br>This is what my pussy looks like.",
+					text:"Okay~!<br>Here you go, this is my pussy!",
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyakya! Look at this shameless pervert,<br>in such an embarrassing pose!",
+					text:"Kyakya! Look at this shameless slut,<br>striking such a dirty pose!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Huh? Why is spreading my pussy because you asked...<br>an embarrassing pose?",
+					text:"Huh? But you asked me to show you...<br>why is that a dirty pose?",
 				},
 			]
 		},
@@ -1132,20 +1132,20 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Kekeke... The female's body is so lewd...<br>I'm gonna grab you by the hair and pound you from behind!",
+					text: "Kekeke... We're gonna grab you by the hair and pound that ass!",
 				},
 				{
 					cond:true, pos:1,
-					text:"My, how wild♡<br>And then? What's next?",
+					text:"Ooh, how delightfully savage.♡<br>And then? What's next?",
 				},
 				{
 					cond:true, pos:0,
-					text:"I'll fuck your front and back holes at the same time,<br>and splatter my semen all over your body!",
+					text:"We'll fuck your cunt and your ass at the same time and cover your whole body in our seed!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Haa♡ How wonderful♡<br>Just hearing it is making me wet♡",
-				},
+					text: "Haaa♡ Don't just talk about it... The thought alone is making me drip.♡",
+                },
 			]
 		},
 
@@ -1154,7 +1154,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Kyakya! We meet again!<br>Female, are you ready to spread?",
+				text: "Kyakya! Look who's back for more! Ready to spread those legs, female?",
 				},
 				{
 					cond:true, pos:1,
@@ -1166,7 +1166,7 @@ const line = {
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyaak, I can't wait!<br>I'm pouncing on you now!",
+					text: "Kyaak, she's ready! Hah! Get her, boys!",
 				},
 			]
 		},
@@ -1175,11 +1175,11 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Keke, we meet again, female.<br>Today, I'll make you my fucktoy for sure!",
+					text: "Keke, back again? Today, we're gonna break you for good!",
 				},
 				{
 					cond:true, pos:1,
-					text:"You guys again?<br>I hate how the smell of semen clings to my body every time...",
+					text: "Not you little shits again... I hate how the stink of your spunk never washes out.",
 				},
 				{
 					cond:true, pos:0,
@@ -1187,7 +1187,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"Haa... Fine, I get it.<br>What choice do I have, my role is to be fucked...",
+					 text: "Haaah... Fine. It's not like I have a choice. My job is to get fucked, right?",
 				},
 			]
 		},
@@ -1196,19 +1196,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Thanks to you goblins, I've become more sensitive.",
+					 text: "You know, thanks to you guys, my body has become so much more sensitive.",
 				},
 				{
 					cond:true, pos:1,
-					text:"Today, I'd like you to rub my cervix with your cock...<br>and fuck my throat until I'm about to suffocate♡",
+					 text: "Today, could you try to hit my cervix? And maybe choke me with your cock until I can't breathe?♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyaak, shut up you pervert!<br>We'll fuck you however we want!",
+				text: "Kyaak! Shut up, you weirdo! We'll fuck you how *we* want!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Ah, you're right.<br>I'm sorry for making such selfish requests...",
+					text: "Oh, right. I'm sorry... It was selfish of me to ask...",
 				},
 			]
 		},
@@ -1221,15 +1221,15 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"The way you choked me last time felt so good,<br>are you going to do it again today♡",
+					text: "I really liked it when you choked me last time... Can we do that again?♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyaak, this female's casual attitude is pissing me off.<br>I'll make you beg on your knees, crying and cumming!",
+					 text: "Gah! This bitch is too cocky! We'll make you scream and beg for it!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Is that what you like?<br>I can do that for you right now, you know♡",
+					 text: "Oh, is that how you like it? I can start begging for you right now, if you want.♡",
 				},
 			]
 		},
@@ -1240,7 +1240,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Kyakya, pussy juice is dripping down.<br>Did you get turned on while being forcibly raped!",
+					text: "Kyakya, look at her dripping! Getting wet from being raped, are we?",
 				},
 				{
 					cond:true, pos:1,
@@ -1248,7 +1248,7 @@ const line = {
 				},
 				{
 					cond:true, pos:0,
-					text:"You perverted female.<br>Did the goblin cock feel that good!",
+					 text: "You filthy slut! Did our goblin cocks feel that good?",
 				},
 				{
 					cond:true, pos:1,
@@ -1261,19 +1261,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"N-no way... Me, with a goblin's cock...<br>I couldn't have felt anything...",
+					text: "N-No way... Me? Getting off on a goblin's cock...? Impossible... I didn't feel a thing!",
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyakya, just admit it!<br>The female came pathetically!",
+					text: "Kyakya, stop lying! We saw you twitching! You came like a pathetic little sow!",
 				},
 				{
 					cond:true, pos:0,
-					text:"You're weak, pathetic!<br>A loser who can't do anything once a cock is in her pussy!",
+					 text: "You're so weak! One little cock and you fall apart!",
 				},
 				{
 					cond:true, pos:1, effect:"shake",
-					text:"Don't be ridiculous!<br>I only came once!!",
+					 text: "Shut up! I only came, like, once! That doesn't count!",
 				},
 			]
 		},
@@ -1282,11 +1282,11 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Haang♡ Was the goblin's cock<br>this pleasurable.",
+					text: "Oooh♡ I didn't know a goblin's cock could feel so good...",
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyakya, she says it feels good while being gangbanged.<br>This bitch is a total masochistic pervert!",
+					text: "Kyakya! Listen to her! Saying it feels good while we're running a train on her! What a pervert!",
 				},
 				{
 					cond:true, pos:1,
@@ -1294,7 +1294,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"I see,<br>I'm a masochistic pervert~♪",
+					 text: "Oh, okay! I guess I'm a pervert then! ♪",
 				},
 			]
 		},
@@ -1315,11 +1315,11 @@ const line = {
 				},
 				{
 					cond:true, pos:0,
-					text:"Keke, all talk!<br>We'll shove them deeper into both your holes!",
+					text: "We'll see about that! Let's try your other hole!",
 				},
 				{
 					cond:true, pos:1, effect:"shake",
-					text:"Aaang♡ Come inside♡",
+					 text: "Aah, yes! Bring it on!♡",
 				},
 			]
 		},
@@ -1341,11 +1341,11 @@ const line = {
 				},
 				{
 					cond:true, pos:1, effect:"shake", portrait:"ecstasy", keepPort:true,
-					text:"Oook♡",
+					text: "Nnggh!♡",
 				},
 				{
 					cond:true, pos:1, effect:"shake",
-					text:"*drip... drip...*",
+					 text: "*A warm gush soaks the floor...*",
 				},
 			]
 		},
@@ -1354,19 +1354,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Keke, you pervert.<br>You came so quickly again!",
+					text: "Keke, look at the little pervert, came already!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Shut up.<br>Any female would normally cum this fast.",
+					 text: "Shut up! Anyone would come this fast with... with this much stimulation!",
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyahaha, now she admits she's a female!",
+					text: "Kyahaha! So you admit you're just a weak little female! A dirty slut!"
 				},
 				{
 					cond:true, pos:1,
-					text:"What are you talking about?<br>I was always a female... Huh? Wait?",
+					text: "What? Of course I am... wait, what did I just say?",
 				},
 			]
 		},
@@ -1375,19 +1375,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Haang♡ That felt really good just now.",
+					text: "Wow!♡ That felt amazing!",
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyakya! What a perverted female!<br>Her holes are already full of semen!",
+					text: "Kyakya! What a perverted female! Your holes are already full with our seed!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Oh? Thank you.<br>But I can still take more♡",
+					text: "Oh, thank you! But I'm not full yet, I can take a lot more!♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Alright! We'll use your back hole too!<br>It's great that females have so many holes!",
+					 text: "Alright! Let's use your ass-hole too, then!<br>It's great that females have so many holes!",
 				},
 			]
 		},
@@ -1400,15 +1400,15 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"I've really missed this♡<br>Break me♡ Deeper, harder♡",
+					text:"I've really missed this♡<br>Break me♡  Harder, deeper!♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyaak, she's tightening up even more!<br>I can't do this alone, everyone, attack!",
+					text: "Kyaak, she's squeezing even tighter! Everyone, all at once!",
 				},
 				{
 					cond:true, pos:1, effect:"shake",
-					text:"Haang♡ Fuck me with all of them♡",
+					text: "Yeees!♡ Fill all my holes at once!♡",
 				},
 			]
 		},
@@ -1419,7 +1419,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Kyakya! The female has collapsed!<br>She's trembling!",
+					 text: "Kyakya! Look at her! She's down and twitching!",
 				},
 				{
 					cond:true, pos:1,
@@ -1427,11 +1427,11 @@ const line = {
 				},
 				{
 					cond:true, pos:0,
-					text:"Can't even speak properly, keke.<br>We'll stab your front and back holes at the same time!",
+					text:"Can't even speak properly, keke.<br> Let's stuff both her holes at once!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Yes, my anus is also... available♡<br>Please insert it deeper♡",
+					text:"Yes, my anus is also... available♡<br>Please... insert...♡",
 				},
 			]
 		},
@@ -1440,19 +1440,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"The female's pussy is wet and tight.<br>Your hole feels good.",
+					text:"The female's pussy is wet and tight.<br>Feels good.",
 				},
 				{
 					cond:true, pos:1,
-					text:"Damn it, my body is moving on its own... feeling pleasure♡<br>I don't want to... I don't want to cum♡",
+					text:"Damn it, my body is moving on its own... it just keeps feeling good...♡ N-no, I don't want to cum... I don't...♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyakya, even if you say no, your pussy is dripping with juice.<br>Females are eventually tamed by semen!",
+					 text: "Kyakya, you can say no all you want, but your cunt is soaked. A female's body always gives in to seed!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Every time the goblin cock moves in and out♡<br>I realize... that I'm just a female♡",
+					 text: "With every thrust...♡ I'm remembering... I'm just a weak female after all...♡",
 				},
 			]
 		},
@@ -1461,15 +1461,15 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"I caaame♡<br>My pussy just came from the goblins' cocks♡",
+					text: "I'm cumming!♡<br>My pussy just came from the goblins' cocks♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyahaha, this bitch has come so much, she's half-lost her mind!",
+					text:"Kyahaha, this bitch has come so much! Her brain's melted!",
 				},
 				{
 					cond:true, pos:1,
-					text:"I caaame♡ I just orgasmed♡",
+					  text: "Cumming...♡ I'm just cumming and cumming...♡",
 				},
 				{
 					cond:true, pos:0,
@@ -1486,23 +1486,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Haang♡ Harder♡<br>Pound my fucktoy pussy♡",
+					text: "Haaang!♡ Yes, harder! Pound this slutty cunt of mine!♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyakya, she's completely corrupted.<br>The female's in heat and not in her right mind.",
+					 text: "Kyakya, she's completely gone! A mindless fuck-beast in heat!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Splooge splooge, cum in me♡<br>Fill my womb and get me pregnant♡",
+					text: "Breed me!♡ Fill me up!♡ Knock me up with your goblin seed!♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Alright!<br>We'll ravage you as much as you want!",
+					 text: "You got it! We'll give you everything you're begging for!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Cock♡ Goblin cooock♡",
+					text: "Cock... Goblin cocks... need more...♡",
 				},
 			]
 		},
@@ -1520,11 +1520,11 @@ const line = {
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyakya! The female is broken!<br>Her mind is shattered from too many orgasms!",
+					  text: "Kyakya! She's broken! Too many orgasms fried her brain!",
 				},
 				{
 					cond:true, pos:1, effect:"shake",
-					text:"Reporting... c-confirmed...♡<br>Orgasm... p-pussy...♡",
+					text:"Reporting... c-confirmed...♡<br>Orgasm... c-cunt...♡",
 				},
 			]
 		},
@@ -1537,11 +1537,11 @@ const line = {
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyahaha, semen is dripping from her holes!<br>So lewd and pathetic!",
+					text: "Kyahaha! Look at her! Seed leaking from all her holes! What a pathetic slut!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Oh, no... my precious semen♡<br>I have to quickly lick it up♡",
+					text:"Oh, no... precious cum<br> Can't let it go to waste... I have to quickly lick it up♡",
 				},
 				{
 					cond:true, pos:1, effect:"shake",
@@ -1549,11 +1549,11 @@ const line = {
 				},
 				{
 					cond:true, pos:0,
-					text:"Seriously! She's licking semen off the floor!<br>The female has gone crazy from too many orgasms!",
+					text:"Seriously! She's licking semen off the floor!<br> The female's gone completely crazy!",  
 				},
 				{
 					cond:true, pos:1,
-					text:"Shut up♡ You're just a goblin...♡<br>And you have such delicious semen♡",
+					 text: "Shut up...♡ You're just little goblins... but your cum is so... delicious...♡",
 				},
 			]
 		},
@@ -1562,23 +1562,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"The smell of goblin semen♡<br>It's so good, I think I'm getting addicted♡",
+					 text: "Mmm, the smell of goblin cum...♡ I think I'm addicted...♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"I'd love it if you could cum deep inside my pussy♡",
+					 text: "Could you please fill my womb up? Please?♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Kekeke, this female is completely in heat!",
+					 text: "Kekeke, she's completely lost in her heat!",
 				},
 				{
 					cond:true, pos:0,
-					text:"She just came and her legs are trembling,<br>but she's already spreading them again!",
+					 text: "She's still shaking from the last one, and she's already spreading for more!",
 				},
 				{
 					cond:true, pos:1,
-					text:"P-put it in, please♡<br>I want to get pregnant with a goblin's child♡",
+					text: "P-please, put it in...♡ I want to be pregnant with goblin babies...♡",
 				},
 			]
 		},
@@ -1587,19 +1587,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Aah♡ I love goblin cooock♡",
+					text: "Aaaah♡ I fucking LOVE goblin cock!♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"The feeling of it splitting my pussy open and rubbing inside♡<br>I'm so happy, it feels so good♡",
+					text: "That feeling of being stretched wide open and pounded deep inside...♡ It's pure bliss...♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Kyakya, the female's pussy is twitching.<br>I'll pound you hard!",
+					 text: "Kyakya, her cunt is still twitching! Pound her harder!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Aah♡ Here it comes♡<br>Fill my womb and get me pregnant♡",
+					 text: "Aaaah♡ Yesss, come inside me!♡ Fill me up and knock me up!♡",
 				},
 			]
 		},

@@ -6168,8 +6168,8 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		KOR: `
-				Aahn...â™¡ Ahâ™¡ I love this so muchâ™¡<br>
-				Hit me... hit me harderâ™¡â™¡ Ughâ™¡
+				Aahn...ahh Aha... I love this so much!<br>
+				Fuck me... Fuck me more~ Ugh!
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
@@ -6446,7 +6446,7 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText'>You are a masochistic, perverted sow who gets excited by sadistic acts.</span><br>
+				<span class='hypnoText'>You are a masochistic, perverted sow who gets excited by brutal rape.</span><br>
 			`,
 	}, {
 		cond: true,
@@ -6483,8 +6483,8 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		KOR: `
-				Aahn...â™¡ Ahâ™¡ I love this so muchâ™¡<br>
-				Hit me... hit me moreâ™¡â™¡ Ughâ™¡
+				Aahn...ahh Aha... I love this so much!<br>
+				Fuck me... Fuck me more~ Ugh!
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
@@ -6767,8 +6767,8 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		KOR: `
-				Aahn...â™¡ Ahâ™¡ I love this so muchâ™¡<br>
-				Hit me... hit me moreâ™¡â™¡ Ughâ™¡
+				Aahn...ahh Aha... I love this so much!<br>
+				Fuck me... Fuck me more~ Ugh!
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
