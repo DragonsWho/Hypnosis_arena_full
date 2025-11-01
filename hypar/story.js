@@ -152,8 +152,8 @@ const storyProfile = {
 			},
 			"Silvani": {
 				"KOR": `
-					<b>Background:</b> Member of the Forbidden Arts Society<br>
-					- A member of the Forbidden Arts Society, wanted in the Sylvanian Federation, who is engrossed in forbidden research.<br>
+					<b>Background:</b> Member of the Shadow Coven<br>
+					- A member of the Shadow Coven, wanted in the Sylvanian Federation, who is engrossed in forbidden research.<br>
 					- A dangerous criminal with an obsessive curiosity for mental magic and magical skills powerful enough to cross into taboo territory.
 				`,
 			},
@@ -405,9 +405,9 @@ const storyProfile = {
 			},
 			"Silvani": {
 				"KOR": `
-					<b>Product Overview:</b> Former Member of the Forbidden Arts Society<br>
+					<b>Product Overview:</b> Former Member of the Shadow Coven<br>
 					- A weirdo who stumbled upon the arena and waltzed right in.<br>
-					- Are all those Forbidden Arts Society folks this crazy...<br>
+					- Are all those Shadow Coven folks this crazy...<br>
 					- Currently being trained as a masochistic fleshlight, brainwashed to get excited by sadistic acts.
 				`,
 			},
@@ -6168,8 +6168,8 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		KOR: `
-				Aahn...â™¡ Ahâ™¡ I love this so muchâ™¡<br>
-				Hit me... hit me harderâ™¡â™¡ Ughâ™¡
+				Aahn...ahh Aha... I love this so much!<br>
+				Fuck me... Fuck me more~ Ugh!
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
@@ -6446,7 +6446,7 @@ const storyText = {
 			"KOR": "???"
 		},
 		KOR: `
-				<span class='hypnoText'>You are a masochistic, perverted sow who gets excited by sadistic acts.</span><br>
+				<span class='hypnoText'>You are a masochistic, perverted sow who gets excited by brutal rape.</span><br>
 			`,
 	}, {
 		cond: true,
@@ -6483,8 +6483,8 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		KOR: `
-				Aahn...â™¡ Ahâ™¡ I love this so muchâ™¡<br>
-				Hit me... hit me moreâ™¡â™¡ Ughâ™¡
+				Aahn...ahh Aha... I love this so much!<br>
+				Fuck me... Fuck me more~ Ugh!
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
@@ -6492,7 +6492,7 @@ const storyText = {
 		cond: true,
 		type: "text",
 		KOR: `
-				As a member of the Forbidden Arts Society, you were a criminal with an insatiable curiosity for mind magic.<br>
+				As a member of the Shadow Coven, you were a criminal with an insatiable curiosity for mind magic.<br>
 				To satisfy this lust for knowledge, you disregarded all laws and ethics, committing countless crimes and acts of terror.<br>
 				Then, you happened upon the arena's existence and, impressed by its sophisticated mind magic, brazenly invaded and were captured.<br>
 				<br>
@@ -6767,8 +6767,8 @@ const storyText = {
 		pos: 0,
 		nude: true,
 		KOR: `
-				Aahn...â™¡ Ahâ™¡ I love this so muchâ™¡<br>
-				Hit me... hit me moreâ™¡â™¡ Ughâ™¡
+				Aahn...ahh Aha... I love this so much!<br>
+				Fuck me... Fuck me more~ Ugh!
 			`,
 	}, ], // <--- ЗАПЯТАЯ
 
@@ -10852,4 +10852,80 @@ const storyText = {
             `,
         },
     ],
-}
+
+
+
+
+
+    // --- НАЧАЛО ИЗМЕНЕНИЙ ---
+    "intro_bossC10_SECRET": [
+        {
+            cond: true,
+            type: "title",
+            KOR: `A Familiar Presence, A Foreign Power`
+        },
+        {
+            cond: true,
+            type: "text",
+            KOR: `You select your former slave for another round of... 'training'. But as the arena floor solidifies around you, a chilling pressure descends. It is not the familiar presence of a broken mind, but something ancient, powerful, and deeply amused.`
+        },
+        {
+            cond: true,
+            type: "dialogue",
+            character: "sandrea", // Используем 'player' для отображения портрета Sandrea, но с другим именем
+            expression: "corrupted",
+            pos: 1, // Справа
+            nude: true, // Без одежды
+            name: { "KOR": "Sanrea" },
+            img: "boss9", // Указываем картинку, если нужно
+            KOR: `...`
+        },
+        {
+            cond: true,
+            type: "text",
+            KOR: `She stands not as a slave, but as an avatar. The vacant look is gone, replaced by a divine, cold light. A voice echoes not from her lips, but directly inside your skull.`
+        },
+        {
+            cond: true,
+            type: "dialogue",
+            character: "sandrea",
+            expression: "normal",
+            pos: 1,
+            nude: true,
+            negative: true,
+            name: { "KOR": "Dark Deity" },
+            KOR: `<span class='hypnoText'>Did you truly believe you were in control?</span>`
+        },
+        {
+            cond: true,
+            type: "dialogue",
+            character: "sandrea",
+            expression: "normal",
+            pos: 1,
+            nude: true,
+            negative: true,
+            name: { "KOR": "Dark Deity" },
+            KOR: `<span class='hypnoText'>You held the cage, she rattled the bars. Both of you were merely my entertainment. And your little game has become... predictable.</span>`
+        },
+        {
+            cond: true,
+            type: "text",
+            KOR: `A wave of terrifying power washes over Sanrea, reshaping her. The same dark energy flows into you from the artifact, a fraction of what she receives, but enough to make your head spin and your body ache with forbidden pleasure.`
+        },
+        {
+            cond: true,
+            type: "dialogue",
+            character: "sandrea",
+            expression: "normal",
+            pos: 1,
+            nude: true,
+            negative: true,
+            name: { "KOR": "Dark Deity" },
+            KOR: `<span class='hypnoText'>Let's have a real fight. A true test. I will grant you both a sliver of my essence. Now...</span><br><br><span class='hypnoText hypnoFail'>Entertain me.</span>`
+        }
+    ]
+    // --- КОНЕЦ ИЗМЕНЕНИЙ ---
+};
+
+
+ 

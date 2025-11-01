@@ -1,0 +1,56 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  
+  <!-- Определения эффектов: градиент и свечение -->
+  <defs>
+    <!-- Внутреннее свечение для придания объема -->
+    <radialGradient id="innerGlow">
+      <stop offset="0%" stop-color="#D9C9FF" /> 
+      <stop offset="90%" stop-color="#8A63D2" />
+    </radialGradient>
+
+    <!-- Внешнее свечение (аура) -->
+    <filter id="outerGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- CSS-анимация. Конвертер будет рендерить ее покадрово -->
+  <style>
+    .orb {
+      transform-origin: center;
+      /* Анимация 'pulse' длится 3 секунды, плавно (ease-in-out), бесконечно */
+      animation: pulse 3s ease-in-out infinite;
+    }
+
+    /* 
+      Ключевые кадры анимации. 
+      Браузер (или конвертер) сам построит плавные переходы между этими состояниями.
+    */
+    @keyframes pulse {
+      /* Начальное и конечное состояние (минимальный размер и яркость) */
+      0%, 100% {
+        transform: scale(0.85);
+        opacity: 0.85;
+      }
+      /* Пиковое состояние в середине цикла (максимальный размер и яркость) */
+      50% {
+        transform: scale(1.0);
+        opacity: 1.0;
+      }
+    }
+  </style>
+
+  <!-- Сама сфера, к которой применяются эффекты и анимация -->
+  <g filter="url(#outerGlow)">
+     <circle 
+        class="orb" 
+        cx="16" cy="16" r="15" 
+        fill="url(#innerGlow)" 
+     />
+  </g>
+
+</svg>

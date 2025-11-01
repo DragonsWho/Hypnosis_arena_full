@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="html2canvas.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx-style/0.8.13/xlsx-style.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <link id="favicon" rel="icon" type="image" href="image/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=0.3, maximum-scale=1, user-scalable=no">
     <script>
         if ('scrollRestoration' in history) {
@@ -26,6 +28,7 @@
         var loadingMessages = [
             "Inducing trance...",
             "Rewriting common sense...",
+            "Corrupting core beliefs...",
             "Manipulating memories...",
             "Warping perception...",
             "Implanting new kinks...",
@@ -38,6 +41,8 @@
             "Sinking into pleasure...",
             "Unleashing hidden lusts...",
         ];
+ 
+  
 
         var unusedMessages = [...loadingMessages];
         var usedMessages = [];
@@ -126,7 +131,7 @@
 
         function createSheetData(cards, type) {
             const data = [];
-            const header = ["Name", "Class", "Race", "Background", "등급", "Type", "태그", "효과"];
+            const header = ["Name", "Class", "Race", "Background", "Rating", "Type", "태그", "효과"];
             if(type == 2) {
                 header.splice(3, 1);
             }
@@ -354,8 +359,8 @@
                     }
                 });
 
-                filterButton.textContent = `필터: ${visibleCardCount}건`;
-                filterButton2.textContent = `필터: ${visibleCardCount2}건`;
+                filterButton.textContent = `Filter: ${visibleCardCount} items`;
+                filterButton2.textContent = `Filter: ${visibleCardCount2} items`;
 
                 document.getElementById("collectionCard").querySelectorAll(".categoryTitle").forEach(function(category) {
                     var nextSibling = category.nextElementSibling;
@@ -455,6 +460,28 @@
             link.download = "dialogue_document.txt";
             link.click();
         }
+
+function toggleMusic() {
+    const musicButton = document.getElementById('musicButton');
+    const musicButtonText = musicButton.querySelector('.box-title');
+    const audioContainer = document.getElementById('audio-container');
+
+    if (audioContainer.innerHTML !== '') {
+        audioContainer.innerHTML = '';
+        musicButtonText.innerHTML = '<i class="fa-solid fa-music"></i> Music';
+        musicButton.classList.remove('active');
+    } else {
+        const videoId = 'pnaAzQdN3t4';
+        const iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        iframe.allow = 'autoplay';
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}&controls=0&rel=0`;
+        
+        audioContainer.appendChild(iframe);
+        musicButtonText.innerHTML = '<i class="fa-solid fa-music"></i> Music';
+        musicButton.classList.add('active');
+    }
+}
 
 
 // --- CODE FOR TRIPLE CLICK AND CHEAT ---
@@ -593,12 +620,15 @@
         </div>
     </div>
     <div style="width:100%; height:80px;"></div>
-    <div class="box button button2" id="manage-data" style="padding: 0; flex: 0 calc(20% - 20px); text-align: center; align-items: center; display: flex;">
-        <h2 class="box-title">💽 Data</h2>
+<div class="box button button2" id="manage-data" style="padding: 0; flex: 0 calc(20% - 20px); text-align: center; align-items: center; display: flex;">
+        <h2 class="box-title"><i class="fa-solid fa-database"></i> Data</h2>
     </div>
-    <div class="box button button2" id="manage-data" style="padding: 0; flex: 0 calc(20% - 20px); text-align: center; align-items: center; display: flex;" onclick="combatConfigModalOpen();">
-        <h2 class="box-title">⚙️ Settings</h2>
-    </div> 
+    <div class="box button button2" id="settings-button" style="padding: 0; flex: 0 calc(20% - 20px); text-align: center; align-items: center; display: flex;" onclick="combatConfigModalOpen();">
+        <h2 class="box-title"><i class="fa-solid fa-gear"></i> Settings</h2>
+    </div>
+    <div class="box button button2" id="musicButton" style="padding: 0; flex: 0 calc(20% - 20px); text-align: center; align-items: center; display: flex;" onclick="toggleMusic()">
+        <h2 class="box-title"><i class="fa-solid fa-music"></i> Music</h2>
+    </div>
     <div style="width:100%; height:10px;"></div>
 <!--   
     <div class="box button language" id="KOR" style="padding: 0; flex: 0 calc(20% - 20px); text-align: center; align-items: center; display: flex;" onclick="changeLanguage('KOR');">
@@ -621,10 +651,10 @@
 
 <div class="container" id="collectionPart" style="display: none;">
     <div class="box button scrollTo" id="scrollToTop" style="flex: 0 calc(10% - 20px); text-align: center;" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-        <h2 class="box-title">▲</h2>
+        <h2 class="box-title"><i class="fa-solid fa-chevron-up"></i></h2>
     </div>
     <div class="box button scrollTo" id="scrollToBottom2" style="flex: 0 calc(10% - 20px); text-align: center;" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });">
-        <h2 class="box-title">▼</h2>
+        <h2 class="box-title"><i class="fa-solid fa-chevron-down"></i></h2>
     </div>
     <div class="box button active collectionTab" data-num="0" style="flex: 0 calc(25% - 20px); padding:8px; text-align: center;" onclick="collectionTabChange(0);">
         <h2 class="box-title langText KOR">Cards</h2>
@@ -659,15 +689,15 @@
             </div>
             <div class="filterGroup" style="width:33%;">
                 <label><input type="checkbox" class="typeFilter" value="attack"> Attack</label>
-                <label><input type="checkbox" class="typeFilter" value="보조"> Support</label>
+                <label><input type="checkbox" class="typeFilter" value="Support"> Support</label>
                 <label><input type="checkbox" class="typeFilter" value="Position"> Position</label>
                 <label><input type="checkbox" class="typeFilter" value="Penalty"> Penalty</label>
                 <label><input type="checkbox" class="typeFilter" value="Other"> Other</label>
             </div>
             <div class="filterGroup" style="width:33%;">
-                <label><input type="checkbox" class="rarityFilter" value="일반"> Common</label>
-                <label><input type="checkbox" class="rarityFilter" value="숙련"> Expert</label>
-                <label><input type="checkbox" class="rarityFilter" value="궁극"> Ultimate</label>
+                <label><input type="checkbox" class="rarityFilter" value="Normal"> Common</label>
+                <label><input type="checkbox" class="rarityFilter" value="expert"> Expert</label>
+                <label><input type="checkbox" class="rarityFilter" value="Ultimate"> Ultimate</label>
                 <label><input type="checkbox" class="rarityFilter" value="None"> None</label>
             </div>
             <div class="box button active" id="clearFilters" style="width:100%; padding:2px; margin:0; text-align:center;">Clear All</div>
@@ -731,8 +761,8 @@
                     <img id="collectionImgSmall" class="collectionImg" style="width:auto; height:auto;" src="image/no_image.webp" onerror="handleImgError(this)" alt="">
                     <img id="collectionImg" class="collectionImg" style="display:none; width:auto; height:auto;" src="image/no_image.webp" onload="document.getElementById('collectionImgSmall').style.display='none'; this.style.display='block';" alt="">
                     <div style="width:100%; height:8px;"></div>
-                    <div class="box button" id="collectionImgSwap">🔄</div>
-                    <div class="box button active" id="collectionImgDetail" onclick="openImgTab();">🔍</div>
+                    <div class="box button" id="collectionImgSwap"><i class="fa-solid fa-arrows-rotate"></i></div>
+                    <div class="box button active" id="collectionImgDetail" onclick="openImgTab();"><i class="fa-solid fa-magnifying-glass"></i></div>
                 </div>
                 <p class="box-text" id="collectionDesc" style="align-self: flex-start;">
                 </p>
@@ -774,7 +804,7 @@
 
 <div class="container" id="prePart" style="display: none;">
     <div class="box button scrollTo" id="scrollToBottom" style="flex: 0 calc(10% - 20px); text-align: center;" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });">
-        <h2 class="box-title">▼</h2>
+        <h2 class="box-title"><i class="fa-solid fa-chevron-down"></i></h2>
     </div>
     <div style="width:100%; height:40px;"></div>
     <div class="container" id="part0" style="display: none;">
@@ -794,12 +824,12 @@
                     they press in from all sides, an overwhelming assault on your senses. It's a city that chews up the unwary and spits them out, broken.<br>
                     <br>
                     But you're not here for the cheap thrills on the surface. Your purpose lies in the city's rotten heart.<br>
-                    You duck off the main road, plunging into the back alleys. Instantly, the world changes. <br>
+                    You duck off the main road, plunging into the back alleys. Instantly, the world changes. <br> 
                     The light dies here. Even the moon seems afraid to look, hiding behind towering, decrepit buildings. This is a different kind of darkness.<br>
                     <br>
                     Every corner reeks of brutality. The glint of discarded needles, dark stains on the cobblestones that you know are dried blood, the slumped shape in a doorway that might be a sleeping drunk or a fresh corpse. The city's cheerful din fades to a dead silence, so heavy it makes the hairs on your neck prickle.<br>
                     <br>
-                    You're a veteran of a hundred battles, but this place... this place feels different. <br>
+                    You're a veteran of a hundred battles, but this place... this place feels different. <br> 
                     <br>
                     Every step echoes with the threat of a knife in the dark. Your instincts scream at you to run, to get back to the light.<br>
                     But you can't. Because you were invited. You hold an invitation to a myth, a legend hidden in this maze of filth.<br>
@@ -813,17 +843,17 @@
                 </div>
                 <p class="box-text langText KOR"><br>
                     Consciousness returns like a slow, painful tide. <br>
-                    The first thing you register is the cold. A damp, biting chill seeping into your bones from the stone floor beneath you. <br>
-                    The air is thick, heavy with the smell of mold and something else... something metallic and foul. <br>
+                    The first thing you register is the cold. A damp, biting chill seeping into your bones from the stone floor beneath you. <br> 
+                    The air is thick, heavy with the smell of mold and something else... something metallic and foul. <br> 
                     There are no windows. The suffocating silence is broken only by the ragged sound of your own breathing.<br>
                     You force your eyes open. A wave of dizziness washes over you. Your body feels heavy, wrong. Cold metal bites into your skin.<br>
 <br>
                     Shit.<br>
 <br>
-                    Heavy shackles clamp your wrists and ankles, chaining you to the wall. You tug, but they don't give an inch. <br>
-                    You're completely naked, exposed to the chilling air. <br>
-                    And your skin... <br>
-                    it's slick with something. <br>
+                    Heavy shackles clamp your wrists and ankles, chaining you to the wall. You tug, but they don't give an inch. <br> 
+                    You're completely naked, exposed to the chilling air. <br> 
+                    And your skin... <br> 
+                    it's slick with something. <br> 
                     A sticky, foul-smelling liquid runs down your thighs. The smell is unidentifiable, sickly sweet, and it makes your stomach churn.<br>
                     You try to push yourself up, but a splitting headache explodes behind your eyes, forcing you back down with a gasp. Your vision blurs.<br>
 <br>
@@ -832,12 +862,12 @@
                     Shards of memory pierce the fog in your head. Unfamiliar eyes... leering, probing. The sharp, cold touch of metal tools on your skin.<br>
                     A wave of chilling, primal fear. The images flash, chaotic and terrifying, but then they start to sharpen.<br>
                     And beneath the terror, a sickening, familiar thrill... a whisper of pleasure in the depths of your humiliation.<br>
-                    Words echo in your mind, words you don't want to remember. You force yourself to breathe, to piece it all together. <br>
-                    The leering faces, the cold restraints, the feeling of being watched... <br>
+                    Words echo in your mind, words you don't want to remember. You force yourself to breathe, to piece it all together. <br> 
+                    The leering faces, the cold restraints, the feeling of being watched... <br> 
 <br>
                     Violated.<br>
 <br>
-                    As the fog clears, one horrifying truth solidifies. This isn't just a prison. <br>
+                    As the fog clears, one horrifying truth solidifies. This isn't just a prison. <br> 
                     You remember what they did to you. And you know, with dawning dread, what they're going to do next.<br>
                     <br></p>
             </div>
@@ -1563,12 +1593,12 @@
                 <div class="box-content">
                     <p class="box-text">
                         <span class="langText KOR">A sanctuary in the heart of chaos, the Healer is a master of restoration.<br>
-                        They mend flesh and spirit with sacred arts, enduring where others would fall and turning the tide of battle with powerful blessings and divine intervention.<br>
+                        They mend flesh and spirit with sacred arts, enduring where others would fall and turning the tide of battle with powerful blessings and divine Bane.<br>
                         <br>
                         <b>Focus on endurance and recovery for a long-term battle, or carefully empower their abilities to prepare for a decisive final push.</b><br>
                         <br></span>
                         <span class="langText ENG">A sanctuary in the heart of chaos, the Healer is a master of restoration.<br>
-                        They mend flesh and spirit with sacred arts, enduring where others would fall and turning the tide of battle with powerful blessings and divine intervention.<br>
+                        They mend flesh and spirit with sacred arts, enduring where others would fall and turning the tide of battle with powerful blessings and divine Bane.<br>
                         <br>
                         <b>Excelling in wars of attrition through potent healing, or fighting a more deliberate battle by fortifying their abilities and preparing for the future.</b><br>
                         <br></span>
@@ -1988,7 +2018,7 @@
         <div style="width:100%; height:40px;"></div>
 
         <div class="box button button2 disabled active" id="prePageButton" style="flex: 0 calc(5% - 40px); margin-right:0; display: flex; justify-content: center; align-items: center; height:60%;" onclick="ruleTab(rulePage - 1);">
-            <h2 class="box-title">◀</h2>
+            <h2 class="box-title"><i class="fa-solid fa-chevron-left"></i></h2>
         </div>
         
         <div class="box halfimage rulePage" style="flex: 0 calc(80% - 40px);">
@@ -2002,7 +2032,7 @@
         </div>
 
         <div class="box button button2 active" id="postPageButton" style="flex: 0 calc(5% - 40px); margin-left:0; display: flex; justify-content: center; align-items: center; height:60%;" onclick="ruleTab(rulePage + 1);">
-            <h2 class="box-title">▶</h2>
+            <h2 class="box-title"><i class="fa-solid fa-chevron-right"></i></h2>
         </div>
         <div style="width:100%; height:40px;"></div>
 
@@ -2016,16 +2046,16 @@
         <div class="container" id="deckBuild">
             <div style="width:100%; height:80px;"></div>
             <div class="box button button2" style="flex: 0 calc(20% - 20px);" onclick="deckModalOpen()">
-                <h2 class="box-title langText KOR">📂 Load Recent Deck</h2>
+                <h2 class="box-title langText KOR"><i class="fa-solid fa-folder-open"></i> Load Recent Deck</h2>
             </div>
             <div class="box button button2" style="flex: 0 calc(20% - 20px);" onclick="inputDeckCode()">
-                <h2 class="box-title langText KOR">📋 Paste Deck Code</h2>
+                <h2 class="box-title langText KOR"><i class="fa-solid fa-paste"></i> Paste Deck Code</h2>
             </div>
             <div class="box" style="flex: 0 calc(40% - 20px);">
                 <h2 class="box-title" style="text-align: left; padding: 0 5%;"><i><span id="deckCodeLog"></span></i></h2>
             </div>
             <div class="box button button2" style="flex: 0 calc(20% - 20px);" onclick="clearDeck(); document.getElementById('deckCodeLog').innerHtml = `Deck을 비웠습니다.`;">
-                <h2 class="box-title langText KOR">🗑️ Empty Deck</h2>
+                <h2 class="box-title langText KOR"><i class="fa-solid fa-trash-can"></i> Empty Deck</h2>
             </div>
 
             <div class="container" id="warriorInfo" style="display: none;">
@@ -2174,12 +2204,12 @@
                         <blockquote class="classDetailCardName" style="margin-top: -4px; text-align: center;"></blockquote>
                     </div>
                     <hr>
-                    <h2 class="box-title langText KOR">Sensation Block</h2>
+                    <h2 class="box-title langText KOR">Sense Lock</h2>
                     <hr>
                     <div class="box-content">
                         <blockquote class="langText KOR">When will this boring task end?<br>Maybe I'll undo the block for a bit, just to test?</blockquote>
-                        <p class="box-text langText KOR">Mages gain <b>Sensation Block</b> whenever one of their cards is <b>Transformed</b> by an effect.<br><br>
-                            When <b>Excitement</b> increases, you can consume an equal amount of Sensation Block to prevent it.<br></p>
+                        <p class="box-text langText KOR">Mages gain <b>Sense Lock</b> whenever one of their cards is <b>Transformed</b> by an effect.<br><br>
+                            When <b>Excitement</b> increases, you can consume an equal amount of Sense Lock to prevent it.<br></p>
                     </div>
                 </div>
                 <div class="box classDetail dynamicSize25">
@@ -2204,12 +2234,12 @@
                         <blockquote class="classDetailCardName" style="margin-top: -4px; text-align: center;"></blockquote>
                     </div>
                     <hr>
-                    <h2 class="box-title langText KOR">Magic Circle</h2>
+                    <h2 class="box-title langText KOR">Runes</h2>
                     <hr>
                     <div class="box-content">
                         <blockquote class="langText KOR">Lewd crests, graffiti, cum counts.<br>All sorts of patterns drawn on the body.</blockquote>
-                        <p class="box-text langText KOR">Mages obtain Magic Circles, which are unplayable token cards, through the effects of certain cards.<br><br>
-                            Magic Circles are used as material for Transformation, and their usage differs slightly depending on the type.<br></p>
+                        <p class="box-text langText KOR">Mages obtain Runess, which are unplayable token cards, through the effects of certain cards.<br><br>
+                            Runess are used as material for Transformation, and their usage differs slightly depending on the type.<br></p>
                     </div>
                 </div>
                 <div class="box classDetail dynamicSize25">
@@ -2222,7 +2252,7 @@
                     <h2 class="box-title langText KOR">Spell</h2>
                     <hr>
                     <div class="box-content">
-                        <blockquote class="langText KOR">For the incantation, it's best to use obscene and vulgar words,<br>to please the cock.</blockquote>
+                        <blockquote class="langText KOR">For the Spell, it's best to use obscene and vulgar words,<br>to please the cock.</blockquote>
                         <p class="box-text langText KOR">Mages can specify which Spell cards to use when building their deck.<br><br>
                             The specified Spell cards can be obtained during the duel by being created or transformed through card effects.<br><br>
                             The choice of Spell cards greatly changes the combat style.<br></p>
@@ -2335,7 +2365,7 @@
                             <br>
                             <b>Instant:</b> Can be obtained immediately without any additional cost. As they are easy to get, their effects are usually one-shot.<br>
                             <b>Chant:</b> Can be obtained by transforming one card as material. The number of casts or the effect of the spell increases, making it good for combos.<br>
-                            <b>Focus:</b> Can be obtained by transforming one Magic Circle card as material. It is very powerful but requires significant resources, making it slow and preventing subsequent actions.<br></p>
+                            <b>Focus:</b> Can be obtained by transforming one Runes card as material. It is very powerful but requires significant resources, making it slow and preventing subsequent actions.<br></p>
                     </div>
                 </div>
 
@@ -2629,22 +2659,24 @@
     <div id="info-tab">
         <div class="enemyInfo">
             <div class="box" style="flex: 0 calc(100% - 20px);">
-                <h2 class="box-title langText KOR" id="round" style="font-size: 3vh; font-weight: normal; font-family: 'Jua', sans-serif;"></h2>
+                <h2 class="box-title langText KOR" id="round" style="font-size: 2.5vh; font-weight: normal; font-family: 'Jua', sans-serif;"></h2>
             </div>
             <div class="box-img portraitBattle" id="enemyPortrait">
                 <div class="filter"></div>
                 <img src="image/no_image.webp" onerror="handleImgError(this)" alt="">
             </div>
             <div class="container">
-                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.5vh; text-align: center;"><span class="langText KOR">Excitement</span><span class="langText ENG">Excitement</span>: <span id="enemyExcite" class="number">0</span> <span class="number">/</span> <span id="enemyExciteL" class="number" onmouseenter="displayTooltip(event, 'enemy.exciteL');" onmouseleave="hideTooltip();">5</span></p>
-                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.5vh; text-align: center;"><span class="langText KOR">Orgasm</span><span class="langText ENG">Orgasm</span>: <span id="enemyOrgasm" class="number">0</span> <span class="number">/</span> <span id="enemyOrgasmL" class="number" onmouseenter="displayTooltip(event, 'enemy.orgasmL');" onmouseleave="hideTooltip();">5</span></p>
+                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.1vh; text-align: center;"><span class="langText KOR">Excitement<br></span><span id="enemyExcite" class="number">0</span> <span class="number">/</span> <span id="enemyExciteL" class="number" onmouseenter="displayTooltip(event, 'enemy.exciteL');" onmouseleave="hideTooltip();">5</span></p>
+                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.1vh; text-align: center;"><span class="langText KOR">Orgasm<br></span><span id="enemyOrgasm" class="number">0</span> <span class="number">/</span> <span id="enemyOrgasmL" class="number" onmouseenter="displayTooltip(event, 'enemy.orgasmL');" onmouseleave="hideTooltip();">5</span></p>
             </div>
         </div>
         <div class="container stats" style="justify-content: space-evenly;">
-            <div class="box" style="flex: 0 calc(30% - 20px); margin:0 auto; font-size: 3vh; margin: 0 0% 0 0%; padding: 0; text-align: center;"><span class="langText KOR">Lewdness</span><span class="langText ENG">Lewdness</span></div>
-            <p id="lewd" class="number" style="flex: 0 calc(10% - 20px); margin:0 auto; font-size: 3vh; margin: 0; padding: 0; text-align: center;" onmouseenter="displayTooltip(event, 'lewd');" onmouseleave="hideTooltip();">2</p>
-            <div class="box" style="flex: 0 calc(30% - 20px); margin:0 auto; font-size: 3vh; margin: 0 0% 0 10%; padding: 0; text-align: center;"><span class="langText KOR">Heat</span><span class="langText ENG">Heat</span></div>
-            <p id="Heat" class="number" style="flex: 0 calc(10% - 20px); margin:0 auto; font-size: 3vh; margin: 0; padding: 0; text-align: center;" onmouseenter="displayTooltip(event, 'Heat');" onmouseleave="hideTooltip();">2</p>
+            <div class="box" style="flex: 0 calc(30% - 20px); margin:0 auto; font-size: 2.5vh; margin: 0 0% 0 0%; padding: 0; text-align: center;"><span class="langText KOR">Lewdness<br></span> <p id="lewd" class="number" style="flex: 0 calc(10% - 20px); margin:0 auto; font-size: 2.5vh; margin: 0; padding: 0; text-align: center;" onmouseenter="displayTooltip(event, 'lewd');" onmouseleave="hideTooltip();">2</p>
+        </div>
+           
+
+            <div class="box" style="flex: 0 calc(30% - 20px); margin:0 auto; font-size: 2.5vh; margin: 0 0% 0 10%; padding: 0; text-align: center;"><span class="langText KOR">Heat<br></span><p id="Heat" class="number" style="flex: 0 calc(10% - 20px); margin:0 auto; font-size: 2.5vh; margin: 0; padding: 0; text-align: center;" onmouseenter="displayTooltip(event, 'Heat');" onmouseleave="hideTooltip();">2</p></div>
+            
         </div>
         <div class="playerInfo">
             <div class="box-img portraitBattle" id="playerPortrait">
@@ -2653,28 +2685,49 @@
                 <img id="playerClothes" class="clothes" src="image/no_image.webp" onerror="handleImgError(this)" alt="">
             </div>
             <div class="container">
-                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.5vh; text-align: center;"><span class="langText KOR">Excitement</span><span class="langText ENG">Excitement</span>: <span id="playerExcite" class="number">0</span> <span class="number">/</span> <span id="playerExciteL" class="number" onmouseenter="displayTooltip(event, 'player.exciteL');" onmouseleave="hideTooltip();">5</span></p>
-                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.5vh; text-align: center;"><span class="langText KOR">Orgasm</span><span class="langText ENG">Orgasm</span>: <span id="playerOrgasm" class="number">0</span> <span class="number">/</span> <span id="playerOrgasmL" class="number" onmouseenter="displayTooltip(event, 'player.orgasmL');" onmouseleave="hideTooltip();">5</span></p>
+                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.1vh; text-align: center;"><span class="langText KOR">Excitement<br></span><span id="playerExcite" class="number">0</span> <span class="number">/</span> <span id="playerExciteL" class="number" onmouseenter="displayTooltip(event, 'player.exciteL');" onmouseleave="hideTooltip();">5</span></p>
+                <p style="flex: 0 calc(50% - 20px); margin:0 auto; font-size: 2.1vh; text-align: center;"><span class="langText KOR">Orgasm<br></span><span id="playerOrgasm" class="number">0</span> <span class="number">/</span> <span id="playerOrgasmL" class="number" onmouseenter="displayTooltip(event, 'player.orgasmL');" onmouseleave="hideTooltip();">5</span></p>
             </div>
-            <div class="container">
-                <p id="viewPosture" style="margin:0 auto; font-size: 2vh; text-align: center;"><span class="langText KOR">Position</span><span class="langText ENG">Position</span>: <span id="posture"></span></p>
-                <p id="viewLust" style="display: none; margin:0 auto; font-size: 2vh; text-align: center;"><span class="langText KOR">Lust</span><span class="langText ENG">Lust</span>: <span id="lust" class="number">0</span></p>
-                <p id="viewWetness" style="display: none; margin:0 auto; font-size: 2vh; text-align: center;"><span class="langText KOR">Wetness</span><span class="langText ENG">Wetness</span>: <span id="wetness" class="number">0</span></p>
-                <p id="viewSBlock" style="display: none; margin:0 auto; font-size: 2vh; text-align: center;"><span class="langText KOR">Sensation Block/span><span class="langText ENG">Sensation Block</span>: <span id="sBlock" class="number">0</span></p>
-                <p id="viewCorrupt" style="display: none; margin:0 auto; font-size: 2vh; text-align: center;"><span class="langText KOR">Corruption</span><span class="langText ENG">Corruption</span>: <span id="corrupt" class="number">0</span></p>
+            <div class="container" style="justify-content: space-evenly; padding: 1vh 0; flex-wrap: wrap;">
+                <!-- У этого блока оставляем старую структуру с <br>, так как он всегда виден -->
+                <div id="viewPosture" style="flex: 0 0 45%; text-align: center; font-size: 2vh;">
+                    <span class="langText KOR">Position</span><br>
+                    <span id="posture">None</span>
+                </div>
+
+                <!-- А вот для всех скрываемых блоков применяем новую структуру -->
+                <div id="viewLust" style="display: none; flex: 0 0 45%; text-align: center; font-size: 2vh; flex-direction: column; align-items: center; justify-content: center;">
+                    <span class="langText KOR">Lust</span>
+                    <span id="lust" class="number">0</span>
+                </div>
+
+                <div id="viewWetness" style="display: none; flex: 0 0 45%; text-align: center; font-size: 2vh; flex-direction: column; align-items: center; justify-content: center;">
+                    <span class="langText KOR">Wetness</span>
+                    <span id="wetness" class="number">0</span>
+                </div>
+
+                <div id="viewSBlock" style="display: none; flex: 0 0 45%; text-align: center; font-size: 2vh; flex-direction: column; align-items: center; justify-content: center;">
+                    <span class="langText KOR">Sense Lock</span>
+                    <span id="sBlock" class="number">0</span>
+                </div>
+
+                <div id="viewCorrupt" style="display: none; flex: 0 0 45%; text-align: center; font-size: 2vh; flex-direction: column; align-items: center; justify-content: center;">
+                    <span class="langText KOR">Corruption</span>
+                    <span id="corrupt" class="number">0</span>
+                </div>
             </div>
         </div>
-    </div>
+     </div>
 
     <div id="main-content">
         <div class="container battleContent turnContent cardList" id="enemyAction" style="display: none;">
             <div class="box" style="flex: 0 calc(100% - 20px);">
-                <h2 class="box-title langText KOR">Champion's Action</h2>
+                <h2 class="box-title langText KOR">Enemy Action</h2>
             </div>
         </div>
         <div class="container battleContent turnContent cardList" id="enemyState" style="display: none;">
             <div class="box" style="flex: 0 calc(100% - 20px);">
-                <h2 class="box-title langText KOR">Champion's State</h2>
+                <h2 class="box-title langText KOR">Enemy State</h2>
             </div>
         </div>
         <!--<div class="container battleContent cardList" id="enemyRecord" style="display: none;">
@@ -2711,7 +2764,7 @@
 
     <div id="button-tab">
         <div class="buttons top">
-            <h2 class="box-title langText KOR" style="font-size: 3vh;">Champion</h2>
+            <h2 class="box-title langText KOR" style="font-size: 2.5vh;">Enemy</h2>
             <div class="box button battleButton active disabled" id="enemyActionButton" style="flex: 0 calc(100% - 20px); margin:0 auto; text-align: center;">
                 <p class="langText KOR">Champion's Action</p>
             </div>
@@ -2730,7 +2783,7 @@
             <div></div>
         </div>
         <div class="buttons bottom">
-            <h2 class="box-title langText KOR" style="font-size: 3vh;">You</h2>
+            <h2 class="box-title langText KOR" style="font-size: 2.5vh;">You</h2>
             <div class="box button battleButton active disabled" id="playerDeckButton" style="flex: 0 calc(100% - 20px); margin:0 auto; text-align: center;">
                 <p class="langText KOR">Your Deck</p>
             </div>
@@ -2743,10 +2796,10 @@
         </div>
         <div class="buttons">
             <div class="box button battleButton" id="ruleButton" style="flex: 0 calc(50% - 20px); margin:0 auto; text-align: center;" onclick="const width = window.screen.width; const height = window.screen.height; window.open('rule.html', '규칙 설명', `width=${width},height=${height}`);">
-                <p class="langText KOR">ℹ️ Rules</p>
+                <p class="langText KOR"><i class="fa-solid fa-circle-info"></i> Rules</p>
             </div>
             <div class="box button battleButton" id="combatConfigButton" style="flex: 0 calc(50% - 20px); margin:0 auto; text-align: center;" onclick="combatConfigModalOpen();">
-                <p class="langText KOR">⚙️ Settings</p>
+                <p class="langText KOR"><i class="fa-solid fa-gear"></i> Settings</p>
             </div>
         </div>
     </div>
@@ -2766,7 +2819,7 @@
             <h2 class="box-title langText KOR">Duel Record</h2>
         </div>
         <div class="box button button2" style="flex: 0 calc(100% - 20px);" onclick="downloadDivAsImage('endingDocument', 'productInfo')">
-            <h2 class="box-title langText KOR">🖼️ Download as Image</h2>
+            <h2 class="box-title langText KOR"><i class="fa-solid fa-image"></i> Download as Image</h2>
         </div>
         <div style="width:100%; height:80px;"></div>
         <div class="box" id="startDeckDiv" style="flex: 0 calc(100% - 20px);">
@@ -2800,14 +2853,14 @@
             </div>
         </div>
         <div class="box button button2" style="flex: 0 calc(50% - 20px);" onclick="downloadDivAsImage('startDeckDiv', 'deck')">
-            <h2 class="box-title langText KOR">🖼️ Download as Image</h2>
+            <h2 class="box-title langText KOR"><i class="fa-solid fa-image"></i> Download as Image</h2>
         </div>
         <div class="box button button2" id="deckCopy" style="flex: 0 calc(50% - 20px);" onclick="copyDeckCode()">
-            <h2 class="box-title langText KOR">📋 Copy Deck Code</h2>
+            <h2 class="box-title langText KOR"><i class="fa-solid fa-copy"></i> Copy Deck Code</h2>
         </div>
         <div style="width:100%; height:80px;"></div>
         <div class="box" style="flex: 0 calc(100% - 20px);">
-            <h2 class="box-title langText KOR" onclick="logFold();"><span class="logFold">▼</span><span class="logUnfold" style="display:none;">▶</span>Duel Log</h2>
+            <h2 class="box-title langText KOR" onclick="logFold();"><span class="logFold"><i class="fa-solid fa-chevron-down"></i></span><span class="logUnfold" style="display:none;"><i class="fa-solid fa-chevron-right"></i></span> Duel Log</h2>
             <div style="display:flex; justify-content: center; gap:16px;">
                 <label style=""><b class="langText KOR">Show Dialogue</b><input type="checkbox" id="lineLogCheckbox" onchange="Array.from(document.getElementsByClassName('lineLog')).forEach(l => l.style.display = this.checked?'block':'none')" checked=""></label>
                 <label style=""><b class="langText KOR">Show Effects</b><input type="checkbox" id="effectTextLogCheckbox" onchange="Array.from(document.getElementsByClassName('effectTextLog')).forEach(l => l.style.display = this.checked?'inline':'none')" checked=""></label>
@@ -2825,7 +2878,7 @@
         </div>
         <div style="width:100%; height:160px;"></div>
         <div class="box button button2" style="flex: 0 calc(80% - 20px);" onclick="location.reload();">
-            <h2 class="box-title langText KOR">🔃 Restart from the beginning</h2>
+            <h2 class="box-title langText KOR"><i class="fa-solid fa-rotate-right"></i> Restart from the beginning</h2>
         </div>
     </div>
 </div>
@@ -2839,7 +2892,7 @@
     </div>
 </div>
 
-<div id="rotate-message" style="display: none">가로모드로 플레이 해주십시오.</div>
+<div id="rotate-message" style="display: none">Please play in landscape mode.</div>
 
 <script src="data.js"></script>
 <script src="cards.js"></script>
@@ -2867,5 +2920,10 @@
     //nextButton(13, false);
     //changeEvent(9);
 </script>
+<div id="audio-container" style="display: none;"></div>
+
+ 
+
+
 </body>
-</html>
+</html> 

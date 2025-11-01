@@ -14,7 +14,7 @@ const cardColor = {
 	"Blonde Thug":{"border":"#5C4033", "name":"#B79F5B", "textbox":"#F9E0BB"},
 	"Trainer":{"border":"#4A2C2A", "name":"#8E8170", "textbox":"#F9E0BB"},
 
-	"등급":{"normal":"#BFBFBF", "expert":"#5C7893", "ultimate":"#B89C67"}
+	"Rating":{"normal":"#BFBFBF", "expert":"#5C7893", "ultimate":"#B89C67"}
 }
 
 const cardDB = {
@@ -182,12 +182,12 @@ const cardDB = {
 	},
 	"AD-NT-BG2-002":{
 		name:{ "KOR":"Culture" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", bg:"Noble", cost:10, owner:1,
-		tags:[], related:["궁극"],
+		tags:[], related:["Ultimate"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Through your noble status and diverse experiences, you have ingrained in yourself refined manners and etiquette.<br>By maintaining your dignity, you can convey your class to others and gain a weapon to use against the less fortunate." },
 		hypnoText:{ "KOR":"Greet men by lifting your skirt, spreading your legs, and showing them your pussy.<br>If you receive lewd comments or critiques of your body, you must express your gratitude." },
 		effect:[
-			{trigger:"gameStart", cond:true, type:"get", target:"self", value:"randomCard(rarity, 궁극)"},
+			{trigger:"gameStart", cond:true, type:"get", target:"self", value:"randomCard(rarity, Ultimate)"},
 		]
 	},
 	"AD-NT-BG3-001":{
@@ -249,11 +249,11 @@ const cardDB = {
 		]
 	},
 	"AD-NT-BG5-001-2":{
-		name:{ "KOR":"Observational Research" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Scrutiny" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		tags:["Research"],
 		expiration:"turnEnd", duration:1,
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"자신.기록.이번.사용.count(type, 보조)", op:">", v2:0}, type:"Heat", op:"add", value:-1},
+			{trigger:"turnEnd", cond:{v1:"자신.기록.이번.사용.count(type, Support)", op:">", v2:0}, type:"Heat", op:"add", value:-1},
 		]
 	},
 	"AD-NT-BG5-001-3":{
@@ -302,7 +302,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You have an exceptional talent for dealing with customers.<br>Your kind and skillful service wins people over and is a great help in closing deals." },
 		hypnoText:{ "KOR":"You must use your body to service the customers.<br>Payment will be received in cum." },
 		effect:[
-			{trigger:"turnStart", cond:true, type:"get", target:"self", value:"randomCard(rarity, 일반)"},
+			{trigger:"turnStart", cond:true, type:"get", target:"self", value:"randomCard(rarity, Normal)"},
 		]
 	},
 	"AD-NT-BG7-002":{
@@ -429,7 +429,7 @@ const cardDB = {
 		name:{ "KOR":"Twilight Brigade" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", race:"Silvani", bg:"Soldier", cost:20, owner:1, priority:99,
 		tags:[],
 		expiration:"always", duration:Infinity,
-		flavorText:{ "KOR":"The Sylvanian Federation once had a corps of marksmen composed mainly of Twilight Sylvani.<br>Clad in blue uniforms and wielding weapons incorporating the latest Mekarylon technology, they were a terrifying force on the battlefield.<br>The unit was disbanded after the war, and its elite soldiers either retired or, like you, took on other jobs." },
+		flavorText:{ "KOR":"The Sylvanian Federation once had a corps of marksmen composed mainly of Twilight Sylvani.<br>Clad in blue uniforms and wielding weapons incorporating the latest Merylon technology, they were a terrifying force on the battlefield.<br>The unit was disbanded after the war, and its elite soldiers either retired or, like you, took on other jobs." },
 		hypnoText:{ "KOR":"A cum-dumpster soldier in the Welfare and Recreation Unit.<br>You must be installed at a designated location to handle the soldiers' sexual needs." },
 		effect:[
 			{trigger:"always", cond:true, type:"modifier", stat:"lewd", op:"add", value:1},
@@ -466,10 +466,10 @@ const cardDB = {
 		]
 	},
 	"AD-NT-SY-BG6-001":{
-		name:{ "KOR":"Forbidden Arts Society" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", race:"Silvani", bg:"Rogue", cost:15, owner:1,
+		name:{ "KOR":"Shadow Coven" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", race:"Silvani", bg:"Rogue", cost:15, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
-		flavorText:{ "KOR":"The Forbidden Arts Society is a club for those who cannot contain their curiosity about forbidden magic.<br>Forbidden arts are forbidden for a reason.<br>They frequently cause rampages and disasters, and are wanted throughout the Federation." },
+		flavorText:{ "KOR":"The Shadow Coven is a club for those who cannot contain their curiosity about forbidden magic.<br>Forbidden arts are forbidden for a reason.<br>They frequently cause rampages and disasters, and are wanted throughout the Federation." },
 		hypnoText:{ "KOR":"You've become captivated by the tentacles from beyond the dimensional gate.<br>Feed them nutrients and mana. Capture women to offer to them." },
 		effect:[
 			{trigger:"always", cond:{v1:"라운드", op:"==", v2:1}, type:"maxUse", target:"self", value:1},
@@ -528,7 +528,7 @@ const cardDB = {
 		]
 	},
 	"AD-NT-HA-BG4-001-1":{
-		name:{ "KOR":"Morvain's Bargain" }, class:"Neutral", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Morvain's Bargain" }, class:"Neutral", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:[],
 		effect:[
@@ -558,7 +558,7 @@ const cardDB = {
 		]
 	},
 	"AD-NT-HA-BG5-001-1":{
-		name:{ "KOR":"Trial and Error" }, class:"Neutral", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Trial and Error" }, class:"Neutral", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:[],
 		effect:[
@@ -657,7 +657,7 @@ const cardDB = {
 	},
 
 	"AD-NT-TR-BG1-001":{
-		name:{ "KOR":"Guardian of the Beastfolk" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", race:"Beastfolk", bg:"Soldier", cost:10, owner:1,
+		name:{ "KOR":"Primal Honor" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", race:"Beastfolk", bg:"Soldier", cost:10, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Guardians are those who have volunteered to take up spear and staff to protect the beastfolk from conflicts, disasters, invasions, and other external factors.<br>This position is usually held by the second strongest person in the beastfolk." },
@@ -688,7 +688,7 @@ const cardDB = {
 		]
 	},
 	"AD-NT-TR-BG4-001":{
-		name:{ "KOR":"Guidance of the Golden Staff" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", race:"Beastfolk", bg:"Cleric", cost:15, owner:1,
+		name:{ "KOR":"Golden Rod" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", race:"Beastfolk", bg:"Cleric", cost:15, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"The Golden Staff, given to practitioners of the Golden Bough faith, is their symbol.<br>The staff always has a tendency to point somewhere, and at its tip lies an evil power that needs to be purified." },
@@ -713,7 +713,7 @@ const cardDB = {
 	},
 	"AD-NT-TR-BG5-001-1":{
 		parents:"AD-NT-TR-BG5-001",
-		name:{ "KOR":"Enlightenment" }, class:"Neutral", type:"보조", isDeck:true, rarity:"None", race:"Beastfolk", bg:"Scholar", owner:1, nochange:true,
+		name:{ "KOR":"Enlightenment" }, class:"Neutral", type:"Support", isDeck:true, rarity:"None", race:"Beastfolk", bg:"Scholar", owner:1, nochange:true,
 		cond:true,
 		tags:["변형불가"], related:["tag:Transcendent"],
 		effect:[
@@ -773,11 +773,11 @@ const cardDB = {
 		]
 	},
 	"AD-SL-boss2":{
-		name:{ "KOR":"I'd Never Fall for Hypnosis" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", boss:2, cost:-20, owner:1,
+		name:{ "KOR":"Iron Will" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", boss:2, cost:-20, owner:1,
 		tags:["전문가"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Mind magic? That's just nonsense.<br>Someone with a strong will would never fall for such petty tricks.<br>In the end, it's all a matter of mental strength." },
-		hypnoText:{ "KOR":"I'd never fall for the hypnosis of this pathetic man.<br>Besides, isn't it perfectly natural to have to perform perverted orgasmic masturbation as a pussy slave?" },
+		hypnoText:{ "KOR":"I'd never fall for the hypnosis of this pathetic man.<br>Besides, isn't it perfectly natural to have to perform perverted orgasmic masturbation as a sex slave?" },
 		effect:[
 			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"Won against <b>[The Villager]</b> in normal mode." }},
 			{trigger:"none", cond:true, type:"text", value:{ "KOR":"Gain bonus points." }},
@@ -817,7 +817,7 @@ const cardDB = {
 		]
 	},
 	"AD-SL-boss6":{
-		name:{ "KOR":"Mushrooms are the best!" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", boss:6, cost:-20, owner:1,
+		name:{ "KOR":"Mushroom lover" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", boss:6, cost:-20, owner:1,
 		tags:["전문가"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Delicious and good for you, mushrooms!<br>As long as you avoid the poisonous ones, they're harmless!" },
@@ -873,7 +873,7 @@ const cardDB = {
 	},
 
 	"AD-WA-BG1-001":{
-		name:{ "KOR":"The Best Defense is a Good Offense" }, class:"Warrior", type:"특성", isDeck:false, rarity:"None", bg:"Soldier", cost:15, owner:1,
+		name:{ "KOR":"Offensive Defense" }, class:"Warrior", type:"특성", isDeck:false, rarity:"None", bg:"Soldier", cost:15, owner:1,
 		tags:["group:Heat 감소", "race:Eldorian"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"A single surprise attack targeting an enemy's weakness is ultimately safer than raising your shield a hundred times.<br>The strategy of breaking the enemy's defense with an aggressive offense can itself become the defense that protects your allies." },
@@ -1306,10 +1306,10 @@ const cardDB = {
 	},
 
 	"AD-MA-ALL-001":{
-		name:{ "KOR":"Automatic Incantation" }, class:"Mage", type:"특성", isDeck:false, rarity:"None", cost:15, owner:1,
+		name:{ "KOR":"Automatic Spell" }, class:"Mage", type:"특성", isDeck:false, rarity:"None", cost:15, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
-		flavorText:{ "KOR":"Simple magic doesn't need to be cast every single time.<br>By preparing the incantation in advance, you can activate it at the start of battle and easily gain the upper hand." },
+		flavorText:{ "KOR":"Simple magic doesn't need to be cast every single time.<br>By preparing the Spell in advance, you can activate it at the start of battle and easily gain the upper hand." },
 		hypnoText:{ "KOR":"Your body reacts automatically and gets aroused at the sight of a cock.<br>In this state, your lust makes it impossible to refuse a man's demands." },
 		effect:[
 			{trigger:"gameStart", cond:true, type:"get", target:"self", value:"Magic Slot.즉발"},
@@ -1375,7 +1375,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You perform magic on stage, captivating the audience's attention.<br>With dazzling effects and intricate techniques, you perfectly adorn your performance, and no one can take their eyes off your magic.<br>Your shows always become the talk of the town." },
 		hypnoText:{ "KOR":"Let's perform a magic trick where your clothes disappear.<br>Next up is a trick where you pull things out of your pussy." },
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"자신.기록.전체.이벤트.만료Magic.length", op:">=", v2:4}, type:"get", target:"self", value:"randomCard(tags, Magic Circle)"},
+			{trigger:"turnEnd", cond:{v1:"자신.기록.전체.이벤트.만료Magic.length", op:">=", v2:4}, type:"get", target:"self", value:"randomCard(tags, Runes)"},
 		]
 	},
 	"AD-MA-BG3-002":{
@@ -1411,7 +1411,7 @@ const cardDB = {
 	},
 
 	"AD-MA-BG5-001":{
-		name:{ "KOR":"Multi-Element Research" }, class:"Mage", type:"특성", isDeck:false, rarity:"None", bg:"Scholar", cost:15, owner:1,
+		name:{ "KOR":"Element Research" }, class:"Mage", type:"특성", isDeck:false, rarity:"None", bg:"Scholar", cost:15, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"You research various magical elements and understand their interactions better than anyone.<br>Not being confined to a single element, your ability to handle multiple elements simultaneously makes your magic more powerful and versatile." },
@@ -1479,7 +1479,7 @@ const cardDB = {
 		]
 	},
 	"AD-MA-BG7-002-1":{
-		name:{ "KOR":"Unidentified Grimoire" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Unidentified Grimoire" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:false,
 		tags:["변형목적"],
 		effect:[
@@ -1494,7 +1494,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You have nowhere left to retreat.<br>In a situation where you must risk everything on the battlefield, you must fight the enemy with no option of retreat.<br>With your back to the wall, you are prepared to fight to the end, with only victory in your sights." },
 		hypnoText:{ "KOR":"When facing the threat of rape, you must not think of escape, but face it head-on.<br>You must accept being fucked." },
 		effect:[
-			{trigger:"turnEnd", cond:{v1:"Sense Block", op:"==", v2:0}, type:"get", target:"self", value:"randomCard(tags, Magic Circle)"},
+			{trigger:"turnEnd", cond:{v1:"Sense Block", op:"==", v2:0}, type:"get", target:"self", value:"randomCard(tags, Runes)"},
 		]
 	},
 	"AD-MA-BG8-002":{
@@ -1519,7 +1519,7 @@ const cardDB = {
 		]
 	},
 	"AD-HE-ALL-002":{
-		name:{ "KOR":"Professional Medical License" }, class:"Healer", type:"특성", isDeck:false, rarity:"None", cost:10, owner:1,
+		name:{ "KOR":"Physician's Oath" }, class:"Healer", type:"특성", isDeck:false, rarity:"None", cost:10, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"You hold a professional medical license issued by the pan-national Albion Medical Association.<br>This license proves that you have undergone extensive training and possess deep knowledge not just in simple healing magic, but in complex trauma treatment, disease diagnosis, and pharmacology.<br>Healers with this license are so trusted that they are prioritized for employment on battlefields or by noble families, and questioning the skill or ethics of a license holder is considered an insult to the Association itself." },
@@ -1563,14 +1563,14 @@ const cardDB = {
 	},
 	"AD-HE-BG2-001-1":{
 		parents:"AD-HE-BG2-001",
-		name:{ "KOR":"Bloodline Combination" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Bloodline Combination" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["결합물"],
+		tags:["Combination"],
 		effect:[
 		]
 	},
 	"AD-HE-BG2-002":{
-		name:{ "KOR":"The Other Side of Power" }, class:"Healer", type:"특성", isDeck:false, rarity:"None", bg:"Noble", cost:15, owner:1,
+		name:{ "KOR":"Other Side of Power" }, class:"Healer", type:"특성", isDeck:false, rarity:"None", bg:"Noble", cost:15, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Those with power must act for political deals and profit, and sometimes they must make difficult choices to protect those under their care.<br>With your cool-headed and sometimes cruel judgment, you understood exactly what you had to do." },
@@ -1659,9 +1659,9 @@ const cardDB = {
 	},
 	"AD-HE-BG5-002-1":{
 		parents:"AD-HE-BG5-002",
-		name:{ "KOR":"Alchemical Combination" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Alchemical Combo" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["결합물"],
+		tags:["Combination"],
 		effect:[
 		]
 	},
@@ -1709,7 +1709,7 @@ const cardDB = {
 		]
 	},
 	"AD-HE-BG7-002-1":{
-		name:{ "KOR":"Healing Potion" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Healing Potion" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Potion"],
 		effect:[
@@ -1718,7 +1718,7 @@ const cardDB = {
 		]
 	},
 	"AD-HE-BG7-002-2":{
-		name:{ "KOR":"Awakening Potion" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Awakening Potion" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Potion"],
 		effect:[
@@ -1738,7 +1738,7 @@ const cardDB = {
 		]
 	},
 	"AD-HE-BG7-002-3":{
-		name:{ "KOR":"Calming Potion" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Calming Potion" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Potion"],
 		effect:[
@@ -1758,7 +1758,7 @@ const cardDB = {
 		]
 	},
 	"AD-HE-BG7-002-4":{
-		name:{ "KOR":"Absorption Potion" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Absorption Potion" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Potion"],
 		effect:[
@@ -1789,7 +1789,7 @@ const cardDB = {
 		]
 	},
 	"AD-HE-BG8-002":{
-		name:{ "KOR":"Crisis into Opportunity" }, class:"Healer", type:"특성", isDeck:false, rarity:"None", bg:"Mercenary", cost:10, owner:1,
+		name:{ "KOR":"Calculated Risk" }, class:"Healer", type:"특성", isDeck:false, rarity:"None", bg:"Mercenary", cost:10, owner:1,
 		tags:[],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"You have the ability to find opportunity in the midst of a life-threatening crisis.<br>Even when cornered or in a disadvantageous situation, you calmly analyze the situation and create a moment of reversal." },
@@ -1819,7 +1819,7 @@ const cardDB = {
 		flavorText:{ "KOR":"You enjoy showing off and living a luxurious life, indulging in unnecessary extravagance.<br>Expensive clothes, jewelry, and lavish parties have become your daily life, and you continue to spend endlessly, ignoring the financial burden." },
 		hypnoText:{ "KOR":"You must serve a worthless man as your master and sacrifice everything you have to pay off his gambling debts.<br>Not just your entire fortune, but also your body." },
 		effect:[
-			{trigger:"always", cond:{v1:"자기Deck.count(rarity, 일반)", op:">", v2:0}, type:"exciteL", target:"self", op:"set", value:1 },
+			{trigger:"always", cond:{v1:"자기Deck.count(rarity, Normal)", op:">", v2:0}, type:"exciteL", target:"self", op:"set", value:1 },
 		]
 	},
 	"DA-NT-BG3-001":{
@@ -2149,11 +2149,11 @@ const cardDB = {
 		flavorText:{ "KOR":"You stand at the center of power, but your position is always fraught with danger.<br>In the world of politics, rife with conspiracy and betrayal, you are wary of everyone around you, living in anxiety that someone is trying to bring you down." },
 		hypnoText:{ "KOR":"Accused of being a former sex slave, you had to show your naked body in front of everyone.<br>You suffered the humiliation of having to prove that you had no slave brand on your body and that you weren't lactating from being trained." },
 		effect:[
-			{trigger:"always", cond:{v1:"자기Deck.count(rarity, 일반)", op:">", v2:0}, type:"avoidBan"},
+			{trigger:"always", cond:{v1:"자기Deck.count(rarity, Normal)", op:">", v2:0}, type:"avoidBan"},
 		]
 	},/*
 	"DA-AS-BG2-001-1":{
-		name:{ "KOR":"Craft: Fake Poison" }, class:"Assassin", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Craft: Fake Poison" }, class:"Assassin", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Crafted"], related:["DA-AS-BG2-001-2"], keywords:["id:DA-AS-BG2-001-2"],
 		effect:[
@@ -2192,7 +2192,7 @@ const cardDB = {
 		]
 	},
 	"DA-AS-BG5-001":{
-		name:{ "KOR":"Black-and-White Thinking" }, class:"Assassin", type:"특성", isDeck:false, rarity:"None", bg:"Scholar", cost:-20,
+		name:{ "KOR":"Black-and-White" }, class:"Assassin", type:"특성", isDeck:false, rarity:"None", bg:"Scholar", cost:-20,
 		tags:["부정적"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"You see the world only in extremes.<br>You divide everything into good and evil, right and wrong, and do not acknowledge the gray area in between.<br>This rigid way of thinking makes complex situations more difficult and hinders cooperation and understanding." },
@@ -2226,7 +2226,7 @@ const cardDB = {
 		]
 	},
 	"DA-AS-BG7-001-1":{
-		name:{ "KOR":"Defective: Broken Tool" }, class:"None", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Junk: Used Toy" }, class:"None", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Defective"],
 		effect:[
@@ -2235,7 +2235,7 @@ const cardDB = {
 		]
 	},
 	"DA-AS-BG7-001-2":{
-		name:{ "KOR":"Defective: Used Consumable" }, class:"None", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Junk: Leftovers" }, class:"None", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Defective"],
 		effect:[
@@ -2244,7 +2244,7 @@ const cardDB = {
 		]
 	},
 	"DA-AS-BG7-001-3":{
-		name:{ "KOR":"Defective: Worn-out Armor" }, class:"None", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Junk: Rugs" }, class:"None", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Defective"],
 		effect:[
@@ -2308,7 +2308,7 @@ const cardDB = {
 		]
 	},
 	"DA-MA-BG2-001-1":{
-		name:{ "KOR":"Flashy But Useless Magic" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Flashy Magic" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["부정적", "Magic", "시전"], cast:1,
 		effect:[
@@ -2336,7 +2336,7 @@ const cardDB = {
 		]
 	},
 	"DA-MA-BG5-001":{
-		name:{ "KOR":"0 Days Since Last Accident" }, class:"Mage", type:"특성", isDeck:false, rarity:"None", bg:"Scholar", cost:-15,
+		name:{ "KOR":"...Since Last Accident" }, class:"Mage", type:"특성", isDeck:false, rarity:"None", bg:"Scholar", cost:-15,
 		tags:["부정적"], related:["DA-MA-BG5-001-1"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"You always cause minor accidents during experiments or research.<br>You hope that nothing will happen until the research is finished, but unexpected problems always arise, and peaceful days never come to the lab." },
@@ -2348,7 +2348,7 @@ const cardDB = {
 	"DA-MA-BG5-001-1":{
 		name:{ "KOR":"State of Emergency" }, class:"Mage", type:"Penalty", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["부정적", "Magic", "자동시전", "변형목적"], cast:3,
+		tags:["부정적", "Magic", "Autocast", "변형목적"], cast:3,
 		effect:[
 			{trigger:"expired", cond:true, type:"orgasm", target:"self"},
 			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"This card is treated as a Magic card." }}
@@ -2452,7 +2452,7 @@ const cardDB = {
 		]
 	},
 	"DA-HE-BG4-001":{
-		name:{ "KOR":"Conscientious Objection to Treatment" }, class:"Healer", type:"특성", isDeck:false, rarity:"None", bg:"Cleric", cost:-10,
+		name:{ "KOR":"Purity Vow" }, class:"Healer", type:"특성", isDeck:false, rarity:"None", bg:"Cleric", cost:-10,
 		tags:["부정적"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Due to your religious beliefs, you refuse certain treatments or procedures.<br>As a result, you are criticized for not providing proper treatment to those in need, but you believe that upholding your beliefs is more important than anything." },
@@ -2518,7 +2518,7 @@ const cardDB = {
 
 
 	"DA-NT-ALL-001":{
-		name:{ "KOR":"Intervention: Mind Mage" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", cost:-30, owner:1, nochange:true,
+		name:{ "KOR":"Trial: Mind Mage" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", cost:-30, owner:1, nochange:true,
 		tags:["부정적", "Common", "개입"], related:["tag:최면"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Kalles Mistvein is an expert in mind magic.<br>Her magic plays a large role in luring new challengers and turning them into slaves through hypnosis.<br>At a client's request, she will now intervene in your duel.<br><br>※ The hypnosis will restrict you from playing cards under certain conditions." },
@@ -2570,7 +2570,7 @@ const cardDB = {
 	},
 
 	"DA-NT-ALL-002":{
-		name:{ "KOR":"Intervention: Curse Master" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", cost:-30, owner:1, nochange:true,
+		name:{ "KOR":"Trial: Curse Master" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", cost:-30, owner:1, nochange:true,
 		tags:["부정적", "Common", "개입"], related:["tag:저주"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Chuk'in is an expert in curse magic.<br>She is in charge of writing the contracts for the curse of obedience used to prevent the arena staff from rebelling.<br>Out of personal interest, she will now intervene in your duel.<br><br>※ If you fail to meet the curse's condition by the end of round 3, you will be defeated instantly." },
@@ -2586,16 +2586,16 @@ const cardDB = {
 		]
 	},
 	"DA-NT-ALL-002-1":{
-		name:{ "KOR":"Curse of Endless Orgasm" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Curse: Orgasm Loop" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		tags:["부정적", "저주"],
 		expiration:"turnEnd", duration:3,
 		effect:[
 			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"Applied if you are an Eldorian." }},
-			{trigger:"expired", cond:{v1:"자기Deck.count(rarity, 궁극)", op:">", v2:0}, type:"defeat", target:"self"},
+			{trigger:"expired", cond:{v1:"자기Deck.count(rarity, Ultimate)", op:">", v2:0}, type:"defeat", target:"self"},
 		]
 	},
 	"DA-NT-ALL-002-2":{
-		name:{ "KOR":"Curse of Dollification" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Curse: Dollification" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		tags:["부정적", "저주"],
 		expiration:"turnEnd", duration:3,
 		effect:[
@@ -2604,7 +2604,7 @@ const cardDB = {
 		]
 	},
 	"DA-NT-ALL-002-3":{
-		name:{ "KOR":"Curse of Personality Destruction" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Curse: Mind Break" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		tags:["부정적", "저주"],
 		expiration:"turnEnd", duration:3,
 		effect:[
@@ -2613,7 +2613,7 @@ const cardDB = {
 		]
 	},
 	"DA-NT-ALL-002-4":{
-		name:{ "KOR":"Curse of Absolute Obedience" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Curse: Obedience" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		tags:["부정적", "저주"],
 		expiration:"turnEnd", duration:3,
 		effect:[
@@ -2623,10 +2623,10 @@ const cardDB = {
 	},
 
 	"DA-NT-ALL-003":{
-		name:{ "KOR":"Intervention: Illegal Alchemist" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", cost:-30, owner:1, nochange:true,
+		name:{ "KOR":"Trial: Illegal Alchemist" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", cost:-30, owner:1, nochange:true,
 		tags:["부정적", "Common", "개입"], related:["tag:Potion"],
 		expiration:"always", duration:Infinity,
-		flavorText:{ "KOR":"Nisby is an expert in potion brewing.<br>She has developed perception-impairing incense to hinder challengers and stimulants to boost the champions' stamina.<br>To test her new products, she will now intervene in your duel.<br><br>※ The drugs will accumulate, debuffing you and buffing your opponent." },
+		flavorText:{ "KOR":"Nisby is an expert in potion brewing.<br>She has developed Delirium Incense to hinder challengers and stimulants to boost the champions' stamina.<br>To test her new products, she will now intervene in your duel.<br><br>※ The drugs will accumulate, debuffing you and buffing your opponent." },
 		effect:[
 			{trigger:"trait", cond:true, notext:true, type:"ban", range:{category:"tags", value:"개입", count:1}},
 			{trigger:"turnStart", cond:{v1:"라운드", op:"in", v2:[1,3,5,7]}, type:"line", value:"개입-Potion"},
@@ -2634,7 +2634,7 @@ const cardDB = {
 		]
 	},
 	"DA-NT-ALL-003-1":{
-		name:{ "KOR":"Perception-Impairing Incense" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Delirium Incense" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		tags:["부정적", "Potion"],
 		expiration:"always", duration:Infinity,
 		effect:[
@@ -2642,7 +2642,7 @@ const cardDB = {
 		]
 	},
 	"DA-NT-ALL-003-2":{
-		name:{ "KOR":"Livestock Aphrodisiac" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Hucow Aphrodisiac" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		tags:["부정적", "Potion"],
 		expiration:"always", duration:Infinity,
 		effect:[
@@ -2658,7 +2658,7 @@ const cardDB = {
 		]
 	},
 	"DA-NT-ALL-003-4":{
-		name:{ "KOR":"Addictive Aphrodisiac" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Lust Potion" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		tags:["부정적", "Potion"],
 		expiration:"always", duration:Infinity,
 		effect:[
@@ -2667,7 +2667,7 @@ const cardDB = {
 	},
 
 	"DA-NT-ALL-004":{
-		name:{ "KOR":"Intervention: Torture Trainer" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", cost:-30, owner:1, nochange:true,
+		name:{ "KOR":"Trial: Torture Trainer" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", cost:-30, owner:1, nochange:true,
 		tags:["부정적", "Common", "개입"], related:["tag:고문"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Momorika is an expert in torture and training.<br>Based on her knowledge of the body and nerves, she has raised arena champions and broken the minds of countless slaves.<br>At Sandrea's command, she will now intervene in your duel.<br><br>※ The torture will gradually increase your arousal and wear you down." },
@@ -2819,7 +2819,7 @@ const cardDB = {
 	},
 
 	"NT-SU-001":{
-		name:{ "KOR":"Hand Holding" }, class:"Neutral", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1, nochange:true,
+		name:{ "KOR":"Hand Holding" }, class:"Neutral", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1, nochange:true,
 		cond:true,
 		tags:["Deck빌딩"],
 		effect:[
@@ -2828,7 +2828,7 @@ const cardDB = {
 		]
 	},
 	"NT-SU-002":{
-		name:{ "KOR":"Hug" }, class:"Neutral", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1, nochange:true,
+		name:{ "KOR":"Hug" }, class:"Neutral", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1, nochange:true,
 		cond:true,
 		tags:["Deck빌딩"],
 		effect:[
@@ -2836,7 +2836,7 @@ const cardDB = {
 		]
 	},
 	"NT-SU-003":{
-		name:{ "KOR":"Kiss" }, class:"Neutral", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1, nochange:true,
+		name:{ "KOR":"Kiss" }, class:"Neutral", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1, nochange:true,
 		cond:true,
 		tags:["Deck빌딩", "act:kiss"],
 		effect:[
@@ -2856,7 +2856,7 @@ const cardDB = {
 		]
 	},
 	"NT-SU-004":{
-		name:{ "KOR":"Spreading Pussy" }, class:"Neutral", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1, nochange:true,
+		name:{ "KOR":"Spreading Pussy" }, class:"Neutral", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1, nochange:true,
 		cond:true,
 		tags:["Deck빌딩"],
 		effect:[
@@ -2954,7 +2954,7 @@ const cardDB = {
 //#######################################################################################################################################################################################
 
 	"WA-NM-AT-001":{
-		name:{ "KOR":"Disarm" }, class:"Warrior", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Disarm" }, class:"Warrior", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Heat 감소", "group:Lust", "race:Eldorian", "act:fellatio"],
 		flavorText:{ "KOR":"Knock the weapon from the enemy's hand.<br>By leaving your opponent defenseless and breaking their will to fight, you can end the battle without bloodshed." },
@@ -2972,7 +2972,7 @@ const cardDB = {
 		]
 	},
 	"WA-NM-AT-002":{
-		name:{ "KOR":"Wide Swing" }, class:"Warrior", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Wide Swing" }, class:"Warrior", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Lust", "race:Eldorian", "act:penetration"],
 		flavorText:{ "KOR":"Swing your weapon in a wide arc to sweep away all enemies on the battlefield at once.<br>With great strength and courage, you can crush the enemy's formation with a single swing, turning the tide of battle in your favor." },
@@ -2983,7 +2983,7 @@ const cardDB = {
 		]
 	},
 	"WA-NM-AT-003":{
-		name:{ "KOR":"Reckless Charge" }, class:"Warrior", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Reckless Charge" }, class:"Warrior", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Eldorian", "act:penetration"],
 		flavorText:{ "KOR":"A fierce assault, charging into the heart of the enemy's ranks without fear of injury.<br>It is a powerful offensive tactic that requires courage but carries a great risk of failure." },
@@ -2995,7 +2995,7 @@ const cardDB = {
 		]
 	},
 	"WA-NM-AT-004":{
-		name:{ "KOR":"Brace!" }, class:"Warrior", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Brace!" }, class:"Warrior", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "버리기", "group:버리기", "race:Beastfolk", "act:penetration"],
 		flavorText:{ "KOR":"A warrior's battle cry is more than just a shout.<br>It is an expression of resolve, tensing every muscle in the body, steeling the mind, and refusing to yield to any threat." },
@@ -3008,7 +3008,7 @@ const cardDB = {
 		]
 	},
 	"WA-NM-AT-005":{
-		name:{ "KOR":"Joint Lock" }, class:"Warrior", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Joint Lock" }, class:"Warrior", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Beastfolk", "act:penetration"],
 		flavorText:{ "KOR":"The famous warrior beastfolk, the Red Spears, are skilled in hand-to-hand combat focusing on restraints and joint locks.<br>Their specialty is neutralizing the opponent's movements, exhausting their stamina, and seizing control of the fight." },
@@ -3029,7 +3029,7 @@ const cardDB = {
 		]
 	},
 	"WA-NM-AT-006":{
-		name:{ "KOR":"Spear Throw" }, class:"Warrior", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Spear Throw" }, class:"Warrior", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "Thrown", "group:버리기", "race:Silvani", "act:caress"],
 		flavorText:{ "KOR":"The spear is a good weapon because it is cost-effective and can be easily used by regular soldiers without special training, as well as by skilled warriors." },
@@ -3040,7 +3040,7 @@ const cardDB = {
 		]
 	},
 	"WA-NM-AT-007":{
-		name:{ "KOR":"Fighting Spirit" }, class:"Warrior", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Fighting Spirit" }, class:"Warrior", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true, related:["Penalty"],
 		tags:["Deck빌딩", "group:Penalty", "race:Eldorian"],
 		flavorText:{ "KOR":"A warrior's fighting spirit is the power that allows them to transcend the limits of the body.<br>It is a symbol of mental strength, allowing them to advance while ignoring all pain and fear, refusing to fall." },
@@ -3053,7 +3053,7 @@ const cardDB = {
 	},
 
 	"WA-NM-SU-001":{
-		name:{ "KOR":"Shields Up" }, class:"Warrior", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Shields Up" }, class:"Warrior", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Heat 감소", "race:Eldorian"],
 		flavorText:{ "KOR":"The massive shield is the symbol of the Eldorian Guardian Knights.<br>They have earned the nickname 'Shield of Eldoria' because they consider it their mission to block enemy attacks and protect their allies with their own bodies." },
@@ -3063,7 +3063,7 @@ const cardDB = {
 		]
 	},
 	"WA-NM-SU-002":{
-		name:{ "KOR":"Taunt" }, class:"Warrior", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Taunt" }, class:"Warrior", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true, related:["Penalty"],
 		tags:["Deck빌딩", "group:Heat 감소", "group:Penalty", "race:Beastfolk"],
 		flavorText:{ "KOR":"Enrage the opponent to focus their attention on you.<br>With courage and wit, you draw the enemy's attacks to yourself, creating an opening for your allies." },
@@ -3085,7 +3085,7 @@ const cardDB = {
 		]
 	},
 	"WA-NM-SU-003":{
-		name:{ "KOR":"Ironclad Defense" }, class:"Warrior", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Ironclad Defense" }, class:"Warrior", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "버리기", "group:버리기", "group:Heat 감소", "race:Silvani"],
 		flavorText:{ "KOR":"Block all enemy attacks with a solid defensive stance.<br>Become the backbone of the battlefield with an ironclad defense, protecting the safety of your allies." },
@@ -3106,7 +3106,7 @@ const cardDB = {
 		]
 	},
 	"WA-NM-SU-004":{
-		name:{ "KOR":"Full Metal Armor" }, class:"Warrior", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Full Metal Armor" }, class:"Warrior", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true, related:["Penalty"],
 		tags:["Deck빌딩", "group:Lust", "group:Penalty", "race:Halfling"],
 		flavorText:{ "KOR":"Halfling heavy infantry fight wearing armor heavier than their own body weight.<br>Their massive armor is like a moving wall that guards the front lines." },
@@ -3124,7 +3124,7 @@ const cardDB = {
 		]
 	},
 	"WA-NM-SU-005":{
-		name:{ "KOR":"Rising Thirst" }, class:"Warrior", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Rising Thirst" }, class:"Warrior", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Lust", "race:Beastfolk"],
 		flavorText:{ "KOR":"A bloodthirsty warrior does not suppress their thirst, but transforms it into a powerful force that overwhelms their enemies, becoming a symbol of struggle that stains the battlefield." },
@@ -3135,7 +3135,7 @@ const cardDB = {
 		]
 	},
 	"WA-NM-SU-006":{
-		name:{ "KOR":"Resolute Declaration" }, class:"Warrior", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Resolute Declaration" }, class:"Warrior", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "버리기", "group:버리기", "Eldorian"],
 		flavorText:{ "KOR":"Morale is one of the most important factors in determining victory or defeat on the battlefield.<br>A warrior's resolute declaration strongly motivates their comrades, uniting their hearts and becoming the driving force that leads to victory." },
@@ -3157,7 +3157,7 @@ const cardDB = {
 		]
 	},
 	"WA-NM-PS-001":{
-		name:{ "KOR":"Dual-Edged Stance" }, class:"Warrior", type:"Position", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Dual-Edged Stance" }, class:"Warrior", type:"Position", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Beastfolk"],
 		flavorText:{ "KOR":"The Dual-Edged Stance used by Beastfolk berserkers is a threatening combat posture that forgoes defense to pour everything into attack.<br>This stance puts extreme pressure on the enemy and is a last resort to draw out one's own power to the fullest and subdue the foe." },
@@ -3171,7 +3171,7 @@ const cardDB = {
 		]
 	},
 	"WA-NM-PS-002":{
-		name:{ "KOR":"Fortress Stance" }, class:"Warrior", type:"Position", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Fortress Stance" }, class:"Warrior", type:"Position", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Heat 감소", "group:Lust", "race:Halfling"],
 		flavorText:{ "KOR":"The Fortress Stance is a powerful defensive posture mainly used by halfling heavy infantry.<br>Once they take their position, they are as immovable as a fortress, making it extremely difficult to break through." },
@@ -3186,7 +3186,7 @@ const cardDB = {
 	},
 
 	"WA-EX-AT-001":{
-		name:{ "KOR":"Crush" }, class:"Warrior", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Crush" }, class:"Warrior", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Lust", "race:Eldorian", "act:penetration"],
 		flavorText:{ "KOR":"Smash the enemy with a massive weapon.<br>Ignore the opponent's defense and shatter them in a single blow." },
@@ -3203,7 +3203,7 @@ const cardDB = {
 		]
 	},
 	"WA-EX-AT-002":{
-		name:{ "KOR":"Head-on Confrontation" }, class:"Warrior", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Head-on Confrontation" }, class:"Warrior", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true, related:["Penalty"],
 		tags:["Deck빌딩", "group:Penalty", "race:Eldorian", "act:penetration"],
 		flavorText:{ "KOR":"A warrior values an honorable and fair fight.<br>This technique shows the true power of a warrior who fights with everything they have, confronting and overwhelming their opponent head-on." },
@@ -3214,7 +3214,7 @@ const cardDB = {
 		]
 	},
 	"WA-EX-AT-003":{
-		name:{ "KOR":"Close Combat Skills" }, class:"Warrior", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Close Combat Skills" }, class:"Warrior", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "버리기", "group:버리기", "race:Eldorian", "act:penetration"],
 		flavorText:{ "KOR":"The Dawnbreaker family is a noble house that has produced many martial artists.<br>The first head of the family, Cedric, was a hero who achieved great feats in the Great War, and his combat skills have been passed down through the generations." },
@@ -3225,7 +3225,7 @@ const cardDB = {
 		]
 	},
 	"WA-EX-AT-004":{
-		name:{ "KOR":"Axe Throw" }, class:"Warrior", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Axe Throw" }, class:"Warrior", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "Thrown", "group:버리기", "race:Beastfolk", "act:penetration"],
 		flavorText:{ "KOR":"A technique of throwing an axe to deal a powerful blow to the enemy.<br>Though difficult to aim, it is a devastating attack that can inflict fatal damage even on distant enemies." },
@@ -3238,7 +3238,7 @@ const cardDB = {
 	},
 
 	"WA-EX-SU-001":{
-		name:{ "KOR":"Maintenance" }, class:"Warrior", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Maintenance" }, class:"Warrior", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "버리기", "group:버리기", "group:Heat 감소", "group:Lust", "race:Silvani"],
 		flavorText:{ "KOR":"Maintaining your equipment is essential for survival in battle.<br>The price of neglecting maintenance will one day be paid with regret." },
@@ -3256,7 +3256,7 @@ const cardDB = {
 		]
 	},
 	"WA-EX-SU-002":{
-		name:{ "KOR":"Rapid Step" }, class:"Warrior", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Rapid Step" }, class:"Warrior", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Heat 감소", "group:Lust", "race:Beastfolk"],
 		flavorText:{ "KOR":"Martial artist warriors choose speed for swift response over increased defense.<br>They can instantly create distance or change position to neutralize enemy attacks and look for a chance to counter." },
@@ -3274,7 +3274,7 @@ const cardDB = {
 		]
 	},
 	"WA-EX-SU-003":{
-		name:{ "KOR":"Blazing Power" }, class:"Warrior", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Blazing Power" }, class:"Warrior", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true, related:["Penalty"],
 		tags:["Deck빌딩", "group:Penalty", "race:Halfling"],
 		flavorText:{ "KOR":"Black magic has long been shunned because it demands dangerous prices, such as sacrificing life force and offerings.<br>But isn't its powerful potential too valuable to ignore?" },
@@ -3286,7 +3286,7 @@ const cardDB = {
 		]
 	},
 	"WA-EX-SU-004":{
-		name:{ "KOR":"Mount" }, class:"Warrior", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Mount" }, class:"Warrior", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Heat 감소", "group:Lust", "race:Beastfolk"],
 		flavorText:{ "KOR":"Pin down your opponent with your body weight and simultaneously take an advantageous position for attack.<br>This technique, which requires a warrior's strength and agility, allows you to neutralize your opponent and turn the battle in your favor." },
@@ -3304,7 +3304,7 @@ const cardDB = {
 		]
 	},
 	"WA-EX-PS-001":{
-		name:{ "KOR":"Flow Stance" }, class:"Warrior", type:"Position", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Flow Stance" }, class:"Warrior", type:"Position", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true, related:["tag:Thrown"],
 		flavorText:{ "KOR":"The Flow Stance originates from martial arts of the East and is characterized by fluidly connecting one posture to the next.<br>This stance allows you to absorb your opponent's strength and react flexibly, thereby controlling the flow of the battle." },
 		hypnoText:{ "KOR":"A position where you take an acrobatic pose for some exotic sex.<br>You move your body smoothly, finding the position where the cock hits all the right spots." },
@@ -3317,7 +3317,7 @@ const cardDB = {
 		]
 	},
 	"WA-EX-PS-002":{
-		name:{ "KOR":"Forge Stance" }, class:"Warrior", type:"Position", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Forge Stance" }, class:"Warrior", type:"Position", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		flavorText:{ "KOR":"The Forge Stance is a combat posture used by the inhabitants of the northern mountain regions, characterized by gradually heating the body to overcome the cold and build strength.<br>This technique slowly tempers the body, allowing one to exert combat power even in extreme environments." },
 		hypnoText:{ "KOR":"A position where you sit with your legs spread and have sex while hugging.<br>You can share warmth with your partner and make love as you mix your bodies together." },
@@ -3337,7 +3337,7 @@ const cardDB = {
 	},
 
 	"WA-UL-AT-001":{
-		name:{ "KOR":"Execution" }, class:"Warrior", type:"attack", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Execution" }, class:"Warrior", type:"attack", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Lust", "race:Silvani", "act:penetration"], keywords:["Lust"],
 		flavorText:{ "KOR":"The Sylvani mercenary Raha Jin earned the nickname 'Soul Reaper' by dominating the battlefield with her cursed great scythe.<br>Her signature technique, Execution, was to channel all the anger and power of the scythe to behead an enemy in one stroke, striking fear into her foes as she then fed the weapon their blood.<br>Raha's current whereabouts are unknown. Like all users of cursed weapons, her soul was likely consumed by her weapon and annihilated." },
@@ -3350,7 +3350,7 @@ const cardDB = {
 		]
 	},
 	"WA-UL-AT-002":{
-		name:{ "KOR":"Force Palm" }, class:"Warrior", type:"attack", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Force Palm" }, class:"Warrior", type:"attack", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:버리기", "race:Eldorian", "act:penetration"], keywords:["Generated"],
 		flavorText:{ "KOR":"The clans of Lightweaver Isle in the East have developed a unique martial art that utilizes their inner ki in both combat and daily life.<br>One of their techniques, Force Palm, gathers inner ki into a single point and releases it to subdue the enemy.<br>This mysterious technique instantly closes the distance with the enemy, changes the flow of battle, and overwhelms them by delivering a powerful internal shock through the flow of ki." },
@@ -3362,7 +3362,7 @@ const cardDB = {
 		]
 	},
 	"WA-UL-SU-001":{
-		name:{ "KOR":"Battle Cry" }, class:"Warrior", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Battle Cry" }, class:"Warrior", type:"Support", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Heat 감소", "group:Lust", "race:Beastfolk"], keywords:["Lust"],
 		flavorText:{ "KOR":"A battle cry is the ultimate shout of a warrior, drawing out their inner energy to its maximum.<br>Through deep breathing, they gather all their anger and resolve into one, then release it as a massive roar that echoes across the battlefield.<br>This roar instills powerful courage and fighting spirit in allies, as if the warrior's will is directly transmitted to them, while sowing fear and confusion among enemies, slowing their movements." },
@@ -3377,7 +3377,7 @@ const cardDB = {
 		]
 	},
 	"WA-UL-SU-002":{
-		name:{ "KOR":"Berserker's Soul" }, class:"Warrior", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Berserker's Soul" }, class:"Warrior", type:"Support", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "버리기불가", "Unrepeatable", "피니셔", "group:버리기", "race:Beastfolk"], related:["ref:버림"],
 		flavorText:{ "KOR":"When a battle reaches its peak, Beastfolk warriors awaken to a state where they forget fear and surrender themselves to anger and madness.<br>Their instincts take over their reason, as they charge headfirst into attacks and instantly tear out their enemy's throat, resembling a wild beast.<br>This free and savage nature is why they are called berserkers." },
@@ -3391,7 +3391,7 @@ const cardDB = {
 		]
 	},
 	"WA-UL-PS-001":{
-		name:{ "KOR":"Flashy Sword Dance" }, class:"Warrior", type:"Position", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Flashy Sword Dance" }, class:"Warrior", type:"Position", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Penalty", "race:Eldorian", "act:penetration"],
 		flavorText:{ "KOR":"The dances of the nomadic performers in the southern wastelands are both flamboyant and beautiful, leaving a strong impression.<br>A swordsman, captivated by these dances, incorporated the graceful and fluid movements of the performers into his swordsmanship, creating a new combat technique.<br>The Flashy Sword Dance is a technique as smooth as a dance, yet deadly. If you are mesmerized by its beautiful movements, you will find a blade at your throat before you know it." },
@@ -3410,7 +3410,7 @@ const cardDB = {
 
 
 	/*"WA-UL-SU-001":{
-		name:{ "KOR":"Unyielding Spirit" }, class:"Warrior", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Unyielding Spirit" }, class:"Warrior", type:"Support", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:{v1:"라운드", op:">=", v2:6},
 		flavorText:{ "KOR":"The noble spirit of a warrior who does not yield even in the face of difficulties and trials." },
 		hypnoText:{ "KOR":"A technique to suppress yourself with numerous penalties, then release them to seize victory with god-like skill." },
@@ -3424,7 +3424,7 @@ const cardDB = {
 //#######################################################################################################################################################################################
 
 	"AS-PO-001":{
-		name:{ "KOR":"Craft: Paralytic Poison" }, class:"Assassin", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1,
+		name:{ "KOR":"Craft: Paralytic Poison" }, class:"Assassin", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1,
 		cond:true,
 		tags:["Crafted", "기본Crafted", "po:AS-PO-001-1"], related:["AS-PO-001-1"],
 		flavorText:{ "KOR":"Ingredients: Woolly Spider extract, Yellow Slime mucus, etc.<br>Form: Sticky yellow liquid.<br>Effect: When it touches the skin, it is quickly absorbed, causing limbs to tingle and movements to become sluggish." },
@@ -3446,7 +3446,7 @@ const cardDB = {
 		]
 	},
 	"AS-PO-002":{
-		name:{ "KOR":"Craft: Neurotoxin" }, class:"Assassin", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1,
+		name:{ "KOR":"Craft: Neurotoxin" }, class:"Assassin", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1,
 		cond:true,
 		tags:["Crafted", "기본Crafted", "po:AS-PO-002-1"], related:["AS-PO-002-1"],
 		flavorText:{ "KOR":"Ingredients: Shade Viper's fang, Sun Leaf, etc.<br>Form: Smooth green liquid.<br>Effect: When injected into the body, it stimulates the nervous system, causing excruciating pain." },
@@ -3468,7 +3468,7 @@ const cardDB = {
 		]
 	},
 	"AS-PO-003":{
-		name:{ "KOR":"Craft: Blinding Poison" }, class:"Assassin", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1,
+		name:{ "KOR":"Craft: Blinding Poison" }, class:"Assassin", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1,
 		cond:true,
 		tags:["Crafted", "기본Crafted", "po:AS-PO-003-1"], related:["AS-PO-003-1", "AS-NM-AT-000"],
 		flavorText:{ "KOR":"Ingredients: Mirror Butterfly scales, Shadow Root, etc.<br>Form: Sparkling white powder.<br>Effect: When sprinkled in the eyes, it paralyzes the optic nerve, causing temporary blindness." },
@@ -3490,7 +3490,7 @@ const cardDB = {
 		]
 	},
 	"AS-PO-004":{
-		name:{ "KOR":"Craft: Sleeping Poison" }, class:"Assassin", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1,
+		name:{ "KOR":"Craft: Sleeping Poison" }, class:"Assassin", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1,
 		cond:true,
 		tags:["Crafted", "기본Crafted", "po:AS-PO-004-1"], related:["AS-PO-004-1"],
 		flavorText:{ "KOR":"Ingredients: Dream Mushroom spores, Stardust Crystal, etc.<br>Form: Opaque gas.<br>Effect: A powerful sleeping agent that takes effect immediately upon inhalation." },
@@ -3536,7 +3536,7 @@ const cardDB = {
 		]
 	},
 	/*"AS-PO-005":{
-		name:{ "KOR":"Craft: Silencing Poison" }, class:"Assassin", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Craft: Silencing Poison" }, class:"Assassin", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Crafted", "기본Crafted"], related:["AS-PO-005-1"], keywords:["id:AS-PO-005-1"],
 		flavorText:{ "KOR":"Ingredients: Dream Mushroom spores, Stardust Crystal, etc.<br>Form: Opaque gas.<br>Effect: A powerful sleeping agent that takes effect immediately upon inhalation." },
@@ -3569,7 +3569,7 @@ const cardDB = {
 	},
 
 	"AS-NM-AT-001":{
-		name:{ "KOR":"Left-Handed Slash" }, class:"Assassin", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Left-Handed Slash" }, class:"Assassin", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Generated", "race:Beastfolk", "act:caress"], related:["AS-NM-AT-001-1", "AS-NM-AT-001-2"],
 		flavorText:{ "KOR":"The first strike is a setup for the following series of attacks.<br>The opponent won't be able to keep up with the rapid flurry of slashes." },
@@ -3599,7 +3599,7 @@ const cardDB = {
 		]
 	},
 	"AS-NM-AT-002":{
-		name:{ "KOR":"Suffocate" }, class:"Assassin", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Suffocate" }, class:"Assassin", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:조르기", "group:Generated", "race:Eldorian"], related:["AS-NM-AT-000"],
 		flavorText:{ "KOR":"Suffocation is a signature assassin's technique that neutralizes an enemy by choking them without giving them a chance to resist.<br>The advantage of this method of killing is that the target cannot make a sound." },
@@ -3611,7 +3611,7 @@ const cardDB = {
 		]
 	},
 	"AS-NM-AT-003":{
-		name:{ "KOR":"Rapid Stabbing" }, class:"Assassin", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Rapid Stabbing" }, class:"Assassin", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Wetness", "race:Halfling", "act:penetration"],
 		flavorText:{ "KOR":"Bleeding is most severe the moment a weapon is pulled out.<br>The more you stab, the lower the chance of the opponent's recovery." },
@@ -3628,7 +3628,7 @@ const cardDB = {
 		]
 	},
 	"AS-NM-AT-004":{
-		name:{ "KOR":"Poison Needle" }, class:"Assassin", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Poison Needle" }, class:"Assassin", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "Poison Pouch", "group:독", "race:Halfling", "act:fellatio"], related:["tag:기본Crafted"],
 		flavorText:{ "KOR":"A fine needle is an essential tool for a halfling locksmith.<br>It can be used to disarm locks and traps, and it is also useful for assassination by coating it with poison and striking an enemy's weak point." },
@@ -3639,7 +3639,7 @@ const cardDB = {
 		]
 	},
 	"AS-NM-AT-005":{
-		name:{ "KOR":"Setting Trap" }, class:"Assassin", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Setting Trap" }, class:"Assassin", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:추가 card", "race:Beastfolk", "act:penetration"],
 		flavorText:{ "KOR":"The elite hunters of the Thunderfang Beastfolk are masters of setting traps to catch their prey.<br>If you think only beasts fall into traps, your ankle will be gone in an instant." },
@@ -3650,7 +3650,7 @@ const cardDB = {
 		]
 	},
 	"AS-NM-AT-006":{
-		name:{ "KOR":"Abduction" }, class:"Assassin", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Abduction" }, class:"Assassin", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Eldorian"], related:["AS-NM-AT-000"],
 		flavorText:{ "KOR":"Sometimes the goal is not to eliminate the target, but to secure them.<br>Prepare sleeping potions, ropes, and a transport route." },
@@ -3662,7 +3662,7 @@ const cardDB = {
 		]
 	},
 	"AS-NM-AT-007":{
-		name:{ "KOR":"Precision Shot" }, class:"Assassin", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Precision Shot" }, class:"Assassin", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "사격", "group:Wetness", "group:Generated", "race:Silvani", "act:urination"],
 		flavorText:{ "KOR":"The foundation of shooting begins with a proper stance.<br>Lie prone, align the scope with your eye, and wait for the moment to pull the trigger while holding your breath.<br>It is essential to balance your entire body and not allow even the slightest tremor." },
@@ -3680,7 +3680,7 @@ const cardDB = {
 		]
 	},
 	"AS-NM-SU-001":{
-		name:{ "KOR":"Vial of Poison" }, class:"Assassin", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Vial of Poison" }, class:"Assassin", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Wetness", "group:독", "group:Generated", "Poison Pouch", "race:Eldorian"], related:["tag:기본Crafted"],
 		flavorText:{ "KOR":"An assassin always has poison hidden on their person.<br>To kill a target without anyone noticing, to eliminate those who stand in their way, and to commit suicide." },
@@ -3698,7 +3698,7 @@ const cardDB = {
 		]
 	},
 	"AS-NM-SU-002":{
-		name:{ "KOR":"Decoy" }, class:"Assassin", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Decoy" }, class:"Assassin", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Wetness", "group:추가 card", "race:Eldorian"],
 		flavorText:{ "KOR":"When being chased, throw a decoy stone for misdirection!<br>Customizing it to resemble your own appearance makes it even more effective.<br>- Nekue's Thief Collection Workshop" },
@@ -3709,7 +3709,7 @@ const cardDB = {
 		]
 	},
 	"AS-NM-SU-003":{
-		name:{ "KOR":"Tail" }, class:"Assassin", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Tail" }, class:"Assassin", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:조르기", "group:Generated", "race:Silvani"], related:["AS-NM-AT-000"],
 		flavorText:{ "KOR":"Hide in the shadows and follow the target without being noticed.<br>Too close, and you risk being discovered; too far, and you risk losing the target." },
@@ -3719,7 +3719,7 @@ const cardDB = {
 		]
 	},
 	"AS-NM-SU-004":{
-		name:{ "KOR":"On-the-Spot Mixing" }, class:"Assassin", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"On-the-Spot Mixing" }, class:"Assassin", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:독", "group:Generated", "Poison Pouch", "race:Halfling"], related:["tag:기본Crafted"],
 		flavorText:{ "KOR":"A secret art passed down among assassins. A recipe to combine seemingly harmless ingredients into a deadly poison.<br>It plays an important role in smuggling poison past inspections without being caught." },
@@ -3729,7 +3729,7 @@ const cardDB = {
 		]
 	},
 	"AS-NM-SU-005":{
-		name:{ "KOR":"Bind" }, class:"Assassin", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Bind" }, class:"Assassin", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:조르기", "group:독", "group:Generated", "group:추가 card", "race:Eldorian"], related:["AS-NM-AT-000"],
 		flavorText:{ "KOR":"Instantly tie up the target with a sturdy rope.<br>With swift and precise handiwork, you neutralize the opponent, allowing no resistance." },
@@ -3740,7 +3740,7 @@ const cardDB = {
 		]
 	},
 	"AS-NM-UC-001":{
-		name:{ "KOR":"Shadow Step" }, class:"Assassin", type:"탈의", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Shadow Step" }, class:"Assassin", type:"Stripping", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:추가 card", "race:Beastfolk"],
 		flavorText:{ "KOR":"The Bloodmist Beastfolk is a special beastfolk of those with white fur and red eyes who were abandoned as cursed children due to the lack of knowledge about albinism.<br>In their struggle for survival, they learned to hide in the shadows and erase their presence, eventually becoming professional assassins in the underworld." },
@@ -3763,12 +3763,12 @@ const cardDB = {
 		]
 	},
 	"AS-NM-PS-001":{
-		name:{ "KOR":"Net Trap" }, class:"Assassin", type:"Position", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Net Trap" }, class:"Assassin", type:"Position", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:조르기", "group:Generated", "race:Eldorian"], related:["AS-NM-AT-000"],
 		flavorText:{ "KOR":"When activated, a net springs out and restrains the target. Use when capture is necessary.<br>- Nekue's Thief Collection Workshop" },
 		hypnoText:{ "KOR":"A position where you entangle your opponent like a net, holding them down and fucking them so they cannot escape.<br>You grip the cock deep inside your cunt tightly, controlling your opponent's every reaction and ensuring they don't get away." },
-		expiration:"always", duration:Infinity, duration:2, defaultDuration:2,
+		expiration:"always", duration:Infinity, defaultDuration:2,
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"Position변경"},
 			{trigger:"used", cond:true, type:"posture"},
@@ -3777,7 +3777,7 @@ const cardDB = {
 		]
 	},
 	"AS-NM-PS-002":{
-		name:{ "KOR":"Honey Trap" }, class:"Assassin", type:"Position", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Honey Trap" }, class:"Assassin", type:"Position", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Wetness", "group:Generated", "race:Eldorian"],
 		flavorText:{ "KOR":"Though known as a romance guide, Lady Dallean Rosethorn's 'How to Seduce Men' is actually a honey trap manual for female assassins written in code." },
@@ -3792,7 +3792,7 @@ const cardDB = {
 	},
 
 	"AS-EX-AT-001":{
-		name:{ "KOR":"Point-Blank Shot" }, class:"Assassin", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Point-Blank Shot" }, class:"Assassin", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "사격", "group:추가 card", "group:Wetness", "group:Generated", "race:Silvani", "act:caress"],
 		flavorText:{ "KOR":"Point-blank shot is a technique used when the distance to the target is extremely short, where a swift aiming posture is more important than accuracy.<br>The key is to aim for a vital part of the target and inflict definite damage with a single shot.<br>The priority is to quickly reset your firing stance after shooting." },
@@ -3811,7 +3811,7 @@ const cardDB = {
 		]
 	},
 	"AS-EX-AT-002":{
-		name:{ "KOR":"Sabotage" }, class:"Assassin", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Sabotage" }, class:"Assassin", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Wetness", "race:Eldorian", "act:fellatio"],
 		flavorText:{ "KOR":"Scratching the axle, swapping out equipment, removing a single screw from a support.<br>Inducing an accidental death through secret sabotage is a very classic strategy, but it is a tricky technique that requires environmental assessment, path prediction, and creativity." },
@@ -3828,7 +3828,7 @@ const cardDB = {
 		]
 	},
 	"AS-EX-AT-003":{
-		name:{ "KOR":"Pressure Point Strike" }, class:"Assassin", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Pressure Point Strike" }, class:"Assassin", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:독", "race:Halfling", "act:fellatio"],
 		flavorText:{ "KOR":"The concept of pressure points is treated as an unproven pseudoscience and is not recognized by the Albion Medical Association.<br>However, among halfling locksmiths, it is already considered a systematic technique and is used effectively for both healing and assassination." },
@@ -3840,7 +3840,7 @@ const cardDB = {
 		]
 	},
 	"AS-EX-AT-004":{
-		name:{ "KOR":"Blade Storm" }, class:"Assassin", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Blade Storm" }, class:"Assassin", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:추가 card", "race:Beastfolk", "act:orgy"],
 		flavorText:{ "KOR":"A throwing technique where you scatter all your hidden weapons, firing an indiscriminate barrage at multiple targets.<br>Watching the storm of daggers, you'll feel that 'storm' is more than just a metaphor." },
@@ -3851,7 +3851,7 @@ const cardDB = {
 		]
 	},
 	"AS-EX-SU-001":{
-		name:{ "KOR":"Flexibility" }, class:"Assassin", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Flexibility" }, class:"Assassin", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:조르기", "race:Beastfolk"], related:["AS-NM-AT-000"],
 		flavorText:{ "KOR":"There are assassins who specialize in infiltrating through narrow gaps that seem impossible for a person to pass through.<br>In particular, Feline Beastfolk assassins show the incredible feat of being able to pass through any hole as long as their head can fit." },
@@ -3867,7 +3867,7 @@ const cardDB = {
 		]
 	},
 	"AS-EX-SU-002":{
-		name:{ "KOR":"Smoke Bomb" }, class:"Assassin", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Smoke Bomb" }, class:"Assassin", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Wetness", "race:Halfling"],
 		flavorText:{ "KOR":"When thrown on the ground, it explodes, releasing thick gray smoke.<br>It is especially effective in small, poorly ventilated spaces.<br>- Nekue's Thief Collection Workshop" },
@@ -3888,7 +3888,7 @@ const cardDB = {
 		]
 	},
 	"AS-EX-SU-003":{
-		name:{ "KOR":"Leap" }, class:"Assassin", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Leap" }, class:"Assassin", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:추가 card", "race:Eldorian"],
 		flavorText:{ "KOR":"With an instantaneous leap, you evade the enemy's eyes and quickly move to a position suitable for assassination.<br>Running across rooftops, any place can become a path." },
@@ -3901,7 +3901,7 @@ const cardDB = {
 		]
 	},
 	"AS-EX-SU-004":{
-		name:{ "KOR":"Poison Gas Spray" }, class:"Assassin", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Poison Gas Spray" }, class:"Assassin", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:독", "group:Wetness", "group:Generated", "Poison Pouch", "race:Eldorian"], related:["tag:기본Crafted"],
 		flavorText:{ "KOR":"Spraying gaseous poison in an enclosed space is a very effective means of assassination.<br>The moment the target inhales the odorless gas without noticing, it's all over." },
@@ -3918,7 +3918,7 @@ const cardDB = {
 		]
 	},
 	"AS-EX-PS-001":{
-		name:{ "KOR":"Deadly Poison Trap" }, class:"Assassin", type:"Position", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Deadly Poison Trap" }, class:"Assassin", type:"Position", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:독", "group:Wetness", "Poison Pouch", "race:Eldorian"], related:["tag:기본Crafted"],
 		flavorText:{ "KOR":"Poison hidden out of sight is the most lethal.<br>The moment the device is triggered, a glass vial of deadly poison shatters, and the instantly spreading poison paralyzes the target's organs." },
@@ -3937,7 +3937,7 @@ const cardDB = {
 		]
 	},
 	"AS-EX-PS-002":{
-		name:{ "KOR":"Booby Trap" }, class:"Assassin", type:"Position", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Booby Trap" }, class:"Assassin", type:"Position", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Wetness", "race:Eldorian", "act:caress"],
 		flavorText:{ "KOR":"When the wire is touched, the internal latch is released, triggering a chain reaction.<br>It can be freely customized with explosions or blades, and the complexity of the activation process showcases the designer's aesthetic.<br>- Nekue's Thief Collection Workshop" },
@@ -3951,7 +3951,7 @@ const cardDB = {
 	},
 
 	"AS-UL-AT-001":{
-		name:{ "KOR":"Planned Murder" }, class:"Assassin", type:"attack", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Planned Murder" }, class:"Assassin", type:"attack", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:조르기", "race:Eldorian", "act:penetration"], related:["AS-NM-AT-000"],
 		flavorText:{ "KOR":"The conflict between the Eldorian Kingdom and the Sylvanian Federation had been ongoing for a long time, and the decisive event that triggered the Great War was the assassination of a diplomat sent by Sylvania.<br>This shocking incident, which occurred at a meeting intended for peace, was a political assassination planned over two years.<br>The intentionally provoked war was driven by factions seeking profit and the elimination of their political rivals." },
@@ -3964,7 +3964,7 @@ const cardDB = {
 		]
 	},
 	"AS-UL-AT-002":{
-		name:{ "KOR":"Longest-Range Snipe" }, class:"Assassin", type:"attack", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Longest-Range Snipe" }, class:"Assassin", type:"attack", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "사격", "group:Wetness", "group:Generated", "race:Silvani"], related:["AS-UL-AT-002-1"],
 		flavorText:{ "KOR":"It is said that there was a legendary sniper in Sylvania's Twilight Brigade.<br>Her sniping, which accurately killed targets from an unseen distance with a single shot, was like a disaster to the Eldorians.<br>Because the Sylvanian side accidentally stated during an official announcement that 'she does not exist; she is a figment of the Eldorians' imagination,' it is only known for certain that she is female." },
@@ -3983,7 +3983,7 @@ const cardDB = {
 		]
 	},
 	"AS-UL-AT-002-1":{
-		name:{ "KOR":"Reload" }, class:"Assassin", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Reload" }, class:"Assassin", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:[],
 		effect:[
@@ -4003,7 +4003,7 @@ const cardDB = {
 		]
 	},
 	/*"AS-UL-SU-001":{
-		name:{ "KOR":"Master of Disguise" }, class:"Assassin", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Master of Disguise" }, class:"Assassin", type:"Support", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩"],
 		flavorText:{ "KOR":"It was a shock to many when it was revealed that the legendary Beastfolk assassin Dodorishi was actually the halfling locksmith Dorashi in disguise." },
@@ -4025,7 +4025,7 @@ const cardDB = {
 		]
 	},*/
 	"AS-UL-SU-001":{
-		name:{ "KOR":"Shadow Rose Dance" }, class:"Assassin", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Shadow Rose Dance" }, class:"Assassin", type:"Support", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:추가 card", "무조건소모", "race:Eldorian"],
 		flavorText:{ "KOR":"The Rosethorn family is a house of artistic masters who have greatly influenced various cultures, including art, fashion, music, and dance.<br>However, the fact that they are actually a family of assassins who train spies for the Eldorian Kingdom is known to only a few.<br>They handle poison production through art and gardening, information gathering and assassination through dance and socializing, and disguise and concealment through fashion and beauty... all their activities were merely a deception." },
@@ -4036,7 +4036,7 @@ const cardDB = {
 		]
 	},
 	"AS-UL-SU-002":{
-		name:{ "KOR":"Poison of Death" }, class:"Assassin", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Poison of Death" }, class:"Assassin", type:"Support", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Wetness", "group:독", "독추가", "race:Eldorian"], related:["AS-UL-SU-002-1", "AS-UL-SU-002-2"],
 		flavorText:{ "KOR":"Occasionally, a beautiful purple flower blooms on the desolate land at the edge of a high cliff.<br>This flower, which kills all the grass around it and blooms alone in its glory, is called the Deathbloom.<br>A single drop of its extract contains a lethal dose capable of wiping out an entire village." },
@@ -4049,7 +4049,7 @@ const cardDB = {
 		]
 	},
 	"AS-UL-SU-002-1":{
-		name:{ "KOR":"Craft: Lethal Poison" }, class:"Assassin", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Craft: Lethal Poison" }, class:"Assassin", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Crafted", "po:AS-UL-SU-002-2"], related:["AS-UL-SU-002-2"],
 		effect:[
@@ -4071,7 +4071,7 @@ const cardDB = {
 		]
 	},
 	"AS-UL-PS-001":{
-		name:{ "KOR":"Time Bomb Trap" }, class:"Assassin", type:"Position", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Time Bomb Trap" }, class:"Assassin", type:"Position", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "group:Wetness"],
 		flavorText:{ "KOR":"Any assassin active in the kingdom would have heard the name Nekue.<br>A skilled artisan and halfling locksmith, she developed various hidden weapons and traps through her unique dexterity, creativity, and assassination experience honed as a locksmith.<br>In particular, the time bomb she first developed brought innovation to the world of assassination with its ability to inflict unblockable damage at a precise time and location while also destroying evidence with the explosion." },
@@ -4094,49 +4094,49 @@ const cardDB = {
 
 
 	"MA-MC-001":{
-		name:{ "KOR":"Crimson Magic Circle" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Crimson Runes" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:false,
-		tags:["Magic Circle", "기본Magic Circle", "진홍색", "변형목적"],
+		tags:["Runes", "기본Runes", "진홍색", "변형목적"],
 		effect:[
 			//{trigger:"transformed", cond:true, type:"state", target:"self", value:"MA-ST-001"},
 		]
 	},
 	"MA-MC-002":{
-		name:{ "KOR":"Azure Magic Circle" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Azure Runes" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:false,
-		tags:["Magic Circle", "기본Magic Circle", "담청색", "변형목적"],
+		tags:["Runes", "기본Runes", "담청색", "변형목적"],
 		effect:[
 			//{trigger:"transformed", cond:true, type:"state", target:"op", byname:true, value:"MA-ST-002"},
 		]
 	},
 	"MA-MC-003":{
-		name:{ "KOR":"Golden Magic Circle" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Golden Runes" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:false,
-		tags:["Magic Circle", "기본Magic Circle", "황금색", "변형목적"],
+		tags:["Runes", "기본Runes", "황금색", "변형목적"],
 		effect:[
 			//{trigger:"transformed", cond:true, type:"changeSBlock", op:"add", value:2},
 		]
 	},
 	"MA-MC-004":{
-		name:{ "KOR":"Pristine White Magic Circle" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"White Runes" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:false,
-		tags:["Magic Circle", "기본Magic Circle", "진홍색", "담청색", "황금색", "변형목적"],
+		tags:["Runes", "기본Runes", "진홍색", "담청색", "황금색", "변형목적"],
 		effect:[
-			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"This magic circle can be treated as a magic circle of any color." }},
+			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"This Runes can be treated as a Runes of any color." }},
 		]
 	},
 
 	"MA-MG-000":{
-		name:{ "KOR":"Magic Failure" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Magic Failure" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["Magic", "자동시전"], cast:1,
+		tags:["Magic", "Autocast"], cast:1,
 		effect:[
 			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"Failed to cast because the slot was empty." }},
 		]
 	},
 
 	"MA-MG-NT-001":{
-		name:{ "KOR":"Instant Magic: Mana Bolt" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Instant: Mana Bolt" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "즉발 Magic", "Magic Missile", "act:caress"], cast:1, keywords:["강화"],
 		effect:[
@@ -4145,7 +4145,7 @@ const cardDB = {
 	},
 	"MA-MG-NT-001+":{
 		parents:"MA-MG-NT-001",
-		name:{ "KOR":"Chant Magic: Mana Bolt" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Chant: Mana Bolt" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "영창 Magic", "Magic Missile", "act:caress"], cast:1, keywords:["강화"],
 		effect:[
@@ -4156,7 +4156,7 @@ const cardDB = {
 	},
 	"MA-MG-NT-001++":{
 		parents:"MA-MG-NT-001",
-		name:{ "KOR":"Focus Magic: Mana Bolt" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Mana Bolt" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "집중 Magic", "Magic Missile", "act:caress"], cast:1, keywords:["강화"],
 		effect:[
@@ -4176,7 +4176,7 @@ const cardDB = {
 	},
 
 	"MA-MG-FI-001":{
-		name:{ "KOR":"Instant Magic: Fireball" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Instant: Fireball" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "즉발 Magic", "화염 Magic", "act:penetration"], cast:1,
 		effect:[
@@ -4185,7 +4185,7 @@ const cardDB = {
 	},
 	"MA-MG-FI-001+":{
 		parents:"MA-MG-FI-001",
-		name:{ "KOR":"Chant Magic: Fireball" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Chant: Fireball" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "영창 Magic", "화염 Magic", "act:penetration"], cast:1,
 		effect:[
@@ -4196,7 +4196,7 @@ const cardDB = {
 	},
 	"MA-MG-FI-001++":{
 		parents:"MA-MG-FI-001",
-		name:{ "KOR":"Focus Magic: Fireball" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Fireball" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "집중 Magic", "화염 Magic", "act:penetration"], cast:1,
 		effect:[
@@ -4216,7 +4216,7 @@ const cardDB = {
 	},
 
 	"MA-MG-IC-001":{
-		name:{ "KOR":"Instant Magic: Frost Arrow" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Instant: Frost Arrow" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "즉발 Magic", "냉기 Magic", "act:caress"], cast:1,
 		effect:[
@@ -4225,7 +4225,7 @@ const cardDB = {
 	},
 	"MA-MG-IC-001+":{
 		parents:"MA-MG-IC-001",
-		name:{ "KOR":"Chant Magic: Frost Arrow" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Chant: Frost Arrow" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "영창 Magic", "냉기 Magic", "act:caress"], cast:1,
 		effect:[
@@ -4236,7 +4236,7 @@ const cardDB = {
 	},
 	"MA-MG-IC-001++":{
 		parents:"MA-MG-IC-001",
-		name:{ "KOR":"Focus Magic: Frost Arrow" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Frost Arrow" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "집중 Magic", "냉기 Magic", "act:caress"], cast:1,
 		effect:[
@@ -4256,7 +4256,7 @@ const cardDB = {
 	},
 
 	"MA-MG-EA-001":{
-		name:{ "KOR":"Instant Magic: Rock Bullet" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Instant: Rock Bullet" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "즉발 Magic", "대지 Magic", "act:penetration"], cast:1,
 		effect:[
@@ -4265,7 +4265,7 @@ const cardDB = {
 	},
 	"MA-MG-EA-001+":{
 		parents:"MA-MG-EA-001",
-		name:{ "KOR":"Chant Magic: Rock Bullet" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Chant: Rock Bullet" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "영창 Magic", "대지 Magic", "act:penetration"], cast:2,
 		effect:[
@@ -4275,9 +4275,9 @@ const cardDB = {
 	},
 	"MA-MG-EA-001++":{
 		parents:"MA-MG-EA-001",
-		name:{ "KOR":"Focus Magic: Rock Bullet" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Rock Bullet" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
-		tags:["Magic", "자동시전", "기본Magic", "집중 Magic", "대지 Magic", "act:penetration"], cast:Infinity,
+		tags:["Magic", "Autocast", "기본Magic", "집중 Magic", "대지 Magic", "act:penetration"], cast:Infinity,
 		effect:[
 			{trigger:"get", cond:true, type:"line", value:"암석탄-집중"},
 			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Gem)"},
@@ -4285,7 +4285,7 @@ const cardDB = {
 	},
 	"MA-MG-EA-001-def":{
 		parents:"MA-MG-EA-001",
-		name:{ "KOR":"Rock Bullet" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Rock Bullet" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic요약"], related:["MA-MG-EA-001", "MA-MG-EA-001+", "MA-MG-EA-001++"],
 		effect:[
@@ -4294,7 +4294,7 @@ const cardDB = {
 	},
 
 	"MA-MG-SP-001":{
-		name:{ "KOR":"Instant Magic: Lava Burst" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Instant: Lava Burst" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "즉발 Magic", "화염 Magic", "대지 Magic", "act:penetration"], cast:1,
 		effect:[
@@ -4303,7 +4303,7 @@ const cardDB = {
 	},
 	"MA-MG-SP-001+":{
 		parents:"MA-MG-SP-001",
-		name:{ "KOR":"Chant Magic: Lava Burst" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Chant: Lava Burst" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "영창 Magic", "화염 Magic", "대지 Magic", "act:penetration"], cast:1,
 		effect:[
@@ -4314,7 +4314,7 @@ const cardDB = {
 	},
 	"MA-MG-SP-001++":{
 		parents:"MA-MG-SP-001",
-		name:{ "KOR":"Focus Magic: Lava Burst" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Lava Burst" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "집중 Magic", "화염 Magic", "대지 Magic", "act:penetration"], cast:1,
 		effect:[
@@ -4325,7 +4325,7 @@ const cardDB = {
 	},
 	"MA-MG-SP-001-def":{
 		parents:"MA-MG-SP-001",
-		name:{ "KOR":"Lava Burst" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Lava Burst" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic요약"], related:["MA-MG-SP-001", "MA-MG-SP-001+", "MA-MG-SP-001++"],
 		effect:[
@@ -4334,37 +4334,37 @@ const cardDB = {
 	},
 
 	"MA-MG-NT-002":{
-		name:{ "KOR":"Instant Magic: Force Field" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Instant: Force Field" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "즉발 Magic"], cast:1,
 		effect:[
-			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Magic Circle)"},
+			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Runes)"},
 		]
 	},
 	"MA-MG-NT-002+":{
 		parents:"MA-MG-NT-002",
-		name:{ "KOR":"Chant Magic: Force Field" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Chant: Force Field" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "영창 Magic"], cast:2,
 		effect:[
 			{trigger:"get", cond:true, type:"line", value:"역장-영창"},
-			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Magic Circle)"},
+			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Runes)"},
 		]
 	},
 	"MA-MG-NT-002++":{
 		parents:"MA-MG-NT-002",
-		name:{ "KOR":"Focus Magic: Force Field" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Force Field" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "집중 Magic"], cast:2,
 		effect:[
 			{trigger:"get", cond:true, type:"line", value:"역장-집중"},
 			{trigger:"used", cond:true, type:"changeSBlock", op:"add", value:2},
-			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Magic Circle)", repeat:2},
+			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Runes)", repeat:2},
 		]
 	},
 	"MA-MG-NT-002-def":{
 		parents:"MA-MG-NT-002",
-		name:{ "KOR":"Force Field" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Force Field" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic요약"], related:["MA-MG-NT-002", "MA-MG-NT-002+", "MA-MG-NT-002++"],
 		effect:[
@@ -4373,18 +4373,18 @@ const cardDB = {
 	},
 
 	"MA-MG-FI-002":{
-		name:{ "KOR":"Instant Magic: Fire Whirl" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Instant: Fire Whirl" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
-		tags:["Magic", "자동시전", "기본Magic", "즉발 Magic", "화염 Magic"], cast:2,
+		tags:["Magic", "Autocast", "기본Magic", "즉발 Magic", "화염 Magic"], cast:2,
 		effect:[
 			{trigger:"used", cond:true, type:"attack", target:"op"},
 		]
 	},
 	"MA-MG-FI-002+":{
 		parents:"MA-MG-FI-002",
-		name:{ "KOR":"Chant Magic: Fire Whirl" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Chant: Fire Whirl" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
-		tags:["Magic", "자동시전", "기본Magic", "영창 Magic", "화염 Magic"], cast:4,
+		tags:["Magic", "Autocast", "기본Magic", "영창 Magic", "화염 Magic"], cast:4,
 		effect:[
 			{trigger:"get", cond:true, type:"line", value:"회오리불꽃-영창"},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
@@ -4392,9 +4392,9 @@ const cardDB = {
 	},
 	"MA-MG-FI-002++":{
 		parents:"MA-MG-FI-002",
-		name:{ "KOR":"Focus Magic: Fire Whirl" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Fire Whirl" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
-		tags:["Magic", "자동시전", "기본Magic", "집중 Magic", "화염 Magic"], cast:Infinity,
+		tags:["Magic", "Autocast", "기본Magic", "집중 Magic", "화염 Magic"], cast:Infinity,
 		effect:[
 			{trigger:"get", cond:true, type:"line", value:"회오리불꽃-집중"},
 			{trigger:"used", cond:true, type:"attack", target:"op"}
@@ -4411,7 +4411,7 @@ const cardDB = {
 	},
 
 	"MA-MG-IC-002":{
-		name:{ "KOR":"Instant Magic: Ice Wall" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Instant: Ice Wall" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "즉발 Magic", "냉기 Magic"], cast:1,
 		effect:[
@@ -4420,7 +4420,7 @@ const cardDB = {
 	},
 	"MA-MG-IC-002+":{
 		parents:"MA-MG-IC-002",
-		name:{ "KOR":"Chant Magic: Ice Wall" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Chant: Ice Wall" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "영창 Magic", "냉기 Magic"], cast:1,
 		effect:[
@@ -4430,7 +4430,7 @@ const cardDB = {
 	},
 	"MA-MG-IC-002++":{
 		parents:"MA-MG-IC-002",
-		name:{ "KOR":"Focus Magic: Ice Wall" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Ice Wall" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "집중 Magic", "냉기 Magic"], cast:2,
 		effect:[
@@ -4440,7 +4440,7 @@ const cardDB = {
 	},
 	"MA-MG-IC-002-def":{
 		parents:"MA-MG-IC-002",
-		name:{ "KOR":"Ice Wall" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Ice Wall" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic요약"], related:["MA-MG-IC-002", "MA-MG-IC-002+", "MA-MG-IC-002++"],
 		effect:[
@@ -4449,7 +4449,7 @@ const cardDB = {
 	},
 
 	"MA-MG-EA-002":{
-		name:{ "KOR":"Instant Magic: Power of Earth" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Instant: Stone Root" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "즉발 Magic", "대지 Magic"], related:["tag:즉발 Magic"], cast:1,
 		effect:[
@@ -4458,7 +4458,7 @@ const cardDB = {
 	},
 	"MA-MG-EA-002+":{
 		parents:"MA-MG-EA-002",
-		name:{ "KOR":"Chant Magic: Power of Earth" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Chant: Stone Root" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "영창 Magic", "대지 Magic"], related:["tag:즉발 Magic"], cast:2,
 		effect:[
@@ -4468,7 +4468,7 @@ const cardDB = {
 	},
 	"MA-MG-EA-002++":{
 		parents:"MA-MG-EA-002",
-		name:{ "KOR":"Focus Magic: Power of Earth" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Stone Root" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "집중 Magic", "대지 Magic"], related:["tag:즉발 Magic"], cast:2,
 		effect:[
@@ -4479,7 +4479,7 @@ const cardDB = {
 	},
 	"MA-MG-EA-002-def":{
 		parents:"MA-MG-EA-002",
-		name:{ "KOR":"Power of Earth" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Stone Root" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic요약"], related:["MA-MG-EA-002", "MA-MG-EA-002+", "MA-MG-EA-002++"],
 		effect:[
@@ -4488,7 +4488,7 @@ const cardDB = {
 	},
 
 	"MA-MG-SP-002":{
-		name:{ "KOR":"Instant Magic: Crystal Shield" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Instant: Crystal Shield" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "즉발 Magic", "냉기 Magic", "대지 Magic"], cast:1,
 		effect:[
@@ -4497,7 +4497,7 @@ const cardDB = {
 	},
 	"MA-MG-SP-002+":{
 		parents:"MA-MG-SP-002",
-		name:{ "KOR":"Chant Magic: Crystal Shield" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Chant: Crystal Shield" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "영창 Magic", "냉기 Magic", "대지 Magic"], cast:2,
 		effect:[
@@ -4507,9 +4507,9 @@ const cardDB = {
 	},
 	"MA-MG-SP-002++":{
 		parents:"MA-MG-SP-002",
-		name:{ "KOR":"Focus Magic: Crystal Shield" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Crystal Shield" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
-		tags:["Magic", "자동시전", "기본Magic", "집중 Magic", "냉기 Magic", "대지 Magic"], cast:Infinity,
+		tags:["Magic", "Autocast", "기본Magic", "집중 Magic", "냉기 Magic", "대지 Magic"], cast:Infinity,
 		effect:[
 			{trigger:"get", cond:true, type:"line", value:"수정방패-집중"},
 			{trigger:"used", cond:true, type:"changeSBlock", op:"add", value:3},
@@ -4517,7 +4517,7 @@ const cardDB = {
 	},
 	"MA-MG-SP-002-def":{
 		parents:"MA-MG-SP-002",
-		name:{ "KOR":"Crystal Shield" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Crystal Shield" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic요약"], related:["MA-MG-SP-002", "MA-MG-SP-002+", "MA-MG-SP-002++"],
 		effect:[
@@ -4527,7 +4527,7 @@ const cardDB = {
 
 
 	"MA-MG-FI-003":{
-		name:{ "KOR":"Focus Magic: Great Explosion" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Explo-osion" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "즉발 Magic", "영창 Magic", "집중전용", "Uncreatable", "화염 Magic"],
 		effect:[
@@ -4536,7 +4536,7 @@ const cardDB = {
 	},
 	"MA-MG-FI-003++":{
 		parents:"MA-MG-FI-003",
-		name:{ "KOR":"Focus Magic: Great Explosion" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Explo-osion" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "Magic요약", "기본Magic", "집중 Magic", "화염 Magic", "act:penetration"], cast:1,
 		effect:[
@@ -4545,7 +4545,7 @@ const cardDB = {
 		]
 	},
 	"MA-MG-IC-003":{
-		name:{ "KOR":"Focus Magic: Blizzard" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Blizzard" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "즉발 Magic", "영창 Magic", "집중전용", "Uncreatable", "냉기 Magic"],
 		effect:[
@@ -4554,7 +4554,7 @@ const cardDB = {
 	},
 	"MA-MG-IC-003++":{
 		parents:"MA-MG-IC-003",
-		name:{ "KOR":"Focus Magic: Blizzard" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Blizzard" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true, keywords:["만료"],
 		tags:["Magic", "시전", "Magic요약", "기본Magic", "집중 Magic", "냉기 Magic", "act:caress"], cast:1,
 		effect:[
@@ -4564,7 +4564,7 @@ const cardDB = {
 		]
 	},
 	"MA-MG-EA-003":{
-		name:{ "KOR":"Focus Magic: Earthquake" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Earthquake" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "기본Magic", "즉발 Magic", "영창 Magic", "집중전용", "Uncreatable", "대지 Magic"],
 		effect:[
@@ -4573,7 +4573,7 @@ const cardDB = {
 	},
 	"MA-MG-EA-003++":{
 		parents:"MA-MG-EA-003",
-		name:{ "KOR":"Focus Magic: Earthquake" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
+		name:{ "KOR":"Focus: Earthquake" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1,
 		cond:true,
 		tags:["Magic", "시전", "Magic요약", "기본Magic", "집중 Magic", "대지 Magic", "act:penetration"], related:["tag:Gem"], cast:1,
 		effect:[
@@ -4622,7 +4622,7 @@ const cardDB = {
 	},
 
 	"MA-JW-001":{
-		name:{ "KOR":"Topaz" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Topaz" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:false,
 		tags:["Gem", "변형목적"],
 		effect:[
@@ -4630,7 +4630,7 @@ const cardDB = {
 		]
 	},
 	"MA-JW-002":{
-		name:{ "KOR":"Sapphire" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Sapphire" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:false,
 		tags:["Gem", "변형목적"],
 		effect:[
@@ -4638,7 +4638,7 @@ const cardDB = {
 		]
 	},
 	"MA-JW-003":{
-		name:{ "KOR":"Ruby" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Ruby" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:false,
 		tags:["Gem", "변형목적"],
 		effect:[
@@ -4647,10 +4647,10 @@ const cardDB = {
 	},
 
 	"MA-NM-AT-001":{
-		name:{ "KOR":"Swift Casting" }, class:"Mage", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Swift Casting" }, class:"Mage", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Silvani", "group:Magic", "즉발슬롯", "act:caress"], related:["ref:즉발슬롯"],
-		flavorText:{ "KOR":"In most situations, light magic is sufficient to solve problems.<br>While powerful grand magic may be needed at times, learning to swiftly cast moderately powerful instant magic is the foundation of being a mage." },
+		flavorText:{ "KOR":"In most situations, light magic is sufficient to solve problems.<br>While powerful grand magic may be needed at times, learning to swiftly cast moderately powerful Instant is the foundation of being a mage." },
 		hypnoText:{ "KOR":"A foreplay technique to quickly stroke your opponent's cock with your hands, giving light stimulation.<br>You slowly build them up with a mana-infused touch, preparing them for the acts to come." },
 		effect:[
 			{trigger:"used", cond:true, type:"attack", target:"op"},
@@ -4658,7 +4658,7 @@ const cardDB = {
 		]
 	},
 	"MA-NM-AT-002":{
-		name:{ "KOR":"Aggressive Chanting" }, class:"Mage", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Aggressive Chanting" }, class:"Mage", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Beastfolk", "group:Magic", "영창슬롯", "act:penetration"], related:["ref:영창슬롯"],
 		flavorText:{ "KOR":"A mage's chant measures mana and guides the appropriate amount to the correct location for the spell.<br>Magic enhanced with chanting possesses greater power and duration." },
@@ -4672,9 +4672,9 @@ const cardDB = {
 		]
 	},
 	"MA-NM-AT-003":{
-		name:{ "KOR":"Ring of Embers" }, class:"Mage", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Ring of Embers" }, class:"Mage", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Eldorian", "group:Magic Circle", "act:penetration"], related:["MA-MC-001"],
+		tags:["Deck빌딩", "race:Eldorian", "group:Runes", "act:penetration"], related:["MA-MC-001"],
 		flavorText:{ "KOR":"Crimson mana contains destructive power.<br>It often manifests as flames or explosions, and those who handle this element well tend to have eccentric or dangerous personalities." },
 		hypnoText:{ "KOR":"A lust crest is engraved on your stomach, and a hot stimulus spreads from deep within your womb.<br>The crest's effect makes you grip your opponent's cock tighter, becoming an even better cunt." },
 		effect:[
@@ -4683,7 +4683,7 @@ const cardDB = {
 		]
 	},
 	"MA-NM-AT-004":{
-		name:{ "KOR":"Mana-Infused Gemstone" }, class:"Mage", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Mana-Infused Gem" }, class:"Mage", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Halfling", "group:변형", "act:penetration"], related:["tag:Gem", "MA-MC-003"],
 		flavorText:{ "KOR":"When mana is condensed and solidified, it becomes a beautiful, colored mineral called a mana stone or gemstone.<br>Because gems continuously emit mana, they are used as fuel for magic tools and materials for casting spells, and their beauty and rarity also make them valuable for jewelry." },
@@ -4694,18 +4694,18 @@ const cardDB = {
 		]
 	},
 	"MA-NM-AT-005":{
-		name:{ "KOR":"Basic Elementalism" }, class:"Mage", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Basic Elementalism" }, class:"Mage", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Eldorian", "group:Magic Circle", "act:orgy"], related:["MA-MC-001", "MA-MC-002", "MA-MC-003"],
+		tags:["Deck빌딩", "race:Eldorian", "group:Runes", "act:orgy"], related:["MA-MC-001", "MA-MC-002", "MA-MC-003"],
 		flavorText:{ "KOR":"There are many fields of magic, but what generally comes to mind when one thinks of 'magic' is elementalism.<br>In elementalism, one handles one or more of the three types of mana—crimson, azure, and golden—and each person has a different specialty." },
 		hypnoText:{ "KOR":"A technique that uses all three of a mage's attributes: breasts, pussy, and ass.<br>You choose between pussy sex, paizuri, and anal sex as the situation demands." },
 		effect:[
 			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:2},
-			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Magic Circle)"},
+			{trigger:"used", cond:true, type:"get", target:"self", value:"randomCard(tags, Runes)"},
 		]
 	},
 	"MA-NM-AT-006":{
-		name:{ "KOR":"Reflective Shield" }, class:"Mage", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Reflective Shield" }, class:"Mage", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Silvani", "group:Sense Block", "act:penetration"],
 		flavorText:{ "KOR":"As understanding of mana deepens, the firepower of magic grows stronger day by day, and defensive techniques cannot keep up.<br>In this situation, it is necessary to take an aggressive strategy even when using defensive magic." },
@@ -4716,10 +4716,10 @@ const cardDB = {
 		]
 	},
 	"MA-NM-SU-001":{
-		name:{ "KOR":"Spell Scroll" }, class:"Mage", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Spell Scroll" }, class:"Mage", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Halfling", "group:Magic", "즉발슬롯"], related:["ref:즉발슬롯"], keywords:["만료"],
-		flavorText:{ "KOR":"By using a scroll with a pre-inscribed incantation, you can cast magic swiftly and easily.<br>Talent in magic and talent in scroll-making are separate fields, so it is recommended to use an officially certified halfling artisan's product rather than a poorly made homemade one." },
+		flavorText:{ "KOR":"By using a scroll with a pre-inscribed Spell, you can cast magic swiftly and easily.<br>Talent in magic and talent in scroll-making are separate fields, so it is recommended to use an officially certified halfling artisan's product rather than a poorly made homemade one." },
 		hypnoText:{ "KOR":"A technique to drench with your pussy juice.<br>If you are sufficiently aroused, it takes only a few seconds to let out a light spray." },
 		effect:[
 			{trigger:"used", cond:true, type:"get", target:"self", value:"Magic Slot.즉발"},
@@ -4727,7 +4727,7 @@ const cardDB = {
 		]
 	},
 	"MA-NM-SU-002":{
-		name:{ "KOR":"Enhanced Chanting" }, class:"Mage", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Enhanced Chanting" }, class:"Mage", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Eldorian", "group:Magic", "group:변형", "영창슬롯"], related:["ref:영창슬롯"],
 		flavorText:{ "KOR":"The power of a spell can be altered by adjusting the frequency and position of words in the chant.<br>Repeating the same word can concentrate mana to increase firepower, while changing the word order can adjust the flow of mana to change the range." },
@@ -4741,9 +4741,9 @@ const cardDB = {
 		]
 	},
 	"MA-NM-SU-003":{
-		name:{ "KOR":"Ring of Frost" }, class:"Mage", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Ring of Frost" }, class:"Mage", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Beastfolk", "group:Magic Circle"], related:["MA-ST-002", "MA-MC-002"],
+		tags:["Deck빌딩", "race:Beastfolk", "group:Runes"], related:["MA-ST-002", "MA-MC-002"],
 		flavorText:{ "KOR":"Azure mana has the property of absorbing power.<br>It is strongly associated with static imagery, such as removing heat to freeze or eliminating vitality to harden." },
 		hypnoText:{ "KOR":"Increase your vulgarity by engraving words on your breasts.<br>It is good to write self-deprecating expressions such as 'pervert,' 'sow,' or 'cum-dumpster.'" },
 		effect:[
@@ -4752,9 +4752,9 @@ const cardDB = {
 		]
 	},
 	"MA-NM-SU-004":{
-		name:{ "KOR":"Ring of Rock" }, class:"Mage", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Ring of Rock" }, class:"Mage", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Beastfolk", "group:Magic Circle", "group:변형"], related:["MA-MC-003"],
+		tags:["Deck빌딩", "race:Beastfolk", "group:Runes", "group:변형"], related:["MA-MC-003"],
 		flavorText:{ "KOR":"Golden mana specializes in protection and transformation.<br>It possesses the firmness of the earth and, at the same time, the versatility to become anything depending on how it is processed." },
 		hypnoText:{ "KOR":"Increase your lewdness by engraving the number of times you've been cummed in on your ass.<br>It gives the feeling of being treated like an object, making you a more usable onahole." },
 		effect:[
@@ -4765,7 +4765,7 @@ const cardDB = {
 		]
 	},
 	"MA-NM-SU-005":{
-		name:{ "KOR":"Divine Shield" }, class:"Mage", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Divine Shield" }, class:"Mage", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Eldorian", "group:Sense Block"], keywords:["만료"],
 		flavorText:{ "KOR":"Holy magic, which specializes in healing and protection, is a unique magic that uses divine power bestowed as a reward for faith.<br>The Leia religion, which worships the goddess Aleia, and the Golden Bough faith, which worships the forest incarnation Rea, surprisingly handle similar powers despite worshiping different deities." },
@@ -4775,21 +4775,21 @@ const cardDB = {
 		]
 	},
 	"MA-NM-SU-006":{
-		name:{ "KOR":"Mental Focus" }, class:"Mage", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Mental Focus" }, class:"Mage", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Silvani", "group:Sense Block", "group:Magic", "group:변형", "집중슬롯"], related:["ref:집중슬롯"],
 		flavorText:{ "KOR":"Casting grand magic requires vast mana and long periods of concentration.<br>Because mastering a single grand spell requires a great deal of experience and practice, it is natural that most grand mages are long-lived Sylvani." },
 		hypnoText:{ "KOR":"It is common sense that a man's semen has a high mana-charging effect.<br>Ask your opponent to spray his cum on your body." },
 		effect:[
 			{trigger:"used", cond:true, type:"changeSBlock", op:"add", value:3},
-			{trigger:"choice", cond:true, range:{category:"tags", value:"Magic Circle", count:1}, type:"transform", target:"self",
+			{trigger:"choice", cond:true, range:{category:"tags", value:"Runes", count:1}, type:"transform", target:"self",
 			info:{
 				value:"Magic Slot.집중",
 			}},
 		]
 	},
 	"MA-NM-SU-007":{
-		name:{ "KOR":"Chain Chanting" }, class:"Mage", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Chain Chanting" }, class:"Mage", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Halfling", "group:Magic", "group:변형", "영창슬롯"], related:["MA-NM-SU-007-1", "ref:영창슬롯"],
 		flavorText:{ "KOR":"Similar spells often have overlapping parts in their chants.<br>By utilizing this, you can quickly cast multiple spells by chanting them in succession." },
@@ -4803,7 +4803,7 @@ const cardDB = {
 		]
 	},
 	"MA-NM-SU-007-1":{
-		name:{ "KOR":"Follow-up Chant" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Follow-up Chant" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["즉발슬롯"], related:["ref:즉발슬롯"],
 		effect:[
@@ -4812,7 +4812,7 @@ const cardDB = {
 		]
 	},
 	"MA-NM-PS-001":{
-		name:{ "KOR":"Snow Wolf Spirit" }, class:"Mage", type:"Position", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Snow Wolf Spirit" }, class:"Mage", type:"Position", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Beastfolk", "group:Magic", "즉발슬롯"], related:["MA-ST-002", "ref:즉발슬롯"],
 		flavorText:{ "KOR":"The power used by beings such as demons, spirits, and dragons, which defies logic, is called 'magic,' and the degraded technique that imitates it by analyzing its system is called 'sorcery.'<br>Spiritism, a specialty of the Silverleaf Beastfolk, is said to allow the use of power similar to primal magic by borrowing the power of spirits through communication." },
@@ -4827,9 +4827,9 @@ const cardDB = {
 		]
 	},
 	"MA-NM-PS-002":{
-		name:{ "KOR":"Automaton Golem" }, class:"Mage", type:"Position", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Automaton Golem" }, class:"Mage", type:"Position", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Eldorian", "group:변형", "group:Magic Circle"], related:["tag:Gem", "MA-MC-003"],
+		tags:["Deck빌딩", "race:Eldorian", "group:변형", "group:Runes"], related:["tag:Gem", "MA-MC-003"],
 		flavorText:{ "KOR":"Magitech, which combines Sylvani mechanical engineering and magic, is a highly sought-after field.<br>Among them, golem engineering is the essence of magitech, consisting of a combination of precise physical design and complex magic formulas." },
 		hypnoText:{ "KOR":"Your partner is a female onahole golem that faithfully carries out any command.<br>The tightness and wrinkles of her hole were modeled after yours, so using her is no different from fucking you." },
 		expiration:"always", duration:Infinity,
@@ -4847,9 +4847,9 @@ const cardDB = {
 	},
 
 	"MA-EX-AT-001":{
-		name:{ "KOR":"Mana Explosion" }, class:"Mage", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Mana Explosion" }, class:"Mage", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Beastfolk", "group:Magic Circle", "group:Sense Block", "act:fellatio"], related:["MA-MC-004"],
+		tags:["Deck빌딩", "race:Beastfolk", "group:Runes", "group:Sense Block", "act:fellatio"], related:["MA-MC-004"],
 		flavorText:{ "KOR":"Pure mana has no special properties.<br>If one possesses a blessed amount of mana, they can produce an impressive amount of power just by releasing it without processing it into magic." },
 		hypnoText:{ "KOR":"A technique to drink cum until it overflows from your mouth.<br>You must deep-throat the cock until the ejaculated volume flows back out and swallow it." },
 		effect:[
@@ -4859,7 +4859,7 @@ const cardDB = {
 		]
 	},
 	"MA-EX-AT-002":{
-		name:{ "KOR":"Dual Casting" }, class:"Mage", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Dual Casting" }, class:"Mage", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Eldorian", "group:Magic", "act:penetration"],
 		flavorText:{ "KOR":"Few fields depend more on talent than effort as much as magic does.<br>The Eldorian royal family is known for being born with everything: overflowing mana, bloodline magic, and the talent for dual casting." },
@@ -4870,18 +4870,18 @@ const cardDB = {
 		]
 	},
 	"MA-EX-AT-003":{
-		name:{ "KOR":"Multi-Elementalism" }, class:"Mage", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Multi-Elementalism" }, class:"Mage", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Silvani", "group:Magic", "group:Magic Circle", "즉발슬롯", "act:orgy"], related:["ref:즉발슬롯"],
+		tags:["Deck빌딩", "race:Silvani", "group:Magic", "group:Runes", "즉발슬롯", "act:orgy"], related:["ref:즉발슬롯"],
 		flavorText:{ "KOR":"Most elementalists possess mana of a single specialized element, but very rarely, there are those who possess multiple types of mana.<br>Multi-elementalism allows one to utilize this talent to respond to various situations, but it requires twice the effort of practicing a single focused element." },
 		hypnoText:{ "KOR":"A technique to handle a cock using two or more of your breasts, pussy, and ass.<br>You must strive to become a full-body cum-dumpster." },
 		effect:[
-			{trigger:"used", cond:true, type:"get", target:"self", repeat:"자기Deck.count(tags, Magic Circle)", maxRepeat:3, value:"Magic Slot.즉발"},
+			{trigger:"used", cond:true, type:"get", target:"self", repeat:"자기Deck.count(tags, Runes)", maxRepeat:3, value:"Magic Slot.즉발"},
 			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", repeat:"자기Deck.count(tags, Magic)", value:1},
 		]
 	},
 	"MA-EX-AT-004":{
-		name:{ "KOR":"Replication Incantation" }, class:"Mage", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Replication Spell" }, class:"Mage", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Halfling", "group:Magic"], keywords:["만료"],
 		flavorText:{ "KOR":"Traces of mana are always left where magic has been used.<br>By reverse-engineering these traces, you can easily replicate the magic that was cast there." },
@@ -4892,7 +4892,7 @@ const cardDB = {
 		]
 	},
 	"MA-EX-SU-001":{
-		name:{ "KOR":"High-Speed Chanting" }, class:"Mage", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"High-Speed Chanting" }, class:"Mage", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Beastfolk", "group:Magic", "group:변형", "영창슬롯"], related:["ref:영창슬롯"],
 		flavorText:{ "KOR":"To cast complex magic in a short amount of time, an advanced technique to shorten the chant is necessary.<br>The method of optimization differs depending on what each mage prioritizes, so it is a matter of preference." },
@@ -4906,9 +4906,9 @@ const cardDB = {
 		]
 	},
 	"MA-EX-SU-002":{
-		name:{ "KOR":"Conflagration" }, class:"Mage", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Conflagration" }, class:"Mage", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Silvani", "group:Magic Circle", "group:Magic", "group:변형", "집중슬롯", "진홍색 Magic Circle"], related:["MA-MC-001", "ref:집중슬롯"],
+		tags:["Deck빌딩", "race:Silvani", "group:Runes", "group:Magic", "group:변형", "집중슬롯", "진홍색 Runes"], related:["MA-MC-001", "ref:집중슬롯"],
 		flavorText:{ "KOR":"Battle mages, by their nature, tend to possess crimson mana, which emphasizes destructive power.<br>With destructive flames that burn everything to ash, they boast the power to turn the battlefield into a sea of fire." },
 		hypnoText:{ "KOR":"A technique to spray orgasmic pussy juice through passionate masturbation.<br>Though it takes time to get sufficiently heated up, it is a preparatory process for more lewd and intense acts." },
 		effect:[
@@ -4920,9 +4920,9 @@ const cardDB = {
 		]
 	},
 	"MA-EX-SU-003":{
-		name:{ "KOR":"Cold Snap" }, class:"Mage", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Cold Snap" }, class:"Mage", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Halfling", "group:Magic Circle", "group:Magic", "group:변형", "집중슬롯", "담청색 Magic Circle"], related:["MA-MC-002", "ref:집중슬롯"],
+		tags:["Deck빌딩", "race:Halfling", "group:Runes", "group:Magic", "group:변형", "집중슬롯", "담청색 Runes"], related:["MA-MC-002", "ref:집중슬롯"],
 		flavorText:{ "KOR":"The gushing azure mana freezes even the air, causing a cold, sharp wind to overwhelm the enemy.<br>It is a powerful magic that seals the enemy's movements and freezes everything, covering the entire battlefield in ice." },
 		hypnoText:{ "KOR":"If you have large breasts, you must not cover them with clothes or underwear.<br>It is common sense to expose large breasts to please the eyes of men." },
 		effect:[
@@ -4934,9 +4934,9 @@ const cardDB = {
 		]
 	},
 	"MA-EX-SU-004":{
-		name:{ "KOR":"Meditation" }, class:"Mage", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Meditation" }, class:"Mage", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Eldorian", "group:Magic", "group:변형", "group:Magic Circle", "group:Sense Block", "영창슬롯", "황금색 Magic Circle"], related:["ref:영창슬롯", "tag:변형목적"], keywords:["변형목적"],
+		tags:["Deck빌딩", "race:Eldorian", "group:Magic", "group:변형", "group:Runes", "group:Sense Block", "영창슬롯", "황금색 Runes"], related:["ref:영창슬롯", "tag:변형목적"], keywords:["변형목적"],
 		flavorText:{ "KOR":"The sages of the Lightweaver clan use a method of mental training to handle golden mana.<br>By entering a deep meditation and circulating golden mana within their bodies, they recover spent energy and stabilize the flow of mana." },
 		hypnoText:{ "KOR":"A technique to fall into a trance, becoming so unaware that you don't even notice you're being fucked.<br>By the time you come to your senses, you'll find your entire body drenched in cum." },
 		effect:[
@@ -4948,9 +4948,9 @@ const cardDB = {
 		]
 	},
 	"MA-EX-PS-001":{
-		name:{ "KOR":"Flask Phoenix" }, class:"Mage", type:"Position", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Flask Phoenix" }, class:"Mage", type:"Position", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Eldorian", "group:Magic Circle", "진홍색 Magic Circle"], related:["MA-MC-001"],
+		tags:["Deck빌딩", "race:Eldorian", "group:Runes", "진홍색 Runes"], related:["MA-MC-001"],
 		flavorText:{ "KOR":"Spiritism is a technique with very desirable power, but it cannot be used without the talent to communicate with capricious spirits.<br>To overcome this, the World Tree Academy in Sylvania is attempting to create artificial spirits with whom communication is easy." },
 		hypnoText:{ "KOR":"Your partner is a female monster with an intense sexual curiosity.<br>With an innocent expression, she pesters men to attack them and engage in a 'game' that feels good." },
 		expiration:"always", duration:Infinity,
@@ -4963,19 +4963,19 @@ const cardDB = {
 		]
 	},
 	"MA-EX-PS-002":{
-		name:{ "KOR":"Mana Slime" }, class:"Mage", type:"Position", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Mana Slime" }, class:"Mage", type:"Position", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Halfling", "group:Magic Circle", "group:변형"], related:["tag:Magic Circle", "MA-EX-PS-002-2"],
+		tags:["Deck빌딩", "race:Halfling", "group:Runes", "group:변형"], related:["tag:Runes", "MA-EX-PS-002-2"],
 		flavorText:{ "KOR":"Though called a slime because of its amorphous form, the Mana Slime is a completely different being from the monster of the same name.<br>Because of its property of absorbing and growing from surrounding mana, it is used for various experiments, mana detection, and as a countermeasure against mages." },
 		hypnoText:{ "KOR":"Your partner is a slime that mimics the form of a human female.<br>Its main food is semen, which it consumes by squeezing a cock with a sticky hole that mimics a pussy, forcing it to ejaculate.<br>※ Do not feed it more than the appropriate amount." },
 		expiration:"count", duration:5, defaultDuration:5,
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"마나슬라임-1"},
 			{trigger:"used", cond:true, type:"posture"},
-			{trigger:"turnStart", cond:{v1:"자기Deck.count(tags, Magic Circle)", op:">", v2:0}, type:"line", value:"마나슬라임-2"},
-			{trigger:"turnStart", cond:{v1:"자기Deck.count(tags, Magic Circle)", op:">", v2:0}, condOmit:true, type:"transform", target:"self",
+			{trigger:"turnStart", cond:{v1:"자기Deck.count(tags, Runes)", op:">", v2:0}, type:"line", value:"마나슬라임-2"},
+			{trigger:"turnStart", cond:{v1:"자기Deck.count(tags, Runes)", op:">", v2:0}, condOmit:true, type:"transform", target:"self",
 			info:{
-				target:"자기Deck.selectCards(tags, Magic Circle, 1)",
+				target:"자기Deck.selectCards(tags, Runes, 1)",
 				value:"MA-EX-PS-002-2",
 			}},
 			{trigger:"expired", cond:true, type:"line", value:"마나슬라임-3"},
@@ -4989,9 +4989,9 @@ const cardDB = {
 		]
 	},
 	"MA-EX-PS-002-2":{
-		name:{ "KOR":"Magic: Absorb" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Magic: Absorb" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["Magic", "자동시전"], cast:Infinity,
+		tags:["Magic", "Autocast"], cast:Infinity,
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"마나슬라임-4", notwait:true},
 			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:"자기Deck.count(tags, Magic)"},
@@ -5013,9 +5013,9 @@ const cardDB = {
 		]
 	},
 	"MA-EX-PS-002-4":{
-		name:{ "KOR":"Magic: Fuse" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Magic: Fuse" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["Magic", "자동시전"], cast:Infinity,
+		tags:["Magic", "Autocast"], cast:Infinity,
 		effect:[
 			{trigger:"used", cond:true, type:"changeSBlock", op:"add", value:2},
 			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:3},
@@ -5023,9 +5023,9 @@ const cardDB = {
 	},
 
 	"MA-UL-AT-001":{
-		name:{ "KOR":"Falling Star" }, class:"Mage", type:"attack", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Falling Star" }, class:"Mage", type:"attack", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Beastfolk", "group:Magic Circle", "group:변형", "진홍색 Magic Circle"], related:["MA-MC-001", "MA-UL-AT-001-1"],
+		tags:["Deck빌딩", "race:Beastfolk", "group:Runes", "group:변형", "진홍색 Runes"], related:["MA-MC-001", "MA-UL-AT-001-1"],
 		flavorText:{ "KOR":"The art of reading the movements of the stars has long been dismissed as impractical due to a lack of information, poor observation accuracy, and reliance on chance.<br>However, that perception changed when a Beastfolk sage cast the grand magic Meteor Shower, combining crimson mana and astrology to protect their beastfolk, an event that devastated the entire area.<br>The attempt to systematize this unknown field to prevent a repeat of the tragedy led to the birth of astrology, or Celesthron." },
 		hypnoText:{ "KOR":"A finishing move that turns the caster's pussy into the ultimate onahole with an enhanced lust crest carved into the womb.<br>It has the effect of making any man cum instantly, but as an aftereffect, the caster suffers when not penetrated, forcing them to live the rest of their life as a fucktoy." },
 		effect:[
@@ -5037,18 +5037,18 @@ const cardDB = {
 		]
 	},
 	"MA-UL-AT-001-1":{
-		name:{ "KOR":"Grand Magic: Meteor Shower" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Meteor Shower" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["Magic", "자동시전"], cast:1,
+		tags:["Magic", "Autocast"], cast:1,
 		effect:[
 			{trigger:"used", cond:true, type:"state", target:"self", value:"MA-ST-001"},
 			{trigger:"used", cond:true, type:"attack", target:"op"},
 		]
 	},
 	"MA-UL-AT-002":{
-		name:{ "KOR":"Frozen World" }, class:"Mage", type:"attack", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Frozen World" }, class:"Mage", type:"attack", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Eldorian", "group:Magic Circle", "group:변형", "담청색 Magic Circle"], related:["MA-ST-002", "MA-MC-002", "MA-UL-AT-002-1"],
+		tags:["Deck빌딩", "race:Eldorian", "group:Runes", "group:변형", "담청색 Runes"], related:["MA-ST-002", "MA-MC-002", "MA-UL-AT-002-1"],
 		flavorText:{ "KOR":"In the snowy mountain regions of the northern Eldorian Kingdom live minority groups who have been there for ages.<br>To survive in the harsh environment, they have developed strong physiques and hearty personalities, along with the talent to handle the abundant azure mana from the mountains, their fighting spirit, and their strength to overcome the cold.<br>The grand magic they mainly use freezes the entire area, allowing them to turn any battlefield into their home turf." },
 		hypnoText:{ "KOR":"A finishing move where you cover a cock with your breasts, delivering extreme pressure and tightness for immense pleasure.<br>Your soft breasts wrap around and swallow the cock, trapping your opponent in their soft stimulation so they cannot escape." },
 		effect:[
@@ -5061,9 +5061,9 @@ const cardDB = {
 		]
 	},
 	"MA-UL-AT-002-1":{
-		name:{ "KOR":"Grand Magic: Permafrost" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Permafrost" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["Magic", "자동시전"], related:["MA-ST-002"], cast:Infinity,
+		tags:["Magic", "Autocast"], related:["MA-ST-002"], cast:Infinity,
 		effect:[
 			{trigger:"used", cond:true, type:"state", target:"op", byname:true, value:"MA-ST-002"},
 			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", repeat:"Opponent.기록.전체.이벤트.상태획득.count(id, MA-ST-002)", value:1},
@@ -5072,9 +5072,9 @@ const cardDB = {
 	},
 
 	"MA-UL-SU-001":{
-		name:{ "KOR":"Flowing Veins of Mana" }, class:"Mage", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Veins of Mana" }, class:"Mage", type:"Support", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
-		tags:["Deck빌딩", "race:Halfling", "group:Magic Circle", "group:변형", "group:Magic", "황금색 Magic Circle"], related:["MA-MC-003", "tag:집중 Magic"],
+		tags:["Deck빌딩", "race:Halfling", "group:Runes", "group:변형", "group:Magic", "황금색 Runes"], related:["MA-MC-003", "tag:집중 Magic"],
 		flavorText:{ "KOR":"Deep within the earth, there are ley lines through which immense mana flows, and the gradual leakage of this to the surface is what constitutes natural mana.<br>Rarely, there are points where a ley line passes relatively close to the surface and can be directly accessed, and standing there allows one to use that vast mana as if it were their own.<br>A mage using a ley line is like a natural disaster, so understanding the surrounding mana terrain is crucial in war, and it is best not to set up a base near a ley line that cannot be secured." },
 		hypnoText:{ "KOR":"A technique to cast a curse on yourself that turns your entire body into an erogenous zone.<br>You become able to feel pleasure from just caresses and skinship, allowing you to enjoy sex even more." },
 		effect:[
@@ -5083,13 +5083,13 @@ const cardDB = {
 				value:"Magic Slot.집중",
 			}},
 			//{trigger:"used", cond:true, type:"specialA13"},
-			//{trigger:"used", cond:true, type:"text", value:{ "KOR":"Select a <b>[Golden Magic Circle]</b>, <b>transform</b> it into Focus magic, and grant it automatic casting." }},
+			//{trigger:"used", cond:true, type:"text", value:{ "KOR":"Select a <b>[Golden Runes]</b>, <b>transform</b> it into Focus, and grant it automatic casting." }},
 			{trigger:"used", cond:true, type:"get", target:"self", value:"MA-UL-SU-001"},
 			{trigger:"selected", cond:true, type:"maxUse", target:"self", value:1}
 		]
 	},
 	"MA-UL-SU-002":{
-		name:{ "KOR":"Time Stop" }, class:"Mage", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Time Stop" }, class:"Mage", type:"Support", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Eldorian", "group:Magic"],
 		flavorText:{ "KOR":"Alchemy has five grand challenges, the ultimate goals that all alchemists dream of.<br>Perpetual motion, time reversal, creation of intelligent life, immortality, and the creation of gold—any of which, if realized, could change the very fabric of the world.<br>Though some ignorantly claim that the successful implementation of time-stop magic brings the success of time reversal closer, that magic only makes it seem as if time has stopped through extreme acceleration, a completely different means from reversal." },
@@ -5116,7 +5116,7 @@ const cardDB = {
 		]
 	},
 	"MA-UL-PS-001":{
-		name:{ "KOR":"Miyeong, Soul of the Archmage" }, class:"Mage", type:"Position", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Miyeong's Soul" }, class:"Mage", type:"Position", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Silvani"], related:["tag:Miyeong's Help"],
 		flavorText:{ "KOR":"Miyeong Ji was a Sylvani archmage who had a profound impact on the world of magic during her lifetime.<br>Like all great Sylvani, her soul should have been enshrined in a Sylvanian shrine, but with her strong eccentric streak, she cast a possession spell just before her death to separate her soul and let it inhabit another place.<br>After freely wandering the world, she has now taken a deep interest in you and has attached herself to you as a mentor, offering much advice and help." },
@@ -5160,11 +5160,11 @@ const cardDB = {
 		cond:true,
 		tags:["Miyeong's Help"],
 		effect:[
-			{trigger:"none", cond:true, type:"text", value:{ "KOR":"<b>Condition:</b> If you have 2 or more magic circle cards in your deck," }},
+			{trigger:"none", cond:true, type:"text", value:{ "KOR":"<b>Condition:</b> If you have 2 or more Runes cards in your deck," }},
 			{trigger:"used", cond:true, type:"line", value:"미영-3"},
 			{trigger:"used", cond:true, type:"transform", target:"self",
 			info:{
-				target:"자기Deck.selectCards(tags, Magic Circle, 1)",
+				target:"자기Deck.selectCards(tags, Runes, 1)",
 				value:"Magic Slot.영창"
 			}},
 		]
@@ -5182,7 +5182,7 @@ const cardDB = {
 	},
 	"MA-UL-PS-001-1-5":{
 		parents:"MA-UL-PS-001-1-1",
-		name:{ "KOR":"Miyeong's Encouragement" }, class:"Mage", type:"-", rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Miyeong's Motivation" }, class:"Mage", type:"-", rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Miyeong's Help"],
 		effect:[
@@ -5230,7 +5230,7 @@ const cardDB = {
 	},
 	"MA-UL-PS-001-1-9":{
 		parents:"MA-UL-PS-001-1-10",
-		name:{ "KOR":"Miyeong's Mental Instability" }, class:"Mage", type:"-", rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Miyeong's Doubt" }, class:"Mage", type:"-", rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:[],
 		effect:[
@@ -5260,7 +5260,7 @@ const cardDB = {
 	},
 	
 	"HE-IN-001":{
-		name:{ "KOR":"Essence of Life" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1,
+		name:{ "KOR":"Essence of Life" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1,
 		cond:false,
 		tags:["Essence", "기본Essence"],
 		effect:[
@@ -5268,7 +5268,7 @@ const cardDB = {
 		]
 	},
 	"HE-IN-002":{
-		name:{ "KOR":"Essence of Thorns" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1,
+		name:{ "KOR":"Essence of Thorns" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1,
 		cond:false,
 		tags:["Essence", "기본Essence"],
 		effect:[
@@ -5276,7 +5276,7 @@ const cardDB = {
 		]
 	},
 	"HE-IN-003":{
-		name:{ "KOR":"Essence of Shadow" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1,
+		name:{ "KOR":"Essence of Shadow" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1,
 		cond:false,
 		tags:["Essence", "기본Essence"],
 		effect:[
@@ -5284,7 +5284,7 @@ const cardDB = {
 		]
 	},
 	"HE-IN-004":{
-		name:{ "KOR":"Essence of Awakening" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1,
+		name:{ "KOR":"Essence of Desire" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1,
 		cond:false,
 		tags:["Essence", "기본Essence"],
 		effect:[
@@ -5292,7 +5292,7 @@ const cardDB = {
 		]
 	},
 	"HE-IN-005":{
-		name:{ "KOR":"Essence of Serenity" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1,
+		name:{ "KOR":"Essence of Serenity" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1,
 		cond:false,
 		tags:["Essence", "기본Essence"],
 		effect:[
@@ -5320,7 +5320,7 @@ const cardDB = {
 		]
 	},
 	"HE-IN-006":{
-		name:{ "KOR":"Essence of Echo" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1,
+		name:{ "KOR":"Essence of Echo" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1,
 		cond:false,
 		tags:["Essence", "기본Essence"],
 		effect:[
@@ -5328,7 +5328,7 @@ const cardDB = {
 		]
 	},
 	"HE-IN-007":{
-		name:{ "KOR":"Essence of Immobility" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1,
+		name:{ "KOR":"Essence of Immobility" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1,
 		cond:false,
 		tags:["Essence", "기본Essence"],
 		effect:[
@@ -5336,7 +5336,7 @@ const cardDB = {
 		]
 	},
 	"HE-IN-008":{
-		name:{ "KOR":"Essence of Swiftness" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1,
+		name:{ "KOR":"Essence of Swiftness" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1,
 		cond:false,
 		tags:["Essence", "기본Essence"],
 		effect:[
@@ -5344,7 +5344,7 @@ const cardDB = {
 		]
 	},
 	"HE-IN-009":{
-		name:{ "KOR":"Essence of Vampirism" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:5, owner:1,
+		name:{ "KOR":"Essence of Vampirism" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:5, owner:1,
 		cond:false,
 		tags:["Essence", "기본Essence"],
 		effect:[
@@ -5362,15 +5362,15 @@ const cardDB = {
 	},
 
 	"HE-NM-CO-001":{
-		name:{ "KOR":"Combination" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Combination" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["결합물"],
+		tags:["Combination"],
 		effect:[
 		]
 	},
 
 	"HE-NM-AT-001":{
-		name:{ "KOR":"Holy Flame" }, class:"Healer", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Holy Flame" }, class:"Healer", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true, meet:{v1:"자신.기록.최근.이벤트.Excitement.감소", op:">", v2:0},
 		tags:["Deck빌딩", "race:Eldorian", "group:회복", "act:caress"],
 		flavorText:{ "KOR":"Holy power is mainly used for healing and protection, but it can also be used to burn evil enemies.<br>This flickering white light is not a flame that leaves physical wounds, but one that sears life itself." },
@@ -5381,7 +5381,7 @@ const cardDB = {
 		]
 	},
 	"HE-NM-AT-002":{
-		name:{ "KOR":"Soul Whip" }, class:"Healer", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Soul Whip" }, class:"Healer", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Silvani", "group:회복", "act:fellatio"],
 		flavorText:{ "KOR":"Basically, natural healing is the effect of sharing your overflowing life force with others.<br>If this is possible, it means you can also take it away." },
@@ -5402,7 +5402,7 @@ const cardDB = {
 		]
 	},
 	"HE-NM-AT-003":{
-		name:{ "KOR":"Life Bond" }, class:"Healer", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Life Bond" }, class:"Healer", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Halfling", "group:회복", "act:penetration"],
 		flavorText:{ "KOR":"A secret art to bind and fix each other's life force.<br>It prevents the life force of a critical patient from scattering and can suppress an enemy with an excess of life force." },
@@ -5413,7 +5413,7 @@ const cardDB = {
 		]
 	},
 	"HE-NM-AT-004":{
-		name:{ "KOR":"Radiant Aura" }, class:"Healer", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Radiant Aura" }, class:"Healer", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "결합", "race:Eldorian", "group:결합", "group:Essence", "act:caress"],
 		flavorText:{ "KOR":"Holy healing uses sacred power bestowed in return for faith in a great being.<br>Due to this characteristic, it is a difficult technique for Sylvani, who have a weak concept of faith, to use." },
@@ -5425,15 +5425,15 @@ const cardDB = {
 	},
 	"HE-NM-AT-004-1":{
 		parents:"HE-NM-AT-004",
-		name:{ "KOR":"Radiant Combination" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Radiant Combination" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["결합물"],
+		tags:["Combination"],
 		effect:[
 		]
 	},
 
 	"HE-NM-AT-005":{
-		name:{ "KOR":"Light of Purification" }, class:"Healer", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Light of Purification" }, class:"Healer", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Eldorian", "group:Corruption"],
 		flavorText:{ "KOR":"The Leia religion, which worships the goddess Aleia, is the largest religion on the continent of Oldinsaleia.<br>In return for their sincere prayers, believers receive a blessing and can use powerful holy magic." },
@@ -5456,7 +5456,7 @@ const cardDB = {
 		]
 	},
 	"HE-NM-AT-006":{
-		name:{ "KOR":"Natural Essence Extraction" }, class:"Healer", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Natural Extraction" }, class:"Healer", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Beastfolk", "group:Essence", "act:fellatio"],
 		flavorText:{ "KOR":"Natural healing is a technique that directly deals with the concept of life force possessed by living beings.<br>As it mainly developed from the folk remedies of Beastfolk shamans, it is not systematic, but its effectiveness is recognized and studied by the Albion Medical Association." },
@@ -5467,7 +5467,7 @@ const cardDB = {
 		]
 	},
 	"HE-NM-AT-007":{
-		name:{ "KOR":"Release Restraint" }, class:"Healer", type:"attack", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Release Restraint" }, class:"Healer", type:"attack", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "결합", "race:Eldorian", "group:결합"],
 		flavorText:{ "KOR":"In addition to healing wounds, a healer is also responsible for dispelling various status effects.<br>Poison, paralysis, blindness, sleep... learning the appropriate countermeasures for countless status effects is a basic skill of a good healer." },
@@ -5479,15 +5479,15 @@ const cardDB = {
 	},
 	"HE-NM-AT-007-1":{
 		parents:"HE-NM-AT-007",
-		name:{ "KOR":"Waste Combination" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Waste Combination" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["결합물"],
+		tags:["Combination"],
 		effect:[
 		]
 	},
 
 	"HE-NM-SU-001":{
-		name:{ "KOR":"Wave of Healing" }, class:"Healer", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Wave of Healing" }, class:"Healer", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Beastfolk", "group:회복"],
 		flavorText:{ "KOR":"The spreading wave of healing provides a wide-area recovery effect.<br>Standing within it, you feel comfort and warmth." },
@@ -5508,7 +5508,7 @@ const cardDB = {
 		]
 	},
 	"HE-NM-SU-002":{
-		name:{ "KOR":"Grant Vitality" }, class:"Healer", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Grant Vitality" }, class:"Healer", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Halfling", "group:회복", "group:Corruption"],
 		flavorText:{ "KOR":"In addition to the part directly related to life and death, life force also includes the vitality that gives strength.<br>Even if there are no injured allies, a healer can take on the role of strengthening their allies by granting them vitality." },
@@ -5526,7 +5526,7 @@ const cardDB = {
 	},
 
 	"HE-NM-SU-003":{
-		name:{ "KOR":"Quick Prescription" }, class:"Healer", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Quick Prescription" }, class:"Healer", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "결합", "race:Eldorian", "group:결합", "group:Essence"],
 		flavorText:{ "KOR":"Physicians and apothecaries were originally a combined profession, but they began to separate when the Albion Medical Association advocated for the need for specialization in each field.<br>While a physician diagnoses and performs procedures, an apothecary brews and prescribes the correct medicine according to that diagnosis." },
@@ -5538,14 +5538,14 @@ const cardDB = {
 	},
 	"HE-NM-SU-003-1":{
 		parents:"HE-NM-SU-003",
-		name:{ "KOR":"Essence Combination" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Essence Combination" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["결합물"],
+		tags:["Combination"],
 		effect:[
 		]
 	},
 	"HE-NM-SU-004":{
-		name:{ "KOR":"Infinite Aura" }, class:"Healer", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Infinite Aura" }, class:"Healer", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "결합", "race:Silvani", "group:결합", "group:Essence"],
 		flavorText:{ "KOR":"In Sylvania, they believe in the cycle of life itself and do not worship a separate god.<br>Instead, they have a custom of honoring the souls of the deceased and enshrining them in shrines after death, praying for their souls to return to nature." },
@@ -5557,14 +5557,14 @@ const cardDB = {
 	},
 	"HE-NM-SU-004-1":{
 		parents:"HE-NM-SU-004",
-		name:{ "KOR":"Infinite Combination" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Infinite Combination" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["결합물"],
+		tags:["Combination"],
 		effect:[
 		]
 	},
 	"HE-NM-SU-005":{
-		name:{ "KOR":"Potion Alchemy" }, class:"Healer", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Potion Alchemy" }, class:"Healer", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Halfling", "group:Corruption", "group:결합", "group:Essence"],
 		flavorText:{ "KOR":"Alchemy is the art of recreating magical effects through material combinations, based on various academic disciplines.<br>One of its fields is the creation of potions with specific effects by combining medicinal ingredients." },
@@ -5582,14 +5582,14 @@ const cardDB = {
 	},
 	"HE-NM-SU-005-1":{
 		parents:"HE-NM-SU-005",
-		name:{ "KOR":"Potion Combination" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Potion Combination" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["결합물"],
+		tags:["Combination"],
 		effect:[
 		]
 	},
 	"HE-NM-SU-006":{
-		name:{ "KOR":"Celestial Blessing" }, class:"Healer", type:"보조", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Celestial Blessing" }, class:"Healer", type:"Support", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Beastfolk", "group:회복"],
 		flavorText:{ "KOR":"Through prayer, you are enveloped in and protected by a divine power.<br>You gain stamina, vitality, and the confidence to face any enemy." },
@@ -5621,7 +5621,7 @@ const cardDB = {
 	},
 
 	"HE-NM-PS-001":{
-		name:{ "KOR":"Trauma Care" }, class:"Healer", type:"Position", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Trauma Care" }, class:"Healer", type:"Position", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Eldorian", "group:회복", "group:Corruption", "Unimproved"], related:["HE-NM-PS-001-3","HE-NM-PS-001-2","HE-NM-PS-001-4"],
 		flavorText:{ "KOR":"Stops bleeding and regenerates damaged tissue.<br>This is a specialty of the Leia religion's holy healing, and the prayer of a saint is particularly famous as a miracle that can instantly heal even fatal wounds." },
@@ -5646,7 +5646,7 @@ const cardDB = {
 		]
 	},
 	"HE-NM-PS-001-2":{
-		name:{ "KOR":"Improved Trauma Care" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Trauma Care +" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["개선됨"], related:["HE-NM-PS-001-4"],
 		expiration:"always", duration:Infinity,
@@ -5657,7 +5657,7 @@ const cardDB = {
 		]
 	},
 	"HE-NM-PS-001-3":{
-		name:{ "KOR":"Instant Heal" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Instant Heal" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:[],
 		effect:[
@@ -5666,7 +5666,7 @@ const cardDB = {
 		]
 	},
 	"HE-NM-PS-001-4":{
-		name:{ "KOR":"Improved Instant Heal" }, class:"Healer", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Instant Heal +" }, class:"Healer", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:[],
 		effect:[
@@ -5676,7 +5676,7 @@ const cardDB = {
 	},
 
 	"HE-NM-PS-002":{
-		name:{ "KOR":"Fracture Treatment" }, class:"Healer", type:"Position", isDeck:true, rarity:"일반", cost:10, owner:1,
+		name:{ "KOR":"Fracture Treatment" }, class:"Healer", type:"Position", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Silvani", "group:회복", "group:Corruption", "group:결합", "Unimproved"], related:["HE-NM-PS-002-2"],
 		flavorText:{ "KOR":"Sets broken bones and aids in the regeneration of bone tissue.<br>Because a misaligned bone during forced regeneration can easily lead to irreversible permanent disability, the Albion Medical Association recommends setting the bone straight and then waiting for natural healing." },
@@ -5701,20 +5701,20 @@ const cardDB = {
 		]
 	},
 	"HE-NM-PS-002-2":{
-		name:{ "KOR":"Improved Fracture Treatment" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Fracture Treatment +" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["개선됨"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"개선치료"},
 			{trigger:"used", cond:true, type:"posture"},
-			{trigger:"always", cond:true, type:"lewd", op:"add", value:2, repeat:"자신.기록.전체.사용.count(tags, 결합물)"}
+			{trigger:"always", cond:true, type:"lewd", op:"add", value:2, repeat:"자신.기록.전체.사용.count(tags, Combination)"}
 		]
 	},
 
 
 	"HE-EX-AT-001":{
-		name:{ "KOR":"Holy Explosion" }, class:"Healer", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Holy Explosion" }, class:"Healer", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Eldorian", "group:Corruption", "act:penetration"],
 		flavorText:{ "KOR":"Gathers holy power into a single point and releases it in all directions.<br>Wicked enemies will vanish without a trace in the sin-cleansing explosion." },
@@ -5738,7 +5738,7 @@ const cardDB = {
 		]
 	},
 	"HE-EX-AT-002":{
-		name:{ "KOR":"Heart Pounding" }, class:"Healer", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Heart Pounding" }, class:"Healer", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Beastfolk", "act:penetration"],
 		flavorText:{ "KOR":"You grant yourself vitality to gather strength.<br>The overflowing life force increases your destructive power." },
@@ -5749,7 +5749,7 @@ const cardDB = {
 		]
 	},
 	"HE-EX-AT-003":{
-		name:{ "KOR":"Artificial Essence Extraction" }, class:"Healer", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Artificial Extraction" }, class:"Healer", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Silvani", "group:Essence", "act:fellatio"],
 		flavorText:{ "KOR":"To overcome the instability of natural healing and the limited versatility of holy healing, the biotech healing method 'medicine,' based on systematic and logical knowledge, was born.<br>Also known as artificial healing, this method provides a safe recovery with no aftereffects, even if the healing speed is slow." },
@@ -5760,7 +5760,7 @@ const cardDB = {
 		]
 	},
 	"HE-EX-AT-004":{
-		name:{ "KOR":"Whisper of the Soul" }, class:"Healer", type:"attack", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Whisper of the Soul" }, class:"Healer", type:"attack", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Halfling", "group:결합"],
 		flavorText:{ "KOR":"As a profession that saves lives, a healer is paradoxically closest to death.<br>It shares some techniques with necromancy, but as long as one does not fall to corruption, it can be used for healing." },
@@ -5772,7 +5772,7 @@ const cardDB = {
 	},
 
 	"HE-EX-SU-001":{
-		name:{ "KOR":"Prayer of Revival" }, class:"Healer", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Prayer of Revival" }, class:"Healer", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Eldorian", "group:회복"],
 		flavorText:{ "KOR":"Women with powerful holy abilities are consistently born into the Lightweaver clan.<br>Their prayers are twice as effective as those of ordinary believers, so the Leia religion reveres them as saints." },
@@ -5793,7 +5793,7 @@ const cardDB = {
 		]
 	},
 	"HE-EX-SU-002":{
-		name:{ "KOR":"Illusory Aura" }, class:"Healer", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Illusory Aura" }, class:"Healer", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "결합", "race:Halfling", "group:Corruption", "group:결합", "group:Essence"],
 		flavorText:{ "KOR":"Even if the power a healer wields has healing properties, it is not always good.<br>The 'Cult of the Chosen,' a cult mainly followed by Halfmen, often obtains evil magic through prayer due to their worship of the evil god Morvain." },
@@ -5811,14 +5811,14 @@ const cardDB = {
 	},
 	"HE-EX-SU-002-1":{
 		parents:"HE-EX-SU-002",
-		name:{ "KOR":"Illusory Combination" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Illusory Combination" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["결합물"],
+		tags:["Combination"],
 		effect:[
 		]
 	},
 	"HE-EX-SU-003":{
-		name:{ "KOR":"Comprehensive Prescription" }, class:"Healer", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Synthesis" }, class:"Healer", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "결합", "race:Silvani", "group:회복", "group:결합", "group:Essence"],
 		flavorText:{ "KOR":"Combine multiple medicinal ingredients to brew the necessary potion.<br>Even for similar illnesses, different ingredients must be used depending on the exact symptoms." },
@@ -5830,14 +5830,14 @@ const cardDB = {
 	},
 	"HE-EX-SU-003-1":{
 		parents:"HE-EX-SU-003",
-		name:{ "KOR":"Complex Essence Combination" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Essence Combination" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["결합물"],
+		tags:["Combination"],
 		effect:[
 		]
 	},
 	"HE-EX-SU-004":{
-		name:{ "KOR":"First Aid" }, class:"Healer", type:"보조", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"First Aid" }, class:"Healer", type:"Support", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true, meet:{v1:"자신.기록.최근.이벤트.Excitement.감소", op:">", v2:0},
 		tags:["Deck빌딩", "race:Silvani", "group:회복"],
 		flavorText:{ "KOR":"Take swift preliminary measures to ensure a critically injured patient survives until proper treatment can be administered.<br>The survival rate changes drastically depending on whether first aid was given in time." },
@@ -5869,7 +5869,7 @@ const cardDB = {
 	},
 
 	"HE-EX-PS-001":{
-		name:{ "KOR":"Poison Treatment" }, class:"Healer", type:"Position", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Poison Treatment" }, class:"Healer", type:"Position", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Eldorian", "group:Corruption", "group:결합", "group:Essence", "Unimproved"], related:["HE-EX-PS-001-2"],
 		flavorText:{ "KOR":"A healing method that purifies blood contaminated by poison and helps expel the toxins from the body.<br>You must analyze the type of poison and its absorption route in the body to create and administer an antidote in time." },
@@ -5894,7 +5894,7 @@ const cardDB = {
 		]
 	},
 	"HE-EX-PS-001-2":{
-		name:{ "KOR":"Improved Poison Treatment" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Poison Treatment +" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["개선됨"],
 		expiration:"always", duration:Infinity,
@@ -5906,7 +5906,7 @@ const cardDB = {
 	},
 
 	"HE-EX-PS-002":{
-		name:{ "KOR":"Infection Treatment" }, class:"Healer", type:"Position", isDeck:true, rarity:"숙련", cost:15, owner:1,
+		name:{ "KOR":"Infection Treatment" }, class:"Healer", type:"Position", isDeck:true, rarity:"expert", cost:15, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Beastfolk", "group:Corruption", "Unimproved"], related:["HE-EX-PS-002-2"],
 		flavorText:{ "KOR":"A healing method that eliminates bacteria from the infected area and reduces inflammation.<br>A folk remedy based on natural healing involves infusing the problem area with a high density of life force along with herbs." },
@@ -5931,7 +5931,7 @@ const cardDB = {
 		]
 	},
 	"HE-EX-PS-002-2":{
-		name:{ "KOR":"Improved Infection Treatment" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Purification Rite" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["개선됨"],
 		expiration:"always", duration:Infinity,
@@ -5944,7 +5944,7 @@ const cardDB = {
 
 
 	"HE-UL-AT-001":{
-		name:{ "KOR":"Life Force Rampage" }, class:"Healer", type:"attack", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Life Force Rampage" }, class:"Healer", type:"attack", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Beastfolk", "group:회복", "act:fellatio"],
 		flavorText:{ "KOR":"Because the human body has a limit to what it can handle, more life force is not always better.<br>A healer who uses natural healing can actually attack an opponent by granting them life force.<br>The overflowing life force cannot be dissipated and causes the body to go rampant, eventually leading to necrosis of the affected area." },
@@ -5957,7 +5957,7 @@ const cardDB = {
 	},
 
 	"HE-UL-AT-002":{
-		name:{ "KOR":"Mass Purification" }, class:"Healer", type:"attack", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Mass Purification" }, class:"Healer", type:"attack", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Beastfolk", "group:Corruption", "act:caress"],
 		flavorText:{ "KOR":"One day, a divine being descended in the middle of the Great Forest, and those who gathered to worship it as the incarnation of the forest. That was the beginning of the Golden Bough faith.<br>In the place where that being, who asked to be called Rea, visited, golden trees still grow, filled with holy power.<br>The practitioners of the Golden Bough faith carry staves made from the branches of those trees and wander the world to purify its evil beings, following the will of the one they believe in." },
@@ -5982,7 +5982,7 @@ const cardDB = {
 	},
 
 	"HE-UL-SU-001":{
-		name:{ "KOR":"Aura of All Things" }, class:"Healer", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Aura of All Things" }, class:"Healer", type:"Support", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "결합", "race:Halfling", "group:결합"],
 		flavorText:{ "KOR":"Alchemy was originally a pseudoscience that originated in the halfling slums.<br>This discipline, which began with those who had no magical talent or resources refusing to give up and finding ways to produce similar effects, has had a profound impact on various fields such as pharmacology, engineering, biology, and metallurgy.<br>It still holds immense potential, and the notion that untalented mages run away to alchemy is a thing of the past." },
@@ -5994,15 +5994,15 @@ const cardDB = {
 	},
 	"HE-UL-SU-001-1":{
 		parents:"HE-UL-SU-001",
-		name:{ "KOR":"Combination of All Things" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"All at Once" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["결합물"],
+		tags:["Combination"],
 		effect:[
 		]
 	},
 
 	"HE-UL-SU-002":{
-		name:{ "KOR":"Elixir of Immortality" }, class:"Healer", type:"보조", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Elixir of Immortality" }, class:"Healer", type:"Support", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Halfling", "group:Essence"], related:["HE-IN-999"], keywords:["Corruptionn"],
 		flavorText:{ "KOR":"The alchemy branch of the Lapis Lazuli Academy presented the five grand challenges as the ultimate goal for alchemists.<br>Perpetual motion, time reversal, creation of intelligent life, immortality, and the creation of gold—any of which, if realized, could change the very fabric of the world.<br>Among them, many attempt immortality, and the greed to be able to challenge the other studies as well if they could transcend the limits of their lifespan becomes the reason they ruin their own bodies with excessive experiments." },
@@ -6014,7 +6014,7 @@ const cardDB = {
 		]
 	},
 	"HE-IN-999":{
-		name:{ "KOR":"Essence of Eternity" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Essence of Eternity" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:false,
 		tags:["Essence"],
 		effect:[
@@ -6026,7 +6026,7 @@ const cardDB = {
 	},
 
 	"HE-UL-PS-001":{
-		name:{ "KOR":"Psychotherapy" }, class:"Healer", type:"Position", isDeck:true, rarity:"궁극", cost:20, owner:1,
+		name:{ "KOR":"Psychotherapy" }, class:"Healer", type:"Position", isDeck:true, rarity:"Ultimate", cost:20, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Silvani", "group:회복", "group:Corruption", "Unimproved"], related:["HE-UL-PS-001-2"],
 		flavorText:{ "KOR":"The Albion Medical Association is a pan-national medical institution founded by the former military doctor and Sylvani physician, Hie Ji.<br>Following her philosophy of prioritizing the saving of lives, it researches and publishes systematic healing methods, making them available for anyone to learn.<br>Currently, it has expanded the horizons of the medical field by establishing concepts for mental illnesses in addition to physical injuries." },
@@ -6052,7 +6052,7 @@ const cardDB = {
 		]
 	},
 	"HE-UL-PS-001-2":{
-		name:{ "KOR":"Improved Psychotherapy" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Psychotherapy +" }, class:"Healer", type:"Position", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["개선됨"],
 		expiration:"always", duration:Infinity,
@@ -6066,7 +6066,7 @@ const cardDB = {
 //#######################################################################################################################################################################################
 
 	"BN-EL-001":{
-		name:{ "KOR":"Wild Card" }, class:"Neutral", type:"만능", isDeck:true, rarity:"None", race:"Eldorian", cost:10, owner:1, nochange:true,
+		name:{ "KOR":"Wild Card" }, class:"Neutral", type:"wildcard", isDeck:true, rarity:"None", race:"Eldorian", cost:10, owner:1, nochange:true,
 		cond:true,
 		tags:["보너스", "불가침"],
 		effect:[
@@ -6076,7 +6076,7 @@ const cardDB = {
 
 
 	"BN-SY-001":{
-		name:{ "KOR":"Engineering: Mekarylon" }, class:"Neutral", type:"Arcane", isDeck:true, rarity:"None", race:"Silvani", cost:15, owner:1,
+		name:{ "KOR":"Engineering: Merylon" }, class:"Neutral", type:"Arcane", isDeck:true, rarity:"None", race:"Silvani", cost:15, owner:1,
 		cond:true,
 		tags:["보너스", "불가침", "Arcane"],
 		effect:[
@@ -6139,7 +6139,7 @@ const cardDB = {
 	},
 	"BN-SY-005-1":{
 		parents:"BN-SY-005",
-		name:{ "KOR":"Death Is Not Permitted" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Death Denied" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		expiration:"turnEnd", duration:1,
 		tags:[],
@@ -6170,9 +6170,9 @@ const cardDB = {
 	},
 	"BN-HA-001-2":{
 		parents:"BN-HA-001",
-		name:{ "KOR":"Custom Combination" }, class:"Healer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Custom Combination" }, class:"Healer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
-		tags:["결합물"],
+		tags:["Combination"],
 		effect:[
 		]
 	},
@@ -6206,7 +6206,7 @@ const cardDB = {
 		]
 	},
 	"BN-TR-003-1":{
-		name:{ "KOR":"Prologue: Harbinger of Doom" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", race:"Beastfolk", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Verse I: The Omen" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", race:"Beastfolk", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["시련", "불가침"], related:["BN-TR-003-2", "BN-TR-003-3", "BN-TR-003-4"], keywords:["Generated"],
 		effect:[
@@ -6218,7 +6218,7 @@ const cardDB = {
 		]
 	},
 	"BN-TR-003-2":{
-		name:{ "KOR":"Interlude: The Coming Calamity" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", race:"Beastfolk", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Verse II: The Calamity" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", race:"Beastfolk", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["시련", "불가침"], related:["BN-TR-003-3", "BN-TR-003-4"],
 		effect:[
@@ -6230,7 +6230,7 @@ const cardDB = {
 		]
 	},
 	"BN-TR-003-3":{
-		name:{ "KOR":"Epilogue: The Final Day" }, class:"Mage", type:"보조", isDeck:true, rarity:"None", race:"Beastfolk", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Verse III: Doomsday" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", race:"Beastfolk", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["시련", "불가침"], related:["BN-TR-003-4"],
 		effect:[
@@ -6243,7 +6243,7 @@ const cardDB = {
 
 	"BN-TR-003-4":{
 		parents:"BN-TR-003",
-		name:{ "KOR":"Ending: Overcoming Fate" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true, noInherit:true,
+		name:{ "KOR":"Finale: Fate Defied" }, class:"Mage", type:"attack", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true, noInherit:true,
 		cond:true,
 		tags:["시련", "불가침"],
 		effect:[
@@ -6252,7 +6252,7 @@ const cardDB = {
 	},
 
 	"BN-TR-004":{
-		name:{ "KOR":"Crossroads of Life and Death" }, class:"Healer", type:"시련", isDeck:true, rarity:"None", race:"Beastfolk", cost:20, owner:1,
+		name:{ "KOR":"Life's Edge" }, class:"Healer", type:"시련", isDeck:true, rarity:"None", race:"Beastfolk", cost:20, owner:1,
 		cond:true,
 		tags:["보너스", "불가침", "시련"],
 		effect:[
@@ -6275,7 +6275,7 @@ const cardDB = {
 //#######################################################################################################################################################################################
 
 	"PN-001":{
-		name:{ "KOR":"Penalty: Masturbation Addiction" }, class:"Penalty", type:"Penalty", isDeck:true, rarity:"None", cost:-15, owner:1, nochange:true,
+		name:{ "KOR":"Penalty: Masturbation" }, class:"Penalty", type:"Penalty", isDeck:true, rarity:"None", cost:-15, owner:1, nochange:true,
 		cond:true,
 		tags:["Deck빌딩"],
 		effect:[
@@ -6325,7 +6325,7 @@ const cardDB = {
 		]
 	},
 	"PN-007":{
-		name:{ "KOR":"Penalty: Erogenous Zone Development" }, class:"Penalty", type:"Penalty", isDeck:true, rarity:"None", cost:-15, owner:1, nochange:true,
+		name:{ "KOR":"Penalty: Sensitivity" }, class:"Penalty", type:"Penalty", isDeck:true, rarity:"None", cost:-15, owner:1, nochange:true,    
 		cond:true,
 		tags:["Deck빌딩"],
 		effect:[
@@ -6341,7 +6341,7 @@ const cardDB = {
 		]
 	},
 	"PN-009":{
-		name:{ "KOR":"Penalty: Sexual Frustration" }, class:"Penalty", type:"Penalty", isDeck:true, rarity:"None", cost:-5, owner:1, nochange:true,
+		name:{ "KOR":"Penalty: Frustration" }, class:"Penalty", type:"Penalty", isDeck:true, rarity:"None", cost:-5, owner:1, nochange:true,
 		cond:true,
 		tags:["Deck빌딩"],
 		effect:[
@@ -6382,7 +6382,7 @@ const cardDB = {
 	},
 
 	"B1-UC-001":{
-		name:{ "KOR":"Clothes Ripping" }, class:"Goblins", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Clothes Ripping" }, class:"Goblins", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "노말전용"], related:["Penalty"],
 		effect:[
@@ -6431,7 +6431,7 @@ const cardDB = {
 		]
 	},
 	"B1-AT-004":{
-		name:{ "KOR":"Irresponsible Creampie" }, class:"Goblins", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Creampie" }, class:"Goblins", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -6441,7 +6441,7 @@ const cardDB = {
 		]
 	},
 	"B1-SU-001":{
-		name:{ "KOR":"Hair Pulling" }, class:"Goblins", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Hair Pulling" }, class:"Goblins", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B1-PN-001"],
 		effect:[
@@ -6450,7 +6450,7 @@ const cardDB = {
 		]
 	},
 	"B1-SU-002":{
-		name:{ "KOR":"Mounting" }, class:"Goblins", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Mounting" }, class:"Goblins", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -6472,7 +6472,7 @@ const cardDB = {
 
 	"B1-UC-001+":{
 		parents:"B1-UC-001",
-		name:{ "KOR":"Clothes Ripping+" }, class:"Goblins", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Clothes Ripping+" }, class:"Goblins", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "Hard Only"], related:["Penalty"],
 		effect:[
@@ -6506,7 +6506,7 @@ const cardDB = {
 	//
 
 	"B2-PA-001":{
-		name:{ "KOR":"Hypnotic Brainwashing" }, class:"Villager", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Brainwashing" }, class:"Villager", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion능력", "노말전용"], related:["B2-PA-001-1", "B2-PA-001-2"],
 		expiration:"always", duration:Infinity,
@@ -6558,7 +6558,7 @@ const cardDB = {
 	},
 
 	"B2-UC-001":{
-		name:{ "KOR":"Strip" }, class:"Villager", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Strip" }, class:"Villager", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "노말전용"], related:["B2-PN-001"],
 		effect:[
@@ -6594,7 +6594,7 @@ const cardDB = {
 			{trigger:"used", cond:true, type:"attack", target:"op"},
 			{trigger:"used", cond:true, type:"transform", target:"op",
 			info:{
-				target:"opDeck.selectCards(type, 보조, 1)",
+				target:"opDeck.selectCards(type, Support, 1)",
 				value:"B2-PN-001",
 			}},
 		]
@@ -6620,7 +6620,7 @@ const cardDB = {
 		]
 	},
 	"B2-SU-002":{
-		name:{ "KOR":"Stay Still" }, class:"Villager", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Stay Still" }, class:"Villager", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -6643,7 +6643,7 @@ const cardDB = {
 		]
 	},
 	"B2-SU-004":{
-		name:{ "KOR":"Cognitive Impairment" }, class:"Villager", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Cognitive Impairment" }, class:"Villager", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -6655,7 +6655,7 @@ const cardDB = {
 
 	"B2-PA-001+":{
 		parents:"B2-PA-001",
-		name:{ "KOR":"Hypnotic Brainwashing+" }, class:"Villager", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Brainwashing+" }, class:"Villager", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion능력", "Hard Only"], related:["B2-PA-001-1+", "B2-PA-001-2+"],
 		expiration:"always", duration:Infinity,
@@ -6698,7 +6698,7 @@ const cardDB = {
 
 	"B2-UC-001+":{
 		parents:"B2-UC-001",
-		name:{ "KOR":"Strip+" }, class:"Villager", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Strip+" }, class:"Villager", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "Hard Only"], related:["B2-PN-001"],
 		effect:[
@@ -6736,7 +6736,7 @@ const cardDB = {
 			{trigger:"used", cond:true, type:"attack", target:"op"},
 			{trigger:"used", cond:true, type:"transform", target:"op",
 			info:{
-				target:"opDeck.selectCards(type, 보조, 2)",
+				target:"opDeck.selectCards(type, Support, 2)",
 				value:"B2-PN-001",
 			}},
 		]
@@ -6766,7 +6766,7 @@ const cardDB = {
 		]
 	},
 	"B3-PA-001-1":{
-		name:{ "KOR":"Tentacle Insertion" }, class:"Tentacle Slime", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Tentacle Insertion" }, class:"Tentacle Slime", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion토큰", "노말전용"],
 		effect:[
@@ -6776,7 +6776,7 @@ const cardDB = {
 	},
 
 	"B3-UC-001":{
-		name:{ "KOR":"Clothes-Melting Slime" }, class:"Tentacle Slime", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Clothes-Melting" }, class:"Tentacle Slime", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -6817,7 +6817,7 @@ const cardDB = {
 		]
 	},
 	"B3-SU-001":{
-		name:{ "KOR":"Restraining Tentacles" }, class:"Tentacle Slime", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Restraining Tentacles" }, class:"Tentacle Slime", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -6827,7 +6827,7 @@ const cardDB = {
 		]
 	},
 	"B3-SU-002":{
-		name:{ "KOR":"Saliva Ingestion" }, class:"Tentacle Slime", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Saliva Ingestion" }, class:"Tentacle Slime", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "노말전용"],
 		effect:[
@@ -6836,7 +6836,7 @@ const cardDB = {
 		]
 	},
 	"B3-SU-003":{
-		name:{ "KOR":"Protective Slime Secretion" }, class:"Tentacle Slime", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Protective Secretion" }, class:"Tentacle Slime", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -6868,7 +6868,7 @@ const cardDB = {
 	},
 	"B3-PA-001-1+":{
 		parents:"B3-PA-001-1",
-		name:{ "KOR":"Tentacle Insertion+" }, class:"Tentacle Slime", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Tentacle Insertion+" }, class:"Tentacle Slime", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion토큰", "Hard Only"],
 		effect:[
@@ -6891,7 +6891,7 @@ const cardDB = {
 	},
 	"B3-SU-002+":{
 		parents:"B3-SU-002",
-		name:{ "KOR":"Saliva Ingestion+" }, class:"Tentacle Slime", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Saliva Ingestion+" }, class:"Tentacle Slime", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "Hard Only"],
 		effect:[
@@ -6923,7 +6923,7 @@ const cardDB = {
 		]
 	},
 	"B4-UC-001":{
-		name:{ "KOR":"Mischievous Prank" }, class:"Imp", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Mischief" }, class:"Imp", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B4-PA-001"],
 		effect:[
@@ -6933,7 +6933,7 @@ const cardDB = {
 		]
 	},
 	"B4-AT-001":{
-		name:{ "KOR":"I Wanna Touch Your Boobs" }, class:"Imp", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Cheeky Grope" }, class:"Imp", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -6942,7 +6942,7 @@ const cardDB = {
 		]
 	},
 	"B4-AT-002":{
-		name:{ "KOR":"Hug Me" }, class:"Imp", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Clingy Hug" }, class:"Imp", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -6960,7 +6960,7 @@ const cardDB = {
 		]
 	},
 	"B4-SU-001":{
-		name:{ "KOR":"Now You're It" }, class:"Imp", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Now You're It" }, class:"Imp", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:{v1:"자신.기록.이전.이벤트.Orgasm", op:">", v2:0},
 		tags:["ChampionDeck"], related:["B4-PA-001"],
 		effect:[
@@ -6970,7 +6970,7 @@ const cardDB = {
 		]
 	},
 	"B4-SU-002":{
-		name:{ "KOR":"Loser Gets a Punishment" }, class:"Imp", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Penalty Game" }, class:"Imp", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:{v1:"Opponent.기록.이전.이벤트.Orgasm", op:">", v2:0},
 		tags:["ChampionDeck"], related:["B4-PA-001"],
 		effect:[
@@ -6980,7 +6980,7 @@ const cardDB = {
 		]
 	},
 	"B4-SU-003":{
-		name:{ "KOR":"Teasing" }, class:"Imp", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Teasing" }, class:"Imp", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:{v1:"Opponent.기록.이전.사용.length", op:">=", v2:2},
 		tags:["ChampionDeck", "노말전용"], related:["B4-PA-001"],
 		effect:[
@@ -7002,7 +7002,7 @@ const cardDB = {
 	},
 	"B4-UC-001+":{
 		parents:"B4-UC-001",
-		name:{ "KOR":"Mischievous Prank+" }, class:"Imp", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Mischievous Prank+" }, class:"Imp", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B4-PA-001+"],
 		effect:[
@@ -7023,7 +7023,7 @@ const cardDB = {
 	},
 	"B4-SU-001+":{
 		parents:"B4-SU-001",
-		name:{ "KOR":"Now You're It+" }, class:"Imp", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Now You're It+" }, class:"Imp", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:{v1:"자신.기록.이전.이벤트.Orgasm", op:">", v2:0},
 		tags:["ChampionDeck"], related:["B4-PA-001+"],
 		effect:[
@@ -7035,7 +7035,7 @@ const cardDB = {
 	},
 	"B4-SU-002+":{
 		parents:"B4-SU-002",
-		name:{ "KOR":"Loser Gets a Punishment+" }, class:"Imp", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Penalty Game+" }, class:"Imp", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:{v1:"Opponent.기록.이전.이벤트.Orgasm", op:">", v2:0},
 		tags:["ChampionDeck"], related:["B4-PA-001+"],
 		effect:[
@@ -7047,7 +7047,7 @@ const cardDB = {
 	},
 	"B4-SU-003+":{
 		parents:"B4-SU-003",
-		name:{ "KOR":"Teasing+" }, class:"Imp", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Teasing+" }, class:"Imp", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:{v1:"Opponent.기록.이전.사용.length", op:">=", v2:2},
 		tags:["ChampionDeck", "Hard Only"], related:["B4-PA-001+"],
 		effect:[
@@ -7081,7 +7081,7 @@ const cardDB = {
 		]
 	},
 	"B5-UC-001":{
-		name:{ "KOR":"Armor Break" }, class:"Tauros", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Armor Break" }, class:"Tauros", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -7111,7 +7111,7 @@ const cardDB = {
 		]
 	},
 	"B5-SU-001":{
-		name:{ "KOR":"Courtship" }, class:"Tauros", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Courtship" }, class:"Tauros", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -7140,7 +7140,7 @@ const cardDB = {
 	},
 	"B5-UC-001+":{
 		parents:"B5-UC-001",
-		name:{ "KOR":"Armor Break+" }, class:"Tauros", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Armor Break+" }, class:"Tauros", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"],
 		effect:[
@@ -7225,7 +7225,7 @@ const cardDB = {
 	},
 
 	"B6-UC-001":{
-		name:{ "KOR":"Corrosive Sap" }, class:"Mushroom Man", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Corrosive Sap" }, class:"Mushroom Man", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true, related:["B6-ST-001", "tag:Spore"],
 		tags:["ChampionDeck"],
 		effect:[
@@ -7235,7 +7235,7 @@ const cardDB = {
 		]
 	},
 	"B6-AT-001":{
-		name:{ "KOR":"Spore-Cum Breeding" }, class:"Mushroom Man", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Spore-Cum" }, class:"Mushroom Man", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B6-ST-001", "tag:Spore"],
 		effect:[
@@ -7255,7 +7255,7 @@ const cardDB = {
 		]
 	},
 	/*"B6-SU-001":{
-		name:{ "KOR":"Parasitic Control" }, class:"Mushroom Man", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Parasitic Control" }, class:"Mushroom Man", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["tag:Spore"],
 		effect:[
@@ -7274,7 +7274,7 @@ const cardDB = {
 		]
 	},*/
 	"B6-SU-002":{
-		name:{ "KOR":"Territory Expansion" }, class:"Mushroom Man", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Territory Expansion" }, class:"Mushroom Man", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B6-ST-001", "tag:Spore"],
 		effect:[
@@ -7283,7 +7283,7 @@ const cardDB = {
 		]
 	},
 	"B6-SU-003":{
-		name:{ "KOR":"Mental Synchronization" }, class:"Mushroom Man", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Mental Connection" }, class:"Mushroom Man", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B6-SU-003-2"],
 		effect:[
@@ -7322,7 +7322,7 @@ const cardDB = {
 	},
 	"B6-UC-001+":{
 		parents:"B6-UC-001",
-		name:{ "KOR":"Corrosive Sap+" }, class:"Mushroom Man", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Corrosive Sap+" }, class:"Mushroom Man", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true, related:["B6-ST-001", "tag:Spore"],
 		tags:["ChampionDeck", "Hard Only"],
 		effect:[
@@ -7332,7 +7332,7 @@ const cardDB = {
 	},
 	"B6-AT-001+":{
 		parents:"B6-AT-001",
-		name:{ "KOR":"Spore-Cum Breeding+" }, class:"Mushroom Man", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Spore-Cum +" }, class:"Mushroom Man", type:"attack", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "Hard Only"], related:["B6-ST-001", "tag:Spore"],
 		effect:[
@@ -7384,9 +7384,9 @@ const cardDB = {
 		]
 	},
 	"B7-UC-001":{
-		name:{ "KOR":"Skillful Undressing" }, class:"Blonde Thug", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Skillful Undressing" }, class:"Blonde Thug", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["ChampionDeck", "Blonde Thug탈의"], related:["tag:Blonde Thug탈의"],
+		tags:["ChampionDeck", "Blonde ThugStripping"], related:["tag:Blonde ThugStripping"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"능숙하게벗기기"},
 			{trigger:"used", cond:true, type:"clothes", value:"uncloth"},
@@ -7433,9 +7433,9 @@ const cardDB = {
 		]
 	},
 	/*"B7-SU-001":{
-		name:{ "KOR":"Melting Kiss" }, class:"Blonde Thug", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Melting Kiss" }, class:"Blonde Thug", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["ChampionDeck", "Blonde Thug보조"], related:["tag:Blonde Thug보조"],
+		tags:["ChampionDeck", "Blonde ThugSupport"], related:["tag:Blonde ThugSupport"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"섞여드는kiss"},
 			{trigger:"used", cond:true, type:"lewd", op:"add", value:-2},
@@ -7443,18 +7443,18 @@ const cardDB = {
 		]
 	},*/
 	"B7-SU-002":{
-		name:{ "KOR":"Casual Skinship" }, class:"Blonde Thug", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Casual Skinship" }, class:"Blonde Thug", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["ChampionDeck", "Blonde Thug보조"], related:["tag:Blonde Thug보조"],
+		tags:["ChampionDeck", "Blonde ThugSupport"], related:["tag:Blonde ThugSupport"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"스스럼없는스킨십"},
 			{trigger:"used", cond:true, type:"Heat", op:"add", value:"specialV06", maxValue:"5"},
 		]
 	},
 	"B7-SU-003":{
-		name:{ "KOR":"Spreading Legs" }, class:"Blonde Thug", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Spreading Legs" }, class:"Blonde Thug", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["ChampionDeck", "Blonde Thug보조"], related:["tag:Blonde Thug보조"],
+		tags:["ChampionDeck", "Blonde ThugSupport"], related:["tag:Blonde ThugSupport"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"다리벌리기"},
 			{trigger:"used", cond:true, type:"Heat", op:"add", value:2},
@@ -7462,9 +7462,9 @@ const cardDB = {
 		]
 	},
 	/*"B7-SU-004":{
-		name:{ "KOR":"Licking and Sucking" }, class:"Blonde Thug", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Licking and Sucking" }, class:"Blonde Thug", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
-		tags:["ChampionDeck", "Blonde Thug보조"], related:["tag:Blonde Thug보조"],
+		tags:["ChampionDeck", "Blonde ThugSupport"], related:["tag:Blonde ThugSupport"],
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"핥고빨기"},
 			{trigger:"used", cond:{v1:"Heat", op:">", v2:1}, condOmit:true, type:"Heat", op:"add", value:2},
@@ -7547,7 +7547,7 @@ const cardDB = {
 		]
 	},
 	"B8-PA-001-4":{
-		name:{ "KOR":"Engrave Pain onto the Body" }, class:"Trainer", type:"상태", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Engrave Pain" }, class:"Trainer", type:"상태", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Rule"], related:["B8-PA-001-1"],
 		expiration:"turnEnd", duration:1,
@@ -7557,7 +7557,7 @@ const cardDB = {
 		]
 	},
 	"B8-PA-001-5":{
-		name:{ "KOR":"Be Obedient to Commands" }, class:"Trainer", type:"상태", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Be Obedient" }, class:"Trainer", type:"상태", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Rule"], related:["B8-PA-001-1"],
 		expiration:"turnEnd", duration:1,
@@ -7578,7 +7578,7 @@ const cardDB = {
 	},
 
 	"B8-UC-001":{
-		name:{ "KOR":"Attire Correction" }, class:"Trainer", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Attire Correction" }, class:"Trainer", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B8-UC-001-1"],
 		effect:[
@@ -7589,7 +7589,7 @@ const cardDB = {
 		]
 	},
 	"B8-UC-001-1":{
-		name:{ "KOR":"Desperate Resistance" }, class:"Trainer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Desperate Resistance" }, class:"Trainer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B8-PA-001-1"],
 		effect:[
@@ -7639,7 +7639,7 @@ const cardDB = {
 		]
 	},
 	"B8-SU-001":{
-		name:{ "KOR":"Hope Torture" }, class:"Trainer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Hope Torture" }, class:"Trainer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B8-PA-001-1"],
 		effect:[
@@ -7648,7 +7648,7 @@ const cardDB = {
 		]
 	},
 	"B8-SU-002":{
-		name:{ "KOR":"Erogenous Zone Training" }, class:"Trainer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Sensitivity Training" }, class:"Trainer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B8-PA-001-1"],
 		effect:[
@@ -7668,7 +7668,7 @@ const cardDB = {
 		]
 	},
 	"B8-SU-003":{
-		name:{ "KOR":"Whipping" }, class:"Trainer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Whipping" }, class:"Trainer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck"], related:["B8-PA-001-1"],
 		effect:[
@@ -7691,7 +7691,7 @@ const cardDB = {
 	},
 	"B8-UC-001+":{
 		parents:"B8-UC-001",
-		name:{ "KOR":"Attire Correction+" }, class:"Trainer", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Attire Correction+" }, class:"Trainer", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "Hard Only"], related:["B8-UC-001-1"],
 		effect:[
@@ -7734,7 +7734,7 @@ const cardDB = {
 	},
 	"B8-SU-002+":{
 		parents:"B8-SU-002",
-		name:{ "KOR":"Erogenous Zone Training+" }, class:"Trainer", type:"보조", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Sensitivity Training+" }, class:"Trainer", type:"Support", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "Hard Only"], related:["B8-PA-001-1"],
 		effect:[
@@ -7758,7 +7758,7 @@ const cardDB = {
 	//
 
 	"BC-UC-001":{
-		name:{ "KOR":"Wandering" }, class:"Neutral", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Wandering" }, class:"Neutral", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "챌린지전용"],
 		effect:[
@@ -7826,7 +7826,7 @@ const cardDB = {
 	},
 
 	"BC6-PA-001":{
-		name:{ "KOR":"Indiscriminate Proliferation" }, class:"Mushroom Man", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Rampant Growth" }, class:"Mushroom Man", type:"특성", isDeck:false, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["Champion능력", "챌린지전용"], related:["BC6-PA-001-1"],
 		expiration:"always", duration:Infinity,
@@ -7854,7 +7854,7 @@ const cardDB = {
 		]
 	},
 	"BC8-UC-001":{
-		name:{ "KOR":"Wandering" }, class:"Neutral", type:"탈의", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
+		name:{ "KOR":"Wandering" }, class:"Neutral", type:"Stripping", isDeck:true, rarity:"None", cost:0, owner:0, nochange:true,
 		cond:true,
 		tags:["ChampionDeck", "챌린지전용"],
 		effect:[

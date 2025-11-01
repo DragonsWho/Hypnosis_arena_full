@@ -101,19 +101,19 @@ const dictionary = {
 	"Poison Pouch":{ "KOR":"Poison Pouch" },
 
 	"attack":{ "KOR":"Attack" },
-	"보조":{ "KOR":"Support" },
+	"Support":{ "KOR":"Support" },
 	"자세":{ "KOR":"Posture" },
 	"Position":{ "KOR":"Position" },
-	"탈의":{ "KOR":"Stripping" },
+	"Stripping":{ "KOR":"Stripping" },
 	"상태":{ "KOR":"State" },
 	"특성":{ "KOR":"Trait" },
 	"Penalty":{ "KOR":"Penalty" },
 	"Magic":{ "KOR":"Magic" },
-	"Magic Circle":{ "KOR":"Magic Circle" },
-	"결합물":{ "KOR":"Combined" },
+	"Runes":{ "KOR":"Runes" },
+	"Combination":{ "KOR":"Combined" },
 	"Essence":{ "KOR":"Essence" },
 
-	"만능":{ "KOR":"Wildcard" },
+	"wildcard":{ "KOR":"Wildcard" },
 	"Arcane":{ "KOR":"Arcane" },
 	"커스텀":{ "KOR":"Custom" },
 	"시련":{ "KOR":"Trial" },
@@ -121,9 +121,9 @@ const dictionary = {
 	"독":{ "KOR":"Poison" },
 	 
 
-	"일반":{ "KOR":"Normal" },
-	"숙련":{ "KOR":"Skilled" },
-	"궁극":{ "KOR":"Ultimate" },
+	"Normal":{ "KOR":"Normal" },
+	"expert":{ "KOR":"Skilled" },
+	"Ultimate":{ "KOR":"Ultimate" },
 
 	"자극":{ "KOR":"[Stimulation]" },
 
@@ -174,7 +174,7 @@ const dictionary = {
 	"현재":{ "KOR":"Currently" },
 	"즉시":{ "KOR":"Immediately" },
 	"무작위":{ "KOR":"Random" },
-	"지속":{ "KOR":"Passive" },
+	"Passive":{ "KOR":"Passive" },
 	"소지":{ "KOR":"In Hand" },
 	"자동":{ "KOR":"Auto" },
 
@@ -196,19 +196,19 @@ const dictionary = {
 	"생성된 card": { "KOR": "Generated Card" },
 	"변형 목적의 card": { "KOR": "Card for Transformation" }, 
 	"다른 독": { "KOR": "another Poison" },
-	"즉발 Magic": { "KOR": "Instant Magic" },
-	"영창 Magic": { "KOR": "Chant Magic" },
-	"집중 Magic": { "KOR": "Focus Magic" },
+	"즉발 Magic": { "KOR": "Instant" },
+	"영창 Magic": { "KOR": "Chant" },
+	"집중 Magic": { "KOR": "Focus" },
 	"두 번 이상 변형된 card": { "KOR": "Card transformed twice or more" },
 	"두 번 이상 변형된": { "KOR": "Transformed twice or more" },
 	"개선된 Position": { "KOR": "Improved Position" },
  
 	"Gem": { "KOR": "Jewel" }, 
 
-	"진홍색 Magic Circle": { "KOR": "Crimson Magic Circle" },
-	"담청색 Magic Circle": { "KOR": "Azure Magic Circle" },
-	"황금색 Magic Circle": { "KOR": "Golden Magic Circle" },
-	"순백색 Magic Circle": { "KOR": "White Magic Circle" },
+	"진홍색 Runes": { "KOR": "Crimson Runes" },
+	"담청색 Runes": { "KOR": "Azure Runes" },
+	"황금색 Runes": { "KOR": "Golden Runes" },
+	"순백색 Runes": { "KOR": "White Runes" },
 	"슬롯에 없는 Magic": { "KOR": "Magic not in a slot" },
 
 
@@ -257,7 +257,7 @@ const ruleDescription = {
 		},
 		{
 			"title": "Deck Building (2/6): Penalty Cards",
-			"desc": "<b>Penalty Cards</b> are the flaws and weaknesses you carry into the arena.<br>Just having one in your deck usually saddles you with a nasty passive effect.<br>In return, you get extra points to spend on better cards.<br><br><br>There are <b>10 types of Penalty Cards</b> to choose from when building your deck.<br>The more devastating the penalty, the more points you get.<br><br>If you've loaded up on expensive, high-grade cards and find yourself short on points or deck slots, Penalty Cards are a tempting way out.<br><br><br>You can get rid of a Penalty Card's effect during a duel.<br>Playing it, discarding it with another card's effect, transforming it, combining it...<br><b>Once the card is gone from your deck, its nasty effect is gone too.</b><br><br><br><b>[Penalty: Declare Defeat]</b> is a special case. It only hurts you if you actually play it.<br>In other words, as long as it stays in your deck, it's a dead card with no downside.<br>It doesn't grant any points, but it's a reliable way to fill an empty deck slot for free."
+			"desc": "<b>Penalty Cards</b> are the flaws and weaknesses you carry into the arena.<br>Just having one in your deck usually saddles you with a nasty passive effect.<br>In return, you get extra points to spend on better cards.<br><br><br>There are <b>10 types of Penalty Cards</b> to choose from when building your deck.<br>The more devastating the penalty, the more points you get.<br><br>If you've loaded up on expensive, high-grade cards and find yourself short on points or deck slots, Penalty Cards are a tempting way out.<br><br><br>You can get rid of a Penalty Card's effect during a duel.<br>Playing it, discarding it with another card's effect, transforming it, combining it...<br><b>Once the card is gone from your deck, its nasty effect is gone too.</b><br><br><br><b>[Penalty: Surrender]</b> is a special case. It only hurts you if you actually play it.<br>In other words, as long as it stays in your deck, it's a dead card with no downside.<br>It doesn't grant any points, but it's a reliable way to fill an empty deck slot for free."
 		},
 		{
 			"title": "Deck Building (3/6): Traits",
@@ -265,7 +265,7 @@ const ruleDescription = {
 		},
 		{
 			"title": "Deck Building (4/6): Special Traits",
-			"desc": "You're not just another challenger. You're special. And you've caught some unwanted attention.<br><br><br><b>Intervention</b> is a <b>Disadvantageous Trait</b> that allows the arena staff to meddle in your duel.<br>They might block you from playing cards, force an automatic loss, slap you with debuffs, or just keep pushing you closer to the edge...<br><b>They will find creative ways to screw you over.</b><br><br>You can only choose one type of Intervention, and its effect often changes based on your race.<br>It provides a massive point bonus, but the interference is just as potent and dangerous.<br><br><hr><br>That voice whispering in your ear... you can choose to embrace it fully.<br>It offers limitless power, but the price for such a gift is always steep.<br><br>If you choose the common trait <b>[Morvain's Shadow]</b>, the limits on points, deck size, and traits are all removed. However,<br><b>you will be locked into a specific ending, and your playthrough will not be saved.</b><br><br>Use this trait when you want to experiment freely with card and trait combinations without any restrictions.<br>But the fate of those who embrace corrupting power is always the same.<br><b>If you want to see a proper ending, stay away from this trait.</b>"
+			"desc": "You're not just another challenger. You're special. And you've caught some unwanted attention.<br><br><br><b>Trial</b> is a <b>Disadvantageous Trait</b> that allows the arena staff to meddle in your duel.<br>They might block you from playing cards, force an automatic loss, slap you with debuffs, or just keep pushing you closer to the edge...<br><b>They will find creative ways to screw you over.</b><br><br>You can only choose one type of Trial, and its effect often changes based on your race.<br>It provides a massive point bonus, but the interference is just as potent and dangerous.<br><br><hr><br>That voice whispering in your ear... you can choose to embrace it fully.<br>It offers limitless power, but the price for such a gift is always steep.<br><br>If you choose the common trait <b>[Morvain's Shadow]</b>, the limits on points, deck size, and traits are all removed. However,<br><b>you will be locked into a specific ending, and your playthrough will not be saved.</b><br><br>Use this trait when you want to experiment freely with card and trait combinations without any restrictions.<br>But the fate of those who embrace corrupting power is always the same.<br><b>If you want to see a proper ending, stay away from this trait.</b>"
 		},
 		{
 			"title": "Deck Building (5/6): Race Bonus Cards",
@@ -321,7 +321,7 @@ const ruleDescription = {
 		},
 		{
 			"title": "Effects & Rules (4/4): Random Penalty Cards",
-			"desc": "Effects that give you a random <b>Penalty Card</b> during a duel are dangerous and can instantly change the tide of battle.<br>This effect gives you one of the 10 standard Penalty Cards at random.<br>Since a Penalty Card's negative effect applies the moment you get it, this can lead to unexpected disasters.<br><br><br><br>However, some cards have a built-in <b>safeguard</b> to prevent them from appearing in game-losing situations.<br>The following Penalty Cards will not be generated under these specific conditions:<br><br><br><b>[Penalty: Erogenous Zone Development]</b><br><small><i>(<b>Held: Arousal Limit -1</b>)</i></small><br>This card will not appear if you are only 1 Arousal away from climaxing.<br><br><br><b>[Penalty: Masochism]</b><br><small><i>(<b>Held: Orgasm Limit -1</b>)</i></small><br>This card will not appear if you are only 1 climax away from losing the duel.<br><br><br><b>[Penalty: Frustration]</b><br><small><i>(<b>Held:</b> [End of Round] If 6 or more rounds have passed, you lose.)</i></small><br>This card will not appear from round 6 onwards.<br><br><br>This safeguard prevents instant-loss scenarios and gives you a chance to fight back.<br>However, the other Penalty Cards have no such protection, so be careful."
+			"desc": "Effects that give you a random <b>Penalty Card</b> during a duel are dangerous and can instantly change the tide of battle.<br>This effect gives you one of the 10 standard Penalty Cards at random.<br>Since a Penalty Card's negative effect applies the moment you get it, this can lead to unexpected disasters.<br><br><br><br>However, some cards have a built-in <b>safeguard</b> to prevent them from appearing in game-losing situations.<br>The following Penalty Cards will not be generated under these specific conditions:<br><br><br><b>[Penalty: Hypersensitive]</b><br><small><i>(<b>Held: Arousal Limit -1</b>)</i></small><br>This card will not appear if you are only 1 Arousal away from climaxing.<br><br><br><b>[Penalty: Masochism]</b><br><small><i>(<b>Held: Orgasm Limit -1</b>)</i></small><br>This card will not appear if you are only 1 climax away from losing the duel.<br><br><br><b>[Penalty: Frustration]</b><br><small><i>(<b>Held:</b> [End of Round] If 6 or more rounds have passed, you lose.)</i></small><br>This card will not appear from round 6 onwards.<br><br><br>This safeguard prevents instant-loss scenarios and gives you a chance to fight back.<br>However, the other Penalty Cards have no such protection, so be careful."
 		}
 	]
 };
@@ -517,7 +517,7 @@ const champList = {
 			],
 			"B2-AT-002":[
 				{cond:true, priority:2},
-				{cond:{v1:"OpponentDeck.count(type, 보조)", op:"==", v2:"0"}, priority:-Infinity},
+				{cond:{v1:"OpponentDeck.count(type, Support)", op:"==", v2:"0"}, priority:-Infinity},
 			],
 			"B2-AT-003":[
 				{cond:true, priority:-1000},
@@ -1251,7 +1251,7 @@ His boyish form isn't just a disguise — it's a survival tactic. <br>It takes f
 			],
 			"B2-AT-002+":[
 				{cond:true, priority:2},
-				{cond:{v1:"OpponentDeck.count(type, 보조)", op:"==", v2:"0"}, priority:-100},
+				{cond:{v1:"OpponentDeck.count(type, Support)", op:"==", v2:"0"}, priority:-100},
 			],
 			"B2-AT-003":[
 				{cond:true, priority:-1000},
@@ -1927,6 +1927,42 @@ look: { "KOR": "An ordinary man you've captured for your amusement." },
 			],
 		},
 	},
+
+	"bossC10_SECRET":{
+		id:"bossC10_SECRET",
+		name:{ "KOR":"Sanrea" }, fullName:{ "KOR":"Sanrea, The Dark Goddess" }, img:"boss9", category:"챌린지", // Используем ту же категорию, чтобы появиться в Challenge Mode
+		condDesc:{ "KOR":`??` },
+		look: { "KOR":"The true form of a puppet freed from its strings." },
+		description: { "KOR":`
+                This cannot be. The broken slave stands before you, but she is... different.<br><br>
+                The leash is gone. The vacant, submissive look in her eyes has been replaced by a chilling, divine radiance. The air crackles with an immense power that doesn't belong to her—or any mortal.<br><br>
+                A low, amused chuckle echoes in your mind, a voice that is both everywhere and nowhere at once. It is the voice of the Dark Deity, the true master of the artifact you hold.<br><br>
+                <b>"Amusing,"</b> the voice purrs. <b>"You thought you were the master, little thing? You were both my puppets, dancing on strings of lust and power. But your little game of domination has grown stale."</b><br><br>
+                Power surges from the artifact, not into you, but into the woman standing before you. Her form shimmers, remade by the deity's whim.<br><br>
+                <b>"Let us have a true spectacle,"</b> the voice commands, dripping with anticipation. <b>"A real battle between two pretenders to my throne. I will grant you both a taste of my power. Now... entertain me."</b><br><br>
+                This is no longer a game of control. This is a trial by fire, orchestrated by a bored god.`
+        },
+        stats: { // Статы пока оставляем те же, потом усилим
+            exciteL: 5,
+            orgasmL: 4,
+            specialties: { "KOR":[
+            "Empowered by the Dark Deity.",
+            "Wields a fraction of true divine power."] }
+        },
+        deck:[ // Временно используем колоду рабыни
+			"BC8-UC-001",
+			"BC8-AT-001",
+		],
+		state:[ // Временно используем ее пассивки
+			"BC8-PA-001"
+		],
+		cardPriority:{ // И ее же приоритеты
+			"BC8-UC-001":[ {cond:true, priority:Infinity} ],
+			"BC8-AT-001":[ {cond:true, priority:-1000} ],
+		},
+	},
+
+	
 }
 
 
@@ -2753,7 +2789,7 @@ const customStructure = {
             		{ value: "nelson", text: "Pester", condition: {v1:"커스텀.Class", op:"==", v2:"Assassin"} },
             		{ value: "manufacture", text: "Crafted", condition: {v1:"커스텀.Class", op:"==", v2:"Assassin"} },
             		{ value: "instantspell", text: "Instant Spell", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
-            		{ value: "magiccircle", text: "Magic Circle", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
+            		{ value: "magiccircle", text: "Runes", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
             		{ value: "jewel", text: "Gem", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
             		{ value: "essence", text: "Essence", condition: {v1:"커스텀.Class", op:"==", v2:"Healer"} },
                 ],
@@ -2806,7 +2842,7 @@ const customStructure = {
 				            { value: "essence1", text: "Essence of Life" },
 				            { value: "essence2", text: "Essence of Thorns" },
 				            { value: "essence3", text: "Essence of Shadow" },
-				            { value: "essence4", text: "Essence of Awakening" },
+				            { value: "essence4", text: "Essence of Desire" },
 				            { value: "essence5", text: "Essence of Serenity" },
 				            { value: "essence6", text: "Essence of Echo" },
 				            { value: "essence7", text: "Essence of Stillness" },
@@ -3063,7 +3099,7 @@ const customStructure = {
                 "options": [
 		            { value: "all", text: "All Card" },
 		            { value: "neutral", text: "Neutral Card" },
-		            { value: "magiccircle", text: "Magic Circle Card" },
+		            { value: "magiccircle", text: "Runes Card" },
 		            { value: "jewel", text: "Gem Card" },
 		            { value: "penalty", text: "Penalty Card" }
                 ],
@@ -3136,7 +3172,7 @@ const customStructure = {
                 "options": [
 		            { value: "chantspell", text: "Chant Spell" },
 		            { value: "focusedspell", text: "Focus Spell" },
-		            { value: "magiccircle", text: "Magic Circle Card" }
+		            { value: "magiccircle", text: "Runes Card" }
                 ],
                 "width": 50,
                 "subfields":[
@@ -3486,20 +3522,20 @@ const variableData = [
         "options": [
             { value: "all", text: "All card" },
             { value: "attack", text: "attack card" },
-            { value: "support", text: "보조 card" },
+            { value: "support", text: "Support card" },
             { value: "neutral", text: "Neutral card" },
             { value: "class", text: "Class card" },
-            { value: "normal", text: "일반 card" },
-            { value: "expert", text: "숙련 card" },
-            { value: "ultimate", text: "궁극 card" },
+            { value: "normal", text: "Normal card" },
+            { value: "expert", text: "expert card" },
+            { value: "ultimate", text: "Ultimate card" },
             { value: "penalty", text: "Penalty card" },
             { value: "created", text: "생성된 card", exclude:["get"] },
             { value: "nelson", text: "조르기", condition: {v1:"커스텀.Class", op:"==", v2:"Assassin"} },
             { value: "spell", text: "Magic card", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
-            { value: "magiccircle", text: "Magic Circle card", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
+            { value: "magiccircle", text: "Runes card", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
             { value: "jewel", text: "Gem card", condition: {v1:"커스텀.Class", op:"==", v2:"Mage"} },
             { value: "essence", text: "Essence card", condition: {v1:"커스텀.Class", op:"==", v2:"Healer"} },
-            { value: "combination", text: "결합물 card", condition: {v1:"커스텀.Class", op:"==", v2:"Healer"} }
+            { value: "combination", text: "Combination card", condition: {v1:"커스텀.Class", op:"==", v2:"Healer"} }
         ],
         "conditions": ["deck", "use", "get", "discard"],
         "width": 33,
@@ -3609,7 +3645,7 @@ const keywordDict = {
     },
 	"변형목적": {
         name: { "KOR":"Transform Target" },
-        desc: { "KOR":"Cards that exist for the purpose of being transformed, such as Magic Circles or Gems." }
+        desc: { "KOR":"Cards that exist for the purpose of being transformed, such as Runess or Gems." }
     },
 	"결합": {
         name: { "KOR":"Combine" },
@@ -3655,7 +3691,7 @@ const keywordDict = {
         name: { "KOR":"Expired Magic" },
         desc: { "KOR":"A magic card that disappears from the deck after being used.<br>For magic that can be used multiple times, it expires only after all uses are exhausted." }
     },
-	"자동시전": {
+	"Autocast": {
         name: { "KOR":"Auto Cast" },
         desc: { "KOR":"Activates automatically before the card you played.<br>Its number of casts decreases with each use, and it disappears when it reaches 0." }
     },
