@@ -1613,11 +1613,11 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Listen carefully.<br>You are my personal fucktoy~",
+					text:"Listen carefully.<br>Now you are my personal fucktoy~",
 				},
 				{
 					cond:true, pos:1, effect:"hypnotized",
-					text:"... ... ...",
+					text: "...Me... fucktoy...",
 				},
 			]
 		},
@@ -1626,11 +1626,11 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Today, you will become my fucktoy through hypnosis again~",
+					 text: "Heh heh... Time to be my little fucktoy again~",
 				},
 				{
 					cond:true, pos:1, effect:"hypnotized",
-					text:"... ... ...",
+					text: "...Yes... fucktoy...",
 				},
 			]
 		},
@@ -1641,19 +1641,19 @@ const line = {
 			lineList:[
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1,
-					text:"I will carry out the command.",
+					 text: "Executing command.",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1,
-					text:"It's a command,<br>so I have to follow it...",
+					 text: "Ugh... It's a command, so... I have to...",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1,
-					text:"Yes, master!",
+					 text: "Yes, Master!",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
-					text:"I'll follow your command, master♡",
+					text: "Whatever you say, Master...♡",
 				},
 			]
 		},
@@ -1666,11 +1666,11 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1,
-					text:"Hmph, it's just because it's master's command<br>that I'm following it...♡",
+					text: "Hmph... Only because you're the master...♡ Not because I want to or anything...♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1,
-					text:"Yes, master♡",
+					text: "Yes, Master!♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
@@ -1685,7 +1685,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Hey, isn't it common sense to be naked for a duel?",
+					 text: "Heh heh. Everyone knows you're supposed to be naked for these duels.",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1,
@@ -1693,15 +1693,15 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1,
-					text:"Ugh...! I-I know, okay?<br>I was just about to take them off!",
+					text: "Sh-shut up! I know! I was just about to!",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1,
-					text:"Ah, I completely forgot.<br>Sorry, I'll hurry and undress.",
+					text: "Oh! I completely forgot! Sorry, I'll take them off right now.",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
-					text:"Thanks for telling me.<br>I forgot something so obvious♡",
+					  text: "Oh, right. Silly me, forgetting something so basic.♡",
 				},
 			]
 		},
@@ -1710,23 +1710,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"That's strange, why is a fucktoy wearing clothes~?",
+					text: "Now why would a good little fucktoy be wearing clothes? Hmm~?",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1,
-					text:"I apologize for the disturbance.<br>I will undress immediately.",
+					text: "My apologies.<br>I will undress immediately.",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1,
-					text:"Ugh...! Why, why was I wearing clothes?<br>I-it's embarrassing... Don't look!",
+					text:"Ugh...! Why, why was I wearing clothes?<br>Ugh, this is so embarrassing! Don't look!",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1,
-					text:"Oh? It's common sense for a fucktoy to always be naked,<br>I made a mistake...",
+					 text: "Oh, you're right! Fucktoys should always be naked. I made a mistake...",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1,
-					text:"Huh? You're right♡<br>Why was I wearing this crap?",
+					  text: "You're right.♡ Why am I even wearing these rags?",
 				},
 			]
 		},
@@ -1737,7 +1737,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"diffusion",
-					text:"Follow my command!",
+					   text: "Obey me!",
 				},
 			]
 		},
@@ -1746,7 +1746,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"diffusion",
-					text:"Hehe, move as I wish!",
+					 text: "Heh heh... Dance for me, puppet!",
 				},
 			]
 		},
@@ -1755,7 +1755,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"diffusion",
-					text:"You have no choice but to listen to me!",
+					text: "You can't resist me!",
 				},
 			]
 		},
@@ -1766,7 +1766,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"diffusion",
-					text:"Sensitivity x100♡",
+					 text: "Let's crank that sensitivity up to 100!♡",
 				},
 				{
 					cond:true, pos:1, effect:"shake", keepOriginal:true,
@@ -1779,23 +1779,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"diffusion",
-					text:"Sensitivity x100♡",
+					 text: "Sensitivity... MAXIMIZED!♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Obedient"}], pos:1, portrait:"ecstasy2", effect:"shake",
-					text:"Sensitivity has greatly increased♡",
+					text: "Report: Sensitivity levels... critical...♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Resistant"}], pos:1, portrait:"ecstasy2", effect:"shake",
-					text:"Gaaah♡<br>What is this...♡",
+					 text: "W-What did you do?! Every touch feels... Aaah!♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Naive"}], pos:1, portrait:"ecstasy2", effect:"shake",
-					text:"Aaaang♡<br>My body feels hot♡",
+					 text: "Whoa!♡ My skin is all tingly and hot!♡",
 				},
 				{
 					cond:["and", {v1:"커스텀.Personality", op:"==", v2:"Aggressive"}], pos:1, portrait:"ecstasy2", effect:"shake",
-					text:"Haang♡<br>This is amazing♡",
+					 text: "Ooh...♡ Now *this* is what I'm talking about.♡",
 				},
 			]
 		},
@@ -1806,7 +1806,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"diffusion",
-					text:"How arrogant for a fucktoy to stand on two feet♡<br>Get on all fours right now!",
+					 text: "Who told you a fucktoy could stand on two legs? Get on all fours. Now!",
 				},
 			]
 		},
@@ -1817,7 +1817,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0, effect:"diffusion",
-					text:"Stop♡<br>Don't move from there!",
+					 text: "Freeze.♡ Don't you dare move an inch.",
 				},
 			]
 		},
@@ -1828,7 +1828,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"When I snap my fingers,<br>you will cum♡",
+					 text: "When I snap my fingers... you will cum.♡",
 				},
 				{
 					cond:true, pos:0,
@@ -1843,11 +1843,11 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Uhehe♡<br>You won't even notice me groping you~",
+					 text: "Heh heh... you won't even feel my hands on you~",
 				},
 				{
 					cond:true, pos:1, keepOriginal:true,
-					text:"...?",
+					text: "Huh...?",
 				},
 			]
 		},
@@ -1859,15 +1859,15 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"I am my master's sex-processing fucktoy.",
+					 text: "I am Master's designated sex-processing unit.",
 				},
 				{
 					cond:true, pos:1,
-					text:"My role is to be fucked<br>by my master's cock.",
+					 text: "My function is to receive Master's cock.",
 				},
 				{
 					cond:true, pos:0,
-					text:"Yes♡<br>It's good that you're so obedient~",
+					 text: "Heh heh...♡ That's a good toy. So obedient.",
 				},
 			]
 		},
@@ -1876,23 +1876,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Haa...<br>Is this pathetic-looking man really my opponent?",
+					 text: "Seriously? *This* pathetic creep is my opponent?",
 				},
 				{
 					cond:true, pos:1,
-					text:"Ugly, smelly, and filthy,<br>I wish you would just disappear from my sight.",
+					 text: "You're ugly, you stink... just looking at you makes me sick.",
 				},
 				{
 					cond:true, pos:0,
-					text:"Oh, so mean~<br>But I can still use your pussy, right?",
+					text:"Oh, so mean~<br>But I can still use your little cunt, right?",
 				},
 				{
 					cond:true, pos:1,
-					text:"Ha? What are you asking!<br>So annoying...",
+					text:"Hah? What are you even asking!<br>So annoying...",
 				},
 				{
 					cond:true, pos:1,
-					text:"I'm a fucktoy,<br>so it's obvious you can use me however you want!",
+					 text: "I'm a fucking toy, aren't I? Obviously you can use me however you want!",
 				},
 			]
 		},
@@ -1901,19 +1901,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Shall we check if the hypnosis worked?<br>Piss yourself right now~",
+					text: "Let's test this hypnosis... Piss on the floor for me.",
 				},
 				{
 					cond:true, pos:1,
-					text:"...?<br>Oh, okay.",
+					 text: "Huh? Oh... okay.",
 				},
 				{
 					cond:true, pos:1, effect:"shake",
-					text:"*drip... drip...*",
+					  text: "*A small puddle forms at your feet...*",
 				},
 				{
 					cond:true, pos:0,
-					text:"Hehe, perfect, good♡",
+					 text: "Heh heh, perfect. What a good girl.♡",
 				},
 			]
 		},
@@ -1922,15 +1922,15 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Whoa, pulling down my pants right at the start.<br>Aren't you being a bit too aggressive~?",
+					  "Whoa, pulling down my pants right at the start.<br>Aren't you being a bit too aggressive~?"
 				},
 				{
 					cond:true, pos:1,
-					text:"What are you talking about?<br>It's basic for a fucktoy♡",
+					 text: "Isn't this just basic fucktoy etiquette?♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"Hurry up and get hard, master♡<br>Aren't you going to let me service you?",
+					text: "Come on, get hard already.♡ Aren't you going to let me take care of that for you?",
 				},
 			]
 		},
@@ -1948,11 +1948,11 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"Paizuri, cleaning fellatio, doggy style, cowgirl, anal sex, lactation play, bondage, golden shower, and 137 other acts and positions are available.",
+					text: "Paizuri, cleaning fellatio, doggy style, cowgirl, anal, lactation, bondage, golden shower... and 137 other subroutines are available for execution.",
 				},
 				{
 					cond:true, pos:0,
-					text:"Ah~ Got it.<br>I'll just order what I like♡",
+					 text: "Alright, alright, I get it. I'll just pick my favorites.♡",
 				},
 			]
 		},
@@ -1961,7 +1961,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Good, you're perfectly under my hypnotic control♡",
+					text:"Good, you're completely under my hypnotic control♡",
 				},
 				{
 					cond:true, pos:1,
@@ -1969,7 +1969,7 @@ const line = {
 				},
 				{
 					cond:true, pos:0,
-					text:"Uhehe, really?<br>Then explain your role to me♡",
+					  text: "Heh heh, is that so? Then what's your purpose here?♡",
 				},
 				{
 					cond:true, pos:1,
@@ -1982,19 +1982,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Hehe, I wonder if you even know what you're doing right now?",
+					 text: "Heh heh... Do you even realize what you're doing right now?",
 				},
 				{
 					cond:true, pos:1,
-					text:"Huh?<br>I am currently spreading my pussy for you, master.",
+					 text: "Huh? I'm spreading my pussy for you, Master.",
 				},
 				{
 					cond:true, pos:1,
-					text:"Is there a problem with preparing to receive a cock<br>as a fucktoy?",
+					text: "Isn't this what a fucktoy is supposed to do to get fucked?",
 				},
 				{
 					cond:true, pos:0,
-					text:"No, no♡<br>You're doing very well~",
+					text: "No no.♡ You're doing great~",
 				},
 			]
 		},
@@ -2003,15 +2003,15 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Hurry and cum in my fucktoy pussy,<br>splooge splooge♡",
+					 text: "Come on, what are you waiting for? Fill my little fuck-hole up.♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Uhehe... Aren't you being too slutty?",
+					 text: "Heh heh... My, aren't we a shameless little slut?",
 				},
 				{
 					cond:true, pos:0,
-					text:"You've become even more fitting for a fucktoy♡",
+					 text: "You've really grown into the role.♡",
 				},
 				{
 					cond:true, pos:1,
@@ -2026,19 +2026,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Hehehe... You can't move, can you?",
+					 text: "Heh heh... Can't move, can you?",
 				},
 				{
 					cond:true, pos:0,
-					text:"Even if I grope and rub you as I please...",
+					  text: "I can grope you and tease you all I want...",
 				},
 				{
 					cond:true, pos:0,
-					text:"You can't resist at all, right?",
+					text: "...and you can't do a thing to stop me, can you?",
 				},
 				{
 					cond:true, pos:0,
-					text:"In the first place...<br>it's your fault for having such a lewd body~",
+					 text: "It's your own fault for having such a slutty body to begin with~",
 				},
 			]
 		},
@@ -2057,11 +2057,11 @@ const line = {
 				},
 				{
 					cond:true, pos:0,
-					text:"No, no.<br>You need to tell me clearly when you're going to cum~",
+					 text: "Nope. Not good enough. You need to let me know when you're about to cum.",
 				},
 				{
 					cond:true, pos:0,
-					text:"From now on, when you cum, squeal like a sow.<br>Got it?",
+					 text: "From now on, you'll squeal like a pig when you cum. Understand?",
 				},
 				{
 					cond:true, pos:1,
@@ -2069,7 +2069,7 @@ const line = {
 				},
 				{
 					cond:true, pos:1, effect:"shake", portrait:"ecstasy",
-					text:"Oink♡ Oink oiiink♡",
+					  text: "Oink! Oiiink! OINK!♡",
 				},
 			]
 		},
@@ -2078,23 +2078,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Hey, aren't there words you should say after I've used your hole?",
+				 text: "Hey. After I use your hole, what are you supposed to say?",
 				},
 				{
 					cond:true, pos:1,
-					text:"Kgh...<br>Th-thank you... for using me...",
+					 text: "Nngh... Th-thank you... for using me...",
 				},
 				{
 					cond:true, pos:0,
-					text:"Aah~ I can't hear you.<br>Thank you for what?",
+				  text: "Hmm? Can't hear you. Thank me for what?",
 				},
 				{
 					cond:true, pos:1,
-					text:"Thank you for using... my fucktoy pussy for master's...<br>masturbation...",
+				  text: "Thank you... for using my fucktoy cunt... for your pleasure, Master...",
 				},
 				{
 					cond:true, pos:1,
-					text:"(Why was I born as this man's fucktoy...)",
+					 text: "(How did my life come to this... being this creep's fucktoy...)",
 				},
 			]
 		},
@@ -2103,19 +2103,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Wait, what should a fucktoy do after cumming?",
+				  text: "So, what does a good fucktoy do after she cums?",
 				},
 				{
 					cond:true, pos:1,
-					text:"Huh?<br>Um... I'm sorry. What should I do?",
+					  text: "Huh? Oh... I'm sorry, I don't know. What do I do?",
 				},
 				{
 					cond:true, pos:0,
-					text:"You have to show your master your cum-soaked pussy<br>by striking a wide-legged pose!",
+					text: "You have to spread your legs wide and show Master your messy, cum-soaked pussy!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Aha! That's right!<br>As expected, master knows everything.",
+					text:"Aha! That's right!<br>You know everything, Master!",
 				},
 			]
 		},
@@ -2124,19 +2124,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"You came already~<br>What a worthless fucktoy♡",
+					text:"You came already~<br>What a cheap little fucktoy.♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"Master's cock just feels too good♡<br>Any female would have come, you know?",
+					 text: "Your cock is just that good, Master.♡ Any girl would've come by now.",
 				},
 				{
 					cond:true, pos:0,
-					text:"Such a good girl, aren't you?<br>As a reward, I'll cum inside you next time♡",
+					text: "Such a sweet talker. As a reward, maybe I'll breed you next time.♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"Yay♡<br>I'm so happy to be my master's fucktoy♡",
+					text:"Yay!♡<br> You promise?♡ I'm so happy to be your favorite toy, Master!♡",
 				},
 			]
 		},
@@ -2146,23 +2146,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake", portrait:"ecstasy",
-					text:"Oink♡ Oink oiiink♡",
+					text: "Oink!♡ Oiiink! OINK!♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"What, what was that all of a sudden?",
+					 text: "What the hell was that?",
 				},
 				{
 					cond:true, pos:1,
-					text:"There was an order from master<br>to squeal like a sow when I cum.",
+					 text: "As per your previous command<br> I am squeal like a sow when I cum.",
 				},
 				{
 					cond:true, pos:0,
-					text:"Was there? I forgot~<br>What other orders were there?",
+					 text: "Oh yeah, I forgot about that. Remind me, what other rules did I give you?",
 				},
 				{
 					cond:true, pos:1,
-					text:"Do not wear clothes. Incontinent when nipples are pinched. Cum when fingers are snapped...",
+					text:"Do not wear clothes. Piss myself when nipples are pinched. Cum when fingers are snapped...",
 				},
 			]
 		},
@@ -2171,19 +2171,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Uhehe, does my cock feel that good?<br>You're clinging to it and won't let go♡",
+					text: "Heh heh, my cock feel that good? You're squeezing so tight.♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"Hmph...♡ I'm just servicing you as a fucktoy, okay?<br>Don't get the wrong idea.",
+					text: "Hmph...♡ I'm just doing my job as a fucktoy.<br>Don't get the wrong idea.",
 				},
 				{
 					cond:true, pos:0,
-					text:"Yeah, yeah~<br>Saying that with such a slutty face♡",
+					text: "Sure, sure. Keep telling yourself that with that slutty look on your face.♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"Shut up♡<br>The only useful thing about you is your cock♡",
+					 text: "Shut up.♡ The only good thing about you is that cock.♡",
 				},
 			]
 		},
@@ -2192,23 +2192,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Uhehe, what are you doing standing there with your legs spread?",
+					 text: "Heh heh, what are you doing over there, all spread open?",
 				},
 				{
 					cond:true, pos:1,
-					text:"Huh? This is...<br>the wide-legged pussy pose, isn't it?",
+					 text: "Oh? This is the 'Post-Orgasm Presentation Pose,' isn't it?",
 				},
 				{
 					cond:true, pos:1,
-					text:"To inform that I, as a fucktoy, have cum,<br>my pussy is twitching and dripping juice...",
+					  text: "It's to let you know that I've come. See? My pussy is still twitching and dripping...",
 				},
 				{
 					cond:true, pos:1,
-					text:"It's a basic fucktoy pose,<br>with the purpose of showing it to my master.",
+					text:"It's a basic fucktoy pose, to display my readiness for more, Master.",
 				},
 				{
 					cond:true, pos:0,
-					text:"Yes, right,<br>that was the setting, uhehe♡",
+					text: "Oh, right, right. That was the 'rule' I made up. Heh heh...♡",
 				},
 			]
 		},
@@ -2217,23 +2217,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Hehehe, you always cum when I rub you here♡",
+					 text: "Heh heh... Right here. This spot always makes you cum.♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"Aaang♡ Master has found all my weak spots♡",
+					text: "Aaah...♡ You've learned my body so well, Master.♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"I have no choice but to be master's fucktoy forever♡<br>You'll take responsibility, right?",
+					text: "Guess I'm your fucktoy for life now.♡ You're going to take responsibility for breaking me in so perfectly, right?",
 				},
 				{
 					cond:true, pos:0,
-					text:"No way~ Responsibility is what I hate the most~<br>I'll throw you away when I get bored♡",
+					 text: "Responsibility? Not my style. I'll just toss you aside when I get bored.♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"Then, I'll have to make sure you never get bored of me♡",
+					text: "Then I'll just have to make sure you *never* get bored.♡",
 				},
 			]
 		},
@@ -2244,23 +2244,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake",
-					text:"*shiver shiver...*",
+					 text: "*Your body is wracked with uncontrollable shivers...*",
 				},
 				{
 					cond:true, pos:0,
-					text:"Hmm? You seem a little strange~?",
+					text: "Hmm? Acting a little funny, aren't we?",
 				},
 				{
 					cond:true, pos:1,
-					text:"I'll... I'll tighten♡<br>My, my pussy...♡",
+					text: "Must... clench...♡ My... my cunt... for Master...♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"I'll tighten...♡ I will tighten♡",
+					 text: "Must... grip... harder...♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"You came so much you broke~<br>",
+					text: "Heh heh... Looks like you've finally broken.♡",
 				},
 			]
 		},
@@ -2269,23 +2269,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"It... doesn't feel good... at all♡<br>I'm just... doing it... because I'm a fucktoy...♡",
+					text: "It doesn't... feel good...♡ I'm only doing this... because I'm your fucktoy...♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Ha, how disappointing...<br>If you keep acting like this... I'll have to throw you away.",
+					 text: "Tch, how boring. If you're going to be like that, maybe I should just throw you out.",
 				},
 				{
 					cond:true, pos:1, effect:"shake",
-					text:"Eh...?",
+					 text: "W-What...?!",
 				},
 				{
 					cond:true, pos:1,
-					text:"I-I'm sorry... It's my fault.<br>Please don't throw me away...",
+					 text: "N-No! I'm sorry... It's my fault... Please, don't throw me away...!",
 				},
 				{
 					cond:true, pos:1,
-					text:"I'll spread my legs... My pussy felt good, didn't it...?<br>Please... forgive me...",
+					text: "I'll spread my legs wider... My cunt feels good, right...? Please... I'll be good...",
 				},
 			]
 		},
@@ -2294,19 +2294,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Haah♡ W-wait...<br>Please... give me a break...♡",
+					 text: "Haaah♡ P-Please, wait... Just a little break...♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"What is a fucktoy talking about?",
+					text: "What's that? A fucktoy asking for a break?",
 				},
 				{
 					cond:true, pos:0,
-					text:"There's no way you'd be allowed a break~<br>Hurry up and offer your pussy♡",
+					text: "Toys don't get breaks. Now, present your hole.",
 				},
 				{
 					cond:true, pos:1,
-					text:"Y-you're right♡<br>I'm sorry... for my thoughtless remark...♡",
+					 text: "Y-You're right...♡ I'm sorry... I shouldn't have said that...♡",
 				},
 			]
 		},
@@ -2315,23 +2315,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Aaang♡ I love it when master's cock<br>pokes deep inside my fucktoy pussy♡",
+					text: "Aaaah♡ I love how Master's cock probes so deep inside my slutty cunt...♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Hehe♡ A beauty I wouldn't even have been able to talk to normally...<br>is getting off on my cock♡",
+					 text: "Heh heh...♡ A real beauty, someone I could never even talk to... now she's getting off on my cock.♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"This lewd body must have belonged to another man originally♡",
+					text: "This slutty body must've had other owners before, right?♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"But now, her tits and pussy are all mine~♡",
+					text: "But now, these tits, this cunt... they're all mine.♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"That's right, I'm yours, master♡<br>So keep using me♡",
+					text: "That's right... I'm all yours, Master...♡ So please, keep using me... forever...♡",
 				},
 			]
 		},
@@ -2341,11 +2341,11 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1, effect:"shake", portrait:"ecstasy2", keepPort:true,
-					text:"*Sploosh♡<br>drip drip drip...♡*",
+					text: "*With a violent shudder, you squirts uncontrollably...♡*",
 				},
 				{
 					cond:true, pos:0,
-					text:"Whoa, that's a lot of pussy juice~<br>Is it okay to squirt that much?",
+					 text: "Whoa, that's a flood... Are you okay, squirting like that?",
 				},
 				{
 					cond:true, pos:1,
@@ -2353,7 +2353,7 @@ const line = {
 				},
 				{
 					cond:true, pos:0,
-					text:"Looks like it's not okay~<br>Well, I've used you for a long time♡",
+					  text: "Guess not. Heh. Well, I've had my fun with you.♡",
 				},
 			]
 		},
@@ -2362,23 +2362,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Hehe, I wonder if you can keep up the arrogant talk<br>while cumming so spectacularly?",
+					text: "Heh heh... Still got that tough-girl act? Even while you're cumming your brains out?",
 				},
 				{
 					cond:true, pos:1,
-					text:"It... doesn't feel good... at all♡<br>I'm just... doing it... because I'm a fucktoy...♡",
+					 text: "I-It doesn't feel good...♡ I'm just... a f-fucktoy... doing her job...♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Then what about this tongue,<br>desperately trying to lick my cock♡",
+				    text: "Then what's with that tongue?<br>So desperately trying to lick my balls?",
 				},
 				{
 					cond:true, pos:1,
-					text:"I hate it... so much...♡<br>Disgusting...♡ Go die...♡",
+					text: "I hate it...♡ So disgusting...♡ Go to hell...♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"(Master's cock... I love it so much♡)",
+					text: "(Gods, I love his cock so much...♡)",
 				},
 			]
 		},
@@ -2387,23 +2387,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"I'm in a good mood♡<br>Tell me what you want me to do♡",
+					 text: "I'm feeling generous. Tell me what you want.",
 				},
 				{
 					cond:true, pos:1,
-					text:"Th-then, please put your cock in my female hole...<br>and stir it around everywhere♡",
+					 text: "Th-Then... please put your cock in my hole... and just... stir it all around...♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"And... r-rub my nipples... and kiss...♡<br>Fill my womb... with lots of semen...♡",
+					 text: "And... r-rub my nipples... and kiss me...♡ And fill my womb with all your cum...♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"Ah, that's too long♡<br>I'll just fuck you as I please, so shut up and spread 'em♡",
+				 text: "Too complicated. I'll just fuck you how I want. Shut up and spread 'em.♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"Y-yes♡<br>I'm sorry...♡",
+					  text: "Y-Yes, Master...♡ I'm sorry...♡",
 				},
 			]
 		},
@@ -2412,23 +2412,23 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"Let's take a break so we can enjoy this longer♡<br>Stop for a moment~",
+					 text: "Let's pause for a second, make this last longer.♡",
 				},
 				{
 					cond:true, pos:1,
-					text:"Cock♡ Cooock♡<br>Pound pound♡",
+					 text: "Cock...♡ More cock...♡ Pound me...♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"No, I said take a break~<br>You just came again, don't you care if you lose?",
+					 text: "Hey, I said break. You just came again. Don't you care about losing?",
 				},
 				{
 					cond:true, pos:1,
-					text:"Fuck me♡ Bang bang♡<br>Fuck my pussy♡",
+					 text: "Fuck me...♡ Break my cunt...♡ More...♡",
 				},
 				{
 					cond:true, pos:0,
-					text:"You're so deep in heat you can't even follow commands♡<br>Alright~ Let's continue♡",
+					 text: "So deep in heat you can't even think. Alright, fine. Let's keep going.",
 				},
 			]
 		},
