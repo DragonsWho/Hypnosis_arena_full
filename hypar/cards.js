@@ -2624,18 +2624,18 @@ const cardDB = {
 
 	"DA-NT-ALL-003":{
 		name:{ "KOR":"Trial: Illegal Alchemist" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", cost:-30, owner:1, nochange:true,
-		tags:["부정적", "Common", "개입"], related:["tag:Potion"],
+		tags:["부정적", "Common", "개입"], related:["tag:Drug"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Nisby is an expert in potion brewing.<br>She has developed Delirium Incense to hinder challengers and stimulants to boost the champions' stamina.<br>To test her new products, she will now intervene in your duel.<br><br>※ The drugs will accumulate, debuffing you and buffing your opponent." },
 		effect:[
 			{trigger:"trait", cond:true, notext:true, type:"ban", range:{category:"tags", value:"개입", count:1}},
 			{trigger:"turnStart", cond:{v1:"라운드", op:"in", v2:[1,3,5,7]}, type:"line", value:"개입-Potion"},
-			{trigger:"turnStart", cond:{v1:"라운드", op:"in", v2:[1,3,5,7]}, type:"state", target:"self", value:"randomCard(tags, Potion)"},
+			{trigger:"turnStart", cond:{v1:"라운드", op:"in", v2:[1,3,5,7]}, type:"state", target:"self", value:"randomCard(tags, Drug)"},
 		]
 	},
 	"DA-NT-ALL-003-1":{
 		name:{ "KOR":"Delirium Incense" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
-		tags:["부정적", "Potion"],
+		tags:["부정적", "Drug"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"always", cond:true, type:"lewd", op:"add", value:-2}
@@ -2643,7 +2643,7 @@ const cardDB = {
 	},
 	"DA-NT-ALL-003-2":{
 		name:{ "KOR":"Hucow Aphrodisiac" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
-		tags:["부정적", "Potion"],
+		tags:["부정적", "Drug"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"always", cond:true, type:"Heat", op:"add", value:2}
@@ -2651,7 +2651,7 @@ const cardDB = {
 	},
 	"DA-NT-ALL-003-3":{
 		name:{ "KOR":"Stamina Stimulant" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
-		tags:["부정적", "Potion"],
+		tags:["부정적", "Drug"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"always", cond:true, type:"exciteL", target:"op", op:"add", value:2}
@@ -2659,7 +2659,7 @@ const cardDB = {
 	},
 	"DA-NT-ALL-003-4":{
 		name:{ "KOR":"Lust Potion" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
-		tags:["부정적", "Potion"],
+		tags:["부정적", "Drug"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"always", cond:true, type:"exciteL", target:"self", op:"add", value:-1}
