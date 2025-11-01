@@ -4815,7 +4815,7 @@ const cardDB = {
 		name:{ "KOR":"Snow Wolf Spirit" }, class:"Mage", type:"Position", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Beastfolk", "group:Magic", "즉발슬롯"], related:["MA-ST-002", "ref:즉발슬롯"],
-		flavorText:{ "KOR":"The power used by beings such as demons, spirits, and dragons, which defies logic, is called 'magic,' and the degraded technique that imitates it by analyzing its system is called 'sorcery.'<br>Spiritism, a specialty of the Silverleaf Beastfolk, is said to allow the use of power similar to primal magic by borrowing the power of spirits through communication." },
+		flavorText:{ "KOR":"The power used by beings such as demons, spirits, and dragons that defies logic is called 'primal magic,' and the simplified technique that imitates it by analyzing its system is what people called 'magic.'<br> Spiritism, a specialty of the Silverleaf Beastfolk, is said to enable the use of a power similar to primal magic through communication with spirits and the borrowing of their power." },
 		hypnoText:{ "KOR":"Your partner is a female wolf spirit who is always in heat and craving cock.<br>She helps with threesomes with her voluptuous breasts and specialty paizuri, but be careful not to drop the leash, or she'll try to taste the cock before her master." },
 		expiration:"always", duration:Infinity,
 		effect:[
@@ -4989,13 +4989,12 @@ const cardDB = {
 		]
 	},
 	"MA-EX-PS-002-2":{
-		name:{ "KOR":"Magic: Absorb" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Primal Magic: Absorb" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Magic", "Autocast"], cast:Infinity,
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"마나슬라임-4", notwait:true},
-			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:"자기Deck.count(tags, Magic)"},
-			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"This card is treated as a Magic card." }},
+			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:"자기Deck.count(tags, Magic)"}, 
 		]
 	},
 	"MA-EX-PS-002-3":{

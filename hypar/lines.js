@@ -4699,7 +4699,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					 text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4716,7 +4716,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4733,7 +4733,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4750,7 +4750,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4767,7 +4767,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4784,7 +4784,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4801,7 +4801,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4818,7 +4818,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4835,7 +4835,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4852,7 +4852,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4869,7 +4869,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4886,7 +4886,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4903,7 +4903,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4920,7 +4920,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4937,7 +4937,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4954,7 +4954,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4971,7 +4971,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -4988,7 +4988,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5005,7 +5005,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5022,7 +5022,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5039,7 +5039,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5056,7 +5056,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5073,7 +5073,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5090,7 +5090,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5107,7 +5107,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5124,7 +5124,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5141,7 +5141,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5158,7 +5158,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5175,7 +5175,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5192,7 +5192,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5209,11 +5209,11 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
-					text:"Allegiance... to Lord Cock...",
+					 text:"My loyalty... is to Lord Cock...♡",
 				},
 			]
 		},
@@ -5222,11 +5222,11 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
-					text:"Service... to the male...",
+					 text:"My duty... is to serve the Male...♡",
 				},
 			]
 		},
@@ -5235,7 +5235,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5248,7 +5248,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5261,7 +5261,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5274,7 +5274,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5287,7 +5287,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5300,7 +5300,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					text:"*Be lost in your illusion.*",
+					text:"*Lost in your illusion...*",
 				},
 				{
 					cond:true, pos:1,
@@ -5319,11 +5319,11 @@ const line = {
 				},
 				{
 					cond:true, pos:1,
-					text:"I feel an abnormal sense of euphoria and pleasure.",
+					 text:"My body feels a strange, profound sense of pleasure...",
 				},
 				{
 					cond:true, pos:1,
-					text:"This is presumed to be the effect of the continuously inhaled spores.",
+					 text:"I believe this is the effect of the spores I have inhaled.",
 				},
 			]
 		},
@@ -5332,15 +5332,15 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Damn it... me, feeling pleasure while having sex<br>with this rotten thing? No way!",
+					 text:"No... I can't be feeling good... not from this... this corrupted thing!",
 				},
 				{
 					cond:true, pos:1,
-					text:"Haa... But... my body...<br>why is it getting so hot...",
+					 text:"Haa... but my skin... it's getting so hot... my mind is getting fuzzy...",
 				},
 				{
 					cond:true, pos:1,
-					text:"A little more... deeper inside me...<br>I wish you would... spray your spore-semen...",
+					text:"Nngh... Just a little deeper... I want it... to fill me with its seed...",
 				},
 			]
 		},
@@ -5349,19 +5349,19 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:1,
-					text:"Aah♡ I came...",
+					 text:"Oooh♡ I just came...",
 				},
 				{
 					cond:true, pos:0,
-					text:"*Accept it...<br>You are a tool for reproduction...*",
+					 text:"*Accept... You are a vessel for new life...*",
 				},
 				{
 					cond:true, pos:1,
-					text:"... ...",
+					 text:"...A vessel...",
 				},
 				{
 					cond:true, pos:1,
-					text:"I am... a tool... for reproduction...",
+					text:"I am... a vessel... for new life...",
 				},
 			]
 		},
