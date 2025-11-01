@@ -790,7 +790,7 @@ const line = {
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Tauros"}], pos:0,
-					text:"MMMRRRROOOOOHH!!,
+					text:"MMMRRRROOOOOHH!!",
 				},
 				{
 					cond:["and", {v1:"Champion.Name", op:"==", v2:"Imp"}], pos:0,
@@ -1922,7 +1922,7 @@ const line = {
 			lineList:[
 				{
 					cond:true, pos:0,
-					  "Whoa, pulling down my pants right at the start.<br>Aren't you being a bit too aggressive~?"
+					 text: "Whoa, pulling down my pants right at the start.<br>Aren't you being a bit too aggressive~?"
 				},
 				{
 					cond:true, pos:1,
