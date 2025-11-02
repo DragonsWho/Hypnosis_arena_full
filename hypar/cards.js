@@ -2720,7 +2720,7 @@ const cardDB = {
 	},
 
 	"DA-NT-ALL-000":{
-		name:{ "KOR":"Morvain's Shadow" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", cost:-999,
+		name:{ "KOR":"Shadow of Morvain" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", cost:-999,
 		tags:["부정적", "Common"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"<b>So many things you want, yet you can only choose one. What a shame.<br>If you need it, I'll lend you a little of my power.<br>You'll be able to achieve everything you desire...</b><br><br>※ This is a free mode where point and deck size restrictions are removed, but the ending is fixed." },
@@ -3118,7 +3118,7 @@ const cardDB = {
 			info:{
 				value:3, 
 				effect:[
-					{trigger:"none", cond:true, type:"text", value:{ "KOR":"Do not draw a penalty card." }},
+					{trigger:"none", cond:true, type:"text", value:{ "KOR":"Do not gain a penalty card." }},
 				]
 			}},
 		]
