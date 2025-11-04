@@ -3618,7 +3618,7 @@ const v1Structure = deepCloneAndModify(variableData, "v1");
 
 const keywordDict = {
 	"소지": {
-        name: { "KOR":"Possession" },
+        name: { "KOR":"In Hand" },
         desc: { "KOR":"An effect that triggers if you have this card in your deck." }
     },
 	"자극": {
@@ -3642,7 +3642,7 @@ const keywordDict = {
         desc: { "KOR":"Replaces the card with another one." }
     },
 	"변형목적": {
-        name: { "KOR":"Transform Target" },
+        name: { "KOR":"For Transformation" },
         desc: { "KOR":"Cards that exist for the purpose of being transformed, such as Runess or Gems." }
     },
 	"결합": {
@@ -3682,7 +3682,7 @@ const keywordDict = {
         desc: { "KOR":"Whenever the condition is met, this card's Count decreases.<br>When the Count reaches 0, the effect activates, and the Count resets to its default value." }
     },
 	"Sense Block": {
-        name: { "KOR":"Sense Block" },
+        name: { "KOR":"Numbness" },
         desc: { "KOR":"Gain an equal amount of Sense Block whenever you Transform one of your cards.<br>When Excitement would increase, you can consume that much Sense Block instead to prevent it." }
     },
 	"만료": {

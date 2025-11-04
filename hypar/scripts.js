@@ -5782,7 +5782,11 @@ function createCardText(card, reverse=false) {
 			case "op": _target = reverse?getWord("자신"):getWord("Opponent"); break;
 			case "self": _target = reverse?getWord("Opponent"):getWord("자신"); break;
 			}
-			text += translateText(cardTexts["effect"]["자극"], { "target":_target, "repeat1":repeatType == "specific"?repeatText:"", "repeat2":repeatType == "constant"?repeatText:"" });
+			text += translateText(cardTexts["effect"]["자극"], { 
+  "target": _target,
+  "repeat1": repeatType == "specific" ? repeatText + ', ' : "",
+  "repeat2": repeatType == "constant" ? repeatText : ""
+});
 			break;
 		case "state":
 			if(e.byname) {
