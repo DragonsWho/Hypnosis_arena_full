@@ -1,4 +1,3 @@
-// Полностью переработанный cardTexts.js для английского языка
 const cardTexts = {
 	"trigger":{
 		"처음으로": { "KOR": "<span style=\"color: gray;\">[Activates once]</span> " },
@@ -115,8 +114,8 @@ const cardTexts = {
 		"기록회피": { "KOR": "the number of times {actor} evaded {time}" },
 		"기록회피자신": { "KOR": "the number of times you evaded {time}" },
 		"기록만료Magic": { "KOR": "{cards} that expired {time}" },
-		"Count숫자": { "KOR": "{amount}" }, // ВАЖНО: Убираем отсюда "times"
-        "CountTimes": { "KOR": "{amount} times" }, // ВАЖНО: Добавляем новый ключ
+		"Count숫자": { "KOR": "{amount}" },
+		"CountTimes": { "KOR": "{amount} times" },
 		"Count값": { "KOR": "by {amount}" },
 		"Countcard": { "KOR": "{amount}" },
 		"Count상태": { "KOR": "{amount}" },
@@ -296,7 +295,7 @@ const cardTexts = {
 		"강화불일치": { "KOR": "If not upgraded exactly {amount} times, " },
 	},
 	"effect":{
-		"자극": { "KOR": "Inflict <b>Stimulation</b> on {target}{repeat2}." },
+		"자극": { "KOR": "{repeat1}, inflict <b>Stimulation</b> on {target}{repeat2}." },
 		"Orgasm": { "KOR": "Make {target} <b>Orgasm</b>{repeat2}." },
 		"상태부여Name": { "KOR": "Apply {repeat} {state} to {target}." },
 		"헤더": { "KOR": "<b>{value}:</b> " },
@@ -307,10 +306,10 @@ const cardTexts = {
 		"시전": { "KOR": "<span style=\"color: gray;\">({amount} casts)</span>" },
 		"무한시전": { "KOR": "<span style=\"color: gray;\">(Infinite casts)</span>" },
 		"반복": { "KOR": "Repeat {repeat}." },
-		"증가숫자": { "KOR": "Increase {value} by <b>{amount}</b>{repeat}." },
-		"감소숫자": { "KOR": "Decrease {value} by <b>{amount}</b>{repeat}." },
-		"증가값": { "KOR": "Increase {value} by {amount}." },
-		"감소값": { "KOR": "Decrease {value} by {amount}." },
+		"증가숫자": { "KOR": "<b>{value}</b> +{amount}{repeat}." },
+		"감소숫자": { "KOR": "<b>{value}</b> {amount}{repeat}." },
+		"증가값": { "KOR": "<b>{value}</b> +{amount}." },
+		"감소값": { "KOR": "<b>{value}</b> {amount}." },
 		"배수숫자": { "KOR": "Multiply {value} by {amount}." },
 		"지정숫자": { "KOR": "Set {value} to {amount}." },
 		"지정값": { "KOR": "Set {value} to {amount}." },
@@ -321,8 +320,8 @@ const cardTexts = {
 		"Deckcard추가": { "KOR": "Add {repeat} {card} to {target}'s hand." },
 		"패배": { "KOR": "You lose the duel." },
 		"승리": { "KOR": "You win the duel." },
-		"추가card": { "KOR": "Increase {target}'s Max Hand Size by {amount}." },
-		"추가card자신": { "KOR": "Increase your Max Hand Size by {amount}." },
+		"추가card": { "KOR": "{target}: <b>Additional Card</b> +{amount}." },
+		"추가card자신": { "KOR": "<b>Additional Card</b> +{amount}." },
 		"버리기": { "KOR": "Discard {card}." },
 		"선택버리기": { "KOR": "Choose and discard {card}." },
 		"제거하기": { "KOR": "Remove {state}." },

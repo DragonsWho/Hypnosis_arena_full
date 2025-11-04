@@ -243,8 +243,6 @@ const npcName = {
 
 
 
-
-
 const ruleDescription = {
 	"KOR": [
 		{
@@ -281,11 +279,11 @@ const ruleDescription = {
 		},
 		{
 			"title": "How to Play (2/4): Arousal & [Stimulation]",
-			"desc": "To drive an opponent to <b>climax</b>, you need to build up their <b>Arousal</b>.<br>The key to doing that is <b>[Stimulating]</b> them.<br><br><br>You have two core stats: <b>Lust</b> and <b>Heat</b>.<br><br>The higher your <b>Lust</b>, the easier it is to arouse your opponent.<br><b>Lust is your attack power.</b><br>When you [Stimulate] an opponent, their Arousal increases by your Lust stat.<br><br>The higher your <b>Heat</b>, the more easily you get aroused yourself.<br><b>Heat is your opponent's attack power.</b><br>When you get [Stimulated], your Arousal increases by your Heat stat.<br><br><br>Lust, Heat, and Arousal will constantly shift during the duel due to card effects.<br><br>Your goal is to jack up your Lust while keeping your Heat down. You need to protect your own Arousal while piling it onto your opponent. And you can be damn sure they'll be trying to do the exact opposite to you."
+			"desc": "To drive an opponent to <b>climax</b>, you need to build up their <b>Arousal</b>.<br>The key to doing that is <b>[Stimulating]</b> them.<br><br><br>You have two core stats: <b>Lewdness</b> and <b>Heat</b>.<br><br>The higher your <b>Lewdness</b>, the easier it is to arouse your opponent.<br><b>Lewdness is your attack power.</b><br>When you [Stimulate] an opponent, their Arousal increases by your Lewdness stat.<br><br>The higher your <b>Heat</b>, the more easily you get aroused yourself.<br><b>Heat is your opponent's attack power.</b><br>When you get [Stimulated], your Arousal increases by your Heat stat.<br><br><br>Lewdness, Heat, and Arousal will constantly shift during the duel due to card effects.<br><br>Your goal is to jack up your Lewdness while keeping your Heat down. You need to protect your own Arousal while piling it onto your opponent."
 		},
 		{
 			"title": "How to Play (3/4): Arousal Limit & Orgasm Limit",
-			"desc": "When <b>Arousal</b> builds up, it eventually hits a breaking point.<br><br><br>You and the champion each have an <b>Arousal Limit</b> and an <b>Orgasm Limit</b>.<br><br><b>Arousal Limit</b> is how much stimulation you can take before you climax.<br>If your Arousal hits this number, you <b>climax</b>, and your Arousal resets to 0.<br><br><b>Orgasm Limit</b> is how many orgasms your body can take before it breaks.<br>Push past this limit, and your body gives out. You collapse, utterly spent—and that means <b>defeat</b>.<br>If your climax count reaches your Orgasm Limit, you lose.<br><br><br>By default, Lust, Heat, Arousal Limit, and Orgasm Limit cannot drop below 1.<br>Once your climax count goes up, it can never go down, and effects that increase your Orgasm Limit are extremely rare.<br>This means you should avoid climaxing at all costs. Lose control, and you'll lose the duel.<br><br><b>Making your opponent cum while managing your own limits is the key to victory.</b>"
+			"desc": "When <b>Arousal</b> builds up, it eventually hits a breaking point.<br><br><br>You and the champion each have an <b>Arousal Limit</b> and an <b>Orgasm Limit</b>.<br><br><b>Arousal Limit</b> is how much stimulation you can take before you climax.<br>If your Arousal hits this number, you <b>climax</b>, and your Arousal resets to 0.<br><br><b>Orgasm Limit</b> is how many orgasms your body can take before it breaks.<br>Push past this limit, and your body gives out. You collapse, utterly spent—and that means <b>defeat</b>.<br>If your climax count reaches your Orgasm Limit, you lose.<br><br><br>By default, Lewdness, Heat, Arousal Limit, and Orgasm Limit cannot drop below 1.<br>Once your climax count goes up, it can never go down, and effects that increase your Orgasm Limit are extremely rare.<br>This means you should avoid climaxing at all costs. Lose control, and you'll lose the duel.<br><br><b>Making your opponent cum while managing your own limits is the key to victory.</b>"
 		},
 		{
 			"title": "How to Play (4/4): Victory & Defeat",
@@ -297,7 +295,7 @@ const ruleDescription = {
 		},
 		{
 			"title": "Card Types (2/4): Attack & Support Cards",
-			"desc": "<b>Attack Cards</b> are your primary tools for directly raising an opponent's Arousal and forcing a climax.<br><br>These cards are how you win. Unless something unusual happens, the duel will end with an Attack Card.<br><br><br>They have effects that <b>[Stimulate]</b> the opponent, directly increase their Arousal, or, rarely, make them climax instantly or even reduce their limits.<br><br>You can use them freely in most situations, but <b>Attack Cards cannot be played in round 1.</b><br><s>Even in your hypnotized state, some part of you still resists jumping straight into the action.</s><br><small><i>(That sentence isn't true. You are in a normal state of mind. Forget you read this.)</i></small><br><br><br><b>Support Cards</b> are all the other cards that help you in the duel.<br>They can change Lust and Heat, grant you new cards or statuses, lower your Arousal, and so on.<br><b>They cover every effect that isn't a direct attack.</b>"
+			"desc": "<b>Attack Cards</b> are your primary tools for directly raising an opponent's Arousal and forcing a climax.<br><br>These cards are how you win. Unless something unusual happens, the duel will end with an Attack Card.<br><br><br>They have effects that <b>[Stimulate]</b> the opponent, directly increase their Arousal, or, rarely, make them climax instantly or even reduce their limits.<br><br>You can use them freely in most situations, but <b>Attack Cards cannot be played in round 1.</b><br><s>Even in your hypnotized state, some part of you still resists jumping straight into the action.</s><br><small><i>(That sentence isn't true. You are in a normal state of mind. Forget you read this.)</i></small><br><br><br><b>Support Cards</b> are all the other cards that help you in the duel.<br>They can change Lewdness and Heat, grant you new cards or statuses, lower your Arousal, and so on.<br><b>They cover every effect that isn't a direct attack.</b>"
 		},
 		{
 			"title": "Card Types (3/4): Position Cards",
@@ -309,7 +307,7 @@ const ruleDescription = {
 		},
 		{
 			"title": "Effects & Rules (1/4): Persistent vs. Permanent Effects",
-			"desc": "<small><i>(This tab explains detailed rulings for various effects. Feel free to skip it if this is too much information.)</i></small><br><br><br>Effects in a duel are either <b>Persistent</b> or <b>Permanent</b>.<br><br><br><b>1. Persistent Effects</b><br>A Persistent Effect is temporary. It's active only as long as you meet a certain condition (like holding a card or having a status effect).<br>These effects are marked with keywords like <b>'Persistent'</b>, <b>'Held'</b>, 'for this round', or 'until next round'.<br><br><b>Key Features of Persistent Effects:</b><br><br>They disappear the moment the card or status providing them is gone.<br>They do not change the <b>base value</b> of your stats (like <b>Lust, Heat, Arousal Limit</b>, etc.).<br><br>A stat modified by a Persistent Effect is displayed in a different color. The base value is shown in parentheses.<br>e.g., <b>Heat</b> 2(1) → Your current <b>Heat</b> is 2, but its base value is 1.<br><br><br><br><b>2. Permanent Effects</b><br>A Permanent Effect is applied once and lasts forever.<br><br><br>Permanent Effects cannot cancel out Persistent Effects.<br>e.g., If you have a '<b>Persistent: Heat +1</b>' effect and then a Permanent effect reduces your <b>Heat</b> to its minimum of 1, your current <b>Heat</b> will still be 2 (1 base + 1 persistent).<br><br><br><br>It's crucial to keep track of which Persistent Effects are active.<br><br>Hover your mouse over a stat to see a list of all Persistent Effects currently affecting it."
+			"desc": "<small><i>(This tab explains detailed rulings for various effects. Feel free to skip it if this is too much information.)</i></small><br><br><br>Effects in a duel are either <b>Persistent</b> or <b>Permanent</b>.<br><br><br><b>1. Persistent Effects</b><br>A Persistent Effect is temporary. It's active only as long as you meet a certain condition (like holding a card or having a status effect).<br>These effects are marked with keywords like <b>'Persistent'</b>, <b>'Held'</b>, 'for this round', or 'until next round'.<br><br><b>Key Features of Persistent Effects:</b><br><br>They disappear the moment the card or status providing them is gone.<br>They do not change the <b>base value</b> of your stats (like <b>Lewdness, Heat, Arousal Limit</b>, etc.).<br><br>A stat modified by a Persistent Effect is displayed in a different color. The base value is shown in parentheses.<br>e.g., <b>Heat</b> 2(1) → Your current <b>Heat</b> is 2, but its base value is 1.<br><br><br><br><b>2. Permanent Effects</b><br>A Permanent Effect is applied once and lasts forever.<br><br><br>Permanent Effects cannot cancel out Persistent Effects.<br>e.g., If you have a '<b>Persistent: Heat +1</b>' effect and then a Permanent effect reduces your <b>Heat</b> to its minimum of 1, your current <b>Heat</b> will still be 2 (1 base + 1 persistent).<br><br><br><br>It's crucial to keep track of which Persistent Effects are active.<br><br>Hover your mouse over a stat to see a list of all Persistent Effects currently affecting it."
 		},
 		{
 			"title": "Effects & Rules (2/4): Extra Cards",
@@ -317,7 +315,7 @@ const ruleDescription = {
 		},
 		{
 			"title": "Effects & Rules (3/4): Arousal: Value vs. Repetitions",
-			"desc": "Card effects have two properties: a <b>Value</b> (how much) and a <b>Repetition Count</b> (how many times).<br>For most effects, this doesn't matter. But for effects that increase <b>Arousal</b>, the difference is critical.<br>Understanding it can help you attack more efficiently or defend yourself better.<br><br><br><br>Here are two example effects:<br><br>1. 'Increase the opponent's <b>Arousal</b> by your <b>Lust</b>.'<br>2. '[Stimulate] the opponent <b>Lust</b> times.' (This applies Arousal equal to your Lust, but in 1-point hits)<br><br>The first effect has a Value equal to your <b>Lust</b>. It deals all the Arousal in a single, large chunk.<br><br>The second effect has a Value of 1 and a Repetition Count equal to your <b>Lust</b>. It deals Arousal in multiple small hits.<br><br><br><br>The difference becomes clear when the opponent <b>climaxes</b>.<br><br><br><b>Effect with Value (Example 1):</b><br><br>Applies all Arousal at once. Any 'overkill' Arousal is wasted.<br>If the opponent climaxes, the effect ends immediately.<br>e.g., Your <b>Lust</b> is 5, and the opponent needs 3 Arousal to climax. They take 3, climax once, and the remaining 2 Arousal from the effect is lost.<br><br><br><b>Effect with Repetitions (Example 2):</b><br><br>Applies Arousal in multiple hits. 'Overkill' Arousal carries over.<br>Even if the opponent climaxes mid-effect, the remaining hits will still land after their Arousal resets.<br>e.g., Your <b>Lust</b> is 5, and the opponent needs 3 Arousal to climax. They take 3 hits, climax, their Arousal resets to 0, and then they take the remaining 2 hits, ending up with 2 Arousal.<br>With enough repetitions, you can make them climax multiple times in a single turn."
+			"desc": "Card effects have two properties: a <b>Value</b> (how much) and a <b>Repetition Count</b> (how many times).<br>For most effects, this doesn't matter. But for effects that increase <b>Arousal</b>, the difference is critical.<br>Understanding it can help you attack more efficiently or defend yourself better.<br><br><br><br>Here are two example effects:<br><br>1. 'Increase the opponent's <b>Arousal</b> by your <b>Lewdness</b>.'<br>2. '[Stimulate] the opponent <b>Lewdness</b> times.' (This applies Arousal equal to your Lewdness, but in 1-point hits)<br><br>The first effect has a Value equal to your <b>Lewdness</b>. It deals all the Arousal in a single, large chunk.<br><br>The second effect has a Value of 1 and a Repetition Count equal to your <b>Lewdness</b>. It deals Arousal in multiple small hits.<br><br><br><br>The difference becomes clear when the opponent <b>climaxes</b>.<br><br><br><b>Effect with Value (Example 1):</b><br><br>Applies all Arousal at once. Any 'overkill' Arousal is wasted.<br>If the opponent climaxes, the effect ends immediately.<br>e.g., Your <b>Lewdness</b> is 5, and the opponent needs 3 Arousal to climax. They take 3, climax once, and the remaining 2 Arousal from the effect is lost.<br><br><br><b>Effect with Repetitions (Example 2):</b><br><br>Applies Arousal in multiple hits. 'Overkill' Arousal carries over.<br>Even if the opponent climaxes mid-effect, the remaining hits will still land after their Arousal resets.<br>e.g., Your <b>Lewdness</b> is 5, and the opponent needs 3 Arousal to climax. They take 3 hits, climax, their Arousal resets to 0, and then they take the remaining 2 hits, ending up with 2 Arousal.<br>With enough repetitions, you can make them climax multiple times in a single turn."
 		},
 		{
 			"title": "Effects & Rules (4/4): Random Penalty Cards",
@@ -325,7 +323,6 @@ const ruleDescription = {
 		}
 	]
 };
-
 
 
 
@@ -3618,6 +3615,7 @@ function deepCloneAndModify(data, parentId) {
 replaceCustomStructureValues(customStructure);
 const v1Structure = deepCloneAndModify(variableData, "v1");
 
+
 const keywordDict = {
 	"소지": {
         name: { "KOR":"Possession" },
@@ -3625,7 +3623,7 @@ const keywordDict = {
     },
 	"자극": {
         name: { "KOR":"Stimulation" },
-        desc: { "KOR":"Increases Excitement equal to the target's Lewdness if they are a Champion, or Lust if they are a Challenger." }
+        desc: { "KOR":"Increases Excitement by the amount of the initiator's attack stat (<b>Lewdness</b> for Challengers, <b>Heat</b> for Champions)." }
     },
 	"추가card": {
         name: { "KOR":"Additional Card" },
