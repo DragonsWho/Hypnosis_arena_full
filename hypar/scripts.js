@@ -1252,7 +1252,7 @@ function initEnemyCardSelect() {
         // `?.lose` вернет undefined, если 'bossC9' нет.
         // `|| 0` превратит undefined или null в 0.
         // В итоге мы просто проверяем, что количество поражений не больше нуля.
-        if (champ.id === 'bossC10_SECRET' && (playRecord.bossRecord['bossC9']?.lose || 0) <= 0) {
+        if (champ.id === 'bossC10_SECRET' && (playRecord.bossRecord['bossC9']?.lose || 0) <= 50) {
             return; // Пропускаем создание иконки для этого чемпиона
         }
         // --- КОНЕЦ ИЗМЕНЕНИЙ ---

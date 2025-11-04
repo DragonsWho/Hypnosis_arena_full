@@ -265,7 +265,7 @@ const ruleDescription = {
 		},
 		{
 			"title": "Deck Building (4/6): Special Traits",
-			"desc": "You're not just another challenger. You're special. And you've caught some unwanted attention.<br><br><br><b>Trial</b> is a <b>Disadvantageous Trait</b> that allows the arena staff to meddle in your duel.<br>They might block you from playing cards, force an automatic loss, slap you with debuffs, or just keep pushing you closer to the edge...<br><b>They will find creative ways to screw you over.</b><br><br>You can only choose one type of Trial, and its effect often changes based on your race.<br>It provides a massive point bonus, but the interference is just as potent and dangerous.<br><br><hr><br>That voice whispering in your ear... you can choose to embrace it fully.<br>It offers limitless power, but the price for such a gift is always steep.<br><br>If you choose the common trait <b>[Morvain's Shadow]</b>, the limits on points, deck size, and traits are all removed. However,<br><b>you will be locked into a specific ending, and your playthrough will not be saved.</b><br><br>Use this trait when you want to experiment freely with card and trait combinations without any restrictions.<br>But the fate of those who embrace corrupting power is always the same.<br><b>If you want to see a proper ending, stay away from this trait.</b>"
+			"desc": "You're not just another challenger. You're special. And you've caught some unwanted attention.<br><br><br><b>Trial</b> is a <b>Disadvantageous Trait</b> that allows the arena staff to meddle in your duel.<br>They might block you from playing cards, force an automatic loss, slap you with debuffs, or just keep pushing you closer to the edge...<br><b>They will find creative ways to screw you over.</b><br><br>You can only choose one type of Trial, and its effect often changes based on your race.<br>It provides a massive point bonus, but the interference is just as potent and dangerous.<br><br><hr><br>That voice whispering in your ear... you can choose to embrace it fully.<br>It offers limitless power, but the price for such a gift is always steep.<br><br>If you choose the common trait <b>[Shadow of Morvain]</b>, the limits on points, deck size, and traits are all removed. However,<br><b>you will be locked into a specific ending, and your playthrough will not be saved.</b><br><br>Use this trait when you want to experiment freely with card and trait combinations without any restrictions.<br>But the fate of those who embrace corrupting power is always the same.<br><b>If you want to see a proper ending, stay away from this trait.</b>"
 		},
 		{
 			"title": "Deck Building (5/6): Race Bonus Cards",
@@ -2126,11 +2126,11 @@ const endingList = {
 		condDesc:{ "KOR":`Select <b>[Shadow of Morvain]</b>.` },
 	},
 	"challenge_win":{
-		name:{ "KOR":"Challenge Successful" }, endingId:"winC", img:"endingC_win", category:"Other",
+		name:{ "KOR":"Bad End" }, endingId:"winC", img:"endingC_win", category:"Other",
 		condDesc:{ "KOR":`Win in challenge mode.` },
 	},
 	"challenge_lose":{
-		name:{ "KOR":"Challenge Failed" }, endingId:"loseC", img:"endingC_lose", category:"Other",
+		name:{ "KOR":"New Age" }, endingId:"loseC", img:"endingC_lose", category:"Other",
 		condDesc:{ "KOR":`Lose in challenge mode.` },
 	},
 }

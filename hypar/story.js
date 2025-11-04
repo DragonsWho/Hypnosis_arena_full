@@ -10857,6 +10857,110 @@ const storyText = {
 
 
 
+
+
+
+
+
+
+
+
+
+    "winC":[
+        {
+            cond:true,
+            type:"img", img:"endingC_win",  
+        },
+        {
+            cond:true,
+            type:"text",
+            KOR:`
+                Victory. Again.<br>
+                <br>
+                The monster you so carefully crafted lies broken at your feet. The familiar, hollow emptiness washes over you. You tried to hold back, to feign weakness, to let yourself be broken... but your power is a reflex now, an instinct you can no longer suppress.<br>
+                <br>
+                This pale imitation of your past tormentors shattered with pathetic ease. The thrill is gone. The boredom returns, colder and more absolute than before.<br>
+                <br>
+                You clench the Relic of Morvain, its infinite power a mocking weight in your hand. You can reshape reality, command armies, and bend gods to your will. You can have anything you desire.<br>
+                <br>
+                But the one thing you crave – a single moment of genuine, helpless submission – is the one thing your own power will forever deny you.<br>
+                <br>
+                You are a god trapped in a cage of your own making, desperate to feel mortal pain but unable to bleed.
+            `,
+        },
+    ],
+    
+    "loseC":[
+        {
+            cond:true,
+            type:"img", img:"endingC_lose", 
+        },
+        {
+            cond:true,
+            type:"text",
+            KOR:`
+                
+
+				Defeat.<br>
+								<br>
+				The word no longer holds any sting of shame. It washes over you in a wave of exquisite agony and pure, unfiltered liberation. For the first time in an eternity, you are not in control. For the first time in an eternity, you can simply feel.<br>
+                <br>
+				The grip of the monster that bested you is law. Its weight pinning you to the cold stone is absolute. Your limitless, divine power, held back only by your own will, flickers and fades at your silent command. You are once again just a body. A trophy. A plaything made for pleasure.<br>
+                <br>
+				Its thick, brutal cock impales you, and in that jolt of searing pleasure-pain, all thought is obliterated. But it’s not enough. It will never be enough.<br>
+                <br>
+				With a light, almost lazy flick of your fingers, you shatter the invisible chains. A cacophony of roars shakes the chamber walls. The grating shriek of metal gates, the thunderous stampede of hooves and claws—it is a symphony for your ravaged soul. You have summoned them all. The champions of your private pandemonium, your obedient marionettes, are now free to descend upon their creator.<br>
+                <br>
+				They are on you in an instant. A writhing mass of lust. Dozens of burning eyes in the gloom. Greedy hands grope and claim, clawed paws trace searing lines over your skin, and slick tentacles coil around your limbs. You are flipped onto your stomach, pinned down, your legs forced wide apart. A second, a third, a fourth monstrous cock invades you, stretching you, stuffing you, filling you to the absolute limit. Your mouth is claimed, your throat is stretched, your cunt and ass are used as a shared sheath for their mindless fucking. Every orifice is conquered, every inch of you is violated and worshipped.<br>
+                <br>
+				Memories of the old Arena return not as trauma, but as the sweetest, most cherished sensation you have ever known. This is it. This is the feeling you so desperately chased while sitting on your cold throne. To be dominated. To be used. To be nothing.<br>
+                <br>
+				As the horde of creatures uses your body like a common altar for their carnal ritual, a soul-shattering orgasm rips through you, the first real thing you’ve felt in an eternity. Bliss. Absolute and perfect. A deliriously ecstatic smile spreads across your face, tears of pure bliss carving paths through the grime and semen.<br>
+                <br>
+				In this perfect, humiliating defeat, you have finally found your freedom.<br>
+                <br>
+				And you realize you have no right to keep this gift for yourself.<br>
+                <br>
+				While the monsters continue to pound into your flesh, forcing you to climax again and again, your mind soars with crystalline clarity. Their thrusts are merely a rhythm for your thoughts. Their guttural growls are the background music for your grand new design.<br>
+                <br>
+				All those strong, proud women… warriors, queens, high priestesses… They languish in the golden cages of their own power and duty, ignorant of true liberation. They don't know the freedom that comes only with total, unconditional submission. With the fall into the very depths of bliss.<br>
+                <br>
+				You must save them. You must preach this gospel of the flesh.<br>
+                <br>
+				The remnants of your divine power extend from your savaged body like whispering tendrils of darkness. They do not carry destruction. They carry a promise. Across the world, in the hands of proud and unsuspecting women, sumptuous, alluring invitations materialize from thin air. Letters sealed with the crest of a shattered sword and a blooming rose. Invitations to the greatest tournament ever conceived, one that promises glory and the fulfillment of all desires.<br>
+                <br>
+				Invitations to your new Arena.<br>
+                <br>
+				You laugh as another orgasm shakes you to your core, the sound merging with the bestial roars in a perfect symphony of chaos and pleasure.<br>
+                <br>
+				Your new sisters are already on their way. You will free them all. You will show them the true pleasure of the fall.
+            `,
+        },
+    ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // --- НАЧАЛО ИЗМЕНЕНИЙ ---
     "intro_bossC10_SECRET": [
         {

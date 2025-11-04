@@ -2624,18 +2624,18 @@ const cardDB = {
 
 	"DA-NT-ALL-003":{
 		name:{ "KOR":"Trial: Illegal Alchemist" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", cost:-30, owner:1, nochange:true,
-		tags:["부정적", "Common", "개입"], related:["tag:Potion"],
+		tags:["부정적", "Common", "개입"], related:["tag:Drug"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"Nisby is an expert in potion brewing.<br>She has developed Delirium Incense to hinder challengers and stimulants to boost the champions' stamina.<br>To test her new products, she will now intervene in your duel.<br><br>※ The drugs will accumulate, debuffing you and buffing your opponent." },
 		effect:[
 			{trigger:"trait", cond:true, notext:true, type:"ban", range:{category:"tags", value:"개입", count:1}},
 			{trigger:"turnStart", cond:{v1:"라운드", op:"in", v2:[1,3,5,7]}, type:"line", value:"개입-Potion"},
-			{trigger:"turnStart", cond:{v1:"라운드", op:"in", v2:[1,3,5,7]}, type:"state", target:"self", value:"randomCard(tags, Potion)"},
+			{trigger:"turnStart", cond:{v1:"라운드", op:"in", v2:[1,3,5,7]}, type:"state", target:"self", value:"randomCard(tags, Drug)"},
 		]
 	},
 	"DA-NT-ALL-003-1":{
 		name:{ "KOR":"Delirium Incense" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
-		tags:["부정적", "Potion"],
+		tags:["부정적", "Drug"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"always", cond:true, type:"lewd", op:"add", value:-2}
@@ -2643,7 +2643,7 @@ const cardDB = {
 	},
 	"DA-NT-ALL-003-2":{
 		name:{ "KOR":"Hucow Aphrodisiac" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
-		tags:["부정적", "Potion"],
+		tags:["부정적", "Drug"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"always", cond:true, type:"Heat", op:"add", value:2}
@@ -2651,7 +2651,7 @@ const cardDB = {
 	},
 	"DA-NT-ALL-003-3":{
 		name:{ "KOR":"Stamina Stimulant" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
-		tags:["부정적", "Potion"],
+		tags:["부정적", "Drug"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"always", cond:true, type:"exciteL", target:"op", op:"add", value:2}
@@ -2659,7 +2659,7 @@ const cardDB = {
 	},
 	"DA-NT-ALL-003-4":{
 		name:{ "KOR":"Lust Potion" }, class:"Neutral", type:"상태", isDeck:false, rarity:"None", cost:0, owner:1, nochange:true,
-		tags:["부정적", "Potion"],
+		tags:["부정적", "Drug"],
 		expiration:"always", duration:Infinity,
 		effect:[
 			{trigger:"always", cond:true, type:"exciteL", target:"self", op:"add", value:-1}
@@ -2720,7 +2720,7 @@ const cardDB = {
 	},
 
 	"DA-NT-ALL-000":{
-		name:{ "KOR":"Morvain's Shadow" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", cost:-999,
+		name:{ "KOR":"Shadow of Morvain" }, class:"Neutral", type:"특성", isDeck:false, rarity:"None", cost:-999,
 		tags:["부정적", "Common"],
 		expiration:"always", duration:Infinity,
 		flavorText:{ "KOR":"<b>So many things you want, yet you can only choose one. What a shame.<br>If you need it, I'll lend you a little of my power.<br>You'll be able to achieve everything you desire...</b><br><br>※ This is a free mode where point and deck size restrictions are removed, but the ending is fixed." },
@@ -3118,7 +3118,7 @@ const cardDB = {
 			info:{
 				value:3, 
 				effect:[
-					{trigger:"none", cond:true, type:"text", value:{ "KOR":"Do not draw a penalty card." }},
+					{trigger:"none", cond:true, type:"text", value:{ "KOR":"Do not gain a penalty card." }},
 				]
 			}},
 		]
@@ -4815,7 +4815,7 @@ const cardDB = {
 		name:{ "KOR":"Snow Wolf Spirit" }, class:"Mage", type:"Position", isDeck:true, rarity:"Normal", cost:10, owner:1,
 		cond:true,
 		tags:["Deck빌딩", "race:Beastfolk", "group:Magic", "즉발슬롯"], related:["MA-ST-002", "ref:즉발슬롯"],
-		flavorText:{ "KOR":"The power used by beings such as demons, spirits, and dragons, which defies logic, is called 'magic,' and the degraded technique that imitates it by analyzing its system is called 'sorcery.'<br>Spiritism, a specialty of the Silverleaf Beastfolk, is said to allow the use of power similar to primal magic by borrowing the power of spirits through communication." },
+		flavorText:{ "KOR":"The power used by beings such as demons, spirits, and dragons that defies logic is called 'primal magic,' and the simplified technique that imitates it by analyzing its system is what people called 'magic.'<br> Spiritism, a specialty of the Silverleaf Beastfolk, is said to enable the use of a power similar to primal magic through communication with spirits and the borrowing of their power." },
 		hypnoText:{ "KOR":"Your partner is a female wolf spirit who is always in heat and craving cock.<br>She helps with threesomes with her voluptuous breasts and specialty paizuri, but be careful not to drop the leash, or she'll try to taste the cock before her master." },
 		expiration:"always", duration:Infinity,
 		effect:[
@@ -4989,13 +4989,12 @@ const cardDB = {
 		]
 	},
 	"MA-EX-PS-002-2":{
-		name:{ "KOR":"Magic: Absorb" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
+		name:{ "KOR":"Primal Magic: Absorb" }, class:"Mage", type:"Support", isDeck:true, rarity:"None", cost:0, owner:1, nochange:true,
 		cond:true,
 		tags:["Magic", "Autocast"], cast:Infinity,
 		effect:[
 			{trigger:"used", cond:true, type:"line", value:"마나슬라임-4", notwait:true},
-			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:"자기Deck.count(tags, Magic)"},
-			{trigger:"none", cond:true, type:"caption", value:{ "KOR":"This card is treated as a Magic card." }},
+			{trigger:"used", cond:true, type:"excite", target:"op", op:"add", value:"자기Deck.count(tags, Magic)"}, 
 		]
 	},
 	"MA-EX-PS-002-3":{
